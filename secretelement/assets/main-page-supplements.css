@@ -1,0 +1,116 @@
+.supplements{
+    padding-top: 140px;
+}
+.supplements__inner{
+    display: flex;
+    justify-content: center;
+}
+.supplements__img{
+    width: 593px;
+    height: 700px;
+    margin-right: 186px;
+}
+.supplements__img img{
+    width: 100%;
+    height: 100%;
+}
+.supplements__text{
+    width: 46%;
+}
+.supplements__descr{
+    margin-top: 26px;
+    font-size: 20px;
+    color: #292929;
+    line-height: 140%;
+}
+.supplements-list{
+    margin-top: 30px;
+}
+.supplements__btn{
+    margin-top: 50px;
+    width: max-content;
+    text-align: center;
+    padding: 23px 67px;
+}
+.supplements-list li::before{
+    background: #079892;
+}
+@media screen and (max-width:1919px) {
+    .supplements{
+        padding-top: 7.292vw;
+    }
+    
+    .supplements__img{
+        width: 30.885vw;
+        height: 36.458vw;
+        margin-right: 9.688vw;
+    }
+    .supplements__descr{
+        margin-top: 1.354vw;
+        font-size: 1.042vw;
+    }
+    .supplements-list{
+        margin-top: 1.563vw;
+    }
+    .supplements__btn{
+        margin-top: 2.604vw;
+        padding: 1.198vw 3.49vw;
+    }
+}
+@media screen and (max-width:1024px) {
+    .supplements{
+        padding-top: 13.021vw;
+    }
+    .supplements__title{
+        text-align: center;
+    }
+    .supplements__text{
+        width: 100%;
+    }
+    .supplements__img{
+        width: 100%;
+        margin-top: 2.604vw;
+        height: auto;
+        margin-right: 0;
+    }
+    .supplements__descr{
+        margin-top: 2.604vw;
+        text-align: center;
+        font-size: 2.604vw;
+    }
+    .supplements-list{
+        margin-top: 2.604vw;
+    }
+    .supplements__btn{
+        margin-top: 5.208vw;
+        padding: 2.995vw 8.724vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:650px){
+    .supplements{
+        padding-top: 70px;
+    }
+ 
+    .supplements__img{
+
+        margin-top: 20px;
+       
+    }
+    .supplements__descr{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .supplements-list{
+        margin-top: 20px;
+    }
+    .supplements__btn{
+        margin-top: 30px;
+        padding: 19.5px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

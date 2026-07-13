@@ -1,0 +1,159 @@
+{% render 'async-stylesheet', file: 'main-page-system.css' %}
+<section class="system">
+    <div class="container">
+        <div class="system__inner">
+            <div class="system__img">
+                {%- assign sys_avif = 'system-new.avif' | file_url -%}
+                {%- assign sys_webp = 'system-new.webp' | file_url -%}
+                <picture>
+                    <source
+                        type="image/avif"
+                        srcset="
+                            {{ sys_avif }}&width=350 350w,
+                            {{ sys_avif }}&width=500 500w,
+                            {{ sys_avif }}&width=750 750w,
+                            {{ sys_avif }}&width=1050 1050w
+                        "
+                        sizes="(max-width: 650px) 100vw, (max-width: 1919px) 34.37vw, 508px"
+                    >
+                    <source
+                        type="image/webp"
+                        srcset="
+                            {{ sys_webp }}&width=350 350w,
+                            {{ sys_webp }}&width=500 500w,
+                            {{ sys_webp }}&width=750 750w,
+                            {{ sys_webp }}&width=1050 1050w
+                        "
+                        sizes="(max-width: 650px) 100vw, (max-width: 1919px) 34.37vw, 508px"
+                    >
+                    <img src="{{ sys_webp }}&width=750" width="769" height="574" alt="" loading="lazy" decoding="async" fetchpriority="low">
+                </picture>
+            </div>
+            <div class="system__text">
+                <div class="system-badge">
+                    PROTOCOL 01 — THE HIVE
+                </div>
+                <h2 class="system__title title-main">One system. Five results</h2>
+                <div class="system-list">
+                    <div class="system-list-item">
+                        <div class="system-list-item-left">
+                            <svg width="12" height="106" viewBox="0 0 12 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="16" r="6" fill="#121C3F" fill-opacity="0.2"/>
+                            <path d="M6 22V106" stroke="#121C3F" stroke-opacity="0.2"/>
+                            </svg>
+
+
+                        </div>
+                        <div class="system-list-item-right">
+                            <div class="system-list-item-badge">01 — IMMUNITY</div>
+                            <h3 class="system-list-item-title">Daily Natural Defense</h3>
+                            <p class="system-list-item__descr">
+                                Propolis and Bee Bread provide daily immune infrastructure before depletion creates the
+                                opening — not emergency intervention after.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="system-list-item">
+                        <div class="system-list-item-left">
+                            <svg width="20" height="116" viewBox="0 0 20 116" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0V10" stroke="#121C3F" stroke-opacity="0.2" />
+                                <circle cx="10" cy="16" r="6" fill="#121C3F" fill-opacity="0.8" />
+                                <circle cx="10" cy="16" r="8" stroke="#454B60" stroke-opacity="0.2" stroke-width="4" />
+                                <path d="M10 22V116" stroke="#121C3F" stroke-opacity="0.2" />
+                            </svg>
+
+
+                        </div>
+                        <div class="system-list-item-right">
+                            <div class="system-list-item-badge">02 — ENERGY</div>
+                            <h3 class="system-list-item-title">Clean Biological Fuel</h3>
+                            <p class="system-list-item__descr">
+                                Nutrient density from Bee Bread and adaptive signaling from Royal Jelly. Steady vitality
+                                without spikes, debt, or crashes.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="system-list-item">
+                        <div class="system-list-item-left">
+                            <svg width="12" height="116" viewBox="0 0 12 116" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 0V10" stroke="#121C3F" stroke-opacity="0.2" />
+                                <circle cx="6" cy="16" r="6" fill="#121C3F" fill-opacity="0.2" />
+                                <path d="M6 22V116" stroke="#121C3F" stroke-opacity="0.2" />
+                            </svg>
+                        </div>
+                        <div class="system-list-item-right">
+                            <div class="system-list-item-badge">03 — FOCUS</div>
+                            <h3 class="system-list-item-title">Cognitive Clarity</h3>
+                            <p class="system-list-item__descr">
+                                Royal Jelly's 10-HDA supports neurogenesis and neurotransmitter function. Mental fog
+                                lifts. Concentration holds through the full day.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="system-list-item">
+                        <div class="system-list-item-left">
+                            <svg width="12" height="135" viewBox="0 0 12 135" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 0V10" stroke="#121C3F" stroke-opacity="0.2" />
+                                <circle cx="6" cy="16" r="6" fill="#121C3F" fill-opacity="0.2" />
+                                <path d="M6 22V135" stroke="#121C3F" stroke-opacity="0.2" />
+                            </svg>
+
+                        </div>
+                        <div class="system-list-item-right">
+                            <div class="system-list-item-badge">04 — GUT</div>
+                            <h3 class="system-list-item-title">Microbiome & Recovery</h3>
+                            <p class="system-list-item__descr">
+                                Fermented Bee Bread repairs gut lining, restores microbiome balance, and improves
+                                nutrient absorption — the foundation everything else depends on.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="system-list-item">
+                        <div class="system-list-item-left">
+                            <svg width="12" height="116" viewBox="0 0 12 116" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 0V10" stroke="#121C3F" stroke-opacity="0.2" />
+                                <circle cx="6" cy="16" r="6" fill="#121C3F" fill-opacity="0.2" />
+                            </svg>
+
+                        </div>
+                        <div class="system-list-item-right">
+                            <div class="system-list-item-badge">05 — VITALITY</div>
+                            <h3 class="system-list-item-title">Whole-Body Resilience</h3>
+                            <p class="system-list-item__descr">
+                                Royal Jelly's adaptogenic properties rebuild stress tolerance, hormonal balance, and the
+                                inner reserve that chronic depletion erodes over time.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="" class="btn system__btn">SHOP API-COMPLEX <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.048 17.6537L19.702 11.9999L14.048 6.34619L12.9942 7.43069L16.8135 11.2499H4.29797V12.7499H16.8135L12.9942 16.5692L14.048 17.6537Z" fill="white" fill-opacity="0.5"/>
+</svg>
+</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+  "name": "Main Page System",
+  "class": "main-page-system",
+  "settings": [
+   
+  ],
+  "presets": [
+    {
+      "name": "Main Page System"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,409 @@
+main.main{
+    overflow: hidden !important;
+}
+.black-week-sale{
+    position: absolute;
+    right: 0;
+    top: -30px;
+    padding: 3px 32px ;
+    background: #B50000;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    z-index: 1;
+}
+.buy-product__images{
+    position: relative;
+}
+.off-img{
+    position: absolute;
+    width: 196px;
+    height: 196px;
+    top: 17px;
+    right: 14px;
+    z-index: 10;
+}
+.off-img img,
+.off-img svg{
+    width: 100% !important;
+    height: 100% !important;
+
+}
+#productGallery{
+    position: relative;
+
+}
+.bl-fr-timer{
+    background: var(--orange);
+    padding: 11px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+
+}
+.bl-fr-timer p{
+    font-size: 30px;
+    color: #fff;
+}
+.bl-fr-timer__items{
+    background: #F5F6F8;
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+}
+.bl-fr-timer__item{
+    width: 58px;
+    margin: 0 20px;
+
+}
+.bl-fr-timer__item-number{
+    font-size: 56px;
+    font-family: "Bebas";
+    line-height: 100%;
+    color: #1F212D;
+    font-weight: 700;
+    text-align: center;
+}
+.bl-fr-timer__item-text{
+    line-height: 140%;
+    margin-top: -5px;
+    font-size: 16px;
+    color: #161616;
+    text-align: center;
+}
+.buy-product__thumb img{
+    object-fit: contain;
+}
+.buy-product-main-img .swiper-slide{
+    border-radius: 6px 0 6px 6px;
+}
+
+
+.flavour{
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+}
+.flavour__title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    color: var(--orange);
+    margin-right: 18px;
+}
+.flavour-items{
+    display: flex;
+}
+.flavour-item{
+    padding: 5px 13px;
+    border-radius: 8px;
+    
+    border: 1px solid var(--black);
+    display: flex;
+    align-items: center;
+    margin-right: 9px;
+    cursor: pointer;
+}
+.flavour-item.active{
+  background: #ECDDD1;
+}
+.flavour-item-soon.active{
+  background: #ECDDD1;
+}
+.flavour-item__img{
+    width: 40px;
+    height: 40px;
+    margin-right: 9px;
+}
+.flavour-item__img img{
+    width: 100%;
+    height: 100%;
+}
+.flavour-item__name{
+    color: #333;
+    font-size: 16px;
+    font-weight: 900;
+}
+.flavour-item,
+.flavour-item-soon{
+    height: 52px;
+}
+.flavour-item-soon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #BABABA; */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--black);
+    cursor: pointer;
+}
+.flavour-item-soon-elem{
+    position: absolute;
+    right: -25px;
+    top: -9px;
+    padding: 2px 9px;
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--black);
+    background: #ECDDD1;
+    border-radius: 6px;
+    transform: rotate(4deg);
+}
+@media screen and (max-width: 1919px) {
+    .buy-product-main-img .swiper-slide{
+        border-radius: 0.313vw 0 0.313vw 0.313vw;
+    }
+    .black-week-sale{
+        top: -1.562vw;
+        padding: 0.156vw 1.667vw;
+        font-size: 0.99vw;
+        height: 1.562vw;
+        border-radius: 0.26vw 0.26vw 0 0;
+    }
+
+    .off-img{
+        width: 10.208vw;
+        height: 10.208vw;
+        top: 0.885vw;
+        right: 0.729vw;
+    }
+
+    .bl-fr-timer{
+        padding: 0.573vw 6.25vw;
+    }
+
+    .bl-fr-timer p{
+        font-size: 1.562vw;
+    }
+
+    .bl-fr-timer__items{
+        margin-left: 1.823vw;
+    }
+
+    .bl-fr-timer__item{
+        width: 3.021vw;
+        margin: 0 1.042vw;
+    }
+
+    .bl-fr-timer__item-number{
+        font-size: 2.917vw;
+    }
+
+    .bl-fr-timer__item-text{
+        margin-top: -0.26vw;
+        font-size: 0.833vw;
+    }
+    .flavour{
+        margin-top: 2.917vw;
+    }
+    .flavour__title{
+        font-size: 1.042vw;
+        margin-right: 0.938vw;
+    }
+    .flavour-item{
+        padding: 0.26vw 0.677vw;
+        border-radius: 0.417vw;
+        margin-right: 0.469vw;
+    }
+    .flavour-item__img{
+        width: 2.083vw;
+        height: 2.083vw;
+        margin-right: 0.469vw;
+    }
+    .flavour-item__name{
+        font-size: 0.833vw;
+    }
+    .flavour-item,
+    .flavour-item-soon{
+        height: 2.708vw;
+    }
+    .flavour-item-soon{
+        padding: 0.521vw;
+        border-radius: 0.417vw;
+    }
+    .flavour-item-soon-elem{
+        right: -1.302vw;
+        top: -0.469vw;
+        padding: 0.104vw 0.469vw;
+        font-size: 0.625vw;
+        border-radius: 0.313vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .buy-product-main-img .swiper-slide{
+        border-radius: 0.781vw 0 0.781vw 0.781vw;
+    }
+    .black-week-sale{
+        top: -3.906vw;                /* -30px */
+        padding: 0.391vw 4.167vw;     /* 3px 32px */
+        font-size: 2.474vw;           /* 19px */
+        height: 3.906vw;              /* 30px */
+        border-radius: 0.651vw 0.651vw 0 0; /* 5px 5px */
+    }
+
+    .off-img{
+        width: 25.521vw;              /* 196px */
+        height: 25.521vw;             /* 196px */
+        top: 2.214vw;                 /* 17px */
+        right: 1.823vw;               /* 14px */
+    }
+
+    .bl-fr-timer{
+        padding: 1.432vw 15.625vw;    /* 11px 120px */
+        flex-direction: column;
+    }
+
+    .bl-fr-timer p{
+        font-size: 3.906vw;           /* 30px */
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 1.25vw;
+    }
+
+    .bl-fr-timer__items{
+        margin-left: 4.557vw;         /* 35px */
+    }
+
+    .bl-fr-timer__item{
+        width: 7.552vw;               /* 58px */
+        margin: 0 2.604vw;            /* 20px */
+    }
+
+    .bl-fr-timer__item-number{
+        font-size: 7.292vw;           /* 56px */
+    }
+
+    .bl-fr-timer__item-text{
+        margin-top: -0.651vw;         /* -5px */
+        font-size: 2.083vw;           /* 16px */
+    }
+    .flavour{
+        margin-top: 7.292vw;
+        justify-content: center;
+    }
+    .flavour__title{
+        font-size: 2.604vw;
+        margin-right: 2.344vw;
+    }
+    .flavour-item{
+        padding: 0.651vw 1.693vw;
+        border-radius: 1.042vw;
+        margin-right: 1.172vw;
+    }
+    .flavour-item__img{
+        width: 5.208vw;
+        height: 5.208vw;
+        margin-right: 1.172vw;
+    }
+    .flavour-item__name{
+        font-size: 2.083vw;
+    }
+    .flavour-item,
+    .flavour-item-soon{
+        height: 6.771vw;
+    }
+    .flavour-item-soon{
+        padding: 1.302vw;
+        border-radius: 1.042vw;
+    }
+    .flavour-item-soon-elem{
+        right: -3.255vw;
+        top: -1.172vw;
+        padding: 0.26vw 1.172vw;
+        font-size: 1.563vw;
+        border-radius: 0.781vw;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .buy-product-main-img .swiper-slide{
+        border-radius: 3px 0 3px 3px;
+    }
+    .black-week-sale{
+        top: -22px;
+        padding: 1px 30px;
+        font-size: 16px;
+        height: 22px;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .off-img{
+        width: 131px;
+        height: 131px;
+        top: 11px;
+        right: 11px;
+    }
+
+    .bl-fr-timer{
+        padding: 9px 30px;
+    }
+
+    .bl-fr-timer p{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .bl-fr-timer__items{
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .bl-fr-timer__item{
+        width: 36px;
+        margin: 0 10px;
+    }
+
+    .bl-fr-timer__item-number{
+        font-size: 31px;
+    }
+
+    .bl-fr-timer__item-text{
+        margin-top: -5px;
+        font-size: 10px;
+    }
+    .flavour{
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: start;
+    }
+    .flavour__title{
+        font-size: 18px;
+        margin-right: 0;
+        margin-bottom: 19px;
+    }
+    .flavour-item{
+        padding: 5px 13px;
+        border-radius: 8px;
+        margin-right: 9px;
+    }
+    .flavour-item__img{
+        width: 30px;
+        height: 30px;
+        margin-right: 9px;
+    }
+    .flavour-item__name{
+        font-size: 14px;
+    }
+    .flavour-item,
+    .flavour-item-soon{
+        height: 52px;
+    }
+    .flavour-item-soon{
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .flavour-item-soon-elem{
+        right: -25px;
+        top: -10px;
+        padding: 2px 9px;
+        font-size: 12px;
+        border-radius: 6px;
+    }
+}

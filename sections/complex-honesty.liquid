@@ -1,0 +1,70 @@
+{% render 'async-stylesheet', file: 'complex-honesty.css' %}
+<section class="honesty">
+    <div class="honesty__image">
+        <picture>
+
+            <source media="(max-width: 651px)" srcset="{{ 'radical-honesty-bg-mobile.avif' | asset_url }}"
+                type="image/avif">
+
+
+            <source srcset="{{ 'radical-honesty-bg.avif' | asset_url }}" type="image/avif">
+
+
+            <source media="(max-width: 651px)" srcset="{{ 'radical-honesty-bg-mobile.webp' | file_url }}"
+                type="image/webp">
+
+
+            <source srcset="{{ 'radical-honesty-bg.webp' | file_url }}" type="image/webp">
+
+
+            <img src="{{ 'radical-honesty-bg.webp' | file_url }}" alt="The hive triad background" loading="lazy">
+        </picture>
+    </div>
+    <div class="container">
+
+        <div class="honesty__inner">
+
+            <div class="honesty__content">
+
+                <span class="honesty__label ts-badge">
+                    Radical Honesty
+                </span>
+
+                <h2 class="honesty__title">
+                    This doesn't taste like a vitamin.<br>
+                    That's the point.
+                </h2>
+
+            </div>
+
+            <div class="honesty__description">
+
+                <p>
+                    Sweetness masks absence. Api-Complex masks nothing.
+                    <br>
+                    The taste reflects concentration and live enzymatic
+                    activity — <br> not flavor design.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Complex Honesty",
+  "class": "complex-honesty",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Complex Honesty"
+    }
+  ]
+}
+{% endschema %}

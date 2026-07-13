@@ -1,0 +1,325 @@
+{{ 'blog.css' | asset_url | stylesheet_tag }}
+<section class="blog">
+    <div class="container">
+        <div class="blog__inner">
+            <aside class="blog-popular">
+                <h2 class="blog-popular__title">popular</h2>
+                <div class="blog-popular-items">
+                    {% for article in blogs.all-articles.articles %}
+                        {% assign base_url = shop.url %}
+                        {% assign article_url = article.url %}
+                        {% if forloop.index < 5 %}
+                            
+                            <a href="{{ base_url }}{{ article_url }}" class="blog-popular-item">
+                                {{ article.title }}
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                    
+                    {% comment %} <a href="" class="blog-popular-item">
+                        Creatine vs. Protein: Which is Better?
+                    </a>
+                    <a href="" class="blog-popular-item">
+                        How to Use Creatine for Maximum Results
+                    </a>
+                    <a href="" class="blog-popular-item">
+                        Common Creatine Myths Debunked
+                    </a>
+                    <a href="" class="blog-popular-item">
+                        Best Times to Take Creatine
+                    </a>
+                    <a href="" class="blog-popular-item">
+                        Creatine's Role in Recovery and Muscle Repair
+                    </a> {% endcomment %}
+                </div>
+            </aside>
+            <div class="blog-wrapper">
+                <div class="blog-filter">
+                    <div class="blog-filter-item" data-filter="all">
+                        ALL
+                    </div>
+                    <div class="blog-filter-item" data-filter="fitness">
+                        Fitness 
+                    </div>
+                    <div class="blog-filter-item" data-filter="nutrition">
+                        Nutrition
+                    </div>
+                    <div class="blog-filter-item" data-filter="recipes">
+                        Recipes
+                    </div>
+                </div>
+                <div class="blog-items">
+                    {% for article in blogs.all-articles.articles %}
+                        {% assign base_url = shop.url %}
+                        {% assign article_url = article.url %}
+                        <div class="blog-item {% if forloop.index > 9 %} hidden{% endif %}" data-tags="{{ article.tags | join: ' ' }}">
+                            <div class="blog-item__img">
+                                <a href="{{ base_url }}{{ article_url }}">
+                                    <img 
+                                        src="{{ article | image_url }}" 
+                                        alt="{{ article.title }}"
+                                        width="283"
+                                        height="217"
+                                        fetchpriority="low"
+                                        decoding="async"
+                                    >
+                                </a>
+                            </div>
+                            <div class="blog-item__text">
+                                <a href="{{ base_url }}{{ article_url }}" class="blog-item__title">
+                                    {{ article.title }}
+                                </a>
+                                <div class="blog-item__descr">
+                                    {{ article.content | strip_html | truncate: 173 }}
+                                </div>
+                                <div class="blog-item-bottom">
+                                    <div class="blog-item-date">
+                                        <div class="blog-item-date__icon">
+                                            <img 
+                                            src="{{ "blog-date-icon.svg" |  file_url }}" 
+                                            alt=""
+                                            width="20"
+                                            height="20"
+                                            fetchpriority="low"
+                                            decoding="async"
+                                            >
+                                        </div>
+                                        <div class="blog-item-date__info">{{ article.published_at | date: "%B %e, %Y" }}</div>
+                                    </div>
+                                    <div class="blog-item-time">
+                                        <div class="blog-item-time__icon">
+                                            <img 
+                                            src="{{ "blog-time-icon.svg" |  file_url }}" 
+                                            alt=""
+                                            width="20"
+                                            height="20"
+                                            fetchpriority="low"
+                                            decoding="async"
+                                            >
+                                        </div>
+                                        {% assign published_date = article.published_at | date: "%Y-%m-%dT%H:%M:%SZ" %}
+                                        <div data-published="{{ published_date }}" class="blog-item-time__info timeago"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+                    {% comment %} <div class="blog-item">
+                        <div class="blog-item__img">
+                            <img 
+                                src="{{ "blog-item-img.jpg" |  file_url }}" 
+                                alt=""
+                                width="283"
+                                height="217"
+                                fetchpriority="low"
+                                decoding="async"
+                            >
+                        </div>
+                        <div class="blog-item__text">
+                            <h3 class="blog-item__title">
+                                Unlocking the <span>Power of Creatine:</span> Benefits for Muscle 
+                            </h3>
+                            <div class="blog-item__descr">
+                                Creatine is a popular supplement known for its ability to enhance muscle growth and athletic performance. This article delves into the science behind creatine, explaining
+                            </div>
+                            <div class="blog-item-bottom">
+                                <div class="blog-item-date">
+                                    <div class="blog-item-date__icon">
+                                        <img 
+                                        src="{{ "blog-date-icon.svg" |  file_url }}" 
+                                        alt=""
+                                        width="20"
+                                        height="20"
+                                        fetchpriority="low"
+                                        decoding="async"
+                                        >
+                                    </div>
+                                    <div class="blog-item-date__info">March 3, 2024</div>
+                                </div>
+                                <div class="blog-item-time">
+                                    <div class="blog-item-time__icon">
+                                        <img 
+                                        src="{{ "blog-time-icon.svg" |  file_url }}" 
+                                        alt=""
+                                        width="20"
+                                        height="20"
+                                        fetchpriority="low"
+                                        decoding="async"
+                                        >
+                                    </div>
+                                    <div class="blog-item-time__info">5 minutes</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-item__img">
+                            <img 
+                                src="{{ "blog-item-img.jpg" |  file_url }}" 
+                                alt=""
+                                width="283"
+                                height="217"
+                                fetchpriority="low"
+                                decoding="async"
+                            >
+                        </div>
+                        <div class="blog-item__text">
+                            <h3 class="blog-item__title">
+                                Unlocking the <span>Power of Creatine:</span> Benefits for Muscle 
+                            </h3>
+                            <div class="blog-item__descr">
+                                Creatine is a popular supplement known for its ability to enhance muscle growth and athletic performance. This article delves into the science behind creatine, explaining
+                            </div>
+                            <div class="blog-item-bottom">
+                                <div class="blog-item-date">
+                                    <div class="blog-item-date__icon">
+                                        <img 
+                                        src="{{ "blog-date-icon.svg" |  file_url }}" 
+                                        alt=""
+                                        width="20"
+                                        height="20"
+                                        fetchpriority="low"
+                                        decoding="async"
+                                        >
+                                    </div>
+                                    <div class="blog-item-date__info">March 3, 2024</div>
+                                </div>
+                                <div class="blog-item-time">
+                                    <div class="blog-item-time__icon">
+                                        <img 
+                                        src="{{ "blog-time-icon.svg" |  file_url }}" 
+                                        alt=""
+                                        width="20"
+                                        height="20"
+                                        fetchpriority="low"
+                                        decoding="async"
+                                        >
+                                    </div>
+                                    <div class="blog-item-time__info">5 minutes</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-item__img">
+                            <img 
+                                src="{{ "blog-item-img.jpg" |  file_url }}" 
+                                alt=""
+                                width="283"
+                                height="217"
+                                fetchpriority="low"
+                                decoding="async"
+                            >
+                        </div>
+                        <div class="blog-item__text">
+                            <h3 class="blog-item__title">
+                                Unlocking the <span>Power of Creatine:</span> Benefits for Muscle 
+                            </h3>
+                            <div class="blog-item__descr">
+                                Creatine is a popular supplement known for its ability to enhance muscle growth and athletic performance. This article delves into the science behind creatine, explaining
+                            </div>
+                            <div class="blog-item-bottom">
+                                <div class="blog-item-date">
+                                    <div class="blog-item-date__icon">
+                                        <img 
+                                        src="{{ "blog-date-icon.svg" |  file_url }}" 
+                                        alt=""
+                                        width="20"
+                                        height="20"
+                                        fetchpriority="low"
+                                        decoding="async"
+                                        >
+                                    </div>
+                                    <div class="blog-item-date__info">March 3, 2024</div>
+                                </div>
+                                <div class="blog-item-time">
+                                    <div class="blog-item-time__icon">
+                                        <img 
+                                        src="{{ "blog-time-icon.svg" |  file_url }}" 
+                                        alt=""
+                                        width="20"
+                                        height="20"
+                                        fetchpriority="low"
+                                        decoding="async"
+                                        >
+                                    </div>
+                                    <div class="blog-item-time__info">5 minutes</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> {% endcomment %}
+                </div>
+                <button id="see-more-btn" class="see-more-btn">See More</button>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Функция для расчета времени с момента публикации
+    function timeAgo(date) {
+      const now = new Date();
+      const publishedDate = new Date(date);
+      const seconds = Math.floor((now - publishedDate) / 1000);
+      const minutes = Math.floor(seconds / 60);
+      const hours = Math.floor(minutes / 60);
+      const days = Math.floor(hours / 24);
+      
+      if (seconds < 60) {
+        return `${seconds} seconds ago`;
+      } else if (minutes < 60) {
+        return `${minutes} minutes ago`;
+      } else if (hours < 24) {
+        return `${hours} hours ago`;
+      } else {
+        return `${days} days ago`;
+      }
+    }
+
+    // Получите все элементы с классом "timeago"
+    const timeElements = document.querySelectorAll('.timeago');
+    timeElements.forEach(function(element) {
+      const publishedDate = element.getAttribute('data-published');
+      element.textContent = timeAgo(publishedDate);
+    });
+
+    var seeMoreBtn = document.getElementById("see-more-btn");
+    var hiddenItems = document.querySelectorAll(".blog-item.hidden");
+
+    seeMoreBtn.addEventListener("click", function() {
+        hiddenItems.forEach(function(item) {
+            item.classList.remove("hidden");
+        });
+        seeMoreBtn.style.display = "none";
+    });
+
+
+
+    const filterItems = document.querySelectorAll('.blog-filter-item');
+    const blogItems = document.querySelectorAll('.blog-item');
+    
+    filterItems.forEach(filter => {
+        filter.addEventListener('click', function() {
+            const filterTag = this.getAttribute('data-filter');
+            
+            filterItems.forEach(item => item.classList.remove('active'));
+            this.classList.add('active');
+            
+            blogItems.forEach(item => {
+                const itemTags = item.getAttribute('data-tags').split(' ');
+                
+                if (filterTag === 'all' || itemTags.includes(filterTag)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        });
+    });
+  });
+  
+   
+
+</script>

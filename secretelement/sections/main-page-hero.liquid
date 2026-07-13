@@ -1,0 +1,31 @@
+
+{{ 'main-page-hero.css' | asset_url | stylesheet_tag}}
+<section class="hero">
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__text">
+                <h1 class="hero__title title">YOU FEELING GOOD – IT’S OUR MISSION</h1>
+                <p class="hero__descr">At Secret Element, we provide a range of targeted supplements designed to support your health and vitality. Made with clean, potent ingredients and clinically tested actives, our products help boost immunity, improve digestion, and enhance overall well-being. With Secret Element, you're choosing high-quality supplements that prioritize your health every day.</p>
+                <a href="#product-list" class="btn-green hero__btn scroll-product">Try our bestsellers</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+{% schema %}
+    {
+        "name": "Main page hero",
+        "class": "main-page-hero",
+        "settings": [
+            
+        ],
+        
+        "presets": [
+            {
+            "name": "Main page hero",
+            "category": "text"
+            }
+        ]
+    
+    }
+{% endschema %}

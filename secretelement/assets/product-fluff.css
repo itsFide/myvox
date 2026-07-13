@@ -1,0 +1,144 @@
+.fluff__title{
+    width: 50%;
+}
+.fluff__subtitle{
+    margin-top: 26px;
+    color: var(--dark);
+    font-size: 20px;
+    line-height: 140%;
+    width: 50%;
+}
+.fluff-items{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 43px;
+    width: 62.2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fluff-item{
+    width: 183px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fluff-item img{
+    width: max-content;
+    height: 73px;
+}
+.fluff-item__name{
+    margin-top: 24px;
+    text-align: center;
+    color: #292922;
+    font-weight: 500;
+    font-size: 20px;
+}
+.fluff__btn{
+    width: max-content;
+    margin-top: 70px;
+    padding: 19px 63px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fluff__btn.show-tablet{
+    display: none;
+}
+@media screen and (max-width:1919px) {
+   
+    .fluff__subtitle{
+        margin-top: 1.354vw;
+       
+        font-size: 1.042vw;
+      
+    }
+    .fluff-items{
+       
+        margin-top: 2.604vw;
+
+        gap: 2.24vw;
+    
+    }
+    .fluff-item{
+        width: 9.531vw;
+     
+    }
+    .fluff-item img{
+       
+        height: 3.802vw;
+    }
+    .fluff-item__name{
+        margin-top: 1.25vw;
+      
+        font-size: 1.042vw;
+    }
+    .fluff__btn{
+    
+        margin-top: 3.646vw;
+        padding: 0.99vw 3.281vw;
+    
+    }
+}
+@media screen and (max-width:1024px){
+    .fluff__title{
+        width: 100%;
+    }
+    .fluff__subtitle{
+        margin-top: 2.604vw;
+        font-size: 2.344vw;
+        width: 100%;
+    }
+    .fluff-item{
+        width: 26.693vw;
+    }
+    .fluff-item img{
+        height: 9.505vw;
+    }
+    .fluff-item__name{
+        margin-top: 3.125vw;
+        font-size: 2.604vw;
+    }
+    .fluff-items{
+        margin-top: 4.948vw;
+        width: 100%;
+        gap: 5.208vw 1.302vw;
+    }
+    .fluff__btn{
+        padding: 2.995vw 4.818vw;
+        margin-top: 9.115vw;
+    }
+    .fluff__btn.show-tablet{
+        display: block;
+    }
+}
+@media screen and (max-width:650px){
+    .fluff__subtitle{
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    .fluff-items{
+        margin-top: 40px;
+        gap: 0;
+        width: 299px;
+    }
+    .fluff-item{
+        width: 145px;
+        margin-right: 4px;
+    }
+    .fluff-item:nth-child(3){
+        width: 205px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .fluff-item img{
+        height: 73px;
+    }
+    .fluff-item__name{
+        margin-top: 24px;
+        font-size: 18px;
+    }
+    .fluff__btn.show-tablet{
+        display: none;
+    }
+}

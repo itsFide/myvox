@@ -1,0 +1,77 @@
+<!doctype html>
+<html
+  {% if request.design_mode %}
+    class="shopify-design-mode"
+  {% endif %}
+  lang="{{ request.locale.iso_code }}"
+>
+  <head>
+    {%- if settings.favicon != blank -%}
+      <link
+        rel="icon"
+        type="image/png"
+        href="{{ settings.favicon | image_url: width: 32, height: 32 }}"
+      >
+    {%- endif -%}
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+    {% comment %} This a way to wait for main content to load when navigating to a new page so that the view transitions can work consistently {% endcomment %}
+    {% if settings.transition_to_main_product or settings.page_transition_enabled %}
+      <link
+        rel="expect"
+        href="#MainContent"
+        blocking="render"
+        id="view-transition-render-blocker"
+      >
+    {% endif %}
+  
+    {%- render 'meta-tags' -%}
+    {%- render 'stylesheets' -%}
+
+    {% if request.path == "/cart" or request.page_type == 'password' %}
+      {%- render 'scripts' -%}
+      {%- render 'theme-styles-variables' -%}
+      {%- render 'color-palette' -%}
+
+    {% endif %}
+    {% if request.design_mode %}
+      {%- render 'theme-editor' -%}
+    {% endif %}
+ 
+    {% comment %} {{ content_for_header }} {% endcomment %}
+  </head>
+
+  <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
+    {% comment %} {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %} {% endcomment %}
+
+    {% comment %} {% render 'chat-drawer' %} {% endcomment %}
+
+    <div class="page-wrapper">
+      <div id="header-group">
+        {% sections 'header-group' %}
+      </div>
+
+      
+
+      <main
+        id="MainContent"
+        class="content-for-layout"
+        role="main"
+        data-page-transition-enabled="{{ settings.page_transition_enabled }}"
+        data-product-transition="{{ settings.transition_to_main_product }}"
+        data-template="{{ template }}"
+      >
+        {{ content_for_layout }}
+      </main>
+
+      <footer>
+        {% sections 'footer-group' %}
+      </footer>
+    </div>
+    <script
+      src="{{ 'swiper-bundle.min.js' | asset_url }}"
+      defer
+    ></script>
+  </body>
+</html>

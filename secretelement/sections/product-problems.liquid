@@ -1,0 +1,53 @@
+
+{{ 'product-problems.css' | asset_url | stylesheet_tag}}
+<section class="problems">
+    <div class="container">
+        <div class="problems__inner">
+            <div class="problems__img">
+                <picture>
+                    <source media="(max-width:650px)" srcset="{{ "problems-img-mobile.jpg" |  file_url }}">
+                    <source media="(max-width:1024px)" srcset="{{ "problems-img-tablet.jpg" |  file_url }}">
+                    <img 
+                        src="{{ "problems-img.jpg" |  file_url }}" 
+                        alt="Problems img"
+                        width="586"
+                        height="639"
+                        fetchpriority="low"
+                        decoding="async"
+                    >
+                </picture>
+            </div>
+            <div class="problems__text">
+                <h2 class="title problems__title">Problems That Prevent You from Enjoying Life:</h2>
+                <div class="problems-list land-list">
+                    <ul>
+                        <li> High cholesterol levels create constant tension and anxiety</li>
+                        <li> Medications often cause side effects that worsen overall well-being</li>
+                        <li> Caring for heart health turns into daily stress</li>
+                        <li> Regular blood sugar spikes negatively impact energy and mood</li>
+                        <li> Attempts to find effective solutions often end in disappointment</li>
+                    </ul>
+                </div>
+                <div class="problems__descr">These issues can seriously affect your quality of life. It's important to find a natural and safe solution that effectively addresses these challenges.</div>
+                <button class="btn-green problems__btn">Try Today – Save Up to 50%</button>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+    {
+        "name": "Problems",
+        "class": "product-problems",
+        "settings": [
+            
+        ],
+        
+        "presets": [
+            {
+            "name": "Problems",
+            "category": "text"
+            }
+        ]
+    
+    }
+{% endschema %}

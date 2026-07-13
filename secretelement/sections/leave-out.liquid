@@ -1,0 +1,149 @@
+
+{{ 'leave-out.css' | asset_url | stylesheet_tag}}
+<section class="leave-out pt-140">
+    <div class="container">
+        <div class="leave-out__inner">
+            <div class="leave-out__text">
+                <h2 class="title leave-out__title">what we leave out</h2>
+                <p class="leave-out__subtitle">Because not all vitamins are created equal</p>
+                <div class="leave-out-lists">
+                    <ul class="leave-out-list">
+                        <li>High Fructose Corn Syrup</li>
+                        <li>Gelatin</li>
+                        <li>Silicon Dioxide</li>
+                        <li>Gluten & GMO</li>
+                    </ul>
+                    <ul class="leave-out-list">
+                        <li>Artificial Sweeteners</li>
+                        <li>Synthetic Colors</li>
+                        <li>Dairy</li>
+                        <li>FD&C dyes</li>
+                    </ul>
+                </div>
+                <div class="leave-out__img show-tablet">
+                    <picture>
+                        <source media="(max-width:650px)" srcset="{{ 'leave-out-img-mobile.jpg' | file_url }}">
+                        <img
+                            src="{{ 'leave-out-img-tablet.jpg' | file_url }}"
+                            alt="{{ shop.name }}"
+                            fetchpriority="low"
+                            decoding="async"
+                            width="1032"
+                            height="746"
+                            loading="lazy"
+                        >
+                    </picture>
+                    
+                </div>
+                <div class="leave-out-certificates">
+                        <div class="leave-out__certificate">
+                            <img
+                                src="{{ 'buy-product-certificate-1.png' | file_url }}"
+                                alt="{{ shop.name }}"
+                                fetchpriority="low"
+                                decoding="async"
+                                width="81"
+                                height="81"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="leave-out__certificate">
+                            <img
+                                src="{{ 'buy-product-certificate-2.svg' | file_url }}"
+                                alt="{{ shop.name }}"
+                                fetchpriority="low"
+                                decoding="async"
+                                width="81"
+                                height="81"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="leave-out__certificate">
+                            <img
+                                src="{{ 'buy-product-certificate-3.svg' | file_url }}"
+                                alt="{{ shop.name }}"
+                                fetchpriority="low"
+                                decoding="async"
+                                width="81"
+                                height="81"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="leave-out__certificate">
+                            <img
+                                src="{{ 'buy-product-certificate-4.svg' | file_url }}"
+                                alt="{{ shop.name }}"
+                                fetchpriority="low"
+                                decoding="async"
+                                width="81"
+                                height="81"
+                                loading="lazy"
+                            >
+                        </div>
+                        
+                        <div class="leave-out__certificate">
+                            <img
+                                src="{{ 'buy-product-certificate-6.svg' | file_url }}"
+                                alt="{{ shop.name }}"
+                                fetchpriority="low"
+                                decoding="async"
+                                width="81"
+                                height="81"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="leave-out__certificate">
+                            <img
+                                src="{{ 'buy-product-certificate-7.svg' | file_url }}"
+                                alt="{{ shop.name }}"
+                                fetchpriority="low"
+                                decoding="async"
+                                width="91"
+                                height="55"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="leave-out__certificate">
+                            <img
+                                src="{{ 'buy-product-certificate-8.svg' | file_url }}"
+                                alt="{{ shop.name }}"
+                                fetchpriority="low"
+                                decoding="async"
+                                width="91"
+                                height="55"
+                                loading="lazy"
+                            >
+                        </div>
+                </div>
+            </div>
+            <div class="leave-out__img hide-tablet">
+                <img
+                    src="{{ 'leave-out-img.jpg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="738"
+                    height="700"
+                    loading="lazy"
+                >
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+    {
+        "name": "Leave out",
+        "class": "leave-out",
+        "settings": [
+            
+        ],
+        
+        "presets": [
+            {
+            "name": "Leave out",
+            "category": "text"
+            }
+        ]
+    
+    }
+{% endschema %}

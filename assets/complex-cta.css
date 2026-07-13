@@ -1,0 +1,180 @@
+.cta {
+  overflow: hidden;
+  padding: 5.216802168vw 0;
+  position: relative;
+}
+.cta__image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.cta__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cta__label {
+  margin-bottom: 0.7452574526vw;
+}
+.cta__title {
+  font-size: 2.4390243902vw;
+  color: var(--white-100);
+  font-weight: 600;
+  margin-bottom: 0.6775067751vw;
+}
+.cta__subtitle, .cta__description {
+  font-size: 1.2195121951vw;
+  color: var(--white-50);
+  line-height: 120%;
+  letter-spacing: 2%;
+  font-weight: 600;
+}
+.cta__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.2520325203vw;
+}
+.cta__actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.3550135501vw;
+  margin-bottom: 8.1300813008vw;
+}
+.cta__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta__option--ts .cta__button {
+  color: var(--white-100);
+  border: 0.0677506775vw solid var(--white-100);
+  background: transparent;
+}
+.cta__option--ts .cta__button:hover {
+  border: 0.0677506775vw solid transparent;
+  background-color: var(--red-100);
+}
+.cta__option--ts .cta__button svg {
+  color: var(--gray-bg-50);
+}
+.cta__button {
+  display: flex;
+  align-items: center;
+  border: 0.0677506775vw solid transparent;
+  gap: 0.406504065vw;
+  padding: 0.5420054201vw 1.0840108401vw;
+  border-radius: 0.27100271vw;
+  color: var(--black-100);
+  text-transform: uppercase;
+  font-size: 1.0840108401vw;
+  background-color: var(--red-100);
+  margin-bottom: 0.8130081301vw;
+  line-height: 120%;
+  letter-spacing: 2%;
+  text-decoration: none;
+  transition: 0.2s all ease;
+}
+.cta__button:hover {
+  color: var(--white-100);
+  border: 0.0677506775vw solid var(--white-100);
+  background: transparent;
+}
+.cta__button svg {
+  width: 1.6260162602vw;
+  height: 1.6260162602vw;
+  color: var(--black-50);
+}
+.cta__note {
+  font-size: 0.9485094851vw;
+  line-height: 120%;
+  letter-spacing: 2%;
+  color: var(--white-50);
+}
+.cta__benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3550135501vw;
+}
+.cta__benefits .cta-benefit {
+  padding: 0.7791327913vw;
+  background: var(--white-5);
+  border: 0.0677506775vw solid var(--white-20);
+  box-shadow: 0px 0.27100271vw 0.8130081301vw var(--black-20);
+  backdrop-filter: blur(0.5420054201vw);
+  border-radius: 0.5420054201vw;
+  text-align: center;
+  font-size: 1.0840108401vw;
+  line-height: 120%;
+  letter-spacing: 2%;
+  color: var(--white-100);
+}
+
+@media screen and (max-width: 651px) {
+  .cta .container {
+    padding: 0 4.0712468193vw;
+  }
+  .cta {
+    padding: 9.1603053435vw 0;
+  }
+  .cta__label {
+    font-size: 2.5445292621vw;
+    padding: 2.417302799vw 2.0356234097vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .cta__title {
+    font-size: 6.106870229vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .cta__description, .cta__subtitle {
+    text-align: center;
+    font-size: 3.5623409669vw;
+  }
+  .cta__description {
+    margin-bottom: 3.0534351145vw;
+  }
+  .cta__note {
+    font-size: 2.5445292621vw;
+  }
+  .cta__option {
+    margin-bottom: 3.3078880407vw;
+  }
+  .cta__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5267175573vw;
+  }
+  .cta__benefits .cta-benefit {
+    padding: 3.0534351145vw 0;
+    font-size: 3.0534351145vw;
+    border: 0.2544529262vw solid var(--white-20);
+    box-shadow: 0px 1.0178117048vw 3.0534351145vw var(--black-20);
+    backdrop-filter: blur(1.5267175573vw);
+    border-radius: 2.0356234097vw;
+  }
+  .cta__benefits .cta-benefit br {
+    display: none;
+  }
+  .cta__button {
+    display: flex;
+    align-items: center;
+    gap: 1.5267175573vw;
+    justify-content: center;
+    border-radius: 1.0178117048vw;
+    font-size: 3.0534351145vw;
+    padding: 2.9262086514vw;
+    width: 100%;
+    margin-bottom: 3.0534351145vw;
+  }
+  .cta__button svg {
+    width: 4.0712468193vw;
+    height: 4.0712468193vw;
+  }
+  .cta__actions {
+    margin-bottom: 5.3435114504vw;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=cta.css.map */

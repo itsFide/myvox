@@ -1,0 +1,123 @@
+{% render 'async-stylesheet', file: 'complex-cta.css' %}
+<section class="cta">
+    <div class="cta__image">
+        <picture>
+            <source srcset="{{ 'begin-protocol-one-bg.avif' |  asset_url }}" type="image/avif">
+            <img src="{{ 'begin-protocol-one-bg.webp' |  file_url }}" alt="A real timeline background" loading="lazy" decoding="async" fetchpriority="low">
+        </picture>
+    </div>
+    <div class="container">
+
+        <div class="cta__inner">
+
+            <header class="cta__header">
+
+                <span class="cta__label ts-badge">
+                    Begin Protocol One
+                </span>
+
+                <h2 class="cta__title">
+                    Two paths. Same standard
+                </h2>
+
+                <p class="cta__subtitle">
+                    Choose consistency or exploration.
+                </p>
+
+                <p class="cta__description">
+                    Both deliver the same therapeutic dosages,
+                    the same clean label,
+                    the same biological integrity.
+                </p>
+
+            </header>
+
+            <div class="cta__actions">
+
+                <div class="cta__option cta__option--red">
+
+                    <a class="button button--primary cta__button" href="#">
+                        Subscribe — $79/Month · Save 47%
+                        <svg xmlns="http://www.w3.org/2000/svg" id="icon-arrow" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M14.0479 17.6537L19.7019 11.9999L14.0479 6.34619L12.9942 7.43069L16.8134 11.2499H4.2979V12.7499H16.8134L12.9942 16.5692L14.0479 17.6537Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <p class="cta__note">
+                        Free shipping · Cancel anytime · Saves $840/yr
+
+                    </p>
+
+                </div>
+
+                <div class="cta__option cta__option--ts">
+
+                    <a class="button button--outline cta__button" href="#">
+                        Buy Once — $109 · Save 27%
+                        <svg xmlns="http://www.w3.org/2000/svg" id="icon-arrow" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M14.0479 17.6537L19.7019 11.9999L14.0479 6.34619L12.9942 7.43069L16.8134 11.2499H4.2979V12.7499H16.8134L12.9942 16.5692L14.0479 17.6537Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <p class="cta__note">
+                        60-day money-back guarantee
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="cta__benefits">
+
+                <article class="cta-benefit">
+
+                    <p class="cta-benefit__text">
+                        Api-Complex works<br>
+                        because it respects structure
+                    </p>
+
+                </article>
+
+                <article class="cta-benefit">
+
+                    <p class="cta-benefit__text">
+                        The body responds because<br>
+                        the system remains intact
+                    </p>
+
+                </article>
+
+                <article class="cta-benefit">
+
+                    <p class="cta-benefit__text">
+                        Consistency<br>
+                        completes the circuit
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Complex Cta",
+  "class": "complex-cta",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Complex Cta"
+    }
+  ]
+}
+{% endschema %}

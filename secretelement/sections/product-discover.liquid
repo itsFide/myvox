@@ -1,0 +1,120 @@
+
+{{ 'product-discover.css' | asset_url | stylesheet_tag}}
+<section class="discover">
+    <div class="container">
+        <div class="discover__inner">
+            <h2 class="discover__title title">Discover the Ingredients Behind Your Path to Health!</h2>
+            <div class="discover__descr">Our Secret Element Citrus Bergamot is crafted from carefully selected, high-quality ingredients to provide maximum health benefits. The product includes:</div>
+            <div class="discover-items">
+                <div class="discover-item">
+                    <div class="discover-item-top">
+                        <div class="discover-item__img">
+                            <picture>
+                                <source media="(max-width:650px)" srcset="{{ "discover-img-1-tablet.png" |  file_url }}">
+                                <source media="(max-width:1024px)" srcset="{{ "discover-img-1-tablet.png" |  file_url }}">
+                                <img 
+                                    src="{{ "discover-img-1.png" |  file_url }}" 
+                                    alt="Problems img"
+                                    width="250"
+                                    height="183"
+                                    fetchpriority="low"
+                                    decoding="async"
+                                >
+                            </picture>
+                        </div>
+                        <div class="discover-item-text">
+                            <div class="discover-item__name">Citrus Bergamot Extract 5:1 (Fruit)</div>
+                            <div class="discover-item__descr">
+                                Standardized to 40% polyphenolic flavanones, this powerful ingredient helps lower bad cholesterol (LDL), raise good cholesterol (HDL), regulate blood sugar levels, and reduce inflammation.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="discover-item-tags">
+                        <div class="discover-item__tag">Lowers LDL cholesterol</div>
+                        <div class="discover-item__tag">Reduces inflammation</div>
+                        <div class="discover-item__tag">Regulates blood sugar levels</div>
+                    </div>
+                </div>
+                <div class="discover-item">
+                    <div class="discover-item-top">
+                        <div class="discover-item__img">
+                            <picture>
+                                <source media="(max-width:650px)" srcset="{{ "discover-img-2-tablet.png" |  file_url }}">
+                                <source media="(max-width:1024px)" srcset="{{ "discover-img-2-tablet.png" |  file_url }}">
+                                <img 
+                                    src="{{ "discover-img-2.png" |  file_url }}" 
+                                    alt="Problems img"
+                                    width="250"
+                                    height="183"
+                                    fetchpriority="low"
+                                    decoding="async"
+                                >
+                            </picture>
+                        </div>
+                        <div class="discover-item-text">
+                            <div class="discover-item__name">Naringin and Neohesperidin</div>
+                            <div class="discover-item__descr">
+                                Powerful antioxidants found in bergamot that protect your body's cells from free radical damage, promoting overall health improvement.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="discover-item-tags">
+                        <div class="discover-item__tag">Powerful antioxidants</div>
+                        <div class="discover-item__tag">Promote overall health</div>
+                        <div class="discover-item__tag">Protect cells from free radicals</div>
+                    </div>
+                </div>
+                <div class="discover-item">
+                    <div class="discover-item-top">
+                        <div class="discover-item__img">
+                            <picture>
+                                <source media="(max-width:650px)" srcset="{{ "discover-img-3-tablet.png" |  file_url }}">
+                                <source media="(max-width:1024px)" srcset="{{ "discover-img-3-tablet.png" |  file_url }}">
+                                <img 
+                                    src="{{ "discover-img-3.png" |  file_url }}" 
+                                    alt="Problems img"
+                                    width="250"
+                                    height="183"
+                                    fetchpriority="low"
+                                    decoding="async"
+                                >
+                            </picture>
+                        </div>
+                        <div class="discover-item-text">
+                            <div class="discover-item__name">Brutieridin and Melitidin</div>
+                            <div class="discover-item__descr">
+                                Natural flavonoids with anti-inflammatory properties that help reduce inflammation in the body, enhancing well-being and lowering the risk of chronic diseases.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="discover-item-tags">
+                        <div class="discover-item__tag">Lower chronic disease risk</div>
+                        <div class="discover-item__tag">Reduce inflammation</div>
+                        <div class="discover-item__tag">Anti-inflammatory flavonoids</div>
+                    </div>
+                </div>
+            </div>
+            <button class="discover__btn btn">Try Today – Save Up to 50%</button>
+        </div>
+    </div>
+</section>
+{% schema %}
+    {
+        "name": "Product discover",
+        "class": "product-discover",
+        "settings": [
+            
+        ],
+        
+        "presets": [
+            {
+            "name": "Product discover",
+            "category": "text"
+            }
+        ]
+    
+    }
+{% endschema %}

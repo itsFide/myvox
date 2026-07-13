@@ -1,0 +1,167 @@
+{{ 'article-template.css' | asset_url | stylesheet_tag }}
+<section class="article">
+    <div class="container">
+        <div class="article__inner">
+            <aside class="blog-popular">
+                <h2 class="blog-popular__title">popular</h2>
+                <div class="blog-popular-items">
+                    {% for article in blogs.all-articles.articles %}
+                        {% assign base_url = shop.url %}
+                        {% assign article_url = article.url %}
+                        {% if forloop.index < 5 %}
+                            <a href="{{ base_url }}{{ article_url }}" class="blog-popular-item">
+                                {{ article.title }}
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </aside>
+            <div class="article__wrapper">
+                <div class="article-actions">
+                    <a href="/pages/blog" class="article-back">
+                        <img 
+                        src="{{ "article-back-icon.svg" |  file_url }}" 
+                        alt=""
+                        width="24"
+                        height="24"
+                        fetchpriority="low"
+                        decoding="async"
+                        >
+                        Back
+                    </a>
+                    <div class="blog-item-date">
+                        <div class="blog-item-date__icon">
+                            <img 
+                            src="{{ "blog-date-icon.svg" |  file_url }}" 
+                            alt=""
+                            width="20"
+                            height="20"
+                            fetchpriority="low"
+                            decoding="async"
+                            >
+                        </div>
+                        <div class="blog-item-date__info">{{ article.published_at | date: "%B %e, %Y" }}</div>
+                    </div>
+                    <div class="blog-item-time">
+                        <div class="blog-item-time__icon">
+                            <img 
+                            src="{{ "blog-time-icon.svg" |  file_url }}" 
+                            alt=""
+                            width="20"
+                            height="20"
+                            fetchpriority="low"
+                            decoding="async"
+                            >
+                        </div>
+                        {% assign published_date = article.published_at | date: "%Y-%m-%dT%H:%M:%SZ" %}
+                        <div data-published="{{ published_date }}" class="blog-item-time__info timeago"></div>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article__left">
+                        <h2 class="title article__title">{{ article.title }}</h2>
+                        {% assign description_parts = article.content | split: ' ' %}
+                        {% assign midpoint = description_parts.size | divided_by: 2 | round %}
+                        {% assign first_half = description_parts | slice: 0, midpoint %}
+                        {% assign second_half = description_parts | slice: midpoint, description_parts.size %}
+                        <div class="article-descr">
+                            {% comment %} {{ article.content }} {% endcomment %}
+                            {{ first_half | join: ' ' }}
+                            <div class="show-mobile article-products">
+                                <div class="article-product">
+                                    <div class="article-product__img">
+                                        <img 
+                                        src="{{ "article-product-img-2.jpg" |  file_url }}" 
+                                        alt=""
+                                        width="282"
+                                        height="272"
+                                        fetchpriority="low"
+                                        decoding="async"
+                                        >
+                                    </div>
+                                    <a href="/products/ecowise-creatine-hcl-gummies" class="btn article-product__btn">shop now</a>
+                                </div>
+                                <div class="article-product">
+                                    <div class="article-product__img">
+                                        <img 
+                                        src="{{ "article-product-img-2.jpg" |  file_url }}" 
+                                        alt=""
+                                        width="282"
+                                        height="272"
+                                        fetchpriority="low"
+                                        decoding="async"
+                                        >
+                                    </div>
+                                    <a href="/products/ecowise-creatine-hcl-gummies" class="btn article-product__btn">shop now</a>
+                                </div>
+                            </div>
+                            {{ second_half | join: ' ' }}
+                        </div>
+                    </div>
+                    <div class="article-products hide-mobile">
+                        <div class="article-product">
+                            <div class="article-product__img">
+                                <img 
+                                src="{{ "article-product-img-2.jpg" |  file_url }}" 
+                                alt=""
+                                width="282"
+                                height="272"
+                                fetchpriority="low"
+                                decoding="async"
+                                >
+                            </div>
+                            <a href="/products/ecowise-creatine-hcl-gummies" class="btn article-product__btn">shop now</a>
+                        </div>
+                        <div class="article-product">
+                            <div class="article-product__img">
+                                <img 
+                                src="{{ "article-product-img-2.jpg" |  file_url }}" 
+                                alt=""
+                                width="282"
+                                height="272"
+                                fetchpriority="low"
+                                decoding="async"
+                                >
+                            </div>
+                            <a href="/products/ecowise-monohydrate-gummies" class="btn article-product__btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Функция для расчета времени с момента публикации
+    function timeAgo(date) {
+      const now = new Date();
+      const publishedDate = new Date(date);
+      const seconds = Math.floor((now - publishedDate) / 1000);
+      const minutes = Math.floor(seconds / 60);
+      const hours = Math.floor(minutes / 60);
+      const days = Math.floor(hours / 24);
+      
+      if (seconds < 60) {
+        return `${seconds} seconds ago`;
+      } else if (minutes < 60) {
+        return `${minutes} minutes ago`;
+      } else if (hours < 24) {
+        return `${hours} hours ago`;
+      } else {
+        return `${days} days ago`;
+      }
+    }
+
+    // Получите все элементы с классом "timeago"
+    const timeElements = document.querySelectorAll('.timeago');
+    timeElements.forEach(function(element) {
+      const publishedDate = element.getAttribute('data-published');
+      element.textContent = timeAgo(publishedDate);
+    });
+
+    
+  });
+
+
+</script>

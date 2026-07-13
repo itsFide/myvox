@@ -1,0 +1,64 @@
+{{ 'main-page-supplements.css' | asset_url | stylesheet_tag}}
+<section class="supplements">
+    <div class="container">
+        <div class="supplements__inner">
+            <div class="supplements__img hide-tablet">
+                <img 
+                    src="{{ "main-page-supplements-img.jpg" |  file_url }}" 
+                    alt="Problems img"
+                    width="593"
+                    height="700"
+                    fetchpriority="low"
+                    decoding="async"
+                    loading="lazy"
+                >
+            </div>
+            <div class="supplements__text">
+                <h2 class="title supplements__title">Natural Supplements for Your Health and the Planet</h2>
+                <p class="supplements__descr">We focus on providing high-quality, natural ingredients to support your well-being and protect the environment.</p>
+                <div class="supplements__img show-tablet">
+                    <picture>
+                        <source media="(max-width:650px)" srcset="{{ "main-page-supplements-img-mobile.jpg" |  file_url }}">
+                        <img 
+                            src="{{ "main-page-supplements-img-tablet.jpg" |  file_url }}" 
+                            alt="Problems img"
+                            width="593"
+                            height="700"
+                            fetchpriority="low"
+                            decoding="async"
+                            loading="lazy"
+                        >
+                    </picture>
+                    
+                </div>
+                <ul class="supplements-list land-list">
+                    <li>100% natural ingredients from trusted U.S. suppliers</li>
+                    <li>Wild-harvested plants with no synthetic fertilizers</li>
+                    <li>Non-GMO, gluten-free, and free from artificial additives</li>
+                    <li>No synthetic fillers in any of our products</li>
+                    <li>Convenient, easy-to-take capsule form</li>
+                </ul>
+                <a href="#product-list" class="supplements__btn btn-green">Try our bestsellers</a>
+            </div>
+        </div>
+    </div>
+  
+</section>
+
+{% schema %}
+    {
+        "name": "Main page supplements",
+        "class": "main-page-supplements",
+        "settings": [
+            
+        ],
+        
+        "presets": [
+            {
+            "name": "Main page supplements",
+            "category": "text"
+            }
+        ]
+    
+    }
+{% endschema %}

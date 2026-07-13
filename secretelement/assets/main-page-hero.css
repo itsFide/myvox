@@ -1,0 +1,100 @@
+.hero{
+    background-image: url('https://cdn.shopify.com/s/files/1/0881/1564/2652/files/SE_Website_BG_New_1.png?v=1747650928');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero__inner{
+    padding-top: 168px;
+    padding-bottom: 220px;
+}
+.hero__descr{
+    margin-top: 18px;
+    font-size: 20px;
+    line-height: 140%;
+    width: 89%;
+    color: var(--gray);
+}
+.hero__btn{
+    margin-top: 46px;
+    padding: 23px 67px;
+    width: max-content;
+    text-align: center;
+}
+.hero__text{
+    width: 44%;
+    margin-left: 176px;
+}
+.hero__title{
+    color: #292929;
+}
+@media screen and (max-width:1919px) {
+    .hero__inner{
+        padding-top: 8.75vw;
+        padding-bottom: 11.458vw;
+    }
+    .hero__descr{
+        margin-top: 0.938vw;
+        font-size: 1.042vw;
+    }
+    .hero__btn{
+        margin-top: 2.396vw;
+        padding: 1.198vw 3.49vw;
+    }
+    .hero__text{
+        margin-left: 9.167vw;
+    }
+}
+@media screen and (max-width:1024px) {
+    .hero{
+        background-image: url('https://cdn.shopify.com/s/files/1/0881/1564/2652/files/se-hero-bg-tablet.jpg?v=1729377953');
+    }
+    .hero__inner{
+        padding-top: 6.51vw;
+        padding-bottom: 90.234vw;
+    }
+    .hero__title{
+        text-align: center;
+    }
+    .hero__descr{
+        margin-top: 2.344vw;
+        font-size: 2.604vw;
+        width: 100%;
+    }
+    .hero__btn{
+        margin-top: 5.208vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.995vw 8.724vw;
+    }
+    .hero__text{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width:650px){
+    .hero{
+        background-image: url('https://cdn.shopify.com/s/files/1/0881/1564/2652/files/se-hero-bg-mobile.jpg?v=1729378265');
+    }
+    .hero__inner{
+        padding-top: 6.667vw;
+        padding-bottom: 18.056vw;
+    }
+    .hero__title{
+        width: 88.889vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero__descr{
+        margin-top: 5vw;
+        font-size: 4.444vw;
+    }
+    .hero__btn{
+        margin-top: 101.389vw;
+        padding: 5.417vw;
+        width: 100%;
+    }
+    .hero__title {
+        font-size: 8.333vw;
+    }
+} 

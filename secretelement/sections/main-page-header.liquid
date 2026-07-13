@@ -1,0 +1,63 @@
+{{ 'header.css' | asset_url | stylesheet_tag }}
+<style>
+    header{
+        display: none !important;
+    }
+    header.main-page-header{
+        display: block !important;
+    }
+    .header__inner{
+        justify-content: center;
+    }
+    @media screen and (max-width:1024px) {
+        .header__logo{
+            transform: translate(0);
+        }
+    }
+</style>
+<header class="header main-page-header">
+  <div class="container-header">
+    <div class="header__inner">
+      
+      <div class="header__logo">
+        <!-- Логотип -->
+        {% if section.settings.new_logo_img %}
+          <a href="/">
+            <img src="{{ section.settings.new_logo_img | img_url: 'master' }}" alt="Secret Element Logo">
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  
+
+  
+</header>
+
+{% schema %}
+{
+    "name": "Main page Header",
+    "class": "header-section",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "new_logo_img",
+            "label": "Landing page logo"
+        },
+        {
+            "type": "link_list",
+            "id": "new-menu",
+            "default": "main-menu",
+            "label": "Menu"
+        }
+    ],
+    
+    "presets": [
+        {
+        "name": "Header",
+        "category": "text"
+        }
+    ]
+
+}
+{% endschema %}

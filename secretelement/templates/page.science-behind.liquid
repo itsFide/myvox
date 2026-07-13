@@ -1,0 +1,951 @@
+{{  'science-behind.css' | asset_url | stylesheet_tag }}
+<section class="hero">
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__text">
+                <h1 class="hero__title title">THE CLEAN + CLINICAL DIFFERENCE</h1>
+                <p class="hero__descr">We make supplements for people that expect more. That includes unparalleled clean standards, clinical research to demonstrate efficacy of our products and meticulous sourcing of ingredients and sustainable packaging.</p>
+            </div>
+            <div class="hero__img">
+                <picture>
+                    <source media="(max-width: 650px)" srcset="{{ 'se-science-hero-img-mobile.png' | file_url }}">
+                    <source media="(max-width: 1024px)" srcset="{{ 'se-science-hero-img-tablet.png' | file_url }}">
+                    <img
+                        src="{{ 'se-science-hero-img.png' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="973"
+                        height="761"
+                        loading="lazy"
+                    >
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="perfect">
+    <div class="container">
+        <div class="perfect__inner">
+            <div class="perfect__img hide-tablet">
+                <picture>
+                    <img
+                        src="{{ 'perfect-img.png' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="697"
+                        height="638"
+                        loading="lazy"
+                    >
+                </picture>
+            </div>
+            <div class="perfect__text">
+                <h2 class="perfect__title title">THE PERFECT DOSE</h2>
+                <p class="perfect__descr">
+                    The amount and type of each ingredient make all the difference in getting the results you want. Our products are formulated with clinically-tested actives. These are ingredients that we include in the exact amount that have shown efficacy in gold standard clinical trials in humans.
+                    <br><br>
+                    In addition, we also conduct clinical research on select final formulas. For product specific information consult the clinical research section of each product.
+                </p>
+                <div class="perfect__img show-tablet">
+                <picture>
+                        <source media="(max-width: 650px)" srcset="{{ 'perfect-img-mobile.png' | file_url }}">
+                        <source media="(max-width: 1024px)" srcset="{{ 'perfect-img-tablet.png' | file_url }}">
+                        <img
+                            src="{{ 'perfect-img.png' | file_url }}"
+                            alt="{{ shop.name }}"
+                            fetchpriority="low"
+                            decoding="async"
+                            width="697"
+                            height="638"
+                            loading="lazy"
+                        >
+                    </picture>
+                </div>
+                <a href="#product-list" class="perfect__btn btn-green">Try Today – Save Up to 50%</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="fluff">
+    <div class="container">
+        <div class="fluff__inner">
+            <h2 class="title fluff__title text-center">what better means to us</h2>
+            <p class="fluff__subtitle text-center">We collaborated with the best scientists to create delicious gummy vitamins and supplements using clinically-backed ingredients and botanicals that help you to live a fuller, more balanced life.</p>
+            <div class="fluff-items">
+                <div class="fluff-item">
+                    <div class="fluff-item__icon">
+                        <img src="{{ "se-fluff-1.svg" |  file_url }}"
+                        width="71"
+                        height="73"
+                        alt="">
+                    </div>
+                    <div class="fluff-item__name">
+                        Verified Clean Ingredients
+                    </div>
+                </div>
+                <div class="fluff-item">
+                    <div class="fluff-item__icon">
+                        <img src="{{ "se-fluff-2.svg" |  file_url }}"
+                        width="71"
+                        height="73"
+                        alt="">
+                    </div>
+                    <div class="fluff-item__name">
+                        Clinically Tested Actives
+                    </div>
+                </div>
+                <div class="fluff-item">
+                    <div class="fluff-item__icon">
+                        <img src="{{ "se-fluff-3.svg" |  file_url }}"
+                        width="71"
+                        height="73"
+                        alt="">
+                    </div>
+                    <div class="fluff-item__name">
+                        3rd party tested for purity & potency 
+                    </div>
+                </div>
+                <div class="fluff-item">
+                    <div class="fluff-item__icon">
+                        <img src="{{ "se-fluff-4.svg" |  file_url }}"
+                        width="71"
+                        height="73"
+                        alt="">
+                    </div>
+                    <div class="fluff-item__name">
+                        Formulated by RD Nutritionists
+                    </div>
+                </div>
+                <div class="fluff-item">
+                    <div class="fluff-item__icon">
+                        <img src="{{ "se-fluff-5.svg" |  file_url }}"
+                        width="71"
+                        height="73"
+                        alt="">
+                    </div>
+                    <div class="fluff-item__name">
+                        ZERO: toxins, colors, harmful additives
+                    </div>
+                </div>
+            </div>
+            <a href="/pages/about-us" class="btn-green fluff__btn">Learn more</a>
+            {% comment %} <button href="#" class="btn-green fluff__btn show-tablet scroll-btn">Try Today – Save Up to 50%</button> {% endcomment %}
+        </div>
+    </div>
+</section>
+
+<section id="product-list" class="combine pt-70">
+    <div class="container">
+        <div class="combine__inner">
+            <h2 class="title text-center combine__title">validated by clinical research</h2>
+            <!-- Slider main container -->
+            <div class=" swiper combineSlider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "se-combine-1.png" |  file_url }}"
+                            width="275" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.8</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count"> 1,207 review</div>
+                        </div>
+                        <div class="combine-item__title">Sea Moss + <br>
+                            Black Seed
+                        </div>
+                        <div class="combine-item__descr">Good For: Energy | Circulatory system</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390027899164">
+                            <a href="/products/secret-element-sea-moss-black-seed-oil" class="btn-green combine-item-btn">
+                                Shop Now  -  $33.00
+                            </a>
+                            {% comment %} <a href="/products/secret-element-sea-moss-black-seed-oil" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+                    <div class="swiper-slide combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "se-combine-2.png" |  file_url }}"
+                            width="275" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.9</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count">1,211 review</div>
+                        </div>
+                        <div class="combine-item__title">Sea Moss <br>
+                            capsules
+                        </div>
+                        <div class="combine-item__descr">Good For: Detox | Thryroid | Skin</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390061322524">
+                            <a href="/products/secret-element-sea-moss" class="btn-green combine-item-btn">
+                                Shop Now  -  $32.00
+                            </a>
+                            {% comment %} <a href="/products/secret-element-sea-moss" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+                    <div class="swiper-slide combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "magnesium-gummies-img.png" |  file_url }}"
+                            width="270" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.8</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count">1,117 review</div>
+                        </div>
+                        <div class="combine-item__title">Magnesium <br>
+                            Gummies
+                        </div>
+                        <div class="combine-item__descr">Good For: Nerve | Muscle | Sleep</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390027899164">
+                            <a href="/products/secret-element-magnesium-gummies" class="btn-green combine-item-btn">
+                                Shop Now  -  $30.00
+                            </a>
+                            {% comment %} <a href="/products/secret-element-magnesium-gummies" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+                    
+
+                    <div class="swiper-slide combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "se-combine-5.png" |  file_url }}"
+                            width="270" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.8</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count"> 1,357  review</div>
+                        </div>
+                        <div class="combine-item__title">Citrus Bergamot <br>
+                            capsules
+                        </div>
+                        <div class="combine-item__descr">Good For: Heart | Skin | Joint</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390027899164">
+                            <a href="/products/citrus-bergamot" class="btn-green combine-item-btn">
+                                Shop Now  -  $30.00
+                            </a>
+                            {% comment %} <a href="/products/citrus-bergamot" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "header-product-3.png" |  file_url }}"
+                            width="270" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.8</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count"> 1,254 review</div>
+                        </div>
+                        <div class="combine-item__title">Berberine Secret Element Capsules
+
+                        </div>
+                        <div class="combine-item__descr">Good For: Heart | Skin | Joint</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390027899164">
+                            <a href="/products/secret-element-berberine" class="btn-green combine-item-btn">
+                                Shop Now  -  $32.00
+                            </a>
+                            {% comment %} <a href="/products/secret-element-berberine" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+                    
+                   
+
+                    <div class="swiper-slide combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "magnesium-capsules-header-img.png" |  file_url }}"
+                            width="270" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.8</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count">1,078 review</div>
+                        </div>
+                        <div class="combine-item__title">Magnesium Glycinate
+                            Capsules
+
+                        </div>
+                        <div class="combine-item__descr">Good For: Peaceful rest | Bright mood</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390027899164">
+                            <a href="/products/secret-element-magnesium-glycinate-capsules" class="btn-green combine-item-btn">
+                                Shop Now  -  $26.00
+                            </a>
+                            {% comment %} <a href="/products/shilajit-ashwagandha-capsuls" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="combine-bottom show-tablet">
+                    <img class="combine-button-prev" src="{{ "se-arrow-left.svg" |  file_url }}" width="40px" height="16"   alt="">
+                    <div class="show-tablet combine-pagination swiper-pagination"></div>
+                    <img class="combine-button-next" src="{{ "se-arrow-right.svg" |  file_url }}" width="40px" height="16"   alt="">
+                </div>
+            
+                
+                
+            </div>
+            <!-- If we need navigation buttons -->
+         
+            <div class="combine-button combine-button-prev combine-button-prev-2 swiper-button-prev">
+                                    
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="23.5" transform="rotate(-180 24 24)" stroke="#292929"/>
+                <path d="M30 24.7C30.3866 24.7 30.7 24.3866 30.7 24C30.7 23.6134 30.3866 23.3 30 23.3L30 24.7ZM17.505 23.505C17.2317 23.7784 17.2317 24.2216 17.505 24.495L21.9598 28.9497C22.2332 29.2231 22.6764 29.2231 22.9497 28.9497C23.2231 28.6764 23.2231 28.2332 22.9497 27.9598L18.9899 24L22.9497 20.0402C23.2231 19.7668 23.2231 19.3236 22.9497 19.0503C22.6764 18.7769 22.2332 18.7769 21.9598 19.0503L17.505 23.505ZM30 23.3L18 23.3L18 24.7L30 24.7L30 23.3Z" fill="#292929"/>
+                </svg>
+            </div>
+            <div class="combine-button combine-button-next combine-button-next-2 swiper-button-next">
+                
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="23.5" stroke="#292929"/>
+                <path d="M18 23.3C17.6134 23.3 17.3 23.6134 17.3 24C17.3 24.3866 17.6134 24.7 18 24.7L18 23.3ZM30.495 24.495C30.7683 24.2216 30.7683 23.7784 30.495 23.505L26.0402 19.0503C25.7668 18.7769 25.3236 18.7769 25.0503 19.0503C24.7769 19.3236 24.7769 19.7668 25.0503 20.0402L29.0101 24L25.0503 27.9598C24.7769 28.2332 24.7769 28.6764 25.0503 28.9497C25.3236 29.2231 25.7668 29.2231 26.0402 28.9497L30.495 24.495ZM18 24.7L30 24.7L30 23.3L18 23.3L18 24.7Z" fill="#292929"/>
+                </svg>
+            </div>
+        
+
+            <div class="show-mobile combine-items">
+                    <div class="combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "se-combine-1.png" |  file_url }}"
+                            width="275" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.8</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count"> 1,207 review</div>
+                        </div>
+                        <div class="combine-item__title">Sea Moss + <br>
+                            Black Seed
+                        </div>
+                        <div class="combine-item__descr">Good For: Energy | Circulatory system</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390027899164">
+                            <a href="/products/secret-element-sea-moss-black-seed-oil" class="btn-green combine-item-btn">
+                                Shop Now  -  $48.00
+                            </a>
+                            {% comment %} <a href="/products/secret-element-sea-moss-black-seed-oil" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+                    <div class="combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "se-combine-2.png" |  file_url }}"
+                            width="275" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.9</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count"> 1,211 review</div>
+                        </div>
+                        <div class="combine-item__title">Sea Moss <br>
+                            capsules
+                        </div>
+                        <div class="combine-item__descr">Good For: Detox | Thryroid | Skin</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390061322524">
+                            <a href="/products/secret-element-sea-moss" class="btn-green combine-item-btn">
+                                Shop Now  -  $45.00
+                            </a>
+                            {% comment %} <a href="/products/secret-element-sea-moss" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+                    
+                    <div class="combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "magnesium-gummies-img.png" |  file_url }}"
+                            width="270" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.8</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count">1,117 review</div>
+                        </div>
+                        <div class="combine-item__title">Magnesium <br>
+                            Gummies
+                        </div>
+                        <div class="combine-item__descr">Good For: Nerve | Muscle | Sleep</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390027899164">
+                            <a href="/products/secret-element-magnesium-gummies" class="btn-green combine-item-btn">
+                                Shop Now  -  $45.00
+                            </a>
+                            {% comment %} <a href="/products/secret-element-magnesium-gummies" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+                    
+
+                    <div class="combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "se-combine-5.png" |  file_url }}"
+                            width="270" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.8</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count"> 1,357  review</div>
+                        </div>
+                        <div class="combine-item__title">Citrus Bergamot <br>
+                            capsules
+                        </div>
+                        <div class="combine-item__descr">Good For: Heart | Skin | Joint</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390027899164">
+                            <a href="/products/citrus-bergamot" class="btn-green combine-item-btn">
+                                Shop Now  -  $43.00
+                            </a>
+                            {% comment %} <a href="/products/citrus-bergamot" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+
+                    <div class="combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "header-product-3.png" |  file_url }}"
+                            width="270" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.8</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count"> 1,254 review</div>
+                        </div>
+                        <div class="combine-item__title">Berberine Secret Element Capsules
+
+                        </div>
+                        <div class="combine-item__descr">Good For: Heart | Skin | Joint</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390027899164">
+                            <a href="/products/secret-element-berberine" class="btn-green combine-item-btn">
+                                Shop Now  -  $45.00
+                            </a>
+                            {% comment %} <a href="/products/secret-element-berberine" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+                    
+                
+
+                    <div class="combine-item">
+                        <div class="combine-item__img">
+                            <img src="{{ "magnesium-capsules-header-img.png" |  file_url }}"
+                            width="270" 
+                            height="275"
+                            />
+                        </div>
+                        <div class="combine-item__reviews">
+                            <div class="combine-item-stars">
+                                <img src="{{ "bergamot-stars.svg" |  file_url }}" width="97" height="13"/>
+                                <p>4.8</p>
+                            </div>
+                            <span> | </span>
+                            <div class="combine-item__count">1,078 review</div>
+                        </div>
+                        <div class="combine-item__title">Magnesium Glycinate
+                            Capsules
+
+                        </div>
+                        <div class="combine-item__descr">Good For: Peaceful rest | Bright mood</div>
+                        <div class="combine-item__buy">
+                            <input type="hidden" name="id" value="49390027899164">
+                            <a href="/products/secret-element-magnesium-glycinate-capsules" class="btn-green combine-item-btn">
+                                Shop Now  -  $35.00
+                            </a>
+                            {% comment %} <a href="/products/shilajit-ashwagandha-capsuls" class="combine-item__cart">
+                                
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#292929"/>
+                                <path d="M23.3912 20.3347L21.8002 22.4825C21.4851 22.908 21.3276 23.1207 21.3312 23.2987C21.3344 23.4537 21.4061 23.599 21.5267 23.6945C21.6651 23.8043 21.9278 23.8043 22.453 23.8043H37.547C38.0722 23.8043 38.3348 23.8043 38.4733 23.6945C38.5938 23.599 38.6656 23.4537 38.6687 23.2987C38.6724 23.1207 38.5148 22.908 38.1997 22.4825L36.6087 20.3347M23.3912 20.3347C23.5707 20.0924 23.6605 19.9712 23.7742 19.8838C23.875 19.8064 23.989 19.7487 24.1106 19.7135C24.2479 19.6738 24.3975 19.6738 24.6967 19.6738H35.3033C35.6024 19.6738 35.752 19.6738 35.8893 19.7135C36.0109 19.7487 36.125 19.8064 36.2258 19.8838C36.3395 19.9712 36.4292 20.0924 36.6087 20.3347M23.3912 20.3347L21.4739 22.9231C21.2317 23.2501 21.1106 23.4135 21.0246 23.5936C20.9483 23.7533 20.8927 23.9223 20.8591 24.0965C20.8212 24.2927 20.8212 24.4971 20.8212 24.9057V37.0218C20.8212 38.1784 20.8212 38.7568 21.0435 39.1985C21.239 39.5871 21.5511 39.9031 21.9349 40.101C22.3712 40.3261 22.9424 40.3261 24.0847 40.3261H35.9152C37.0576 40.3261 37.6288 40.3261 38.0651 40.101C38.4489 39.9031 38.7609 39.5871 38.9565 39.1985C39.1788 38.7568 39.1788 38.1784 39.1788 37.0218V24.9058C39.1788 24.4971 39.1788 24.2927 39.1408 24.0965C39.1073 23.9223 39.0516 23.7533 38.9753 23.5936C38.8893 23.4135 38.7683 23.2501 38.5261 22.9231L36.6087 20.3347M34.0794 27.9348C34.0794 29.0303 33.6497 30.0808 32.8846 30.8554C32.1196 31.6301 31.082 32.0652 30 32.0652C28.918 32.0652 27.8804 31.6301 27.1154 30.8554C26.3503 30.0808 25.9205 29.0303 25.9205 27.9348" stroke="#292929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </a> {% endcomment %}
+                        </div>
+                    </div>
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tricky">
+    <div class="container">
+        <div class="tricky__inner">
+            <div class="tricky__img">
+                <picture>
+                    <source media="(max-width: 650px)" srcset="{{ 'science-tricky-new-mobile.jpg' | file_url }}">
+                    <source media="(max-width: 1024px)" srcset="{{ 'science-tricky-new-tablet.jpg' | file_url }}">
+                    <img
+                        src="{{ 'science-tricky-new.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="586"
+                        height="700"
+                        loading="lazy"
+                    >
+                </picture>
+
+                <div class="leave-out-certificates show-tablet">
+                    <div class="leave-out__certificate">
+                        <img
+                            src="{{ 'buy-product-certificate-1.png' | file_url }}"
+                            alt="{{ shop.name }}"
+                            fetchpriority="low"
+                            decoding="async"
+                            width="81"
+                            height="81"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="leave-out__certificate">
+                        <img
+                            src="{{ 'buy-product-certificate-2.svg' | file_url }}"
+                            alt="{{ shop.name }}"
+                            fetchpriority="low"
+                            decoding="async"
+                            width="81"
+                            height="81"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="leave-out__certificate">
+                        <img
+                            src="{{ 'buy-product-certificate-3.svg' | file_url }}"
+                            alt="{{ shop.name }}"
+                            fetchpriority="low"
+                            decoding="async"
+                            width="81"
+                            height="81"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="leave-out__certificate">
+                        <img
+                            src="{{ 'buy-product-certificate-4.svg' | file_url }}"
+                            alt="{{ shop.name }}"
+                            fetchpriority="low"
+                            decoding="async"
+                            width="81"
+                            height="81"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="leave-out__certificate">
+                        <img
+                            src="{{ 'buy-product-certificate-6.svg' | file_url }}"
+                            alt="{{ shop.name }}"
+                            fetchpriority="low"
+                            decoding="async"
+                            width="81"
+                            height="81"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="leave-out__certificate">
+                        <img
+                            src="{{ 'buy-product-certificate-7.svg' | file_url }}"
+                            alt="{{ shop.name }}"
+                            fetchpriority="low"
+                            decoding="async"
+                            width="91"
+                            height="55"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="leave-out__certificate">
+                        <img
+                            src="{{ 'buy-product-certificate-8.svg' | file_url }}"
+                            alt="{{ shop.name }}"
+                            fetchpriority="low"
+                            decoding="async"
+                            width="91"
+                            height="55"
+                            loading="lazy"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="tricky__text">
+                <h2 class="tricky__title title">
+                    the tricky 12
+                </h2>
+                <p class="tricky__descr">What we leave out of our gummies is just as important as what’s in them. 
+                    You’ll never find any of the following 12 ingredients in EcoWise supplements – that’s our promise and our commitment to quality.
+                </p>
+                <div class="tricky-lists">
+                    <ul>
+                        <li>Artificial Preservatives</li>
+                        <li>Artificial Flavors</li>
+                        <li>Magnesium Silicate</li>
+                        <li>High-Fructose</li>
+                    </ul>
+                    <ul>
+                        <li>Artificial Colors</li>
+                        <li>Shellac</li>
+                        <li>Titanium Dioxide</li>
+                        <li>Artificial Sweeteners</li>
+                    </ul>
+                    <ul>
+                        <li>Talc</li>
+                        <li>EDTA & Derivatives</li>
+                        <li>Pharmaceutical Glaze</li>
+                        <li>Hydrogenated Oils</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="scrolling scrolling-1">
+    <div class="scrolling__items scrolling__items--to-left">
+        <div class="scrolling-items__item">
+            <span class="line-icon">
+                <div class="line-icon-item">
+                    <img 
+                        src="{{ "scroll-icon-1.svg" |  file_url }}" 
+                        alt="Problems img"
+                        width="42"
+                        height="42"
+                        fetchpriority="low"
+                        decoding="async"
+                    >
+                </div>
+                <span class="line-icon__text gradient-2">Made with natural ingredients</span>
+            </span>
+            <span class="line-icon">
+                <div class="line-icon-item">
+                    <img 
+                        src="{{ "scroll-icon-2.png" |  file_url }}" 
+                        alt="Problems img"
+                        width="42"
+                        height="42"
+                        fetchpriority="low"
+                        decoding="async"
+                    >
+                </div>
+                <span class="line-icon__text gradient-2">Gluten-free</span>
+            </span>
+            <span class="line-icon">
+                <div class="line-icon-item">
+                    <img 
+                        src="{{ "scroll-icon-3.png" |  file_url }}" 
+                        alt="Problems img"
+                        width="42"
+                        height="42"
+                        fetchpriority="low"
+                        decoding="async"
+                    >
+                </div>
+                <span class="line-icon__text gradient-2">Non GMO</span>
+            </span>
+            <span class="line-icon">
+                <div class="line-icon-item">
+                    <img 
+                        src="{{ "scroll-icon-4.svg" |  file_url }}" 
+                        alt="Problems img"
+                        width="42"
+                        height="42"
+                        fetchpriority="low"
+                        decoding="async"
+                    >
+                </div>
+                <span class="line-icon__text gradient-2">Superior formula</span>
+            </span>
+            <span class="line-icon">
+                <div class="line-icon-item">
+                    <img 
+                        src="{{ "scroll-icon-5.png" |  file_url }}" 
+                        alt="Problems img"
+                        width="42"
+                        height="42"
+                        fetchpriority="low"
+                        decoding="async"
+                    >
+                </div>
+                <span class="line-icon__text gradient-2">100% Organic</span>
+            </span>
+            <span class="line-icon">
+                <div class="line-icon-item">
+                    <img 
+                        src="{{ "scroll-icon-6.svg" |  file_url }}" 
+                        alt="Problems img"
+                        width="42"
+                        height="42"
+                        fetchpriority="low"
+                        decoding="async"
+                    >
+                </div>
+                <span class="line-icon__text gradient-2">Made with natural ingredients</span>
+            </span>
+            <span class="line-icon">
+                <div class="line-icon-item">
+                    <img 
+                        src="{{ "scroll-icon-2.png" |  file_url }}" 
+                        alt="Problems img"
+                        width="42"
+                        height="42"
+                        fetchpriority="low"
+                        decoding="async"
+                    >
+                </div>
+                <span class="line-icon__text gradient-2">Gluten-free</span>
+            </span>
+        </div>
+        
+
+    </div>
+</div>
+<section class="clean">
+    <div class="container">
+        <div class="clean__inner">
+            <div class="clean__text">
+                <h2 class="clean__title title">CLEAN INTERNALLY. VALIDATED EXTERNALLY.</h2>
+                <p class="clean__descr">HUM lives by clean standards and we’ve been doing so since 2012. But don't take our word for it, independent third-parties are here to hold us accountable.</p>
+                <a href="#product-list" class="clean__btn btn-green">Try Today – Save Up to 50%</a>
+            </div>
+            <div class="clean__img">
+                <picture>
+                    <source media="(max-width: 650px)" srcset="{{ 'science-clean-img-mobile.png' | file_url }}">
+                    <source media="(max-width: 1024px)" srcset="{{ 'science-clean-img-tablet.png' | file_url }}">
+                    <img
+                        src="{{ 'science-clean-img.png' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="807"
+                        height="805"
+                        loading="lazy"
+                    >
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="prevents">
+    <div class="container">
+        <div class="prevents__inner">
+            <div class="prevents__img">
+                <picture>
+                    <source media="(max-width:650px)" srcset="{{ "science-prevents-mobile.png" |  file_url }}">
+                    <source media="(max-width:1024px)" srcset="{{ "science-prevents-tablet.png" |  file_url }}">
+                    <img 
+                        src="{{ "science-prevents.png" |  file_url }}" 
+                        alt="Problems img"
+                        width="819"
+                        height="512"
+                        fetchpriority="low"
+                        decoding="async"
+                        loading="lazy"
+                    >
+                </picture>
+            </div>
+            <div class="prevents__text">
+                <h2 class="prevents__title title"><img width="53" height="53" src="{{ "recycle-icon.svg" |  file_url }}" alt=""> 1 PREVENTS 2</h2>
+                <p class="prevents__descr">
+                    We care about your wellness and the wellness of our planet. Every time you buy an Secret Element bottle made from Prevented Ocean Plastic™, you prevent the equivalent of 2 plastic water bottles from entering our oceans.
+                </p>
+                <a href="/pages/about-us" class="prevents__btn">learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="help">
+    <div class="container">
+        <div class="help__inner">
+            <div class="help__text">
+                <h2 class="help__title title">LET US HELP YOU BUILD YOUR PERFECT SECRET ELEMENT ROUTINE</h2>
+                <a href="#product-list" class="btn-green help__btn">Try Today – Save Up to 50%</a>
+            </div>
+            <div class="help__img">
+                <picture>
+                    <source media="(max-width: 650px)" srcset="{{ 'help-img-mobile.png' | file_url }}">
+                    <source media="(max-width: 1024px)" srcset="{{ 'help-img-tablet.png' | file_url }}">
+                    <img
+                        src="{{ 'help-img.png' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="907"
+                        height="774"
+                        loading="lazy"
+                    >
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function isFullyVisible(element) {
+        const rect = element.getBoundingClientRect();
+        return rect.width < window.innerWidth;
+    }
+    function pauseOnFullVisibility() {
+        const isPartiallyVisible = (element) => {
+            const rect = element.getBoundingClientRect();
+            return rect.top < window.innerHeight && rect.bottom > 0;
+        };
+        const scrollingElements = document.querySelectorAll(".scrolling");
+        scrollingElements.forEach((scrollingElement) => {
+            const scrollingItem = scrollingElement.querySelector(".scrolling-items__item");
+            const clonedItem = scrollingItem.cloneNode(true);
+            scrollingItem.after(clonedItem);
+        });
+        const scrollingContainer = document.querySelectorAll(".scrolling__items");
+        scrollingContainer.forEach((thisScrollingContainer) => {
+            thisScrollingContainer.style.animationPlayState = "running";
+        });
+    }
+    pauseOnFullVisibility();
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const seeMoreButton = document.querySelector('.combine-show-all');
+    const combineItems = document.querySelector('.combine-items');
+
+    seeMoreButton.addEventListener('click', function() {
+            // Устанавливаем полную ширину для combine-items
+            combineItems.style.height = 'auto';
+            combineItems.style.overflow = 'visible';
+            
+            // Скрываем кнопку see more
+            seeMoreButton.style.display = 'none';
+        });
+    });
+</script>

@@ -1,0 +1,65 @@
+{% render 'async-stylesheet', file: 'main-page-taste.css' %}
+<section class="taste">
+    <div class="container">
+        <div class="taste__inner">
+            <div class="taste__text">
+                <div class="taste__badge">
+                    HONEST
+                </div>
+                <h2 class="taste__title title-main">
+                    This doesn't taste like a vitamin <br> That's the point
+                </h2>
+                <p class="taste__descr">
+                    Sweetness masks absence. <br>
+A pleasant taste almost always signals dilution or added sugar. <br>
+MYVOX-9 doesn't hide what's inside.
+                </p>
+                <div class="taste-items">
+                    <div class="taste-item">
+                        <div class="taste-item__img">
+                            <img src="{{ 'taste-img-1.webp' | file_url }}" alt="" width="64px" height="64px" fetchpriority="low" decoding="async" loading="lazy">
+                        </div>
+                        <div class="taste-item__text">
+                            <h3 class="taste-item__title">THE ASTRINGENCY</h3>
+                            <p class="taste-item__descr">Propolis. Nature's antiseptic in its raw form.</p>
+                        </div>
+                    </div>
+                    <div class="taste-item">
+                        <div class="taste-item__img">
+                            <img src="{{ 'taste-img-2.webp' | file_url }}" alt="" width="64px" height="64px" fetchpriority="low" decoding="async" loading="lazy">
+                        </div>
+                        <div class="taste-item__text">
+                            <h3 class="taste-item__title">THE SOURNESS</h3>
+                            <p class="taste-item__descr">Fermented Bee Bread. Live enzymatic activity.</p>
+                        </div>
+                    </div>
+                    <div class="taste-item">
+                        <div class="taste-item__img">
+                            <img src="{{ 'taste-img-3.webp' | file_url }}" alt="" width="64px" height="64px" fetchpriority="low" decoding="async" loading="lazy">
+                        </div>
+                        <div class="taste-item__text">
+                            <h3 class="taste-item__title">THE FINISH</h3>
+                            <p class="taste-item__descr">Royal Jelly at a working dose — not a token one.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Main Page Taste",
+  "class": "main-page-taste",
+  "settings": [
+   
+  ],
+  "presets": [
+    {
+      "name": "Main Page Taste"
+    }
+  ]
+}
+{% endschema %}

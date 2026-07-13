@@ -1,0 +1,449 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "black_oil_product_info_893GFt": {
+      "type": "black-oil-product-info",
+      "settings": {}
+    },
+    "product_formulated_new_9f7hXz": {
+      "type": "product-formulated-new",
+      "blocks": {
+        "element_cFXLca": {
+          "type": "element",
+          "settings": {
+            "icon": "shopify://shop_images/run-icon-formulated.svg",
+            "title": "Immune Support ",
+            "text": "Vitamin C, D3, Zinc, and Sea Moss strengthen your immune system"
+          }
+        },
+        "element_BfAcr8": {
+          "type": "element",
+          "settings": {
+            "icon": "shopify://shop_images/Balance_Thyroid.svg",
+            "title": "Thyroid & Metabolism Boost",
+            "text": "Iodine-rich Sea Moss and bladderwrack support thyroid health and metabolism."
+          }
+        },
+        "element_HFc74r": {
+          "type": "element",
+          "settings": {
+            "icon": "shopify://shop_images/brain-formulated.svg",
+            "title": "Cognitive Clarity",
+            "text": "Ashwagandha promotes focus, energy, and relaxation"
+          }
+        },
+        "element_EjUwxp": {
+          "type": "element",
+          "settings": {
+            "icon": "shopify://shop_images/formulated-face.svg",
+            "title": "Hair, Skin & Nail Health",
+            "text": "Black Seed Oil enhances hair, nail, and skin health"
+          }
+        },
+        "element_BPXPcN": {
+          "type": "element",
+          "settings": {
+            "icon": "shopify://shop_images/foot-formulated.svg",
+            "title": "Joint & Digestive Support",
+            "text": "Burdock root and bladderwrack improve digestion and reduce inflammation"
+          }
+        },
+        "element_7mENYG": {
+          "type": "element",
+          "settings": {
+            "icon": "shopify://shop_images/formulated-yoga.svg",
+            "title": "Rest & Relaxation",
+            "text": "Ashwagandha helps reduce stress and improve sleep quality"
+          }
+        }
+      },
+      "block_order": [
+        "element_cFXLca",
+        "element_BfAcr8",
+        "element_HFc74r",
+        "element_EjUwxp",
+        "element_BPXPcN",
+        "element_7mENYG"
+      ],
+      "settings": {
+        "section_title": "Formulated with clean, natural and clinically-proven ingredients for better:"
+      }
+    },
+    "scrolling_line_igEgki": {
+      "type": "scrolling-line",
+      "settings": {}
+    },
+    "product_discover_slider_DR8JCL": {
+      "type": "product-discover-slider",
+      "settings": {}
+    },
+    "product_fluff_qUYCzy": {
+      "type": "product-fluff",
+      "settings": {}
+    },
+    "leave_out_new_6aGFFR": {
+      "type": "leave-out-new",
+      "settings": {
+        "section_image_desktop": "shopify://shop_images/black-seed-leave-img.jpg",
+        "section_image_tablet": "shopify://shop_images/black-seed-leave-img-tablet.jpg",
+        "section_image_mobile": "shopify://shop_images/black-seed-leave-img-mobile.jpg"
+      }
+    },
+    "product_problems_new_N6gxWa": {
+      "type": "product-problems-new",
+      "blocks": {
+        "item_mhFdjc": {
+          "type": "item",
+          "settings": {
+            "item_text": "Low energy levels make it hard to stay active and focused"
+          }
+        },
+        "item_e8Ybay": {
+          "type": "item",
+          "settings": {
+            "item_text": "Daily stress disrupts mental clarity and emotional balance"
+          }
+        },
+        "item_fhhnrL": {
+          "type": "item",
+          "settings": {
+            "item_text": "Weak immune support leaves you vulnerable to frequent illness"
+          }
+        },
+        "item_TaqCFb": {
+          "type": "item",
+          "settings": {
+            "item_text": "Poor digestion and metabolism affect your energy and weight management"
+          }
+        },
+        "item_eFnnKq": {
+          "type": "item",
+          "settings": {
+            "item_text": "Struggles to find effective and natural solutions lead to frustration"
+          }
+        }
+      },
+      "block_order": [
+        "item_mhFdjc",
+        "item_e8Ybay",
+        "item_fhhnrL",
+        "item_TaqCFb",
+        "item_eFnnKq"
+      ],
+      "settings": {
+        "section_heading": "Problems That Prevent You from Enjoying Life:",
+        "section_descr": "These issues can significantly reduce your quality of life. Choosing a natural and effective solution, like our All-in-One Supplement, can help you regain control and feel your best.",
+        "section_image_desktop": "shopify://shop_images/black-seed-problem.jpg",
+        "section_image_tablet": "shopify://shop_images/black-seed-problem-tablet.jpg",
+        "section_image_mobile": "shopify://shop_images/black-seed-problem-mobile.jpg"
+      }
+    },
+    "text_reviews_new_HajyKQ": {
+      "type": "text-reviews-new",
+      "blocks": {
+        "item_hRKK4K": {
+          "type": "item",
+          "settings": {
+            "reviews_img": "shopify://shop_images/black-seed-review-1.jpg",
+            "reviews_name": "Anna D.",
+            "reviews_age": "20 years old",
+            "reviews_descr": "My skin has never looked better! After a few weeks, I noticed a glow, and my digestion has also improved. Love this product!"
+          }
+        },
+        "item_Mhbb8Y": {
+          "type": "item",
+          "settings": {
+            "reviews_img": "shopify://shop_images/black-seed-review-2.jpg",
+            "reviews_name": "Harper B.",
+            "reviews_age": "43 years old",
+            "reviews_descr": "This sea moss blend has really helped my immune system. I feel healthier, and my energy levels are more stable throughout the day!"
+          }
+        },
+        "item_GNBVYz": {
+          "type": "item",
+          "settings": {
+            "reviews_img": "shopify://shop_images/black-seed-review-3.jpg",
+            "reviews_name": "Matthew P.",
+            "reviews_age": "41 years old",
+            "reviews_descr": "This supplement is fantastic for respiratory health. I breathe easier, and my endurance has improved, especially during workouts."
+          }
+        },
+        "item_kgtpwn": {
+          "type": "item",
+          "settings": {
+            "reviews_img": "shopify://shop_images/black-seed-review-4.jpg",
+            "reviews_name": "Charlotte K.",
+            "reviews_age": "39 years old",
+            "reviews_descr": "Amazing for digestion and overall well-being. My bloating has reduced, and I feel lighter and more energized every morning."
+          }
+        },
+        "item_EfTfYy": {
+          "type": "item",
+          "settings": {
+            "reviews_img": "shopify://shop_images/black-seed-review-5.jpg",
+            "reviews_name": "Anna E.",
+            "reviews_age": "29 years old",
+            "reviews_descr": "My hair and nails have grown so much stronger since taking this! Plus, my allergies have improved. Highly recommend!  "
+          }
+        },
+        "item_FCKxiX": {
+          "type": "item",
+          "settings": {
+            "reviews_img": "shopify://shop_images/black-seed-review-6.jpg",
+            "reviews_name": "David K.",
+            "reviews_age": "25 years old",
+            "reviews_descr": "I’ve noticed a big improvement in my gut health and overall energy. Great product with real benefits!"
+          }
+        }
+      },
+      "block_order": [
+        "item_hRKK4K",
+        "item_Mhbb8Y",
+        "item_GNBVYz",
+        "item_kgtpwn",
+        "item_EfTfYy",
+        "item_FCKxiX"
+      ],
+      "settings": {
+        "section_heading": "Why Do Our Customers Choose Us Again and Again?"
+      }
+    },
+    "combine_with_x6gFnj": {
+      "type": "combine-with",
+      "settings": {}
+    },
+    "17498182521cf66a63": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_PWxKiq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_PWxKiq"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product_faq_aqDMqL": {
+      "type": "product-faq",
+      "disabled": true,
+      "settings": {}
+    },
+    "store_faq_black_seed_4ny3yF": {
+      "type": "store-faq-black-seed",
+      "blocks": {
+        "faq_item_JGVhH7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is Secret Element Sea Moss + Black Seed?",
+            "answer": "Secret Element Sea Moss + Black Seed is an all-in-one dietary supplement combining Irish Sea Moss, Black Seed Oil, Ashwagandha, Ginger, and other natural ingredients to support immunity, digestion, energy, thyroid health, and overall well-being."
+          }
+        },
+        "faq_item_iX43W9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How should I take the product?",
+            "answer": "Take 2 capsules daily with a glass of water during meals. This ensures optimal absorption of the active ingredients."
+          }
+        },
+        "faq_item_PEkjnT": {
+          "type": "faq_item",
+          "settings": {
+            "question": "When will I see the first results?",
+            "answer": "Initial improvements are usually noticeable within a few days of regular use. For maximum effect, it is recommended to take the product for at least three months."
+          }
+        },
+        "faq_item_8UXCRM": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is the product safe for long-term use?",
+            "answer": "Yes, our product is made from natural ingredients and is safe for long-term use. It contains no GMOs, gluten, artificial fillers, or dairy."
+          }
+        },
+        "faq_item_AfEwwi": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Are there any side effects?",
+            "answer": "In most cases, there are no side effects. However, if you are allergic to seaweed or other components, consult your doctor before starting."
+          }
+        },
+        "faq_item_gkbppH": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I take the product with other supplements or medications?",
+            "answer": "Yes, Secret Element Sea Moss can be taken with other supplements. If you are on medication, consult your doctor to ensure safety."
+          }
+        },
+        "faq_item_p6y4JP": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is the product suitable for vegans?",
+            "answer": "Yes, our product is completely vegan and contains no animal products."
+          }
+        },
+        "faq_item_WxygaL": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Where is Secret Element Sea Moss + Black Seed made?",
+            "answer": "Our product is made in the USA in a cGMP-certified facility, ensuring high quality and safety."
+          }
+        },
+        "faq_item_GdMKg4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What are the shipping terms?",
+            "answer": "We ship throughout the USA within 2-4 business days."
+          }
+        },
+        "faq_item_bCNBCq": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is there a guarantee on the product?",
+            "answer": "We are confident in the quality of our product and offer a 30-day money-back guarantee if you are not satisfied with the results."
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_JGVhH7",
+        "faq_item_iX43W9",
+        "faq_item_PEkjnT",
+        "faq_item_8UXCRM",
+        "faq_item_AfEwwi",
+        "faq_item_gkbppH",
+        "faq_item_p6y4JP",
+        "faq_item_WxygaL",
+        "faq_item_GdMKg4",
+        "faq_item_bCNBCq"
+      ],
+      "settings": {
+        "section_heading": "Your Questions – Our Answers!",
+        "section_descr": "In this section, we have collected and answered the most frequently asked questions about our product so that you can make your purchasing decision with complete confidence."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "black_oil_product_info_893GFt",
+    "product_formulated_new_9f7hXz",
+    "scrolling_line_igEgki",
+    "product_discover_slider_DR8JCL",
+    "product_fluff_qUYCzy",
+    "leave_out_new_6aGFFR",
+    "product_problems_new_N6gxWa",
+    "text_reviews_new_HajyKQ",
+    "combine_with_x6gFnj",
+    "17498182521cf66a63",
+    "product_faq_aqDMqL",
+    "store_faq_black_seed_4ny3yF"
+  ]
+}

@@ -1,0 +1,8 @@
+.shopify-policy__container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.shopify-policy__body *{
+    margin: revert;
+    padding: revert;
+}

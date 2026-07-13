@@ -1,0 +1,152 @@
+
+{{ 'product-discover-4.css' | asset_url | stylesheet_tag}}
+<section class="discover">
+    <div class="container">
+        <div class="discover__inner">
+            <h2 class="discover__title title">Discover What Makes Up Your Path to Health!</h2>
+            <div class="discover__descr">Our Secret Element Sea Moss is crafted from carefully selected, high-quality ingredients to provide maximum benefits for your health. The product includes:</div>
+            <div class="discover-items">
+                <div class="discover-item">
+                    <div class="discover-item-top">
+                        <div class="discover-item__img">
+                            <picture>
+                                <source media="(max-width:650px)" srcset="{{ "discover-item-1-tablet.png" |  file_url }}">
+                                <source media="(max-width:1024px)" srcset="{{ "discover-item-1-tablet.png" |  file_url }}">
+                                <img 
+                                    src="{{ "discover-item-1.png" |  file_url }}" 
+                                    alt="Problems img"
+                                    width="250"
+                                    height="183"
+                                    fetchpriority="low"
+                                    decoding="async"
+                                >
+                            </picture>
+                        </div>
+                        <div class="discover-item-text">
+                            <div class="discover-item__name">Irish Moss “Sea Moss” Powder (Chondrus Crispus)</div>
+                            <div class="discover-item__descr">
+                                Supplies essential minerals and vitamins such as iodine, calcium, magnesium, iron, and vitamins A, C, D, E, and K. Supports bone, teeth, skin health, and overall metabolism.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="discover-item-tags">
+                        <div class="discover-item__tag">Essential minerals</div>
+                        <div class="discover-item__tag">Supports health</div>
+                        <div class="discover-item__tag">Boosts metabolism</div>
+                    </div>
+                </div>
+                <div class="discover-item">
+                    <div class="discover-item-top">
+                        <div class="discover-item__img">
+                            <picture>
+                                <source media="(max-width:650px)" srcset="{{ "discover-item-2-tablet.png" |  file_url }}">
+                                <source media="(max-width:1024px)" srcset="{{ "discover-item-2-tablet.png" |  file_url }}">
+                                <img 
+                                    src="{{ "discover-item-2.png" |  file_url }}" 
+                                    alt="Problems img"
+                                    width="250"
+                                    height="183"
+                                    fetchpriority="low"
+                                    decoding="async"
+                                >
+                            </picture>
+                        </div>
+                        <div class="discover-item-text">
+                            <div class="discover-item__name">Bladderwrack Powder (Fucus Vesiculosus)</div>
+                            <div class="discover-item__descr">
+                                Rich in iodine, helps regulate thyroid functions, supports hormonal balance, and promotes healthy metabolism.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="discover-item-tags">
+                        <div class="discover-item__tag">Regulates thyroid</div>
+                        <div class="discover-item__tag">Supports hormones</div>
+                        <div class="discover-item__tag">Boosts metabolism</div>
+                    </div>
+                </div>
+                <div class="discover-item">
+                    <div class="discover-item-top">
+                        <div class="discover-item__img">
+                            <picture>
+                                <source media="(max-width:650px)" srcset="{{ "discover-item-3-tablet.png" |  file_url }}">
+                                <source media="(max-width:1024px)" srcset="{{ "discover-item-3-tablet.png" |  file_url }}">
+                                <img 
+                                    src="{{ "discover-item-3.png" |  file_url }}" 
+                                    alt="Problems img"
+                                    width="250"
+                                    height="183"
+                                    fetchpriority="low"
+                                    decoding="async"
+                                >
+                            </picture>
+                        </div>
+                        <div class="discover-item-text">
+                            <div class="discover-item__name">Burdock Root Powder (Arctium Lappa)</div>
+                            <div class="discover-item__descr">
+                                Possesses anti-inflammatory and antioxidant properties, aids in body detoxification, and supports healthy digestion thanks to its inulin content.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="discover-item-tags">
+                        <div class="discover-item__tag">Reduces inflammation</div>
+                        <div class="discover-item__tag">Detoxifies the body</div>
+                        <div class="discover-item__tag">Supports healthy digestion</div>
+                    </div>
+                </div>
+                <div class="discover-item">
+                    <div class="discover-item-top">
+                        <div class="discover-item__img">
+                            <picture>
+                                <source media="(max-width:650px)" srcset="{{ "discover-item-4-tablet.png" |  file_url }}">
+                                <source media="(max-width:1024px)" srcset="{{ "discover-item-4-tablet.png" |  file_url }}">
+                                <img 
+                                    src="{{ "discover-item-4.png" |  file_url }}" 
+                                    alt="Problems img"
+                                    width="250"
+                                    height="183"
+                                    fetchpriority="low"
+                                    decoding="async"
+                                >
+                            </picture>
+                        </div>
+                        <div class="discover-item-text">
+                            <div class="discover-item__name">Muira Puama (Plychopetalum olacoides)</div>
+                            <div class="discover-item__descr">
+                                Traditionally used to enhance cognitive functions, memory, and concentration. Also has adaptogenic properties, helping the body cope with stress.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="discover-item-tags">
+                        <div class="discover-item__tag">Cognitive enhancement</div>
+                        <div class="discover-item__tag">Improved memory</div>
+                        <div class="discover-item__tag">Adaptogenic stress relief</div>
+                    </div>
+                </div>
+            </div>
+            <div id="discoverWrap" class="discover-btn">
+                <button data-src="{{ 'B0CNXZFT6Y.PT06.jpg' | file_url }}" class="discover__btn btn">view supplement facts</button>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+    {
+        "name": "Product discover 4",
+        "class": "product-discover-4",
+        "settings": [
+            
+        ],
+        
+        "presets": [
+            {
+            "name": "Product discover 4",
+            "category": "text"
+            }
+        ]
+    
+    }
+{% endschema %}

@@ -1,0 +1,284 @@
+.system{
+    padding: 48px 0;
+    background-image: url('https://cdn.shopify.com/s/files/1/1024/5387/0960/files/system-bg.webp?v=1783000361');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.system__inner{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.system__img{
+    width: 496px;
+    margin-right: 66px;
+    height: auto;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+.system__img img{
+    width: 100%;
+    height: 100%;
+}
+.system__text{
+    max-width: 604px;
+    width: 100%;
+    margin-left: auto;
+}
+.system-badge{
+    padding: 7.5px 12px;
+    background: #ECEDEF;
+    border: 1px solid rgba(69, 75, 96, 0.2);
+    width: max-content;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    color: rgba(69, 75, 96, 0.8);
+    font-size: 14px;
+}
+.system__title{
+    margin-bottom: 12px;
+    color: var(--blue);
+}
+
+.system-list-item{
+    display: flex;
+    height: 106px;
+    gap: 24px;
+}
+.system-list-item-left svg{
+    width: auto;
+    height: 106px;
+}
+.system-list-item:nth-child(2) {
+    transform: translateX(-4px);
+}
+.system-list-item:nth-child(4){
+    height: 135px;
+}
+.system-list-item:nth-child(4) svg{
+    height: 135px;
+}
+.system-list-item:nth-child(2) .system-list-item-left svg{
+    width: 20px;
+    height: 116px;
+}
+.system-list-item-badge{
+    font-size: 12px;
+    line-height: 120%;
+    color: #C0876C;
+    margin-bottom: 6px;
+    margin-top: 8px;
+    border:none;
+}
+.system-list-item-title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--blue);
+    letter-spacing: 2%;
+    margin-bottom: 6px;
+}
+.system-list-item__descr{
+    font-size: 16px;
+    line-height: 120%;
+    color: rgba(18, 28, 63, 0.5);
+    letter-spacing: 2%;
+}
+
+.system__btn{
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: max-content;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 36px;
+}
+.system__btn svg{
+    width: 24px;
+    height: 24px;
+}
+@media screen and (max-width: 1919px) {
+    .system {
+        padding: 3.2542vw 0;
+    }
+
+    .system__img {
+        width: 33.627vw;
+        margin-right: 4.4746vw;
+        left: -1.356vw;
+    }
+
+    .system__text {
+        max-width: 40.9492vw;
+    }
+
+    .system-badge {
+        padding: 0.5085vw 0.8136vw;
+        border: 0.0678vw solid rgba(69, 75, 96, 0.2);
+        border-radius: 0.2712vw;
+        margin-bottom: 0.8136vw;
+        font-size: 0.9492vw;
+    }
+
+    .system__title {
+        margin-bottom: 0.8136vw;
+    }
+
+    .system-list-item {
+        height: 7.186vw;
+        gap: 1.6271vw;
+    }
+
+    .system-list-item-left svg {
+        height: 7.186vw;
+        width: 0.814vw;
+    }
+
+    .system-list-item:nth-child(2) {
+        transform: translateX(-0.2712vw);
+    }
+
+    .system-list-item:nth-child(4) {
+        height: 9.1525vw;
+    }
+
+    .system-list-item:nth-child(4) svg {
+        height: 9.1525vw;
+    }
+
+    .system-list-item:nth-child(2) .system-list-item-left svg {
+        width: 1.3559vw;
+        height: 7.186vw;
+    }
+
+    .system-list-item-badge {
+        font-size: 0.814vw;
+        margin-top: 0.542vw;
+        margin-bottom: 0.407vw;
+    }
+
+    .system-list-item-title {
+        font-size: 1.2203vw;
+        margin-bottom: 0.4068vw;
+    }
+
+    .system-list-item__descr {
+        font-size: 1.0847vw;
+    }
+
+    .system__btn {
+        padding: 0.678vw 1.0847vw;
+        gap: 0.4068vw;
+        font-size: 1.0847vw;
+        margin-top: 2.4407vw;
+    }
+    .system__btn svg{
+        width: 1.627vw;
+        height: 1.627vw;
+    }
+}
+@media screen and (max-width: 650px) {
+    .system {
+        padding: 9.1603vw 0;
+        background: #fff;
+        background-image: url('https://cdn.shopify.com/s/files/1/1024/5387/0960/files/system-bg-mob.webp?v=1783003175');
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .system__inner {
+        flex-direction: column;
+    }
+
+    .system__img {
+        position: static;
+        width: 83.9695vw;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        margin-top: 5.0891vw;
+        order: 2;
+        left: 0;
+    }
+
+    .system__text {
+        max-width: 100%;
+    }
+
+    .system-badge {
+        padding: 1.5267vw 3.0534vw;
+        border: 0.2545vw solid rgba(69, 75, 96, 0.2);
+        border-radius: 1.0178vw;
+        margin-bottom: 3.0534vw;
+        font-size: 2.5445vw;
+    }
+
+    .system__title {
+        margin-bottom: 6.1069vw;
+        font-size: 6.107vw;
+    }
+
+    .system-list-item {
+        height: 26.7176vw;
+        gap: 6.1069vw;
+    }
+
+    .system-list-item-left svg {
+        height: 27.2265vw;
+        width: 3.0534vw;
+    }
+
+    .system-list-item:nth-child(2) {
+        transform: translateX(-0.7634vw);
+        height: 26.2087vw;
+    }
+
+    .system-list-item:nth-child(4) {
+        height: 27.2265vw;
+    }
+
+    .system-list-item:nth-child(4) svg {
+        height: 27.2265vw;
+    }
+
+    .system-list-item:nth-child(2) .system-list-item-left svg {
+        height: 27.2265vw;
+        width: 4.5802vw;
+    }
+
+    .system-list-item-badge {
+        font-size: 2.036vw;
+        margin-top: 8px;
+        margin-bottom: 1.527vw;
+    }
+
+    .system-list-item-title {
+        font-size: 3.5623vw;
+        margin-bottom: 1.5267vw;
+    }
+
+    .system-list-item__descr {
+        font-size: 3.0534vw;
+    }
+
+    .system__btn {
+        padding: 3.3079vw;
+        gap: 1.5267vw;
+        width: 100%;
+        border-radius: 1.0178vw;
+        font-size: 3.0534vw;
+        margin-top: 6.1069vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .system__btn svg {
+        width: 4.0712vw;
+        height: 4.0712vw;
+    }
+}

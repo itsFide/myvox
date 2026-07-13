@@ -1,0 +1,663 @@
+
+{{ 'sea-moss-product-info.css' | asset_url | stylesheet_tag}}
+
+<section id="land-products" class="buy-product">
+  <div class="container">
+    <div class="show-tablet buy-product-reviews">
+        <div class="buy-product__stars">
+            <svg width="111" height="17" viewBox="0 0 111 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.6473 6.58724L14.3258 10.8186L15.3162 16.4755C15.3304 16.5436 15.3237 16.6145 15.2969 16.6788C15.2701 16.743 15.2245 16.7977 15.1661 16.8356C15.1058 16.8822 15.0323 16.9085 14.9561 16.9106H14.776L9.38924 14.2247L3.98747 16.9106C3.9268 16.9483 3.85629 16.9671 3.7849 16.9646C3.71352 16.9621 3.64448 16.9385 3.58658 16.8967C3.52867 16.8548 3.48451 16.7967 3.45971 16.7298C3.43491 16.6628 3.43059 16.5899 3.4473 16.5205L4.43762 10.8636L0.116211 6.58724C0.0625065 6.53964 0.024974 6.47649 0.00883797 6.40656C-0.00729809 6.33664 -0.00123578 6.26343 0.0261807 6.19711C0.0476374 6.13096 0.0870653 6.07206 0.140059 6.02702C0.193054 5.98197 0.257527 5.95255 0.326278 5.94203L6.44828 5.16177L9.02912 0.210158C9.0606 0.145861 9.10983 0.0919136 9.17098 0.0546903C9.23213 0.017467 9.30266 -0.00147687 9.37423 8.98852e-05C9.44326 0.00133793 9.5106 0.0216098 9.56884 0.0586741C9.62709 0.0957385 9.67397 0.148157 9.70434 0.210158L12.3002 5.16177L18.4222 5.94203C18.493 5.95159 18.5599 5.98044 18.6155 6.02543C18.671 6.07041 18.7132 6.1298 18.7373 6.19711C18.7589 6.26421 18.762 6.33591 18.7461 6.40461C18.7303 6.4733 18.6961 6.53641 18.6473 6.58724Z" fill="#FFC700"/>
+            <path d="M41.4368 6.646L37.1064 10.8861L38.0988 16.5547C38.1156 16.6243 38.1112 16.6973 38.0864 16.7644C38.0615 16.8316 38.0173 16.8898 37.9593 16.9317C37.9012 16.9736 37.832 16.9973 37.7605 16.9998C37.689 17.0023 37.6183 16.9834 37.5575 16.9457L32.1596 14.2542L26.7466 16.9457H26.5812C26.4999 16.9457 26.4208 16.9193 26.3557 16.8705C26.2972 16.8325 26.2515 16.7777 26.2246 16.7133C26.1978 16.6489 26.1911 16.5779 26.2053 16.5096L27.1977 10.841L22.8674 6.60089C22.8169 6.5509 22.7817 6.48765 22.7657 6.41847C22.7498 6.34928 22.7537 6.27698 22.7771 6.20995C22.7986 6.14366 22.8382 6.08465 22.8913 6.03951C22.9444 5.99437 23.009 5.96488 23.0779 5.95434L29.2125 5.17247L31.8138 0.210593C31.8453 0.146163 31.8946 0.0921041 31.9559 0.0548037C32.0172 0.0175032 32.0879 -0.00147993 32.1596 9.00714e-05C32.2288 0.0013407 32.2963 0.0216546 32.3546 0.0587958C32.413 0.0959369 32.46 0.148464 32.4904 0.210593L35.0916 5.17247L41.2263 5.95434C41.2979 5.96222 41.3657 5.99051 41.4217 6.03582C41.4777 6.08114 41.5195 6.14157 41.5421 6.20995C41.5714 6.28465 41.577 6.36657 41.5582 6.44457C41.5394 6.52258 41.497 6.59291 41.4368 6.646Z" fill="#FFC700"/>
+            <path d="M64.2759 6.65543L59.9395 10.9015L61.0086 16.578C61.0224 16.6449 61.0171 16.7143 60.9931 16.7783C60.9691 16.8423 60.9275 16.8981 60.873 16.9394C60.8154 16.9789 60.7472 17 60.6773 17C60.6074 17 60.5392 16.9789 60.4816 16.9394L54.9857 14.2743L49.5652 16.9695C49.5108 16.9829 49.454 16.9829 49.3996 16.9695C49.3181 16.9695 49.2389 16.9431 49.1737 16.8942C49.1151 16.8562 49.0694 16.8013 49.0425 16.7368C49.0156 16.6723 49.0089 16.6012 49.0232 16.5328L50.0169 10.8563L45.6805 6.61026C45.63 6.5602 45.5947 6.49686 45.5787 6.42758C45.5627 6.35829 45.5667 6.2859 45.5902 6.21877C45.6117 6.15238 45.6513 6.09329 45.7044 6.04809C45.7576 6.00289 45.8223 5.97336 45.8913 5.96281L52.0496 5.17984L54.6545 0.211022C54.6819 0.146485 54.7282 0.0917807 54.7874 0.0541414C54.8465 0.0165022 54.9157 -0.00229847 54.9857 0.000224383C55.0554 -0.000304624 55.1237 0.0193101 55.1825 0.0567089C55.2413 0.0941078 55.288 0.147696 55.317 0.211022L57.9972 5.22501L64.1404 6.00798C64.2121 6.01587 64.28 6.04419 64.3361 6.08957C64.3921 6.13494 64.434 6.19547 64.4566 6.26395C64.4681 6.33972 64.4571 6.41721 64.425 6.4868C64.3929 6.55639 64.3411 6.61503 64.2759 6.65543Z" fill="#FFC700"/>
+            <path d="M87.2263 6.63149L82.8798 10.8874L83.8608 16.577C83.8747 16.6441 83.8693 16.7137 83.8453 16.7778C83.8212 16.8419 83.7795 16.8979 83.725 16.9392C83.6672 16.9788 83.5988 17 83.5288 17C83.4587 17 83.3903 16.9788 83.3326 16.9392L77.8995 14.2378L72.4664 16.9392C72.4119 16.9527 72.3549 16.9527 72.3004 16.9392C72.2191 16.9372 72.1403 16.911 72.074 16.8638C72.0181 16.8231 71.9744 16.7677 71.9478 16.7038C71.9212 16.64 71.9126 16.57 71.9231 16.5016L72.9192 10.8119L68.5727 6.63149C68.5221 6.58132 68.4867 6.51783 68.4707 6.44839C68.4547 6.37895 68.4587 6.30639 68.4822 6.23911C68.5038 6.17256 68.5434 6.11333 68.5967 6.06802C68.65 6.02272 68.7149 5.99312 68.784 5.98254L74.9566 5.19777L77.5675 0.217451C77.5957 0.152826 77.6421 0.0978258 77.7011 0.0592002C77.76 0.0205745 77.829 0 77.8995 0C77.97 0 78.039 0.0205745 78.0979 0.0592002C78.1569 0.0978258 78.2033 0.152826 78.2315 0.217451L80.8424 5.19777L86.9999 5.98254C87.0718 5.99045 87.1398 6.01884 87.196 6.06432C87.2522 6.10981 87.2941 6.17048 87.3168 6.23911C87.337 6.30675 87.3393 6.37848 87.3234 6.44727C87.3075 6.51605 87.2741 6.57954 87.2263 6.63149Z" fill="#FFC700"/>
+            <path d="M110.083 6.14752C110.06 6.07917 110.019 6.01875 109.963 5.97345C109.907 5.92815 109.839 5.89988 109.767 5.892L103.635 5.11041L101.065 0.210438C101.034 0.148331 100.987 0.0958228 100.929 0.058695C100.871 0.0215671 100.803 0.00126059 100.734 1.04065e-05C100.664 -0.000517672 100.596 0.0190626 100.538 0.0563958C100.479 0.0937289 100.432 0.147223 100.403 0.210438L97.803 5.17053L91.6555 5.95212C91.5866 5.96266 91.522 5.99214 91.469 6.03726C91.4159 6.08238 91.3764 6.14137 91.3549 6.20764C91.3315 6.27465 91.3275 6.34692 91.3435 6.41608C91.3594 6.48524 91.3947 6.54847 91.4451 6.59844L95.7739 10.8371L94.7819 16.5036C94.7714 16.5717 94.7799 16.6414 94.8064 16.705C94.833 16.7687 94.8764 16.8238 94.9322 16.8643C94.9981 16.9113 95.0767 16.9375 95.1576 16.9395C95.2119 16.9529 95.2687 16.9529 95.323 16.9395L100.734 14.249L106.145 16.9395C106.203 16.9789 106.271 17 106.34 17C106.41 17 106.478 16.9789 106.536 16.9395C106.59 16.8983 106.632 16.8425 106.656 16.7787C106.68 16.7148 106.685 16.6455 106.671 16.5787L105.694 10.9122L110.023 6.67359C110.094 6.60762 110.14 6.51825 110.151 6.42171C110.162 6.32517 110.138 6.22789 110.083 6.14752ZM104.988 10.3711C104.946 10.4144 104.915 10.4668 104.896 10.5241C104.878 10.5815 104.873 10.6423 104.882 10.7018L105.784 15.8422L101.065 13.4975V1.84877L103.049 5.63648C103.076 5.69038 103.117 5.73651 103.167 5.77066C103.216 5.8048 103.274 5.82585 103.334 5.83188L108.896 6.53832L104.988 10.3711Z" fill="#FFC700"/>
+            </svg>
+        </div>
+        <span>4.8</span>
+        <span class="buy-product__separate"> | </span>
+        <div class="buy-product-reviews__count">1,078 review</div>
+    </div>
+    <h2 class="buy-product__title show-tablet">Magnesium Glycinate Capsules</h2>
+    <div class="buy-product__inner">
+      <div class="buy-product__images">
+        <!-- Swiper -->
+        <div class="buy-product-bottom">
+            <div class="buy-product-slider-prev show-mobile swiper-button-prev">
+                <img
+                    src="{{ 'reviews-arrow-left-black.svg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="51"
+                    height="8"
+                    loading="lazy"
+                >
+            </div>
+            <div class="buy-product-slider-next show-mobile swiper-button-next">
+                <img
+                    src="{{ 'reviews-arrow-right-black.svg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="51"
+                    height="8"
+                    loading="lazy"
+                >
+            </div>
+        </div>
+        <div id="bergamotProductGallery" class="swiper productMainImgSlider buy-product-main-img">
+            <div class="swiper-wrapper">
+                <div data-src="{{ 'magnesium-capsules-main-img.png' | file_url }}" class="open-popup-slide swiper-slide">
+                    
+                    <img
+                        src="{{ 'magnesium-capsules-main-img.png' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="485"
+                        height="566"
+                        loading="lazy"
+                    >
+                </div>
+                <div data-src="{{ 'magnesium-listing-2.jpg' | file_url }}" class="open-popup-slide swiper-slide">
+                    <img
+                        src="{{ 'magnesium-listing-2.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="695"
+                        height="756"
+                        loading="lazy"
+                    >
+                </div>
+                <div data-src="{{ 'magnesium-listing-3.jpg' | file_url }}" class="open-popup-slide swiper-slide">
+                    <img
+                        src="{{ 'magnesium-listing-3.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="695"
+                        height="756"
+                        loading="lazy"
+                    >
+                </div>
+                <div data-src="{{ 'magnesium-listing-4.jpg' | file_url }}" class="open-popup-slide swiper-slide">
+                    <img
+                        src="{{ 'magnesium-listing-4.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="695"
+                        height="756"
+                        loading="lazy"
+                    >
+                </div>
+                <div data-src="{{ 'magnesium-listing-5.jpg' | file_url }}" class="open-popup-slide swiper-slide">
+                    <img
+                        src="{{ 'magnesium-listing-5.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="695"
+                        height="756"
+                        loading="lazy"
+                    >
+                </div>
+                <div data-src="{{ 'magnesium-listing-6.jpg' | file_url }}" class="open-popup-slide swiper-slide">
+                    <img
+                        src="{{ 'magnesium-listing-6.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="695"
+                        height="756"
+                        loading="lazy"
+                    >
+                </div>
+                <div data-src="{{ 'mag-caps-supl.jpg' | file_url }}" class="open-popup-slide swiper-slide">
+                    <img
+                        src="{{ 'mag-caps-supl.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="695"
+                        height="756"
+                        loading="lazy"
+                    >
+                </div>
+                <div data-src="{{ 'magnesium-listing-8.jpg' | file_url }}" class="open-popup-slide swiper-slide">
+                    <img
+                        src="{{ 'magnesium-listing-8.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="695"
+                        height="756"
+                        loading="lazy"
+                    >
+                </div>
+                
+            </div>
+            <div class="buy-product-main-arrow buy-product-main-arrow-left swiper-button-next">
+                <img
+                    src="{{ 'bergamot-right-arrow.svg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="8"
+                    height="14"
+                    loading="lazy"
+                >
+            </div>
+            <div class="buy-product-main-arrow buy-product-main-arrow-right swiper-button-prev">
+                <img
+                    src="{{ 'bergamot-left-arrow.svg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="8"
+                    height="14"
+                    loading="lazy"
+                >
+            </div>
+            <div class="show-mobile buy-product-pagination"></div>
+
+            <div class="buy-product__certificates hide-tablet">
+                <div class="buy-product__certificate">
+                    <img
+                        src="{{ 'buy-product-certificate-1.png' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="81"
+                        height="81"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="buy-product__certificate">
+                    <img
+                        src="{{ 'buy-product-certificate-2.svg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="81"
+                        height="81"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="buy-product__certificate">
+                    <img
+                        src="{{ 'buy-product-certificate-3.svg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="81"
+                        height="81"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="buy-product__certificate">
+                    <img
+                        src="{{ 'buy-product-certificate-4.svg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="81"
+                        height="81"
+                        loading="lazy"
+                    >
+                </div>
+                
+                <div class="buy-product__certificate">
+                    <img
+                        src="{{ 'buy-product-certificate-6.svg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="81"
+                        height="81"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="buy-product__certificate">
+                    <img
+                        src="{{ 'buy-product-certificate-7.svg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="91"
+                        height="55"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="buy-product__certificate">
+                    <img
+                        src="{{ 'buy-product-certificate-8.svg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="91"
+                        height="55"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </div>
+        <div thumbsSlider="" class="swiper productThumbsSlider buy-product-thumb-slider">
+            
+            <div class="swiper-wrapper">
+                <div class="swiper-slide buy-product__thumb">
+                    <img
+                        src="{{ 'magnesium-listing-1.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="110"
+                        height="110"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="swiper-slide buy-product__thumb">
+                    <img
+                        src="{{ 'magnesium-listing-2.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="110"
+                        height="110"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="swiper-slide buy-product__thumb">
+                    <img
+                        src="{{ 'magnesium-listing-3.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="110"
+                        height="110"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="swiper-slide buy-product__thumb">
+                    <img
+                        src="{{ 'magnesium-listing-4.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="110"
+                        height="110"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="swiper-slide buy-product__thumb">
+                    <img
+                        src="{{ 'magnesium-listing-5.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="110"
+                        height="110"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="swiper-slide buy-product__thumb">
+                    <img
+                        src="{{ 'magnesium-listing-6.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="110"
+                        height="110"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="swiper-slide buy-product__thumb">
+                    <img
+                        src="{{ 'mag-caps-supl.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="110"
+                        height="110"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="swiper-slide buy-product__thumb">
+                    <img
+                        src="{{ 'magnesium-listing-8.jpg' | file_url }}"
+                        alt="{{ shop.name }}"
+                        fetchpriority="low"
+                        decoding="async"
+                        width="110"
+                        height="110"
+                        loading="lazy"
+                    >
+                </div>
+                
+                
+            </div>
+            
+        </div>
+        <div class="buy-product-thumb-arrow-left">
+            <img
+                src="{{ 'se-arrow-left.svg' | file_url }}"
+                alt="{{ shop.name }}"
+                fetchpriority="low"
+                decoding="async"
+                width="16"
+                height="43"
+                loading="lazy"
+                class="hide-tablet"
+            >
+            <img
+                src="{{ 'bergamot-arrow-top.svg' | file_url }}"
+                alt="{{ shop.name }}"
+                fetchpriority="low"
+                decoding="async"
+                width="16"
+                height="43"
+                loading="lazy"
+                class="show-tablet"
+            >
+        </div>
+        <div class="buy-product-thumb-arrow-right">
+            <img
+                src="{{ 'se-arrow-right.svg' | file_url }}"
+                alt="{{ shop.name }}"
+                fetchpriority="low"
+                decoding="async"
+                width="16"
+                height="43"
+                loading="lazy"
+                class="hide-tablet"
+            >
+            <img
+                src="{{ 'bergamot-arrow-down.svg' | file_url }}"
+                alt="{{ shop.name }}"
+                fetchpriority="low"
+                decoding="async"
+                width="16"
+                height="43"
+                loading="lazy"
+                class="show-tablet"
+            >
+        </div>
+        
+      </div>
+      <div class="buy-product__text">
+        <div class="buy-product-reviews hide-tablet">
+            <div class="buy-product__stars">
+                
+                <svg width="111" height="17" viewBox="0 0 111 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.6473 6.58724L14.3258 10.8186L15.3162 16.4755C15.3304 16.5436 15.3237 16.6145 15.2969 16.6788C15.2701 16.743 15.2245 16.7977 15.1661 16.8356C15.1058 16.8822 15.0323 16.9085 14.9561 16.9106H14.776L9.38924 14.2247L3.98747 16.9106C3.9268 16.9483 3.85629 16.9671 3.7849 16.9646C3.71352 16.9621 3.64448 16.9385 3.58658 16.8967C3.52867 16.8548 3.48451 16.7967 3.45971 16.7298C3.43491 16.6628 3.43059 16.5899 3.4473 16.5205L4.43762 10.8636L0.116211 6.58724C0.0625065 6.53964 0.024974 6.47649 0.00883797 6.40656C-0.00729809 6.33664 -0.00123578 6.26343 0.0261807 6.19711C0.0476374 6.13096 0.0870653 6.07206 0.140059 6.02702C0.193054 5.98197 0.257527 5.95255 0.326278 5.94203L6.44828 5.16177L9.02912 0.210158C9.0606 0.145861 9.10983 0.0919136 9.17098 0.0546903C9.23213 0.017467 9.30266 -0.00147687 9.37423 8.98852e-05C9.44326 0.00133793 9.5106 0.0216098 9.56884 0.0586741C9.62709 0.0957385 9.67397 0.148157 9.70434 0.210158L12.3002 5.16177L18.4222 5.94203C18.493 5.95159 18.5599 5.98044 18.6155 6.02543C18.671 6.07041 18.7132 6.1298 18.7373 6.19711C18.7589 6.26421 18.762 6.33591 18.7461 6.40461C18.7303 6.4733 18.6961 6.53641 18.6473 6.58724Z" fill="#FFC700"/>
+                <path d="M41.4368 6.646L37.1064 10.8861L38.0988 16.5547C38.1156 16.6243 38.1112 16.6973 38.0864 16.7644C38.0615 16.8316 38.0173 16.8898 37.9593 16.9317C37.9012 16.9736 37.832 16.9973 37.7605 16.9998C37.689 17.0023 37.6183 16.9834 37.5575 16.9457L32.1596 14.2542L26.7466 16.9457H26.5812C26.4999 16.9457 26.4208 16.9193 26.3557 16.8705C26.2972 16.8325 26.2515 16.7777 26.2246 16.7133C26.1978 16.6489 26.1911 16.5779 26.2053 16.5096L27.1977 10.841L22.8674 6.60089C22.8169 6.5509 22.7817 6.48765 22.7657 6.41847C22.7498 6.34928 22.7537 6.27698 22.7771 6.20995C22.7986 6.14366 22.8382 6.08465 22.8913 6.03951C22.9444 5.99437 23.009 5.96488 23.0779 5.95434L29.2125 5.17247L31.8138 0.210593C31.8453 0.146163 31.8946 0.0921041 31.9559 0.0548037C32.0172 0.0175032 32.0879 -0.00147993 32.1596 9.00714e-05C32.2288 0.0013407 32.2963 0.0216546 32.3546 0.0587958C32.413 0.0959369 32.46 0.148464 32.4904 0.210593L35.0916 5.17247L41.2263 5.95434C41.2979 5.96222 41.3657 5.99051 41.4217 6.03582C41.4777 6.08114 41.5195 6.14157 41.5421 6.20995C41.5714 6.28465 41.577 6.36657 41.5582 6.44457C41.5394 6.52258 41.497 6.59291 41.4368 6.646Z" fill="#FFC700"/>
+                <path d="M64.2759 6.65543L59.9395 10.9015L61.0086 16.578C61.0224 16.6449 61.0171 16.7143 60.9931 16.7783C60.9691 16.8423 60.9275 16.8981 60.873 16.9394C60.8154 16.9789 60.7472 17 60.6773 17C60.6074 17 60.5392 16.9789 60.4816 16.9394L54.9857 14.2743L49.5652 16.9695C49.5108 16.9829 49.454 16.9829 49.3996 16.9695C49.3181 16.9695 49.2389 16.9431 49.1737 16.8942C49.1151 16.8562 49.0694 16.8013 49.0425 16.7368C49.0156 16.6723 49.0089 16.6012 49.0232 16.5328L50.0169 10.8563L45.6805 6.61026C45.63 6.5602 45.5947 6.49686 45.5787 6.42758C45.5627 6.35829 45.5667 6.2859 45.5902 6.21877C45.6117 6.15238 45.6513 6.09329 45.7044 6.04809C45.7576 6.00289 45.8223 5.97336 45.8913 5.96281L52.0496 5.17984L54.6545 0.211022C54.6819 0.146485 54.7282 0.0917807 54.7874 0.0541414C54.8465 0.0165022 54.9157 -0.00229847 54.9857 0.000224383C55.0554 -0.000304624 55.1237 0.0193101 55.1825 0.0567089C55.2413 0.0941078 55.288 0.147696 55.317 0.211022L57.9972 5.22501L64.1404 6.00798C64.2121 6.01587 64.28 6.04419 64.3361 6.08957C64.3921 6.13494 64.434 6.19547 64.4566 6.26395C64.4681 6.33972 64.4571 6.41721 64.425 6.4868C64.3929 6.55639 64.3411 6.61503 64.2759 6.65543Z" fill="#FFC700"/>
+                <path d="M87.2263 6.63149L82.8798 10.8874L83.8608 16.577C83.8747 16.6441 83.8693 16.7137 83.8453 16.7778C83.8212 16.8419 83.7795 16.8979 83.725 16.9392C83.6672 16.9788 83.5988 17 83.5288 17C83.4587 17 83.3903 16.9788 83.3326 16.9392L77.8995 14.2378L72.4664 16.9392C72.4119 16.9527 72.3549 16.9527 72.3004 16.9392C72.2191 16.9372 72.1403 16.911 72.074 16.8638C72.0181 16.8231 71.9744 16.7677 71.9478 16.7038C71.9212 16.64 71.9126 16.57 71.9231 16.5016L72.9192 10.8119L68.5727 6.63149C68.5221 6.58132 68.4867 6.51783 68.4707 6.44839C68.4547 6.37895 68.4587 6.30639 68.4822 6.23911C68.5038 6.17256 68.5434 6.11333 68.5967 6.06802C68.65 6.02272 68.7149 5.99312 68.784 5.98254L74.9566 5.19777L77.5675 0.217451C77.5957 0.152826 77.6421 0.0978258 77.7011 0.0592002C77.76 0.0205745 77.829 0 77.8995 0C77.97 0 78.039 0.0205745 78.0979 0.0592002C78.1569 0.0978258 78.2033 0.152826 78.2315 0.217451L80.8424 5.19777L86.9999 5.98254C87.0718 5.99045 87.1398 6.01884 87.196 6.06432C87.2522 6.10981 87.2941 6.17048 87.3168 6.23911C87.337 6.30675 87.3393 6.37848 87.3234 6.44727C87.3075 6.51605 87.2741 6.57954 87.2263 6.63149Z" fill="#FFC700"/>
+                <path d="M110.083 6.14752C110.06 6.07917 110.019 6.01875 109.963 5.97345C109.907 5.92815 109.839 5.89988 109.767 5.892L103.635 5.11041L101.065 0.210438C101.034 0.148331 100.987 0.0958228 100.929 0.058695C100.871 0.0215671 100.803 0.00126059 100.734 1.04065e-05C100.664 -0.000517672 100.596 0.0190626 100.538 0.0563958C100.479 0.0937289 100.432 0.147223 100.403 0.210438L97.803 5.17053L91.6555 5.95212C91.5866 5.96266 91.522 5.99214 91.469 6.03726C91.4159 6.08238 91.3764 6.14137 91.3549 6.20764C91.3315 6.27465 91.3275 6.34692 91.3435 6.41608C91.3594 6.48524 91.3947 6.54847 91.4451 6.59844L95.7739 10.8371L94.7819 16.5036C94.7714 16.5717 94.7799 16.6414 94.8064 16.705C94.833 16.7687 94.8764 16.8238 94.9322 16.8643C94.9981 16.9113 95.0767 16.9375 95.1576 16.9395C95.2119 16.9529 95.2687 16.9529 95.323 16.9395L100.734 14.249L106.145 16.9395C106.203 16.9789 106.271 17 106.34 17C106.41 17 106.478 16.9789 106.536 16.9395C106.59 16.8983 106.632 16.8425 106.656 16.7787C106.68 16.7148 106.685 16.6455 106.671 16.5787L105.694 10.9122L110.023 6.67359C110.094 6.60762 110.14 6.51825 110.151 6.42171C110.162 6.32517 110.138 6.22789 110.083 6.14752ZM104.988 10.3711C104.946 10.4144 104.915 10.4668 104.896 10.5241C104.878 10.5815 104.873 10.6423 104.882 10.7018L105.784 15.8422L101.065 13.4975V1.84877L103.049 5.63648C103.076 5.69038 103.117 5.73651 103.167 5.77066C103.216 5.8048 103.274 5.82585 103.334 5.83188L108.896 6.53832L104.988 10.3711Z" fill="#FFC700"/>
+                </svg>
+            </div>
+            <span>4.8</span>
+            <span class="buy-product__separate"> | </span>
+            <div class="buy-product-reviews__count">1,134 review</div>
+        </div>
+        <h2 class="hide-mobile buy-product__title hide-tablet">Magnesium Glycinate Capsules</h2>
+        <div class="buy-product__descr">
+            Your ultimate solution for improved health and well-being. Supports restful sleep, muscle and bone strength, heart health, and immunity—all in one highly absorbable formula.
+        </div>
+        <div class="buy-product-tubs">
+            <div data-tub="1" class="buy-product-tub active">
+                <div class="buy-product-tub__img">
+                <img
+                    src="{{ 'magnesium-tub-1.png' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="60"
+                    height="83"
+                    loading="lazy"
+                >
+                </div>
+                <div class="buy-product-tub__name">
+                    1 PACK
+                </div>
+                <div class="buy-product-tub__each"></div>
+            </div>
+            <div data-tub="2" class="buy-product-tub">
+                <div class="buy-product-tub__img">
+                <img
+                    src="{{ 'magnesium-tub-2.png' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="82"
+                    height="97"
+                    loading="lazy"
+                >
+                </div>
+                <div class="buy-product-tub__name">
+                    2 PACKS
+                </div>
+                <div class="buy-product-tub__each"></div>
+            </div>
+            <div data-tub="3" class="buy-product-tub">
+                <div class="buy-product-tub__img">
+                <img
+                    src="{{ 'magnesium-tub-3.png' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="106"
+                    height="93"
+                    loading="lazy"
+                >
+                </div>
+                <div class="buy-product-tub__name">
+                    3 PACKS
+                </div>
+                <div class="buy-product-tub__each"></div>
+            </div>
+        </div>
+        <div class="buy-product__types">
+            <div class="buy-product-type">
+                <div class="buy-product-type__head">
+                    <div class="buy-product__type--left">
+                        <div class="buy-product__circle"></div>
+                        <div class="buy-product-type__title">one-time purchase</div>
+                        <div style="display: none;" class="buy-product-type__shipping">+ free shipping</div>
+                    </div>
+                    <div class="buy-product__type--right">
+                        <div class="buy-product__old-price"></div>
+                        <div class="buy-product__price"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="buy-product-type buy-product-type__second active">
+                <div class="buy-product-type__head">
+                    <div class="buy-product__type--left">
+                        <div class="buy-product__circle"></div>
+                        <div class="buy-product-type__title hide-mobile">AUTOSHIP & SAVE <span class="save-percent hide-mobile">- 50%</span></div>
+                        <div class="buy-product-type__title show-mobile">AUTOSHIP & SAVE 50%</div>
+                        <div class="buy-product-type__shipping">+ free shipping</div>
+                    </div>
+                    <div class="buy-product__type--right">
+                        <div class="buy-product__old-price--autoship"></div>
+                        <div class="buy-product__price--autoship"></div>
+                    </div>
+                </div>
+                <div class="buy-product-type-select">
+                    <div class="buy-product-type-select__trigger">
+                        <p>Delivery every 1 month</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.454505 0.829505C0.893845 0.390165 1.60616 0.390165 2.0455 0.829505L8 6.78401L13.9545 0.829505C14.3938 0.390165 15.1062 0.390165 15.5455 0.829505C15.9848 1.26884 15.9848 1.98116 15.5455 2.4205L8.7955 9.1705C8.35616 9.60983 7.64385 9.60983 7.2045 9.1705L0.454505 2.4205C0.015165 1.98116 0.015165 1.26884 0.454505 0.829505Z" fill="#333333"/>
+                        </svg>
+                    </div>
+                    <div class="buy-product-select-items">
+                        <div data-subscr="30" class="buy-product-select-item active">
+                            <div class="buy-product-select-item-circle"></div>
+                            <p>Delivery every 1 month</p>
+                        </div>
+                        <div data-subscr="60" class="buy-product-select-item">
+                            <div class="buy-product-select-item-circle"></div>
+                            <p>Delivery every 2 months</p>
+                        </div>
+                        <div data-subscr="90" class="buy-product-select-item">
+                            <div class="buy-product-select-item-circle"></div>
+                            <p>Delivery every 3 months</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy-product-type__list">
+                    <ul>
+                      
+                        <li>Free Shipping on Autoship</li>
+                        <li>Guaranteed Delivery, Even When Sold Out Online</li>
+                        <li>Pause, Update Frequency, or Cancel Anytime</li>
+                        <li>Convenient Auto-Delivery, Because Consistency is Key</li>
+                        <li>The Price is Fixed: <span class="list-price"></span> <span class="list-month">Every Month</span>, No Surprises!</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        {% comment %} <form action="/cart/add" method="post" class="buy-product-form">
+            <input class="product-id" type="hidden" name="id" value="49390061420828">
+            <button type="submit" class="btn buy-product-type__btn"><span class="final-price">$35.00</span> - ORDER NOW</button>
+        </form> {% endcomment %}
+        <a href="" class="btn buy-product-type__btn open-upsell"><span class="final-price"></span> - ORDER NOW</a>
+        <div class="buy-product-guarantee">
+            <style>
+                .buy-product-guarantee__text:hover{
+                    color:#A1C520;
+                }
+            </style>
+            <p class="buy-product-guarantee__text" style="cursor:pointer;">🎁 <span style="text-decoration:underline;">Hint About the Gift</span></p>
+        </div>
+        {%  render 'cross-sale' %}
+        <div class="buy-product__certificates show-tablet">
+            <div class="buy-product__certificate">
+                <img
+                    src="{{ 'buy-product-certificate-1.png' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="81"
+                    height="81"
+                    loading="lazy"
+                >
+            </div>
+            <div class="buy-product__certificate">
+                <img
+                    src="{{ 'buy-product-certificate-2.svg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="81"
+                    height="81"
+                    loading="lazy"
+                >
+            </div>
+            <div class="buy-product__certificate">
+                <img
+                    src="{{ 'buy-product-certificate-3.svg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="81"
+                    height="81"
+                    loading="lazy"
+                >
+            </div>
+            <div class="buy-product__certificate">
+                <img
+                    src="{{ 'buy-product-certificate-4.svg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="81"
+                    height="81"
+                    loading="lazy"
+                >
+            </div>
+            <div class="buy-product__certificate">
+                <img
+                    src="{{ 'buy-product-certificate-5.svg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="81"
+                    height="81"
+                    loading="lazy"
+                >
+            </div>
+            <div class="buy-product__certificate">
+                <img
+                    src="{{ 'buy-product-certificate-6.svg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="81"
+                    height="81"
+                    loading="lazy"
+                >
+            </div>
+            <div class="buy-product__certificate">
+                <img
+                    src="{{ 'buy-product-certificate-7.svg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="91"
+                    height="55"
+                    loading="lazy"
+                >
+            </div>
+            <div class="buy-product__certificate">
+                <img
+                    src="{{ 'buy-product-certificate-8.svg' | file_url }}"
+                    alt="{{ shop.name }}"
+                    fetchpriority="low"
+                    decoding="async"
+                    width="91"
+                    height="55"
+                    loading="lazy"
+                >
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+{% comment %} {{
+    'secret-element-upsell-popup-2.css'
+    | asset_url
+    | preload_tag: as: 'style', onload: "this.onload=null;this.rel='stylesheet'"
+}}
+{%- liquid
+    render 'secret-element-upsell-popup-2'
+-%} {% endcomment %}
+
+{%- liquid
+    render 'hint-gift'
+-%}
+{% comment %} <script defer src="{{ 'sea-moss-buy.js' | asset_url }}"></script> {% endcomment %}
+<script defer src="{{ 'magnesium-buy.js' | asset_url }}"></script>
+
+{% schema %}
+    {
+        "name": "Magnesium product info",
+        "class": "magnesium-seed-info",
+        "settings": [
+            
+        ],
+        
+        "presets": [
+            {
+            "name": "Magnesium Seed product info",
+            "category": "text"
+            }
+        ]
+    
+    }
+{% endschema %}

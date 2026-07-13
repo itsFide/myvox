@@ -1,0 +1,197 @@
+.taste{
+    padding: 74px 0;
+    background-image: url('https://cdn.shopify.com/s/files/1/1024/5387/0960/files/taste-bg.webp?v=1783014970');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+.taste__badge{
+    padding: 7.5px 12px;
+    font-size: 14px;
+    letter-spacing: 2%;
+    line-height: 120%;
+    color: rgba(69, 75, 96, 0.8);
+    background: #ECEDEF;
+    border: 1px solid rgba(69, 75, 96, 0.2);
+    width: max-content;
+    margin-bottom: 12px;
+    border-radius: 4px;
+
+}
+.taste__text{
+    width: 604px;
+    margin-left: auto;
+}
+.taste__title{
+    margin-bottom: 12px;
+    color: var(--blue);
+}
+.taste__descr{
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 2%;
+    color: var(--blue);
+    font-weight: 300;
+}
+.taste-items{
+    margin-top: 36px;
+}
+.taste-item{
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(18, 28, 63, 0.2);
+    border-radius: 8px;
+    height: 64px;
+    margin-bottom: 12px;
+}
+.taste-item__text{
+    margin-left: 24px;
+}
+.taste-item__title{
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: var(--blue);
+}
+.taste-item__descr{
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 2%;
+    color: rgba(18, 28, 63, 0.8);
+}
+.taste-item__img {
+    width: 64px;
+    height: 64px;
+}
+.taste-item__img img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1919px) {
+    .taste {
+        padding: 5.0169vw 0;
+    }
+
+    .taste__badge {
+        padding: 0.5085vw 0.8136vw;
+        font-size: 0.9492vw;
+        border: 0.0678vw solid rgba(69, 75, 96, 0.2);
+        margin-bottom: 0.8136vw;
+    }
+
+    .taste__text {
+        width: 40.9492vw;
+    }
+
+    .taste__title {
+        margin-bottom: 0.8136vw;
+    }
+
+    .taste__descr {
+        font-size: 1.0847vw;
+    }
+
+    .taste-items {
+        margin-top: 2.4407vw;
+    }
+
+    .taste-item {
+        border: 0.0678vw solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0.2712vw 0.8136vw rgba(18, 28, 63, 0.2);
+        border-radius: 0.5424vw;
+        height: 4.3390vw;
+        margin-bottom: 0.8136vw;
+    }
+
+    .taste-item__text {
+        margin-left: 1.6271vw;
+    }
+
+    .taste-item__title {
+        font-size: 1.0847vw;
+    }
+
+    .taste-item__descr {
+        margin-top: 0.4068vw;
+        font-size: 1.0847vw;
+    }
+
+    .taste-item__img {
+        width: 4.3390vw;
+        height: 4.3390vw;
+    }
+}
+@media screen and (max-width: 650px) {
+    .taste {
+        padding: 76.3359vw 0 10.9415vw 0;
+        background-image: url('https://cdn.shopify.com/s/files/1/1024/5387/0960/files/taste-bg-mob.webp?v=1783014970');
+    }
+
+    .taste__badge {
+        padding: 1.5267vw 3.0534vw;
+        font-size: 2.5445vw;
+        border: 0.2545vw solid rgba(69, 75, 96, 0.2);
+        margin-bottom: 3.0534vw;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1.018vw;
+
+    }
+
+    .taste__text {
+        width: 100%;
+    }
+
+    .taste__title {
+        margin-bottom: 3.0534vw;
+        text-align: center;
+        width: 69%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .taste__descr {
+        font-size: 2.97vw;
+        font-weight: 300;
+        text-align: center;
+    }
+    /* .taste__descr br:nth-of-type(2){
+        display: none;
+    } */
+
+    .taste-items {
+        margin-top: 6.1069vw;
+    }
+
+    .taste-item {
+        border: 0.2545vw solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 1.0178vw 3.0534vw rgba(18, 28, 63, 0.2);
+        border-radius: 2.0356vw;
+        height: 16.2850vw;
+        width: 100%;
+        margin-bottom: 3.0534vw;
+    }
+
+    .taste-item__text {
+        margin-left: 3.0534vw;
+    }
+
+    .taste-item__title {
+        font-size: 3.0534vw;
+    }
+
+    .taste-item__descr {
+        margin-top: 1.5267vw;
+        font-size: 3.0534vw;
+    }
+
+    .taste-item__img {
+        width: 16.2850vw;
+        height: 16.2850vw;
+    }
+}

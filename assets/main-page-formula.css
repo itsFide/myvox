@@ -1,0 +1,140 @@
+.formula{
+    background-image: url('https://cdn.shopify.com/s/files/1/1024/5387/0960/files/formula-bg.webp?v=1783016965');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 127px 0;
+}
+.formula__inner{
+    
+}
+.formula__badge{
+    padding: 7.5px 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+    line-height: 120%;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+}
+.formula__title{
+    text-align: center;
+    color: #F3F1F0;
+    margin-bottom: 12px;
+}
+.formula__subtitle{
+    font-size: 18px;
+    color: var(--red);
+    line-height: 120%;
+    letter-spacing: 2%;
+    font-weight: 600;
+    text-align: center;
+}
+.formula__descr{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 12px;
+    font-size: 16px;
+    letter-spacing: 2%;
+    line-height: 120%;
+}
+
+.formula__btn{
+    margin-top: 48px;
+    padding: 10px 16px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 6px;
+}
+.formula__btn svg{
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1919px) {
+    .formula {
+        padding: 8.6102vw 0;
+    }
+
+    .formula__badge {
+        padding: 0.5085vw 0.8136vw;
+        font-size: 0.9492vw;
+        border-radius: 0.2712vw;
+        letter-spacing: 0.1356vw;
+        margin-bottom: 0.8136vw;
+    }
+
+    .formula__title {
+        margin-bottom: 0.8136vw;
+    }
+
+    .formula__subtitle {
+        font-size: 1.2203vw;
+    }
+
+    .formula__descr {
+        margin-top: 0.8136vw;
+        font-size: 1.0847vw;
+    }
+
+    .formula__btn {
+        margin-top: 3.2542vw;
+        padding: 0.6780vw 1.0847vw;
+        font-size: 1.0847vw;
+        gap: 0.4068vw;
+    }
+
+    .formula__btn svg {
+        width: 1.6271vw;
+        height: 1.6271vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .formula {
+        padding: 9.1603vw 0 10.6870vw 0;
+        background-image: url('https://cdn.shopify.com/s/files/1/1024/5387/0960/files/formula-bg-mob.webp?v=1783018956');
+    }
+
+    .formula__badge {
+        padding: 1.5267vw 2.0356vw;
+        font-size: 2.5445vw;
+        border-radius: 1.0178vw;
+        letter-spacing: 2%;
+        margin-bottom: 3.0534vw;
+    }
+
+    .formula__title {
+        margin-bottom: 3.0534vw;
+    }
+
+    .formula__subtitle {
+        font-size: 3.5623vw;
+    }
+
+    .formula__descr {
+        margin-top: 3.0534vw;
+        font-size: 3.0534vw;
+    }
+
+    .formula__btn {
+        margin-top: 6.1069vw;
+        padding: 3.3079vw 4.0712vw;
+        font-size: 3.0534vw;
+        gap: 1.5267vw;
+        border-radius: 1.0178vw;
+    }
+
+    .formula__btn svg {
+        width: 4.0712vw;
+        height: 4.0712vw;
+    }
+}

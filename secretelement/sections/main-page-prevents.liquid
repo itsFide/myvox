@@ -1,0 +1,47 @@
+{{ 'main-page-prevents.css' | asset_url | stylesheet_tag}}
+
+<section class="prevents">
+    <div class="container">
+        <div class="prevents__inner">
+            <div class="prevents__img">
+                <picture>
+                    <source media="(max-width:650px)" srcset="{{ "se-prevents-img-mobile.png" |  file_url }}">
+                    <source media="(max-width:1024px)" srcset="{{ "se-prevents-img-tablet.png" |  file_url }}">
+                    <img 
+                        src="{{ "se-prevents-img.png" |  file_url }}" 
+                        alt="Problems img"
+                        width="819"
+                        height="512"
+                        fetchpriority="low"
+                        decoding="async"
+                        loading="lazy"
+                    >
+                </picture>
+            </div>
+            <div class="prevents__text">
+                <h2 class="prevents__title title"><img width="53" height="53" src="{{ "recycle-icon.svg" |  file_url }}" alt=""> 1 PREVENTS 2</h2>
+                <p class="prevents__descr">
+                    At Secret Element, we prioritize your well-being and the health of our planet. With every purchase of a Secret Element bottle made from Prevented Ocean Plastic™, you’re helping to stop the equivalent of two plastic water bottles from polluting our oceans. Together, we can make a positive impact on both your health and the environment.
+                </p>
+                <a href="/pages/science-behind" class="prevents__btn">learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+    {
+        "name": "Main page prevents",
+        "class": "main-page-prevents",
+        "settings": [
+            
+        ],
+        
+        "presets": [
+            {
+            "name": "Main page prevents",
+            "category": "text"
+            }
+        ]
+    
+    }
+{% endschema %}

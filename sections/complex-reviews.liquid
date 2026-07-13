@@ -1,0 +1,482 @@
+{% render 'async-stylesheet', file: 'complex-reviews.css' %}
+<section class="reviews">
+    <div class="container">
+
+        <div class="reviews__inner">
+
+            <div class="reviews__top">
+
+                <div class="reviews__summary">
+
+                    <span class="reviews__label gray-badge">
+                        Verified Reviews
+                    </span>
+
+                    <div class="reviews__rating">
+
+                        <div class="reviews__score">
+                            <span class="reviews__score-value">
+                                4.9★
+                            </span>
+                        </div>
+
+                        <div class="reviews__score-info">
+
+                            <div class="reviews__stars" aria-label="Rating 4.9 out of 5">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="rating-star" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+<path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#454B60"/>
+</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="rating-star" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+<path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#454B60"/>
+</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="rating-star" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+<path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#454B60"/>
+</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="rating-star" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+<path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#454B60"/>
+</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="rating-star" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+    <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#121C3F" fill-opacity="0.1"/>
+    <path d="M6.2041 5.52832H0.391602L5.09375 8.94434L3.29785 14.4717L8 11.0557V0L6.2041 5.52832Z" fill="#454B60"/>
+</svg>
+                            </div>
+
+                            <p class="reviews__count">
+                                4.9 <span>(312 reviews)</span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <nav class="reviews__categories" aria-label="Review categories">
+
+                        <button class="reviews__category reviews__category--active" type="button">
+                            Energy
+                        </button>
+
+                        <button class="reviews__category" type="button">
+                            Immunity
+                        </button>
+
+                        <button class="reviews__category" type="button">
+                            Digestion
+                        </button>
+
+                        <button class="reviews__category" type="button">
+                            Focus
+                        </button>
+
+                        <button class="reviews__category" type="button">
+                            Simplicity
+                        </button>
+
+                    </nav>
+
+                </div>
+
+                <aside class="reviews__statistics">
+
+                    <ul class="reviews__distribution">
+
+                        <li class="reviews__distribution-item">
+
+                            <span class="reviews__distribution-rating">
+                                5★
+                            </span>
+
+                            <div class="reviews__distribution-bar">
+                                <span style="width:88%"></span>
+                            </div>
+
+                            <span class="reviews__distribution-percent">
+                                88%
+                            </span>
+
+                        </li>
+
+                        <li class="reviews__distribution-item">
+
+                            <span class="reviews__distribution-rating">
+                                4★
+                            </span>
+
+                            <div class="reviews__distribution-bar">
+                                <span style="width:9%"></span>
+                            </div>
+
+                            <span class="reviews__distribution-percent">
+                                9%
+                            </span>
+
+                        </li>
+
+                        <li class="reviews__distribution-item">
+
+                            <span class="reviews__distribution-rating">
+                                3★
+                            </span>
+
+                            <div class="reviews__distribution-bar">
+                                <span style="width:3%"></span>
+                            </div>
+
+                            <span class="reviews__distribution-percent">
+                                3%
+                            </span>
+
+                        </li>
+
+                    </ul>
+
+                </aside>
+
+            </div>
+
+            <div class="reviews__slider">
+
+                <div class="reviews__list swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-category="energy">
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        I usually hit a wall around 3 or 4.
+                                        That wall feels lower now.
+                                        Energy holds across the full day instead
+                                        of spiking and crashing.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Michael R.</strong>
+                                    <span class="review-card__verified">/ Verified Purchase</span>
+                                </div>
+                            </article>
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        About a week in, the day felt smoother.
+                                        Not a jolt — more like the floor lifted.
+                                        I stopped reaching for a third coffee.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Jason K.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide" data-category="energy">
+                            <article class="review-card">
+                               <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        Morning fog is gone. I start clear and stay
+                                        clear through the afternoon. No caffeine
+                                        crash at 2pm anymore.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Sarah L.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        Morning fog is gone. I start clear and stay
+                                        clear through the afternoon. No caffeine
+                                        crash at 2pm anymore.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Sarah L.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide" data-category="immunity">
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        Three months in and I haven't caught a single
+                                        cold while everyone around me was sick.
+                                        My body feels more resilient overall.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">David M.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        My allergies used to be unbearable every spring.
+                                        After taking this consistently, the symptoms
+                                        are barely noticeable now.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Emily W.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide" data-category="immunity">
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        I travel a lot for work and used to always get
+                                        sick after flights. Since starting this supplement,
+                                        I've stayed healthy through every trip.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Robert T.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        Bloating used to ruin my afternoons.
+                                        Within two weeks, my stomach settled down
+                                        and I feel lighter after every meal.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Anna K.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide" data-category="digestion">
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        My gut health has improved dramatically.
+                                        No more discomfort after eating and
+                                        my energy levels are more stable throughout the day.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Chris P.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        I've tried countless probiotics with no real
+                                        difference. This one actually works — my
+                                        digestion has never been this smooth.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Lisa H.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide" data-category="focus">
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        My concentration during deep work sessions
+                                        went from 45 minutes to over 2 hours.
+                                        The mental clarity is genuinely impressive.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Tom B.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        As a programmer, I need sustained focus for
+                                        hours. This supplement eliminated my brain fog
+                                        and I'm more productive than ever.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Alex N.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide" data-category="focus">
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        Reading for long periods used to be a struggle.
+                                        Now I can study for hours without losing
+                                        track or getting distracted.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Jessica M.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide" data-category="simplicity">
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        One capsule a day — that's it. No complicated
+                                        routine, no handful of pills. Simple and effective.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Mark D.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                            <article class="review-card">
+                               <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        I used to take five different supplements.
+                                        This replaces them all. One product,
+                                        one dose, and I feel better than before.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Karen S.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide" data-category="simplicity">
+                            <article class="review-card">
+                                <svg class="review-card__quote-icon" xmlns="http://www.w3.org/2000/svg" id="icon-quote" viewBox="0 0 24 17" fill="none">
+    <path d="M4.8591 17C3.4145 17 2.2435 16.5214 1.3461 15.5643C0.4487 14.5854 0 13.2476 0 11.5509C0 10.2239 0.317373 8.88612 0.95212 7.53743C1.60876 6.18874 2.57182 4.87268 3.84131 3.58925C5.1327 2.30582 6.71956 1.1094 8.60192 0L10.933 2.96929C9.37893 3.73065 8.01094 4.64428 6.829 5.71018C5.64706 6.77607 4.87004 7.79846 4.49795 8.77735C5.39535 8.73385 6.2052 8.87524 6.9275 9.20154C7.6498 9.50608 8.21888 9.97377 8.63475 10.6046C9.0725 11.2137 9.29138 11.9315 9.29138 12.7582C9.29138 13.9981 8.87551 15.0205 8.04378 15.8253C7.21204 16.6084 6.15048 17 4.8591 17ZM17.9261 17C16.4815 17 15.3105 16.5214 14.4131 15.5643C13.5157 14.5854 13.067 13.2476 13.067 11.5509C13.067 10.2239 13.3844 8.88612 14.0192 7.53743C14.6758 6.18874 15.6389 4.87268 16.9083 3.58925C18.1997 2.30582 19.7866 1.1094 21.6689 0L24 2.96929C22.446 3.73065 21.078 4.64428 19.896 5.71018C18.7141 6.77607 17.9371 7.79846 17.565 8.77735C18.4624 8.73385 19.2722 8.87524 19.9945 9.20154C20.7168 9.50608 21.2859 9.97377 21.7018 10.6046C22.1395 11.2137 22.3584 11.9315 22.3584 12.7582C22.3584 13.9981 21.9425 15.0205 21.1108 15.8253C20.2791 16.6084 19.2175 17 17.9261 17Z" fill="currentColor"/>
+</svg>
+                                <blockquote class="review-card__quote">
+                                    <p>
+                                        Finally something that doesn't require a
+                                        manual. Take one capsule with breakfast
+                                        and forget about it. Works like a charm.
+                                    </p>
+                                </blockquote>
+                                <div class="review-card__footer">
+                                    <strong class="review-card__author">Brian F.</strong>
+                                    <span class="review-card__verified">Verified Purchase</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="reviews__bottom">
+
+                <div class="reviews__progress">
+
+                    <span class="reviews__counter">
+                        <strong>2</strong> / 3
+                    </span>
+
+
+
+                </div>
+
+                <div class="reviews__navigation">
+
+                    <div class="reviews__progress-bar">
+                        <span style="width: 66.67%;"></span>
+                    </div>
+                    <button class="reviews__button reviews__button--prev" type="button" aria-label="Previous review">
+
+                       <svg xmlns="http://www.w3.org/2000/svg" id="icon-arrow" viewBox="0 0 24 24" fill="none">
+<path d="M14.0479 17.6537L19.7019 11.9999L14.0479 6.34619L12.9942 7.43069L16.8134 11.2499H4.2979V12.7499H16.8134L12.9942 16.5692L14.0479 17.6537Z" fill="currentColor"/>
+</svg>
+
+                    </button>
+
+                    <button class="reviews__button reviews__button--next" type="button" aria-label="Next review">
+
+                       <svg xmlns="http://www.w3.org/2000/svg" id="icon-arrow" viewBox="0 0 24 24" fill="none">
+<path d="M14.0479 17.6537L19.7019 11.9999L14.0479 6.34619L12.9942 7.43069L16.8134 11.2499H4.2979V12.7499H16.8134L12.9942 16.5692L14.0479 17.6537Z" fill="currentColor"/>
+</svg>
+
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Complex Reviews",
+  "class": "complex-reviews",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Complex Reviews"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,246 @@
+{{ 'bonus-page.css' | asset_url | stylesheet_tag}}
+<section class="hero">
+    <div class="container">
+        <div class="hero-shape">
+            <img src="{{ "bonus-shape-1-2.png" |  file_url }}" 
+            width="382"
+            height="622"
+            decoding="async"
+            fetchpriority="low"
+            alt="">
+        </div>
+        <div class="hero-shape">
+            <img src="{{ "bonus-shape-2.png" |  file_url }}" 
+            width="194"
+            height="192"
+            decoding="async"
+            fetchpriority="low"
+            alt="">
+        </div>
+        <div class="hero-shape">
+            <picture>
+                <source media="(max-width:650px)" srcset="{{ "bonus-shape-3-mobile.png" |  file_url }}">
+                <source media="(max-width:1024px)" srcset="{{ "bonus-shape-3-tablet.png" |  file_url }}">
+                <img src="{{ "bonus-shape-3.png" |  file_url }}" 
+                width="146"
+                height="245"
+                decoding="async"
+                fetchpriority="low"
+                alt="">
+            </picture>
+            
+        </div>
+        <div class="hero__inner">
+            <div class="hero__head">
+                <div class="hero__logo">
+                    <a href="/">
+                        <img src="{{ "logo_04_1.png" |  file_url }}" 
+                        width="195"
+                        height="85"
+                        decoding="async"
+                        fetchpriority="low"
+                        alt="">
+                        
+                    </a>
+                </div>
+            </div>
+            <h1 class="hero__title">thank you for your purchase!</h1>
+            <div class="hero-gift">
+                <h2 class="hero-gift__title">We prepared some amazing gifts for you:</h2>
+                <div class="hero-items">
+                    <div class="hero-item">
+                        <div class="hero-item__left">
+                            <div class="hero-item__icon">
+                                <img src="{{ "bonus-hero-icon-1.svg" |  file_url }}" 
+                                width="24"
+                                height="24"
+                                decoding="async"
+                                fetchpriority="low"
+                                alt="">
+                            </div>
+                            <p>Free PDF Guide with cheat sheets</p>
+                        </div>
+                        <div class="hero-item__right">
+                            <div class="dropdown-type-select">
+                                <div class="dropdown-type-select__trigger">
+                                    <p>Secret Element Citrus Bergamot</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.454505 0.829505C0.893845 0.390165 1.60616 0.390165 2.0455 0.829505L8 6.78401L13.9545 0.829505C14.3938 0.390165 15.1062 0.390165 15.5455 0.829505C15.9848 1.26884 15.9848 1.98116 15.5455 2.4205L8.7955 9.1705C8.35616 9.60983 7.64385 9.60983 7.2045 9.1705L0.454505 2.4205C0.015165 1.98116 0.015165 1.26884 0.454505 0.829505Z" fill="#333333"></path>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-select-items">
+                                    <div data-gift="sea-moss" class="dropdown-select-item">
+                                        <p>Secret Element Sea Moss</p>
+                                    </div>
+                                    <div data-gift="citrus-begramot" class="dropdown-select-item">
+                                        <p>Secret Element Citrus Bergamot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-item">
+                        <div class="hero-item__icon">
+                            <img src="{{ "bonus-hero-icon-2.svg" |  file_url }}" 
+                            width="24"
+                            height="24"
+                            decoding="async"
+                            fetchpriority="low"
+                            alt="">
+                        </div>
+                        <p>Extended Warranty for refunds</p>
+                    </div>
+                    <div class="hero-item">
+                        <div class="hero-item__icon">
+                            <img src="{{ "bonus-hero-icon-3.svg" |  file_url }}" 
+                            width="24"
+                            height="24"
+                            decoding="async"
+                            fetchpriority="low"
+                            alt="">
+                        </div>
+                        <p>24/7 Customer Support</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-submit">
+                <h2 class="hero-gift__title">Leave Your Email to Receive Our Gifts:</h2>
+                    <form id="main-popup-form" method="GET" target="_blank" >
+                        <input type="text" name="name" placeholder="Your name">
+                        <input type="text" placeholder="Your email adress" name="email">
+                        <input name="product" type="hidden" name="gift" value="citrus-begramot">
+                        <div class="klaviyo_messages">
+                        <div class="success_message" style="display:none;"></div>
+                            <div class="error_message" style="display:none;"></div>
+                        </div>
+                        <button type="button">submit</button>
+                        <div class="hero-submit-information">
+                            <img src="{{ "submit-icon.svg" |  file_url }}" 
+                            width="24"
+                            height="24"
+                            decoding="async"
+                            fetchpriority="low"
+                            alt="">
+                            <p>We do not share information with third parties</p>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="mail-block">
+  <div class="container">
+    <p>If you have any questions about our promotions, please email us at:</p>
+    <a href="mailto:care@secretelement.com">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.5 20.5H7.5C4.5 20.5 2.5 19 2.5 15.5V8.5C2.5 5 4.5 3.5 7.5 3.5H17.5C20.5 3.5 22.5 5 22.5 8.5V15.5C22.5 19 20.5 20.5 17.5 20.5Z" stroke="#2E52B2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17.5 9L14.37 11.5C13.34 12.32 11.65 12.32 10.62 11.5L7.5 9" stroke="#2E52B2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        care@secretelement.com</a>
+    <p>and we will be happy to answer you!</p>
+  </div>
+    
+</div>
+<div class="bonus-modal">
+    <div class="bonus-modal-inner">
+        <div class="bonus-modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
+            <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#fff"/>
+            </svg>
+        </div>
+        <div class="success-icon">
+            <img src="{{ "checked_2c39ps7ln0u1.svg" | file_url }}" alt="close-btn"
+            width="60"
+            height="60"
+            >
+        </div>
+        <h2 class="bonus-modal__title">Your email was successfully sent</h2>
+    </div>
+</div>
+<script>
+    let trigger = document.querySelector('.dropdown-type-select__trigger')
+    let dropdownItems = document.querySelector('.dropdown-select-items')
+    let selectItem = document.querySelectorAll('.dropdown-select-item')
+    let hiddenInput = document.querySelector('[name="product"]');
+    trigger.addEventListener('click', ()=>{
+        trigger.classList.toggle('active')
+        dropdownItems.classList.toggle('active')
+    })
+    selectItem.forEach(item =>{
+        item.addEventListener('click', ()=>{
+            trigger.classList.remove('active')
+            dropdownItems.classList.remove('active')
+            let text = item.querySelector('p').innerText
+            trigger.querySelector('p').innerText = text
+            hiddenInput.value = item.dataset.gift
+        })
+    })
+     
+</script>
+<script>
+  document.querySelector('#main-popup-form button').addEventListener('click', function(e) { 
+      e.preventDefault();
+      let k_error = document.querySelector('.klaviyo_messages .error_message');
+      let email = document.querySelector('[name="email"]');
+      let product = document.querySelector('[name="product"]');
+      let data = new URLSearchParams();
+      let modal = document.querySelector('.bonus-modal')
+      data.append("g", "U3ku25");
+      data.append("email", email.value);
+    //   data.append("$product", product.value);
+      data.append("$fields", "$product");
+      data.append("$product", product.value);
+
+      if (!validateEmail(email.value)) {
+          email.style.border = "2px solid #ff0000";
+          k_error.style.display = "block";
+          k_error.innerHTML = "Please enter a valid email!";
+      } else {
+          k_error.style.display = "none";
+          email.style.border = "2px solid #000";
+
+          fetch("https://manage.kmail-lists.com/ajax/subscriptions/subscribe", {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/x-www-form-urlencoded",
+                  "Cache-Control": "no-cache"
+              },
+              body: data
+          })
+          .then(response => response.json())
+          .then(response => {
+              if (response.success) {
+                  k_error.style.display = "none";
+                  k_error.innerHTML = "";
+                  modal.classList.add('show')
+                  
+            
+              } else {
+                  if (response.data.is_subscribed) {
+                      k_error.style.display = "none";
+                  } else {
+                      k_error.style.display = "block";
+                      k_error.innerHTML = response.errors[0];
+                  }
+              }
+          });
+      }
+  });
+
+
+  function validateEmail(email) {
+      return String(email).toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+  }
+
+
+</script>
+<script>
+    let modalBonus = document.querySelector('.bonus-modal')
+    let modalClose = document.querySelector('.bonus-modal-close')
+    modalClose.addEventListener('click', ()=>{
+        modalBonus.classList.remove('show')
+    })
+    modalBonus.addEventListener('click', ()=>{
+        modalBonus.classList.remove('show')
+    })
+</script>

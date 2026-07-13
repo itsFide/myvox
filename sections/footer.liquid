@@ -1,0 +1,472 @@
+{% render 'async-stylesheet', file: 'footer.css' %}
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo-col">
+        <div class="footer__logo">
+          {%- if section.settings.logo != blank -%}
+            <img src="{{ section.settings.logo | image_url: width: 300 }}" alt="{{ shop.name }}" width="{{ section.settings.logo_width }}" height="auto" loading="lazy">
+          {%- else -%}
+            <img src="{{ 'myvox-logo-text.svg' | file_url }}" alt="Logo" width="{{ section.settings.logo_width }}" height="auto" loading="lazy">
+          {%- endif -%}
+        </div>
+
+        <div class="footer__socials">
+          {%- assign facebook_url = section.settings.facebook_link | default: '#' -%}
+          {%- assign instagram_url = section.settings.instagram_link | default: '#' -%}
+          {%- assign email_address = section.settings.email_link | default: 'info@myvox9.com' -%}
+
+          <a href="{{ facebook_url }}" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24109_1712)">
+                <path d="M9.101 23.734V15.7247H6.627V12.0442H9.101V10.4583C9.101 6.35831 10.949 4.45835 14.959 4.45835C15.36 4.45835 15.914 4.5005 16.427 4.56173C16.8111 4.60232 17.1922 4.6677 17.568 4.75744V8.09468C17.3508 8.0747 17.133 8.06265 16.915 8.05855C16.6707 8.05221 16.4264 8.0492 16.182 8.04952C15.475 8.04952 14.923 8.14587 14.507 8.35965C14.2278 8.50109 13.9928 8.71711 13.828 8.98394C13.57 9.40549 13.454 9.9826 13.454 10.7424V12.0442H17.373L16.987 14.1549L16.7 15.7247H13.454V24C19.396 23.2794 24 18.2017 24 12.0442C24 5.39277 18.627 0 12 0C5.373 0 0 5.39277 0 12.0442C0 17.6929 3.874 22.4323 9.101 23.734Z" fill="url(#paint0_linear_24109_1712)"/>
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_24109_1712" x1="24" y1="12" x2="0" y2="12" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#C0876C"/>
+                  <stop offset="0.5" stop-color="#DFCFC4"/>
+                  <stop offset="1" stop-color="#D16F55"/>
+                </linearGradient>
+                <clipPath id="clip0_24109_1712">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+
+          <a href="{{ instagram_url }}" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24109_1714)">
+                <path d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM11.999 5C10.0994 5 9.86072 5.00802 9.11426 5.04199C8.36905 5.07612 7.86012 5.19409 7.41504 5.36719C6.9547 5.54597 6.56385 5.78561 6.1748 6.1748C5.78571 6.56368 5.5465 6.95409 5.36719 7.41406C5.19366 7.85924 5.07555 8.36849 5.04199 9.11328C5.0086 9.85994 5 10.0989 5 12C5 13.9011 5.00816 14.1391 5.04199 14.8857C5.07627 15.6308 5.19425 16.1399 5.36719 16.585C5.54608 17.0451 5.78579 17.4353 6.1748 17.8242C6.56368 18.2135 6.95405 18.454 7.41406 18.6328C7.85936 18.8059 8.36844 18.9239 9.11328 18.958C9.85995 18.992 10.099 19 12 19C13.901 19 14.1391 18.992 14.8857 18.958C15.6309 18.9239 16.1406 18.8059 16.5859 18.6328C17.046 18.454 17.4354 18.2135 17.8242 17.8242C18.2136 17.4352 18.4534 17.0452 18.6328 16.585C18.8049 16.1397 18.923 15.6307 18.958 14.8857C18.9915 14.1391 19 13.9011 19 12C19 10.0989 18.9916 9.85995 18.958 9.11328C18.923 8.36854 18.8048 7.85994 18.6328 7.41504C18.4534 6.95468 18.2136 6.56386 17.8242 6.1748C17.4349 5.78551 17.0457 5.54581 16.585 5.36719C16.1388 5.19413 15.6298 5.07613 14.8848 5.04199C14.1382 5.00802 13.8998 5 11.999 5ZM12.001 8.40527C13.9861 8.40545 15.5947 10.0149 15.5947 12C15.5947 13.9851 13.9861 15.5936 12.001 15.5938C10.0157 15.5937 8.40625 13.9852 8.40625 12C8.40625 10.0148 10.0157 8.40528 12.001 8.40527ZM12.001 9.66699C10.7122 9.667 9.66699 10.7113 9.66699 12C9.66699 13.2886 10.7122 14.333 12.001 14.333C13.2894 14.3328 14.334 13.2885 14.334 12C14.334 10.7114 13.2894 9.66717 12.001 9.66699ZM15.7373 7.42383C16.201 7.42387 16.5771 7.79995 16.5771 8.26367C16.577 8.72729 16.201 9.10348 15.7373 9.10352C15.2736 9.10351 14.8976 8.72732 14.8975 8.26367C14.8975 7.79978 15.2736 7.42383 15.7373 7.42383Z" fill="url(#paint0_linear_24109_1714)"/>
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_24109_1714" x1="24" y1="12" x2="0" y2="12" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#C0876C"/>
+                  <stop offset="0.5" stop-color="#DFCFC4"/>
+                  <stop offset="1" stop-color="#D16F55"/>
+                </linearGradient>
+                <clipPath id="clip0_24109_1714">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+
+          <a href="mailto:{{ email_address }}" class="footer__social-link" aria-label="Email">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24109_1718)">
+                <path d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM7.08496 7.5C6.78186 7.5 6.52543 7.60543 6.31543 7.81543C6.10543 8.02543 6 8.28186 6 8.58496V15.415C6 15.7181 6.10543 15.9746 6.31543 16.1846C6.52543 16.3946 6.78186 16.5 7.08496 16.5H16.3154C16.6185 16.5 16.875 16.3946 17.085 16.1846C17.2948 15.9746 17.4004 15.718 17.4004 15.415V8.58496C17.4004 8.28195 17.2948 8.02539 17.085 7.81543C16.875 7.60545 16.6185 7.50002 16.3154 7.5H7.08496ZM16.5 9.26562L11.7002 12.335L6.90039 9.26562L6.99219 8.40039L11.7002 11.4004L16.4082 8.40039L16.5 9.26562Z" fill="url(#paint0_linear_24109_1718)"/>
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_24109_1718" x1="24" y1="12" x2="0" y2="12" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#C0876C"/>
+                  <stop offset="0.5" stop-color="#DFCFC4"/>
+                  <stop offset="1" stop-color="#D16F55"/>
+                </linearGradient>
+                <clipPath id="clip0_24109_1718">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer__newsletter footer__newsletter--desktop">
+          {%- if section.settings.newsletter_heading != blank -%}
+            <h4 class="footer__newsletter-heading">{{ section.settings.newsletter_heading | escape }}</h4>
+          {%- endif -%}
+          {%- if section.settings.newsletter_subtext != blank -%}
+            <p class="footer__newsletter-subtext">{{ section.settings.newsletter_subtext | escape }}</p>
+          {%- endif -%}
+
+          {%- form 'customer', class: 'footer__newsletter-form', id: 'ContactFooter' -%}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <div class="footer__newsletter-field-wrapper">
+              <div class="footer__newsletter-input-container">
+                <span class="footer__newsletter-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.30775 19.5C3.80258 19.5 3.375 19.325 3.025 18.975C2.675 18.625 2.5 18.1974 2.5 17.6923V6.30775C2.5 5.80258 2.675 5.375 3.025 5.025C3.375 4.675 3.80258 4.5 4.30775 4.5H19.6923C20.1974 4.5 20.625 4.675 20.975 5.025C21.325 5.375 21.5 5.80258 21.5 6.30775V17.6923C21.5 18.1974 21.325 18.625 20.975 18.975C20.625 19.325 20.1974 19.5 19.6923 19.5H4.30775ZM12 12.5577L4 7.44225V17.6923C4 17.7821 4.02883 17.8558 4.0865 17.9135C4.14417 17.9712 4.21792 18 4.30775 18H19.6923C19.7821 18 19.8558 17.9712 19.9135 17.9135C19.9712 17.8558 20 17.7821 20 17.6923V7.44225L12 12.5577ZM12 11L19.8463 6H4.15375L12 11ZM4 7.44225V6V17.6923C4 17.7821 4.02883 17.8558 4.0865 17.9135C4.14417 17.9712 4.21792 18 4.30775 18H4V7.44225Z" fill="white" fill-opacity="0.2"/>
+                  </svg>
+                </span>
+                <input
+                  id="NewsletterForm--{{ section.id }}"
+                  type="email"
+                  name="contact[email]"
+                  class="footer__newsletter-input"
+                  value="{{ form.email }}"
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  placeholder="your email"
+                  required
+                >
+              </div>
+              <button type="submit" class="footer__newsletter-button" name="commit" id="Subscribe--{{ section.id }}" aria-label="Subscribe">
+                SUBSCRIBE
+              </button>
+            </div>
+            {%- if form.posted_successfully? -%}
+              <p class="footer__newsletter-message footer__newsletter-message--success" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>
+                Thanks for subscribing!
+              </p>
+            {%- endif -%}
+            {%- if form.errors -%}
+              <p class="footer__newsletter-message footer__newsletter-message--error" id="Newsletter-error--{{ section.id }}">
+                {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+              </p>
+            {%- endif -%}
+          {%- endform -%}
+        </div>
+      </div>
+
+      <div class="footer__menus">
+        {%- assign has_menu_block = false -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'menu' -%}
+            {%- assign has_menu_block = true -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if has_menu_block -%}
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'menu' -%}
+              <div class="footer__menu-col" {{ block.shopify_attributes }}>
+                <h3 class="footer__menu-title">
+                  {{ block.settings.title | default: block.settings.heading | escape }}
+                  <span class="footer__menu-chevron">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.80001 8.83083L4.73334 5.76416L4.03084 6.46666L7.80001 10.2358L11.5692 6.46666L10.8667 5.76416L7.80001 8.83083Z" fill="white" fill-opacity="0.5"/>
+                    </svg>
+                  </span>
+                </h3>
+                {%- if block.settings.menu != blank -%}
+                  <ul class="footer__menu-links">
+                    {%- for link in block.settings.menu.links -%}
+                      <li>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        {%- else -%}
+          <!-- Fallback Hardcoded Menus from Design -->
+          <div class="footer__menu-col">
+            <h3 class="footer__menu-title">
+              SHOP
+              <span class="footer__menu-chevron">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.80001 8.83083L4.73334 5.76416L4.03084 6.46666L7.80001 10.2358L11.5692 6.46666L10.8667 5.76416L7.80001 8.83083Z" fill="white" fill-opacity="0.5"/>
+                </svg>
+              </span>
+            </h3>
+            <ul class="footer__menu-links">
+              <li><a href="/collections/all">API-COMPLEX</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__menu-col">
+            <h3 class="footer__menu-title">
+              ABOUT US
+              <span class="footer__menu-chevron">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.80001 8.83083L4.73334 5.76416L4.03084 6.46666L7.80001 10.2358L11.5692 6.46666L10.8667 5.76416L7.80001 8.83083Z" fill="white" fill-opacity="0.5"/>
+                </svg>
+              </span>
+            </h3>
+            <ul class="footer__menu-links">
+              <li><a href="/pages/about-us">WHO WE ARE</a></li>
+              <li><a href="/pages/science">SCIENCE BEHIND</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__menu-col">
+            <h3 class="footer__menu-title">
+              LEARN MORE
+              <span class="footer__menu-chevron">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.80001 8.83083L4.73334 5.76416L4.03084 6.46666L7.80001 10.2358L11.5692 6.46666L10.8667 5.76416L7.80001 8.83083Z" fill="white" fill-opacity="0.5"/>
+                </svg>
+              </span>
+            </h3>
+            <ul class="footer__menu-links">
+              <li><a href="/pages/faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__menu-col">
+            <h3 class="footer__menu-title">
+              SUPPORT
+              <span class="footer__menu-chevron">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.80001 8.83083L4.73334 5.76416L4.03084 6.46666L7.80001 10.2358L11.5692 6.46666L10.8667 5.76416L7.80001 8.83083Z" fill="white" fill-opacity="0.5"/>
+                </svg>
+              </span>
+            </h3>
+            <ul class="footer__menu-links">
+              <li><a href="/pages/contact">CONTACT</a></li>
+              <li><a href="/pages/refer-a-friend">REFER A FRIEND</a></li>
+              <li><a href="/pages/track-order">TRACK MY ORDER</a></li>
+              <li><a href="/pages/manage-subscription">MANAGE SUBSCRIPTION</a></li>
+            </ul>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="footer__middle-line"></div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-disclaimer">
+        {%- if section.settings.disclaimer_1 != blank -%}
+          <p class="footer__disclaimer-item">
+            <span class="footer__disclaimer-asterisk">*</span>
+            {{ section.settings.disclaimer_1 | escape }}
+          </p>
+        {%- endif -%}
+        {%- if section.settings.disclaimer_2 != blank -%}
+          <p class="footer__disclaimer-item">
+            <span class="footer__disclaimer-asterisk">*</span>
+            {{ section.settings.disclaimer_2 | escape }}
+          </p>
+        {%- endif -%}
+      </div>
+
+      <div class="footer__bottom-row">
+        <div class="footer__bottom-links">
+          {%- if section.settings.bottom_menu != blank -%}
+            {%- for link in section.settings.bottom_menu.links -%}
+              <span class="footer__bottom-link-wrapper">
+                <a href="{{ link.url }}" class="footer__bottom-link">{{ link.title }}</a>
+                {%- unless forloop.last -%}
+                  <span class="footer__bottom-separator">&nbsp;|&nbsp;</span>
+                {%- endunless -%}
+              </span>
+            {%- endfor -%}
+          {%- else -%}
+            <!-- Fallback Hardcoded Policy Links -->
+            <span class="footer__bottom-link-wrapper">
+              <a href="/policies/privacy-policy" class="footer__bottom-link">Privacy Policy</a>
+              <span class="footer__bottom-separator">&nbsp;|&nbsp;</span>
+            </span>
+            <span class="footer__bottom-link-wrapper">
+              <a href="/policies/refund-policy" class="footer__bottom-link">Return and refund policy</a>
+              <span class="footer__bottom-separator">&nbsp;|&nbsp;</span>
+            </span>
+            <span class="footer__bottom-link-wrapper">
+              <a href="/policies/terms-of-service" class="footer__bottom-link">Terms of Service</a>
+              <span class="footer__bottom-separator">&nbsp;|&nbsp;</span>
+            </span>
+            <span class="footer__bottom-link-wrapper">
+              <a href="/policies/shipping-policy" class="footer__bottom-link">Shipping policy</a>
+            </span>
+          {%- endif -%}
+        </div>
+
+        <div class="footer__copyright">
+          {{ section.settings.copyright_text | default: "@ 2026 MYVOX-9. All rights reserved" | escape }}
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile-only newsletter (shown below footer__bottom on mobile) -->
+    <div class="footer__newsletter footer__newsletter--mobile">
+      {%- if section.settings.newsletter_heading != blank -%}
+        <h4 class="footer__newsletter-heading">{{ section.settings.newsletter_heading | escape }}</h4>
+      {%- endif -%}
+      {%- if section.settings.newsletter_subtext != blank -%}
+        <p class="footer__newsletter-subtext">{{ section.settings.newsletter_subtext | escape }}</p>
+      {%- endif -%}
+
+      {%- form 'customer', class: 'footer__newsletter-form', id: 'ContactFooterMobile' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <div class="footer__newsletter-field-wrapper">
+          <div class="footer__newsletter-input-container">
+            <span class="footer__newsletter-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.30775 19.5C3.80258 19.5 3.375 19.325 3.025 18.975C2.675 18.625 2.5 18.1974 2.5 17.6923V6.30775C2.5 5.80258 2.675 5.375 3.025 5.025C3.375 4.675 3.80258 4.5 4.30775 4.5H19.6923C20.1974 4.5 20.625 4.675 20.975 5.025C21.325 5.375 21.5 5.80258 21.5 6.30775V17.6923C21.5 18.1974 21.325 18.625 20.975 18.975C20.625 19.325 20.1974 19.5 19.6923 19.5H4.30775ZM12 12.5577L4 7.44225V17.6923C4 17.7821 4.02883 17.8558 4.0865 17.9135C4.14417 17.9712 4.21792 18 4.30775 18H19.6923C19.7821 18 19.8558 17.9712 19.9135 17.9135C19.9712 17.8558 20 17.7821 20 17.6923V7.44225L12 12.5577ZM12 11L19.8463 6H4.15375L12 11ZM4 7.44225V6V17.6923C4 17.7821 4.02883 17.8558 4.0865 17.9135C4.14417 17.9712 4.21792 18 4.30775 18H4V7.44225Z" fill="white" fill-opacity="0.2"/>
+              </svg>
+            </span>
+            <input
+              id="NewsletterFormMobile--{{ section.id }}"
+              type="email"
+              name="contact[email]"
+              class="footer__newsletter-input"
+              value="{{ form.email }}"
+              aria-required="true"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="email"
+              placeholder="your email"
+              required
+            >
+          </div>
+          <button type="submit" class="footer__newsletter-button" name="commit" id="SubscribeMobile--{{ section.id }}" aria-label="Subscribe">
+            SUBSCRIBE
+          </button>
+        </div>
+        {%- if form.posted_successfully? -%}
+          <p class="footer__newsletter-message footer__newsletter-message--success" tabindex="-1" autofocus>
+            Thanks for subscribing!
+          </p>
+        {%- endif -%}
+        {%- if form.errors -%}
+          <p class="footer__newsletter-message footer__newsletter-message--error">
+            {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+          </p>
+        {%- endif -%}
+      {%- endform -%}
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const titles = document.querySelectorAll('.footer__menu-title');
+    titles.forEach(title => {
+      title.addEventListener('click', function() {
+        if (window.innerWidth <= 650) {
+          const parent = this.closest('.footer__menu-col');
+          if (parent) {
+            parent.classList.toggle('is-open');
+          }
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Footer",
+  "tag": "section",
+  "class": "footer-section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Image"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "label": "Logo Width (Desktop)",
+      "min": 121,
+      "max": 371,
+      "step": 5,
+      "unit": "px",
+      "default": 271
+    },
+    {
+      "type": "header",
+      "content": "Social Links"
+    },
+    {
+      "type": "url",
+      "id": "facebook_link",
+      "label": "Facebook Link"
+    },
+    {
+      "type": "url",
+      "id": "instagram_link",
+      "label": "Instagram Link"
+    },
+    {
+      "type": "text",
+      "id": "email_link",
+      "label": "Email Address",
+      "info": "Will generate a mailto link"
+    },
+    {
+      "type": "header",
+      "content": "Newsletter Settings"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_heading",
+      "label": "Newsletter Heading",
+      "default": "Join the hive"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_subtext",
+      "label": "Newsletter Subtext",
+      "default": "By signing up you consent to receive MYVOX-9 emails."
+    },
+    {
+      "type": "header",
+      "content": "Disclaimer Text"
+    },
+    {
+      "type": "textarea",
+      "id": "disclaimer_1",
+      "label": "Disclaimer 1",
+      "default": "Based on internal testing and participant feedback from MYVOX-9 focus group trials."
+    },
+    {
+      "type": "textarea",
+      "id": "disclaimer_2",
+      "label": "Disclaimer 2",
+      "default": "Results may vary from person to person. All product benefits and performance outcomes described are based on feedback from a voluntary focus group conducted by TerraVibe and user feedback. These statements have not been evaluated by the Food and Drug Administration. Our products is not intended to diagnose, treat, cure or prevent any disease."
+    },
+    {
+      "type": "header",
+      "content": "Bottom Links & Copyright"
+    },
+    {
+      "type": "link_list",
+      "id": "bottom_menu",
+      "label": "Bottom Menu",
+      "info": "Select the menu for Privacy Policy, Refund Policy, etc."
+    },
+    {
+      "type": "text",
+      "id": "copyright_text",
+      "label": "Copyright Text",
+      "default": "@ 2026 MYVOX-9. All rights reserved"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@theme"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footer",
+      "blocks": [
+        {
+          "type": "menu",
+          "settings": {
+            "heading": "SHOP"
+          }
+        },
+        {
+          "type": "menu",
+          "settings": {
+            "heading": "ABOUT US"
+          }
+        },
+        {
+          "type": "menu",
+          "settings": {
+            "heading": "LEARN MORE"
+          }
+        },
+        {
+          "type": "menu",
+          "settings": {
+            "heading": "SUPPORT"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

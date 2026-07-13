@@ -1,0 +1,746 @@
+
+{% comment %} {{ 'header-main.css' | asset_url |  stylesheet_tag }} {% endcomment %}
+<style>
+  .header{
+  background: var(--blue);
+  height: 60px;
+}
+.header__inner{
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  justify-content: space-between;
+  gap: 148px;
+}
+.header__logo{
+  margin-right: 0;
+}
+.header__logo img{
+  width: 163px;
+  height: 36px;
+}
+.header__nav{
+  margin-right: 0;
+}
+.header__nav ul{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header__nav ul li{
+  list-style: none;
+}
+.header__nav ul li a{
+  font-size: 16px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--white-50);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all .3s;
+  text-transform: uppercase;
+}
+.header__nav ul li a svg{
+  width: 16px;
+  height: 16px;
+  margin-left: 2px;
+}
+.header__nav ul li:hover a{
+  color: var(--white);
+}
+.header__right{
+  display: flex;
+  align-items: center;
+  gap: 24px;  
+}
+.header-actions{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header-action{
+  display: block;
+}
+.header-action svg{
+  width: 24px;
+  height: 24px;
+}
+
+.header__btn{
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+@media screen and (max-width: 1919px) {
+  .header {
+    height: 4.0678vw;
+  }
+
+  .header__inner {
+    padding: 0.8136vw 0;
+    gap: 10.034vw;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__logo img {
+    width: 11.0508vw;
+    height: 2.4407vw;
+  }
+
+  .header__nav {
+    margin-right: 0;
+  }
+
+  .header__nav ul {
+    gap: 1.6271vw;
+  }
+
+  .header__nav ul li a {
+    font-size: 1.0847vw;
+  }
+
+  .header__nav ul li a svg {
+    width: 1.0847vw;
+    height: 1.0847vw;
+    margin-left: 0.1356vw;
+  }
+
+  .header__right {
+    gap: 1.6271vw;
+  }
+
+  .header-actions {
+    gap: 1.6271vw;
+  }
+
+  .header-action svg {
+    width: 1.6271vw;
+    height: 1.6271vw;
+  }
+
+  .header__btn {
+    padding: 0.5424vw 1.0847vw;
+    font-size: 1.0847vw;
+  }
+}
+.burger{
+  display: none;
+}
+@media screen and (max-width: 1024px){
+  
+}
+@media screen and (max-width: 650px) {
+  .burger {
+    display: block;
+    width: 4.3257vw;
+    height: 2.7990vw;
+    position: relative;
+    margin-right: 22.9008vw;
+  }
+  .header__inner{
+    gap: 0;
+  }
+  .burger span {
+    position: absolute;
+    width: 100%;
+    height: 0.2545vw;
+    background: #fff;
+  }
+
+  .burger span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+
+  .burger span:nth-child(2) {
+    top: 50%;
+    left: 0;
+  }
+
+  .burger span:nth-child(3) {
+    top: 100%;
+    left: 0;
+  }
+  .header{
+    height: auto;
+  }
+  .header__nav {
+    display: none;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__inner {
+    padding: 3.0534vw 0;
+  }
+
+  .header__logo img {
+    width: 34.6056vw;
+    height: 7.6336vw;
+  }
+
+  .header__logo {
+    margin-right: auto;
+  }
+
+  .header-actions {
+    gap: 6.1069vw;
+  }
+
+  .header-action svg {
+    width: 6.1069vw;
+    height: 6.1069vw;
+  }
+}
+
+/* Mobile Menu Drawer */
+.header-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(18, 28, 63, 0.6); /* backdrop overlay */
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.header-mobile-menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.header-mobile-menu__drawer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 287px;
+  height: 100%;
+  background-color: var(--blue, #121C3F);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.header-mobile-menu.is-active .header-mobile-menu__drawer {
+  transform: translateX(0);
+}
+
+.header-mobile-menu__inner {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.header-mobile-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 0 24px;
+}
+
+.header-mobile-menu__logo img {
+  width: 136px;
+  height: auto;
+  display: block;
+}
+
+.header-mobile-menu__close {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-mobile-menu__close svg {
+  width: 24px;
+  height: 24px;
+}
+
+.header-mobile-menu__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.header-mobile-menu__nav {
+  margin-bottom: 40px;
+}
+
+.header-mobile-menu__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-mobile-menu__item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-mobile-menu__item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-mobile-menu__item a,
+.header-mobile-menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--white, #fff);
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 2%;
+  line-height: 120%;
+}
+
+.header-mobile-menu__chevron {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.header-mobile-menu__chevron svg {
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+}
+
+.header-mobile-menu__dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  padding: 0 24px;
+}
+
+.header-mobile-menu__dropdown li {
+  margin-bottom: 12px;
+}
+
+.header-mobile-menu__dropdown li:last-child {
+  margin-bottom: 0;
+}
+
+.header-mobile-menu__dropdown a {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 0;
+  display: block;
+}
+
+.header-mobile-menu__item.is-open .header-mobile-menu__dropdown {
+  max-height: 300px;
+  padding-bottom: 20px;
+}
+
+.header-mobile-menu__item.is-open .header-mobile-menu__chevron {
+  transform: rotate(180deg);
+}
+
+.header-mobile-menu__btn-wrapper {
+  margin-top: auto;
+  margin-bottom: 40px;
+  padding: 0 24px;
+}
+
+.header-mobile-menu__btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  color: var(--blue, #121C3F);
+  background: var(--red, #D16F55);
+  text-decoration: none;
+  letter-spacing: 2%;
+}
+
+.header-mobile-menu__socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 24px 20px;
+  align-items: center;
+}
+
+.header-mobile-menu__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.header-mobile-menu__social-link:hover {
+  opacity: 0.8;
+}
+
+.header-mobile-menu__social-link svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+
+
+/* Responsive adjustments using vw calculated for 393px screen resolution */
+@media screen and (max-width: 650px) {
+  .header-mobile-menu__drawer {
+    width: 73.028vw;
+  }
+
+  .header-mobile-menu__inner {
+    padding: 3.0534vw 0;
+  }
+
+  .header-mobile-menu__header {
+    margin-bottom: 3.0534vw;
+    padding: 0 6.1069vw;
+  }
+
+  .header-mobile-menu__logo img {
+    width: 34.6056vw;
+  }
+
+  .header-mobile-menu__close svg {
+    width: 6.1069vw;
+    height: 6.1069vw;
+  }
+
+  .header-mobile-menu__item {
+    border-bottom: 0.2545vw solid rgba(255, 255, 255, 0.1);
+  }
+
+  .header-mobile-menu__item:first-child {
+    border-top: 0.2545vw solid rgba(255, 255, 255, 0.1);
+  }
+
+  .header-mobile-menu__item a,
+  .header-mobile-menu__title {
+    padding: 5.0891vw 6.1069vw;
+    font-size: 3.0534vw;
+  }
+
+  .header-mobile-menu__chevron svg {
+    width: 4.0712vw;
+    height: 4.0712vw;
+  }
+
+  .header-mobile-menu__dropdown {
+    padding: 0 6.1069vw;
+  }
+
+  .header-mobile-menu__dropdown li {
+    margin-bottom: 3.0534vw;
+  }
+
+  .header-mobile-menu__dropdown a {
+    font-size: 2.799vw;
+    padding: 2.0356vw 6.1069vw;
+  }
+
+  .header-mobile-menu__item.is-open .header-mobile-menu__dropdown {
+    max-height: 76.3359vw;
+    padding-bottom: 5.0891vw;
+  }
+
+  .header-mobile-menu__btn-wrapper {
+    padding: 0 6.1069vw;
+    margin-bottom: 10.1781vw;
+  }
+
+  .header-mobile-menu__btn {
+    padding: 2.036vw;
+    width: 100%;
+    font-size: 4.071vw;
+    font-weight: 300;
+    border-radius: 1.0178vw;
+  }
+
+  .header-mobile-menu__socials {
+    gap: 6.1069vw;
+    padding: 0 6.1069vw 5.0891vw;
+    justify-content: start;
+  }
+
+  .header-mobile-menu__social-link svg {
+    width: 6.1069vw;
+    height: 6.1069vw;
+  }
+}
+</style>
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="burger">
+        <span></span><span></span><span></span>
+      </div> 
+      <a href="/" class="header__logo">
+        <img src="{{ 'myvox-logo.svg' |  file_url }}" alt="Logo" width="268" height="60">
+      </a>
+      <div class="header__nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Our products
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.80001 8.83083L4.73334 5.76416L4.03084 6.46666L7.80001 10.2358L11.5692 6.46666L10.8667 5.76416L7.80001 8.83083Z" fill="white" fill-opacity="0.5"/>
+              </svg>
+          </a>
+          </li>
+          <li>
+            <a href="/">Science Behind 
+            </a>
+          </li>
+          <li><a href="/">About us</a></li>
+          <li><a href="/">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="header__right">
+        <div class="header-actions">
+          <a href="" class="header-action">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.9905 20.5V19H18.6923C18.7692 19 18.8398 18.9679 18.9038 18.9038C18.9679 18.8398 19 18.7692 19 18.6923V5.30775C19 5.23075 18.9679 5.16025 18.9038 5.09625C18.8398 5.03208 18.7692 5 18.6923 5H11.9905V3.5H18.6923C19.1974 3.5 19.625 3.675 19.975 4.025C20.325 4.375 20.5 4.80258 20.5 5.30775V18.6923C20.5 19.1974 20.325 19.625 19.975 19.975C19.625 20.325 19.1974 20.5 18.6923 20.5H11.9905ZM10.6348 16.2692L9.59625 15.1845L12.0308 12.75H3.5V11.25H12.0308L9.59625 8.8155L10.6348 7.73075L14.9038 12L10.6348 16.2692Z" fill="url(#paint0_linear_24109_806)"/>
+            <defs>
+            <linearGradient id="paint0_linear_24109_806" x1="12" y1="3.5" x2="12" y2="20.5" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#C0876C"/>
+            <stop offset="0.5" stop-color="#DFCFC4"/>
+            <stop offset="1" stop-color="#D16F55"/>
+            </linearGradient>
+            </defs>
+            </svg>
+
+          </a>
+          <a href="" class="header-action">
+            
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.15375 21.5578C6.66792 21.5578 6.25483 21.3875 5.9145 21.047C5.57417 20.7067 5.404 20.2936 5.404 19.8078C5.404 19.3218 5.57417 18.9086 5.9145 18.5683C6.25483 18.2279 6.66792 18.0577 7.15375 18.0577C7.63975 18.0577 8.05292 18.2279 8.39325 18.5683C8.73358 18.9086 8.90375 19.3218 8.90375 19.8078C8.90375 20.2936 8.73358 20.7067 8.39325 21.047C8.05292 21.3875 7.63975 21.5578 7.15375 21.5578ZM16.8463 21.5578C16.3603 21.5578 15.9471 21.3875 15.6068 21.047C15.2664 20.7067 15.0963 20.2936 15.0963 19.8078C15.0963 19.3218 15.2664 18.9086 15.6068 18.5683C15.9471 18.2279 16.3603 18.0577 16.8463 18.0577C17.3321 18.0577 17.7452 18.2279 18.0855 18.5683C18.4258 18.9086 18.596 19.3218 18.596 19.8078C18.596 20.2936 18.4258 20.7067 18.0855 21.047C17.7452 21.3875 17.3321 21.5578 16.8463 21.5578ZM6.01525 5.75L8.55 11.0577H15.3673C15.4249 11.0577 15.4763 11.0433 15.5213 11.0145C15.5661 10.9857 15.6045 10.9456 15.6365 10.8943L18.3193 6.01925C18.3578 5.94875 18.3609 5.88625 18.3288 5.83175C18.2968 5.77725 18.2423 5.75 18.1653 5.75H6.01525ZM5.29625 4.25H19.1808C19.5898 4.25 19.899 4.42408 20.1085 4.77225C20.3182 5.12025 20.3282 5.47567 20.1385 5.8385L16.9345 11.6423C16.7705 11.9307 16.5536 12.1554 16.2838 12.3162C16.0138 12.4773 15.7179 12.5577 15.3963 12.5577H8.1L6.94225 14.673C6.89092 14.75 6.88933 14.8333 6.9375 14.923C6.9855 15.0128 7.05758 15.0577 7.15375 15.0577H18.596V16.5577H7.15375C6.48708 16.5577 5.98617 16.2703 5.651 15.6953C5.31567 15.1202 5.30383 14.5462 5.6155 13.973L7.04225 11.4078L3.404 3.75H1.5V2.25H4.34625L5.29625 4.25Z" fill="url(#paint0_linear_24109_813)"/>
+            <defs>
+            <linearGradient id="paint0_linear_24109_813" x1="10.8868" y1="2.25" x2="10.8868" y2="21.5578" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#C0876C"/>
+            <stop offset="0.5" stop-color="#DFCFC4"/>
+            <stop offset="1" stop-color="#D16F55"/>
+            </linearGradient>
+            </defs>
+            </svg>
+          </a>
+        </div>
+        <a href="" class="header__btn btn">Shop now</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu Drawer -->
+<div class="header-mobile-menu" id="MobileMenu">
+  <div class="header-mobile-menu__drawer">
+    <div class="header-mobile-menu__inner">
+      <div class="header-mobile-menu__header">
+        <div class="header-mobile-menu__logo">
+          <img src="{{ 'myvox-logo.svg' | file_url }}" alt="Logo" width="136" height="30">
+        </div>
+        <button type="button" class="header-mobile-menu__close" id="MobileMenuClose" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="header-mobile-menu__content">
+        <nav class="header-mobile-menu__nav">
+          <ul>
+            <li class="header-mobile-menu__item">
+              <a href="/">Home</a>
+            </li>
+            <li class="header-mobile-menu__item has-dropdown">
+              <div class="header-mobile-menu__title">
+                Our products
+                <span class="header-mobile-menu__chevron">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.80001 8.83083L4.73334 5.76416L4.03084 6.46666L7.80001 10.2358L11.5692 6.46666L10.8667 5.76416L7.80001 8.83083Z" fill="white" fill-opacity="0.5"/>
+                  </svg>
+                </span>
+              </div>
+              <ul class="header-mobile-menu__dropdown">
+                <li><a href="/collections/all">API-COMPLEX</a></li>
+              </ul>
+            </li>
+            <li class="header-mobile-menu__item">
+              <a href="/">Science Behind</a>
+            </li>
+            <li class="header-mobile-menu__item">
+              <a href="/">About us</a>
+            </li>
+            <li class="header-mobile-menu__item">
+              <a href="/">FAQ</a>
+            </li>
+            <li class="header-mobile-menu__item has-dropdown">
+              <div class="header-mobile-menu__title">
+                Support
+                <span class="header-mobile-menu__chevron">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.80001 8.83083L4.73334 5.76416L4.03084 6.46666L7.80001 10.2358L11.5692 6.46666L10.8667 5.76416L7.80001 8.83083Z" fill="white" fill-opacity="0.5"/>
+                  </svg>
+                </span>
+              </div>
+              <ul class="header-mobile-menu__dropdown">
+                <li><a href="/pages/contact">CONTACT</a></li>
+                <li><a href="/pages/refer-a-friend">REFER A FRIEND</a></li>
+                <li><a href="/pages/track-order">TRACK MY ORDER</a></li>
+                <li><a href="/pages/manage-subscription">MANAGE SUBSCRIPTION</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="header-mobile-menu__btn-wrapper">
+          <a href="" class="header-mobile-menu__btn">Shop now</a>
+        </div>
+        
+        <div class="header-mobile-menu__socials">
+          {%- assign facebook_url = settings.social_facebook_link | default: '#' -%}
+          {%- assign instagram_url = settings.social_instagram_link | default: '#' -%}
+          {%- assign email_address = settings.social_email_link | default: 'info@myvox9.com' -%}
+          
+          <a href="{{ facebook_url }}" class="header-mobile-menu__social-link" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24109_1712)">
+                <path d="M9.101 23.734V15.7247H6.627V12.0442H9.101V10.4583C9.101 6.35831 10.949 4.45835 14.959 4.45835C15.36 4.45835 15.914 4.5005 16.427 4.56173C16.8111 4.60232 17.1922 4.6677 17.568 4.75744V8.09468C17.3508 8.0747 17.133 8.06265 16.915 8.05855C16.6707 8.05221 16.4264 8.0492 16.182 8.04952C15.475 8.04952 14.923 8.14587 14.507 8.35965C14.2278 8.50109 13.9928 8.71711 13.828 8.98394C13.57 9.40549 13.454 9.9826 13.454 10.7424V12.0442H17.373L16.987 14.1549L16.7 15.7247H13.454V24C19.396 23.2794 24 18.2017 24 12.0442C24 5.39277 18.627 0 12 0C5.373 0 0 5.39277 0 12.0442C0 17.6929 3.874 22.4323 9.101 23.734Z" fill="url(#paint0_linear_24109_1712)"/>
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_24109_1712" x1="24" y1="12" x2="0" y2="12" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#C0876C"/>
+                  <stop offset="0.5" stop-color="#DFCFC4"/>
+                  <stop offset="1" stop-color="#D16F55"/>
+                </linearGradient>
+                <clipPath id="clip0_24109_1712">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+
+          <a href="{{ instagram_url }}" class="header-mobile-menu__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24109_1714_mobile)">
+                <path d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM11.999 5C10.0994 5 9.86072 5.00802 9.11426 5.04199C8.36905 5.07612 7.86012 5.19409 7.41504 5.36719C6.9547 5.54597 6.56385 5.78561 6.1748 6.1748C5.78571 6.56368 5.5465 6.95409 5.36719 7.41406C5.19366 7.85924 5.07555 8.36849 5.04199 9.11328C5.0086 9.85994 5 10.0989 5 12C5 13.9011 5.00816 14.1391 5.04199 14.8857C5.07627 15.6308 5.19425 16.1399 5.36719 16.585C5.54608 17.0451 5.78579 17.4353 6.1748 17.8242C6.56368 18.2135 6.95405 18.454 7.41406 18.6328C7.85936 18.8059 8.36844 18.9239 9.11328 18.958C9.85995 18.992 10.099 19 12 19C13.901 19 14.1391 18.992 14.8857 18.958C15.6309 18.9239 16.1406 18.8059 16.5859 18.6328C17.046 18.454 17.4354 18.2135 17.8242 17.8242C18.2136 17.4352 18.4534 17.0452 18.6328 16.585C18.8049 16.1397 18.923 15.6307 18.958 14.8857C18.9915 14.1391 19 13.9011 19 12C19 10.0989 18.9916 9.85995 18.958 9.11328C18.923 8.36854 18.8048 7.85994 18.6328 7.41504C18.4534 6.95468 18.2136 6.56386 17.8242 6.1748C17.4349 5.78551 17.0457 5.54581 16.585 5.36719C16.1388 5.19413 15.6298 5.07613 14.8848 5.04199C14.1382 5.00802 13.8998 5 11.999 5ZM12.001 8.40527C13.9861 8.40545 15.5947 10.0149 15.5947 12C15.5947 13.9851 13.9861 15.5936 12.001 15.5938C10.0157 15.5937 8.40625 13.9852 8.40625 12C8.40625 10.0148 10.0157 8.40528 12.001 8.40527ZM12.001 9.66699C10.7122 9.667 9.66699 10.7113 9.66699 12C9.66699 13.2886 10.7122 14.333 12.001 14.333C13.2894 14.3328 14.334 13.2885 14.334 12C14.334 10.7114 13.2894 9.66717 12.001 9.66699ZM15.7373 7.42383C16.201 7.42387 16.5771 7.79995 16.5771 8.26367C16.577 8.72729 16.201 9.10348 15.7373 9.10352C15.2736 9.10351 14.8976 8.72732 14.8975 8.26367C14.8975 7.79978 15.2736 7.42383 15.7373 7.42383Z" fill="url(#paint0_linear_24109_1714_mobile)"/>
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_24109_1714_mobile" x1="24" y1="12" x2="0" y2="12" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#C0876C"/>
+                  <stop offset="0.5" stop-color="#DFCFC4"/>
+                  <stop offset="1" stop-color="#D16F55"/>
+                </linearGradient>
+                <clipPath id="clip0_24109_1714_mobile">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+
+          <a href="mailto:{{ email_address }}" class="header-mobile-menu__social-link" aria-label="Email">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24109_1718_mobile)">
+                <path d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM7.08496 7.5C6.78186 7.5 6.52543 7.60543 6.31543 7.81543C6.10543 8.02543 6 8.28186 6 8.58496V15.415C6 15.7181 6.10543 15.9746 6.31543 16.1846C6.52543 16.3946 6.78186 16.5 7.08496 16.5H16.3154C16.6185 16.5 16.875 16.3946 17.085 16.1846C17.2948 15.9746 17.4004 15.718 17.4004 15.415V8.58496C17.4004 8.28195 17.2948 8.02539 17.085 7.81543C16.875 7.60545 16.6185 7.50002 16.3154 7.5H7.08496ZM16.5 9.26562L11.7002 12.335L6.90039 9.26562L6.99219 8.40039L11.7002 11.4004L16.4082 8.40039L16.5 9.26562Z" fill="url(#paint0_linear_24109_1718_mobile)"/>
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_24109_1718_mobile" x1="24" y1="12" x2="0" y2="12" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#C0876C"/>
+                  <stop offset="0.5" stop-color="#DFCFC4"/>
+                  <stop offset="1" stop-color="#D16F55"/>
+                </linearGradient>
+                <clipPath id="clip0_24109_1718_mobile">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SVG Gradient Definition for Social Icons -->
+<svg width="0" height="0" style="display: none;">
+  <defs>
+    <linearGradient id="social-gradient" x1="24" y1="12" x2="0" y2="12" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C0876C"/>
+      <stop offset="0.5" stop-color="#DFCFC4"/>
+      <stop offset="1" stop-color="#D16F55"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const burger = document.querySelector('.burger');
+    const mobileMenu = document.getElementById('MobileMenu');
+    const mobileMenuClose = document.getElementById('MobileMenuClose');
+    
+    if (burger && mobileMenu) {
+      burger.addEventListener('click', function() {
+        mobileMenu.classList.add('is-active');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+    
+    if (mobileMenuClose && mobileMenu) {
+      mobileMenuClose.addEventListener('click', function() {
+        mobileMenu.classList.remove('is-active');
+        document.body.style.overflow = '';
+      });
+    }
+    
+    // Accordion inside mobile menu
+    const dropdownTitles = document.querySelectorAll('.header-mobile-menu__title');
+    dropdownTitles.forEach(title => {
+      title.addEventListener('click', function() {
+        const parent = this.closest('.header-mobile-menu__item');
+        if (parent) {
+          parent.classList.toggle('is-open');
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Header",
+  "tag": "header",
+  "class": "header-section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "@theme"
+    }
+  ]
+}
+{% endschema %}

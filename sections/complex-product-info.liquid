@@ -1,0 +1,644 @@
+{% render 'complex-product-styles' %}
+<section class="hero">
+    <div class="container">
+        <nav class="hero__breadcrumbs" aria-label="Breadcrumb">
+            <ol class="hero__breadcrumbs-list">
+                <li class="hero__breadcrumbs-item">
+                    <a href="#">Our Products</a>
+                </li>
+                <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.19 12.02L7.49 11.313L10.43 8.387L0.56 8.38V7.358L10.43 7.365L7.49 4.432L8.19 3.732L12.334 7.876L8.19 12.02Z"
+                        fill="#121C3F" fill-opacity="0.5" />
+                </svg>
+
+                <li class="hero__breadcrumbs-item" aria-current="page">
+                    Api-Complex
+                </li>
+            </ol>
+        </nav>
+
+        <div class="hero__wrapper">
+
+            <div class="hero__gallery">
+
+                <div class="hero__gallery-inner">
+                    <div class="hero__image swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'product-1.avif' |  file_url }}" type="image/avif" media="(min-width: 652px)">
+                                    <source srcset="{{ 'product-1.avif' |  file_url }}" type="image/avif">
+                                    <img src="{{ 'the-hive-item-1.webp' |  file_url }}" alt="Api-Complex"
+                                        fetchpriority="high" loading="eager" decoding="sync" width="604" height="604">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'product-2.avif' |  file_url }}" type="image/avif">
+                                    <img src="{{ 'the-hive-item-2.webp' |  file_url }}" alt="Api-Complex Photo 2"
+                                        fetchpriority="low" loading="lazy" decoding="async" width="604" height="604">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'product-3.avif' |  file_url }}" type="image/avif">
+                                    <img src="{{ 'the-hive-item-3.webp' |  file_url }}" alt="Api-Complex Photo 3"
+                                        fetchpriority="low" loading="lazy" decoding="async" width="604" height="604">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'product-4.avif' |  file_url }}" type="image/avif">
+                                    <img src="{{ 'the-hive-item-4.webp' |  file_url }}" alt="Api-Complex Photo 4"
+                                        fetchpriority="low" loading="lazy" decoding="async" width="604" height="604">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__thumbnails swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <button class="hero__thumbnail hero__thumbnail--active" type="button">
+                                    <picture>
+                                        <source srcset="{{ 'product-1.avif' |  file_url }}" type="image/avif">
+                                        <img src="{{ 'the-hive-item-1.webp' |  file_url }}" alt="Api-Complex Photo 1"
+                                            fetchpriority="high" loading="eager" decoding="sync" width="160" height="160">
+                                    </picture>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="hero__thumbnail hero__thumbnail--active" type="button">
+                                    <picture>
+                                        <source srcset="{{ 'product-2.avif' |  file_url }}" type="image/avif">
+                                        <img src="{{ 'the-hive-item-2.webp' |  file_url }}" alt="Api-Complex Photo 2"
+                                            fetchpriority="high" loading="eager" decoding="sync" width="160" height="160">
+                                    </picture>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="hero__thumbnail hero__thumbnail--active" type="button">
+                                    <picture>
+                                        <source srcset="{{ 'product-3.avif' |  file_url }}" type="image/avif">
+                                        <img src="{{ 'the-hive-item-3.webp' |  file_url }}" alt="Api-Complex Photo 3"
+                                            fetchpriority="high" loading="eager" decoding="sync" width="160" height="160">
+                                    </picture>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="hero__thumbnail hero__thumbnail--active" type="button">
+                                    <picture>
+                                        <source srcset="{{ 'product-4.avif' |  file_url }}" type="image/avif">
+                                        <img src="{{ 'the-hive-item-4.webp' |  file_url }}" alt="Api-Complex Photo 4"
+                                            fetchpriority="high" loading="eager" decoding="sync" width="160" height="160">
+                                    </picture>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="hero__content">
+
+                <div class="hero__label gray-badge">
+                    PROTOCOL 01 — THE HIVE
+                </div>
+
+                <p class="hero__brand">
+                    MYVOX-9
+                </p>
+
+                <h1 class="hero__title">
+                    Api-Complex
+                </h1>
+
+                <p class="hero__description">
+                    3,500 mg of active hive compounds.
+                    One stick. One ritual.
+                    Immunity, Energy, Focus, Gut Health &amp; Recovery,
+                    Vitality — preserved at full biological strength.
+                </p>
+
+                <div class="hero__rating">
+
+                    <div class="hero__stars" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                                fill="#454B60" />
+                        </svg>
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                                fill="#454B60" />
+                        </svg>
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                                fill="#454B60" />
+                        </svg>
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                                fill="#454B60" />
+                        </svg>
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                                fill="#121C3F" fill-opacity="0.1" />
+                            <path
+                                d="M6.2041 5.52832H0.391602L5.09375 8.94434L3.29785 14.4717L8 11.0557V0L6.2041 5.52832Z"
+                                fill="#454B60" />
+                        </svg>
+
+                    </div>
+
+                    <span class="hero__rating-value">
+                        4.9
+                    </span>
+
+                    <a class="hero__reviews" href="#">
+                        (312 reviews)
+                    </a>
+
+                </div>
+
+                <div class="hero__purchase">
+
+                    <div class="purchase-card purchase-card--popular purchase-card--active">
+
+
+
+                        <div class="purchase-card__inner">
+
+                            <div class="purchase-card__header">
+
+                                <span class="purchase-card__badge gray-badge">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="icon-like" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <path
+                                            d="M11.8206 13.6666H4.80775V5.66662L9.23091 1.26929L9.79491 1.83329C9.86414 1.90251 9.92164 1.99418 9.96741 2.10829C10.0131 2.2224 10.0359 2.3299 10.0359 2.43079V2.59995L9.32825 5.66662H13.7949C14.112 5.66662 14.3921 5.78823 14.6352 6.03145C14.8785 6.27457 15.0001 6.55468 15.0001 6.87179V7.94862C15.0001 8.01784 14.9911 8.09262 14.9731 8.17295C14.9552 8.25329 14.9351 8.32812 14.9129 8.39745L13.0026 12.9051C12.9069 13.1188 12.7467 13.2991 12.5219 13.4461C12.2971 13.5931 12.0634 13.6666 11.8206 13.6666ZM5.80775 12.6666H11.8206C11.8676 12.6666 11.9156 12.6538 11.9647 12.6281C12.014 12.6025 12.0514 12.5597 12.0771 12.5L14.0001 7.99995V6.87179C14.0001 6.8119 13.9809 6.76273 13.9424 6.72429C13.904 6.68584 13.8548 6.66662 13.7949 6.66662H8.06425L8.90008 3.01279L5.80775 6.09229V12.6666ZM4.80775 5.66662V6.66662H2.66675V12.6666H4.80775V13.6666H1.66675V5.66662H4.80775Z"
+                                            fill="#D16F55" fill-opacity="0.5" />
+                                    </svg>
+                                    Most Popular
+                                </span>
+
+                                <div class="purchase-card__discount">
+
+                                    <span class="purchase-card__old-price">
+                                        $149
+                                    </span>
+
+                                    <span class="purchase-card__save gray-badge">
+                                        SAVE 47%
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="purchase-card__top">
+
+                                <input id="purchase-1" class="purchase-card__input" type="radio" name="purchase"
+                                    checked>
+                                <label for="purchase-1"></label>
+                                <div class="purchase-card__price">
+                                    <strong>$79</strong>
+                                    <span>/ month</span>
+                                </div>
+
+                                <div class="purchase-card__name">
+                                    Smart Subscription
+                                </div>
+
+                            </div>
+
+                            <ul class="purchase-card__features">
+
+                                <li>
+                                    30 Sticks every 40 Days —
+                                    <br>
+                                    <span>Matches the 30/10 Protocol Cycle</span>
+                                </li>
+
+                                <li>
+                                    Free Shipping every Delivery
+                                    <br>
+                                    <span>(saves $9.95 each time)</span>
+
+                                </li>
+
+                                <li>
+                                    Extended 60-day Guarantee
+                                </li>
+
+                                <li>
+                                    Cancel, Pause, or Change Frequency Anytime —
+                                    <br>
+                                    <span> 1 Click</span>
+
+                                </li>
+
+                            </ul>
+
+                            <div class="purchase-card__saving">
+                                You Save over $840/year vs. One-Time Purchases
+                            </div>
+
+                            <button class="purchase-card__button" type="button">
+                                Subscribe — $79/month
+                                <svg xmlns="http://www.w3.org/2000/svg" id="icon-arrow" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M14.0479 17.6537L19.7019 11.9999L14.0479 6.34619L12.9942 7.43069L16.8134 11.2499H4.2979V12.7499H16.8134L12.9942 16.5692L14.0479 17.6537Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="purchase-card">
+
+
+                        <div class="purchase-card__inner">
+
+                            <div class="purchase-card__header">
+
+                                <span class="purchase-card__subtitle">
+                                    Experience Protocol One
+                                </span>
+
+                                <div class="purchase-card__discount">
+
+                                    <span class="purchase-card__old-price">
+                                        $149
+                                    </span>
+
+                                    <span class="purchase-card__save gray-badge">
+                                        SAVE 27%
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="purchase-card__top">
+                                <input class="purchase-card__input" type="radio" id="purchase-2" name="purchase">
+                                <label for="purchase-2"></label>
+                                <div class="purchase-card__price">
+                                    <strong>$109</strong>
+                                </div>
+
+                                <div class="purchase-card__name">
+                                    One-Time Purchase
+                                </div>
+
+                            </div>
+
+                            <ul class="purchase-card__features">
+
+                                <li>
+                                    30 Sticks —
+                                    <br>
+                                    <span>Full 30-day Supply</span>
+                                </li>
+
+                                <li>
+                                    Therapeutic Doses of All Three Hive Compounds
+                                </li>
+
+                                <li>
+                                    Clean Label —
+                                    <br>
+                                    <span>Zero Fillers, Zero Sugar</span>
+                                </li>
+
+                                <li>
+                                    US Shipping $9.95
+                                </li>
+
+                                <li>
+                                    60-day Money-Back Guarantee
+                                </li>
+
+
+                            </ul>
+                            <button class="purchase-card__button" type="button">
+                                Buy once — $109
+                                <svg xmlns="http://www.w3.org/2000/svg" id="icon-arrow" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M14.0479 17.6537L19.7019 11.9999L14.0479 6.34619L12.9942 7.43069L16.8134 11.2499H4.2979V12.7499H16.8134L12.9942 16.5692L14.0479 17.6537Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        </label>
+
+                    </div>
+
+                    <div class="hero__advantages">
+
+                        <div class="advantage-card">
+
+                            <h3 class="advantage-card__title">
+                                60-Day
+                            </h3>
+
+                            <p class="advantage-card__text">
+                                Money-Back<br>
+                                Guarantee
+                            </p>
+
+                        </div>
+
+                        <div class="advantage-card">
+
+                            <h3 class="advantage-card__title">
+                                No Fillers
+                            </h3>
+
+                            <p class="advantage-card__text">
+                                3,5g Active<br>
+                                Per 4g Serving
+                            </p>
+
+                        </div>
+
+                        <div class="advantage-card">
+
+                            <h3 class="advantage-card__title">
+                                Cancel Anytime
+                            </h3>
+
+                            <p class="advantage-card__text">
+                                1-Click<br>
+                                Subscription Control
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+</section>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+  const BREAKPOINTS = {
+    MOBILE: 393,
+    DESKTOP: 1476,
+  };
+
+
+  function getCurrentMode() {
+    return window.innerWidth <= 650 ? BREAKPOINTS.MOBILE : BREAKPOINTS.DESKTOP;
+  }
+
+  function getResponsiveValue(px, baseWidth = 393) {
+    const scale = window.innerWidth / baseWidth;
+    return px * scale;
+  }
+
+  const thumbnailSliderHero = new Swiper('.hero__thumbnails', {
+    slidesPerView: 3.763,
+    freeMode: true,
+    on: {
+      init: function () {
+
+        if (window.innerWidth < 651) {
+          setTimeout(() => {
+            const position = -(getResponsiveValue(65));
+            this.setTranslate(position);
+
+
+          }, 100);
+        }
+
+      },
+    },
+    breakpoints: {
+      // When window width is >= 640px
+      0: {
+        slidesPerView: 3,
+        spaceBetween: getResponsiveValue(6),
+      },
+
+      651: {
+        slidesPerView: 3.763,
+      }
+    }
+  });
+
+  new Swiper('.hero__image', {
+    thumbs: {
+      swiper: thumbnailSliderHero,
+    },
+  });
+
+  window.addEventListener('resize', () => {
+    let resizeTimer;
+
+    if (resizeTimer) {
+      clearTimeout(resizeTimer);
+    }
+
+    resizeTimer = setTimeout(() => {
+      if (window.innerWidth <= 650) {
+        thumbnailSliderHero.params.spaceBetween = getResponsiveValue(6);
+      }
+      thumbnailSliderHero.update();
+    }, 100);
+  });
+
+
+  const purchaseCards = document.querySelectorAll('.hero__purchase .purchase-card');
+  const purchaseInputs = document.querySelectorAll('.hero__purchase .purchase-card__input');
+
+  purchaseInputs.forEach(function (input) {
+    input.addEventListener('change', function () {
+      purchaseCards.forEach(function (card) {
+        const cardInput = card.querySelector('.purchase-card__input');
+        if (cardInput && cardInput.checked) {
+          card.classList.add('purchase-card--active');
+        } else {
+          card.classList.remove('purchase-card--active');
+        }
+      });
+    });
+  });
+
+  purchaseCards.forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      if (e.target.closest('.purchase-card__input') || e.target.closest('label[for]')) {
+        return;
+      }
+      const input = card.querySelector('.purchase-card__input');
+      if (input && !input.checked) {
+        input.checked = true;
+        input.dispatchEvent(new Event('change'));
+      }
+    });
+  });
+
+  // Reviews slider with tab filtering, counter, and progress bar
+  const reviewsSection = document.querySelector('.reviews');
+  const tabs = reviewsSection.querySelectorAll('.reviews__category');
+  const slides = reviewsSection.querySelectorAll('.swiper-slide');
+  const counterTotal = reviewsSection.querySelector('.reviews__counter');
+  const progressBar = reviewsSection.querySelector('.reviews__progress-bar span');
+
+  let activeCategory = 'energy';
+  let currentVisibleIndex = 0;
+  let prevSwiperIndex = 0;
+
+  const reviewsSwiper = new Swiper('.reviews__list', {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.reviews__button--next',
+      prevEl: '.reviews__button--prev',
+    },
+    on: {
+      slideChange: function () {
+        var visible = getVisibleSlides();
+        if (this.activeIndex > prevSwiperIndex) {
+          currentVisibleIndex = Math.min(currentVisibleIndex + 1, visible.length - 1);
+        } else if (this.activeIndex < prevSwiperIndex) {
+          currentVisibleIndex = Math.max(currentVisibleIndex - 1, 0);
+        }
+        prevSwiperIndex = this.activeIndex;
+        updateCounter();
+      },
+    },
+  });
+
+  function getVisibleSlides() {
+    return Array.from(slides).filter(function (slide) {
+      return slide.dataset.category === activeCategory;
+    });
+  }
+
+  function countReviews(slideList) {
+    return slideList.reduce(function (sum, slide) {
+      return sum + slide.querySelectorAll('.review-card').length;
+    }, 0);
+  }
+
+  function updateCounter() {
+    const visible = getVisibleSlides();
+    const total = countReviews(visible);
+
+    let current = 0;
+    for (let i = 0; i <= currentVisibleIndex; i++) {
+      current += visible[i].querySelectorAll('.review-card').length;
+    }
+
+    counterTotal.innerHTML = '<strong>' + current + '</strong> / ' + total;
+
+    const percent = total > 0 ? (current / total) * 100 : 0;
+    progressBar.style.width = percent + '%';
+  }
+
+  function filterByCategory(category) {
+    activeCategory = category;
+    currentVisibleIndex = 0;
+    prevSwiperIndex = 0;
+
+    slides.forEach(function (slide) {
+      if (slide.dataset.category === category) {
+        slide.style.display = '';
+      } else {
+        slide.style.display = 'none';
+      }
+    });
+
+    reviewsSwiper.update();
+    reviewsSwiper.slideTo(0, 0);
+    updateCounter();
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) {
+        t.classList.remove('reviews__category--active');
+      });
+      this.classList.add('reviews__category--active');
+
+      const category = this.textContent.trim().toLowerCase();
+      filterByCategory(category);
+    });
+  });
+
+  filterByCategory(activeCategory);
+
+  // FAQ accordion
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  function closeItem(item) {
+    var content = item.querySelector('.faq-item__content');
+    content.style.maxHeight = content.scrollHeight + 'px';
+    content.offsetHeight;
+    content.style.maxHeight = '0';
+    item.classList.remove('faq-item--active');
+    item.querySelector('.faq-item__summary').setAttribute('aria-expanded', 'false');
+  }
+
+  function openItem(item) {
+    var content = item.querySelector('.faq-item__content');
+    item.classList.add('faq-item--active');
+    item.querySelector('.faq-item__summary').setAttribute('aria-expanded', 'true');
+    content.style.maxHeight = content.scrollHeight + 'px';
+  }
+
+  faqItems.forEach(function (item) {
+    var btn = item.querySelector('.faq-item__summary');
+    btn.addEventListener('click', function () {
+      if (item.classList.contains('faq-item--active')) {
+        closeItem(item);
+      } else {
+        openItem(item);
+      }
+    });
+  });
+
+  faqItems.forEach(function (item) {
+    var content = item.querySelector('.faq-item__content');
+    if (item.classList.contains('faq-item--active')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    } else {
+      content.style.maxHeight = '0';
+    }
+  });
+});
+
+</script>
+{% schema %}
+{
+  "name": "Complex Product Info",
+  "class": "complex-product-info",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Complex Product Info"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,344 @@
+{% render 'async-stylesheet', file: 'main-page-rules.css' %}
+
+{%- liquid
+    assign rules_image_1_avif = images['rules-1.avif']
+    if rules_image_1_avif == blank
+        assign rules_image_1_avif = images['rules-1.webp']
+    endif
+    assign rules_image_1_webp = images['rules-1.webp']
+
+    assign rules_image_2_avif = images['rules-2.avif']
+    if rules_image_2_avif == blank
+        assign rules_image_2_avif = images['rules-2.webp']
+    endif
+    assign rules_image_2_webp = images['rules-2.webp']
+
+    assign rules_image_3_avif = images['rules-3.avif']
+    if rules_image_3_avif == blank
+        assign rules_image_3_avif = images['rules-3.webp']
+    endif
+    assign rules_image_3_webp = images['rules-3.webp']
+
+    assign rules_background_avif = images['rules-bg.avif']
+    if rules_background_avif == blank
+        assign rules_background_avif = images['rules-bg.webp']
+    endif
+    assign rules_background_webp = images['rules-bg.webp']
+
+    assign rules_background_mobile_avif = images['rules-bg-mob.avif']
+    if rules_background_mobile_avif == blank
+        assign rules_background_mobile_avif = images['rules-bg-mob.webp']
+    endif
+    assign rules_background_mobile_webp = images['rules-bg-mob.webp']
+
+    assign rules_card_sizes = '(max-width: 650px) calc(100vw - 32px), (max-width: 1919px) 26.8475vw, 396px'
+
+    assign background_loading = 'lazy'
+    assign background_fetchpriority = 'low'
+
+    if section.index == 1
+        assign background_loading = 'eager'
+        assign background_fetchpriority = 'high'
+    elsif section.index == 2
+        assign background_loading = 'eager'
+        assign background_fetchpriority = 'auto'
+    endif
+-%}
+
+<section class="rules">
+
+    {%- if rules_background_avif != blank or rules_background_webp != blank -%}
+        <picture class="rules__background" aria-hidden="true">
+
+            {%- if rules_background_mobile_avif != blank or rules_background_mobile_webp != blank -%}
+                <!-- Mobile AVIF -->
+                <source
+                    media="(max-width: 650px)"
+                    type="image/avif"
+                    srcset="
+                        {{ rules_background_mobile_avif | image_url: width: 390, format: 'avif' }} 390w,
+                        {{ rules_background_mobile_avif | image_url: width: 500, format: 'avif' }} 500w,
+                        {{ rules_background_mobile_avif | image_url: width: 650, format: 'avif' }} 650w,
+                        {{ rules_background_mobile_avif | image_url: width: 900, format: 'avif' }} 900w
+                    "
+                    sizes="100vw"
+                >
+                <!-- Mobile WebP -->
+                <source
+                    media="(max-width: 650px)"
+                    type="image/webp"
+                    srcset="
+                        {{ rules_background_mobile_webp | image_url: width: 390, format: 'webp' }} 390w,
+                        {{ rules_background_mobile_webp | image_url: width: 500, format: 'webp' }} 500w,
+                        {{ rules_background_mobile_webp | image_url: width: 650, format: 'webp' }} 650w,
+                        {{ rules_background_mobile_webp | image_url: width: 900, format: 'webp' }} 900w
+                    "
+                    sizes="100vw"
+                >
+            {%- endif -%}
+
+            <!-- Desktop AVIF -->
+            <source
+                type="image/avif"
+                srcset="
+                    {{ rules_background_avif | image_url: width: 768, format: 'avif' }} 768w,
+                    {{ rules_background_avif | image_url: width: 1200, format: 'avif' }} 1200w,
+                    {{ rules_background_avif | image_url: width: 1600, format: 'avif' }} 1600w,
+                    {{ rules_background_avif | image_url: width: 1920, format: 'avif' }} 1920w,
+                    {{ rules_background_avif | image_url: width: 2560, format: 'avif' }} 2560w
+                "
+                sizes="100vw"
+            >
+            <!-- Desktop WebP -->
+            <source
+                type="image/webp"
+                srcset="
+                    {{ rules_background_webp | image_url: width: 768, format: 'webp' }} 768w,
+                    {{ rules_background_webp | image_url: width: 1200, format: 'webp' }} 1200w,
+                    {{ rules_background_webp | image_url: width: 1600, format: 'webp' }} 1600w,
+                    {{ rules_background_webp | image_url: width: 1920, format: 'webp' }} 1920w,
+                    {{ rules_background_webp | image_url: width: 2560, format: 'webp' }} 2560w
+                "
+                sizes="100vw"
+            >
+
+            {%- assign fallback_bg_img = rules_background_webp | default: rules_background_avif -%}
+            <img
+                src="{{ fallback_bg_img | image_url: width: 1600, format: 'webp' }}"
+                width="{{ fallback_bg_img.width }}"
+                height="{{ fallback_bg_img.height }}"
+                alt=""
+                loading="{{ background_loading }}"
+                fetchpriority="{{ background_fetchpriority }}"
+                decoding="async"
+            >
+        </picture>
+    {%- endif -%}
+
+    <div class="container">
+        <div class="rules__inner">
+
+            <div class="rules__badge">THE STANDARD</div>
+
+            <h2 class="rules__title title-main">
+                Three rules. No exceptions
+            </h2>
+
+            <div class="rules-items">
+
+                <div class="rules-item">
+                    <div class="rules-item__img">
+                        {%- if rules_image_1_avif != blank or rules_image_1_webp != blank -%}
+                            <picture>
+                                <source
+                                    type="image/avif"
+                                    srcset="
+                                        {{ rules_image_1_avif | image_url: width: 320, format: 'avif' }} 320w,
+                                        {{ rules_image_1_avif | image_url: width: 396, format: 'avif' }} 396w,
+                                        {{ rules_image_1_avif | image_url: width: 480, format: 'avif' }} 480w,
+                                        {{ rules_image_1_avif | image_url: width: 600, format: 'avif' }} 600w,
+                                        {{ rules_image_1_avif | image_url: width: 800, format: 'avif' }} 800w
+                                    "
+                                    sizes="{{ rules_card_sizes }}"
+                                >
+                                <source
+                                    type="image/webp"
+                                    srcset="
+                                        {{ rules_image_1_webp | image_url: width: 320, format: 'webp' }} 320w,
+                                        {{ rules_image_1_webp | image_url: width: 396, format: 'webp' }} 396w,
+                                        {{ rules_image_1_webp | image_url: width: 480, format: 'webp' }} 480w,
+                                        {{ rules_image_1_webp | image_url: width: 600, format: 'webp' }} 600w,
+                                        {{ rules_image_1_webp | image_url: width: 800, format: 'webp' }} 800w
+                                    "
+                                    sizes="{{ rules_card_sizes }}"
+                                >
+                                {%- assign fallback_img_1 = rules_image_1_webp | default: rules_image_1_avif -%}
+                                <img
+                                    src="{{ fallback_img_1 | image_url: width: 396, format: 'webp' }}"
+                                    width="396"
+                                    height="200"
+                                    loading="lazy"
+                                    fetchpriority="low"
+                                    decoding="async"
+                                    alt=""
+                                >
+                            </picture>
+                        {%- endif -%}
+                    </div>
+
+                    <div class="rules-item__title">
+                        Radical Potency
+                    </div>
+
+                    <p class="rules-item__descr">
+                        Therapeutic doses only. If the amount can't do <br>
+                        the work, it isn't in the formula
+                    </p>
+                </div>
+
+                <div class="rules-item">
+                    <div class="rules-item__img">
+                        {%- if rules_image_2_avif != blank or rules_image_2_webp != blank -%}
+                            <picture>
+                                <source
+                                    type="image/avif"
+                                    srcset="
+                                        {{ rules_image_2_avif | image_url: width: 320, format: 'avif' }} 320w,
+                                        {{ rules_image_2_avif | image_url: width: 396, format: 'avif' }} 396w,
+                                        {{ rules_image_2_avif | image_url: width: 480, format: 'avif' }} 480w,
+                                        {{ rules_image_2_avif | image_url: width: 600, format: 'avif' }} 600w,
+                                        {{ rules_image_2_avif | image_url: width: 800, format: 'avif' }} 800w
+                                    "
+                                    sizes="{{ rules_card_sizes }}"
+                                >
+                                <source
+                                    type="image/webp"
+                                    srcset="
+                                        {{ rules_image_2_webp | image_url: width: 320, format: 'webp' }} 320w,
+                                        {{ rules_image_2_webp | image_url: width: 396, format: 'webp' }} 396w,
+                                        {{ rules_image_2_webp | image_url: width: 480, format: 'webp' }} 480w,
+                                        {{ rules_image_2_webp | image_url: width: 600, format: 'webp' }} 600w,
+                                        {{ rules_image_2_webp | image_url: width: 800, format: 'webp' }} 800w
+                                    "
+                                    sizes="{{ rules_card_sizes }}"
+                                >
+                                {%- assign fallback_img_2 = rules_image_2_webp | default: rules_image_2_avif -%}
+                                <img
+                                    src="{{ fallback_img_2 | image_url: width: 396, format: 'webp' }}"
+                                    width="396"
+                                    height="200"
+                                    loading="lazy"
+                                    fetchpriority="low"
+                                    decoding="async"
+                                    alt=""
+                                >
+                            </picture>
+                        {%- endif -%}
+                    </div>
+
+                    <div class="rules-item__title">
+                        Clean Label
+                    </div>
+
+                    <p class="rules-item__descr">
+                        Every gram is active. No fillers, no binders, <br>
+                        no compromise. 3.5g active per 4g serving
+                    </p>
+                </div>
+
+                <div class="rules-item">
+                    <div class="rules-item__img">
+                        {%- if rules_image_3_avif != blank or rules_image_3_webp != blank -%}
+                            <picture>
+                                <source
+                                    type="image/avif"
+                                    srcset="
+                                        {{ rules_image_3_avif | image_url: width: 320, format: 'avif' }} 320w,
+                                        {{ rules_image_3_avif | image_url: width: 396, format: 'avif' }} 396w,
+                                        {{ rules_image_3_avif | image_url: width: 480, format: 'avif' }} 480w,
+                                        {{ rules_image_3_avif | image_url: width: 600, format: 'avif' }} 600w,
+                                        {{ rules_image_3_avif | image_url: width: 800, format: 'avif' }} 800w
+                                    "
+                                    sizes="{{ rules_card_sizes }}"
+                                >
+                                <source
+                                    type="image/webp"
+                                    srcset="
+                                        {{ rules_image_3_webp | image_url: width: 320, format: 'webp' }} 320w,
+                                        {{ rules_image_3_webp | image_url: width: 396, format: 'webp' }} 396w,
+                                        {{ rules_image_3_webp | image_url: width: 480, format: 'webp' }} 480w,
+                                        {{ rules_image_3_webp | image_url: width: 600, format: 'webp' }} 600w,
+                                        {{ rules_image_3_webp | image_url: width: 800, format: 'webp' }} 800w
+                                    "
+                                    sizes="{{ rules_card_sizes }}"
+                                >
+                                {%- assign fallback_img_3 = rules_image_3_webp | default: rules_image_3_avif -%}
+                                <img
+                                    src="{{ fallback_img_3 | image_url: width: 396, format: 'webp' }}"
+                                    width="396"
+                                    height="200"
+                                    loading="lazy"
+                                    fetchpriority="low"
+                                    decoding="async"
+                                    alt=""
+                                >
+                            </picture>
+                        {%- endif -%}
+                    </div>
+
+                    <div class="rules-item__title">
+                        Lyophilization
+                    </div>
+
+                    <p class="rules-item__descr">
+                        Freeze-dried at low temperature. Enzymes <br>
+                        and fatty acids remain alive inside every stick.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="rules-counts">
+
+                <div class="rules-count-item">
+                    <div class="rules-count-item__num">
+                        92%
+                    </div>
+
+                    <div class="rules-count-item__descr">
+                        Subscribers reorder <br>
+                        after their first box
+                    </div>
+                </div>
+
+                <div class="rules-count-item">
+                    <div class="rules-count-item__num">
+                        500mg
+                    </div>
+
+                    <div class="rules-count-item__descr">
+                        Royal Jelly —<br>
+                        10× the standard dose
+                    </div>
+                </div>
+
+                <div class="rules-count-item">
+                    <div class="rules-count-item__num">
+                        4.9★
+                    </div>
+
+                    <div class="rules-count-item__descr">
+                        Average rating <br>
+                        across 300+ reviews
+                    </div>
+                </div>
+
+                <div class="rules-count-item">
+                    <div class="rules-count-item__num">
+                        Day 7
+                    </div>
+
+                    <div class="rules-count-item__descr">
+                        First results reported <br>
+                        by most customers
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main Page Rules",
+  "class": "main-page-rules",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Main Page Rules"
+    }
+  ]
+}
+{% endschema %}

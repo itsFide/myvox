@@ -1,0 +1,315 @@
+{{ 'header.css' | asset_url | stylesheet_tag }}
+<header class="header">
+  <div class="container-header">
+    <div class="header__inner">
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    
+      <div class="header__logo">
+        <!-- Логотип -->
+        {% if section.settings.new_logo_img %}
+          <a href="/">
+            <img src="{{ section.settings.new_logo_img | img_url: 'master' }}" alt="Secret Element Logo">
+          </a>
+        {% endif %}
+      </div>
+
+      
+      <div class="header__menu">
+          <!-- Меню -->
+          {% if section.settings.new-menu %}
+            <nav>
+              <ul>
+                {% for link in linklists[section.settings.new-menu].links %}
+                  {% assign child_list_handle = link.title | handle %}
+                  <li class="{% if linklists[child_list_handle].links != blank %}has-child{% endif %}">
+                    <a href="{{ link.url }}">
+                      
+                      {{ link.title }}
+                      {% if linklists[child_list_handle].links != blank %}
+                        <div class="arrow">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+    
+                        </div>
+                      {% endif %}
+                    </a>
+                    
+
+
+                    {% assign child_list_handle = link.title | handle %}
+                    {% if linklists[child_list_handle].links != blank %}
+                        <ul class="childs">
+                            <div class="child-item">
+                              <a href="/products/citrus-bergamot">
+                                <div class="child-img">
+                                  <img src="{{ "header-product-1.png" |  file_url }}"
+                                  width="178"
+                                  height="245"
+                                  alt="">
+                                </div>
+                                <div class="child-name hide-tablet">Citrus Bergamot <br>
+                                  Capsules</div>
+
+                                <div class="child-name show-tablet">Citrus Bergamot</div>
+                              </a>
+                            </div>
+
+                            <div class="child-item">
+                              <a href="/products/secret-element-sea-moss">
+                                <div class="child-img">
+                                  <img src="{{ "header-product-2.png" |  file_url }}"
+                                  width="178"
+                                  height="245"
+                                  alt="">
+                                </div>
+                                <div class="child-name hide-tablet">Sea Moss <br>
+                                  Capsules</div>
+                                <div class="child-name show-tablet">Sea Moss</div>
+                              </a>
+                            </div>
+
+                            <div class="child-item">
+                              <a href="/products/secret-element-berberine">
+                                <div class="child-img">
+                                  <img src="{{ "header-product-3.png" |  file_url }}"
+                                  width="178"
+                                  height="245"
+                                  alt="">
+                                </div>
+                                <div class="child-name hide-tablet">Berberine <br>
+                                  Capsules</div>
+                                <div class="child-name show-tablet">Berberine</div>
+                              </a>
+                            </div>
+
+                            {% comment %} <div class="child-item">
+                              <a href="/products/shilajit-ashwagandha-capsuls">
+                                <div class="child-img">
+                                  <img src="{{ "header-product-4.png" |  file_url }}"
+                                  width="178"
+                                  height="245"
+                                  alt="">
+                                </div>
+                                <div class="child-name hide-tablet">Shilajit + Ashwagandha <br>
+                                  Capsules</div>
+
+                                <div class="child-name show-tablet">Shilajit + <br> Ashwagandha</div>
+                              </a>
+                            </div> {% endcomment %}
+
+                            <div class="child-item">
+                              <a href="/products/secret-element-sea-moss-black-seed-oil">
+                                <div class="child-img">
+                                  <img src="{{ "header-product-5.png" |  file_url }}"
+                                  width="178"
+                                  height="245"
+                                  alt="">
+                                </div>
+                                <div class="child-name hide-tablet">Sea Moss + Black Seed oil <br>
+                                  Capsules</div>
+
+                                <div class="child-name show-tablet">Sea moss + Black <br> Seed Oil</div>
+                              </a>
+                            </div>
+
+                            <div class="child-item">
+                              <a href="/products/secret-element-magnesium-gummies">
+                                <div class="child-img">
+                                  <img src="{{ "magnesium-gummies-img.png" |  file_url }}"
+                                  width="178"
+                                  height="245"
+                                  alt="">
+                                </div>
+                                <div class="child-name hide-tablet">Magnesium <br>
+                                  Gummies</div>
+
+                                <div class="child-name show-tablet">Magnesium
+                                Gummies</div>
+                              </a>
+                            </div>
+
+                            {% comment %} <div class="child-item">
+                              <a href="/products/secret-element-magnesium-glycinate-capsules">
+                                <div class="child-img">
+                                  <img src="{{ "magnesium-capsules-header-img.png" |  file_url }}"
+                                  width="178"
+                                  height="245"
+                                  alt="">
+                                </div>
+                                <div class="child-name hide-tablet">Magnesium Glycinate <br>
+                                  Capsules</div>
+
+                                <div class="child-name show-tablet">Magnesium Glycinate</div>
+                              </a>
+                            </div> {% endcomment %}
+                            <div class="child-item">
+                              <a href="/products/secret-element-magnezium-complex-capsules">
+                                <div class="child-img">
+                                  <img src="{{ "2_8c428359-9953-4139-8fc5-31f9b44de096.png" |  file_url }}"
+                                  width="178"
+                                  height="245"
+                                  alt="">
+                                </div>
+                                <div class="child-name hide-tablet">Magnesium Complex <br>
+                                  Capsules</div>
+
+                                <div class="child-name show-tablet">Magnesium Complex
+                                  Capsules</div>
+                              </a>
+                            </div>
+                            <div class="child-item">
+                              <a href="/products/secret-element-creatine-monohydrate-gummies">
+                                <div class="child-img">
+                                  <img src="{{ "71GC1LWFcqL._AC_SL1500.png" |  file_url }}"
+                                  width="178"
+                                  height="245"
+                                  alt="">
+                                </div>
+                                <div class="child-name hide-tablet">Creatine Monohydrate Gummies</div>
+
+                                <div class="child-name show-tablet">Creatine Monohydrate Gummies</div>
+                              </a>
+                            </div>
+                        </ul>
+                    {% endif %}
+
+                  </li>
+                  
+                {% endfor %}
+                {% comment %} <div class="header__profile show-mobile">
+                    <a href="{% if customer %}/account{% else %}/account/register{% endif %}">
+                      
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12.5C14.7614 12.5 17 10.2614 17 7.5C17 4.73858 14.7614 2.5 12 2.5C9.23858 2.5 7 4.73858 7 7.5C7 10.2614 9.23858 12.5 12 12.5Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.5901 22.5C20.5901 18.63 16.7402 15.5 12.0002 15.5C7.26015 15.5 3.41016 18.63 3.41016 22.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+                    </a>
+                </div> {% endcomment %}
+              </ul>
+            </nav>
+          {% endif %}
+      </div>
+      <div class="header__right">
+          {% comment %} <div class="header__profile hide-mobile">
+            <a href="{% if customer %}/account{% else %}/account/register{% endif %}">
+              
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12.5C14.7614 12.5 17 10.2614 17 7.5C17 4.73858 14.7614 2.5 12 2.5C9.23858 2.5 7 4.73858 7 7.5C7 10.2614 9.23858 12.5 12 12.5Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.5901 22.5C20.5901 18.63 16.7402 15.5 12.0002 15.5C7.26015 15.5 3.41016 18.63 3.41016 22.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+            </a>
+          </div> {% endcomment %}
+          <div class="header__cart">
+            <a href="/cart">
+              
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2.5H3.74001C4.82001 2.5 5.67 3.43 5.58 4.5L4.75 14.46C4.61 16.09 5.89999 17.49 7.53999 17.49H18.19C19.63 17.49 20.89 16.31 21 14.88L21.54 7.38C21.66 5.72 20.4 4.37 18.73 4.37H5.82001" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.25 22.5C16.9404 22.5 17.5 21.9404 17.5 21.25C17.5 20.5596 16.9404 20 16.25 20C15.5596 20 15 20.5596 15 21.25C15 21.9404 15.5596 22.5 16.25 22.5Z" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.25 22.5C8.94036 22.5 9.5 21.9404 9.5 21.25C9.5 20.5596 8.94036 20 8.25 20C7.55964 20 7 20.5596 7 21.25C7 21.9404 7.55964 22.5 8.25 22.5Z" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 8.5H21" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="count-wrapper">
+                Cart ({{ cart.item_count }})
+              </div>
+              {% if cart != empty %}
+                <span class="header__cart-count">{{ cart.item_count }}</span>
+              {% endif %}
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+</header>
+<style>
+  .bl-fr-timer{
+    padding:25px 120px !important;
+    background: #EC0101 !important;
+    text-align: center;
+    font-size:30px;
+    color: #fff;
+  }
+  @media screen and (max-width: 1919px) {
+    .bl-fr-timer{
+      padding:1.302vw 6.25vw !important;
+      font-size:1.563vw;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+      .bl-fr-timer{
+        padding:2.083vw 6.25vw !important;
+        font-size:3.906vw;
+      }
+  }
+  @media screen and (max-width: 650px) {
+    .bl-fr-timer{
+      padding:15px 34px !important;
+      font-size:14px;
+    }
+  }
+</style>
+
+{% comment %} <div class="bl-fr-timer">
+  <p>
+    <strong>New Year, New You!</strong> Limited Time Offer Up to 55% OFF
+  </p>
+  
+</div> {% endcomment %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const burger = document.querySelector('.burger');
+    const mobileMenu = document.querySelector('.header__menu');
+    let dropdownTrigger = document.querySelector('.has-child')
+    let childs = document.querySelector('.childs')
+    burger.addEventListener('click', function () {
+      this.classList.toggle('active');
+      mobileMenu.classList.toggle('active')
+      // if (this.classList.contains('active')) {
+      //   mobileMenu.style.height = `${mobileMenu.scrollHeight}px`
+      // } else {
+      //   mobileMenu.style.height = '0px';
+      // }
+    });
+    dropdownTrigger.addEventListener('click',()=>{
+      dropdownTrigger.classList.toggle('active')
+      childs.classList.toggle('active')
+    })
+  });
+</script>
+{% schema %}
+{
+    "name": "Header",
+    "class": "header-section",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "new_logo_img",
+            "label": "Landing page logo"
+        },
+        {
+            "type": "link_list",
+            "id": "new-menu",
+            "default": "main-menu",
+            "label": "Menu"
+        }
+    ],
+    
+    "presets": [
+        {
+        "name": "Header",
+        "category": "text"
+        }
+    ]
+
+}
+{% endschema %}

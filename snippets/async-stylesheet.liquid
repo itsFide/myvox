@@ -1,0 +1,11 @@
+{% comment %}
+  Async (non-render-blocking) CSS loader.
+  Usage: {% render 'async-stylesheet', file: 'filename.css' %}
+
+  Technique: load as print media first (browser downloads but doesn't apply),
+  then switch to 'all' once loaded. Falls back via <noscript>.
+{% endcomment %}
+{%- assign css_url = file | asset_url -%}
+<link rel="preload" href="{{ css_url }}" as="style">
+<link rel="stylesheet" href="{{ css_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ css_url }}"></noscript>

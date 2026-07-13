@@ -1,0 +1,44 @@
+{% comment %} {{ 'overflow-list.css' | asset_url | preload_tag: as: 'style' }} {% endcomment %}
+{% comment %} {{ 'base.css' | asset_url | stylesheet_tag: preload: true }} {% endcomment %}
+<style>
+@font-face {
+    font-family: "Geologica";
+    src: url("{{ 'Geologica-Light.woff2' | asset_url }}") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Geologica";
+    src: url("{{ 'Geologica-SemiBold.woff2' | asset_url }}") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Geologica";
+    src: url("{{ 'Geologica-Bold.woff2' | asset_url }}") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}#MainContent{overflow:hidden}body{font-family:Geologica,sans-serif;font-weight:300}.container{max-width:1250px;padding:0 11px;margin:0 auto}:root{--red:#D16F55;--white-50:rgba(255, 255, 255, 0.5);--white:#fff;--blue:#121C3F}.btn{background:var(--red);text-decoration:none;border-radius:4px;color:var(--blue)}.title-main{font-size:36px;line-height:120%;font-weight:600}@media screen and (max-width:1919px){.container{max-width:84.746vw;padding:0 .746vw;margin:0 auto}.btn{border-radius:.271vw}.title-main{font-size:2.441vw}}@media screen and (max-width:650px){.container{max-width:100%;padding:0 2.799vw}.title-main{font-size:6.107vw}}
+</style>
+<link rel="preload" href="{{ 'Geologica-Light.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="{{ 'Geologica-SemiBold.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="{{ 'Geologica-Bold.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin="anonymous">
+{% comment %} {{ 'theme-styles.css' | asset_url |  stylesheet_tag }} {% endcomment %}
+
+{% if request.path == "/cart" or request.page_type == 'password' %}
+    {{ 'base.css' | asset_url |  stylesheet_tag }}
+{% endif %}
+
+{% if request.path contains '/policies/' %}
+    {{ 'polices.css' | asset_url |  stylesheet_tag }}
+{% endif %}
+<link rel="preload" href="{{ 'swiper-bundle.min.css' | asset_url }}" as="style">
+<link rel="stylesheet" href="{{ 'swiper-bundle.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>
+  {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+</noscript>

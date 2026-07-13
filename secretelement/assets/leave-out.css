@@ -1,0 +1,215 @@
+.leave-out__inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leave-out__text{
+    width: 32%;
+}
+.leave-out__img{
+    width: 738px;
+    height: 700px;
+    margin-left: 200px;
+}
+.leave-out__img img{
+    width: 100%;
+    height: 100%;
+}
+.leave-out__subtitle{
+    margin-top: 26px;
+    line-height: 140%;
+    font-size: 20px;
+    color: var(--gray);
+}
+.leave-out-lists{
+    display: flex;
+    margin-top: 50px;
+}
+.leave-out-list{
+    margin-right: 30px;
+}
+.leave-out-list:last-child{
+    margin-right: 0;
+}
+.leave-out-list li{
+    position: relative;
+    font-size: 20px;
+    color: var(--gray);
+    padding-left: 24px;
+    text-decoration: line-through;
+    margin-bottom: 14px;
+}
+.leave-out-list li::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    background-image: url('https://cdn.shopify.com/s/files/1/0881/1564/2652/files/list-close-icon.svg?v=1723377487');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.leave-out-list li:last-child{
+    margin-bottom: 0;
+}
+.leave-out-certificates{
+    display: flex;
+    width: 400px;
+    margin-top: 82px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.leave-out__certificate{
+    width: 81px;
+    height: 81px;
+}
+.leave-out__certificate img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:1919px) {
+    .leave-out__img{
+        width: 38.438vw;
+        height: 36.458vw;
+        margin-left: 10.417vw;
+    }
+    .leave-out__subtitle{
+        margin-top: 1.354vw;
+        font-size: 1.042vw;
+    }
+    .leave-out-lists{
+        margin-top: 2.604vw;
+    }
+    .leave-out-list{
+        margin-right: 1.563vw;
+    }
+    .leave-out-list li{
+        font-size: 1.042vw;
+        padding-left: 1.25vw;
+        margin-bottom: 0.729vw;
+    }
+    .leave-out-list li::before{
+        width: 0.938vw;
+        height: 0.938vw;
+    }
+    .leave-out-certificates{
+        width: 20.833vw;
+        margin-top: 4.271vw;
+        gap: 1.042vw;
+    }
+    .leave-out__certificate{
+        width: 4.219vw;
+        height: 4.219vw;
+    }
+
+}
+@media screen and (max-width:1024px){
+    .leave-out__text{
+        width: 100%;
+    }
+    .leave-out__title{
+        text-align: center;
+    }
+    .leave-out__subtitle{
+        margin-top: 2.604vw;
+        text-align: center;
+        font-size: 2.344vw;
+    }
+    .leave-out-lists{
+        justify-content: center;
+        margin-top: 6.51vw;
+    }
+    .leave-out-list{
+        margin-right: 3.906vw;
+    }
+    .leave-out-list li{
+        font-size: 2.604vw;
+        padding-left: 3.125vw;
+        margin-bottom: 1.823vw;
+    }
+    .leave-out-list li::before{
+        width: 2.344vw;
+        height: 2.344vw;
+    }
+    .leave-out__img{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 6.51vw;
+    }
+    .leave-out-certificates{
+        width: 100%;
+        margin-top: 5.208vw;
+        justify-content: center;
+    }
+    .leave-out__certificate{
+        width: 10.547vw;
+        height: 10.547vw;
+        margin-right: 1.302vw;
+    }
+    .leave-out__certificate:last-child{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:650px){
+    .leave-out__subtitle{
+        margin-top: 14px;
+        font-size: 16px;
+    }
+    .leave-out-lists{
+        margin-top: 35px;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+    .leave-out-list{
+        margin-right: 0;
+    }
+    .leave-out-list:first-child{
+        margin-bottom: 14px;
+        margin-right: auto;
+    }
+    .leave-out-list:last-child{
+        margin-left: auto;
+    }
+    .leave-out-list li{
+        font-size: 20px;
+        padding-left: 24px;
+        margin-bottom: 14px;
+    }
+    
+    .leave-out-list li::before{
+        width: 18px;
+        height: 18px;
+    }
+    .leave-out__img{
+        margin-top: 40px;
+    }
+    .leave-out-certificates{
+        width: 340px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .leave-out__certificate{
+        width: 73px;
+        height: 73px;
+        margin-bottom: 20px;
+        margin-right: 9px;
+    }
+    .leave-out__certificate:nth-child(4){
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:355px){
+    .leave-out-lists{
+        width: 100%;
+    }
+    .leave-out-certificates{
+        width: 100%;
+    }
+}
