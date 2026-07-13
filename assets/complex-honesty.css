@@ -1,5 +1,5 @@
 .honesty {
-  padding: 6.3685636856vw 0;
+  padding: 94px 0;
   position: relative;
 }
 .honesty__image {
@@ -16,13 +16,13 @@
      object-fit: cover;
 }
 .honesty__label {
-  margin-bottom: 0.8130081301vw;
+  margin-bottom: 12px;
 }
 .honesty__title {
-  font-size: 1.8970189702vw;
+  font-size: 28px;
   color: var(--white-100);
   font-weight: 600;
-  max-width: 47.9674796748vw;
+  max-width: 708px;
   line-height: 120%;
   letter-spacing: 2%;
 }
@@ -35,15 +35,65 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2.4390243902vw;
+  margin-bottom: 36px;
 }
 .honesty__description {
-  max-width: 33.8753387534vw;
-  margin-bottom: 0.27100271vw;
-  font-size: 1.0840108401vw;
+  max-width: 500px;
+  margin-bottom: 4px;
+  font-size: 16px;
   color: var(--white-80);
   line-height: 120%;
   letter-spacing: 2%;
+}
+
+@media screen and (max-width: 1919px) {
+  .honesty {
+    padding: 6.3685636856vw 0;
+    position: relative;
+  }
+  .honesty__image {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+  .honesty__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .honesty__label {
+    margin-bottom: 0.8130081301vw;
+  }
+  .honesty__title {
+    font-size: 1.8970189702vw;
+    color: var(--white-100);
+    font-weight: 600;
+    max-width: 47.9674796748vw;
+    line-height: 120%;
+    letter-spacing: 2%;
+  }
+  .honesty__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .honesty__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.4390243902vw;
+  }
+  .honesty__description {
+    max-width: 33.8753387534vw;
+    margin-bottom: 0.27100271vw;
+    font-size: 1.0840108401vw;
+    color: var(--white-80);
+    line-height: 120%;
+    letter-spacing: 2%;
+  }
 }
 
 @media screen and (max-width: 651px) {
@@ -71,4 +121,4 @@
     max-width: unset;
     font-size: 3.0534351145vw;
   }
-}/*# sourceMappingURL=honesty.css.map */
+}

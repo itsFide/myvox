@@ -1,5 +1,5 @@
 .hive-triad {
-  padding: 4.3360433604vw 0;
+  padding: 64px 0;
   position: relative;
 }
 .hive-triad__image {
@@ -11,15 +11,15 @@
   width: 100%;
   height: 100%;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .hive-triad__metrics {
   display: grid;
-  gap: 1.3550135501vw;
+  gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 7.4525745257vw;
+  margin-bottom: 110px;
 }
 .hive-triad__metric {
   position: relative;
@@ -30,37 +30,37 @@
   color: var(--white-100);
   text-align: center;
   font-weight: 600;
-  font-size: 4.0650406504vw;
+  font-size: 60px;
   white-space: nowrap;
 }
 .hive-triad__metric-text {
   position: absolute;
   width: 100%;
   top: 50%;
-  transform: translateY(0.6775067751vw);
-  padding: 0.8130081301vw;
+  transform: translateY(10px);
+  padding: 12px;
   background: var(--white-5);
-  border: 0.0677506775vw solid var(--white-20);
-  box-shadow: 0px 0.27100271vw 0.8130081301vw var(--black-20);
-  backdrop-filter: blur(0.406504065vw);
-  border-radius: 0.5420054201vw;
+  border: 1px solid var(--white-20);
+  box-shadow: 0px 4px 12px var(--black-20);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
   color: var(--white-100);
   text-align: center;
-  font-size: 1.0840108401vw;
+  font-size: 16px;
   line-height: 120%;
   letter-spacing: 2%;
 }
 .hive-triad__title {
-  font-size: 1.8970189702vw;
+  font-size: 28px;
   color: var(--white-100);
   font-weight: 600;
-  max-width: 47.9674796748vw;
+  max-width: 708px;
   line-height: 120%;
   letter-spacing: 2%;
 }
 .hive-triad__description {
-  max-width: 33.8753387534vw;
-  font-size: 1.0840108401vw;
+  max-width: 500px;
+  font-size: 16px;
   color: var(--white-80);
   line-height: 120%;
   letter-spacing: 2%;
@@ -69,85 +69,85 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2.4390243902vw;
+  margin-bottom: 36px;
 }
 .hive-triad__heading {
-  margin-bottom: 0.8130081301vw;
+  margin-bottom: 12px;
 }
 .hive-triad__cards {
-  gap: 1.3550135501vw;
+  gap: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 .hive-triad__cards .hive-triad-card__picture {
   display: block;
-  width: 26.8292682927vw;
-  height: 13.5501355014vw;
+  width: 396px;
+  height: 200px;
 }
 .hive-triad__cards .hive-triad-card__picture img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .hive-triad__cards .hive-triad-card__body {
   /* card_benefit */
   background: var(--white-5);
-  border: 0.0677506775vw solid var(--white-20);
-  box-shadow: 0px 0.27100271vw 0.8130081301vw var(--black-20);
-  backdrop-filter: blur(0.8130081301vw);
+  border: 1px solid var(--white-20);
+  box-shadow: 0px 4px 12px var(--black-20);
+  backdrop-filter: blur(12px);
   border-top: none;
-  height: 19.783197832vw;
-  border-bottom-left-radius: 0.8130081301vw;
-  border-bottom-right-radius: 0.8130081301vw;
-  padding: 1.6260162602vw;
+  height: 292px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 24px;
   display: flex;
   align-items: start;
   flex-direction: column;
 }
 .hive-triad__cards .hive-triad-card__label {
   display: inline-block;
-  border-radius: 0.27100271vw;
-  padding: 0.5081300813vw 0.8130081301vw;
+  border-radius: 4px;
+  padding: 7.5px 12px;
   color: var(--white-80);
-  border: 0.0677506775vw solid var(--white-80);
+  border: 1px solid var(--white-80);
   line-height: 120%;
   letter-spacing: 2%;
-  font-size: 0.9485094851vw;
+  font-size: 14px;
   font-weight: 300;
-  margin-bottom: 0.8130081301vw;
+  margin-bottom: 12px;
 }
 .hive-triad__cards .hive-triad-card__dose {
   color: var(--white-100);
   font-weight: 600;
-  font-size: 2.4390243902vw;
+  font-size: 36px;
   line-height: 120%;
   letter-spacing: 2%;
-  margin-bottom: 0.8130081301vw;
+  margin-bottom: 12px;
 }
 .hive-triad__cards .hive-triad-card__subtitle {
-  font-size: 1.2195121951vw;
+  font-size: 18px;
   line-height: 120%;
   letter-spacing: 2%;
   font-weight: 600;
   color: var(--red-100);
-  margin-bottom: 0.8130081301vw;
+  margin-bottom: 12px;
 }
 .hive-triad__cards .hive-triad-card__footer {
   margin-top: auto;
-  font-size: 0.8130081301vw;
+  font-size: 12px;
   line-height: 120%;
   letter-spacing: 2%;
   color: var(--white-50);
 }
 .hive-triad__cards .hive-triad-card__text {
   color: var(--white-100);
-  font-size: 0.9485094851vw;
+  font-size: 14px;
   line-height: 120%;
   letter-spacing: 2%;
 }
 .hive-triad__scheme {
-  padding: 3.3197831978vw 0;
+  padding: 49px 0;
   background-color: var(--gray-bg-50);
 }
 .hive-triad__scheme-list {
@@ -158,25 +158,25 @@
   list-style: none;
 }
 .hive-triad__scheme-arrow {
-  margin: 0 0.6775067751vw;
+  margin: 0 10px;
 }
 .hive-triad__scheme-arrow svg {
-  width: 3.2520325203vw;
-  height: 3.2520325203vw;
+  width: 48px;
+  height: 48px;
   color: var(--red-100);
 }
 .hive-triad__scheme-item .scheme-card {
-  width: 17.3441734417vw;
+  width: 256px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.0840108401vw;
-  height: 4.8780487805vw;
+  gap: 16px;
+  height: 72px;
   background: var(--white-50);
-  border: 0.0677506775vw solid var(--white-20);
-  box-shadow: 0px 0.27100271vw 0.8130081301vw var(--black-20);
-  backdrop-filter: blur(0.27100271vw);
-  border-radius: 0.5420054201vw;
+  border: 1px solid var(--white-20);
+  box-shadow: 0px 4px 12px var(--black-20);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
 }
 .hive-triad__scheme-item .scheme-card__content {
   display: flex;
@@ -186,30 +186,246 @@
   display: block;
 }
 .hive-triad__scheme-item .scheme-card__icon picture, .hive-triad__scheme-item .scheme-card__icon svg {
-  width: 3.2520325203vw;
-  height: 3.2520325203vw;
+  width: 48px;
+  height: 48px;
 }
 .hive-triad__scheme-item .scheme-card__label {
   color: var(--gray-50);
   text-transform: uppercase;
   line-height: 120%;
   letter-spacing: 2%;
-  font-size: 1.0840108401vw;
+  font-size: 16px;
 }
 .hive-triad__scheme-item .scheme-card__title {
   color: var(--black-100);
-  font-size: 1.0840108401vw;
+  font-size: 16px;
 }
 .hive-triad__scheme-item .scheme-card--result {
   background-color: var(--black-100);
   box-shadow: none;
-  height: 5.4200542005vw;
+  height: 80px;
 }
 .hive-triad__scheme-item .scheme-card--result .scheme-card__label {
   color: var(--red-100);
 }
 .hive-triad__scheme-item .scheme-card--result .scheme-card__title {
   color: var(--gray-bg-100);
+}
+
+@media screen and (max-width: 1919px) {
+  .hive-triad {
+    padding: 4.3360433604vw 0;
+    position: relative;
+  }
+  .hive-triad__image {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+  .hive-triad__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .hive-triad__metrics {
+    display: grid;
+    gap: 1.3550135501vw;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 7.4525745257vw;
+  }
+  .hive-triad__metric {
+    position: relative;
+  }
+  .hive-triad__metric-value {
+    line-height: 120%;
+    letter-spacing: 2%;
+    color: var(--white-100);
+    text-align: center;
+    font-weight: 600;
+    font-size: 4.0650406504vw;
+    white-space: nowrap;
+  }
+  .hive-triad__metric-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(0.6775067751vw);
+    padding: 0.8130081301vw;
+    background: var(--white-5);
+    border: 0.0677506775vw solid var(--white-20);
+    box-shadow: 0px 0.27100271vw 0.8130081301vw var(--black-20);
+    backdrop-filter: blur(0.406504065vw);
+    border-radius: 0.5420054201vw;
+    color: var(--white-100);
+    text-align: center;
+    font-size: 1.0840108401vw;
+    line-height: 120%;
+    letter-spacing: 2%;
+  }
+  .hive-triad__title {
+    font-size: 1.8970189702vw;
+    color: var(--white-100);
+    font-weight: 600;
+    max-width: 47.9674796748vw;
+    line-height: 120%;
+    letter-spacing: 2%;
+  }
+  .hive-triad__description {
+    max-width: 33.8753387534vw;
+    font-size: 1.0840108401vw;
+    color: var(--white-80);
+    line-height: 120%;
+    letter-spacing: 2%;
+  }
+  .hive-triad__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.4390243902vw;
+  }
+  .hive-triad__heading {
+    margin-bottom: 0.8130081301vw;
+  }
+  .hive-triad__cards {
+    gap: 1.3550135501vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hive-triad__cards .hive-triad-card__picture {
+    display: block;
+    width: 26.8292682927vw;
+    height: 13.5501355014vw;
+  }
+  .hive-triad__cards .hive-triad-card__picture img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .hive-triad__cards .hive-triad-card__body {
+    /* card_benefit */
+    background: var(--white-5);
+    border: 0.0677506775vw solid var(--white-20);
+    box-shadow: 0px 0.27100271vw 0.8130081301vw var(--black-20);
+    backdrop-filter: blur(0.8130081301vw);
+    border-top: none;
+    height: 19.783197832vw;
+    border-bottom-left-radius: 0.8130081301vw;
+    border-bottom-right-radius: 0.8130081301vw;
+    padding: 1.6260162602vw;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  .hive-triad__cards .hive-triad-card__label {
+    display: inline-block;
+    border-radius: 0.27100271vw;
+    padding: 0.5081300813vw 0.8130081301vw;
+    color: var(--white-80);
+    border: 0.0677506775vw solid var(--white-80);
+    line-height: 120%;
+    letter-spacing: 2%;
+    font-size: 0.9485094851vw;
+    font-weight: 300;
+    margin-bottom: 0.8130081301vw;
+  }
+  .hive-triad__cards .hive-triad-card__dose {
+    color: var(--white-100);
+    font-weight: 600;
+    font-size: 2.4390243902vw;
+    line-height: 120%;
+    letter-spacing: 2%;
+    margin-bottom: 0.8130081301vw;
+  }
+  .hive-triad__cards .hive-triad-card__subtitle {
+    font-size: 1.2195121951vw;
+    line-height: 120%;
+    letter-spacing: 2%;
+    font-weight: 600;
+    color: var(--red-100);
+    margin-bottom: 0.8130081301vw;
+  }
+  .hive-triad__cards .hive-triad-card__footer {
+    margin-top: auto;
+    font-size: 0.8130081301vw;
+    line-height: 120%;
+    letter-spacing: 2%;
+    color: var(--white-50);
+  }
+  .hive-triad__cards .hive-triad-card__text {
+    color: var(--white-100);
+    font-size: 0.9485094851vw;
+    line-height: 120%;
+    letter-spacing: 2%;
+  }
+  .hive-triad__scheme {
+    padding: 3.3197831978vw 0;
+    background-color: var(--gray-bg-50);
+  }
+  .hive-triad__scheme-list {
+    display: flex;
+    align-items: center;
+  }
+  .hive-triad__scheme-list li {
+    list-style: none;
+  }
+  .hive-triad__scheme-arrow {
+    margin: 0 0.6775067751vw;
+  }
+  .hive-triad__scheme-arrow svg {
+    width: 3.2520325203vw;
+    height: 3.2520325203vw;
+    color: var(--red-100);
+  }
+  .hive-triad__scheme-item .scheme-card {
+    width: 17.3441734417vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.0840108401vw;
+    height: 4.8780487805vw;
+    background: var(--white-50);
+    border: 0.0677506775vw solid var(--white-20);
+    box-shadow: 0px 0.27100271vw 0.8130081301vw var(--black-20);
+    backdrop-filter: blur(0.27100271vw);
+    border-radius: 0.5420054201vw;
+  }
+  .hive-triad__scheme-item .scheme-card__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .hive-triad__scheme-item .scheme-card__icon picture {
+    display: block;
+  }
+  .hive-triad__scheme-item .scheme-card__icon picture, .hive-triad__scheme-item .scheme-card__icon svg {
+    width: 3.2520325203vw;
+    height: 3.2520325203vw;
+  }
+  .hive-triad__scheme-item .scheme-card__label {
+    color: var(--gray-50);
+    text-transform: uppercase;
+    line-height: 120%;
+    letter-spacing: 2%;
+    font-size: 1.0840108401vw;
+  }
+  .hive-triad__scheme-item .scheme-card__title {
+    color: var(--black-100);
+    font-size: 1.0840108401vw;
+  }
+  .hive-triad__scheme-item .scheme-card--result {
+    background-color: var(--black-100);
+    box-shadow: none;
+    height: 5.4200542005vw;
+  }
+  .hive-triad__scheme-item .scheme-card--result .scheme-card__label {
+    color: var(--red-100);
+  }
+  .hive-triad__scheme-item .scheme-card--result .scheme-card__title {
+    color: var(--gray-bg-100);
+  }
 }
 
 @media screen and (max-width: 651px) {
@@ -219,8 +435,7 @@
   }
   .hive-triad__metrics {
     row-gap: 10.1781170483vw;
-    -moz-column-gap: 3.0534351145vw;
-         column-gap: 3.0534351145vw;
+    column-gap: 3.0534351145vw;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 17.8117048346vw;
   }
@@ -368,4 +583,4 @@
     width: 8.1424936387vw;
     height: 8.1424936387vw;
   }
-}/*# sourceMappingURL=hive-triad.css.map */
+}
