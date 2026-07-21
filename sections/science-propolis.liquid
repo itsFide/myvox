@@ -1,0 +1,104 @@
+{% render 'async-stylesheet', file: 'science-propolis.css' %}
+<section class="propolis">
+    <div class="container">
+
+        <div class="propolis__inner">
+
+            <aside class="propolis__aside">
+
+                <article class="propolis-card">
+                    <div class="propolis-card__image">
+                        <picture>
+                            <source srcset="{{ 'propolis-card-bg.avif' |  file_url }}" type="image/avif">
+                            <img src="{{ 'propolis-card-bg.webp' |  file_url }}" alt="Propolis Dose" fetchpriority="low"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+
+                    <span class="propolis-card__label ts-badge">
+                        Propolis Dose
+                    </span>
+
+                    <h2 class="propolis-card__value">
+                        500mg
+                    </h2>
+
+                    <p class="propolis-card__subtitle">
+                        Extract per stick.
+                    </p>
+
+                    <p class="propolis-card__text">
+                        A significant therapeutic dose for managing
+                        chronic inflammation and oxidative load.
+                    </p>
+
+                </article>
+
+            </aside>
+
+            <div class="propolis__content">
+
+                <span class="propolis__label gray-badge">
+                    Propolis — Lower the Load, Free the Resources
+                </span>
+
+                <h2 class="propolis__title">
+                    Inside the hive,
+                    <span class="propolis__title-accent">
+                        propolis manages <br> the environment
+                    </span>
+                    <br class="mobile-br">
+                    so the colony <br>
+                    can focus <br class="mobile-br"> on output.
+                </h2>
+
+                <div class="propolis__text">
+
+                    <p>
+                        Bees use it to seal gaps, suppress microbes,
+                        and maintain internal order under constant
+                        outside pressure. In human physiology,
+                        the mechanism is the same.
+                    </p>
+
+                    <p>
+                        Propolis actively reduces inflammatory and
+                        oxidative burden — freeing biological resources
+                        that would otherwise stay locked in defense mode.
+                        When inflammation drops, energy reallocates
+                        toward repair, cognition, and metabolic efficiency.
+                    </p>
+
+                </div>
+
+                <blockquote class="propolis__quote">
+
+                    <p>
+                        Api-Complex includes propolis to preserve
+                        efficiency across the entire system —
+                        not to stimulate output through stress.
+                    </p>
+
+                </blockquote>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{% schema %}
+{
+  "name": "Science Propolis",
+  "class": "science-propolis",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Science Propolis",
+      "category": "Science"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,313 @@
+.lyophilization {
+  position: relative;
+  padding: 64px 0;
+}
+.lyophilization__label {
+  margin-bottom: 12px;
+}
+.lyophilization__title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 2%;
+  color: var(--gray-bg-100);
+  margin-bottom: 12px;
+}
+.lyophilization__features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 70px;
+}
+.lyophilization__features .feature-card {
+  position: relative;
+}
+.lyophilization__features .feature-card__title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--white-50);
+}
+.lyophilization__features .feature-card__text {
+  position: absolute;
+  font-size: 16px;
+  top: 50px;
+  background: var(--white-5);
+  border: 1px solid var(--white-20);
+  box-shadow: 0px 4px 12px var(--black-20);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  height: 62px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  line-height: 120%;
+  letter-spacing: 2%;
+  color: var(--white-100);
+  align-items: center;
+  justify-content: center;
+}
+.lyophilization__text {
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 2%;
+  letter-spacing: 0;
+  color: var(--white-80);
+  margin-bottom: 34px;
+}
+.lyophilization__text p:not(:last-child) {
+  margin-bottom: 18px;
+}
+.lyophilization__illustration {
+  transform: translateX(13px);
+  width: 506px;
+  height: auto;
+}
+.lyophilization__illustration picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.lyophilization__illustration img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.lyophilization__diagram {
+  padding-top: 44px;
+  padding-right: 12px;
+}
+.lyophilization__diagram-header {
+  margin-bottom: 7px;
+}
+.lyophilization__diagram-title {
+  text-align: right;
+  color: var(--white-100);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.lyophilization__diagram-description {
+  font-size: 16px;
+  color: var(--white-50);
+  text-align: right;
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+.lyophilization .temperature-card {
+  padding: 23px 36px;
+  background: var(--black-80);
+  border: 1px solid var(--white-20);
+  border-radius: 12px;
+}
+.lyophilization .temperature-card__label {
+  margin-bottom: 12px;
+}
+.lyophilization .temperature-card__content {
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+.lyophilization .temperature-card__label {
+  padding: 7.5px 19.5px;
+}
+.lyophilization .temperature-card__value {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--red-100);
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+.lyophilization .temperature-card__text {
+  line-height: 120%;
+  letter-spacing: 2%;
+  font-size: 14px;
+  color: var(--white-80);
+  max-width: 360px;
+}
+.lyophilization .temperature-card__text strong {
+  font-weight: 700;
+}
+.lyophilization__inner {
+  display: flex;
+  gap: 121px;
+}
+.lyophilization__image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.lyophilization__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.lyophilization .mobile-br {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .lyophilization .mobile-br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .lyophilization {
+    padding: 4.3360433604vw 0;
+  }
+  .lyophilization__label {
+    margin-bottom: 0.8130081301vw;
+  }
+  .lyophilization__title {
+    font-size: 2.4390243902vw;
+    margin-bottom: 0.8130081301vw;
+  }
+  .lyophilization__features {
+    gap: 1.3550135501vw;
+    margin-bottom: 4.7425474255vw;
+  }
+  .lyophilization__features .feature-card__title {
+    font-size: 4.0650406504vw;
+  }
+  .lyophilization__features .feature-card__text {
+    font-size: 1.0840108401vw;
+    top: 3.3875338753vw;
+    border: 0.0677506775vw solid var(--white-20);
+    border-radius: 0.5420054201vw;
+    height: 4.2005420054vw;
+  }
+  .lyophilization__text {
+    font-size: 1.0840108401vw;
+    margin-bottom: 2.3035230352vw;
+  }
+  .lyophilization__text p:not(:last-child) {
+    margin-bottom: 1.2195121951vw;
+  }
+  .lyophilization__illustration {
+    transform: translateX(0.8807588076vw);
+    width: 34.2818428184vw;
+  }
+  .lyophilization__diagram {
+    padding-top: 2.9810298103vw;
+    padding-right: 0.8130081301vw;
+  }
+  .lyophilization__diagram-header {
+    margin-bottom: 0.4742547425vw;
+  }
+  .lyophilization__diagram-title {
+    font-size: 1.2195121951vw;
+  }
+  .lyophilization__diagram-description {
+    font-size: 1.0840108401vw;
+  }
+  .lyophilization .temperature-card {
+    padding: 1.5582655827vw 2.4390243902vw;
+    border: 0.0677506775vw solid var(--white-20);
+    border-radius: 0.8130081301vw;
+  }
+  .lyophilization .temperature-card__label {
+    margin-bottom: 0.8130081301vw;
+    padding: 0.5081300813vw 1.3211382114vw;
+  }
+  .lyophilization .temperature-card__value {
+    font-size: 3.2520325203vw;
+  }
+  .lyophilization .temperature-card__text {
+    font-size: 0.9485094851vw;
+    max-width: 24.3902439024vw;
+  }
+  .lyophilization__inner {
+    gap: 8.1978319783vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .lyophilization {
+    padding: 5.0890585242vw 0;
+    padding-bottom: 0;
+  }
+  .lyophilization__inner {
+    flex-direction: column;
+    gap: 1.7811704835vw;
+  }
+  .lyophilization__label {
+    border-radius: 1.0178117048vw;
+    font-size: 2.5445292621vw;
+    margin-bottom: 3.0534351145vw;
+    padding: 1.0178117048vw 2.0356234097vw;
+  }
+  .lyophilization__title {
+    font-size: 6.106870229vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .lyophilization__text {
+    font-size: 3.0534351145vw;
+    margin-bottom: 6.106870229vw;
+  }
+  .lyophilization__text p:not(:last-child) {
+    margin-bottom: 3.0534351145vw;
+  }
+  .lyophilization__features {
+    display: flex;
+    gap: 7.6335877863vw;
+    flex-direction: column;
+    margin-bottom: 10.6870229008vw;
+  }
+  .lyophilization__features .feature-card__title {
+    font-size: 11.1959287532vw;
+  }
+  .lyophilization__features .feature-card__text {
+    border: 0.2544529262vw solid var(--white-20);
+    box-shadow: 0px 1.0178117048vw 3.0534351145vw var(--black-20);
+    backdrop-filter: blur(1.5267175573vw);
+    border-radius: 2.0356234097vw;
+    font-size: 3.0534351145vw;
+    height: 9.6692111959vw;
+    top: 8.9058524173vw;
+  }
+  .lyophilization__features .feature-card__text br {
+    display: none;
+  }
+  .lyophilization .temperature-card {
+    padding: 2.5445292621vw 6.106870229vw;
+    border: 0.2544529262vw solid var(--white-20);
+    border-radius: 3.0534351145vw;
+  }
+  .lyophilization .temperature-card__label {
+    font-size: 2.5445292621vw;
+    border-radius: 1.0178117048vw;
+    padding: 0.7633587786vw 2.0356234097vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .lyophilization .temperature-card__text {
+    max-width: 50.8905852417vw;
+    font-size: 2.5445292621vw;
+  }
+  .lyophilization .temperature-card__content {
+    gap: 5.0890585242vw;
+  }
+  .lyophilization .temperature-card__value {
+    font-size: 8.1424936387vw;
+  }
+  .lyophilization__illustration {
+    transform: unset;
+    width: 91.6030534351vw;
+    margin: 0 auto;
+  }
+  .lyophilization__illustration img {
+    transform: translateX(1.272264631vw) translateY(-6.8702290076vw);
+  }
+  .lyophilization__diagram-header {
+    margin-bottom: 0;
+  }
+  .lyophilization__diagram-title {
+    font-size: 3.5623409669vw;
+  }
+  .lyophilization__diagram-description {
+    font-size: 3.0534351145vw;
+  }
+}/*# sourceMappingURL=lyophilization.css.map */

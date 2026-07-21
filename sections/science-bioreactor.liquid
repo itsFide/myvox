@@ -1,0 +1,60 @@
+{% render 'async-stylesheet', file: 'science-bioreactor.css' %}
+<section class="bio">
+    <div class="container">
+        <div class="bio__inner">
+            <div class="bio-text">
+                <div class="badge-main bio-badge">THE HIVE IS A LIVING BIOREACTOR</div>
+                <p class="bio__descr">
+                    A beehive regulates temperature, controls microbial pressure, and transforms raw botanical inputs
+                    into substances with higher density,
+                    greater stability, and increased biological usefulness.
+                </p>
+                <p class="bio__descr">
+                    <strong>Evolution built it as a laboratory — refined over 400 million years.</strong>
+                </p>
+                <p class="bio__descr">
+                    Bees collect raw inputs from the environment and process them through enzymes, fermentation, and
+                    precision preservation. What exits the hive is categorically different from what entered.
+                </p>
+
+                <div class="bio-note">
+                    Api-Complex transfers this logic directly into a daily protocol.
+                </div>
+            </div>
+            <div class="bio-img">
+                <picture>
+
+                    <source media="(max-width: 651px)" srcset="{{ 'bio-img-mob.avif' | file_url }}" type="image/avif">
+
+
+                    <source srcset="{{ 'bio-img.avif' | file_url }}" type="image/avif">
+
+
+                    <source media="(max-width: 651px)" srcset="{{ 'bio-img-mob.webp' | file_url }}" type="image/webp">
+
+
+                    <source srcset="{{ 'bio-img.webp' | file_url }}" type="image/webp">
+
+
+                    <img src="{{ 'bio-img.webp' | file_url }}" alt="The hive triad background" loading="lazy" fetchpriority="low" decoding="async" width="604" height="400">
+                </picture>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% schema %}
+{
+  "name": "Science Bioreactor",
+  "class": "science-bioreactor",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Science Bioreactor",
+      "category": "Science"
+    }
+  ]
+}
+{% endschema %}

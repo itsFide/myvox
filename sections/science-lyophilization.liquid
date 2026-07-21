@@ -1,0 +1,175 @@
+{% render 'async-stylesheet', file: 'science-lyophilization.css' %}
+<section class="lyophilization">
+    <div class="lyophilization__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'lyophilization-mobile-bg.avif' | file_url }}"
+                type="image/avif">
+
+
+            <source srcset="{{ 'lyophilization-bg.avif' | file_url }}" type="image/avif">
+
+
+            <source media="(max-width: 650px)" srcset="{{ 'lyophilization-mobile-bg.webp' | file_url }}"
+                type="image/webp">
+
+
+            <source srcset="{{ 'lyophilization-bg.webp' | file_url }}" type="image/webp">
+
+
+            <img src="{{ 'lyophilization-bg.webp' | file_url }}" alt="Preservation Determines Performance"
+                loading="lazy">
+        </picture>
+    </div>
+    <div class="container">
+
+        <div class="lyophilization__inner">
+
+            <div class="lyophilization__content">
+
+                <span class="lyophilization__label ts-badge">
+                    Preservation Determines Performance
+                </span>
+
+                <h2 class="lyophilization__title">
+                    Why Freeze-Drying Matters
+                </h2>
+
+                <div class="lyophilization__text">
+
+                    <p>
+                        Active compounds are temperature-sensitive. <br class="mobile-br">
+                        Enzymes denature. <br> Fatty acids degrade.
+                        Conventional processing destroys what makes these
+                        substances valuable long before they reach the body.
+                    </p>
+
+                    <p>
+                        Lyophilization removes water under vacuum at low <br class="mobile-br">
+                        temperature — placing biological activity into
+                        suspension, <br class="mobile-br"> not breakdown. Structural integrity stays
+                        intact throughout.
+                    </p>
+
+                    <p>
+                        Hermetically sealed sachets maintain stability without <br class="mobile-br">
+                        chemical preservatives. The biology activates upon use — <br class="mobile-br">
+                        not before, not during manufacturing.
+                    </p>
+
+                </div>
+
+                <div class="lyophilization__features">
+
+                    <article class="feature-card">
+
+                        <h3 class="feature-card__title">
+                            Vacuum
+                        </h3>
+
+                        <p class="feature-card__text">
+                            Water removed<br>
+                            without heat exposure
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <h3 class="feature-card__title">
+                            Sealed
+                        </h3>
+
+                        <p class="feature-card__text">
+                            Hermetic stick,<br>
+                            no chemical preservatives
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <article class="temperature-card">
+
+                    <span class="temperature-card__label ts-badge">
+                        Max Temp
+                    </span>
+
+                    <div class="temperature-card__content">
+
+                        <div class="temperature-card__text">
+
+                            <p>
+                                Throughout all processing.
+                            </p>
+
+                            <p>
+                                104°F — the threshold above which enzymes
+                                <br>
+                                <strong>begin to denature.</strong>
+                            </p>
+
+                        </div>
+
+                        <div class="temperature-card__value">
+                            &lt;40°C
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="lyophilization__diagram">
+
+                <div class="lyophilization__diagram-header">
+
+                    <h3 class="lyophilization__diagram-title">
+                        Lyophilization Process
+                    </h3>
+
+                    <p class="lyophilization__diagram-description">
+                        allows for the removal of moisture <br>
+                        while preserving all the beneficial properties <br>
+                        of the original substance
+                    </p>
+
+                </div>
+
+                <div class="lyophilization__illustration">
+
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="{{ 'lyophilization-card-mobile.avif' | file_url }}"
+                            type="image/avif">
+                        <source media="(max-width: 650px)" srcset="{{ 'lyophilization-card-mobile.webp' | file_url }}"
+                            type="image/webp">
+
+                        <source srcset="{{ 'lyophilization-card.avif' | file_url }}" type="image/avif">
+                        <img src="{{ 'lyophilization-card.webp' | file_url }}" alt=" Lyophilization Process"
+                            fetchpriority="low" loading="lazy" decoding="async">
+                    </picture>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Science Lyophilization",
+  "class": "science-lyophilization",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Science Lyophilization",
+      "category": "Science"
+    }
+  ]
+}
+{% endschema %}

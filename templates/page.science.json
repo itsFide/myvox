@@ -1,0 +1,126 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {
+            "text_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "disabled": true,
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    },
+    "science_hero_DUDKLB": {
+      "type": "science-hero",
+      "name": "Science Hero",
+      "settings": {}
+    },
+    "science_bioreactor_YgJdkN": {
+      "type": "science-bioreactor",
+      "name": "Science Bioreactor",
+      "settings": {}
+    },
+    "science_fermetation_ixXqK7": {
+      "type": "science-fermetation",
+      "name": "Science Fermatation",
+      "settings": {}
+    },
+    "science_royal_RzC7cz": {
+      "type": "science-royal",
+      "name": "Science Royal",
+      "settings": {}
+    },
+    "science_propolis_RBGR3M": {
+      "type": "science-propolis",
+      "name": "Science Propolis",
+      "settings": {}
+    },
+    "science_lyophilization_q6Lntp": {
+      "type": "science-lyophilization",
+      "name": "Science Lyophilization",
+      "settings": {}
+    },
+    "science_hive_a3NLnm": {
+      "type": "science-hive",
+      "name": "Science hive",
+      "settings": {}
+    },
+    "section_cellular_xCc3wN": {
+      "type": "section-cellular",
+      "name": "Science Cellular",
+      "settings": {}
+    },
+    "science_foundation_kTHxtJ": {
+      "type": "science-foundation",
+      "name": "Science Foundation",
+      "settings": {}
+    },
+    "science_content_tjzcML": {
+      "type": "science-content",
+      "name": "Science Content",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "science_hero_DUDKLB",
+    "science_bioreactor_YgJdkN",
+    "science_fermetation_ixXqK7",
+    "science_royal_RzC7cz",
+    "science_propolis_RBGR3M",
+    "science_lyophilization_q6Lntp",
+    "science_hive_a3NLnm",
+    "section_cellular_xCc3wN",
+    "science_foundation_kTHxtJ",
+    "science_content_tjzcML"
+  ]
+}

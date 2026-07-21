@@ -1,0 +1,76 @@
+{% render 'async-stylesheet', file: 'science-content.css' %}
+<section class="science-content">
+    <div class="science-content__image">
+        <picture>
+            <source srcset="{{ 'science-content-bg.avif' |  file_url }}" type="image/avif">
+            <img src="{{ 'science-content-bg.webp' | file_url }}" alt="FROM UNDERSTANDING TO APPLICATION"
+                fetchpriority="low" loading="lazy" decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+
+        <div class="science-content__inner">
+
+            <div class="science-content__label ts-badge">
+                FROM UNDERSTANDING TO APPLICATION
+            </div>
+
+            <h2 class="science-content__title">
+                <span>
+                    The hive works because <br class="mobile-br"> structure matters
+                </span>
+                <br>
+                Api-Complex applies <br class="mobile-br"> that structure —
+                <br> <br class="mobile-br">
+                without dilution, <br class="mobile-br"> without compromise
+            </h2>
+
+            <div class="science-content__text">
+                <p>
+                    Every number on this page <br class="mobile-br"> reflects what's inside the sachet.
+                </p>
+
+                <p>
+                    Clinical doses. Cold preservation. Zero fillers.
+                </p>
+
+                <p>
+                    The science and the product are <br class="mobile-br"> the same document.
+                </p>
+            </div>
+
+            <div class="science-content__actions">
+                <a class="science-content__button button" href="#">
+                    <span>EXPLORE API-COMPLEX</span>
+
+
+                    <svg id="arrow" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.34582 9.95185L11.9996 4.29785L17.6533 9.95185L16.5688 11.0056L12.7496 7.18635L12.7496 19.7019L11.2496 19.7019L11.2496 7.18635L7.43032 11.0056L6.34582 9.95185Z"
+                            fill="currentColor" />
+                    </svg>
+
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Science Content",
+  "class": "science-content-wrap",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Science Content",
+      "category": "Science"
+    }
+  ]
+}
+{% endschema %}

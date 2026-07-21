@@ -1,0 +1,228 @@
+.propolis {
+  padding: 46px 0;
+}
+.propolis__inner {
+  display: flex;
+  gap: 124px;
+}
+.propolis__label {
+  margin-bottom: 12px;
+}
+.propolis__quote {
+  font-size: 16px;
+  color: var(--gray-100);
+  padding: 12px 24px;
+  border-left: 1px solid var(--red-100);
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+.propolis__text {
+  line-height: 120%;
+  letter-spacing: 2%;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--black-80);
+  margin-bottom: 24px;
+}
+.propolis__text strong {
+  font-weight: 700;
+}
+.propolis__text p:not(:last-child) {
+  margin-bottom: 12px;
+}
+.propolis__title {
+  font-size: 36px;
+  color: var(--black-100);
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 2%;
+  margin-bottom: 12px;
+}
+.propolis__title span {
+  line-height: 120%;
+  letter-spacing: 2%;
+  color: var(--red-100);
+  font-size: inherit;
+  font-weight: inherit;
+}
+.propolis .propolis-card {
+  width: 396px;
+  height: 378px;
+  position: relative;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.propolis .propolis-card__value {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--white-100);
+  line-height: 120%;
+  letter-spacing: 2%;
+  margin-bottom: 6px;
+}
+.propolis .propolis-card__subtitle {
+  font-size: 16px;
+  color: var(--white-100);
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 2%;
+  margin-bottom: 6px;
+}
+.propolis .propolis-card__text {
+  font-size: 16px;
+  color: var(--white-80);
+  line-height: 120%;
+}
+.propolis .propolis-card__label {
+  margin-bottom: 24px;
+  font-size: 14px;
+  border: 1px solid var(--white-80);
+  color: var(--white-80);
+  background: transparent;
+}
+.propolis .propolis-card__image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.propolis .propolis-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.propolis .propolis-card__image img {
+  border-radius: 12px;
+}
+.propolis .mobile-br {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .propolis .mobile-br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .propolis {
+    padding: 3.1165311653vw 0;
+  }
+  .propolis__inner {
+    gap: 8.4010840108vw;
+  }
+  .propolis__label {
+    margin-bottom: 0.8130081301vw;
+  }
+  .propolis__quote {
+    font-size: 1.0840108401vw;
+    padding: 0.8130081301vw 1.6260162602vw;
+    border-left: 0.0677506775vw solid var(--red-100);
+  }
+  .propolis__text {
+    font-size: 1.0840108401vw;
+    margin-bottom: 1.6260162602vw;
+  }
+  .propolis__text p:not(:last-child) {
+    margin-bottom: 0.8130081301vw;
+  }
+  .propolis__title {
+    font-size: 2.4390243902vw;
+    margin-bottom: 0.8130081301vw;
+  }
+  .propolis .propolis-card {
+    width: 26.8292682927vw;
+    height: 25.6097560976vw;
+    border-radius: 0.8130081301vw;
+    padding: 1.6260162602vw;
+  }
+  .propolis .propolis-card__value {
+    font-size: 3.2520325203vw;
+    margin-bottom: 0.406504065vw;
+  }
+  .propolis .propolis-card__subtitle {
+    font-size: 1.0840108401vw;
+    margin-bottom: 0.406504065vw;
+  }
+  .propolis .propolis-card__text {
+    font-size: 1.0840108401vw;
+  }
+  .propolis .propolis-card__label {
+    margin-bottom: 1.6260162602vw;
+    font-size: 0.9485094851vw;
+    border: 0.0677506775vw solid var(--white-80);
+  }
+  .propolis .propolis-card__image img {
+    border-radius: 0.8130081301vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .propolis {
+    padding: 6.106870229vw 0;
+  }
+  .propolis__inner {
+    flex-direction: column-reverse;
+    gap: 5.0890585242vw;
+  }
+  .propolis__label {
+    padding: 2.417302799vw 3.0534351145vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .propolis__title {
+    font-size: 6.106870229vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .propolis__title br:not(.mobile-br) {
+    display: none;
+  }
+  .propolis__title span {
+    letter-spacing: 0;
+  }
+  .propolis__quote {
+    font-size: 3.0534351145vw;
+    padding: 2.0356234097vw 0 2.0356234097vw 3.0534351145vw;
+    border-left: 0.2544529262vw solid var(--red-100);
+  }
+  .propolis__aside .propolis-card {
+    border-radius: 3.0534351145vw;
+    padding: 6.106870229vw;
+    width: 100%;
+    height: unset;
+  }
+  .propolis__aside .propolis-card__image img {
+    border-radius: 3.0534351145vw;
+  }
+  .propolis__aside .propolis-card__label {
+    font-size: 2.5445292621vw;
+    padding: 2.2900763359vw 2.0356234097vw;
+    border-radius: 1.0178117048vw;
+    border: 0.2544529262vw solid var(--white-80);
+    margin-bottom: 3.0534351145vw;
+  }
+  .propolis__aside .propolis-card__subtitle {
+    font-size: 3.0534351145vw;
+    margin-bottom: 1.5267175573vw;
+  }
+  .propolis__aside .propolis-card__value {
+    font-size: 8.1424936387vw;
+    margin-bottom: 1.272264631vw;
+  }
+  .propolis__aside .propolis-card__text {
+    font-size: 3.0534351145vw;
+  }
+  .propolis__text {
+    margin-bottom: 6.106870229vw;
+    font-size: 3.0534351145vw;
+  }
+  .propolis__text p:not(:last-child) {
+    margin-bottom: 2.5445292621vw;
+  }
+  .propolis__text br:not(.mobile-br) {
+    display: none;
+  }
+}/*# sourceMappingURL=propolis.css.map */

@@ -24,6 +24,34 @@
 }
 
 *{margin:0;padding:0;box-sizing:border-box}#MainContent{overflow:hidden}body{font-family:Geologica,sans-serif;font-weight:300}.container{max-width:1250px;padding:0 11px;margin:0 auto}:root{--red:#D16F55;--white-50:rgba(255, 255, 255, 0.5);--white:#fff;--blue:#121C3F}.btn{background:var(--red);text-decoration:none;border-radius:4px;color:var(--blue)}.title-main{font-size:36px;line-height:120%;font-weight:600}@media screen and (max-width:1919px){.container{max-width:84.746vw;padding:0 .746vw;margin:0 auto}.btn{border-radius:.271vw}.title-main{font-size:2.441vw}}@media screen and (max-width:650px){.container{max-width:100%;padding:0 2.799vw}.title-main{font-size:6.107vw}}
+.badge-main{
+    padding: 7.5px 12px;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 2%;
+    color: rgba(69, 75, 96, 0.8);
+    width: max-content;
+    border-radius: 4px;
+    background: #ECEDEF;
+    border: 1px solid rgba(69, 75, 96, 0.2);
+}
+@media screen and (max-width: 1919px){
+    .badge-main{
+        padding: 0.508vw 0.814vw;
+        font-size: 0.949vw;
+
+        border-radius: 0.271vw;
+        border: 0.068vw solid rgba(69, 75, 96, 0.2);
+    }
+}
+@media screen and (max-width: 650px){
+    .badge-main{
+        padding: 2.545vw 3.053vw;
+        font-size: 2.545vw;
+        border-radius: 1.018vw;
+        border: 0.254vw solid rgba(69, 75, 96, 0.2);
+    }
+}
 </style>
 <link rel="preload" href="{{ 'Geologica-Light.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin="anonymous">
 <link rel="preload" href="{{ 'Geologica-SemiBold.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin="anonymous">

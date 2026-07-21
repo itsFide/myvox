@@ -1,0 +1,131 @@
+{% render 'async-stylesheet', file: 'science-hive.css' %}
+<section class="hive-system">
+    <div class="container">
+
+        <div class="hive-system__grid">
+
+
+            <div class="hive-system__diagram">
+                <picture>
+                    <source media="(max-width: 650px)" srcset="{{ 'hive-system-card-mobile.avif' | file_url }}"
+                        type="image/avif">
+                    <source media="(max-width: 650px)" srcset="{{ 'hive-system-card-mobile.webp' | file_url }}"
+                        type="image/webp">
+
+                    <source srcset="{{ 'hive-system-card.avif' | file_url }}" type="image/avif">
+                    <img src="{{ 'hive-system-card.webp' | file_url }}" alt="THE HIVE TRIAD — WHY THE SYSTEM HOLDS"
+                        fetchpriority="low" loading="lazy" decoding="async">
+                </picture>
+
+
+            </div>
+
+            <div class="hive-system__content">
+
+                <div class="hive-system__label gray-badge">
+                    THE HIVE TRIAD — WHY THE SYSTEM HOLDS
+                </div>
+
+                <h2 class="hive-system__title">
+                    Three compounds. Three functions.<br>
+                    <span>One integrated system</span>
+                </h2>
+
+                <div class="hive-system__items">
+
+                    <article class="system-item">
+
+                        <div class="system-item__number">01</div>
+
+                        <div class="system-item__content">
+
+                            <div class="system-item__label">
+                                BEE BREAD — MATERIALS
+                            </div>
+
+                            <h3>Supplies the building blocks</h3>
+
+                            <p>
+                                Bioavailable amino acids, vitamins, and enzymes the body can
+                                actually use. Pre-digested by fermentation so nothing <br class="mobile-br"> is
+                                wasted
+                                extracting nutrients from resistant structures.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="system-item">
+
+                        <div class="system-item__number">02</div>
+
+                        <div class="system-item__content">
+
+                            <div class="system-item__label">
+                                ROYAL JELLY — INSTRUCTION
+                            </div>
+
+                            <h3>Delivers the signal</h3>
+
+                            <p>
+                                10-HDA and bioactive proteins tell cells how to allocate energy,
+                                initiate repair, and activate regeneration pathways. Not calories
+                                — instruction.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="system-item">
+
+                        <div class="system-item__number">03</div>
+
+                        <div class="system-item__content">
+
+                            <div class="system-item__label">
+                                PROPOLIS — EFFICIENCY
+                            </div>
+
+                            <h3>Preserves the environment</h3>
+
+                            <p>
+                                Reduces inflammatory and oxidative noise so biological resources
+                                stay allocated toward output — <br class="mobile-br"> not maintenance. Clears
+                                the path
+                                for the other two compounds to work.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <blockquote class="hive-system__quote">
+                    The body responds to systems it already recognizes.<br>
+                    Api-Complex mirrors the logic of the hive.
+                </blockquote>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{% schema %}
+{
+  "name": "Science hive",
+  "class": "science-hive",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Science hive",
+      "category": "Science"
+    }
+  ]
+}
+{% endschema %}

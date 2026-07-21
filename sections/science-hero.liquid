@@ -1,0 +1,75 @@
+
+{% render 'science-style' %} 
+<section class="hero">
+    <div class="hero__bg">
+        <picture>
+
+            <source media="(max-width: 651px)" srcset="{{ 'science-hero-bg-mob.avif' | file_url }}"
+                type="image/avif">
+
+
+            <source srcset="{{ 'science-hero-bg.avif' | file_url }}" type="image/avif">
+
+
+            <source media="(max-width: 651px)" srcset="{{ 'science-hero-bg-mob.webp' | file_url }}"
+                type="image/webp">
+
+
+            <source srcset="{{ 'science-hero-bg.webp' | file_url }}" type="image/webp">
+
+
+            <img src="{{ 'science-hero-bg.webp' | file_url }}" alt="The hive triad background" loading="eager" fetchpriority="high" decoding="sync">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__badge">THE SCIENCE BEHIND API-COMPLEX</div>
+            <h1 class="hero__title">The hive spent 400 million years <br> <span>solving problems modern supplements still can't</span></h1>
+            <p class="hero__subtitle">Three compounds. One integrated system.  <br>
+            Here is why the architecture works — and why preservation makes the difference.</p>
+
+            <div class="hero-items">
+                <div class="hero-item">
+                    <div class="hero-item__num">
+                        ~100%
+                    </div>
+                    <div class="hero-item__descr">
+                        Bioavailability of Bee Bread nutrients <br> vs. 15–30% in raw pollen
+                    </div>
+                </div>
+                <div class="hero-item">
+                    <div class="hero-item__num">
+                        500mg
+                    </div>
+                    <div class="hero-item__descr">
+                        Freeze-dried Royal Jelly per stick <br> ≈ 1.5–2g of fresh material
+                    </div>
+                </div>
+                <div class="hero-item">
+                    <div class="hero-item__num">
+                        <40°C
+                    </div>
+                    <div class="hero-item__descr">
+                        Max processing temperature <br> Enzymes stay intact throughout
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Science Hero",
+  "class": "science-hero",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Science Hero",
+      "category": "Science"
+    }
+  ]
+}
+{% endschema %}

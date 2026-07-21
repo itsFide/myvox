@@ -1,0 +1,155 @@
+{% render 'async-stylesheet', file: 'science-royal.css' %}
+<section class="royal-jelly">
+    <div class="royal-jelly__image">
+        <picture>
+
+            <source media="(max-width: 650px)" srcset="{{ 'royal-jelly-mobile-bg.avif' |  file_url }}"
+                type="image/avif">
+
+
+            <source srcset="{{ 'royal-jelly-desktop-bg.avif' |  file_url }}" type="image/avif">
+
+
+            <source media="(max-width: 650px)" srcset="{{ 'royal-jelly-mobile-bg.webp' |  file_url }}"
+                type="image/webp">
+
+
+            <source srcset="{{ 'royal-jelly-desktop-bg.webp' |  file_url }}" type="image/webp">
+
+
+            <img src="{{ 'royal-jelly-desktop-bg.webp' |  file_url }}" alt="Royal Jelly — A Signal, Not a Calorie"
+                loading="lazy">
+        </picture>
+    </div>
+    <div class="container">
+
+        <div class="royal-jelly__inner">
+
+            <div class="royal-jelly__content">
+
+                <span class="royal-jelly__label gray-badge">
+                    Royal Jelly — A Signal, Not a Calorie
+                </span>
+
+                <h2 class="royal-jelly__title">
+                    Worker bees and queen bees<br>
+                    are genetically identical.
+                    <span class="royal-jelly__title-accent">
+                        One variable separates them: diet.
+                    </span>
+                </h2>
+
+                <div class="royal-jelly__text">
+
+                    <p>
+                        Larvae fed royal jelly develop into queens —
+                        larger, longer-lived, biologically different.
+                        <br>
+                        No genetic rewrite required. <br class="mobile-br">This reveals the function:
+                        royal jelly doesn't fuel cells. <br class="mobile-br"> <br> It instructs them.
+                    </p>
+
+                    <p>
+                        The mechanism is a single fatty acid found nowhere else
+                        in nature:
+                        <strong>
+                            10-HDA (10-hydroxy-2-decenoic acid).
+                        </strong>
+                        <br class="mobile-br">
+                        Research links it to neuroprotection, cellular
+                        regeneration, and cognitive signaling.
+                        When it's present, repair pathways activate and
+                        communication sharpens.
+                    </p>
+
+                    <p>
+
+                        <strong>
+                            Fresh royal jelly is approximately 67% water —
+                            <br class="mobile-br">
+                            bulk without signal.
+                            Lyophilization removes it while preserving the fragile
+                            fatty acids and enzymatic structure intact.
+                            <br>
+                            The body receives concentrated instruction, <br class="mobile-br">
+                            not diluted material.
+                        </strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <aside class="royal-jelly__cards">
+
+                <article class="royal-jelly-card">
+                    <div class="royal-jelly-card__image">
+                        <picture>
+                            <source srcset="{{ 'royal-jelly-card-1-bg.avif' |  file_url }}" type="image/avif">
+                            <img src="{{ 'royal-jelly-card-1-bg.webp' |  file_url }}" alt="10-HDA" fetchpriority="low"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <span class="royal-jelly-card__label ts-badge">
+                        10-HDA
+                    </span>
+
+                    <h3 class="royal-jelly-card__value">
+                        1 of 1
+                    </h3>
+
+                    <p class="royal-jelly-card__text">
+                        Fatty acid unique to Royal Jelly.
+                        <br class="mobile-br">
+                        Not found in honey, pollen,
+                        or propolis.
+                    </p>
+
+                </article>
+
+                <article class="royal-jelly-card">
+                    <div class="royal-jelly-card__image">
+                        <picture>
+                            <source srcset="{{ 'royal-jelly-card-2-bg.avif' |  file_url }}" type="image/avif">
+                            <img src="{{ 'royal-jelly-card-2-bg.webp' |  file_url }}" alt="Concentration"
+                                fetchpriority="low" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <span class="royal-jelly-card__label ts-badge">
+                        Concentration
+                    </span>
+
+                    <h3 class="royal-jelly-card__value">
+                        500mg
+                    </h3>
+
+                    <p class="royal-jelly-card__text">
+                        Freeze-dried per stick.<br>
+                        ≈ 1.5–2g of fresh material.<br>
+                        A working dose — not a token one.
+                    </p>
+
+                </article>
+
+            </aside>
+
+        </div>
+
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Science Royal",
+  "class": "science-royal",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Science Royal",
+      "category": "Science"
+    }
+  ]
+}
+{% endschema %}
