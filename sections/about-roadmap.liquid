@@ -1,0 +1,149 @@
+{% render 'async-stylesheet', file: 'about-roadmap.css' %}
+<section class="roadmap">
+    <div class="roadmap__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'roadmap-mobile-bg.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'roadmap-mobile-bg.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'roadmap-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'roadmap-bg.webp' | file_url }}" alt="BEYOND THE HIVE" fetchpriority="low" loading="lazy"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="roadmap__wrapper">
+            <div class="roadmap__content">
+                <span class="roadmap__label gray-badge">
+                    BEYOND THE HIVE
+                </span>
+
+                <h2 class="roadmap__title">
+                    <span>Api-Complex is Protocol One</span>
+                    <br>
+                    The platform extends further
+                </h2>
+
+                <div class="roadmap__text">
+                    <p>
+                        <strong>
+                            Wherever nature already solved complex biological
+                            challenges — that's where MYVOX-9 looks next.
+                        </strong>
+                    </p>
+
+                    <p>
+                        Each future protocol follows the same method: identify <br>
+                        the system, preserve the intelligence, deliver it intact. <br>
+                        The architecture scales. The standard doesn't change.
+                    </p>
+
+                    <p>
+                        MYVOX-9 grows through discernment — not scale. <br>
+                        We build for people who choose structure over trends <br>
+                        and standards over shortcuts.
+                    </p>
+                </div>
+            </div>
+
+            <div class="roadmap__timeline">
+                <span class="roadmap__label gray-badge">
+                    PROTOCOL ROADMAP
+                </span>
+
+                <div class="roadmap__items">
+                    <article class="roadmap-item roadmap-item--current">
+                        <div class="roadmap-item__marker"></div>
+
+                        <div class="roadmap-item__content">
+                            <span class="roadmap-item__status">
+                                NOW — PROTOCOL 01
+                            </span>
+
+                            <h3 class="roadmap-item__title">
+                                Api-Complex — The Hive
+                            </h3>
+
+                            <p class="roadmap-item__text">
+                                Bee Bread · Royal Jelly · Propolis.
+                                Energy, immunity, <br class="mobile-br"> focus, gut, vitality.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="roadmap-item roadmap-item--coming">
+                        <div class="roadmap-item__marker"></div>
+
+                        <div class="roadmap-item__content">
+                            <span class="roadmap-item__status">
+                                COMING — PROTOCOL 02
+                            </span>
+
+                            <h3 class="roadmap-item__title">
+                                Adaptogen Stack
+                            </h3>
+
+                            <p class="roadmap-item__text">
+                                Mushroom compounds and botanical adaptogens for <br class="mobile-br">
+                                stress resilience and cognitive regulation.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="roadmap-item roadmap-item--research">
+                        <div class="roadmap-item__marker"></div>
+
+                        <div class="roadmap-item__content">
+                            <span class="roadmap-item__status">
+                                IN RESEARCH — PROTOCOL 03
+                            </span>
+
+                            <h3 class="roadmap-item__title">
+                                Marine Recovery
+                            </h3>
+
+                            <p class="roadmap-item__text">
+                                Marine-derived compounds targeting cellular
+                                integrity <br class="mobile-br"> and deep recovery after <br> physical load.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="roadmap-item roadmap-item--future">
+                        <div class="roadmap-item__marker"></div>
+
+                        <div class="roadmap-item__content">
+                            <span class="roadmap-item__status">
+                                FUTURE
+                            </span>
+
+                            <h3 class="roadmap-item__title">
+                                The Work Continues
+                            </h3>
+
+                            <p class="roadmap-item__text">
+                                Biology still holds answers. MYVOX-9 follows
+                                the <br class="mobile-br2"> evidence, not the trend cycle.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "About Roadmap",
+  "class": "about-roadmap",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "About Roadmap",
+      "category": "About"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,99 @@
+{% render 'async-stylesheet', file: 'about-dead.css' %}
+<section class="dead-ends">
+    <div class="dead-ends__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'dead-end-mobile-bg.avif' |  file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'dead-end-mobile-bg.webp' |  file_url }}" type="image/webp">
+            <source srcset="{{ 'dead-end-bg.avif' |  file_url }}" type="image/avif">
+            <img src="{{ 'dead-end-bg.webp' |  file_url }}" alt="WHY MYVOX-9 EXISTS" fetchpriority="low" loading="lazy"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="dead-ends__wrapper">
+            <span class="dead-ends__label ts-badge">
+                WHY MYVOX-9 EXISTS
+            </span>
+
+            <h2 class="dead-ends__title">
+                The supplement market offers <br class="mobile-br"> two dead ends
+                <br>
+                MYVOX-9 removes <br class="mobile-br"> the compromise
+            </h2>
+            <div class="dead-ends__content">
+                <div class="dead-ends__cards">
+                    <article class="dead-ends-card">
+                        <span class="dead-ends-card__label">
+                            DEAD END 01 — CONVENIENCE
+                        </span>
+
+                        <h3 class="dead-ends-card__title">
+                            Synthetic. Diluted. Decorative.
+                        </h3>
+
+                        <p class="dead-ends-card__text">
+                            Formulas padded with fillers, flavors, and token doses. <br>
+                            Optimized for taste and branding — not for the body.
+                        </p>
+                    </article>
+
+                    <article class="dead-ends-card">
+                        <span class="dead-ends-card__label">
+                            DEAD END 02 — PURITY
+                        </span>
+
+                        <h3 class="dead-ends-card__title">
+                            Raw. Unpreserved. Unusable.
+                        </h3>
+
+                        <p class="dead-ends-card__text">
+                            Natural substances with real potential but poor absorption, <br>
+                            inconsistent potency, and no usable form for daily life.
+                        </p>
+                    </article>
+                </div>
+                <aside class="dead-ends__answer">
+                    <span class="dead-ends__label ts-badge">
+                        THE MYVOX-9 ANSWER
+                    </span>
+
+                    <h2 class="dead-ends__answer-title">
+                        <span>Potency without dilution</span>
+                        <br>
+                        Precision without complexity
+                    </h2>
+
+                    <div class="dead-ends__answer-text">
+                        <p>
+                            We treat the body as an intelligent system — not a problem to stimulate or suppress.
+                            Real energy, real resilience, and real recovery built into protocols that integrate
+                            into daily life.
+                        </p>
+
+                        <p>
+                            Neither dead end serves people living under sustained demand.
+                            Both are now obsolete for those who choose better.
+                        </p>
+                    </div>
+                </aside>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+  "name": "About Dead",
+  "class": "about-Dead",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "About Dead",
+      "category": "About"
+    }
+  ]
+}
+{% endschema %}

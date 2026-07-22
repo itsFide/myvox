@@ -1,0 +1,81 @@
+{% render 'async-stylesheet', file: 'about-cta.css' %}
+<section class="cta">
+    <div class="cta__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'cta-mobile-bg.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'cta-mobile-bg.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'cta-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'cta-bg.webp' | file_url }}" alt="FROM HERE" fetchpriority="low" loading="lazy"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="cta__content">
+            <span class="cta__label ts-badge">
+                FROM HERE
+            </span>
+
+            <h2 class="cta__title">
+                <span>Biology responds to structure</span>
+                <br>
+                Potency matters. Consistency compounds
+            </h2>
+
+            <div class="cta__description">
+                <p>
+                    Start with Protocol One — <br class="mobile-br"> Api-Complex, built at full biological strength.
+                </p>
+
+                <p>
+                    Or enter the Science Journal and understand <br class="mobile-br"> the system behind it.
+                </p>
+
+                <p>
+                    Both paths respect your attention.
+                </p>
+            </div>
+
+            <div class="cta__actions">
+                <a class="button button--primary" href="#">
+                    <span>EXPLORE PROTOCOL ONE</span>
+
+
+                    <svg id="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.0481 17.6537L19.7021 11.9999L14.0481 6.34619L12.9944 7.43069L16.8136 11.2499H4.29815V12.7499H16.8136L12.9944 16.5692L14.0481 17.6537Z"
+                            fill="currentColor" />
+                    </svg>
+
+                </a>
+
+                <a class="button button--secondary" href="#">
+                    <span>READ THE SCIENCE</span>
+
+
+                    <svg id="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.0481 17.6537L19.7021 11.9999L14.0481 6.34619L12.9944 7.43069L16.8136 11.2499H4.29815V12.7499H16.8136L12.9944 16.5692L14.0481 17.6537Z"
+                            fill="currentColor" />
+                    </svg>
+
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Cta",
+  "class": "about-cta",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "About Cta",
+      "category": "About"
+    }
+  ]
+}
+{% endschema %}

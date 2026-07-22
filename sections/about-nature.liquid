@@ -1,0 +1,113 @@
+{% render 'async-stylesheet', file: 'about-nature.css' %}
+<section class="nature-process">
+    <div class="nature-process__wrapper">
+        <div class="container">
+            <div class="nature-process__header">
+                <div class="nature-process__content">
+                    <span class="nature-process__label gray-badge">
+                        NATURE IS THE R&D LAB
+                    </span> 
+
+                    <h2 class="nature-process__title">
+                        We don't invent molecules
+                        <br>
+                        We locate intelligence that already works
+                    </h2>
+                </div>
+
+                <div class="nature-process__description">
+                    <p>
+                        Evolution spent hundreds of millions of years solving density,
+                        synergy, and efficiency under pressure. The systems it built
+                        already answer what modern supplements struggle to <br class="mobile-br"> address.
+                        Our role is preservation, concentration, and delivery <br class="mobile-br"> — not
+                        reinvention.
+                    </p>
+                </div>
+            </div>
+
+            <div class="nature-process__steps">
+                <article class="nature-process-card">
+                    <span class="nature-process-card__number">
+                        01
+                    </span>
+
+                    <div class="nature-process-card__content">
+                        <h3 class="nature-process-card__title">
+                            Identify the System
+                        </h3>
+
+                        <p class="nature-process-card__text">
+                            Locate biological architectures that already perform under pressure.
+                            The hive functions as a complete bioreactor — fermentation,
+                            signaling, protection, delivery. All in one living structure.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="nature-process-card">
+                    <span class="nature-process-card__number">
+                        02
+                    </span>
+
+                    <div class="nature-process-card__content">
+                        <h3 class="nature-process-card__title">
+                            Preserve the Intelligence
+                        </h3>
+
+                        <p class="nature-process-card__text">
+                            Low-temperature lyophilization locks active compounds at peak function.
+                            Enzymes stay intact. Fatty acids remain structurally alive. <br>
+                            Nothing degrades in transit from nature to protocol.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="nature-process-card">
+                    <span class="nature-process-card__number">
+                        03
+                    </span>
+
+                    <div class="nature-process-card__content">
+                        <h3 class="nature-process-card__title">
+                            Deliver It Intact
+                        </h3>
+
+                        <p class="nature-process-card__text">
+                            Concentrated into a daily format without fillers, <br class="mobile-br"> heat, or dilution.
+                            The body receives what nature <br class="mobile-br"> built — at the dose required to matter.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="nature-process__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'nature-process-mobile-image.avif' | file_url }}"
+                type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'nature-process-mobile-image.webp' | file_url }}"
+                type="image/webp">
+            <source srcset="{{ 'nature-process-image.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'nature-process-image.webp' | file_url }}" alt="NATURE IS THE R&D LAB" fetchpriority="low"
+                loading="lazy" decoding="async">
+        </picture>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Nature",
+  "class": "about-nature",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "About Nature",
+      "category": "About"
+    }
+  ]
+}
+{% endschema %}

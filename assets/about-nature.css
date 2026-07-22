@@ -1,0 +1,181 @@
+.nature-process__wrapper {
+  padding: 48px 0;
+  padding-bottom: 46px;
+}
+.nature-process__label {
+  margin-bottom: 12px;
+}
+.nature-process__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 36px;
+}
+.nature-process__title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 2%;
+  color: var(--black-100);
+}
+.nature-process__description {
+  width: 500px;
+  font-size: 16px;
+  color: var(--black-80);
+}
+.nature-process__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nature-process__steps .nature-process-card {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 24px;
+  background: var(--white-50);
+  border: 1px solid var(--white-20);
+  box-shadow: 0px 4px 12px var(--black-20);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+}
+.nature-process__steps .nature-process-card__number {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 2%;
+  color: var(--black-100);
+}
+.nature-process__steps .nature-process-card__title {
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 2%;
+  color: var(--black-100);
+  margin-bottom: 6px;
+}
+.nature-process__steps .nature-process-card__text {
+  color: var(--black-50);
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 2%;
+  letter-spacing: 1.5%;
+}
+.nature-process__image {
+  height: 608px;
+  width: 100%;
+}
+.nature-process__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.nature-process .mobile-br {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .nature-process .mobile-br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .nature-process__wrapper {
+    padding: 3.2520325203vw 0;
+    padding-bottom: 3.1165311653vw;
+  }
+  .nature-process__label {
+    margin-bottom: 0.8130081301vw;
+  }
+  .nature-process__header {
+    gap: 1.3550135501vw;
+    margin-bottom: 2.4390243902vw;
+  }
+  .nature-process__title {
+    font-size: 1.8970189702vw;
+  }
+  .nature-process__description {
+    width: 33.8753387534vw;
+    font-size: 1.0840108401vw;
+  }
+  .nature-process__steps {
+    gap: 0.6775067751vw;
+  }
+  .nature-process__steps .nature-process-card {
+    padding: 0.8130081301vw 1.6260162602vw;
+    gap: 1.6260162602vw;
+    border: 0.0677506775vw solid var(--white-20);
+    box-shadow: 0 0.27100271vw 0.8130081301vw var(--black-20);
+    backdrop-filter: blur(0.27100271vw);
+    border-radius: 0.5420054201vw;
+  }
+  .nature-process__steps .nature-process-card__number {
+    font-size: 2.4390243902vw;
+  }
+  .nature-process__steps .nature-process-card__title {
+    font-size: 0.9485094851vw;
+    margin-bottom: 0.406504065vw;
+  }
+  .nature-process__steps .nature-process-card__text {
+    font-size: 0.9485094851vw;
+  }
+  .nature-process__image {
+    height: 41.3279132791vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .nature-process__wrapper {
+    padding: 6.106870229vw 0;
+    padding-bottom: 5.8524173028vw;
+  }
+  .nature-process .container {
+    padding: 0 4.0712468193vw;
+  }
+  .nature-process__header {
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 4.5801526718vw;
+  }
+  .nature-process__label {
+    padding: 2.5445292621vw 3.0534351145vw;
+    font-size: 2.5445292621vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .nature-process__title {
+    font-size: 4.5801526718vw;
+    margin-bottom: 3.5623409669vw;
+  }
+  .nature-process__description {
+    width: unset;
+    font-size: 3.0534351145vw;
+    line-height: 120%;
+    letter-spacing: 2%;
+    letter-spacing: 1.5%;
+  }
+  .nature-process__steps {
+    gap: 1.7811704835vw;
+  }
+  .nature-process__steps .nature-process-card {
+    padding: 3.0534351145vw 6.106870229vw;
+    border: 0.2544529262vw solid var(--white-20);
+    box-shadow: 0px 1.0178117048vw 3.0534351145vw var(--black-20);
+    backdrop-filter: blur(1.0178117048vw);
+    border-radius: 1.5267175573vw;
+    gap: 6.106870229vw;
+  }
+  .nature-process__steps .nature-process-card__number {
+    font-size: 6.106870229vw;
+  }
+  .nature-process__steps .nature-process-card__title {
+    font-size: 2.5445292621vw;
+    margin-bottom: 1.5267175573vw;
+  }
+  .nature-process__steps .nature-process-card__text {
+    font-size: 2.5445292621vw;
+    letter-spacing: 1%;
+  }
+  .nature-process__image {
+    height: 71.2468193384vw;
+  }
+}/*# sourceMappingURL=nature-process.css.map */

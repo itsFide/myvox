@@ -1,0 +1,73 @@
+{% render 'about-hero' %} 
+<section class="about">
+    <div class="about__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'about-mobile-bg.avif' |  file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'about-mobile-bg.webp' |  file_url }}" type="image/webp">
+            <source srcset="{{ 'about-bg.avif' |  file_url }}" type="image/avif">
+            <img src="{{ 'about-bg.webp' |  file_url }}" alt="ABOUT MYVOX-9" fetchpriority="high" loading="eager"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+
+        <div class="about__inner">
+
+            <div class="about__content">
+
+                <div class="about__label ts-badge">
+                    ABOUT MYVOX-9
+                </div>
+
+                <h2 class="about__title">
+                    We Build Protocols
+                    <br>
+                    Not Promises
+                </h2>
+
+                <div class="about__lead">
+                    <p>
+                        Modern life extracts output constantly — and rarely returns what it
+                        takes. Energy becomes something <br class="mobile-br"> to manage. Focus requires
+                        caffeine.
+                        <br class="mobile-br">
+                        Recovery shrinks into a weekend.
+                    </p>
+                </div>
+
+                <div class="about__text">
+                    <p>
+                        MYVOX-9 was built for people who feel that cost and <br class="mobile-br"> refuse to
+                        normalize it.
+                    </p>
+
+                    <p>
+                        We work at the intersection of raw natural systems and <br class="mobile-br"> applied
+                        science: locating biological intelligence, preserving <br class="mobile-br"> it at full
+                        strength, <br> and delivering it as daily protocols that actually
+                        function.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Hero",
+  "class": "about-hero",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "About Hero",
+      "category": "About"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,172 @@
+.principles {
+  padding: 48px 0;
+}
+.principles__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+.principles__label {
+  display: inline;
+  margin-bottom: 12px;
+}
+.principles__title {
+  font-size: 28px;
+  color: var(--black-100);
+  margin-bottom: 20px;
+  line-height: 120%;
+  letter-spacing: 2%;
+  font-weight: 600;
+}
+.principles__description {
+  font-size: 16px;
+  text-align: center;
+  color: var(--black-80);
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+.principles__list {
+  display: grid;
+  gap: 12px;
+  row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.principles__list .principle-card {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 16px;
+  background: var(--white-50);
+  border: 1px solid var(--white-20);
+  box-shadow: 0px 4px 12px var(--black-20);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+}
+.principles__list .principle-card__icon img {
+  width: 48px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 48px;
+}
+.principles__list .principle-card__title {
+  font-size: 24px;
+  color: var(--red-100);
+  font-weight: 600;
+  margin-bottom: 2px;
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+.principles__list .principle-card__title span {
+  color: var(--red-50);
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+.principles__list .principle-card__text {
+  font-size: 16px;
+  color: var(--black-100);
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 2%;
+  letter-spacing: 1.5%;
+}
+.principles .mobile-br {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .principles .mobile-br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .principles {
+    padding: 3.2520325203vw 0;
+  }
+  .principles__header {
+    margin-bottom: 2.4390243902vw;
+  }
+  .principles__label {
+    margin-bottom: 0.8130081301vw;
+  }
+  .principles__title {
+    font-size: 1.8970189702vw;
+    margin-bottom: 1.3550135501vw;
+  }
+  .principles__description {
+    font-size: 1.0840108401vw;
+  }
+  .principles__list {
+    gap: 0.8130081301vw;
+    row-gap: 0.6775067751vw;
+  }
+  .principles__list .principle-card {
+    padding: 0.8130081301vw 1.6260162602vw;
+    gap: 1.0840108401vw;
+    border: 0.0677506775vw solid var(--white-20);
+    box-shadow: 0 0.27100271vw 0.8130081301vw var(--black-20);
+    backdrop-filter: blur(0.27100271vw);
+    border-radius: 0.5420054201vw;
+  }
+  .principles__list .principle-card__icon img {
+    width: 3.2520325203vw;
+    height: 3.2520325203vw;
+  }
+  .principles__list .principle-card__title {
+    font-size: 1.6260162602vw;
+    margin-bottom: 0.135501355vw;
+  }
+  .principles__list .principle-card__text {
+    font-size: 1.0840108401vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .principles {
+    padding: 9.1603053435vw 0;
+  }
+  .principles__label {
+    padding: 2.5445292621vw 3.0534351145vw;
+    font-size: 2.5445292621vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .principles__header {
+    margin-bottom: 4.5801526718vw;
+  }
+  .principles__list {
+    gap: 1.7811704835vw;
+    grid-template-columns: 1fr;
+  }
+  .principles__list .principle-card {
+    padding: 2.2900763359vw 6.106870229vw;
+    padding-top: 3.3078880407vw;
+    gap: 3.0534351145vw;
+    border: 0.2544529262vw solid var(--white-20);
+    box-shadow: 0px 1.0178117048vw 3.0534351145vw var(--black-20);
+    backdrop-filter: blur(1.0178117048vw);
+    border-radius: 1.5267175573vw;
+  }
+  .principles__list .principle-card__icon img {
+    width: 8.1424936387vw;
+    height: 8.1424936387vw;
+  }
+  .principles__list .principle-card__title {
+    font-size: 4.0712468193vw;
+    margin-bottom: 0.5089058524vw;
+  }
+  .principles__list .principle-card__text {
+    font-size: 3.0534351145vw;
+  }
+  .principles__title {
+    font-size: 4.5801526718vw;
+    margin-bottom: 5.0890585242vw;
+  }
+  .principles__description {
+    font-size: 3.0534351145vw;
+  }
+  .principles__description br:not(.mobile-br) {
+    display: none;
+  }
+}/*# sourceMappingURL=principles.css.map */
