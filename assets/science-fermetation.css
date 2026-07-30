@@ -147,6 +147,7 @@
 .fermetation-items__bg img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .fermetation-items__inner{
     display: flex;

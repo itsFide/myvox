@@ -82,10 +82,26 @@
   }
 }/*# sourceMappingURL=style.css.map */
     .about {
-  padding: 141.5px 0;
-  padding-bottom: 128px;
+  --about-header-height: 88px;
+
   position: relative;
+
+  /* Fallback для старых браузеров */
+  height: calc(100vh - var(--about-header-height));
+
+  /* Стабильная высота, установленная JS или через svh */
+  height: calc(
+      var(--hero-stable-viewport-height, 100svh)
+      - var(--about-header-height)
+  );
+
+  display: flex;
+  align-items: center;
 }
+.about > .container {
+  width: 100%;
+}
+
 .about__image {
   position: absolute;
   inset: 0;
@@ -141,8 +157,8 @@
 
 @media screen and (max-width: 1919px) {
   .about {
-    padding: 9.5867208672vw 0;
-    padding-bottom: 8.6720867209vw;
+    --about-header-height: 5.9661vw;
+    align-items: center;
   }
   .about__label {
     margin-bottom: 0.8130081301vw;
@@ -159,8 +175,11 @@
 }
 @media screen and (max-width: 650px) {
   .about {
-    padding: 5.8524173028vw 0;
-    height: 142.4936386768vw;
+    --about-header-height: 14.758vw;
+    align-items: start;
+  }
+  .about__inner{
+    padding-top: 6.361vw;
   }
   .about .container {
     padding: 0 6.106870229vw;

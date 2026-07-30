@@ -56,6 +56,46 @@
     </div>
 </section>
 
+<script>
+(function () {
+    var root = document.documentElement;
+    var savedViewportWidth = window.innerWidth;
+    var resizeFrame = 0;
+
+    function getVisibleViewportHeight() {
+        if (window.visualViewport && Number.isFinite(window.visualViewport.height)) {
+            return window.visualViewport.height;
+        }
+        return window.innerHeight;
+    }
+
+    function lockViewportHeight() {
+        var viewportHeight = Math.round(getVisibleViewportHeight());
+        savedViewportWidth = window.innerWidth;
+        root.style.setProperty('--hero-stable-viewport-height', viewportHeight + 'px');
+    }
+
+    function handleResize() {
+        cancelAnimationFrame(resizeFrame);
+        resizeFrame = requestAnimationFrame(function () {
+            var currentWidth = window.innerWidth;
+            var widthDifference = Math.abs(currentWidth - savedViewportWidth);
+            if (widthDifference > 32) {
+                lockViewportHeight();
+            }
+        });
+    }
+
+    lockViewportHeight();
+
+    window.addEventListener('pageshow', lockViewportHeight);
+    window.addEventListener('resize', handleResize, { passive: true });
+    window.addEventListener('orientationchange', function () {
+        window.setTimeout(lockViewportHeight, 300);
+    });
+})();
+</script>
+
 {% schema %}
 {
   "name": "About Hero",

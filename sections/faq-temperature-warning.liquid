@@ -1,0 +1,87 @@
+{% render 'async-stylesheet', file: 'faq-temperature.css' %}
+<section class="temperature-warning">
+    <div class="temperature-warning__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'temperature-warning-mobile-bg.avif' | file_url }}"
+                type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'temperature-warning-mobile-bg.webp' | file_url }}"
+                type="image/webp">
+            <source srcset="{{ 'temperature-warning-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'temperature-warning-bg.webp' | file_url }}" alt="Respect the Enzymes" fetchpriority="low"
+                loading="lazy" decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <article class="temperature-warning__card">
+
+            <div class="temperature-warning__aside">
+
+                <div class="temperature-warning__temperature">
+                    <div class="temperature-warning__icon">
+
+                        <svg id="heat-icon" viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M30.5222 36.0065C30.9912 36.8514 31.1549 37.8335 31.1549 38.7408C31.1542 42.0408 28.4649 44.8211 25.074 44.8217V42.9273C27.4011 42.9268 29.2598 41.0122 29.2605 38.7408C29.2605 38.0361 29.1296 37.4024 28.8665 36.9278L30.5222 36.0065Z"
+                                fill="currentColor" />
+                            <path d="M26.0212 31.9939H24.1268V6.47521H26.0212V31.9939Z" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M25.1461 0.320312C26.7467 0.320349 28.2641 0.772813 29.39 1.8077C30.5292 2.85502 31.153 4.39369 31.153 6.32721V32.2362C32.8568 33.8788 34.082 36.3833 34.1593 38.8573V38.8869C34.1589 43.9055 30.1927 47.6794 25.2201 47.6799C20.2814 47.6799 16.0594 43.9385 16.059 38.8869C16.059 36.2529 17.2915 33.792 19.0653 32.153V6.32721C19.0653 4.39336 19.6896 2.85212 20.8412 1.804C21.9783 0.769291 23.5144 0.320312 25.1461 0.320312ZM25.1461 2.2147C23.8447 2.2147 22.814 2.57275 22.1177 3.20629C21.4363 3.8264 20.9597 4.81472 20.9596 6.32721V33.0243L20.6192 33.3074C19.0547 34.6112 17.9534 36.7005 17.9534 38.8869C17.9538 42.7811 21.2129 45.7855 25.2201 45.7855C29.1828 45.7851 32.2492 42.8284 32.2649 38.9165L32.2408 38.528C32.0598 36.5831 30.9923 34.5929 29.5843 33.3684L29.2587 33.0854V6.32721C29.2586 4.81489 28.7832 3.82352 28.108 3.20259C27.419 2.56927 26.4054 2.21473 25.1461 2.2147Z"
+                                fill="currentColor" />
+                            <path d="M17.6667 29.3465H14V27.4522H17.6667V29.3465Z" fill="currentColor" />
+                            <path d="M36 29.3465H32.3333V27.4522H36V29.3465Z" fill="currentColor" />
+                            <path d="M17.6667 24.2147H15.467V22.3203H17.6667V24.2147Z" fill="currentColor" />
+                            <path d="M34.533 24.2147H32.3333V22.3203H34.533V24.2147Z" fill="currentColor" />
+                            <path d="M17.6667 19.8136H14V17.9192H17.6667V19.8136Z" fill="currentColor" />
+                            <path d="M36 19.8136H32.3333V17.9192H36V19.8136Z" fill="currentColor" />
+                            <path d="M17.6667 14.6799H15.467V12.7855H17.6667V14.6799Z" fill="currentColor" />
+                            <path d="M34.533 14.6799H32.3333V12.7855H34.533V14.6799Z" fill="currentColor" />
+                            <path d="M17.6667 9.54803H14V7.65365H17.6667V9.54803Z" fill="currentColor16F55" />
+                            <path d="M36 9.54803H32.3333V7.65365H36V9.54803Z" fill="currentColor" />
+                        </svg>
+
+                    </div>
+
+                    40°C
+                </div>
+
+                <div class="temperature-warning__limit">
+                    104°F — MAX TEMP
+                </div>
+
+            </div>
+
+            <div class="temperature-warning__content">
+
+                <h2 class="temperature-warning__title">
+                    Respect the Enzymes
+                </h2>
+
+                <p class="temperature-warning__text">
+                    Api-Complex contains live bioactive compounds. Heat above 40°C destroys them. <br>
+
+                </p>
+                <p class="temperature-warning__text">
+                    Never add this to hot tea, coffee, or any warm liquid.
+                    The protocol only works if the biology survives it.
+                </p>
+
+            </div>
+
+        </article>
+    </div>
+</section>
+{% schema %}
+{
+  "name": "Faq Temperature",
+  "class": "faq-temperature",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Faq Temperature",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}

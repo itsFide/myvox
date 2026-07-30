@@ -180,4 +180,7 @@
     width: 4.0712468193vw;
     height: 4.0712468193vw;
   }
+  .cta__actions .button{
+    border-width: 0.254vw;
+  }
 }/*# sourceMappingURL=cta.css.map */

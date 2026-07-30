@@ -1,0 +1,364 @@
+.expect {
+  padding: 64px 0;
+  position: relative;
+}
+.expect__image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.expect__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.expect__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: var(--gray-bg-100);
+  margin-bottom: 36px;
+}
+.expect__cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 24px;
+}
+.expect__card {
+  background: var(--white-5);
+  border: 1px solid var(--white-20);
+  box-shadow: 0px 4px 12px var(--black-20);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 24px;
+  padding-bottom: 22px;
+}
+.expect__card:nth-child(2) .expect__card-title {
+  color: var(--white-100);
+}
+.expect__card:nth-child(3) .expect__card-title {
+  color: var(--red-100);
+}
+.expect__card-title {
+  font-size: 36px;
+  color: var(--black-100);
+  letter-spacing: 0.4px;
+  line-height: 120%;
+  font-weight: 600;
+}
+.expect__card-title span {
+  color: var(--red-100);
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-size: inherit;
+}
+.expect__card-title {
+  color: var(--white-50);
+  margin-bottom: 8px;
+}
+.expect__card-text {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: var(--white-100);
+}
+.expect__card-note {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--white-50);
+}
+.expect__label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white-100);
+  padding: 7.5px 12px;
+  background: var(--white-10);
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.expect__quote {
+  border-left: 2px solid var(--red-100);
+  padding: 12px 0 12px 24px;
+  margin-bottom: 24px;
+}
+.expect__quote-title {
+  color: var(--black-100);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: var(--white-80);
+  margin-bottom: 12px;
+}
+.expect__quote-text {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 120%;
+  color: var(--white-80);
+}
+.expect__button {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 4px;
+  color: var(--white-100);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: var(--green-100);
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+.expect__button svg {
+  width: 24px;
+  height: 24px;
+  color: var(--white-50);
+}
+.expect__stats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.expect__stats-icon {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+  border-right: 1px solid var(--white-20);
+}
+.expect__stats-icon svg {
+  width: 48px;
+  height: 48px;
+  color: var(--white-20);
+}
+.expect__stats-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: var(--gray-bg-100);
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+.expect__cta {
+  display: flex;
+  align-items: center;
+  padding: 24px 36px;
+  justify-content: space-between;
+  background: var(--black-20);
+  border: 1px solid var(--white-10);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+}
+.expect .mobile-br {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .expect .mobile-br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .expect {
+    padding: 4.3360433604vw 0;
+  }
+  .expect__title {
+    font-size: 1.8970189702vw;
+    letter-spacing: 0.0135501355vw;
+    margin-bottom: 2.4390243902vw;
+  }
+  .expect__cards {
+    gap: 1.3550135501vw;
+    margin-bottom: 1.6260162602vw;
+  }
+  .expect__card {
+    border-width: 0.0677506775vw;
+    box-shadow: 0 0.27100271vw 0.8130081301vw var(--black-20);
+    backdrop-filter: blur(0.8130081301vw);
+    border-radius: 0.8130081301vw;
+    padding: 1.6260162602vw;
+    padding-bottom: 1.4905149051vw;
+  }
+  .expect__card-title {
+    font-size: 2.4390243902vw;
+    letter-spacing: 0.027100271vw;
+    margin-bottom: 0.5420054201vw;
+  }
+  .expect__card-text {
+    font-size: 0.9485094851vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .expect__card-note {
+    margin-top: 0.6775067751vw;
+    font-size: 0.8130081301vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .expect__label {
+    font-size: 0.9485094851vw;
+    padding: 0.5081300813vw 0.8130081301vw;
+    border-radius: 0.27100271vw;
+    margin-bottom: 0.8130081301vw;
+  }
+  .expect__quote {
+    border-left-width: 0.135501355vw;
+    padding: 0.8130081301vw 0 0.8130081301vw 1.6260162602vw;
+    margin-bottom: 1.6260162602vw;
+  }
+  .expect__quote-title {
+    font-size: 1.2195121951vw;
+    letter-spacing: 0.0135501355vw;
+    margin-bottom: 0.8130081301vw;
+  }
+  .expect__quote-text {
+    font-size: 1.0840108401vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .expect__button {
+    gap: 0.406504065vw;
+    font-size: 1.0840108401vw;
+    border-radius: 0.27100271vw;
+    padding: 0.8130081301vw 1.6260162602vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .expect__button svg {
+    width: 1.6260162602vw;
+    height: 1.6260162602vw;
+  }
+  .expect__stats {
+    gap: 1.0840108401vw;
+  }
+  .expect__stats-icon {
+    padding-right: 1.6260162602vw;
+    border-right-width: 0.0677506775vw;
+  }
+  .expect__stats-icon svg {
+    width: 3.2520325203vw;
+    height: 3.2520325203vw;
+  }
+  .expect__stats-text {
+    font-size: 1.6260162602vw;
+    letter-spacing: 0.0135501355vw;
+    letter-spacing: 0.027100271vw;
+  }
+  .expect__cta {
+    padding: 1.6260162602vw 2.4390243902vw;
+    border-width: 0.0677506775vw;
+    backdrop-filter: blur(0.27100271vw);
+    border-radius: 0.5420054201vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .expect {
+    padding: 6.106870229vw 0;
+  }
+  .expect__title {
+    font-size: 7.1246819338vw;
+    letter-spacing: 0.1017811705vw;
+    margin-bottom: 3.3078880407vw;
+  }
+  .expect__cards {
+    gap: 3.0534351145vw;
+    grid-template-columns: 1fr;
+    margin-bottom: 6.3613231552vw;
+  }
+  .expect__card {
+    border: 0.2544529262vw solid var(--white-20);
+    box-shadow: 0px 1.0178117048vw 3.0534351145vw var(--black-20);
+    backdrop-filter: blur(3.0534351145vw);
+    border-radius: 3.0534351145vw;
+    padding: 5.8524173028vw 6.106870229vw;
+    padding-bottom: 5.3435114504vw;
+  }
+  .expect__card-title {
+    font-size: 6.106870229vw;
+    letter-spacing: 0.1017811705vw;
+    margin-bottom: 2.0356234097vw;
+  }
+  .expect__card-text {
+    font-size: 2.5445292621vw;
+    letter-spacing: 0.0508905852vw;
+  }
+  .expect__card-text br:not(.mobile-br) {
+    display: none;
+  }
+  .expect__card-note {
+    margin-top: 2.0356234097vw;
+    font-size: 2.0356234097vw;
+  }
+  .expect__card-note br {
+    display: none;
+  }
+  .expect__label {
+    font-size: 2.5445292621vw;
+    border-radius: 1.0178117048vw;
+    padding: 2.2900763359vw 2.0356234097vw;
+    margin-bottom: 2.0356234097vw;
+  }
+  .expect__quote {
+    margin-bottom: 5.8524173028vw;
+    border-left: 0.5089058524vw solid var(--red-100);
+    padding: 3.0534351145vw 0 3.0534351145vw 3.0534351145vw;
+  }
+  .expect__quote-title {
+    font-size: 3.5623409669vw;
+    letter-spacing: 0.0254452926vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .expect__quote-text {
+    font-size: 3.0534351145vw;
+    letter-spacing: 0.0508905852vw;
+  }
+  .expect__cta {
+    padding: 6.106870229vw 4.0712468193vw;
+    border: 0.2544529262vw solid var(--white-10);
+    backdrop-filter: blur(1.0178117048vw);
+    border-radius: 2.0356234097vw;
+    flex-direction: column;
+    padding-bottom: 5.8524173028vw;
+  }
+  .expect__stats {
+    margin-bottom: 4.0712468193vw;
+    gap: 4.0712468193vw;
+    width: 100%;
+  }
+  .expect__stats-icon {
+    padding-right: 3.0534351145vw;
+    width: 15.2671755725vw;
+    height: 12.213740458vw;
+  }
+  .expect__stats-icon svg {
+    width: 12.213740458vw;
+    height: 12.213740458vw;
+  }
+  .expect__stats-text {
+    font-size: 4.0712468193vw;
+    letter-spacing: 0.0508905852vw;
+    letter-spacing: 0;
+  }
+  .expect__button {
+    font-size: 3.5623409669vw;
+    border-radius: 1.0178117048vw;
+    gap: 1.5267175573vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.0508905852vw;
+  }
+  .expect__button svg {
+    width: 4.0712468193vw;
+    height: 4.0712468193vw;
+  }
+  .expect__button {
+    padding: 2.7989821883vw 0;
+    width: 100%;
+  }
+}/*# sourceMappingURL=expect.css.map */

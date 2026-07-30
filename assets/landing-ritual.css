@@ -1,0 +1,402 @@
+.ritual {
+  padding: 48px 0;
+}
+.ritual__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+}
+.ritual__title span {
+  font-weight: inherit;
+  color: var(--red-100);
+  letter-spacing: 0.4px;
+}
+.ritual__subtitle {
+  color: var(--black-100);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  margin-bottom: 34px;
+}
+.ritual__methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 36px;
+}
+.ritual__label {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 6px;
+  color: var(--white-80);
+  letter-spacing: 0.2px;
+}
+.ritual__method {
+  position: relative;
+  padding: 12px 24px;
+  gap: 24px;
+  border: 1px solid var(--white-20);
+  border-radius: 8px;
+}
+.ritual__method-title {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 120%;
+  font-weight: 600;
+  color: var(--white-100);
+  margin-bottom: 4px;
+}
+.ritual__method-text {
+  font-size: 14px;
+  color: var(--white-80);
+}
+.ritual__method-image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.ritual__method-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ritual__method-image img {
+  border-radius: 8px;
+}
+.ritual__taste {
+  margin-bottom: 38px;
+  padding: 12px 0 12px 24px;
+  border-left: 1px solid var(--red-100);
+}
+.ritual__taste-title {
+  color: var(--black-100);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: var(--gray-100);
+  margin-bottom: 12px;
+}
+.ritual__taste-text {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 120%;
+  color: var(--gray-100);
+}
+.ritual__warning {
+  margin-bottom: 38px;
+  display: flex;
+  align-items: center;
+  padding: 24px 36px;
+  gap: 24px;
+  background: var(--gray-bg-50);
+  border: 1px solid var(--gray-bg-100);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+}
+.ritual__warning-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: var(--black-100);
+  margin-bottom: 12px;
+  letter-spacing: 0.4px;
+}
+.ritual__warning-text {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 120%;
+  color: var(--black-50);
+}
+.ritual__text {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 120%;
+  color: var(--gray-100);
+}
+.ritual__text:not(:last-child) {
+  margin-bottom: 12px;
+}
+.ritual__text--strong {
+  color: var(--black-100);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+}
+.ritual__temperature {
+  padding-right: 30px;
+  border-right: 2px solid var(--red-100);
+}
+.ritual__temperature-label {
+  color: var(--black-100);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: var(--red-50);
+}
+.ritual__temperature-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ritual__temperature-value {
+  font-size: 48px;
+  color: var(--black-100);
+  letter-spacing: 0.4px;
+  line-height: 120%;
+  font-weight: 600;
+}
+.ritual__temperature-value span {
+  color: var(--red-100);
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-size: inherit;
+}
+.ritual__temperature-value {
+  color: var(--red-100);
+}
+.ritual__temperature-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--red-100);
+}
+.ritual .mobile-br {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .ritual .mobile-br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .ritual {
+    padding: 3.2520325203vw 0;
+  }
+  .ritual__title {
+    font-size: 1.8970189702vw;
+    letter-spacing: 0.0135501355vw;
+    margin-bottom: 0.8130081301vw;
+  }
+  .ritual__title span {
+    letter-spacing: 0.027100271vw;
+  }
+  .ritual__subtitle {
+    font-size: 1.2195121951vw;
+    letter-spacing: 0.0135501355vw;
+    margin-bottom: 2.3035230352vw;
+  }
+  .ritual__methods {
+    gap: 1.3550135501vw;
+    margin-bottom: 2.4390243902vw;
+  }
+  .ritual__label {
+    font-size: 0.8130081301vw;
+    margin-bottom: 0.406504065vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .ritual__method {
+    padding: 0.8130081301vw 1.6260162602vw;
+    gap: 1.6260162602vw;
+    border-radius: 0.5420054201vw;
+  }
+  .ritual__method-title {
+    font-size: 1.0840108401vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .ritual__method-text {
+    font-size: 0.9485094851vw;
+  }
+  .ritual__method-image img {
+    border-radius: 0.5420054201vw;
+  }
+  .ritual__taste {
+    margin-bottom: 2.5745257453vw;
+    padding: 0.8130081301vw 0 0.8130081301vw 1.6260162602vw;
+    border-left-width: 0.0677506775vw;
+  }
+  .ritual__taste-title {
+    font-size: 1.2195121951vw;
+    letter-spacing: 0.0135501355vw;
+    margin-bottom: 0.8130081301vw;
+  }
+  .ritual__taste-text {
+    font-size: 1.0840108401vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .ritual__warning {
+    margin-bottom: 2.5745257453vw;
+    gap: 1.6260162602vw;
+    padding: 1.6260162602vw 2.4390243902vw;
+    border-radius: 0.8130081301vw;
+  }
+  .ritual__warning-title {
+    font-size: 1.6260162602vw;
+    letter-spacing: 0.0135501355vw;
+    margin-bottom: 0.8130081301vw;
+    letter-spacing: 0.027100271vw;
+  }
+  .ritual__warning-text {
+    font-size: 1.0840108401vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .ritual__text {
+    font-size: 1.0840108401vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .ritual__text:not(:last-child) {
+    margin-bottom: 0.8130081301vw;
+  }
+  .ritual__text--strong {
+    font-size: 1.2195121951vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .ritual__temperature {
+    padding-right: 2.0325203252vw;
+    border-right-width: 0.135501355vw;
+  }
+  .ritual__temperature-label {
+    font-size: 1.2195121951vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .ritual__temperature-head {
+    gap: 0.8130081301vw;
+  }
+  .ritual__temperature-value {
+    font-size: 3.2520325203vw;
+    letter-spacing: 0.027100271vw;
+  }
+  .ritual__temperature-icon {
+    width: 3.2520325203vw;
+    height: 3.2520325203vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .ritual {
+    padding: 6.106870229vw 0;
+    padding-bottom: 6.106870229vw;
+  }
+  .ritual__title {
+    font-size: 4.5801526718vw;
+    letter-spacing: 0.0508905852vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .ritual__subtitle {
+    font-size: 3.5623409669vw;
+    letter-spacing: 0.0254452926vw;
+    margin-bottom: 5.8524173028vw;
+  }
+  .ritual__methods {
+    grid-template-columns: 1fr;
+    gap: 1.272264631vw;
+    margin-bottom: 6.106870229vw;
+  }
+  .ritual__method {
+    padding: 2.5445292621vw 6.106870229vw;
+    border: 0.2544529262vw solid var(--white-20);
+    border-radius: 2.0356234097vw;
+  }
+  .ritual__method-image img {
+    border-radius: 2.0356234097vw;
+  }
+  .ritual__method-title {
+    font-size: 3.0534351145vw;
+    letter-spacing: 0.0508905852vw;
+    margin-bottom: 1.5267175573vw;
+  }
+  .ritual__method-text {
+    font-size: 2.5445292621vw;
+    letter-spacing: 0.0508905852vw;
+  }
+  .ritual__method-text br:not(.mobile-br) {
+    display: none;
+  }
+  .ritual__label {
+    font-size: 2.0356234097vw;
+    margin-bottom: 1.5267175573vw;
+  }
+  .ritual__taste {
+    margin-bottom: 5.8524173028vw;
+    padding: 3.0534351145vw 0 3.0534351145vw 3.0534351145vw;
+    border-left: 0.2544529262vw solid var(--red-100);
+  }
+  .ritual__taste-title {
+    font-size: 3.5623409669vw;
+    letter-spacing: 0.0254452926vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .ritual__taste-text {
+    font-size: 3.0534351145vw;
+    letter-spacing: 0.0508905852vw;
+  }
+  .ritual__warning {
+    border-radius: 3.0534351145vw;
+    margin-bottom: 6.106870229vw;
+    padding: 4.0712468193vw;
+    padding-bottom: 3.5623409669vw;
+    flex-direction: column;
+    gap: 3.0534351145vw;
+  }
+  .ritual__warning-content {
+    width: 100%;
+  }
+  .ritual__warning-title {
+    font-size: 4.0712468193vw;
+    letter-spacing: 0.0508905852vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .ritual__warning-text {
+    font-size: 3.0534351145vw;
+    letter-spacing: 0.0508905852vw;
+  }
+  .ritual__text {
+    font-size: 3.0534351145vw;
+    letter-spacing: 0.0508905852vw;
+  }
+  .ritual__text:not(:last-child) {
+    margin-bottom: 3.0534351145vw;
+  }
+  .ritual__text--strong {
+    font-size: 3.5623409669vw;
+    letter-spacing: 0.0254452926vw;
+  }
+  .ritual__temperature {
+    width: 100%;
+    padding-right: 0;
+    border-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2.5445292621vw;
+    border-bottom: 0.2544529262vw solid var(--red-100);
+  }
+  .ritual__temperature-head {
+    gap: 1.5267175573vw;
+  }
+  .ritual__temperature-icon {
+    width: 8.1424936387vw;
+    height: 8.1424936387vw;
+  }
+  .ritual__temperature-label {
+    font-size: 3.5623409669vw;
+    letter-spacing: 0.0254452926vw;
+  }
+  .ritual__temperature-value {
+    font-size: 8.1424936387vw;
+    letter-spacing: 0.3053435115vw;
+  }
+  .ritual__temperature-content {
+    display: flex;
+    align-content: center;
+  }
+}/*# sourceMappingURL=ritual.css.map */

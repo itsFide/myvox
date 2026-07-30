@@ -27,6 +27,7 @@
 .hero__bg img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .hero__inner{
     height: 100%;
@@ -146,11 +147,13 @@
     .hero {
         --hero-header-height: 14.758vw;
         padding: 6.1069vw 0 8.3969vw;
-        height: calc(100vh - var(--hero-header-height));
+        /* height: calc(100vh - var(--hero-header-height));
         height: calc(
             var(--hero-stable-viewport-height, 100svh)
             - var(--hero-header-height)
-        );
+        ); */
+
+        height: auto;
     }
 
     .hero .container {

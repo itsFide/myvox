@@ -1,0 +1,3540 @@
+{% render 'svg-sprite' %}
+{% render 'landing-v1-styles' %}
+<section class="hero">
+    <div class="hero__background">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'hero-bg-mobile.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'hero-bg-mobile.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'hero-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'hero-bg.webp' | file_url }}" alt="MYVOX-9" fetchpriority="high" loading="eager" decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="hero__inner">
+
+            <div class="hero__content">
+
+                <h1 class="hero__title">
+                    <span>If you wake up <br class="mobile-br"> already exhausted,</span> <br>
+                    your mornings <br> aren't the problem
+                </h1>
+
+                <p class="hero__description">
+                    Api-Complex supports steady, natural energy, <br>
+                    so mornings start easier instead of dragging.
+                </p>
+
+                <a class="hero__button button button--primary" href="#">
+                    TRY API-COMPLEX
+                    <svg aria-hidden="true">
+                        <use href="#arrow-icon"></use>
+                    </svg>
+                </a>
+
+
+            </div>
+
+            <div class="hero__media">
+                <picture class="hero__image">
+                    <source srcset="{{ 'hero-product-image.avif' | file_url }}" type="image/avif">
+                    <source srcset="{{ 'hero-product-image.webp' | file_url }}" type="image/webp">
+                    <img src="{{ 'hero-product-image.webp' | file_url }}" alt="MYVOX-9 Api-Complex product" loading="eager"
+                        fetchpriority="high" width="613" height="525">
+                </picture>
+            </div>
+
+        </div>
+
+        <div class="hero__trust">
+
+            <div class="hero__rating">
+                <div class="hero__rating-header">
+                    <div class="hero__stars">
+                        <svg>
+                            <use href="#star-icon"></use>
+                        </svg>
+                        <svg>
+                            <use href="#star-icon"></use>
+                        </svg>
+                        <svg>
+                            <use href="#star-icon"></use>
+                        </svg>
+                        <svg>
+                            <use href="#star-icon"></use>
+                        </svg>
+                        <svg>
+                            <use href="#star-icon-2"></use>
+                        </svg>
+                    </div>
+
+                    <div class="hero__rating-value">
+                        4.8 / 5
+                    </div>
+                </div>
+
+
+                <p class="hero__rating-text">
+                    from 1,800+ verified reviews·
+                </p>
+            </div>
+
+            <ul class="hero__badges">
+
+                <li class="hero__badge">
+                    <img src="{{ 'hero-icon-1.svg' | file_url }}" loading="lazy" class="hero__badge-icon"
+                        alt="92% of subscribers">
+
+
+                    <div class="hero__badge-content">
+                        <h3 class="hero__badge-title">
+                            92% of subscribers
+                        </h3>
+
+                        <p class="hero__badge-text">
+                            stay past their first box
+                        </p>
+                    </div>
+                </li>
+
+                <li class="hero__badge">
+                    <img src="{{ 'hero-icon-2.svg' | file_url }}" loading="lazy" class="hero__badge-icon"
+                        alt="cGMP-certified">
+
+                    <div class="hero__badge-content">
+                        <h3 class="hero__badge-title">
+                            cGMP-certified
+                        </h3>
+
+                        <a class="hero__badge-link" href="#">
+                            Published Certificate of Analysis
+                            <svg aria-hidden="true">
+                                <use href="#arrow-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="hero__badge">
+                    <img src="{{ 'hero-icon-3.svg' | file_url }}" loading="lazy" class="hero__badge-icon"
+                        alt="Third-party lab tested">
+
+                    <div class="hero__badge-content">
+                        <h3 class="hero__badge-title">
+                            Third-party lab tested
+                        </h3>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-system.css' %}
+<section class="system">
+    <div class="system__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'system-bg-mobile.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'system-bg-mobile.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'system-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'system-bg.webp' | file_url }}" alt="Your Body Runs on a System." fetchpriority="low"
+                loading="lazy" decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="system__inner">
+
+            <header class="system__header">
+                <h2 class="system__title">
+                    <span>Your Body Runs on a System.</span>
+                    Not a Stack of Pills
+                </h2>
+
+                <p class="system__description">
+                    To actually run well, your body needs three things, and it needs them at the same time:
+                </p>
+            </header>
+
+            <div class="system__steps">
+
+                <article class="system__step">
+                    <span class="system__step-number">01</span>
+
+                    <div class="system__step-card">
+                        <p class="system__step-title">
+                            Raw materials to build and repair with:
+                            <span class="system__step-text">
+                                vitamins, minerals, amino acids, enzymes.
+                            </span>
+                        </p>
+
+
+                    </div>
+                </article>
+
+                <article class="system__step">
+                    <span class="system__step-number">02</span>
+
+                    <div class="system__step-card">
+                        <p class="system__step-title">
+                            A signal that tells the body to use them: <br class="mobile-br">
+                            <span class="system__step-text">
+                                to recover and renew.
+                            </span>
+                        </p>
+
+
+
+                    </div>
+                </article>
+
+                <article class="system__step">
+                    <span class="system__step-number">03</span>
+
+                    <div class="system__step-card">
+                        <p class="system__step-title">
+                            A clean internal environment,
+                            <span class="system__step-text">
+                                so energy goes to living, <br class="mobile-br"> not lost to everyday internal
+                                stress.
+                            </span>
+                        </p>
+
+
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="system__message">
+                <p>
+                    Miss one, and the other two underperform.
+                </p>
+
+                <p>
+                    Nothing in the supplement aisle delivers <br class="mobile-br"> all three as one coordinated
+                    system.
+                </p>
+            </div>
+
+            <div class="system__summary">
+
+                <div class="system__summary-content">
+                    <h3 class="system__summary-title">
+                        Nature already solved this.
+                    </h3>
+
+                    <p class="system__summary-text">
+                        Under relentless pressure, the beehive produces <br class="mobile-br"> exactly these
+                        three substances — <br>
+                        already assembled <br class="mobile-br"> into one working system.
+                    </p>
+                </div>
+
+                <div class="system__summary-result">
+                    <h3 class="system__summary-result-title">
+                        Api-Complex is those three substances
+                    </h3>
+
+                    <p class="system__summary-result-text">
+                        Nothing else.<br>
+                        Just the three jobs your body actually runs on.
+                    </p>
+                </div>
+
+            </div>
+
+            <ul class="system__features">
+
+                <li class="system__feature">
+                    <img src="{{ 'system-icon-1.svg' | file_url }}" loading="lazy" alt="ONE SYSTEM, NOT A STACK" width="48"
+                        height="48">
+                    <span class="system__feature-title">
+                        ONE SYSTEM, <br class="mobile-br"> NOT A STACK
+                    </span>
+                </li>
+
+                <li class="system__feature">
+                    <img src="{{ 'system-icon-2.svg' | file_url }}" loading="lazy" alt="3,500 MG OF ACTIVES" width="48"
+                        height="48">
+
+                    <span class="system__feature-title">
+                        3,500 MG <br class="mobile-br"> OF ACTIVES
+                    </span>
+                </li>
+
+                <li class="system__feature">
+                    <img src="{{ 'system-icon-3.svg' | file_url }}" loading="lazy" alt="ZERO SUGAR" width="48" height="48">
+
+
+                    <span class="system__feature-title">
+                        ZERO SUGAR
+                    </span>
+                </li>
+
+                <li class="system__feature">
+                    <img src="{{ 'system-icon-4.svg' | file_url }}" loading="lazy" alt="ZERO FILLERS" width="48"
+                        height="48">
+
+                    <span class="system__feature-title">
+                        ZERO FILLERS
+                    </span>
+                </li>
+
+            </ul>
+
+            <div class="system__footer">
+
+                <div class="system__report">
+
+                    <svg class="system__report-icon">
+                        <use href="#glass-icon"></use>
+                    </svg>
+
+                    <div class="system__report-content">
+                        <h3 class="system__report-title">
+                            What people consistently report on a full system:
+                        </h3>
+
+                        <p class="system__report-text">
+                            steadier energy • calmer gut • no 2 p.m. wall • more left in the tank for evening
+                        </p>
+                    </div>
+
+                </div>
+
+                <a class="system__button button button--primary" href="#">
+                    SEE THE INGREDIENTS
+                    <svg aria-hidden="true">
+                        <use href="#arrow-icon"></use>
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-founder.css' %}
+<section class="founder">
+    <div class="container">
+        <div class="founder__inner">
+
+            <div class="founder__profile">
+                <div class="founder__info">
+                    <div class="founder__photo">
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="{{ 'founder-image-mobile.avif' | file_url }}"
+                                type="image/avif">
+                            <source media="(max-width: 650px)" srcset="{{ 'founder-image-mobile.webp' | file_url }}"
+                                type="image/webp">
+                            <source srcset="{{ 'founder-image.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'founder-image.webp' | file_url }}" loading="lazy" alt="Alex — Founder of MYVOX-9"
+                                width="604" height="668">
+                        </picture>
+                    </div>
+
+                    <div class="founder__card">
+                        <h3 class="founder__card-title">
+                            Alex – Founder, MYVOX-9
+                        </h3>
+
+                        <p class="founder__card-text">
+                            That bar is still how every batch ships today. <br>
+                            If it doesn't clear it, it doesn't go out the door.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="founder__content">
+
+                <header class="founder__header">
+                    <h2 class="founder__title">
+                        I Built Api-Complex <br> the Hard Way.
+                        <span>On Purpose.</span>
+                        <span>On Purpose</span>
+                    </h2>
+
+                    <p class="founder__subtitle">
+                        I'm Alex, founder of MYVOX-9.
+                    </p>
+                </header>
+
+                <div class="founder__intro">
+                    <p>
+                        A few years ago, I was the guy with a shelf full of supplements who still felt like
+                        garbage.
+                        And it wasn't just one thing going wrong. It was everything, a little:
+                    </p>
+                </div>
+
+                <ul class="founder__problems">
+                    <li class="founder__problem">
+                        <svg>
+                            <use href="#battery-icon"></use>
+                        </svg>
+                        <span>Energy that dropped out by 2 p.m.</span>
+                    </li>
+
+                    <li class="founder__problem">
+                        <svg>
+                            <use href="#brain-icon"></use>
+                        </svg>
+                        <span>Focus I had to claw for</span>
+                    </li>
+
+                    <li class="founder__problem">
+                        <svg>
+                            <use href="#fire-icon"></use>
+                        </svg>
+                        <span>A gut that made every meal a gamble</span>
+                    </li>
+
+                    <li class="founder__problem">
+                        <svg>
+                            <use href="#virus-icon"></use>
+                        </svg>
+                        <span>Feeling run-down whenever something went around</span>
+                    </li>
+
+                    <li class="founder__problem">
+                        <svg>
+                            <use href="#sad-icon"></use>
+                        </svg>
+                        <span>Just... running on empty</span>
+                    </li>
+                </ul>
+
+                <div class="founder__text">
+                    <p>
+                        So I did the responsible thing.<br>
+                        I bought a bottle for each problem.
+                    </p>
+                </div>
+
+                <div class="founder__stats">
+
+                    <article class="founder__stat">
+                        <span class="founder__stat-value">6</span>
+                        <span class="founder__stat-label">bottles</span>
+                    </article>
+
+                    <article class="founder__stat">
+                        <span class="founder__stat-value">5</span>
+                        <span class="founder__stat-label">alarms to remember them</span>
+                    </article>
+
+                    <article class="founder__stat">
+                        <span class="founder__stat-value">$200+</span>
+                        <span class="founder__stat-label">/mo</span>
+                    </article>
+
+                    <article class="founder__stat">
+                        <span class="founder__stat-value">0</span>
+                        <span class="founder__stat-label">real difference</span>
+                    </article>
+
+                </div>
+
+                <blockquote class="founder__quote">
+                    <svg>
+                        <use href="#quote-icon"></use>
+                    </svg>
+                    <p>
+                        In my early thirties. "Doing everything right." <br class="mobile-br">
+                        And quietly deciding supplements just don't work.
+                    </p>
+                </blockquote>
+
+                <div class="founder__story">
+
+                    <p>
+                        Here's what took me too long to see: I was treating five problems like five separate
+                        fires.
+                        But they weren't separate. They were one tired system, and nothing on that shelf was
+                        built to support a system.
+                        Six bottles, six directions, none of them talking to each other <br> or to me.
+                    </p>
+
+                    <p>
+                        So I went looking into what the body actually runs on — and the oldest answer there is
+                        kept coming up:
+                        the hive. Not one more single-ingredient bottle, but three substances that work as one
+                        system —
+                        building blocks, a signal, and a shield.
+                    </p>
+
+                </div>
+
+                <blockquote class="founder__highlight">
+                    <p>
+                        The day it clicked, I wasn't chasing one fix anymore. <br>
+                        Steadier energy, a clearer head, a calmer gut — it came up together.
+                        <span>One stick had quietly replaced half my shelf, and I felt more like myself
+                            than the whole drawer ever made me.</span>
+                    </p>
+
+                    <cite>— Alex</cite>
+                </blockquote>
+
+                <div class="founder__story">
+                    <p>
+                        So I went looking for a clean, full-dose version to buy for good. <br>
+                        It didn't exist. Every label was the same story:
+                    </p>
+                </div>
+
+                <div class="founder__comparison">
+
+                    <article class="founder__comparison-card">
+                        <picture>
+                            <source srcset="{{ 'royal-jelly-image.avif' | file_url }}" type="image/avif">
+                            <source srcset="{{ 'royal-jelly-image.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'royal-jelly-image.webp' | file_url }}" alt="ROYAL JELLY" loading="lazy" width="84"
+                                height="84">
+                        </picture>
+
+                        <div>
+                            <h3>ROYAL JELLY</h3>
+                            <p>drowned <br> in honey</p>
+                        </div>
+                    </article>
+
+                    <article class="founder__comparison-card">
+                        <picture>
+                            <source srcset="{{ 'pollen-image.avif' | file_url }}" type="image/avif">
+                            <source srcset="{{ 'pollen-image.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'pollen-image.webp' | file_url }}" alt="POLLEN" loading="lazy" width="84"
+                                height="84">
+                        </picture>
+
+                        <div>
+                            <h3>POLLEN</h3>
+                            <p>dosed so low the <br> number was decoration</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="founder__text">
+                    <p>
+                        So I spent two years building the one I couldn't find. <br>
+                        Here's the part that tells you who I am:
+                    </p>
+                </div>
+
+                <article class="founder__principle">
+                    <svg class="founder__principle-icon">
+                        <use href="#heat-icon"></use>
+                    </svg>
+
+                    <div class="founder__principle-content">
+                        <h3>
+                            Royal jelly loses 10-HDA, its most fragile compound, <br>
+                            the moment it gets warm.
+                        </h3>
+
+                        <p>
+                            So I refused to let a single batch touch heat – even when <br>
+                            it doubled my cost and three manufacturers told me it wasn't worth it.
+                        </p>
+                    </div>
+                </article>
+
+                <div class="founder__values">
+
+                    <article class="founder__value">
+                        <img src="{{ 'founder-icon-1.svg' | file_url }}" alt="Freeze-dried, never heated" loading="lazy">
+                        <h3>Freeze-dried,<br>never <br> heated</h3>
+                    </article>
+
+                    <article class="founder__value">
+                        <img src="{{ 'founder-icon-2.svg' | file_url }}" alt="Protected apiary sourced" loading="lazy">
+                        <h3>Protected-<br>apiary sourced</h3>
+                    </article>
+
+                    <article class="founder__value">
+                        <img src="{{ 'founder-icon-3.svg' | file_url }}" alt="No sugar,no flavoring, no filler"
+                            loading="lazy">
+                        <h3>No sugar,<br>no flavoring,<br class="mobile-br"><br>no filler</h3>
+                    </article>
+
+                    <article class="founder__value">
+                        <img src="{{ 'founder-icon-4.svg' | file_url }}" alt="Three full doses,<br>one stick"
+                            loading="lazy">
+                        <h3>Three<br> full doses,<br>one <br class="mobile-br"> stick</h3>
+                    </article>
+
+                </div>
+
+                <div class="founder__ending">
+                    <p>
+                        This isn't the cheapest bee supplement you can buy, and I've made peace with that.
+                        I built the one stick I'd put in my own body every morning — so I could throw the rest
+                        of the shelf out.
+                    </p>
+
+                    <p>
+                        I wouldn't give myself a watered-down version,
+                        and I'm not going to give you one either.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-properties-block.css' %}
+<div class="properties-block">
+    <div class="properties-block__image">
+        <picture>
+            <source srcset="{{ 'properties-block-bg-1.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'properties-block-bg-1.webp' | file_url }}" alt="MYVOX-9 properties" fetchpriority="low"
+                loading="lazy" decoding="async">
+        </picture>
+    </div>
+    <div class="properties-block__items properties-block__items-1 swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#microscope-icon"></use>
+                    </svg>
+                    <span>Every batch lab-tested</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#snow-icon"></use>
+                    </svg>
+                    <span>Freeze-dried to preserve potency</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#guarantee-icon"></use>
+                    </svg>
+                    <span>cGMP-certified</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#euro-flag-icon"></use>
+                    </svg>
+                    <span>Crafted in the EU</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#usa-flag-icon"></use>
+                    </svg>
+                    <span>Ships from our US warehouse</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#diamond-icon"></use>
+                    </svg>
+                    <span>No proprietary blends </span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#microscope-icon"></use>
+                    </svg>
+                    <span>Every batch lab-tested</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#snow-icon"></use>
+                    </svg>
+                    <span>Freeze-dried to preserve potency</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#guarantee-icon"></use>
+                    </svg>
+                    <span>cGMP-certified</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#euro-flag-icon"></use>
+                    </svg>
+                    <span>Crafted in the EU</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#usa-flag-icon"></use>
+                    </svg>
+                    <span>Ships from our US warehouse</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#diamond-icon"></use>
+                    </svg>
+                    <span>No proprietary blends </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% render 'async-stylesheet', file: 'landing-hive-triad.css' %}
+<section class="hive-triad">
+    <div class="container">
+        <div class="hive-triad__inner">
+
+            <div class="hive-triad__header">
+                <h2 class="hive-triad__title">
+                    <span>The Hive Triad:</span>
+                    Three Superfoods, One System
+                </h2>
+
+                <p class="hive-triad__subtitle">
+                    Most brands would call these "three ingredients." They're not.<br>
+                    They're three jobs, and each one <br class="mobile-br"> covers a different part of how your
+                    body runs.
+                </p>
+            </div>
+
+            <div class="hive-triad__items">
+
+                <article class="hive-triad__item">
+                    <div class="hive-triad__content">
+
+                        <span class="hive-triad__label">
+                            THE BUILDING BLOCKS
+                        </span>
+
+                        <h3 class="hive-triad__item-title">
+                            Bee Bread – 2,500 mg
+                        </h3>
+
+                        <p class="hive-triad__text">
+                            Raw pollen has a tough outer shell your gut struggles to break down – most
+                            of a standard pollen capsule passes right through you. Bee bread is pollen
+                            bees have fermented inside the hive: shell cracked open, contents pre-digested.
+                            Vitamins, minerals, amino acids, enzymes arrive already unlocked.
+                        </p>
+
+                        <a class="hive-triad__link" href="#">
+                            STUDY
+                            <svg aria-hidden="true">
+                                <use href="#arrow-icon"></use>
+                            </svg>
+                        </a>
+
+                        <div class="hive-triad__stat">
+                            <div class="hive-triad__stat-value">
+                                2,500mg
+                                <span>per stick</span>
+                            </div>
+
+                            <p class="hive-triad__stat-text">
+                                5× the dose <br class="mobile-br"> of a standard 500 mg pollen capsule.
+                            </p>
+                        </div>
+
+                        <p class="hive-triad__description">
+                            The raw-materials half of the system – whole, fermented food your body
+                            recognizes, not isolated synthetics it has to sort out.
+                        </p>
+
+                    </div>
+
+                    <div class="hive-triad__media">
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="{{ 'bee-bread-mobile.avif' | file_url }}"
+                                type="image/avif">
+                            <source media="(max-width: 650px)" srcset="{{ 'bee-bread-mobile.webp' | file_url }}"
+                                type="image/webp">
+                            <source srcset="{{ 'bee-bread.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'bee-bread.webp' | file_url }}" alt="bee bread" fetchpriority="low" loading="lazy"
+                                decoding="async">
+                        </picture>
+                    </div>
+                </article>
+
+                <article class="hive-triad__item hive-triad__item--reverse">
+
+                    <div class="hive-triad__media">
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="{{ 'royal-jelly-mobile.avif' | file_url }}"
+                                type="image/avif">
+                            <source media="(max-width: 650px)" srcset="{{ 'royal-jelly-mobile.webp' | file_url }}"
+                                type="image/webp">
+                            <source srcset="{{ 'royal-jelly.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'royal-jelly.webp' | file_url }}" alt="royal jelly" fetchpriority="low"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+
+                    <div class="hive-triad__content">
+
+                        <span class="hive-triad__label">
+                            THE SIGNAL
+                        </span>
+
+                        <h3 class="hive-triad__item-title">
+                            Royal Jelly – 500 mg
+                        </h3>
+
+                        <p class="hive-triad__text">
+                            Royal jelly is what turns an ordinary larva into a queen. In the hive it's
+                            a signal: grow, repair, renew. In your body, it works as a biological messenger
+                            that supports the body's natural cellular renewal and recovery.
+                        </p>
+
+                        <a class="hive-triad__link" href="#">
+                            STUDY
+                            <svg aria-hidden="true">
+                                <use href="#arrow-icon"></use>
+                            </svg>
+                        </a>
+
+                        <div class="hive-triad__stat">
+                            <div class="hive-triad__stat-value">
+                                500mg
+                            </div>
+
+                            <p class="hive-triad__stat-text">
+                                of freeze-dried royal jelly, <br class="mobile-br"> the equivalent of 1.5–2 g of
+                                fresh.<br>
+                                Most products use 50–100 mg, up to 10× less.
+                            </p>
+                        </div>
+
+                        <p class="hive-triad__description">
+                            Freeze-drying preserves 10-HDA and the other fragile compounds that make
+                            royal jelly worth taking. Nothing else does.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="hive-triad__item">
+
+                    <div class="hive-triad__content">
+
+                        <span class="hive-triad__label">
+                            THE SHIELD
+                        </span>
+
+                        <h3 class="hive-triad__item-title">
+                            Propolis – 500 mg
+                        </h3>
+
+                        <p class="hive-triad__text">
+                            Bees use propolis to keep the hive clean and protected. <br class="mobile-br"> In
+                            your body, it
+                            supports your immune system and helps your body maintain a healthy internal
+                            balance – so less of your energy gets quietly used up.
+                        </p>
+
+                        <a class="hive-triad__link" href="#">
+                            STUDY
+                            <svg aria-hidden="true">
+                                <use href="#arrow-icon"></use>
+                            </svg>
+                        </a>
+
+                        <div class="hive-triad__stat">
+                            <div class="hive-triad__stat-value">
+                                500mg
+                                <span>per stick</span>
+                            </div>
+
+                            <p class="hive-triad__stat-text">
+                                A full daily amount, <br class="mobile-br"> not a trace dusting diluted in
+                                honey.
+                            </p>
+                        </div>
+
+                        <p class="hive-triad__description">
+                            When your system isn't busy with small fires, the materials and the signal
+                            can go toward how you actually feel.
+                        </p>
+
+                    </div>
+
+                    <div class="hive-triad__media">
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="{{ 'propolis-mobile.avif' | file_url }}"
+                                type="image/avif">
+                            <source media="(max-width: 650px)" srcset="{{ 'propolis-mobile.webp' | file_url }}"
+                                type="image/webp">
+                            <source srcset="{{ 'propolis.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'propolis.webp' | file_url }}" alt="propolis" fetchpriority="low" loading="lazy"
+                                decoding="async">
+                        </picture>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <blockquote class="hive-triad__quote">
+
+                <p class="hive-triad__quote-text">
+                    "I'm the type who researches everything to death. <br class="mobile-br"> Read every label,
+                    cross-checked every
+                    dose,
+                    built what I thought was the perfect stack. Spent <br> a small fortune doing it.
+                    This humbled me a little, and I'm oddly fine with that."
+                </p>
+
+                <div class="hive-triad__quote-author">
+                    – Wes A., Salt Lake City, UT. Verified buyer. <br class="mobile-br"> <span>Individual
+                        results vary.</span>
+                </div>
+
+                <a class="hive-triad__quote-link" href="#">
+                    SEE THE FULL SUPPLEMENT FACTS PANEL
+                    <svg aria-hidden="true">
+                        <use href="#arrow-icon"></use>
+                    </svg>
+                </a>
+
+            </blockquote>
+
+            <div class="hive-triad__summary">
+
+                <div class="hive-triad__summary-info">
+
+                    <div class="hive-triad__summary-icon">
+                        <svg aria-hidden="true">
+                            <use href="#pack-icon"></use>
+                        </svg>
+                    </div>
+
+                    <div class="hive-triad__summary-content">
+                        <h3 class="hive-triad__summary-title">
+                            3,500 mg of actives
+                        </h3>
+
+                        <p class="hive-triad__summary-text">
+                            1 stick = 7 standard capsules. Minus the gelatin,
+                            the fillers, and the plastic bottles.
+                        </p>
+                    </div>
+
+                </div>
+
+                <a class="hive-triad__button button" href="#">
+                    SEE THE OFFER
+                    <svg aria-hidden="true">
+                        <use href="#arrow-icon"></use>
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-three-system.css' %}
+<section class="three-system">
+    <div class="container">
+        <div class="three-system__inner">
+
+            <div class="three-system__content">
+
+                <div class="three-system__header">
+                    <h2 class="three-system__title">
+                        <span>Three Together Beat a Shelf Apart</span>
+                    </h2>
+
+                    <p class="three-system__subtitle">
+                        One stick outperforms a whole shelf of separate bottles. Here's why:
+                    </p>
+                </div>
+
+                <div class="three-system__steps">
+
+                    <article class="three-system__step">
+                        <div class="three-system__number">01</div>
+
+                        <div class="three-system__body">
+                            <h3 class="three-system__step-title">
+                                Bee bread brings the building blocks.
+                            </h3>
+                        </div>
+                    </article>
+
+                    <article class="three-system__step">
+                        <div class="three-system__number">02</div>
+
+                        <div class="three-system__body">
+                            <h3 class="three-system__step-title">
+                                Royal jelly signals the body <br class="mobile-br"> to put them to work.
+                            </h3>
+                        </div>
+                    </article>
+
+                    <article class="three-system__step">
+                        <div class="three-system__number">03</div>
+
+                        <div class="three-system__body">
+                            <h3 class="three-system__step-title">
+                                Propolis keeps the environment clean <br class="mobile-br"> so nothing's wasted.
+                            </h3>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="three-system__text">
+                    <p>
+                        Each one makes the other two work better.
+                    </p>
+
+                    <p>
+                        That's why a single stick can support energy, recovery, <br class="mobile-br">
+                        and immune function at once, <br> instead of a drawer of bottles
+                        each chasing one thing.
+                    </p>
+                </div>
+
+            </div>
+
+            <aside class="three-system__aside">
+
+                <div class="three-system__image">
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="{{ 'three-system-image-mobile.avif' | file_url }}"
+                            type="image/avif">
+                        <source media="(max-width: 650px)" srcset="{{ 'three-system-image-mobile.webp' | file_url }}"
+                            type="image/webp">
+                        <source srcset="{{ 'three-system-image.avif' | file_url }}" type="image/avif">
+                        <img src="{{ 'three-system-image.webp' | file_url }}" alt="Three Together Beat a Shelf Apart"
+                            fetchpriority="low" loading="lazy" decoding="async">
+                    </picture>
+                </div>
+
+                <div class="three-system__card">
+
+                    <h3 class="three-system__card-title">
+                        <span>A multivitamin</span>
+
+                        gives you a piece of one job.<br>
+                        Api-Complex covers all three.
+                    </h3>
+
+                    <p class="three-system__card-text">
+                        Built for people who are done managing a shelf <br>
+                        of single-purpose supplements.
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-research.css' %}
+<section class="research">
+    <div class="research__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'research-bg-mobile.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'research-bg-mobile.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'research-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'research-bg.webp' | file_url }}" alt="Backed by Real Research" fetchpriority="low" loading="lazy"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="research__inner">
+
+            <div class="research__header">
+
+                <h2 class="research__title">
+                    This Is Where <br class="mobile-br"> Most Supplements Go Quiet.
+                    <span>We Don't</span>
+                </h2>
+
+                <p class="research__subtitle">
+                    A concentrate this strong is only worth taking if it's made right and backed by
+                    more than a nice label. So here it is, in the open.
+                </p>
+
+            </div>
+
+            <div class="research__cards">
+
+                <article class="research__card">
+
+                    <h3 class="research__card-title">
+                        Backed by Real Research
+                    </h3>
+
+                    <p class="research__card-text">
+                        Bee bread, royal jelly, and propolis are among the most-studied substances
+                        in natural health, with <br class="mobile-br"> a large body of peer-reviewed research
+                        into how
+                        they support energy, recovery, and immune <br> function.
+                        We've collected the key studies in one place. <br class="mobile-br"> <br>
+                        Read them yourself.
+                    </p>
+
+                    <a class="research__button button button--outline" href="#">
+                        <svg aria-hidden="true">
+                            <use href="#link-icon"></use>
+                        </svg>
+                        READ THE RESEARCH LIBRARY
+                        <svg aria-hidden="true">
+                            <use href="#arrow-icon"></use>
+                        </svg>
+                    </a>
+
+                </article>
+
+                <article class="research__card">
+
+                    <h3 class="research__card-title">
+                        Third-Party Lab Tested
+                    </h3>
+
+                    <p class="research__card-text">
+                        MYVOX-9 sends every batch to an independent, accredited laboratory,
+                        tested for purity, potency,<br class="mobile-br"> and contaminants before it ships.<br>
+                        <br class="mobile-br">
+                        <br class="mobile-br">
+                        We publish the results. You shouldn't have to take <br class="mobile-br"> a supplement
+                        brand's word for what's in the package, including ours.
+                    </p>
+
+                    <a class="research__button button button--outline" href="#">
+                        <svg aria-hidden="true">
+                            <use href="#link-icon"></use>
+                        </svg>
+                        VIEW THE LATEST CERTIFICATE OF ANALYSIS
+                        <svg aria-hidden="true">
+                            <use href="#arrow-icon"></use>
+                        </svg>
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-advantages.css' %}
+<section class="advantages">
+    <div class="advantages__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'advantages-bg-mobile.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'advantages-bg-mobile.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'advantages-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'advantages-bg.webp' | file_url }}" alt="Advatanges" fetchpriority="low" loading="lazy"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="advantages__inner">
+
+            <div class="advantages__grid">
+
+                <article class="advantages__card">
+                    <div class="advantages__icon">
+                        <img src="{{ 'advantages-icon-1.svg' | file_url }}" height="82" width="82"
+                            alt="Protected-apiary sourcing" loading="lazy">
+                    </div>
+                    <div class="advantages__info">
+                        <h3 class="advantages__title">
+                            Protected-apiary sourcing
+                        </h3>
+
+                        <p class="advantages__text">
+                            Hives kept away<br>
+                            from industrial agriculture and traffic,<br>
+                            so what the bees collect <br class="mobile-br"> stays clean.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="advantages__card">
+                    <div class="advantages__icon">
+                        <img src="{{ 'advantages-icon-2.svg' | file_url }}" height="82" width="82" alt="Cold, never hot"
+                            loading="lazy">
+                    </div>
+                    <div class="advantages__info">
+                        <h3 class="advantages__title">
+                            Cold, never hot
+                        </h3>
+
+                        <p class="advantages__text">
+                            Freeze-dried in a vacuum at low temperature,<br>
+                            the only method that preserves fragile<br>
+                            compounds like 10-HDA without chemicals.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="advantages__card">
+                    <div class="advantages__icon">
+                        <img src="{{ 'advantages-icon-3.svg' | file_url }}" height="82" width="82" alt="Made in the EU"
+                            loading="lazy">
+                    </div>
+                    <div class="advantages__info">
+                        <h3 class="advantages__title">
+                            Made in the EU
+                        </h3>
+
+                        <p class="advantages__text">
+                            Made in an FDA-registered,<br>
+                            cGMP-certified facility in the EU, then shipped<br>
+                            fast from our US warehouse. (FDA registration<br> <br class="mobile-br">
+                            is a facility record and does not imply FDA<br>
+                            approval or endorsement of the product.)
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="advantages__card">
+                    <div class="advantages__icon">
+                        <img src="{{ 'advantages-icon-4.svg' | file_url }}" height="82" width="82"
+                            alt="Full-dose transparency" loading="lazy">
+                    </div>
+                    <div class="advantages__info">
+                        <h3 class="advantages__title">
+                            Full-dose transparency
+                        </h3>
+
+                        <p class="advantages__text">
+                            Every milligram on the label. <br class="mobile-br"><br>
+                            3.5 g of the 4 g serving is active hive concentrate.<br>
+                            No proprietary blends.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="advantages__card">
+                    <div class="advantages__icon">
+                        <img src="{{ 'advantages-icon-5.svg' | file_url }}" height="82" width="82" alt="Hermetically sealed"
+                            loading="lazy">
+                    </div>
+                    <div class="advantages__info">
+                        <h3 class="advantages__title">
+                            Hermetically sealed
+                        </h3>
+
+                        <p class="advantages__text">
+                            Each stick pack is sealed against air,<br> <br class="mobile-br">
+                            light, and moisture.<br>
+                            That's how it stays fresh with zero preservatives.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="advantages__card">
+                    <div class="advantages__icon">
+                        <img src="{{ 'advantages-icon-6.svg' | file_url }}" height="82" width="82"
+                            alt="Quality / cert seals" loading="lazy">
+                    </div>
+
+                    <div class="advantages__info">
+                        <h3 class="advantages__title">
+                            Quality / cert seals
+                        </h3>
+
+                        <p class="advantages__text">
+                            (CGMP · EU · USA)
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="advantages__stats">
+
+                <div class="advantages__stat">
+                    <div class="advantages__value">
+                        10,000+
+                    </div>
+
+                    <div class="advantages__label">
+                        customers
+                    </div>
+                </div>
+
+                <div class="advantages__stat">
+                    <div class="advantages__value">
+                        1,800+
+                    </div>
+
+                    <div class="advantages__label">
+                        verified reviews
+                    </div>
+                </div>
+
+                <div class="advantages__stat">
+                    <div class="advantages__value">
+                        4.8 / 5★
+                    </div>
+
+                    <div class="advantages__label">
+                        average
+                    </div>
+                </div>
+
+                <div class="advantages__stat">
+                    <div class="advantages__value">
+                        Lab-tested
+                    </div>
+
+                    <div class="advantages__label">
+                        Every batch lab-tested
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="advantages__footer">
+                <a class="advantages__button button" href="#">
+                    START MY FIRST CYCLE
+                    <svg aria-hidden="true">
+                        <use href="#arrow-icon"></use>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-comparison.css' %}
+<section class="comparison">
+    <div class="container">
+        <div class="comparison__inner">
+
+            <div class="comparison__header">
+                <h2 class="comparison__title">
+                    The Old Model <br class="mobile-br"> vs. One System
+                </h2>
+
+                <p class="comparison__subtitle">
+                    You're not choosing between brands. You're choosing between two
+                    models of how to support your body.
+                </p>
+            </div>
+
+            <div class="comparison__table">
+
+                <div class="comparison__head">
+                    <div class="comparison__heading">
+                        THE FRAGMENTED STACK
+                    </div>
+
+                    <div class="comparison__heading">
+                        THE <br class="mobile-br"> PROBLEM <br class="mobile-br"> WITH IT
+                    </div>
+
+                    <div class="comparison__heading">
+                        THE API-COMPLEX SYSTEM
+                    </div>
+                </div>
+
+                <div class="comparison__body">
+
+                    <div class="comparison__row">
+
+                        <div class="comparison__cell comparison__cell--product">
+                            <div class="comparison__icon">
+                                <svg>
+                                    <use href="#coffee-icon"></use>
+                                </svg>
+                            </div>
+
+                            <span>Coffee</span>
+                        </div>
+
+                        <div class="comparison__cell">
+                            Borrows energy from tomorrow
+                        </div>
+
+                        <div class="comparison__cell comparison__cell--accent">
+                            Energy <br class="mobile-br"> with nothing <br class="mobile-br"> to pay back
+                        </div>
+
+                    </div>
+
+                    <div class="comparison__row">
+
+                        <div class="comparison__cell comparison__cell--product">
+                            <div class="comparison__icon">
+                                <svg>
+                                    <use href="#pills-icon"></use>
+                                </svg>
+                            </div>
+                            <span>Synthetic pills</span>
+                        </div>
+
+                        <div class="comparison__cell">
+                            Isolated compounds, <br class="mobile-br"> low uptake
+                        </div>
+
+                        <div class="comparison__cell comparison__cell--accent">
+                            Whole, <br class="mobile-br"> fermented, <br class="mobile-br"> body-ready
+                        </div>
+
+                    </div>
+
+                    <div class="comparison__row">
+
+                        <div class="comparison__cell comparison__cell--product">
+                            <div class="comparison__icon">
+                                <svg>
+                                    <use href="#bottle-icon"></use>
+                                </svg>
+                            </div>
+
+                            <span>Single-nutrient bottles</span>
+                        </div>
+
+                        <div class="comparison__cell">
+                            One job each, <br class="mobile-br"> no coordination
+                        </div>
+
+                        <div class="comparison__cell comparison__cell--accent">
+                            One coordinated system
+                        </div>
+
+                    </div>
+
+                    <div class="comparison__row">
+
+                        <div class="comparison__cell comparison__cell--product">
+                            <div class="comparison__icon">
+                                <svg>
+                                    <use href="#bottles-icon"></use>
+                                </svg>
+                            </div>
+
+                            <span>A drawer <br class="mobile-br"> of bottles</span>
+                        </div>
+
+                        <div class="comparison__cell">
+                            Schedules <br class="mobile-br"> to remember
+                        </div>
+
+                        <div class="comparison__cell comparison__cell--accent">
+                            One stick, <br class="mobile-br"> once a day
+                        </div>
+
+                    </div>
+
+                    <div class="comparison__row">
+
+                        <div class="comparison__cell comparison__cell--product">
+                            <div class="comparison__icon">
+                                <svg>
+                                    <use href="#subscription-icon"></use>
+                                </svg>
+                            </div>
+
+                            <span>A $200+ monthly stack</span>
+                        </div>
+
+                        <div class="comparison__cell">
+                            Expensive <br class="mobile-br"> clutter
+                        </div>
+
+                        <div class="comparison__cell comparison__cell--accent">
+                            One simple line item
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="comparison__banner">
+
+                <div class="comparison__banner-content">
+
+                    <div class="comparison__banner-icon">
+                        <svg>
+                            <use href="#bottles-icon-2"></use>
+                        </svg>
+                    </div>
+
+                    <h3 class="comparison__banner-title">
+                        Replace 6 bottles with 1 stick.
+                    </h3>
+
+                </div>
+
+                <a class="comparison__button button" href="#">
+                    SEE THE OFFER
+                    <svg>
+                        <use href="#arrow-icon"></use>
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-system-results.css' %}
+<section class="system-results">
+    <div class="system-results__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'system-results-bg-mobile.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'system-results-bg-mobile.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'system-results-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'system-results-bg.webp' | file_url }}" alt="What Changes When the System Is Full"
+                fetchpriority="low" loading="lazy" decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="system-results__wrapper">
+
+            <div class="system-results__content">
+                <h2 class="system-results__title">
+                    What Changes <br class="mobile-br"> When the System Is Full
+                </h2>
+
+                <p class="system-results__subtitle">
+                    No grand promises. Just the difference people consistently report:
+                </p>
+
+                <ul class="system-results__list">
+                    <li class="system-results__item">
+                        <svg class="system-results__icon">
+                            <use href="#plus-icon"></use>
+                        </svg>
+
+                        <p class="system-results__text">
+                            Mornings that start without hitting snooze five times.
+                        </p>
+                    </li>
+
+                    <li class="system-results__item">
+                        <svg class="system-results__icon">
+                            <use href="#plus-icon"></use>
+                        </svg>
+
+
+                        <p class="system-results__text">
+                            Afternoons that don't end with you <br class="mobile-br"> staring at the screen,
+                            counting down to 5.
+                        </p>
+                    </li>
+
+                    <li class="system-results__item">
+                        <svg class="system-results__icon">
+                            <use href="#plus-icon"></use>
+                        </svg>
+
+
+                        <p class="system-results__text">
+                            Meals that sit light, <br class="mobile-br"> and a gut that finally gets out of the
+                            way.
+                        </p>
+                    </li>
+
+                    <li class="system-results__item">
+                        <svg class="system-results__icon">
+                            <use href="#plus-icon"></use>
+                        </svg>
+
+
+                        <p class="system-results__text">
+                            Hard weeks (travel, stress, long days) that you move through, not get flattened by.
+                        </p>
+                    </li>
+
+                    <li class="system-results__item">
+                        <svg class="system-results__icon">
+                            <use href="#plus-icon"></use>
+                        </svg>
+
+
+                        <p class="system-results__text">
+                            Evenings where you have energy left for your people, not just surviving till bed.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="system-results__media">
+                <picture>
+                    <source srcset="{{ 'system-results-image.avif' | file_url }}" type="image/avif">
+                    <img src="{{ 'system-results-image.webp' | file_url }}" alt="What Changes When the System Is Full"
+                        fetchpriority="low" loading="lazy" decoding="async">
+                </picture>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-expect.css' %}
+
+<section class="expect">
+    <div class="expect__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'expect-bg-mobile.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'expect-bg-mobile.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'expect-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'expect-bg.webp' | file_url }}" alt="What to Expect" fetchpriority="low" loading="lazy"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+
+        <h2 class="expect__title">
+            What to Expect
+        </h2>
+
+        <div class="expect__cards">
+
+            <article class="expect__card">
+                <span class="expect__label">
+                    DAYS 1–3
+                </span>
+
+                <h3 class="expect__card-title">
+                    The First Signals
+                </h3>
+
+                <p class="expect__card-text">
+                    The most common one: digestion feeling lighter by the second or third stick. Some people
+                    notice <br> a faint warmth as the hive compounds get to work.
+                </p>
+            </article>
+
+            <article class="expect__card">
+                <span class="expect__label">
+                    AROUND DAY 7
+                </span>
+
+                <h3 class="expect__card-title">
+                    The Shift
+                </h3>
+
+                <p class="expect__card-text">
+                    The afternoon slump loosens its grip. <br class="mobile-br"> <br> Energy feels steadier from
+                    morning to evening.
+                    Coffee
+                    cravings drop off on their own.
+                </p>
+            </article>
+
+            <article class="expect__card">
+                <span class="expect__label">
+                    BY DAY 30
+                </span>
+
+                <h3 class="expect__card-title expect__card-title--accent">
+                    The New Baseline
+                </h3>
+
+                <p class="expect__card-text">
+                    Steadier stamina. A calmer gut. An immune system that feels supported. Clearer thinking as
+                    your default.
+                </p>
+
+                <p class="expect__card-note">
+                    This is the floor you come back to every cycle, <br> not a peak you chase once.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="expect__info">
+
+            <blockquote class="expect__quote">
+                <p class="expect__quote-title">
+                    Notice what this asks of you: nothing. No discipline, no willpower, no perfect routine.<br>
+                    You
+                    just hand your body a system it can finally use.
+                </p>
+
+                <p class="expect__quote-text">
+                    Day 30 isn't the finish line.
+                </p>
+
+                <p class="expect__quote-text">
+                    Your body doesn't run one cycle and coast, it renews <br class="mobile-br"> on a loop, which
+                    is exactly why
+                    Api-Complex is built as one: 30 days on, 10 days off, then again.
+                </p>
+
+                <p class="expect__quote-text">
+                    The first box is where the loop starts.
+                </p>
+            </blockquote>
+
+        </div>
+
+        <div class="expect__cta">
+
+            <div class="expect__stats">
+                <div class="expect__stats-icon">
+                    <svg>
+                        <use href="#guard-icon"></use>
+                    </svg>
+                </div>
+
+
+                <p class="expect__stats-text">
+                    92% of subscribers keep going after their first box.
+                </p>
+
+            </div>
+
+            <a class="expect__button button--primary" href="#">
+                Start My First Cycle
+
+                <svg class="button__icon">
+                    <use href="#arrow-icon"></use>
+                </svg>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-ritual.css' %}
+
+<section class="ritual">
+    <div class="container">
+
+        <div class="ritual__header">
+            <h2 class="ritual__title">
+                One <span>Honest Ritual</span> a Day
+            </h2>
+
+            <p class="ritual__subtitle">
+                Once a day. No timing window, no stacking. <br class="mobile-br"> Pick your method:
+            </p>
+        </div>
+
+        <div class="ritual__methods">
+
+            <article class="ritual__method">
+                <div class="ritual__method-image">
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="{{ 'ritual-bg-mobile-1.avif' | file_url }}"
+                            type="image/avif">
+                        <source media="(max-width: 650px)" srcset="{{ 'ritual-bg-mobile-1.webp' | file_url }}"
+                            type="image/webp">
+                        <source srcset="{{ 'ritual-bg-1.avif' | file_url }}" type="image/avif">
+                        <img src="{{ 'ritual-bg-1.webp' | file_url }}" alt=" The Gourmet" fetchpriority="low" loading="lazy"
+                            decoding="async">
+                    </picture>
+                </div>
+                <span class="ritual__label">
+                    RECOMMENDED
+                </span>
+
+                <h3 class="ritual__method-title">
+                    The Gourmet
+                </h3>
+
+                <p class="ritual__method-text">
+                    Mix one stick into yogurt, a smoothie, oatmeal, <br> or nut butter. The fat helps
+                    absorption. <br class="mobile-br">
+                    Best taken right after a breakfast with healthy fats.
+                </p>
+            </article>
+
+            <article class="ritual__method">
+                <div class="ritual__method-image">
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="{{ 'ritual-bg-mobile-2.avif' | file_url }}"
+                            type="image/avif">
+                        <source media="(max-width: 650px)" srcset="{{ 'ritual-bg-mobile-2.webp' | file_url }}"
+                            type="image/webp">
+                        <source srcset="{{ 'ritual-bg-2.avif' | file_url }}" type="image/avif">
+                        <img src="{{ 'ritual-bg-2.webp' | file_url }}" alt="The Biohacker" fetchpriority="low"
+                            loading="lazy" decoding="async">
+                    </picture>
+                </div>
+                <span class="ritual__label">
+                    FAST
+                </span>
+
+                <h3 class="ritual__method-title">
+                    The Biohacker
+                </h3>
+
+                <p class="ritual__method-text">
+                    Stir into a small glass of cool or room-temperature water. <br class="mobile-br"> Fast and
+                    direct.
+                </p>
+            </article>
+
+            <article class="ritual__method">
+                <div class="ritual__method-image">
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="{{ 'ritual-bg-mobile-3.avif' | file_url }}"
+                            type="image/avif">
+                        <source media="(max-width: 650px)" srcset="{{ 'ritual-bg-mobile-3.webp' | file_url }}"
+                            type="image/webp">
+                        <source srcset="{{ 'ritual-bg-3.avif' | file_url }}" type="image/avif">
+                        <img src="{{ 'ritual-bg-3.webp' | file_url }}" alt="Sublingual" fetchpriority="low" loading="lazy"
+                            decoding="async">
+                    </picture>
+                </div>
+                <span class="ritual__label">
+                    QUICKEST UPTAKE
+                </span>
+
+                <h3 class="ritual__method-title">
+                    Sublingual
+                </h3>
+
+                <p class="ritual__method-text">
+                    Dissolve a little under your tongue,<br> then swallow the rest. <br>
+                    Quickest uptake, and the most pronounced taste.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="ritual__taste">
+
+            <h3 class="ritual__taste-title">
+                About the Taste
+            </h3>
+
+            <p class="ritual__taste-text">
+                Straight talk: Api-Complex doesn't taste like candy. <br class="mobile-br"> It's bitter, a
+                little tart. That's propolis
+                and fermented bee bread, exactly as they come from the hive, with nothing added to mask them. If
+                you want a treat, this is the wrong product. If you want the real thing, the taste is the
+                receipt.
+            </p>
+
+        </div>
+
+        <div class="ritual__warning">
+
+            <div class="ritual__temperature">
+                <div class="ritual__temperature-head">
+                    <svg class="ritual__temperature-icon">
+                        <use href="#heat-icon"></use>
+                    </svg>
+                    <span class="ritual__temperature-value">
+                        40°C
+                    </span>
+                </div>
+
+                <div class="ritual__temperature-content">
+                    <span class="ritual__temperature-label">
+                        104°F — MAX TEMP
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="ritual__warning-content">
+
+                <h3 class="ritual__warning-title">
+                    Never mix Api-Complex into hot liquids.
+                </h3>
+
+                <p class="ritual__warning-text">
+                    Anything above 104°F / 40°C damages the royal jelly and kills the live enzymes. Warm is
+                    fine. Hot is not.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="ritual__footer">
+
+            <p class="ritual__text">
+                Api-Complex works on a loop, not a one-time fix.
+            </p>
+
+            <p class="ritual__text ritual__text--strong">
+                30 days on, 10 days off, then repeat, <br class="mobile-br"> the same rhythm your body already
+                runs on.
+            </p>
+
+            <p class="ritual__text">
+                That's why the subscription ships every 40 days: one full cycle, handled for you, so you're
+                never scrambling to re-order mid-rhythm.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-properties-block-2.css' %}
+
+<div class="properties-block properties-block--dark">
+    <div class="properties-block__image">
+        <picture>
+            <source srcset="{{ 'properties-block-bg-2.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'properties-block-bg-2.webp' | file_url }}" alt="MYVOX-9 properties" fetchpriority="low"
+                loading="lazy" decoding="async">
+        </picture>
+    </div>
+    <div class="properties-block__items properties-block__items-2 swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#bee-icon"></use>
+                    </svg>
+                    <span>Sourced from protected apiaries</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#snow-icon"></use>
+                    </svg>
+                    <span>Freeze-dried to preserve potency</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#guarantee-icon"></use>
+                    </svg>
+                    <span>cGMP-certified</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#euro-flag-icon"></use>
+                    </svg>
+                    <span>Crafted in the EU</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#chemistry-icon"></use>
+                    </svg>
+                    <span>Third-party lab tested</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#eco-icon"></use>
+                    </svg>
+                    <span>No proprietary blends</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#usa-flag-icon"></use>
+                    </svg>
+                    <span>Ships from our US warehouse</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="properties-block__item">
+                    <svg>
+                        <use href="#diamond-icon"></use>
+                    </svg>
+                    <span>No sugar, no fillers, no artificial anything</span>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+{% render 'async-stylesheet', file: 'landing-reviews.css' %}
+
+<section class="reviews">
+    <div class="container">
+
+        <div class="reviews__header">
+
+            <div class="reviews__content">
+                <h2 class="reviews__title">
+                    Real People. <br class="mobile-br"> <span>Real Routines</span>
+                </h2>
+
+                <div class="reviews__stat">
+                    <div class="reviews__rating">
+                        <svg class="reviews__star">
+                            <use href="#star-icon"></use>
+                        </svg>
+                        <svg class="reviews__star">
+                            <use href="#star-icon"></use>
+                        </svg>
+                        <svg class="reviews__star">
+                            <use href="#star-icon"></use>
+                        </svg>
+                        <svg class="reviews__star">
+                            <use href="#star-icon"></use>
+                        </svg>
+                        <svg class="reviews__star">
+                            <use href="#star-icon-2"></use>
+                        </svg>
+                    </div>
+
+                    <span class="reviews__value">
+                        4.8 / 5
+                    </span>
+                </div>
+            </div>
+
+            <div class="reviews__stats">
+
+
+
+                <div class="reviews__stat">
+                    <svg class="reviews__stat-icon">
+                        <use href="#laptop-icon"></use>
+                    </svg>
+
+                    <div class="reviews__stat-content">
+                        <strong>1,800+</strong>
+                        <span>verified reviews</span>
+                    </div>
+                </div>
+
+                <div class="reviews__stat">
+                    <svg class="reviews__stat-icon">
+                        <use href="#guard-icon"></use>
+                    </svg>
+
+                    <div class="reviews__stat-content">
+                        <strong>92%</strong>
+                        <span>stay past their first box</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="reviews__text">
+            Some reviewers received Api-Complex at no cost in exchange for an honest review.
+            <strong>Individual results vary.</strong>
+        </p>
+
+        <div class="reviews__slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="reviews__item ">
+                        <div class="reviews__video">
+                            <video src="/draft/Demo Background Sample Video.webm"
+                                poster="{{ 'reviews-preview-1.webp' | file_url }}" playsinline></video>
+
+                            <button class="reviews__play active" type="button" aria-label="Play video">
+                                <svg>
+                                    <use href="#play-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="reviews__card">
+
+                            <svg class="reviews__quote">
+                                <use href="#quote-icon"></use>
+                            </svg>
+
+                            <div class="reviews__rating">
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                            </div>
+
+                            <h3 class="reviews__card-title">
+                                Almost returned it. Glad I didn't.
+                            </h3>
+
+                            <p class="reviews__card-text">
+                                Full honesty: on day two I nearly sent it back. It is not a tasty product and I
+                                don't
+                                think
+                                the page prepared me enough for that. I started mixing it into Greek yogurt with
+                                a
+                                little
+                                honey and that solved it. The thing I noticed three weeks in wasn't dramatic. I
+                                just
+                                stopped
+                                hitting that 3 p.m. wall I'd built my whole afternoon around.
+                            </p>
+
+                            <div class="reviews__author">
+
+                                <picture>
+                                    <source srcset="{{ 'review-avatar-1.avif' | file_url }}" type="image/avif">
+                                    <source srcset="{{ 'review-avatar-1.webp' | file_url }}" type="image/webp">
+                                    <img src="{{ 'review-avatar-1.webp' | file_url }}" alt="Jake B." width="48" height="48"
+                                        loading="lazy">
+                                </picture>
+
+                                <div class="reviews__author-content">
+                                    <strong>Jake B., Idaho Falls, ID</strong>
+                                    <span>Verified buyer</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="reviews__item ">
+                        <div class="reviews__video">
+                            <video src="/draft/Demo Background Sample Video.webm"
+                                poster="{{ 'reviews-preview-2.webp' | file_url }}" playsinline></video>
+
+                            <button class="reviews__play active" type="button" aria-label="Play video">
+                                <svg>
+                                    <use href="#play-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="reviews__card">
+
+                            <svg class="reviews__quote">
+                                <use href="#quote-icon"></use>
+                            </svg>
+
+                            <div class="reviews__rating">
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                            </div>
+
+                            <h3 class="reviews__card-title">
+                                My supplement drawer is basically empty now.
+                            </h3>
+
+                            <p class="reviews__card-text">
+                                Counted six bottles I've stopped re-buying since starting this. Magnesium,
+                                B-complex, a probiotic, two 'energy' powders. I won't call it magic. I'll say I
+                                feel even, and even is what I was paying all that money to chase.
+                            </p>
+
+                            <div class="reviews__author">
+
+                                <picture>
+                                    <source srcset="{{ 'review-avatar-2.avif' | file_url }}" type="image/avif">
+                                    <source srcset="{{ 'review-avatar-2.webp' | file_url }}" type="image/webp">
+                                    <img src="{{ 'review-avatar-2.webp' | file_url }}" alt="Rebecca C., Denver, CO"
+                                        width="48" height="48" loading="lazy">
+                                </picture>
+
+                                <div class="reviews__author-content">
+                                    <strong>Rebecca C., Denver, CO</strong>
+                                    <span>Verified buyer</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="reviews__item ">
+                        <div class="reviews__video">
+                            <video src="/draft/Demo Background Sample Video.webm"
+                                poster="{{ 'reviews-preview-3.webp' | file_url }}" playsinline></video>
+
+                            <button class="reviews__play active" type="button" aria-label="Play video">
+                                <svg>
+                                    <use href="#play-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="reviews__card">
+
+                            <svg class="reviews__quote">
+                                <use href="#quote-icon"></use>
+                            </svg>
+
+                            <div class="reviews__rating">
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                            </div>
+
+                            <h3 class="reviews__card-title">
+                                Took about three weeks for me.
+                            </h3>
+
+                            <p class="reviews__card-text">
+                                Setting expectations: first week I felt nothing and almost gave up. Around week
+                                three it clicked. As a mom of three, I used to be done the second the dishes
+                                were. Last night I went for a walk after the kids were down because I wanted to.
+                            </p>
+
+                            <div class="reviews__author">
+
+                                <picture>
+                                    <source srcset="{{ 'review-avatar-3.avif' | file_url }}" type="image/avif">
+                                    <source srcset="{{ 'review-avatar-3.webp' | file_url }}" type="image/webp">
+                                    <img src="{{ 'review-avatar-3.webp' | file_url }}" alt="Courtney W." width="48"
+                                        height="48" loading="lazy">
+                                </picture>
+
+                                <div class="reviews__author-content">
+                                    <strong>Courtney W., Baltimore, MD</strong>
+                                    <span>Verified buyer</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="reviews__item ">
+                        <div class="reviews__video">
+                            <video src="/draft/Demo Background Sample Video.webm"
+                                poster="{{ 'reviews-preview-4.webp' | file_url }}" playsinline></video>
+
+                            <button class="reviews__play active" type="button" aria-label="Play video">
+                                <svg>
+                                    <use href="#play-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="reviews__card">
+
+                            <svg class="reviews__quote">
+                                <use href="#quote-icon"></use>
+                            </svg>
+
+                            <div class="reviews__rating">
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                            </div>
+
+                            <h3 class="reviews__card-title">
+                                The gut thing was unexpected.
+                            </h3>
+
+                            <p class="reviews__card-text">
+                                Bought this for energy. Energy is fine, steadier than I expected. The real
+                                surprise was my stomach – that heavy bloated feeling after lunch is mostly just
+                                gone. Wasn't even what I was looking for.
+                            </p>
+
+                            <div class="reviews__author">
+
+                                <picture>
+                                    <source srcset="{{ 'review-avatar-4.avif' | file_url }}" type="image/avif">
+                                    <source srcset="{{ 'review-avatar-4.webp' | file_url }}" type="image/webp">
+                                    <img src="{{ 'review-avatar-4.webp' | file_url }}" alt="Michelle L." width="48"
+                                        height="48" loading="lazy">
+                                </picture>
+
+                                <div class="reviews__author-content">
+                                    <strong>Michelle L., Charlotte, NC</strong>
+                                    <span>Verified buyer</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="reviews__item ">
+                        <div class="reviews__video">
+                            <video src="/draft/Demo Background Sample Video.webm"
+                                poster="{{ 'reviews-preview-5.webp' | file_url }}" playsinline></video>
+
+                            <button class="reviews__play active" type="button" aria-label="Play video">
+                                <svg>
+                                    <use href="#play-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="reviews__card">
+
+                            <svg class="reviews__quote">
+                                <use href="#quote-icon"></use>
+                            </svg>
+
+                            <div class="reviews__rating">
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                            </div>
+
+                            <h3 class="reviews__card-title">
+                                Holding a thought past 2 p.m.
+                            </h3>
+
+                            <p class="reviews__card-text">
+                                I write software. My tell is the afternoon – misreading my own code, re-reading
+                                the same function three times. That's quieter now. Not gone, I still have off
+                                days, but the floor is higher. For what it costs me a day, the math works.
+                            </p>
+
+                            <div class="reviews__author">
+
+                                <picture>
+                                    <source srcset="{{ 'review-avatar-5.avif' | file_url }}" type="image/avif">
+                                    <source srcset="{{ 'review-avatar-5.webp' | file_url }}" type="image/webp">
+                                    <img src="{{ 'review-avatar-5.webp' | file_url }}" alt="Dan K." width="48" height="48"
+                                        loading="lazy">
+                                </picture>
+
+                                <div class="reviews__author-content">
+                                    <strong>Dan K., Portland, OR</strong>
+                                    <span>Verified buyer</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="reviews__item ">
+                        <div class="reviews__video">
+                            <video src="/draft/Demo Background Sample Video.webm"
+                                poster="{{ 'reviews-preview-6.webp' | file_url }}" playsinline></video>
+
+                            <button class="reviews__play active" type="button" aria-label="Play video">
+                                <svg>
+                                    <use href="#play-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="reviews__card">
+
+                            <svg class="reviews__quote">
+                                <use href="#quote-icon"></use>
+                            </svg>
+
+                            <div class="reviews__rating">
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                                <svg class="reviews__star">
+                                    <use href="#star-icon"></use>
+                                </svg>
+                            </div>
+
+                            <h3 class="reviews__card-title">
+                                I stopped fading by the end of the week.
+                            </h3>
+
+                            <p class="reviews__card-text">
+                                I'm 47 and I run a contracting crew. I'd written off the Thursday slump as just
+                                getting older. My wife noticed before I did, said I wasn't dropping onto the
+                                couch at 7 anymore. I checked, and the only thing I'd changed was this. The
+                                taste isn't great. I genuinely don't care.
+
+                            <div class="reviews__author">
+
+                                <picture>
+                                    <source srcset="{{ 'review-avatar-6.avif' | file_url }}" type="image/avif">
+                                    <source srcset="{{ 'review-avatar-6.webp' | file_url }}" type="image/webp">
+                                    <img src="{{ 'review-avatar-6.webp' | file_url }}" alt="Mark R." width="48" height="48"
+                                        loading="lazy">
+                                </picture>
+
+                                <div class="reviews__author-content">
+                                    <strong>Mark R., Columbus, OH</strong>
+                                    <span>Verified buyer</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="reviews__footer">
+
+            <div class="reviews__bottom">
+
+                <div class="reviews__progress">
+
+                    <span class="reviews__counter">
+                        <strong>2</strong> / 3
+                    </span>
+
+
+
+                </div>
+
+                <div class="reviews__navigation">
+
+                    <div class="reviews__progress-bar">
+                        <span style="width: 66.67%;"></span>
+                    </div>
+                    <button class="reviews__button reviews__button--prev" type="button" aria-label="Previous review">
+
+                        <svg>
+                            <use href="#arrow-icon"></use>
+                        </svg>
+
+                    </button>
+
+                    <button class="reviews__button reviews__button--next" type="button" aria-label="Next review">
+
+                        <svg>
+                            <use href="#arrow-icon"></use>
+                        </svg>
+
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <a class="button button--primary" href="#">
+                Get My First Box
+
+                <svg class="button__icon">
+                    <use href="#arrow-icon"></use>
+                </svg>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-before-choice.css' %}
+
+<section class="before-choice">
+    <div class="before-choice__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'before-choice-bg-mobile.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'before-choice-bg-mobile.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'before-choice-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'before-choice-bg.webp' | file_url }}" alt="Before You Choose" fetchpriority="low" loading="lazy"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="before-choice__header">
+            <span class="before-choice__label ts-badge">Before You Choose</span>
+
+            <h2 class="before-choice__title">
+                If the system makes sense to you, <br class="mobile-br"> the only real choice left is <br
+                    class="mobile-br"> whether
+                you want <br>
+                the <span>lower-risk subscription price <br class="mobile-br"> </span> or a
+                <span>single box</span>
+            </h2>
+        </div>
+
+        <div class="before-choice__stats">
+            <article class="before-choice__card">
+                <div class="before-choice__value">
+                    <strong>$2.63</strong>
+                    <span>/ day</span>
+                </div>
+
+                <p class="before-choice__text">
+                    That's just $2.63 a day on subscription. Less than half the price of the
+                    afternoon coffee – except this one is built to support what <br class="mobile-br"> the
+                    coffee was
+                    compensating for.
+                </p>
+            </article>
+
+            <article class="before-choice__card">
+                <div class="before-choice__value">
+                    <strong>10,000+</strong>
+                </div>
+
+                <p class="before-choice__text">
+                    Join 10,000+ people who already cleared the shelf of bottles.
+                </p>
+            </article>
+        </div>
+
+        <article class="before-choice__notice">
+            <div class="before-choice__notice-label">
+                <span>Honest</span>
+                <span>Filter</span>
+            </div>
+
+            <div class="before-choice__notice-content">
+                <h3 class="before-choice__notice-title">
+                    Not for everyone.
+                </h3>
+
+                <p class="before-choice__notice-text">
+                    If you want a flavored chewable, a magic pill, or you can't put up with a few
+                    seconds of bitter taste, you'll be unhappy here.
+                </p>
+
+                <p class="before-choice__notice-text">
+                    If you can, keep reading.
+                </p>
+            </div>
+        </article>
+
+        <div class="before-choice__guarantee">
+            <svg class="before-choice__guarantee-icon">
+                <use href="#protect-icon"></use>
+            </svg>
+
+            <span class="before-choice__guarantee-text">
+                60-Day Money-Back <strong>Guarantee</strong>
+            </span>
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-pricing.css' %}
+
+<section class="pricing">
+    <div class="pricing__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'pricing-bg-mobile.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'pricing-bg-mobile.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'pricing-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'pricing-bg.webp' | file_url }}" alt="Choose How You Start" fetchpriority="low" loading="lazy"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <h2 class="pricing__title">
+            Choose How You Start
+        </h2>
+
+        <div class="pricing__cards">
+            <article class="pricing-card pricing-card--subscription">
+                <div class="pricing-card__image">
+                    <picture>
+                        <source srcset="{{ 'pricing-card-bg.avif' | file_url }}" type="image/avif">
+                        <img src="{{ 'pricing-card-bg.webp' | file_url }}" alt="Api-Complex subscription"
+                            fetchpriority="low" loading="lazy" decoding="async">
+                    </picture>
+                </div>
+                <div class="pricing-card__gallery">
+                    <button class="pricing-card__arrow pricing-card__arrow--dark--prev pricing-card__arrow--prev"
+                        type="button">
+                        <svg>
+                            <use href="#arrow-icon"></use>
+                        </svg>
+                    </button>
+
+                    <div class="pricing-card__slider pricing-card__slider-1 swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'pricing-image-dark.avif' | file_url }}" type="image/avif">
+                                    <img src="{{ 'pricing-image-dark.webp' | file_url }}" alt="Api-Complex subscription"
+                                        fetchpriority="low" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'land-product-2.avif' | file_url }}" type="image/avif">
+                                    <img src="{{ 'land-product-2.webp' | file_url }}" alt="Api-Complex subscription"
+                                        fetchpriority="low" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'land-product-3.avif' | file_url }}" type="image/avif">
+                                    <img src="{{ 'land-product-3.webp' | file_url }}" alt="Api-Complex subscription"
+                                        fetchpriority="low" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'land-product-4.avif' | file_url }}" type="image/avif">
+                                    <img src="{{ 'land-product-4.webp' | file_url }}" alt="Api-Complex subscription"
+                                        fetchpriority="low" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'land-product-5.avif' | file_url }}" type="image/avif">
+                                    <img src="{{ 'land-product-5.webp' | file_url }}" alt="Api-Complex subscription"
+                                        fetchpriority="low" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="pricing-card__arrow pricing-card__arrow--dark--next pricing-card__arrow--next"
+                        type="button">
+                        <svg>
+                            <use href="#arrow-icon"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="pricing-card__pagination pricing-card__pagination--dark">
+
+                </div>
+
+                <span class="pricing-card__badge">
+                    <svg>
+                        <use href="#like-icon"></use>
+                    </svg>
+                    Best Value: Smart Subscription
+                </span>
+
+                <div class="pricing-card__price">
+                    <span class="pricing-card__old-price">$149</span>
+
+                    <div class="pricing-card__current-price">
+                        <strong>$79</strong>
+                        <span>/ per shipment</span>
+                    </div>
+
+                    <span class="pricing-card__saving pricing-card__saving--mobile">
+                        save $70 / 47%
+                    </span>
+                </div>
+
+                <span class="pricing-card__saving">
+                    save $70 / 47%
+                </span>
+
+                <p class="pricing-card__note">
+                    92% of subscribers continue past their first box
+                </p>
+
+                <p class="pricing-card__headline">
+                    30 sticks every 40 days — your 30-on / 10-off cycle, <br>
+                    running on autopilot for as long as you want
+                </p>
+
+                <p class="pricing-card__subtitle">
+                    Full-strength hive dosing
+                </p>
+
+                <ul class="pricing-card__features">
+                    <li>
+                        <svg>
+                            <use href="#check-icon"></use>
+                        </svg>
+                        Free shipping, every time
+                    </li>
+                    <li class="modal-item">
+                        <svg>
+                            <use href="#check-icon"></use>
+                        </svg>
+                        <div>
+                            All bonuses included ($136 in extras)
+
+                            <button type="button" class="bonus-modal-trigger" aria-controls="bonus-modal"
+                                aria-expanded="false">
+                                See what's inside
+                                <svg>
+                                    <use href="#arrow-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </li>
+                    <li>
+                        <svg>
+                            <use href="#check-icon"></use>
+                        </svg>
+                        Founder Price Lock
+                    </li>
+                    <li>
+                        <svg>
+                            <use href="#check-icon"></use>
+                        </svg>
+                        Guaranteed delivery, even when we sell out
+                    </li>
+                    <li>
+                        <svg>
+                            <use href="#check-icon"></use>
+                        </svg>
+                        Skip, pause, or cancel anytime, in one click
+                    </li>
+                    <li>
+                        <svg>
+                            <use href="#check-icon"></use>
+                        </svg>
+                        One stick, and the system works for you
+                    </li>
+                    <li>
+                        <svg>
+                            <use href="#check-icon"></use>
+                        </svg>
+                        60-day money-back guarantee
+                    </li>
+                </ul>
+
+                <a class="pricing-card__button button" href="#">
+                    Start My First Cycle - $79
+                    <svg>
+                        <use href="#arrow-icon"></use>
+                    </svg>
+                </a>
+            </article>
+
+            <article class="pricing-card pricing-card--single">
+                <div class="pricing-card__gallery">
+                    <button class="pricing-card__arrow pricing-card__arrow--light--prev pricing-card__arrow--prev"
+                        type="button">
+                        <svg>
+                            <use href="#arrow-icon"></use>
+                        </svg>
+                    </button>
+
+                    <div class="pricing-card__slider pricing-card__slider-2 swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'pricing-image-light.avif' | file_url }}" type="image/avif">
+                                    <img src="{{ 'pricing-image-light.webp' | file_url }}" alt="Api-Complex subscription"
+                                        fetchpriority="low" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'land-product-2-otp.avif' | file_url }}" type="image/avif">
+                                    <img src="{{ 'land-product-2-otp.webp' | file_url }}" alt="Api-Complex subscription"
+                                        fetchpriority="low" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'land-product-3-otp.avif' | file_url }}" type="image/avif">
+                                    <img src="{{ 'land-product-3-otp.webp' | file_url }}" alt="Api-Complex subscription"
+                                        fetchpriority="low" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'land-product-4-otp.avif' | file_url }}" type="image/avif">
+                                    <img src="{{ 'land-product-4-otp.webp' | file_url }}" alt="Api-Complex subscription"
+                                        fetchpriority="low" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="{{ 'land-product-5-otp.avif' | file_url }}" type="image/avif">
+                                    <img src="{{ 'land-product-5-otp.webp' | file_url }}" alt="Api-Complex subscription"
+                                        fetchpriority="low" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="pricing-card__arrow pricing-card__arrow--light--next pricing-card__arrow--next"
+                        type="button">
+                        <svg>
+                            <use href="#arrow-icon"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="pricing-card__pagination pricing-card__pagination--light">
+                </div>
+
+                <span class="pricing-card__badge">
+                    One-Time Box
+                </span>
+
+                <div class="pricing-card__price">
+                    <span class="pricing-card__old-price">$149</span>
+
+                    <div class="pricing-card__current-price">
+                        <strong>$109</strong>
+                    </div>
+
+
+                    <span class="pricing-card__saving pricing-card__saving--mobile">
+                        save $40 / 27%
+                    </span>
+                </div>
+
+                <span class="pricing-card__saving">
+                    save $40 / 27%
+                </span>
+
+                <p class="pricing-card__headline">
+                    30 sticks — your first cycle to try the system
+                </p>
+
+                <p class="pricing-card__subtitle">
+                    Full-strength hive dosing
+                </p>
+
+                <p class="pricing-card__shipping">
+                    + $9.95 shipping
+                </p>
+
+                <ul class="pricing-card__features pricing-card__features--comparison">
+                    <li class="pricing-card__feature pricing-card__feature--positive">
+                        <svg>
+                            <use href="#check-icon"></use>
+                        </svg>
+                        60-day money-back guarantee
+                    </li>
+
+                    <li class="pricing-card__feature pricing-card__feature--negative">
+                        <svg>
+                            <use href="#x-icon"></use>
+                        </svg>
+                        Bonuses
+                    </li>
+
+                    <li class="pricing-card__feature pricing-card__feature--negative">
+                        <svg>
+                            <use href="#x-icon"></use>
+                        </svg>
+                        Free shipping
+                    </li>
+
+                    <li class="pricing-card__feature pricing-card__feature--negative">
+                        <svg>
+                            <use href="#x-icon"></use>
+                        </svg>
+                        Price Lock
+                    </li>
+                </ul>
+
+                <a class="pricing-card__button pricing-card__button--secondary button" href="#">
+                    Buy One Box - $109
+                    <svg>
+                        <use href="#arrow-icon"></use>
+                    </svg>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-faq.css' %}
+
+<section class="faq">
+    <div class="faq__background">
+        <picture>
+            <source srcset="{{ 'faq-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'faq-bg.webp' | file_url }}" alt="Questions People Ask Before Their First Box" fetchpriority="low"
+                loading="lazy" decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="faq__wrapper">
+            <div class="faq__content">
+                <div class="faq__photo">
+                    <h2 class="faq__title">
+                        <span>Questions</span> People Ask
+                        <br>
+                        Before Their First Box
+                    </h2>
+
+                    <div class="faq__image">
+                        <picture>
+                            <source srcset="{{ 'faq-image.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'faq-image.webp' | file_url }}" alt="Questions People Ask Before Their First Box"
+                                fetchpriority="low" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="faq__items">
+
+                <article class="faq-item faq-item--active">
+
+                    <button class="faq-item__button" type="button" aria-expanded="true">
+                        <h3 class="faq-item__title">
+                            How does the subscription work, and is it easy <br class="mobile-br"> to cancel?
+                        </h3>
+
+                        <span class="faq-item__icon">
+                            <svg aria-hidden="true">
+                                <use href="#minus-icon"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use href="#plus-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="faq-item__content">
+                        <p>
+                            It ships 30 sticks every 40 days at $79 plus tax. Skip, change frequency, or cancel
+                            in one click, anytime, from your account. No phone calls.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="faq-item">
+
+                    <button class="faq-item__button" type="button" aria-expanded="true">
+                        <h3 class="faq-item__title">
+                            Is my payment secure, and when am I billed?
+                        </h3>
+
+                        <span class="faq-item__icon">
+                            <svg aria-hidden="true">
+                                <use href="#minus-icon"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use href="#plus-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="faq-item__content">
+                        <p>
+                            Checkout is encrypted. One-time orders bill once. <br class="mobile-br"> Subscriptions bill
+                            every 40 days,
+                            and <br> you always get an email before a renewal.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="faq-item">
+
+                    <button class="faq-item__button" type="button" aria-expanded="true">
+                        <h3 class="faq-item__title">
+                            Is there real research behind these ingredients?
+                        </h3>
+
+                        <span class="faq-item__icon">
+                            <svg aria-hidden="true">
+                                <use href="#minus-icon"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use href="#plus-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="faq-item__content">
+                        <p>
+                            Yes. Bee bread, royal jelly, and propolis are among the most-studied substances in
+                            natural health. The key peer-reviewed research is in our Research Library. Every
+                            batch is also third-party lab tested, with a published Certificate of Analysis.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="faq-item">
+
+                    <button class="faq-item__button" type="button" aria-expanded="true">
+                        <h3 class="faq-item__title">
+                            Is Api-Complex safe if I have allergies?
+                        </h3>
+
+                        <span class="faq-item__icon">
+                            <svg aria-hidden="true">
+                                <use href="#minus-icon"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use href="#plus-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="faq-item__content">
+                        <p>
+                            It contains bee-derived ingredients. Bee bread is generally less allergenic than raw
+                            pollen, but sensitivity is still possible. If <br class="mobile-br"> you have a known
+                            allergy to bee
+                            products, this isn't for you. If unsure, start with ¼ of a stick and talk to your
+                            healthcare provider first.
+                        </p>
+                    </div>
+
+                </article>
+
+
+
+                <article class="faq-item">
+
+                    <button class="faq-item__button" type="button" aria-expanded="true">
+                        <h3 class="faq-item__title">
+                            Can I take it with other supplements or medications?
+                        </h3>
+
+                        <span class="faq-item__icon">
+                            <svg aria-hidden="true">
+                                <use href="#minus-icon"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use href="#plus-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="faq-item__content">
+                        <p>
+                            It's a whole-food concentrate and pairs fine with most supplements. If you take
+                            prescription medication, especially blood thinners, immune-related, or
+                            hormone-related treatments, or have any medical condition, consult your healthcare
+                            provider first.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="faq-item">
+
+                    <button class="faq-item__button" type="button" aria-expanded="true">
+                        <h3 class="faq-item__title">
+                            Why 500 mg of royal jelly? Will it affect my hormones?
+                        </h3>
+
+                        <span class="faq-item__icon">
+                            <svg aria-hidden="true">
+                                <use href="#minus-icon"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use href="#plus-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="faq-item__content">
+                        <p>
+                            Royal jelly contains naturally occurring phyto-compounds, not hormones. At this
+                            functional dose it supports cellular signaling and recovery without disrupting
+                            hormonal balance. It's also why Api-Complex is taken in cycles.
+                        </p>
+                    </div>
+
+                </article>
+                <article class="faq-item">
+
+                    <button class="faq-item__button" type="button" aria-expanded="true">
+                        <h3 class="faq-item__title">
+                            No preservatives. How does it stay fresh?
+                        </h3>
+
+                        <span class="faq-item__icon">
+                            <svg aria-hidden="true">
+                                <use href="#minus-icon"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use href="#plus-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="faq-item__content">
+                        <p>
+                            Freeze-drying removes moisture at low temperature, and each serving is sealed in a
+                            hermetic stick pack against air, light, and humidity. No preservatives needed.
+                        </p>
+                    </div>
+
+                </article>
+                <article class="faq-item">
+
+                    <button class="faq-item__button" type="button" aria-expanded="true">
+                        <h3 class="faq-item__title">
+                            Is this a stimulant?
+                        </h3>
+
+                        <span class="faq-item__icon">
+                            <svg aria-hidden="true">
+                                <use href="#minus-icon"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use href="#plus-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="faq-item__content">
+                        <p>
+                            No. It doesn't stimulate your nervous system. It supports the systems that produce
+                            energy, so the energy feels steady, with no jitters or crash.
+                        </p>
+                    </div>
+
+                </article>
+                <article class="faq-item">
+
+                    <button class="faq-item__button" type="button" aria-expanded="true">
+                        <h3 class="faq-item__title">
+                            How soon will I notice something?
+                        </h3>
+
+                        <span class="faq-item__icon">
+                            <svg aria-hidden="true">
+                                <use href="#minus-icon"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use href="#plus-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="faq-item__content">
+                        <p>
+                            Many people notice subtle changes in the first few days, usually around digestion or
+                            steadier energy. Fuller benefits build over 2–4 weeks. Results vary with sleep,
+                            stress, and routine.
+                        </p>
+                    </div>
+
+                </article>
+                <article class="faq-item">
+
+                    <button class="faq-item__button" type="button" aria-expanded="true">
+                        <h3 class="faq-item__title">
+                            What does it actually taste like?
+                        </h3>
+
+                        <span class="faq-item__icon">
+                            <svg aria-hidden="true">
+                                <use href="#minus-icon"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use href="#plus-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="faq-item__content">
+                        <p>
+                            Bitter and slightly tart, real propolis and fermented bee bread with nothing added
+                            to mask them. Most people mix it into yogurt, oatmeal, or a smoothie, which smooths
+                            it out.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="faq-item">
+
+                    <button class="faq-item__button" type="button" aria-expanded="true">
+                        <h3 class="faq-item__title">
+                            When will my order ship?
+                        </h3>
+
+                        <span class="faq-item__icon">
+                            <svg aria-hidden="true">
+                                <use href="#minus-icon"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use href="#plus-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="faq-item__content">
+                        <p>
+                            Orders ship from our US warehouse. You'll get a tracking link by email as soon as
+                            it's on the way.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% render 'async-stylesheet', file: 'landing-cta.css' %}
+
+<section class="cta">
+    <div class="cta__background">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'cta-bg-mobile.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'cta-bg-mobile.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'cta-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'cta-bg.webp' | file_url }}" alt="You've Been Managing Depletion Long Enough" fetchpriority="low"
+                loading="lazy" decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="cta__wrapper">
+            <div class="cta__image">
+                <picture>
+                    <source srcset="{{ 'cta-image.avif' | file_url }}" type="image/avif">
+                    <img src="{{ 'cta-image.webp' | file_url }}" alt="You've Been Managing Depletion Long Enough"
+                        fetchpriority="low" loading="lazy" decoding="async">
+                </picture>
+            </div>
+
+            <div class="cta__content">
+                <h2 class="cta__title">
+                    You've Been Managing
+                    <br>
+                    Depletion Long Enough
+                </h2>
+
+                <p class="cta__text">
+                    You already know what it's like to hold a day together on
+                    coffee, vitamins, and willpower. <br class="mobile-br"> You can keep living that
+                    way. Or you can finally stop.
+                </p>
+
+                <p class="cta__highlight">
+                    92% never went back. <br class="mobile-br"> That's the metric.
+                </p>
+
+                <div class="cta__actions">
+                    <a class="button button--primary" href="#">
+                        Start My First Cycle - $79
+                        <svg aria-hidden="true">
+                            <use href="#arrow-icon"></use>
+                        </svg>
+                    </a>
+
+                    <a class="button button--secondary" href="#">
+                        Buy One Box - $109
+                        <svg aria-hidden="true">
+                            <use href="#arrow-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="cta__advantages">
+            <li class="cta__advantage">
+                <svg class="cta__advantage-icon">
+                    <use href="#protect-icon"></use>
+                </svg>
+
+                <span>Secure checkout</span>
+            </li>
+
+            <li class="cta__advantage">
+                <svg class="cta__advantage-icon">
+                    <use href="#cube-icon"></use>
+                </svg>
+
+                <span>Free shipping on subscriptions</span>
+            </li>
+
+            <li class="cta__advantage">
+                <svg class="cta__advantage-icon">
+                    <use href="#snow-icon"></use>
+                </svg>
+
+                <span>Freeze-dried for potency</span>
+            </li>
+
+            <li class="cta__advantage">
+                <svg class="cta__advantage-icon">
+                    <use href="#chemistry-icon"></use>
+                </svg>
+
+                <span>Third-party lab tested</span>
+            </li>
+
+            <li class="cta__advantage">
+                <svg class="cta__advantage-icon">
+                    <use href="#guarantee-icon"></use>
+                </svg>
+
+                <span>cGMP-certified facility</span>
+            </li>
+
+            <li class="cta__advantage">
+                <svg class="cta__advantage-icon">
+                    <use href="#calendar-icon"></use>
+                </svg>
+
+                <span>60-day money-back guarantee</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<div class="bonus-modal" id="bonus-modal" role="dialog" aria-modal="true" aria-labelledby="bonus-modal-title"
+    aria-hidden="true">
+    <div class="bonus-modal__overlay"></div>
+
+    <div class="bonus-modal__window">
+        <div class="bonus-modal__inner">
+            <button class="bonus-modal__close" type="button" aria-label="Close">
+                <svg>
+                    <use href="#modal-close-icon"></use>
+                </svg>
+            </button>
+
+            <div class="bonus-modal__header">
+                <h2 class="bonus-modal__title" id="bonus-modal-title">
+                    4 Guides.
+                    <br class="mobile-br">
+                    <span>Yours Free. Worth $136</span>
+                </h2>
+
+                <p class="bonus-modal__description">
+                    Standalone guides you'd pay for on their own, covering the same four fronts Api-Complex
+                    supports
+                    from the inside.
+                </p>
+            </div>
+
+            <div class="bonus-modal__grid">
+
+                <article class="bonus-guide">
+                    <div class="bonus-guide__image">
+                        <picture>
+                            <source srcset="{{ 'bonus-image-1.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'bonus-image-1.webp' | file_url }}" alt="The 2 p.m. Energy Playbook"
+                                fetchpriority="low" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+
+                    <div class="bonus-guide__content">
+                        <h3 class="bonus-guide__title">
+                            The 2 p.m. Energy Playbook —
+                        </h3>
+
+                        <p class="bonus-guide__description">
+                            the light, circadian, caffeine-timing <br> and food-order habits that flatten the
+                            afternoon
+                            crash, no supplements <br class="mobile-br"> required
+                        </p>
+
+                        <div class="bonus-guide__price">
+                            <span class="bonus-guide__price-old">$39</span>
+                            <span class="bonus-guide__price-free">FREE</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bonus-guide">
+                    <div class="bonus-guide__image">
+                        <picture>
+                            <source srcset="{{ 'bonus-image-2.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'bonus-image-2.webp' | file_url }}" alt="The Calm-Gut Field Guide"
+                                fetchpriority="low" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+
+                    <div class="bonus-guide__content">
+                        <h3 class="bonus-guide__title">
+                            The Calm-Gut Field Guide —
+                        </h3>
+
+                        <p class="bonus-guide__description">
+                            a practical, dietitian-style handbook for beating bloat: everyday trigger foods,
+                            meal
+                            timing, and simple swaps that settle digestion
+                        </p>
+
+                        <div class="bonus-guide__price">
+                            <span class="bonus-guide__price-old">$34</span>
+                            <span class="bonus-guide__price-free">FREE</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bonus-guide">
+                    <div class="bonus-guide__image">
+                        <picture>
+                            <source srcset="{{ 'bonus-image-3.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'bonus-image-3.webp' | file_url }}" alt="Deep-Sleep Blueprint " fetchpriority="low"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+
+                    <div class="bonus-guide__content">
+                        <h3 class="bonus-guide__title">
+                            Deep-Sleep Blueprint —
+                        </h3>
+
+                        <p class="bonus-guide__description">
+                            the evening wind-down, light, <br> and temperature protocol for falling asleep <br>
+                            faster and
+                            waking up actually rested
+                        </p>
+
+                        <div class="bonus-guide__price">
+                            <span class="bonus-guide__price-old">$34</span>
+                            <span class="bonus-guide__price-free">FREE</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bonus-guide">
+                    <div class="bonus-guide__image">
+                        <picture>
+                            <source srcset="{{ 'bonus-image-4.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'bonus-image-4.webp' | file_url }}" alt="The Resilient Season Checklist"
+                                fetchpriority="low" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+
+                    <div class="bonus-guide__content">
+                        <h3 class="bonus-guide__title">
+                            The Resilient Season Checklist —
+                        </h3>
+
+                        <p class="bonus-guide__description">
+                            everyday habits for supporting your immune <br> system through travel, stress, and
+                            busy <br class="mobile-br">
+                            seasons
+                        </p>
+
+                        <div class="bonus-guide__price">
+                            <span class="bonus-guide__price-old">$29</span>
+                            <span class="bonus-guide__price-free">FREE</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="bonus-modal__total">
+                <span class="bonus-modal__total-label">
+                    TOTAL GUIDE VALUE
+                </span>
+
+                <span class="bonus-modal__total-value">
+                    $136
+                </span>
+            </div>
+
+            <div class="bonus-modal__notice">
+                <p>
+                    These aren't product manuals.
+                    <strong>Energy, gut, sleep, immunity</strong>
+                    — the stick does the internal work, these help you win everything around it.
+                </p>
+            </div>
+
+            <div class="bonus-modal__actions">
+                <a class="button button--primary">
+                    START MY FIRST CYCLE – $79
+                    <svg>
+                        <use href="#arrow-icon"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="{{ 'landing-properties-slider.js' | asset_url }}"></script>
+<script src="{{ 'landing-reviews.js' | asset_url }}"></script>
+<script src="{{ 'landing-pricing.js' | asset_url }}"></script>
+<script src="{{ 'landing-faq.js' | asset_url }}"></script>
+<script src="{{ 'landing-bonus-modal.js' | asset_url }}"></script>

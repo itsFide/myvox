@@ -1,0 +1,141 @@
+{% render 'async-stylesheet', file: 'faq-protocol.css' %}
+<section class="protocol-cycle">
+    <div class="protocol-cycle__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'protocol-cycle-mobile-bg.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'protocol-cycle-mobile-bg.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'protocol-cycle-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'protocol-cycle-bg.webp' | file_url }}" alt="Protocol Cycle Background" fetchpriority="low"
+                loading="lazy" decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="protocol-cycle__content">
+
+            <div class="protocol-cycle__product">
+                <picture>
+                    <source srcset="{{ 'protocol-cycle-image.avif' | file_url }}" type="image/avif">
+                    <img src="{{ 'protocol-cycle-image.webp' | file_url }}" alt="Protocal Cycle Calendar"
+                        fetchpriority="low" loading="lazy" decoding="async">
+                </picture>
+            </div>
+
+            <div class="protocol-cycle__timeline">
+
+                <article class="protocol-stage protocol-stage--active">
+
+                    <div class="protocol-stage__body">
+                        <div class="protocol-stage__number">
+                            30
+                        </div>
+
+                        <h2 class="protocol-stage__title">
+                            Days On
+                        </h2>
+
+                        <p class="protocol-stage__description">
+                            One stick daily.
+                            <br>
+                            Morning, with food.
+                        </p>
+                    </div>
+
+                    <div class="protocol-stage__progress">
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                    </div>
+
+                </article>
+
+                <div class="protocol-cycle__separator">
+                    
+<svg id="plus-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.25 12.75H5.5V11.25H11.25V5.5H12.75V11.25H18.5V12.75H12.75V18.5H11.25V12.75Z" fill="currentColor"/>
+</svg>
+
+                </div>
+
+                <article class="protocol-stage protocol-stage--pause">
+
+                    <div class="protocol-stage__body">
+                        <div class="protocol-stage__number">
+                            10
+                        </div>
+
+                        <h2 class="protocol-stage__title">
+                            Days Off
+                        </h2>
+
+                        <p class="protocol-stage__description">
+                            Receptors reset.
+                            <br>
+                            Subscription ships on day 40.
+                        </p>
+                    </div>
+
+                    <div class="protocol-stage__progress">
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                        <span class="protocol-stage__day"></span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Faq Protocol",
+  "class": "faq-protocol",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Faq Protocol",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}

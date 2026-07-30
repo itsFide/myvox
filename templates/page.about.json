@@ -22,10 +22,12 @@
             "alignment": "left",
             "type_preset": "h2",
             "font": "var(--font-primary--family)",
+            "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -38,7 +40,9 @@
         },
         "page-content": {
           "type": "page-content",
-          "settings": {},
+          "settings": {
+            "text_color": ""
+          },
           "blocks": {}
         }
       },
@@ -46,6 +50,7 @@
         "heading",
         "page-content"
       ],
+      "disabled": true,
       "settings": {
         "content_direction": "column",
         "gap": 32,
@@ -53,9 +58,45 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
+    },
+    "about_hero_nBzrP9": {
+      "type": "about-hero",
+      "name": "About Hero",
+      "settings": {}
+    },
+    "about_dead_mzxCMU": {
+      "type": "about-dead",
+      "name": "About Dead",
+      "settings": {}
+    },
+    "about_nature_AEAUxr": {
+      "type": "about-nature",
+      "name": "About Nature",
+      "settings": {}
+    },
+    "about_principles_YrzQiw": {
+      "type": "about-principles",
+      "name": "About principles",
+      "settings": {}
+    },
+    "about_roadmap_RnwPeN": {
+      "type": "about-roadmap",
+      "name": "About Roadmap",
+      "settings": {}
+    },
+    "about_cta_eY3eHG": {
+      "type": "about-cta",
+      "name": "About Cta",
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_hero_nBzrP9",
+    "about_dead_mzxCMU",
+    "about_nature_AEAUxr",
+    "about_principles_YrzQiw",
+    "about_roadmap_RnwPeN",
+    "about_cta_eY3eHG"
   ]
 }

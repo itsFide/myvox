@@ -53,8 +53,7 @@
 }
 .faq .faq-item__content {
   overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.35s ease;
+  height: 0;
   font-size: 16px;
   color: var(--black-50);
 }
@@ -71,8 +70,8 @@
 .faq .faq-item--active .faq-item__icon svg:nth-child(1) {
   display: none;
 }
-.faq .faq-item--active .faq .faq-item__content {
-  max-height: var(--faq-height);
+.faq .faq-item--active .faq-item__content {
+  height: auto;
 }
 
 @media screen and (max-width: 1919px) {
@@ -131,8 +130,7 @@
   }
   .faq .faq-item__content {
     overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.35s ease;
+    height: 0;
     font-size: 1.0840108401vw;
     color: var(--black-50);
   }
@@ -149,8 +147,8 @@
   .faq .faq-item--active .faq-item__icon svg:nth-child(1) {
     display: none;
   }
-  .faq .faq-item--active .faq .faq-item__content {
-    max-height: var(--faq-height);
+  .faq .faq-item--active .faq-item__content {
+    height: auto;
   }
 }
 

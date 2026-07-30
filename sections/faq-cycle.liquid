@@ -1,0 +1,200 @@
+{% render 'async-stylesheet', file: 'faq-cycle.css' %}
+<section class="cycle">
+    <div class="container">
+        <div class="cycle__wrapper">
+
+            <div class="cycle__content">
+                <span class="cycle__label gray-badge">BUILT AROUND BIOLOGY</span>
+
+                <h2 class="cycle__title">
+                    30 Days On. 10 Days Off
+                </h2>
+
+                <div class="cycle__text">
+                    <p>
+                        High-potency bioactive compounds work best when receptors stay sensitive.
+                        Continuous exposure reduces responsiveness over time — the body adapts,
+                        signal weakens, effect diminishes.
+                    </p>
+
+                    <p>
+                        The 30/10 cycle preserves efficacy and respects natural biological rhythm. <br>
+                        Your subscription ships every <strong>40 days</strong> to <br class="mobile-br"> match
+                        this cadence
+                        automatically.
+                    </p>
+
+                    <p>
+                        <strong>No manual tracking. No interrupted course.</strong>
+                    </p>
+                </div>
+
+                <div class="cycle__timeline">
+
+                    <h3 class="cycle__timeline-title">
+                        40-DAY CYCLE
+                    </h3>
+
+                    <div class="cycle__timeline-head">
+                        <span>30 DAYS ACTIVE</span>
+                        <span>10 OFF</span>
+                    </div>
+
+                    <div class="cycle__timeline-progress">
+                        <!-- 30 active -->
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+
+                        <!-- 10 off -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="cycle__timeline-footer">
+                        <span>Day 1</span>
+                        <span>Day 30</span>
+                        <span>Day 40 → ships again</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <aside class="cycle__aside">
+
+                <article class="cycle__card">
+                    <div class="cycle__card-image">
+                        <picture>
+                            <source srcset="{{ 'cycle-card-1-bg.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'cycle-card-1-bg.webp' | file_url }}" alt="SUBSCRIPTION" fetchpriority="low"
+                                loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <span class="cycle__card-label">SUBSCRIPTION</span>
+
+                    <div class="cycle__card-number">
+                        40days
+                    </div>
+
+                    <ul class="cycle__card-list">
+                        <li>
+
+                            <svg id="plus-icon" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.25 12.75H5.5V11.25H11.25V5.5H12.75V11.25H18.5V12.75H12.75V18.5H11.25V12.75Z"
+                                    fill="currentColor" />
+                            </svg>
+
+                            Automatic shipping cadence.
+                        </li>
+                        <li>
+
+                            <svg id="plus-icon" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.25 12.75H5.5V11.25H11.25V5.5H12.75V11.25H18.5V12.75H12.75V18.5H11.25V12.75Z"
+                                    fill="currentColor" />
+                            </svg>
+
+                            Matches the protocol exactly.
+                        </li>
+                        <li>
+
+                            <svg id="plus-icon" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.25 12.75H5.5V11.25H11.25V5.5H12.75V11.25H18.5V12.75H12.75V18.5H11.25V12.75Z"
+                                    fill="currentColor" />
+                            </svg>
+
+                            No gaps, no over-stocking.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="cycle__card">
+                    <div class="cycle__card-image">
+                        <picture>
+                            <source srcset="{{ 'cycle-card-2-bg.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'cycle-card-2-bg.webp' | file_url }}" alt="WHY CYCLING MATTERS"
+                                fetchpriority="low" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <h3 class="cycle__card-title">
+                        WHY CYCLING MATTERS
+                    </h3>
+
+                    <div class="cycle__card-text">
+                        <p>
+                            Receptor sensitivity is the mechanism. <br>
+                            Continuous exposure dulls response.
+                        </p>
+
+                        <p>
+                            <strong>
+                                The break is part of the dose — not a gap in the protocol.
+                            </strong>
+                        </p>
+                    </div>
+                </article>
+
+            </aside>
+
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Faq Cycle",
+  "class": "faq-cycld",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Faq Cycle",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}

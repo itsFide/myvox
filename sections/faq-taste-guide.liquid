@@ -1,0 +1,177 @@
+{% render 'async-stylesheet', file: 'faq-taste.css' %}
+<section class="taste-guide">
+    <div class="container">
+        <div class="taste-guide__content">
+
+            <div class="taste-guide__info">
+
+                <h2 class="taste-guide__title">
+                    What the taste tells you
+                </h2>
+
+                <p class="taste-guide__description">
+                    These aren't flaws — they're signals.
+                    <br>
+                    The taste reflects concentration and live enzymatic activity.
+                </p>
+
+                <div class="taste-guide__signals">
+
+                    <article class="taste-signal">
+                        <h3 class="taste-signal__title">
+                            BITTERNESS
+                        </h3>
+
+                        <div class="taste-signal__content">
+                            <p class="taste-signal__headline">
+                                Propolis —
+                            </p>
+
+                            <p class="taste-signal__text">
+                                a mild tingling sensation signals a concentrated extract
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="taste-signal">
+                        <h3 class="taste-signal__title">
+                            ACIDITY
+                        </h3>
+
+                        <div class="taste-signal__content">
+                            <p class="taste-signal__headline">
+                                Bee Bread —
+                            </p>
+
+                            <p class="taste-signal__text">
+                                live enzymatic activity from <br class="mobile-br"> fermentation
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="taste-signal">
+                        <h3 class="taste-signal__title">
+                            DENSE FINISH
+                        </h3>
+
+                        <div class="taste-signal__content">
+                            <p class="taste-signal__headline">
+                                Royal Jelly at a working dose —
+                            </p>
+
+                            <p class="taste-signal__text">
+                                concentrated bioactive signal at <br class="mobile-br"> working dose
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <blockquote class="taste-guide__quote">
+                    <p>
+                        Sweetness masks absence. <br class="mobile-br"> This tastes like it works because it
+                        does.
+                    </p>
+                </blockquote>
+
+            </div>
+
+            <div class="taste-guide__methods">
+
+                <h2 class="taste-guide__methods-title">
+                    Two ways to take it
+                </h2>
+
+                <div class="taste-guide__cards">
+
+                    <article class="taste-card">
+
+                        <h3 class="taste-card__title">
+                            The Gourmet
+                        </h3>
+
+
+                        <div class="taste-card__content">
+
+                            <div class="taste-card__number">
+                                <img src="{{ '01-icon.svg' | file_url }}" alt="The Gourmet" loading="lazy"
+                                    fetchpriority="low">
+                            </div>
+
+                            <div class="taste-card__info">
+                                <p class="taste-card__text">
+                                    Mix into yogurt, kefir, or a cold smoothie.
+                                    <br>
+                                    <br class="mobile-br">
+                                    Fat improves absorption of propolis and fat-<br>soluble vitamins.
+                                    Taste is softened by the base.
+                                </p>
+
+                                <p class="taste-card__best">
+                                    <strong>Best for:</strong>
+                                    Daily ritual · best absorption
+                                </p>
+                            </div>
+
+
+
+                        </div>
+
+                    </article>
+
+                    <article class="taste-card">
+
+                        <h3 class="taste-card__title">
+                            The Biohacker
+                        </h3>
+
+
+                        <div class="taste-card__content">
+
+                            <div class="taste-card__number">
+                                <img src="{{ '02-icon.svg' | file_url }}" alt="The Gourmet" loading="lazy"
+                                    fetchpriority="low">
+                            </div>
+
+                            <div class="taste-card__info">
+                                <p class="taste-card__text">
+                                    Place under the tongue and hold for 2–3 minutes
+                                    before swallowing. Bypasses digestion for the
+                                    fastest route to absorption.
+                                </p>
+
+                                <p class="taste-card__best">
+                                    <strong>Best for:</strong>
+                                    Speed · maximum Royal Jelly uptake
+                                </p>
+                            </div>
+
+
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Faq Taste",
+  "class": "faq-taste",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Faq Taste",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}

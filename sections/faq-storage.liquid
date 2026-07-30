@@ -1,0 +1,124 @@
+{% render 'async-stylesheet', file: 'faq-storage.css' %}
+<section class="storage">
+    <div class="storage__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'storage-mobile-bg.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'storage-mobile-bg.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'storage-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'storage-bg.webp' | file_url }}" alt="Respect the Enzymes" fetchpriority="low" loading="lazy"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="storage__wrapper">
+
+            <div class="storage__content">
+
+                <span class="storage__label gray-badge">
+                    NO REFRIGERATION REQUIRED
+                </span>
+
+                <h2 class="storage__title">
+                    Preserved <br>
+                    Without Compromise
+                </h2>
+
+                <div class="storage__text">
+                    <p>
+                        Lyophilization removes moisture under vacuum <br> at low temperature —
+                        placing biological activity <br> in suspension without preservatives
+                        or cold chain <br> requirements. The compounds don't degrade. <br>
+                        They wait.
+                    </p>
+
+                    <p>
+                        Once a stick is opened, consume it immediately. <br>
+                        Moisture degrades biological integrity fast. <br>
+                        The hermetic seal exists for a reason —
+                        don't defeat it.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="storage__cards">
+
+                <article class="storage-card">
+                    <div class="storage-card__icon">
+                        <img src="{{ 'storage-01-icon.svg' | file_url }}" loading="lazy" alt="Store in a cool, dry place">
+                    </div>
+
+                    <div class="storage-card__content">
+                        <h3 class="storage-card__title">
+                            <span>01.</span>
+                            Store in a cool, dry place
+                        </h3>
+
+                        <p class="storage-card__description">
+                            No refrigerator needed. Room temperature <br class="mobile-br"> is fine. <br>
+                            Away from direct sunlight and humidity.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="storage-card">
+                    <div class="storage-card__icon">
+                        <img src="{{ 'storage-02-icon.svg' | file_url }}" loading="lazy"
+                            alt="Once opened — consume immediately">
+                    </div>
+
+                    <div class="storage-card__content">
+                        <h3 class="storage-card__title">
+                            <span>02.</span>
+                            Once opened — <br class="mobile-br"> consume immediately
+                        </h3>
+
+                        <p class="storage-card__description">
+                            The stick is hermetically sealed. <br class="mobile-br">
+                            Exposure to air and moisture starts the <br> clock.
+                            Don't split a stick across multiple uses.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="storage-card">
+                    <div class="storage-card__icon">
+                        <img src="{{ 'storage-03-icon.svg' | file_url }}" loading="lazy" alt="Travel-ready">
+                    </div>
+
+                    <div class="storage-card__content">
+                        <h3 class="storage-card__title">
+                            <span>03.</span>
+                            Travel-ready
+                        </h3>
+
+                        <p class="storage-card__description">
+                            Slim stick packs fit anywhere. <br>
+                            No refrigeration, no pill bottles,
+                            no interrupted course while traveling.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Faq Storage",
+  "class": "faq-storage",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Faq Storage",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}

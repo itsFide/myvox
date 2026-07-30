@@ -3,12 +3,23 @@
 <style>
   .header{
   background: var(--blue);
-  height: 60px;
+  /* height: 60px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transform: translateY(0);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  will-change: transform;
+}
+.header.header--hidden {
+  transform: translateY(-100%);
 }
 .header__inner{
   display: flex;
   align-items: center;
-  padding: 12px 0;
+  padding: 0;
   justify-content: space-between;
   gap: 148px;
 }
@@ -29,6 +40,11 @@
 }
 .header__nav ul li{
   list-style: none;
+  padding: 20px 0;
+  position: relative;
+}
+.header__nav ul li:hover > .dropdown-menu{
+  display: block;
 }
 .header__nav ul li a{
   font-size: 16px;
@@ -46,9 +62,57 @@
   width: 16px;
   height: 16px;
   margin-left: 2px;
+  transition: transform 0.3s ease;
 }
 .header__nav ul li:hover a{
   color: var(--white);
+}
+.header__nav ul li:hover a svg{
+  transform: rotate(180deg);
+}
+
+.dropdown-menu{
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  width: 320px;
+  display: none;
+  background-color: #fff;
+  z-index: 100;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.dropdown-menu-item{
+  display: flex;
+  padding: 16px 20px;
+  transition: all .3s;
+  align-items: center;
+  text-decoration: none;
+}
+.dropdown-menu-item:first-of-type{
+  border-top: 1px solid #19191940;
+}
+.dropdown-menu-item:hover{
+  background: rgba(110, 110, 110, 0.114);
+}
+.dropdown-menu-item__img{
+  width: 37px;
+  height: 40px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.dropdown-menu-item__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.dropdown-menu-item__title{
+  font-size: 16px;
+  line-height: 125%;
+  font-weight: 700;
+  color: #121C3F;
+  text-transform: capitalize;
 }
 .header__right{
   display: flex;
@@ -78,11 +142,11 @@
 
 @media screen and (max-width: 1919px) {
   .header {
-    height: 4.0678vw;
+    /* height: 4.0678vw; */
   }
 
   .header__inner {
-    padding: 0.8136vw 0;
+    padding: 0;
     gap: 10.034vw;
   }
 
@@ -102,7 +166,9 @@
   .header__nav ul {
     gap: 1.6271vw;
   }
-
+  .header__nav ul li{
+    padding: 1.356vw 0;
+  }
   .header__nav ul li a {
     font-size: 1.0847vw;
   }
@@ -111,6 +177,26 @@
     width: 1.0847vw;
     height: 1.0847vw;
     margin-left: 0.1356vw;
+  }
+
+  .dropdown-menu{
+    top: 100%;
+    left: -1.041667vw;
+    width: 18.59375vw;
+  }
+  .dropdown-menu-item{
+    padding: 1.041667vw 0.78125vw;
+  }
+  .dropdown-menu-item:first-of-type{
+    border-top: 0.052083vw solid #19191940;
+  }
+  .dropdown-menu-item__img{
+    width: 1.927083vw;
+    height: 2.083333vw;
+    margin-right: 1.041667vw;
+  }
+  .dropdown-menu-item__title{
+    font-size: 0.833333vw;
   }
 
   .header__right {
@@ -338,6 +424,7 @@
 
 .header-mobile-menu__dropdown li {
   margin-bottom: 12px;
+  list-style: none;
 }
 
 .header-mobile-menu__dropdown li:last-child {
@@ -351,6 +438,43 @@
   text-transform: uppercase;
   padding: 8px 0;
   display: block;
+}
+
+.header-mobile-menu__dropdown .dropdown-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 5.0891vw 6.1069vw;
+  text-decoration: none;
+  border-top: 0.251vw solid rgba(255, 255, 255, 0.15);
+  transition: background 0.3s;
+  width: 100%;
+  justify-content: start;
+}
+
+.header-mobile-menu__dropdown .dropdown-menu-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.header-mobile-menu__dropdown .dropdown-menu-item .dropdown-menu-item__img {
+  width: 9.273vw;
+  height: 10.025vw;
+  margin-right: 0;
+  flex-shrink: 0;
+}
+
+.header-mobile-menu__dropdown .dropdown-menu-item .dropdown-menu-item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header-mobile-menu__dropdown .dropdown-menu-item .dropdown-menu-item__title {
+  font-size: 2.757vw;
+  line-height: 125%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 3.759vw;
+  text-transform: capitalize;
 }
 
 .header-mobile-menu__item.is-open .header-mobile-menu__dropdown {
@@ -462,13 +586,13 @@
   }
 
   .header-mobile-menu__dropdown a {
-    font-size: 2.799vw;
-    padding: 2.0356vw 6.1069vw;
+    font-size: 2.757vw;
+    padding: 2.005vw 6.015vw;
   }
 
   .header-mobile-menu__item.is-open .header-mobile-menu__dropdown {
     max-height: 76.3359vw;
-    padding-bottom: 5.0891vw;
+    padding-bottom: 0;
   }
 
   .header-mobile-menu__btn-wrapper {
@@ -496,6 +620,15 @@
   }
 }
 </style>
+{%- assign prod = all_products['api-complex'] -%}
+{%- if prod != blank and prod.featured_image != blank -%}
+  {%- assign prod_img = prod.featured_image | image_url: width: 100 -%}
+  {%- assign prod_title = prod.title -%}
+{%- else -%}
+  {%- assign prod_img = 'the-hive-item-1.webp' | file_url -%}
+  {%- assign prod_title = 'Api Complex' -%}
+{%- endif -%}
+
 <header class="header">
   <div class="container">
     <div class="header__inner">
@@ -508,18 +641,27 @@
       <div class="header__nav">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/">Our products
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li class="header__nav-item">
+            <a href="#">Our products
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.80001 8.83083L4.73334 5.76416L4.03084 6.46666L7.80001 10.2358L11.5692 6.46666L10.8667 5.76416L7.80001 8.83083Z" fill="white" fill-opacity="0.5"/>
               </svg>
-          </a>
+            </a>
+            <div class="dropdown-menu">
+              <a href="/products/api-complex" class="dropdown-menu-item">
+                <div class="dropdown-menu-item__img">
+                  <img src="{{ 'the-hive-item-1.webp' | file_url }}" alt="{{ prod_title }}" width="40" height="40" loading="lazy">
+                </div>
+                <div class="dropdown-menu-item__title">{{ prod_title }}</div>
+              </a>
+            </div>
           </li>
           <li>
             <a href="/pages/science">Science Behind 
             </a>
           </li>
-          <li><a href="/">About us</a></li>
-          <li><a href="/">FAQ</a></li>
+          <li><a href="/pages/about">About us</a></li>
+          <li><a href="/pages/faq">FAQ</a></li>
         </ul>
       </div>
       <div class="header__right">
@@ -551,7 +693,7 @@
             </svg>
           </a>
         </div>
-        <a href="" class="header__btn btn">Shop now</a>
+        <a href="/products/api-complex" class="header__btn btn">Shop now</a>
       </div>
     </div>
   </div>
@@ -588,17 +730,24 @@
                 </span>
               </div>
               <ul class="header-mobile-menu__dropdown">
-                <li><a href="/collections/all">API-COMPLEX</a></li>
+                <li>
+                  <a href="/products/api-complex" class="dropdown-menu-item">
+                    <div class="dropdown-menu-item__img">
+                      <img src="{{ prod_img }}" alt="{{ prod_title }}" width="40" height="40" loading="lazy">
+                    </div>
+                    <div class="dropdown-menu-item__title">{{ prod_title }}</div>
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="header-mobile-menu__item">
               <a href="/pages/science">Science Behind</a>
             </li>
             <li class="header-mobile-menu__item">
-              <a href="/">About us</a>
+              <a href="/pages/about">About us</a>
             </li>
             <li class="header-mobile-menu__item">
-              <a href="/">FAQ</a>
+              <a href="/pages/faq">FAQ</a>
             </li>
             <li class="header-mobile-menu__item has-dropdown">
               <div class="header-mobile-menu__title">
@@ -620,7 +769,7 @@
         </nav>
         
         <div class="header-mobile-menu__btn-wrapper">
-          <a href="" class="header-mobile-menu__btn">Shop now</a>
+          <a href="/products/api-complex" class="header-mobile-menu__btn">Shop now</a>
         </div>
         
         <div class="header-mobile-menu__socials">
@@ -728,6 +877,49 @@
         }
       });
     });
+
+    // ── Scroll-aware sticky header ──────────────────────────────────────────
+    const header = document.querySelector('.header');
+    if (header) {
+      // Set body padding so content doesn't jump under fixed header
+      function setBodyPadding() {
+        document.body.style.paddingTop = header.offsetHeight + 'px';
+      }
+      setBodyPadding();
+      window.addEventListener('resize', setBodyPadding);
+
+      let lastScrollY = window.scrollY;
+      // Track how many pixels we've scrolled in the current direction
+      let scrolledUpDistance = 0;
+      // Threshold: show header only after scrolling up at least one header-height
+      const THRESHOLD = header.offsetHeight * 5.5;
+
+      window.addEventListener('scroll', function() {
+        const currentScrollY = window.scrollY;
+        const delta = currentScrollY - lastScrollY;
+
+        if (delta > 0) {
+          // Scrolling DOWN — hide immediately (reset up-counter)
+          scrolledUpDistance = 0;
+          header.classList.add('header--hidden');
+        } else {
+          // Scrolling UP — accumulate distance
+          scrolledUpDistance += Math.abs(delta);
+          if (scrolledUpDistance >= THRESHOLD) {
+            header.classList.remove('header--hidden');
+          }
+        }
+
+        // Always show at very top
+        if (currentScrollY <= 0) {
+          header.classList.remove('header--hidden');
+          scrolledUpDistance = 0;
+        }
+
+        lastScrollY = currentScrollY;
+      }, { passive: true });
+    }
+    // ───────────────────────────────────────────────────────────────────────
   });
 </script>
 

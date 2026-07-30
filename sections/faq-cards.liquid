@@ -1,0 +1,146 @@
+{% render 'async-stylesheet', file: 'faq-cards.css' %}
+<section class="faq-cards">
+    <div class="faq-cards__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'faq-cards-mobile-bg.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'faq-cards-mobile-bg.webp' | file_url }}" type="image/webp">
+            <source srcset="{{ 'faq-cards-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'faq-cards-bg.webp' | file_url }}" alt="FAQ Cards Background" fetchpriority="low" loading="lazy"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+
+        <div class="faq-cards__grid">
+
+            <article class="faq-card">
+
+                <div class="faq-card__image">
+                    <picture>
+                        <source srcset="{{ 'faq-card-1-image.avif' | file_url }}" type="image/avif">
+                        <img src="{{ 'faq-card-1-image.webp' | file_url }}" alt="ROYAL JELLY DOSE" fetchpriority="low"
+                            loading="lazy" decoding="async">
+                    </picture>
+                </div>
+
+                <div class="faq-card__content">
+
+                    <span class="faq-card__label">
+                        Q: ROYAL JELLY DOSE
+                    </span>
+
+                    <div class="faq-card__value">
+                        500mg
+                    </div>
+
+                    <h3 class="faq-card__title">
+                        Why not 50–100 mg <br> like everyone else?
+                    </h3>
+
+                    <div class="faq-card__text">
+                        <p>
+                            Most supplements dose for margin, not effect. <br>
+                            500 mg reflects amounts used in traditional practice and in published research. It's uncommon in the West due to sourcing cost. We chose the full amount
+                        </p>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="faq-card">
+
+                <div class="faq-card__image">
+                    <picture>
+                        <source srcset="{{ 'faq-card-2-image.avif' | file_url }}" type="image/avif">
+                        <img src="{{ 'faq-card-2-image.webp' | file_url }}" alt="VITAMIN C ROLE" fetchpriority="low"
+                            loading="lazy" decoding="async">
+                    </picture>
+                </div>
+
+                <div class="faq-card__content">
+
+                    <span class="faq-card__label">
+                        Q: VITAMIN C ROLE
+                    </span>
+
+                    <div class="faq-card__value">
+                        12mg
+                    </div>
+
+                    <h3 class="faq-card__title">
+                        Why so little?
+                    </h3>
+
+                    <div class="faq-card__text">
+                        <p>
+                            Vitamin C here is a technological antioxidant — <br class="mobile-br"> <br>
+                            it protects sensitive fats in Bee Bread and Royal
+                            Jelly during storage. It is not a nutritional dose <br>
+                            and should not be read as one. Do not count it
+                            toward your daily C intake.
+                        </p>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="faq-card">
+
+                <div class="faq-card__image">
+                    <picture>
+                        <source srcset="{{ 'faq-card-3-image.avif' | file_url }}" type="image/avif">
+                        <img src="{{ 'faq-card-3-image.webp' | file_url }}" alt="SUGAR CONTENT" fetchpriority="low"
+                            loading="lazy" decoding="async">
+                    </picture>
+                </div>
+
+                <div class="faq-card__content">
+
+                    <span class="faq-card__label">
+                        Q: SUGAR CONTENT
+                    </span>
+
+                    <div class="faq-card__value">
+                        &lt;2g
+                    </div>
+
+                    <h3 class="faq-card__title">
+                        Is there sugar?
+                    </h3>
+
+                    <div class="faq-card__text">
+                        <p>
+                            No added sugar. <br>
+                            Carbohydrate content is under 2g per serving. <br>
+                            Any trace sweetness comes naturally from nectar
+                            present in fermented Bee Bread — not from <br> added
+                            sweeteners or fillers.
+                        </p>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Faq Cards",
+  "class": "faq-card",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Faq Cards",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}

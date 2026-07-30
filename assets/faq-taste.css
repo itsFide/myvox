@@ -1,0 +1,312 @@
+.taste-guide {
+  padding: 48px 0;
+}
+.taste-guide__content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 124px;
+}
+.taste-guide__methods-title, .taste-guide__title {
+  font-size: 28px;
+  color: var(--black-100);
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 120%;
+  letter-spacing: 2%;
+  letter-spacing: 0.4px;
+}
+.taste-guide__methods {
+  width: 500px;
+  flex-shrink: 0;
+}
+.taste-guide__methods-title {
+  margin-bottom: 24px;
+}
+.taste-guide__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.taste-guide__cards .taste-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 22px 24px;
+  gap: 12px;
+  background: var(--white-50);
+  border: 1px solid var(--white-20);
+  box-shadow: 0px 4px 12px var(--black-20);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+}
+.taste-guide__cards .taste-card__title {
+  font-size: 18px;
+  color: var(--black-100);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.taste-guide__cards .taste-card__number img {
+  height: 64px;
+  width: auto;
+}
+.taste-guide__cards .taste-card__content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.taste-guide__cards .taste-card__best {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 120%;
+  letter-spacing: 2%;
+  color: var(--black-80);
+  font-size: 14px;
+}
+.taste-guide__cards .taste-card__best strong {
+  font-weight: 700;
+}
+.taste-guide__cards .taste-card__text {
+  color: var(--black-50);
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 2%;
+  margin-bottom: 5px;
+}
+.taste-guide__description {
+  font-size: 16px;
+  color: var(--black-100);
+  margin-bottom: 24px;
+  line-height: 120%;
+  letter-spacing: 2%;
+  letter-spacing: 0.2px;
+}
+.taste-guide__signals {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+.taste-guide__signals .taste-signal {
+  padding: 16px 0;
+  border-top: 1px solid var(--gray-20);
+  display: grid;
+  grid-template-columns: 212px auto;
+  padding-bottom: 15px;
+}
+.taste-guide__signals .taste-signal__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black-100);
+  text-transform: uppercase;
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+.taste-guide__signals .taste-signal__text, .taste-guide__signals .taste-signal__headline {
+  font-size: 16px;
+  color: var(--black-100);
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+.taste-guide__signals .taste-signal__headline {
+  margin-bottom: 6px;
+}
+.taste-guide__signals .taste-signal__text {
+  letter-spacing: 0.2px;
+  color: var(--black-50);
+}
+.taste-guide__signals .taste-signal:last-child {
+  border-bottom: 1px solid var(--gray-20);
+}
+.taste-guide__quote {
+  padding: 12px 24px;
+  border-left: 1px solid var(--red-100);
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: var(--black-100);
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+.taste-guide .mobile-br {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .taste-guide .mobile-br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .taste-guide {
+    padding: 3.2520325203vw 0;
+  }
+  .taste-guide__content {
+    gap: 8.4010840108vw;
+  }
+  .taste-guide__methods-title, .taste-guide__title {
+    font-size: 1.8970189702vw;
+    margin-bottom: 0.6775067751vw;
+    letter-spacing: 0.027100271vw;
+  }
+  .taste-guide__methods {
+    width: 33.8753387534vw;
+  }
+  .taste-guide__methods-title {
+    margin-bottom: 1.6260162602vw;
+  }
+  .taste-guide__cards {
+    gap: 0.8130081301vw;
+  }
+  .taste-guide__cards .taste-card {
+    padding: 1.4905149051vw 1.6260162602vw;
+    gap: 0.8130081301vw;
+    border: 0.0677506775vw solid var(--white-20);
+    box-shadow: 0 0.27100271vw 0.8130081301vw var(--black-20);
+    backdrop-filter: blur(0.27100271vw);
+    border-radius: 0.5420054201vw;
+  }
+  .taste-guide__cards .taste-card__title {
+    font-size: 1.2195121951vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .taste-guide__cards .taste-card__number img {
+    height: 4.3360433604vw;
+  }
+  .taste-guide__cards .taste-card__content {
+    gap: 1.0840108401vw;
+  }
+  .taste-guide__cards .taste-card__best {
+    gap: 0.8130081301vw;
+    font-size: 0.9485094851vw;
+  }
+  .taste-guide__cards .taste-card__text {
+    font-size: 1.0840108401vw;
+    margin-bottom: 0.3387533875vw;
+  }
+  .taste-guide__description {
+    font-size: 1.0840108401vw;
+    margin-bottom: 1.6260162602vw;
+    letter-spacing: 0.0135501355vw;
+  }
+  .taste-guide__signals {
+    margin-bottom: 1.5582655827vw;
+  }
+  .taste-guide__signals .taste-signal {
+    padding: 1.0840108401vw 0;
+    grid-template-columns: 14.3631436314vw auto;
+    padding-bottom: 1.0162601626vw;
+    border-top: 0.0677506775vw solid var(--gray-20);
+  }
+  .taste-guide__signals .taste-signal__title {
+    font-size: 1.2195121951vw;
+  }
+  .taste-guide__signals .taste-signal__text, .taste-guide__signals .taste-signal__headline {
+    font-size: 1.0840108401vw;
+  }
+  .taste-guide__signals .taste-signal__headline {
+    margin-bottom: 0.406504065vw;
+  }
+  .taste-guide__signals .taste-signal__text {
+    letter-spacing: 0.0135501355vw;
+  }
+  .taste-guide__signals .taste-signal:last-child {
+    border-bottom: 0.0677506775vw solid var(--gray-20);
+  }
+  .taste-guide__quote {
+    padding: 0.8130081301vw 1.6260162602vw;
+    border-left: 0.0677506775vw solid var(--red-100);
+    font-size: 1.0840108401vw;
+    letter-spacing: 0.0135501355vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .taste-guide {
+    padding: 6.106870229vw 0;
+    padding-bottom: 5.8524173028vw;
+  }
+  .taste-guide__content {
+    gap: 5.5979643766vw;
+    flex-direction: column;
+  }
+  .taste-guide__title {
+    font-size: 4.5801526718vw;
+    margin-bottom: 3.0534351145vw;
+    letter-spacing: 0.0508905852vw;
+  }
+  .taste-guide__description {
+    font-size: 3.0534351145vw;
+    letter-spacing: 0.0508905852vw;
+    margin-bottom: 2.5445292621vw;
+  }
+  .taste-guide__signals {
+    margin-bottom: 3.0534351145vw;
+  }
+  .taste-guide__signals .taste-signal {
+    padding: 3.0534351145vw 0;
+    padding-bottom: 2.5445292621vw;
+    border-top: 0.2544529262vw solid var(--gray-20);
+    grid-template-columns: 33.3333333333vw auto;
+  }
+  .taste-guide__signals .taste-signal__title {
+    font-size: 3.5623409669vw;
+    letter-spacing: 0.0508905852vw;
+  }
+  .taste-guide__signals .taste-signal__headline {
+    margin-bottom: 1.5267175573vw;
+  }
+  .taste-guide__signals .taste-signal__headline, .taste-guide__signals .taste-signal__text {
+    font-size: 3.0534351145vw;
+    letter-spacing: 0.0508905852vw;
+  }
+  .taste-guide__info, .taste-guide__methods {
+    width: 100%;
+  }
+  .taste-guide__quote {
+    padding: 3.0534351145vw;
+    font-size: 3.0534351145vw;
+    letter-spacing: 0.0508905852vw;
+    border-left: 0.2544529262vw solid var(--red-100);
+  }
+  .taste-guide__methods-title {
+    letter-spacing: 0.0508905852vw;
+    font-size: 4.5801526718vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .taste-guide__cards {
+    gap: 2.2900763359vw;
+  }
+  .taste-guide__cards .taste-card {
+    padding: 6.106870229vw;
+    gap: 0;
+    border: 0.2544529262vw solid var(--white-20);
+    box-shadow: 0px 1.0178117048vw 3.0534351145vw var(--black-20);
+    border-radius: 2.0356234097vw;
+  }
+  .taste-guide__cards .taste-card__title {
+    font-size: 3.5623409669vw;
+    letter-spacing: 0.0508905852vw;
+    margin-bottom: 3.0534351145vw;
+  }
+  .taste-guide__cards .taste-card__best {
+    font-size: 2.5445292621vw;
+  }
+  .taste-guide__cards .taste-card__best strong {
+    margin-right: 1.5267175573vw;
+  }
+  .taste-guide__cards .taste-card__text {
+    font-size: 3.0534351145vw;
+    letter-spacing: 0.0508905852vw;
+    line-height: 3.5623409669vw;
+    margin-bottom: 1.0178117048vw;
+  }
+  .taste-guide__cards .taste-card__text br:not(.mobile-br) {
+    display: none;
+  }
+  .taste-guide__cards .taste-card__content {
+    gap: 4.0712468193vw;
+  }
+  .taste-guide__cards .taste-card__number img {
+    height: 16.2849872774vw;
+  }
+}/*# sourceMappingURL=taste-guide.css.map */

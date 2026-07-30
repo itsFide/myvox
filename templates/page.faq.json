@@ -1,0 +1,126 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {
+            "text_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "disabled": true,
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    },
+    "faq_hero_CKQHk9": {
+      "type": "faq-hero",
+      "name": "Faq Hero",
+      "settings": {}
+    },
+    "faq_allergies_YAMPCe": {
+      "type": "faq-allergies",
+      "name": "Faq Allergies",
+      "settings": {}
+    },
+    "faq_temperature_warning_wHR7nJ": {
+      "type": "faq-temperature-warning",
+      "name": "Faq Temperature",
+      "settings": {}
+    },
+    "faq_taste_guide_Ydnq7n": {
+      "type": "faq-taste-guide",
+      "name": "Faq Taste",
+      "settings": {}
+    },
+    "faq_protocol_cycle_jhkJFV": {
+      "type": "faq-protocol-cycle",
+      "name": "Faq Protocol",
+      "settings": {}
+    },
+    "faq_cycle_rRNbAj": {
+      "type": "faq-cycle",
+      "name": "Faq Cycle",
+      "settings": {}
+    },
+    "faq_storage_tKhPy4": {
+      "type": "faq-storage",
+      "name": "Faq Storage",
+      "settings": {}
+    },
+    "faq_cards_96Kp8a": {
+      "type": "faq-cards",
+      "name": "Faq Cards",
+      "settings": {}
+    },
+    "faq_faq_dWRkQB": {
+      "type": "faq-faq",
+      "name": "Faq Faq",
+      "settings": {}
+    },
+    "faq_cta_zCPy6W": {
+      "type": "faq-cta",
+      "name": "Faq Cta",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "faq_hero_CKQHk9",
+    "faq_allergies_YAMPCe",
+    "faq_temperature_warning_wHR7nJ",
+    "faq_taste_guide_Ydnq7n",
+    "faq_protocol_cycle_jhkJFV",
+    "faq_cycle_rRNbAj",
+    "faq_storage_tKhPy4",
+    "faq_cards_96Kp8a",
+    "faq_faq_dWRkQB",
+    "faq_cta_zCPy6W"
+  ]
+}

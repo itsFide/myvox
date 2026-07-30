@@ -1,0 +1,149 @@
+{% render 'faq-hero-styles' %}
+<style>
+@media screen and (max-width: 650px){
+    .hide-br-mobile{
+        display: none;
+    }
+}
+</style>
+<section class="know-before">
+    <div class="know-before__image">
+        <picture>
+            <source media="(max-width: 650px)" srcset="{{ 'know-before-mobile-bg.avif' | file_url }}" type="image/avif">
+            <source media="(max-width: 650px)" srcset="{{ 'know-before-mobile-bg.webp' | file_url }}"
+                type="image/webp">
+            <source srcset="{{ 'know-before-bg.avif' | file_url }}" type="image/avif">
+            <img src="{{ 'know-before-bg.webp' | file_url }}" alt="FAQ — KNOW BEFORE YOU BEGIN" fetchpriority="high"
+                loading="eager" decoding="async">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="know-before__content">
+
+            <div class="know-before__header">
+                {% comment %} <span class="know-before__label ts-badge">
+                    FAQ — KNOW BEFORE YOU BEGIN
+                </span> {% endcomment %}
+
+                <h2 class="know-before__title">
+                    <span>Know</span> Before You <br class="mobile-br"> Begin
+                </h2>
+
+                <p class="know-before__description">
+                    <strong>MYVOX-9 approaches supplementation <br class="mobile-br"> as something that should actually do the work – not a lifestyle accessory. <br class="hide-br-mobile"> This page gives you the full picture: allergies, taste, dosage logic, storage. Nothing hidden, nothing softened.
+</strong>
+                </p>
+            </div>
+
+            <div class="know-before__cards">
+
+                <article class="know-before-card">
+                    <div class="know-before-card__icon">
+                        <img src="{{ 'safety_first_icon_d1814b07-5e7e-4103-a961-06c87bbddee3.svg' | file_url }}" alt="Safety First" aria-hidden="true">
+                    </div>
+
+                    <div class="know-before-card__content">
+                        <h3 class="know-before-card__title">
+                            Safety First
+                        </h3>
+
+                        <p class="know-before-card__text">
+                            Allergies & Who Shouldn't Use It
+                        </p>
+                    </div>
+                </article>
+
+                <article class="know-before-card">
+                    <div class="know-before-card__icon">
+                        <img src="{{ 'dosage_cycling_icon_b58cf8b1-419f-425f-947b-3618da7cad4e.svg' | file_url }}" alt="Dosage and Cycling" aria-hidden="true">
+                    </div>
+
+                    <div class="know-before-card__content">
+                        <h3 class="know-before-card__title">
+                            Dosage & Cycling
+                        </h3>
+
+                        <p class="know-before-card__text">
+                            30/10 protocol logic
+                        </p>
+                    </div>
+                </article>
+
+                <article class="know-before-card">
+                    <div class="know-before-card__icon">
+                        <img src="{{ 'ingredients_icon_80497643-56b6-49b0-96f3-4e89a33d4e2a.svg' | file_url }}" alt="Ingredients" aria-hidden="true">
+                    </div>
+
+                    <div class="know-before-card__content">
+                        <h3 class="know-before-card__title">
+                            Ingredients
+                        </h3>
+
+                        <p class="know-before-card__text">
+                            Specific questions answered
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+(function () {
+    var root = document.documentElement;
+    var savedViewportWidth = window.innerWidth;
+    var resizeFrame = 0;
+
+    function getVisibleViewportHeight() {
+        if (window.visualViewport && Number.isFinite(window.visualViewport.height)) {
+            return window.visualViewport.height;
+        }
+        return window.innerHeight;
+    }
+
+    function lockViewportHeight() {
+        var viewportHeight = Math.round(getVisibleViewportHeight());
+        savedViewportWidth = window.innerWidth;
+        root.style.setProperty('--hero-stable-viewport-height', viewportHeight + 'px');
+    }
+
+    function handleResize() {
+        cancelAnimationFrame(resizeFrame);
+        resizeFrame = requestAnimationFrame(function () {
+            var currentWidth = window.innerWidth;
+            var widthDifference = Math.abs(currentWidth - savedViewportWidth);
+            if (widthDifference > 32) {
+                lockViewportHeight();
+            }
+        });
+    }
+
+    lockViewportHeight();
+
+    window.addEventListener('pageshow', lockViewportHeight);
+    window.addEventListener('resize', handleResize, { passive: true });
+    window.addEventListener('orientationchange', function () {
+        window.setTimeout(lockViewportHeight, 300);
+    });
+})();
+</script>
+
+
+{% schema %}
+{
+  "name": "Faq Hero",
+  "class": "faq-herp",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Faq Hero",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}

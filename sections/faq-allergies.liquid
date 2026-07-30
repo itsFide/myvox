@@ -1,0 +1,188 @@
+{% render 'async-stylesheet', file: 'faq-allergies.css' %}
+<section class="allergies">
+    <div class="container">
+        <div class="allergies__content">
+
+            <div class="allergies__info">
+
+                <span class="allergies__label">
+
+                    <svg id="energy-icon" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.03376 12.1332L10.4838 7.99989H7.81709L8.30042 4.21656L5.21709 8.66656H7.53376L7.03376 12.1332ZM5.71842 14.2947L6.38509 9.66656H3.30176L8.79526 1.73706H9.61576L8.95559 6.99989H12.6221L6.53892 14.2947H5.71842Z"
+                            fill="currentColor" />
+                    </svg>
+
+                    READ THIS FIRST
+                </span>
+
+                <h2 class="allergies__title">
+                    Start Here —
+                    <br>
+                    Allergies & Contraindications
+                </h2>
+
+                <div class="allergies__warning">
+                    <h3 class="allergies__warning-title">
+                        Known allergy to bee stings, pollen, or bee products?
+                    </h3>
+
+                    <p class="allergies__warning-text">
+                        This protocol carries risk and may not be appropriate for you.
+                        Consult a healthcare professional before use.
+                    </p>
+                </div>
+
+                <div class="allergies__description">
+                    <p>
+                        Api-Complex contains Bee Bread, Royal Jelly, and Propolis — potent hive compounds.
+                        Bee Bread is fermented pollen, which reduces allergenic <br> potential compared to raw
+                        pollen.
+                        <br class="mobile-br">
+                        <strong>That reduction does not eliminate risk.</strong>
+                    </p>
+                </div>
+
+                <blockquote class="allergies__quote">
+                    <p>
+                        Safety before optimization. Always.
+                    </p>
+                </blockquote>
+
+            </div>
+
+            <div class="allergies__cards">
+
+                <article class="allergies-card allergies-card--first-use">
+                    <div class="allergies-card__image">
+                        <picture>
+                            <source srcset="{{ 'allergies_card_1_bg.avif' |  file_url }}" type="image/avif">
+                            <img src="{{ 'allergies_card_1_bg.webp' | file_url }}" alt="FAQ — KNOW BEFORE YOU BEGIN"
+                                fetchpriority="low" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <span class="allergies-card__label">
+                        FIRST-TIME USE
+                    </span>
+
+                    <h3 class="allergies-card__title">
+                        Start with ¼ stick
+                    </h3>
+
+                    <p class="allergies-card__text">
+                        Begin with approximately one quarter of a stick to assess
+                        individual tolerance. Wait at least 24 hours before
+                        progressing to a full serving.
+                    </p>
+
+                    <div class="allergies-card__progress-container">
+                        <span class="allergies-card__progress allergies-card__progress--fill"></span>
+                        <span class="allergies-card__progress"></span>
+                        <span class="allergies-card__progress"></span>
+                        <span class="allergies-card__progress"></span>
+                    </div>
+
+                    <div class="allergies-card__footer">
+
+                        <svg id="time-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.473 16.527L16.527 15.473L12.75 11.696V7H11.25V12.3037L15.473 16.527ZM12.0018 21.5C10.6878 21.5 9.45267 21.2507 8.2965 20.752C7.14033 20.2533 6.13467 19.5766 5.2795 18.7218C4.42433 17.8669 3.74725 16.8617 3.24825 15.706C2.74942 14.5503 2.5 13.3156 2.5 12.0018C2.5 10.6878 2.74933 9.45267 3.248 8.2965C3.74667 7.14033 4.42342 6.13467 5.27825 5.2795C6.13308 4.42433 7.13833 3.74725 8.294 3.24825C9.44967 2.74942 10.6844 2.5 11.9982 2.5C13.3123 2.5 14.5473 2.74933 15.7035 3.248C16.8597 3.74667 17.8653 4.42342 18.7205 5.27825C19.5757 6.13308 20.2528 7.13833 20.7518 8.294C21.2506 9.44967 21.5 10.6844 21.5 11.9982C21.5 13.3123 21.2507 14.5473 20.752 15.7035C20.2533 16.8597 19.5766 17.8653 18.7218 18.7205C17.8669 19.5757 16.8617 20.2528 15.706 20.7518C14.5503 21.2506 13.3156 21.5 12.0018 21.5ZM12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 9.78333 19.2208 7.89583 17.6625 6.3375C16.1042 4.77917 14.2167 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20Z"
+                                fill="currentColor" />
+                        </svg>
+
+                        <span class="allergies-card__day">
+                            DAY 1
+                        </span>
+                        <span class="allergies-card__arrow">
+                            →
+                        </span>
+
+                        <span class="allergies-card__status">
+                            FULL SERVING AFTER 24H IF NO REACTION
+                        </span>
+                    </div>
+
+                </article>
+
+                <article class="allergies-card allergies-card--contraindications">
+                    <div class="allergies-card__image">
+                        <picture>
+                            <source srcset="{{ 'allergies_card_2_bg.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'allergies_card_2_bg.webp' | file_url }}" alt="FAQ — KNOW BEFORE YOU BEGIN"
+                                fetchpriority="low" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <span class="allergies-card__label">
+                        CONTRAINDICATIONS
+                    </span>
+
+                    <h3 class="allergies-card__title">
+                        DO NOT USE IF:
+                    </h3>
+
+                    <ul class="allergies-card__list">
+                        <li class="allergies-card__item">
+
+                            <svg id="close-icon" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.40043 18.6537L5.34668 17.5999L10.9467 11.9999L5.34668 6.39994L6.40043 5.34619L12.0004 10.9462L17.6004 5.34619L18.6542 6.39994L13.0542 11.9999L18.6542 17.5999L17.6004 18.6537L12.0004 13.0537L6.40043 18.6537Z"
+                                    fill="currentColor" />
+                            </svg>
+
+                            <p>You have a diagnosed medical condition affecting adrenal or immune function</p>
+                        </li>
+
+                        <li class="allergies-card__item">
+
+                            <svg id="close-icon" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.40043 18.6537L5.34668 17.5999L10.9467 11.9999L5.34668 6.39994L6.40043 5.34619L12.0004 10.9462L17.6004 5.34619L18.6542 6.39994L13.0542 11.9999L18.6542 17.5999L17.6004 18.6537L12.0004 13.0537L6.40043 18.6537Z"
+                                    fill="currentColor" />
+                            </svg>
+
+                            <p>
+                                You have confirmed intolerance to bee-derived compounds
+                            </p>
+                        </li>
+
+                        <li class="allergies-card__item">
+
+                            <svg id="close-icon" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.40043 18.6537L5.34668 17.5999L10.9467 11.9999L5.34668 6.39994L6.40043 5.34619L12.0004 10.9462L17.6004 5.34619L18.6542 6.39994L13.0542 11.9999L18.6542 17.5999L17.6004 18.6537L12.0004 13.0537L6.40043 18.6537Z"
+                                    fill="currentColor" />
+                            </svg>
+
+                            <p>
+                                You are uncertain — <br class="mobile-br"> consult a healthcare <br> professional first
+                            </p>
+                        </li>
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Faq Allergies",
+  "class": "faq-allergies",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Faq Allergies",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}

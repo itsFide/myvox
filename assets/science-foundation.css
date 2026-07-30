@@ -12,6 +12,10 @@
   letter-spacing: 2%;
   margin-bottom: 24px;
 }
+.scientific-foundation-item{
+  text-decoration: none;
+  color: inherit;
+}
 .scientific-foundation__content {
   width: 604px;
   flex-shrink: 0;
