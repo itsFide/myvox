@@ -3,19 +3,64 @@
 <style>
   .header{
   background: var(--blue);
-  /* height: 60px; */
+}
+
+/* ============================================
+   DUAL HEADER: статичный держит место,
+   sticky появляется при скролле вверх
+   ============================================ */
+
+/* Статичный хэдер: когда проскроллено вниз —
+   становится невидимым, но место держит */
+.header.header--scrolled-away {
+  visibility: hidden;
+}
+
+/* Sticky-шапка (клон, вставляется JS'ом) */
+.header-sticky {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
-  transform: translateY(0);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  will-change: transform;
-}
-.header.header--hidden {
+  z-index: 200;
+  background: var(--blue);
+  /* height: auto — определяется контентом, как и статичный хэдер */
   transform: translateY(-100%);
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              opacity 0.35s ease;
+  opacity: 0;
+  /* Важно: pointer-events выключены пока скрыта */
+  pointer-events: none;
 }
+
+/* Видимое состояние sticky-шапки */
+.header-sticky.header-sticky--visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Не показываем sticky на лендинге */
+body.template-landing-v1 .header-sticky {
+  display: none !important;
+}
+body.template-landing-v1 .header.header--scrolled-away {
+  visibility: visible !important;
+}
+
+body.template-landing-v1-1 .header-sticky {
+  display: none !important;
+}
+body.template-landing-v1-1 .header.header--scrolled-away {
+  visibility: visible !important;
+}
+@media screen and (max-width: 650px) {
+  .header-sticky {
+    /* height auto by content */
+  }
+}
+</style>
+<style>
 .header__inner{
   display: flex;
   align-items: center;
@@ -71,6 +116,7 @@
   transform: rotate(180deg);
 }
 
+/* Desktop dropdown */
 .dropdown-menu{
   position: absolute;
   top: 100%;
@@ -125,7 +171,67 @@
   gap: 24px;
 }
 .header-action{
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+}
+.cart-icon-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-count-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: var(--red, var(--red-100, #D16F55));
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
+  z-index: 3;
+  font-family: inherit;
+}
+.cart-count-badge.is-hidden,
+.cart-count-badge[data-cart-count="0"] {
+  display: none !important;
+}
+.cart-count-badge.badge-updated {
+  transform: scale(1.35);
+}
+@media screen and (max-width: 1919px) and (min-width: 768px) {
+  .cart-count-badge {
+    top: -0.4vw;
+    right: -0.55vw;
+    font-size: 0.75vw;
+    min-width: 1.15vw;
+    height: 1.15vw;
+    padding: 0 0.25vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cart-count-badge {
+    top: -1.2vw;
+    right: -1.8vw;
+    font-size: 2.8vw;
+    min-width: 4.2vw;
+    height: 4.2vw;
+    padding: 0 1vw;
+  }
 }
 .header-action svg{
   width: 24px;
@@ -141,9 +247,7 @@
 }
 
 @media screen and (max-width: 1919px) {
-  .header {
-    /* height: 4.0678vw; */
-  }
+  /* height auto */
 
   .header__inner {
     padding: 0;
@@ -166,9 +270,10 @@
   .header__nav ul {
     gap: 1.6271vw;
   }
-  .header__nav ul li{
+  .header__nav ul li {
     padding: 1.356vw 0;
   }
+
   .header__nav ul li a {
     font-size: 1.0847vw;
   }
@@ -179,23 +284,22 @@
     margin-left: 0.1356vw;
   }
 
-  .dropdown-menu{
-    top: 100%;
+  .dropdown-menu {
     left: -1.041667vw;
     width: 18.59375vw;
   }
-  .dropdown-menu-item{
+  .dropdown-menu-item {
     padding: 1.041667vw 0.78125vw;
   }
-  .dropdown-menu-item:first-of-type{
+  .dropdown-menu-item:first-of-type {
     border-top: 0.052083vw solid #19191940;
   }
-  .dropdown-menu-item__img{
+  .dropdown-menu-item__img {
     width: 1.927083vw;
     height: 2.083333vw;
     margin-right: 1.041667vw;
   }
-  .dropdown-menu-item__title{
+  .dropdown-menu-item__title {
     font-size: 0.833333vw;
   }
 
@@ -254,9 +358,6 @@
   .burger span:nth-child(3) {
     top: 100%;
     left: 0;
-  }
-  .header{
-    height: auto;
   }
   .header__nav {
     display: none;
@@ -440,6 +541,7 @@
   display: block;
 }
 
+/* Карточка продукта в мобильном dropdown */
 .header-mobile-menu__dropdown .dropdown-menu-item {
   display: flex;
   align-items: center;
@@ -450,24 +552,20 @@
   width: 100%;
   justify-content: start;
 }
-
 .header-mobile-menu__dropdown .dropdown-menu-item:hover {
   background: rgba(255, 255, 255, 0.08);
 }
-
 .header-mobile-menu__dropdown .dropdown-menu-item .dropdown-menu-item__img {
   width: 9.273vw;
   height: 10.025vw;
   margin-right: 0;
   flex-shrink: 0;
 }
-
 .header-mobile-menu__dropdown .dropdown-menu-item .dropdown-menu-item__img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
 .header-mobile-menu__dropdown .dropdown-menu-item .dropdown-menu-item__title {
   font-size: 2.757vw;
   line-height: 125%;
@@ -478,8 +576,8 @@
 }
 
 .header-mobile-menu__item.is-open .header-mobile-menu__dropdown {
-  max-height: 300px;
-  padding-bottom: 20px;
+  max-height: 76.3359vw;
+  padding-bottom: 0;
 }
 
 .header-mobile-menu__item.is-open .header-mobile-menu__chevron {
@@ -586,13 +684,13 @@
   }
 
   .header-mobile-menu__dropdown a {
-    font-size: 2.757vw;
-    padding: 2.005vw 6.015vw;
+    font-size: 2.799vw;
+    padding: 2.0356vw 6.1069vw;
   }
 
   .header-mobile-menu__item.is-open .header-mobile-menu__dropdown {
     max-height: 76.3359vw;
-    padding-bottom: 0;
+    padding-bottom: 5.0891vw;
   }
 
   .header-mobile-menu__btn-wrapper {
@@ -619,7 +717,11 @@
     height: 6.1069vw;
   }
 }
+.quantity-selector-wrapper{
+  display: none !important;  
+}
 </style>
+
 {%- assign prod = all_products['api-complex'] -%}
 {%- if prod != blank and prod.featured_image != blank -%}
   {%- assign prod_img = prod.featured_image | image_url: width: 100 -%}
@@ -641,14 +743,14 @@
       <div class="header__nav">
         <ul>
           <li><a href="/">Home</a></li>
-          <li class="header__nav-item">
+          <li>
             <a href="#">Our products
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.80001 8.83083L4.73334 5.76416L4.03084 6.46666L7.80001 10.2358L11.5692 6.46666L10.8667 5.76416L7.80001 8.83083Z" fill="white" fill-opacity="0.5"/>
               </svg>
             </a>
             <div class="dropdown-menu">
-              <a href="/products/api-complex" class="dropdown-menu-item">
+              <a href="/products/api-complex-by-myvox-9" class="dropdown-menu-item">
                 <div class="dropdown-menu-item__img">
                   <img src="{{ 'the-hive-item-1.webp' | file_url }}" alt="{{ prod_title }}" width="40" height="40" loading="lazy">
                 </div>
@@ -657,8 +759,7 @@
             </div>
           </li>
           <li>
-            <a href="/pages/science">Science Behind 
-            </a>
+            <a href="/pages/science">Science Behind</a>
           </li>
           <li><a href="/pages/about">About us</a></li>
           <li><a href="/pages/faq">FAQ</a></li>
@@ -666,7 +767,7 @@
       </div>
       <div class="header__right">
         <div class="header-actions">
-          <a href="" class="header-action">
+          <a href="https://account.myvox-9.com" class="header-action">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.9905 20.5V19H18.6923C18.7692 19 18.8398 18.9679 18.9038 18.9038C18.9679 18.8398 19 18.7692 19 18.6923V5.30775C19 5.23075 18.9679 5.16025 18.9038 5.09625C18.8398 5.03208 18.7692 5 18.6923 5H11.9905V3.5H18.6923C19.1974 3.5 19.625 3.675 19.975 4.025C20.325 4.375 20.5 4.80258 20.5 5.30775V18.6923C20.5 19.1974 20.325 19.625 19.975 19.975C19.625 20.325 19.1974 20.5 18.6923 20.5H11.9905ZM10.6348 16.2692L9.59625 15.1845L12.0308 12.75H3.5V11.25H12.0308L9.59625 8.8155L10.6348 7.73075L14.9038 12L10.6348 16.2692Z" fill="url(#paint0_linear_24109_806)"/>
             <defs>
@@ -679,21 +780,25 @@
             </svg>
 
           </a>
-          <a href="" class="header-action">
-            
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.15375 21.5578C6.66792 21.5578 6.25483 21.3875 5.9145 21.047C5.57417 20.7067 5.404 20.2936 5.404 19.8078C5.404 19.3218 5.57417 18.9086 5.9145 18.5683C6.25483 18.2279 6.66792 18.0577 7.15375 18.0577C7.63975 18.0577 8.05292 18.2279 8.39325 18.5683C8.73358 18.9086 8.90375 19.3218 8.90375 19.8078C8.90375 20.2936 8.73358 20.7067 8.39325 21.047C8.05292 21.3875 7.63975 21.5578 7.15375 21.5578ZM16.8463 21.5578C16.3603 21.5578 15.9471 21.3875 15.6068 21.047C15.2664 20.7067 15.0963 20.2936 15.0963 19.8078C15.0963 19.3218 15.2664 18.9086 15.6068 18.5683C15.9471 18.2279 16.3603 18.0577 16.8463 18.0577C17.3321 18.0577 17.7452 18.2279 18.0855 18.5683C18.4258 18.9086 18.596 19.3218 18.596 19.8078C18.596 20.2936 18.4258 20.7067 18.0855 21.047C17.7452 21.3875 17.3321 21.5578 16.8463 21.5578ZM6.01525 5.75L8.55 11.0577H15.3673C15.4249 11.0577 15.4763 11.0433 15.5213 11.0145C15.5661 10.9857 15.6045 10.9456 15.6365 10.8943L18.3193 6.01925C18.3578 5.94875 18.3609 5.88625 18.3288 5.83175C18.2968 5.77725 18.2423 5.75 18.1653 5.75H6.01525ZM5.29625 4.25H19.1808C19.5898 4.25 19.899 4.42408 20.1085 4.77225C20.3182 5.12025 20.3282 5.47567 20.1385 5.8385L16.9345 11.6423C16.7705 11.9307 16.5536 12.1554 16.2838 12.3162C16.0138 12.4773 15.7179 12.5577 15.3963 12.5577H8.1L6.94225 14.673C6.89092 14.75 6.88933 14.8333 6.9375 14.923C6.9855 15.0128 7.05758 15.0577 7.15375 15.0577H18.596V16.5577H7.15375C6.48708 16.5577 5.98617 16.2703 5.651 15.6953C5.31567 15.1202 5.30383 14.5462 5.6155 13.973L7.04225 11.4078L3.404 3.75H1.5V2.25H4.34625L5.29625 4.25Z" fill="url(#paint0_linear_24109_813)"/>
-            <defs>
-            <linearGradient id="paint0_linear_24109_813" x1="10.8868" y1="2.25" x2="10.8868" y2="21.5578" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#C0876C"/>
-            <stop offset="0.5" stop-color="#DFCFC4"/>
-            <stop offset="1" stop-color="#D16F55"/>
-            </linearGradient>
-            </defs>
-            </svg>
+          <a href="/cart" class="header-action header-actions__cart-icon" aria-label="Cart">
+            <div class="cart-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.15375 21.5578C6.66792 21.5578 6.25483 21.3875 5.9145 21.047C5.57417 20.7067 5.404 20.2936 5.404 19.8078C5.404 19.3218 5.57417 18.9086 5.9145 18.5683C6.25483 18.2279 6.66792 18.0577 7.15375 18.0577C7.63975 18.0577 8.05292 18.2279 8.39325 18.5683C8.73358 18.9086 8.90375 19.3218 8.90375 19.8078C8.90375 20.2936 8.73358 20.7067 8.39325 21.047C8.05292 21.3875 7.63975 21.5578 7.15375 21.5578ZM16.8463 21.5578C16.3603 21.5578 15.9471 21.3875 15.6068 21.047C15.2664 20.7067 15.0963 18.9086 15.6068 18.5683C15.9471 18.2279 16.3603 18.0577 16.8463 18.0577C17.3321 18.0577 17.7452 18.2279 18.0855 18.5683C18.4258 18.9086 18.596 19.3218 18.596 19.8078C18.596 20.2936 18.4258 20.7067 18.0855 21.047C17.7452 21.3875 17.3321 21.5578 16.8463 21.5578ZM6.01525 5.75L8.55 11.0577H15.3673C15.4249 11.0577 15.4763 11.0433 15.5213 11.0145C15.5661 10.9857 15.6045 10.9456 15.6365 10.8943L18.3193 6.01925C18.3578 5.94875 18.3609 5.88625 18.3288 5.83175C18.2968 5.77725 18.2423 5.75 18.1653 5.75H6.01525ZM5.29625 4.25H19.1808C19.5898 4.25 19.899 4.42408 20.1085 4.77225C20.3182 5.12025 20.3282 5.47567 20.1385 5.8385L16.9345 11.6423C16.7705 11.9307 16.5536 12.1554 16.2838 12.3162C16.0138 12.4773 15.7179 12.5577 15.3963 12.5577H8.1L6.94225 14.673C6.89092 14.75 6.88933 14.8333 6.9375 14.923C6.9855 15.0128 7.05758 15.0577 7.15375 15.0577H18.596V16.5577H7.15375C6.48708 16.5577 5.98617 16.2703 5.651 15.6953C5.31567 15.1202 5.30383 14.5462 5.6155 13.973L7.04225 11.4078L3.404 3.75H1.5V2.25H4.34625L5.29625 4.25Z" fill="url(#paint0_linear_24109_813)"/>
+              <defs>
+              <linearGradient id="paint0_linear_24109_813" x1="10.8868" y1="2.25" x2="10.8868" y2="21.5578" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#C0876C"/>
+              <stop offset="0.5" stop-color="#DFCFC4"/>
+              <stop offset="1" stop-color="#D16F55"/>
+              </linearGradient>
+              </defs>
+              </svg>
+              <span class="cart-count-badge{% if cart.item_count == 0 %} is-hidden{% endif %}" data-cart-count="{{ cart.item_count }}">
+                {{ cart.item_count }}
+              </span>
+            </div>
           </a>
         </div>
-        <a href="/products/api-complex" class="header__btn btn">Shop now</a>
+        <a href="/products/api-complex-by-myvox-9" class="header__btn btn">Shop now</a>
       </div>
     </div>
   </div>
@@ -731,7 +836,7 @@
               </div>
               <ul class="header-mobile-menu__dropdown">
                 <li>
-                  <a href="/products/api-complex" class="dropdown-menu-item">
+                  <a href="/products/api-complex-by-myvox-9" class="dropdown-menu-item">
                     <div class="dropdown-menu-item__img">
                       <img src="{{ prod_img }}" alt="{{ prod_title }}" width="40" height="40" loading="lazy">
                     </div>
@@ -763,13 +868,14 @@
                 <li><a href="/pages/refer-a-friend">REFER A FRIEND</a></li>
                 <li><a href="/pages/track-order">TRACK MY ORDER</a></li>
                 <li><a href="/pages/manage-subscription">MANAGE SUBSCRIPTION</a></li>
+                <li><a href="/pages/data-sharing-opt-out">Data Sharing</a></li>
               </ul>
             </li>
           </ul>
         </nav>
         
         <div class="header-mobile-menu__btn-wrapper">
-          <a href="/products/api-complex" class="header-mobile-menu__btn">Shop now</a>
+          <a href="/products/api-complex-by-myvox-9" class="header-mobile-menu__btn">Shop now</a>
         </div>
         
         <div class="header-mobile-menu__socials">
@@ -849,7 +955,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const burger = document.querySelector('.burger');
+    const burger = document.querySelector('.header .burger');
     const mobileMenu = document.getElementById('MobileMenu');
     const mobileMenuClose = document.getElementById('MobileMenuClose');
     
@@ -878,50 +984,196 @@
       });
     });
 
-    // ── Scroll-aware sticky header ──────────────────────────────────────────
-    const header = document.querySelector('.header');
-    if (header) {
-      // Set body padding so content doesn't jump under fixed header
-      function setBodyPadding() {
-        document.body.style.paddingTop = header.offsetHeight + 'px';
-      }
-      setBodyPadding();
-      window.addEventListener('resize', setBodyPadding);
+    // ============================================
+    // DUAL HEADER: sticky clone logic
+    // Не применяем на лендинге
+    // ============================================
+    if (document.body.classList.contains('template-landing-v1') || document.body.classList.contains('template-landing-v1-1')) return;
 
-      let lastScrollY = window.scrollY;
-      // Track how many pixels we've scrolled in the current direction
-      let scrolledUpDistance = 0;
-      // Threshold: show header only after scrolling up at least one header-height
-      const THRESHOLD = header.offsetHeight * 5.5;
+    const staticHeader = document.querySelector('.header');
+    if (!staticHeader) return;
 
-      window.addEventListener('scroll', function() {
-        const currentScrollY = window.scrollY;
-        const delta = currentScrollY - lastScrollY;
+    // 1. Клонируем оригинальный хэдер
+    const stickyHeader = staticHeader.cloneNode(true);
+    stickyHeader.classList.remove('header');
+    stickyHeader.classList.add('header-sticky');
+    // Меняем ID бургера в клоне, чтобы не дублировались
+    const stickyBurger = stickyHeader.querySelector('.burger');
 
-        if (delta > 0) {
-          // Scrolling DOWN — hide immediately (reset up-counter)
-          scrolledUpDistance = 0;
-          header.classList.add('header--hidden');
+    // Вставляем sticky-шапку сразу после оригинала
+    staticHeader.parentNode.insertBefore(stickyHeader, staticHeader.nextSibling);
+
+    // 2. Подключаем мобильное меню к бургеру в sticky-шапке
+    //    Используем то же самое мобильное меню (оно одно)
+    if (stickyBurger && mobileMenu) {
+      stickyBurger.addEventListener('click', function() {
+        mobileMenu.classList.add('is-active');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+
+    // 3. Логика скролла
+    const SCROLL_THRESHOLD = 100; // px вверх до появления sticky
+    const HIDE_AFTER = 80;        // px от верха — показываем статичный
+
+    let lastScrollY = window.scrollY;
+    let scrollUpAccum = 0;
+    let ticking = false;
+    let stickyVisible = false;
+
+    function showSticky() {
+      if (stickyVisible) return;
+      stickyVisible = true;
+      stickyHeader.classList.add('header-sticky--visible');
+    }
+
+    function hideSticky() {
+      if (!stickyVisible) return;
+      stickyVisible = false;
+      stickyHeader.classList.remove('header-sticky--visible');
+    }
+
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function() {
+        const currentY = window.scrollY;
+        const delta = lastScrollY - currentY; // > 0 = скролл вверх
+
+        if (currentY <= HIDE_AFTER) {
+          // У самого верха: статичный видим, sticky прячем
+          staticHeader.classList.remove('header--scrolled-away');
+          hideSticky();
+          scrollUpAccum = 0;
         } else {
-          // Scrolling UP — accumulate distance
-          scrolledUpDistance += Math.abs(delta);
-          if (scrolledUpDistance >= THRESHOLD) {
-            header.classList.remove('header--hidden');
+          // Проскроллено вниз: статичный скрываем (но место держит)
+          staticHeader.classList.add('header--scrolled-away');
+
+          if (delta > 0) {
+            // Скролл вверх — накапливаем
+            scrollUpAccum += delta;
+            if (scrollUpAccum >= SCROLL_THRESHOLD) {
+              showSticky();
+            }
+          } else if (delta < 0) {
+            // Скролл вниз — прячем sticky, сбрасываем счётчик
+            scrollUpAccum = 0;
+            hideSticky();
           }
         }
 
-        // Always show at very top
-        if (currentScrollY <= 0) {
-          header.classList.remove('header--hidden');
-          scrolledUpDistance = 0;
-        }
-
-        lastScrollY = currentScrollY;
-      }, { passive: true });
+        lastScrollY = currentY;
+        ticking = false;
+      });
     }
-    // ───────────────────────────────────────────────────────────────────────
+
+    window.addEventListener('scroll', onScroll, { passive: true });
   });
+
+  // ============================================
+  // REAL-TIME CART COUNT BADGE LOGIC
+  // ============================================
+  (function() {
+    function updateAllCartBadges(count) {
+      const numCount = parseInt(count, 10) || 0;
+      const badges = document.querySelectorAll('.cart-count-badge');
+      badges.forEach(badge => {
+        badge.setAttribute('data-cart-count', numCount);
+        badge.textContent = numCount > 99 ? '99+' : numCount;
+        if (numCount > 0) {
+          badge.classList.remove('is-hidden');
+        } else {
+          badge.classList.add('is-hidden');
+        }
+        badge.classList.remove('badge-updated');
+        void badge.offsetWidth;
+        badge.classList.add('badge-updated');
+        setTimeout(() => badge.classList.remove('badge-updated'), 300);
+      });
+    }
+
+    async function refreshCartCount() {
+      try {
+        const root = (window.Shopify && window.Shopify.routes && window.Shopify.routes.root) || '/';
+        const res = await fetch(root + 'cart.js', { cache: 'no-store' });
+        if (res.ok) {
+          const cart = await res.json();
+          updateAllCartBadges(cart.item_count);
+        }
+      } catch (e) {
+        console.error('Failed to fetch cart count:', e);
+      }
+    }
+
+    // Standard Shopify Cart update events
+    document.addEventListener('shopify:cart:lines-update', function(event) {
+      if (event.detail && typeof event.detail.itemCount === 'number') {
+        updateAllCartBadges(event.detail.itemCount);
+      } else if (event.promise) {
+        event.promise.then(function(result) {
+          const count = result?.cart?.total_quantity ?? result?.cart?.item_count ?? result?.detail?.itemCount;
+          if (typeof count === 'number') {
+            updateAllCartBadges(count);
+          } else {
+            refreshCartCount();
+          }
+        }).catch(refreshCartCount);
+      } else {
+        refreshCartCount();
+      }
+    });
+
+    // Intercept fetch calls to cart APIs
+    const origFetch = window.fetch;
+    window.fetch = function() {
+      const url = arguments[0];
+      const urlStr = typeof url === 'string' ? url : (url && url.url) || '';
+      const isCart = /\/cart\/(add|change|update|clear)/.test(urlStr);
+
+      return origFetch.apply(this, arguments).then(function(res) {
+        if (isCart && res.ok) {
+          res.clone().json().then(function(data) {
+            if (typeof data.item_count === 'number') {
+              updateAllCartBadges(data.item_count);
+            } else {
+              refreshCartCount();
+            }
+          }).catch(refreshCartCount);
+        }
+        return res;
+      });
+    };
+
+    // Intercept XHR calls to cart APIs
+    const origXHRSend = XMLHttpRequest.prototype.send;
+    const origXHROpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function(method, url) {
+      this._cartUrl = url;
+      return origXHROpen.apply(this, arguments);
+    };
+    XMLHttpRequest.prototype.send = function() {
+      this.addEventListener('load', function() {
+        if (this._cartUrl && /\/cart\/(add|change|update|clear)/.test(this._cartUrl)) {
+          refreshCartCount();
+        }
+      });
+      return origXHRSend.apply(this, arguments);
+    };
+
+    window.addEventListener('pageshow', function(e) {
+      if (e.persisted) {
+        refreshCartCount();
+      }
+    });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', refreshCartCount);
+    } else {
+      refreshCartCount();
+    }
+  })();
 </script>
+
 
 {% schema %}
 {

@@ -1,5 +1,13 @@
 {% render 'svg-sprite' %}
 {% render 'landing-v1-styles' %}
+<style>
+    .page-wrapper .header.header--static{
+    position: static !important;
+  }
+  .page-wrapper .header-section, .shopify-section.header-section{
+  height: auto !important;
+}
+</style>
 <section class="hero">
     <div class="hero__background">
         <picture>
@@ -24,7 +32,7 @@
                     so mornings start easier instead of dragging.
                 </p>
 
-                <a class="hero__button button button--primary" href="#">
+                <a class="hero__button button button--primary" href="#pricing">
                     TRY API-COMPLEX
                     <svg aria-hidden="true">
                         <use href="#arrow-icon"></use>
@@ -104,13 +112,6 @@
                         <h3 class="hero__badge-title">
                             cGMP-certified
                         </h3>
-
-                        <a class="hero__badge-link" href="#">
-                            Published Certificate of Analysis
-                            <svg aria-hidden="true">
-                                <use href="#arrow-icon"></use>
-                            </svg>
-                        </a>
                     </div>
                 </li>
 
@@ -122,6 +123,12 @@
                         <h3 class="hero__badge-title">
                             Third-party lab tested
                         </h3>
+                        <a class="hero__badge-link" href="#">
+                            Certificate of Analysis
+                            <svg aria-hidden="true">
+                                <use href="#arrow-icon"></use>
+                            </svg>
+                        </a>
                     </div>
                 </li>
 
@@ -302,7 +309,7 @@
 
                 </div>
 
-                <a class="system__button button button--primary" href="#">
+                <a class="system__button button button--primary" href="#" data-image-modal="{{ 'myvox-suppl.png' | file_url }}" data-scale-desktop="2" data-scale-mobile="1.5">
                     SEE THE INGREDIENTS
                     <svg aria-hidden="true">
                         <use href="#arrow-icon"></use>
@@ -587,115 +594,110 @@
         </div>
     </div>
 </section>
-{% render 'async-stylesheet', file: 'landing-properties-block.css' %}
-<div class="properties-block">
-    <div class="properties-block__image">
+{% render 'async-stylesheet', file: 'landing-props-ticker.css' %}
+<div class="props-ticker props-ticker--top">
+    <div class="props-ticker__image">
         <picture>
             <source srcset="{{ 'properties-block-bg-1.avif' | file_url }}" type="image/avif">
             <img src="{{ 'properties-block-bg-1.webp' | file_url }}" alt="MYVOX-9 properties" fetchpriority="low"
                 loading="lazy" decoding="async">
         </picture>
     </div>
-    <div class="properties-block__items properties-block__items-1 swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#microscope-icon"></use>
-                    </svg>
-                    <span>Every batch lab-tested</span>
-                </div>
+    <div class="props-ticker__track props-ticker__track--left">
+        <div class="props-ticker__group">
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#microscope-icon"></use>
+                </svg>
+                <span>Every batch lab-tested</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#snow-icon"></use>
-                    </svg>
-                    <span>Freeze-dried to preserve potency</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#snow-icon"></use>
+                </svg>
+                <span>Freeze-dried to preserve potency</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#guarantee-icon"></use>
-                    </svg>
-                    <span>cGMP-certified</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#guarantee-icon"></use>
+                </svg>
+                <span>cGMP-certified</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#euro-flag-icon"></use>
-                    </svg>
-                    <span>Crafted in the EU</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#euro-flag-icon"></use>
+                </svg>
+                <span>Crafted in the EU</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#usa-flag-icon"></use>
-                    </svg>
-                    <span>Ships from our US warehouse</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="24" height="18" rx="2" fill="url(#pattern0_27109_5736)" />
+                    <defs>
+                        <pattern id="pattern0_27109_5736" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_27109_5736"
+                                transform="matrix(0.00714286 0 0 0.00952381 -0.214286 0)" />
+                        </pattern>
+                        <image id="image0_27109_5736" width="200" height="105" preserveAspectRatio="none"
+                            xlink:href="data:image/png;base64,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" />
+                    </defs>
+                </svg>
+
+                <span>Ships from our US warehouse</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#diamond-icon"></use>
-                    </svg>
-                    <span>No proprietary blends </span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#diamond-icon"></use>
+                </svg>
+                <span>No proprietary blends </span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#microscope-icon"></use>
-                    </svg>
-                    <span>Every batch lab-tested</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#microscope-icon"></use>
+                </svg>
+                <span>Every batch lab-tested</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#snow-icon"></use>
-                    </svg>
-                    <span>Freeze-dried to preserve potency</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#snow-icon"></use>
+                </svg>
+                <span>Freeze-dried to preserve potency</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#guarantee-icon"></use>
-                    </svg>
-                    <span>cGMP-certified</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#guarantee-icon"></use>
+                </svg>
+                <span>cGMP-certified</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#euro-flag-icon"></use>
-                    </svg>
-                    <span>Crafted in the EU</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#euro-flag-icon"></use>
+                </svg>
+                <span>Crafted in the EU</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#usa-flag-icon"></use>
-                    </svg>
-                    <span>Ships from our US warehouse</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="24" height="18" rx="2" fill="url(#pattern0_27109_5736)" />
+                    <defs>
+                        <pattern id="pattern0_27109_5736" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_27109_5736"
+                                transform="matrix(0.00714286 0 0 0.00952381 -0.214286 0)" />
+                        </pattern>
+                        <image id="image0_27109_5736" width="200" height="105" preserveAspectRatio="none"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABpCAIAAADwevuCAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAyKADAAQAAAABAAAAaQAAAADWHIuzAAAPYElEQVR4Ae1de1RWVRbn8QGC+ACVl7wExAcoIJSjoKAgaoqmYs5kZgKar54z1R9TSdpqrcxa06ycUrMRWzkqVlOik6ilS63RQstXRioICILJwxTlPT86dr773Xu/Dxrvucyau1l3fWvfc/bZv3P22Z7HPvtc7RPiH7cz0t+zFV8aqbld1laHLkMm4P9rDagYVj+v3p1pcvfu3fB0hrOTAjvJpjluZ5pAPL9VAyqGtWzZ/Z2xmNGjI0aNiugQz9XVZenSaR2ygaGrcDtTN+L5rRow8QLd3V3vvWeQg4N9QkJkeXnKj4VlxcVXioqucAZO3DtycHe3bmnTRiOlpaXlZv3tY0fP8VxODBjgExzsMzDcf8yY4cnJMa2tbce+/uHmjVucgRFdhSurBr1qqwHziIUub25ueerp2S4uTg89lDJ8eEhZ2U+qYCWXqmY/kBgTE4bnDw8ml19WZystvTpggO/cuSkQ+MwzcxwcHZRWBfldhavaNErUSgNmw4LEQ4dOFRQUtrS0NjQ0rVuX19TUrApz5Ur1tm0HMALh+eCDfdbsD2a6Zcv+xsYmCDx67Nz+fcdVpXUhrrX6UPrda8DCsDC0ODs7zU7PXr8uLzY23Ib06KjQZ59Z99STayMigm2wxd0z6B9bPp81c4WDvX23bs7WOLsK11p9KP3uNWAv9WPBqjBKtbW1QS7s4PbtRg6AdZV0IcVzOcE4rbHZ29s7OZkwejG2/v37grj86xyqGy5A9+etZHWgX6EaMC/eAcM7HrTUqnx9+2RlTZEaFs/lBKvlwoVTLpf9xC2G58JYpcKTkqLb7Nq2fLCflZJm8SLI0hwXMp1792Kg9CtUA46BgSNtAISF9X/s8RnYAA4ZEhga6hcRGXz6VFFTU4usiJuby+Il06aljcYEiskxNnYgzKu6+mcZG16npo16aN4EGNbQocGQhi1hYWGZkk1zXA6RkTGZ00SI04DFGksJc/785Q8/PBQS4ou5rE/fXptz8uvrG5RsSEQWGMAGZhRBQSUbUnbl/bukpLJfv154QOBVlU1zXFUUShSngQ4MC8BVlTUwl+MFhXZtbXV1N61VpT2rrQ1sYEYRa2yYE6/X1ZeVXcUDgq3nVJm1xVWFoERxGrBYYzEYJydH6WQXFOS9aNEbFy+U3zdlZI8ebj//XM/YHBzajbK1tZW9Imtn3le7dx0NCfVDkaqqWpaOX5lArKIyM15DekpKLOdRsmmOK8UiWrQGLHaFDGxBxqScTfncYqzVYMSIgRhvTpw4b42BpcOVP29eak7OHttsyNUH99DhNzusCTHcvQbMIxbcAfAd2NvbTZ8e//3ZkjNninFco1xRYaZzd3cF8PjkGPyeP1+O3xs3biknNazoHR0dsZafMTPh448PwYmBsUrpdO0q3LvXHUmwoQHziAUv5eLFaemzExn3peLK7Owc1TX4pEn3PP3H2ThdBme7j/6dnbm5B5UYOCjMfmk+9pIsa8+er19fk3vrlnztrzPuSrf2fwn0J1oDZsNiSC+tfGT8+Bh0/7S056UuJVk9ksZFr1q1AIkvvPD3A198K8vlrxgCP935Mkzw889PrHhxE09XErrhUqCfUvkiUix2hZjmAgK8Vq/eevFiBR9pVFExwW3fdgCP7SMdCIEoCIRYCFcVhcSuwrVWH0q/ew1YjFhYPLm6uVytqnV0dPD373fpUiUH8PH1vFJRzV/hrILF4JUTLEvGhp0d3Ao4hEYQ3636BizFGBtbpUlf9cEFOo1YrAtE/1qMWOhpWBUgYQpSq4J/fNnS6dKqMKtCCidY7vLl98PvwDkhBKLwCrHcjPCKkK/4+EjOphsuRyRCtAY6ONIJD/eHBcDhlJIyoq72Zvggf4xbWLDLqtWzp1vqxLghg4PS08fCCr28emOTeO3adRkbpjwszhDpNXXqqMGDAzEu+vr1kVow59cWl4sFEX+jVPpKtCANWIxYSowLF8p9fDxnzEhAAEJm1uSqytrr1+84SKXMSEQWGMAGZhRBQSkDo2Ft8GJMSI2NHDYADwi8Kv0UYNYWV1kTShGtgQ4MCxPZ5s35cD4hAOHkdxePHv3eWoWQBQawgRlF2AyoZMac+M+PDyMXDwg28yrZNMdVQlCKUA2YHaTWYEaOHIL4lh07DmL9JIu+khZBVmNT86yZ2RMmxCK+7/ChU9JcKT1kSNATj78F5rFjh+/ff0KaJaU1x2XC43M3SlGIFqQBi13hHdXHRx45cprjwTPO3OVYIZlMOEa8E68MDwJ4SkurGCfYEIvM5jVexLbATrJphcsqQ0c6TA+if1Wmwsys+wID242G/XFLgtFwGllJ46KSkqJ+5bJDFl8tSdngtsjMtAiB4rmcYEJE4/KqEqGDBswjFnxLy5ZNR9BmbFw4nAiVlTXvbfzXuXMlskpg/Jg5MyFhzDDmQcUqG7PeRx8d5lbF+bHvy8ic7O3tAV9XwTeFFRXX1q79ROp0YJw649KIxTtIKGEesdDlb639xOTkCDw/vz7vbtiltCpkwYAQx/ftiQseHj3wgMCr0qrAieIQAlGgIRbClVaFrK7CBTT9idOA2bCAgSt+zk6mr748A0NRdSvwejQ0NOIuKx4QPFFJQAhEQSDEql4qZEW6CldZYUrRSgMWu0I4zbdtP4ALgFhj+fXvi/uDHAYOKumVh7rr9Quz1iB3fPIIzgNCxgYhWZlrSkqqklNGSIME4RoFM3dJ6IYrrSrRQjVgXmPZgEGwaEbmpHc37LbBw7IWLZq6ceNubjHW+OPiBmEkw+VYawwsXXNciKU1lm2da5VrMWIphSLiBS6GYcMGpKWNzt1+EFefb99ukAYusyIIPu7WzQXBolOm/u706aJTp4rgelCGXoGZnSTiUw6g2f0cHussRdcclwv/+tE/cZoIcRroYMTCJnFF9sM8NgbBemte266M08IMuGRJ2qz0sdgzoq6wmOwVOdzFJa19YlLUc8/9npnXzZu333g9Nz//GykDozXH5RAU3cBVIZTo4BAaW7b8/IIHHkiEM3PfvoJVK9/HUKSsEOY+HOkEBnmFhPhhoJr74Cs1NSqXClEQgan4WEjyLyuzl7JzEAColIYUzXE5Ch1Cc1UIJSx2hapIgwcHnDtXCpMKDPTGZKfKg0RkgQFsYEYRa2xIj4oKfX/zXjwgbLBpjmsDi7I014DKVIgPK/A78sDz9+9bXl6NSzuenj0aGpu51wChMsjlXglEy7g4m3D7GStuPz9P6SdoZAKx5cQ+EWU5wVolY9Mcl6HQVMj0IPpXZcTCYTMzGoYNE2FXwWA03KqQBed7fMIwXj9ksTv1YJZaFRzrS5dZBAkyq0JBTjAhonF5VYnQQQPmNRY+DzlxYtzQoUFYg7cH6/Xr3dTcorpUgklFR4fhKwyYrTA+IexYZiKs3ri5OmbMsJQJsVhR4Z40PseAgVB2PghOnXFpjaWDVQHCPGJhj4aOf3j+RKzTcbWwt4d7cVF7VLvy7+yZ4sTEKGwV8YDAq5IHKSgOIRAFgRAL4YBQcnYVrrImlKKhBiz8WLjWjAM+d/dweMZ35LZ7rVSRMOV99tmxmBEDkQuCzYBKThSHkPnzU+Gyh1gbd6b1xI1+9UVlVSlFcw1YGBbckrhLg2C9+PgI3KA/fNgclSUDHjQo4LHlf8W8Nm58jN3eAlkuf4WH/Z23d+7efXT5YzNwMVp5r5px6okbkJ7Gq0eEOA1Y7ArhZOduKikNeFyCkF5M5bmcYFW0xoZcKScuSePDa/BpsVLSLCmtOS4E0pEO07noX/MaC0jcqmQ0/AILHpkorQrn5ATLXbBgUlCwN+eU5kpp2N+4pOgO2TTH5YhEiNaAxYilBIuMDF6ydDo+koYzFhzU4KrWm3/5UPmVrF69uj/x5CxcT8W1LQT0Xb1a9/bfPjl9ulgmEAc+c+YkYZ/Iv0G6b28BPsCsDOfSFldaDRqxpNoQR1uMWEoYGMea17YhoA9ZOGZZ/epWpVUhC4nIAgNoMKOI0qqQBQPauvULXKCAcwsPCLwqrQqc2uJCIP3prIEODAu1wfXUluYWHOrB4aQ8fubVRRYYwAZm5Y1WzgYCn+bG4IcHhDRdRmuOK5NPr0I1YLErZEiyO15eXh6PLFiNC9Dwi0qD9bDKBj9fOSFr06Y9iH/H5xt8vD3Ly6/xessEIpp+8aNvIDcx0bzMwquMTXNcXh8idNCAyhpryZJp69fndRish0+627XZHTum8r/oSOsNl1jWwin4hpY0UZXWB3d9WpgqOiVqqwHziAVnkoeHO9bXCNb78cfLZ88WY3ZTOj/B4OvriUqkpsbhFx+TwW9FRbVyqYRDawxC+Ox2WtqovJ1fgaGm5oYy+k9n3PPrN2urQZKmqgHzWSE6Pj09cdXLGa6uzrgwGBkRfOTIGdXwzqjosFdXL8J5Do7/Jk++t/CHsiK1w5+ePbu/8OI8bANhXiwGEDFbSm++zrh0VqhqB5onWhgWjlbgOsKFwfZgvbmv1NbeUMXDkTOiQ3E/ArmIFD148DtVNhwC7kWQ4JykX4IEj2PbqLQqFIRh6YlLhqXaWZonWuwKEawXENDv+T+/d/LkxaERQTbAomPCNmzYhQeEDTYIgSgIhFjbQYJdgmuj5pR1lxqwWLwjWsbk6ACnFBZS3j4e0k/4yWDgL4UjFImckDGwV+wQK6/UYEyCB7W5pVUaziXl1xOXAv2kmhdHWxiWOJj/HclkWPr0hcVUqA8koRhBA6bUUA8jtJO3MSztYU4TIU4D9lgAiZNOkg2rAZoKDdv1YhtOhiVWv4aVToZl2K4X23AyLLH6Nax0MizDdr3YhpNhidWvYaWbSnd0HCllWO1Qw/9rDdh/GtIeVkV/pAFtNUBTobb6JGl3NECGRaYgRANkWELUSkLJsMgGhGiADEuIWkkoGRbZgBANmHxSEoUIJqHG1gDFYxm7/4W1nqZCYao1tmAyLGP3v7DWk2EJU62xBZNhGbv/hbWeDEuYao0tmAzL2P0vrPWm6uMnhQknwcbVAMVjGbfvhbacpkKh6jWucDIs4/a90JaTYQlVr3GFk2EZt++FtpwMS6h6jSucDMu4fS+05Sb30GChACTcmBqgeCxj9rvwVtNUKFzFxgQgwzJmvwtvNRmWcBUbE4AMy5j9LrzVZFjCVWxMADIsY/a78FabGmvrhIMQgPE0QPFYxutzXVpMU6EuajYeCBmW8fpclxaTYemiZuOBkGEZr891aTEZli5qNh4IGZbx+lyXFpNh6aJm44H8B4bh2bxNQvkOAAAAAElFTkSuQmCC" />
+                    </defs>
+                </svg>
+
+                <span>Ships from our US warehouse</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#diamond-icon"></use>
-                    </svg>
-                    <span>No proprietary blends </span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#diamond-icon"></use>
+                </svg>
+                <span>No proprietary blends </span>
             </div>
         </div>
-
     </div>
 </div>
 {% render 'async-stylesheet', file: 'landing-hive-triad.css' %}
@@ -736,7 +738,7 @@
                             Vitamins, minerals, amino acids, enzymes arrive already unlocked.
                         </p>
 
-                        <a class="hive-triad__link" href="#">
+                        <a class="hive-triad__link" href="#" data-triad-target="bee-bread">
                             STUDY
                             <svg aria-hidden="true">
                                 <use href="#arrow-icon"></use>
@@ -804,7 +806,7 @@
                             that supports the body's natural cellular renewal and recovery.
                         </p>
 
-                        <a class="hive-triad__link" href="#">
+                        <a class="hive-triad__link" href="#" data-triad-target="royal-jelly">
                             STUDY
                             <svg aria-hidden="true">
                                 <use href="#arrow-icon"></use>
@@ -851,7 +853,7 @@
                             balance – so less of your energy gets quietly used up.
                         </p>
 
-                        <a class="hive-triad__link" href="#">
+                        <a class="hive-triad__link" href="#" data-triad-target="propolis">
                             STUDY
                             <svg aria-hidden="true">
                                 <use href="#arrow-icon"></use>
@@ -908,7 +910,7 @@
                         results vary.</span>
                 </div>
 
-                <a class="hive-triad__quote-link" href="#">
+                <a class="hive-triad__quote-link" href="#" data-image-modal="{{ 'myvox-suppl.png' | file_url }}" data-scale-desktop="2" data-scale-mobile="1.5">
                     SEE THE FULL SUPPLEMENT FACTS PANEL
                     <svg aria-hidden="true">
                         <use href="#arrow-icon"></use>
@@ -940,7 +942,7 @@
 
                 </div>
 
-                <a class="hive-triad__button button" href="#">
+                <a class="hive-triad__button button" href="#pricing">
                     SEE THE OFFER
                     <svg aria-hidden="true">
                         <use href="#arrow-icon"></use>
@@ -1097,7 +1099,7 @@
                         Read them yourself.
                     </p>
 
-                    <a class="research__button button button--outline" href="#">
+                    <a class="research__button button button--outline" href="/pages/science">
                         <svg aria-hidden="true">
                             <use href="#link-icon"></use>
                         </svg>
@@ -1319,7 +1321,7 @@
             </div>
 
             <div class="advantages__footer">
-                <a class="advantages__button button" href="#">
+                <a class="advantages__button button" href="#pricing">
                     START MY FIRST CYCLE
                     <svg aria-hidden="true">
                         <use href="#arrow-icon"></use>
@@ -1493,7 +1495,7 @@
 
                 </div>
 
-                <a class="comparison__button button" href="#">
+                <a class="comparison__button button" href="#pricing">
                     SEE THE OFFER
                     <svg>
                         <use href="#arrow-icon"></use>
@@ -1713,7 +1715,7 @@
 
             </div>
 
-            <a class="expect__button button--primary" href="#">
+            <a class="expect__button button--primary" href="#pricing">
                 Start My First Cycle
 
                 <svg class="button__icon">
@@ -1865,16 +1867,12 @@
                     Never mix Api-Complex into hot liquids.
                 </h3>
 
-                <p class="ritual__warning-text">
+            <p class="ritual__warning-text">
                     Anything above 104°F / 40°C damages the royal jelly and kills the live enzymes. Warm is
                     fine. Hot is not.
                 </p>
 
             </div>
-
-        </div>
-
-        <div class="ritual__footer">
 
             <p class="ritual__text">
                 Api-Complex works on a loop, not a one-time fix.
@@ -1894,86 +1892,192 @@
 
     </div>
 </section>
-{% render 'async-stylesheet', file: 'landing-properties-block-2.css' %}
+{% render 'async-stylesheet', file: 'landing-props-ticker.css' %}
 
-<div class="properties-block properties-block--dark">
-    <div class="properties-block__image">
+<div class="props-ticker props-ticker--dark props-ticker--bottom">
+    <div class="props-ticker__image">
         <picture>
             <source srcset="{{ 'properties-block-bg-2.avif' | file_url }}" type="image/avif">
             <img src="{{ 'properties-block-bg-2.webp' | file_url }}" alt="MYVOX-9 properties" fetchpriority="low"
                 loading="lazy" decoding="async">
         </picture>
     </div>
-    <div class="properties-block__items properties-block__items-2 swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#bee-icon"></use>
-                    </svg>
-                    <span>Sourced from protected apiaries</span>
-                </div>
+    <div class="props-ticker__track props-ticker__track--left">
+        <div class="props-ticker__group">
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#bee-icon"></use>
+                </svg>
+                <span>Sourced from protected apiaries</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#snow-icon"></use>
-                    </svg>
-                    <span>Freeze-dried to preserve potency</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#snow-icon"></use>
+                </svg>
+                <span>Freeze-dried to preserve potency</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#guarantee-icon"></use>
-                    </svg>
-                    <span>cGMP-certified</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#guarantee-icon"></use>
+                </svg>
+                <span>cGMP-certified</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#euro-flag-icon"></use>
-                    </svg>
-                    <span>Crafted in the EU</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#euro-flag-icon"></use>
+                </svg>
+                <span>Crafted in the EU</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#chemistry-icon"></use>
-                    </svg>
-                    <span>Third-party lab tested</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#chemistry-icon"></use>
+                </svg>
+                <span>Third-party lab tested</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#eco-icon"></use>
-                    </svg>
-                    <span>No proprietary blends</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#eco-icon"></use>
+                </svg>
+                <span>No proprietary blends</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#usa-flag-icon"></use>
-                    </svg>
-                    <span>Ships from our US warehouse</span>
-                </div>
+            <div class="props-ticker__item">
+            
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="24" height="18" rx="2" fill="url(#pattern0_27109_4538)" />
+                    <defs>
+                        <pattern id="pattern0_27109_4538" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_27109_4538" transform="matrix(0.00714286 0 0 0.00952381 -0.214286 0)" />
+                        </pattern>
+                        <image id="image0_27109_4538" width="200" height="105" preserveAspectRatio="none"
+                            xlink:href="data:image/png;base64,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" />
+                    </defs>
+                </svg>
+                <span>Ships from our US warehouse</span>
             </div>
-            <div class="swiper-slide">
-                <div class="properties-block__item">
-                    <svg>
-                        <use href="#diamond-icon"></use>
-                    </svg>
-                    <span>No sugar, no fillers, no artificial anything</span>
-                </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#diamond-icon"></use>
+                </svg>
+                <span>No sugar, no fillers, no artificial anything</span>
             </div>
-
-
         </div>
-
+        <div class="props-ticker__group">
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#bee-icon"></use>
+                </svg>
+                <span>Sourced from protected apiaries</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#snow-icon"></use>
+                </svg>
+                <span>Freeze-dried to preserve potency</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#guarantee-icon"></use>
+                </svg>
+                <span>cGMP-certified</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#euro-flag-icon"></use>
+                </svg>
+                <span>Crafted in the EU</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#chemistry-icon"></use>
+                </svg>
+                <span>Third-party lab tested</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#eco-icon"></use>
+                </svg>
+                <span>No proprietary blends</span>
+            </div>
+            <div class="props-ticker__item">
+               <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="24" height="18" rx="2" fill="url(#pattern0_27109_4538)" />
+                    <defs>
+                        <pattern id="pattern0_27109_4538" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_27109_4538" transform="matrix(0.00714286 0 0 0.00952381 -0.214286 0)" />
+                        </pattern>
+                        <image id="image0_27109_4538" width="200" height="105" preserveAspectRatio="none"
+                            xlink:href="data:image/png;base64,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" />
+                    </defs>
+                </svg>
+                <span>Ships from our US warehouse</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#diamond-icon"></use>
+                </svg>
+                <span>No sugar, no fillers, no artificial anything</span>
+            </div>
+        </div>
+        <div class="props-ticker__group">
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#bee-icon"></use>
+                </svg>
+                <span>Sourced from protected apiaries</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#snow-icon"></use>
+                </svg>
+                <span>Freeze-dried to preserve potency</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#guarantee-icon"></use>
+                </svg>
+                <span>cGMP-certified</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#euro-flag-icon"></use>
+                </svg>
+                <span>Crafted in the EU</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#chemistry-icon"></use>
+                </svg>
+                <span>Third-party lab tested</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#eco-icon"></use>
+                </svg>
+                <span>No proprietary blends</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="24" height="18" rx="2" fill="url(#pattern0_27109_4538)" />
+                    <defs>
+                        <pattern id="pattern0_27109_4538" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_27109_4538" transform="matrix(0.00714286 0 0 0.00952381 -0.214286 0)" />
+                        </pattern>
+                        <image id="image0_27109_4538" width="200" height="105" preserveAspectRatio="none"
+                            xlink:href="data:image/png;base64,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" />
+                    </defs>
+                </svg>
+                <span>Ships from our US warehouse</span>
+            </div>
+            <div class="props-ticker__item">
+                <svg>
+                    <use href="#diamond-icon"></use>
+                </svg>
+                <span>No sugar, no fillers, no artificial anything</span>
+            </div>
+        </div>
     </div>
 </div>
 {% render 'async-stylesheet', file: 'landing-reviews.css' %}
@@ -2438,7 +2542,7 @@
                                 getting older. My wife noticed before I did, said I wasn't dropping onto the
                                 couch at 7 anymore. I checked, and the only thing I'd changed was this. The
                                 taste isn't great. I genuinely don't care.
-
+                            </p>
                             <div class="reviews__author">
 
                                 <picture>
@@ -2505,7 +2609,7 @@
 
             </div>
 
-            <a class="button button--primary" href="#">
+            <a class="button button--primary" href="#pricing">
                 Get My First Box
 
                 <svg class="button__icon">
@@ -2601,328 +2705,10 @@
         </div>
     </div>
 </section>
-{% render 'async-stylesheet', file: 'landing-pricing.css' %}
+{% render 'async-stylesheet', file: 'landing-pricing-152.css' %}
+ 
+{% render 'pricing-frame-152' %}
 
-<section class="pricing">
-    <div class="pricing__image">
-        <picture>
-            <source media="(max-width: 650px)" srcset="{{ 'pricing-bg-mobile.avif' | file_url }}" type="image/avif">
-            <source media="(max-width: 650px)" srcset="{{ 'pricing-bg-mobile.webp' | file_url }}" type="image/webp">
-            <source srcset="{{ 'pricing-bg.avif' | file_url }}" type="image/avif">
-            <img src="{{ 'pricing-bg.webp' | file_url }}" alt="Choose How You Start" fetchpriority="low" loading="lazy"
-                decoding="async">
-        </picture>
-    </div>
-    <div class="container">
-        <h2 class="pricing__title">
-            Choose How You Start
-        </h2>
-
-        <div class="pricing__cards">
-            <article class="pricing-card pricing-card--subscription">
-                <div class="pricing-card__image">
-                    <picture>
-                        <source srcset="{{ 'pricing-card-bg.avif' | file_url }}" type="image/avif">
-                        <img src="{{ 'pricing-card-bg.webp' | file_url }}" alt="Api-Complex subscription"
-                            fetchpriority="low" loading="lazy" decoding="async">
-                    </picture>
-                </div>
-                <div class="pricing-card__gallery">
-                    <button class="pricing-card__arrow pricing-card__arrow--dark--prev pricing-card__arrow--prev"
-                        type="button">
-                        <svg>
-                            <use href="#arrow-icon"></use>
-                        </svg>
-                    </button>
-
-                    <div class="pricing-card__slider pricing-card__slider-1 swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <picture>
-                                    <source srcset="{{ 'pricing-image-dark.avif' | file_url }}" type="image/avif">
-                                    <img src="{{ 'pricing-image-dark.webp' | file_url }}" alt="Api-Complex subscription"
-                                        fetchpriority="low" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide">
-                                <picture>
-                                    <source srcset="{{ 'land-product-2.avif' | file_url }}" type="image/avif">
-                                    <img src="{{ 'land-product-2.webp' | file_url }}" alt="Api-Complex subscription"
-                                        fetchpriority="low" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide">
-                                <picture>
-                                    <source srcset="{{ 'land-product-3.avif' | file_url }}" type="image/avif">
-                                    <img src="{{ 'land-product-3.webp' | file_url }}" alt="Api-Complex subscription"
-                                        fetchpriority="low" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide">
-                                <picture>
-                                    <source srcset="{{ 'land-product-4.avif' | file_url }}" type="image/avif">
-                                    <img src="{{ 'land-product-4.webp' | file_url }}" alt="Api-Complex subscription"
-                                        fetchpriority="low" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide">
-                                <picture>
-                                    <source srcset="{{ 'land-product-5.avif' | file_url }}" type="image/avif">
-                                    <img src="{{ 'land-product-5.webp' | file_url }}" alt="Api-Complex subscription"
-                                        fetchpriority="low" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <button class="pricing-card__arrow pricing-card__arrow--dark--next pricing-card__arrow--next"
-                        type="button">
-                        <svg>
-                            <use href="#arrow-icon"></use>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="pricing-card__pagination pricing-card__pagination--dark">
-
-                </div>
-
-                <span class="pricing-card__badge">
-                    <svg>
-                        <use href="#like-icon"></use>
-                    </svg>
-                    Best Value: Smart Subscription
-                </span>
-
-                <div class="pricing-card__price">
-                    <span class="pricing-card__old-price">$149</span>
-
-                    <div class="pricing-card__current-price">
-                        <strong>$79</strong>
-                        <span>/ per shipment</span>
-                    </div>
-
-                    <span class="pricing-card__saving pricing-card__saving--mobile">
-                        save $70 / 47%
-                    </span>
-                </div>
-
-                <span class="pricing-card__saving">
-                    save $70 / 47%
-                </span>
-
-                <p class="pricing-card__note">
-                    92% of subscribers continue past their first box
-                </p>
-
-                <p class="pricing-card__headline">
-                    30 sticks every 40 days — your 30-on / 10-off cycle, <br>
-                    running on autopilot for as long as you want
-                </p>
-
-                <p class="pricing-card__subtitle">
-                    Full-strength hive dosing
-                </p>
-
-                <ul class="pricing-card__features">
-                    <li>
-                        <svg>
-                            <use href="#check-icon"></use>
-                        </svg>
-                        Free shipping, every time
-                    </li>
-                    <li class="modal-item">
-                        <svg>
-                            <use href="#check-icon"></use>
-                        </svg>
-                        <div>
-                            All bonuses included ($136 in extras)
-
-                            <button type="button" class="bonus-modal-trigger" aria-controls="bonus-modal"
-                                aria-expanded="false">
-                                See what's inside
-                                <svg>
-                                    <use href="#arrow-icon"></use>
-                                </svg>
-                            </button>
-                        </div>
-
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="#check-icon"></use>
-                        </svg>
-                        Founder Price Lock
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="#check-icon"></use>
-                        </svg>
-                        Guaranteed delivery, even when we sell out
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="#check-icon"></use>
-                        </svg>
-                        Skip, pause, or cancel anytime, in one click
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="#check-icon"></use>
-                        </svg>
-                        One stick, and the system works for you
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="#check-icon"></use>
-                        </svg>
-                        60-day money-back guarantee
-                    </li>
-                </ul>
-
-                <a class="pricing-card__button button" href="#">
-                    Start My First Cycle - $79
-                    <svg>
-                        <use href="#arrow-icon"></use>
-                    </svg>
-                </a>
-            </article>
-
-            <article class="pricing-card pricing-card--single">
-                <div class="pricing-card__gallery">
-                    <button class="pricing-card__arrow pricing-card__arrow--light--prev pricing-card__arrow--prev"
-                        type="button">
-                        <svg>
-                            <use href="#arrow-icon"></use>
-                        </svg>
-                    </button>
-
-                    <div class="pricing-card__slider pricing-card__slider-2 swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <picture>
-                                    <source srcset="{{ 'pricing-image-light.avif' | file_url }}" type="image/avif">
-                                    <img src="{{ 'pricing-image-light.webp' | file_url }}" alt="Api-Complex subscription"
-                                        fetchpriority="low" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide">
-                                <picture>
-                                    <source srcset="{{ 'land-product-2-otp.avif' | file_url }}" type="image/avif">
-                                    <img src="{{ 'land-product-2-otp.webp' | file_url }}" alt="Api-Complex subscription"
-                                        fetchpriority="low" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide">
-                                <picture>
-                                    <source srcset="{{ 'land-product-3-otp.avif' | file_url }}" type="image/avif">
-                                    <img src="{{ 'land-product-3-otp.webp' | file_url }}" alt="Api-Complex subscription"
-                                        fetchpriority="low" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide">
-                                <picture>
-                                    <source srcset="{{ 'land-product-4-otp.avif' | file_url }}" type="image/avif">
-                                    <img src="{{ 'land-product-4-otp.webp' | file_url }}" alt="Api-Complex subscription"
-                                        fetchpriority="low" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide">
-                                <picture>
-                                    <source srcset="{{ 'land-product-5-otp.avif' | file_url }}" type="image/avif">
-                                    <img src="{{ 'land-product-5-otp.webp' | file_url }}" alt="Api-Complex subscription"
-                                        fetchpriority="low" loading="lazy" decoding="async">
-                                </picture>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <button class="pricing-card__arrow pricing-card__arrow--light--next pricing-card__arrow--next"
-                        type="button">
-                        <svg>
-                            <use href="#arrow-icon"></use>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="pricing-card__pagination pricing-card__pagination--light">
-                </div>
-
-                <span class="pricing-card__badge">
-                    One-Time Box
-                </span>
-
-                <div class="pricing-card__price">
-                    <span class="pricing-card__old-price">$149</span>
-
-                    <div class="pricing-card__current-price">
-                        <strong>$109</strong>
-                    </div>
-
-
-                    <span class="pricing-card__saving pricing-card__saving--mobile">
-                        save $40 / 27%
-                    </span>
-                </div>
-
-                <span class="pricing-card__saving">
-                    save $40 / 27%
-                </span>
-
-                <p class="pricing-card__headline">
-                    30 sticks — your first cycle to try the system
-                </p>
-
-                <p class="pricing-card__subtitle">
-                    Full-strength hive dosing
-                </p>
-
-                <p class="pricing-card__shipping">
-                    + $9.95 shipping
-                </p>
-
-                <ul class="pricing-card__features pricing-card__features--comparison">
-                    <li class="pricing-card__feature pricing-card__feature--positive">
-                        <svg>
-                            <use href="#check-icon"></use>
-                        </svg>
-                        60-day money-back guarantee
-                    </li>
-
-                    <li class="pricing-card__feature pricing-card__feature--negative">
-                        <svg>
-                            <use href="#x-icon"></use>
-                        </svg>
-                        Bonuses
-                    </li>
-
-                    <li class="pricing-card__feature pricing-card__feature--negative">
-                        <svg>
-                            <use href="#x-icon"></use>
-                        </svg>
-                        Free shipping
-                    </li>
-
-                    <li class="pricing-card__feature pricing-card__feature--negative">
-                        <svg>
-                            <use href="#x-icon"></use>
-                        </svg>
-                        Price Lock
-                    </li>
-                </ul>
-
-                <a class="pricing-card__button pricing-card__button--secondary button" href="#">
-                    Buy One Box - $109
-                    <svg>
-                        <use href="#arrow-icon"></use>
-                    </svg>
-                </a>
-            </article>
-        </div>
-    </div>
-</section>
 {% render 'async-stylesheet', file: 'landing-faq.css' %}
 
 <section class="faq">
@@ -2945,8 +2731,8 @@
 
                     <div class="faq__image">
                         <picture>
-                            <source srcset="{{ 'faq-image.avif' | file_url }}" type="image/avif">
-                            <img src="{{ 'faq-image.webp' | file_url }}" alt="Questions People Ask Before Their First Box"
+                            <source srcset="{{ 'faq-img-new.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'faq-img-new.webp' | file_url }}" alt="Questions People Ask Before Their First Box"
                                 fetchpriority="low" loading="lazy" decoding="async">
                         </picture>
                     </div>
@@ -2956,7 +2742,7 @@
 
             <div class="faq__items">
 
-                <article class="faq-item faq-item--active">
+                <article class="faq-item">
 
                     <button class="faq-item__button" type="button" aria-expanded="true">
                         <h3 class="faq-item__title">
@@ -3294,14 +3080,14 @@
                 </p>
 
                 <div class="cta__actions">
-                    <a class="button button--primary" href="#">
+                    <a class="button button--primary" href="/cart/54218299212144:1">
                         Start My First Cycle - $79
                         <svg aria-hidden="true">
                             <use href="#arrow-icon"></use>
                         </svg>
                     </a>
 
-                    <a class="button button--secondary" href="#">
+                    <a class="button button--secondary" href="/cart/54218299212144:1">
                         Buy One Box - $109
                         <svg aria-hidden="true">
                             <use href="#arrow-icon"></use>
@@ -3394,8 +3180,8 @@
                 <article class="bonus-guide">
                     <div class="bonus-guide__image">
                         <picture>
-                            <source srcset="{{ 'bonus-image-1.avif' | file_url }}" type="image/avif">
-                            <img src="{{ 'bonus-image-1.webp' | file_url }}" alt="The 2 p.m. Energy Playbook"
+                            <source srcset="{{ 'guide-1.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'guide-1.webp' | file_url }}" alt="The 2 p.m. Energy Playbook"
                                 fetchpriority="low" loading="lazy" decoding="async">
                         </picture>
                     </div>
@@ -3421,8 +3207,8 @@
                 <article class="bonus-guide">
                     <div class="bonus-guide__image">
                         <picture>
-                            <source srcset="{{ 'bonus-image-2.avif' | file_url }}" type="image/avif">
-                            <img src="{{ 'bonus-image-2.webp' | file_url }}" alt="The Calm-Gut Field Guide"
+                            <source srcset="{{ 'guide-2.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'guide-2.webp' | file_url }}" alt="The Calm-Gut Field Guide"
                                 fetchpriority="low" loading="lazy" decoding="async">
                         </picture>
                     </div>
@@ -3448,8 +3234,8 @@
                 <article class="bonus-guide">
                     <div class="bonus-guide__image">
                         <picture>
-                            <source srcset="{{ 'bonus-image-3.avif' | file_url }}" type="image/avif">
-                            <img src="{{ 'bonus-image-3.webp' | file_url }}" alt="Deep-Sleep Blueprint " fetchpriority="low"
+                            <source srcset="{{ 'guide-3.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'guide-3.webp' | file_url }}" alt="Deep-Sleep Blueprint " fetchpriority="low"
                                 loading="lazy" decoding="async">
                         </picture>
                     </div>
@@ -3475,8 +3261,8 @@
                 <article class="bonus-guide">
                     <div class="bonus-guide__image">
                         <picture>
-                            <source srcset="{{ 'bonus-image-4.avif' | file_url }}" type="image/avif">
-                            <img src="{{ 'bonus-image-4.webp' | file_url }}" alt="The Resilient Season Checklist"
+                            <source srcset="{{ 'guide-4.avif' | file_url }}" type="image/avif">
+                            <img src="{{ 'guide-4.webp' | file_url }}" alt="The Resilient Season Checklist"
                                 fetchpriority="low" loading="lazy" decoding="async">
                         </picture>
                     </div>
@@ -3531,10 +3317,11 @@
 
     </div>
 </div>
+{% render 'triad-modals' %}
 
-
-<script src="{{ 'landing-properties-slider.js' | asset_url }}"></script>
-<script src="{{ 'landing-reviews.js' | asset_url }}"></script>
-<script src="{{ 'landing-pricing.js' | asset_url }}"></script>
-<script src="{{ 'landing-faq.js' | asset_url }}"></script>
-<script src="{{ 'landing-bonus-modal.js' | asset_url }}"></script>
+<script defer src="{{ 'landing-properties-slider.js' | asset_url }}"></script>
+<script defer src="{{ 'landing-reviews.js' | asset_url }}"></script>
+<script defer src="{{ 'landing-pricing.js' | asset_url }}"></script>
+<script defer src="{{ 'landing-faq.js' | asset_url }}"></script>
+<script defer src="{{ 'landing-bonus-modal.js' | asset_url }}"></script>
+{% render 'image-modal' %}

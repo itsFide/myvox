@@ -1,0 +1,28 @@
+.shopify-section.section-wrapper {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 0;
+}
+
+.shopify-section.section-wrapper h1 {
+    margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 1919px) {
+    .shopify-section.section-wrapper {
+        max-width: 84.746vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .shopify-section.section-wrapper {
+        max-width: 100%;
+        padding: 10vw 2.799vw;
+    }
+
+    .shopify-section.section-wrapper h1 {
+        margin-bottom: 5vw;
+    }
+}
+    

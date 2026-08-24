@@ -1,0 +1,196 @@
+/* Universal Image Modal Styles */
+
+.univ-image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s;
+  box-sizing: border-box;
+}
+
+.univ-image-modal.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Backdrop */
+.univ-image-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(6, 11, 25, 0.82);
+  /* backdrop-filter: blur(8px); */
+  /* -webkit-backdrop-filter: blur(8px); */
+  z-index: 1;
+}
+
+/* Modal Content Wrapper */
+.univ-image-modal__wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* Stage container for zooming & panning */
+.univ-image-modal__stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vw;
+  max-height: 85vh;
+  transform-origin: center center;
+  will-change: transform;
+  cursor: zoom-in;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.univ-image-modal__stage.is-zoomed {
+  cursor: grab;
+}
+
+.univ-image-modal__stage.is-dragging {
+  cursor: grabbing;
+}
+
+/* Image */
+.univ-image-modal__img {
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); */
+  pointer-events: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+  transition: opacity 0.2s ease;
+}
+
+.univ-image-modal__img.is-loading {
+  opacity: 0.3;
+}
+
+/* Control Bar */
+.univ-image-modal__controls {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(18, 24, 38, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.univ-image-modal__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.15s;
+  outline: none;
+}
+
+.univ-image-modal__btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.univ-image-modal__btn:active {
+  transform: translateY(0);
+}
+
+.univ-image-modal__close-btn {
+  background: rgba(235, 87, 87, 0.2);
+  border-color: rgba(235, 87, 87, 0.3);
+  color: #ff6b6b;
+  margin-left: 4px;
+}
+
+.univ-image-modal__close-btn:hover {
+  background: rgba(235, 87, 87, 0.4);
+  color: #ffffff;
+}
+
+/* Spinner indicator */
+.univ-image-modal__spinner {
+  position: absolute;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: univ-spin 0.8s linear infinite;
+  display: none;
+}
+
+.univ-image-modal.is-loading .univ-image-modal__spinner {
+  display: block;
+}
+
+@keyframes univ-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Prevent body scrolling when modal is active */
+body.univ-image-modal-open {
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+@media (max-width: 768px) {
+  .univ-image-modal__img {
+    max-width: 95vw;
+    max-height: 80vh;
+    border-radius: 8px;
+  }
+
+  .univ-image-modal__controls {
+    bottom: 16px;
+    padding: 6px 10px;
+    gap: 6px;
+  }
+
+  .univ-image-modal__btn {
+    min-width: 32px;
+    height: 32px;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+}

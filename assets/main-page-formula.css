@@ -102,6 +102,7 @@
     .formula {
         padding: 9.1603vw 0 10.6870vw 0;
         background-image: url('https://cdn.shopify.com/s/files/1/1024/5387/0960/files/formula-bg-mob.webp?v=1783018956');
+        background-size: 110%;
     }
 
     .formula__badge {

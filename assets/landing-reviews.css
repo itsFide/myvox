@@ -294,6 +294,10 @@
 .reviews__slider .swiper-wrapper {
   padding-top: 5px;
   padding-bottom: 15px;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .reviews .mobile-br {
   display: none;
@@ -586,7 +590,11 @@
     box-shadow: 0px 1.0178117048vw 3.0534351145vw var(--black-20);
     height: 81.4249363868vw;
     backdrop-filter: blur(1.5267175573vw);
+    -webkit-backdrop-filter: blur(1.5267175573vw);
     border-radius: 2.0356234097vw;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .reviews__card .reviews__rating {
     gap: 1.0178117048vw;
@@ -626,15 +634,17 @@
   }
   .reviews__progress {
     margin-bottom: 3.5623409669vw;
+    text-align: center;
   }
   .reviews__progress-bar {
     height: 0.5089058524vw;
-    width: 66.1577608142vw;
+    width: 100%;
   }
   .reviews__counter {
     font-size: 3.5623409669vw;
   }
   .reviews__button {
+    display: none;
     width: 8.1424936387vw;
     height: 8.1424936387vw;
     border-radius: 1.0178117048vw;
@@ -644,8 +654,12 @@
     width: 4.0712468193vw;
     height: 4.0712468193vw;
   }
+  .reviews__bottom{
+    margin-bottom: 6.361vw;
+  }
   .reviews__button--prev {
     margin-right: 3.0534351145vw;
+    display: none;
   }
   .reviews .button {
     margin-top: -1.5267175573vw;

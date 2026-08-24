@@ -1,0 +1,644 @@
+<style>
+    .triad-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(18, 28, 63, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .triad-modal-overlay.is-open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body.triad-modal-open {
+        overflow: hidden !important;
+    }
+
+    .triad-modal__container {
+        display: none;
+        width: 1200px;
+        max-width: 100%;
+        height: auto;
+        max-height: calc(100vh - 40px);
+        background: #FFFFFF;
+        border-radius: 8px;
+        padding: 48px;
+        box-sizing: border-box;
+        position: relative;
+        overflow-y: auto;
+        font-family: "Geologica", sans-serif;
+    }
+
+    .triad-modal__container.is-active {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    .triad-modal__close {
+        position: absolute;
+        top: 48px;
+        right: 48px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        line-height: 0;
+        z-index: 2;
+        transition: opacity 0.2s ease;
+    }
+
+    .triad-modal__close:hover {
+        opacity: 0.8;
+    }
+
+    .triad-modal__media {
+        width: 345px;
+        height: 400px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .triad-modal__media picture,
+    .triad-modal__media img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    .triad-modal__content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .triad-modal__title {
+        font-family: "Geologica", sans-serif;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 120%;
+        color: #121C3F;
+        margin: 0 0 12px 0;
+        padding-right: 48px;
+    }
+
+    .triad-modal__description {
+        font-family: "Geologica", sans-serif;
+        font-size: 16px;
+        line-height: 120%;
+        font-weight: 300;
+        color: #121C3F;
+        margin: 0 0 12px 0;
+    }
+
+    .triad-modal__description strong {
+        font-weight: 700;
+    }
+
+    .triad-modal__plate {
+        padding: 6px 0 6px 24px;
+        font-family: "Geologica", sans-serif;
+        font-size: 16px;
+        line-height: 120%;
+        border-left: 1px solid #D16F55;
+        color: #454B60;
+        margin-bottom: 24px;
+    }
+
+    .triad-modal__study-link {
+        color: #C0876C;
+        pointer-events: none;
+        text-decoration: none;
+    }
+
+    .triad-modal__orange-title {
+        font-family: "Geologica", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 120%;
+        color: #D16F55;
+        margin: 0 0 24px 0;
+    }
+
+    .triad-modal__list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 24px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .triad-modal__list-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        font-family: "Geologica", sans-serif;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 2%;
+        color: rgba(18, 28, 63, 0.8);
+    }
+
+    .triad-modal__list-icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        margin-top: 1px;
+    }
+
+    .triad-modal__bottom-text {
+        font-family: "Geologica", sans-serif;
+        font-size: 16px;
+        line-height: 120%;
+        color: rgba(18, 28, 63, 0.8);
+        margin: 0;
+    }
+
+    .triad-modal__cta-btn {
+        margin-top: 24px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: #139EDF;
+        padding: 8.5px 12px;
+        background: rgba(19, 158, 223, 0.05);
+        border-radius: 4px;
+        font-family: "Geologica", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease;
+        cursor: pointer;
+    }
+
+    .triad-modal__cta-btn:hover {
+        background: rgba(19, 158, 223, 0.12);
+    }
+
+    .triad-modal__cta-icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+
+    @media screen and (max-width: 1919px) {
+    .triad-modal-overlay {
+        padding: 1.3559vw;
+    }
+
+    .triad-modal__container {
+        width: 81.3559vw;
+        max-height: calc(100vh - 2.7119vw);
+        border-radius: 0.5424vw;
+        padding: 3.2542vw;
+    }
+
+    .triad-modal__container.is-active {
+        gap: 1.6271vw;
+    }
+
+    .triad-modal__close {
+        top: 3.2542vw;
+        right: 3.2542vw;
+    }
+
+    .triad-modal__media {
+        width: 23.3898vw;
+        height: 27.1186vw;
+    }
+
+    .triad-modal__title {
+        font-size: 2.4407vw;
+        margin: 0 0 0.8136vw 0;
+        padding-right: 3.2542vw;
+    }
+
+    .triad-modal__description {
+        font-size: 1.0847vw;
+        margin: 0 0 0.8136vw 0;
+    }
+
+    .triad-modal__plate {
+        padding: 0.4068vw 0 0.4068vw 1.6271vw;
+        font-size: 1.0847vw;
+        border-left: 0.0678vw solid #D16F55;
+        margin-bottom: 1.6271vw;
+    }
+
+    .triad-modal__orange-title {
+        font-size: 1.6271vw;
+        margin: 0 0 1.6271vw 0;
+    }
+
+    .triad-modal__list {
+        margin: 0 0 1.6271vw 0;
+        gap: 1.6271vw;
+    }
+
+    .triad-modal__list-item {
+        gap: 0.5424vw;
+        font-size: 1.0847vw;
+    }
+
+    .triad-modal__list-icon {
+        width: 1.6271vw;
+        height: 1.6271vw;
+        margin-top: 0.0678vw;
+    }
+
+    .triad-modal__bottom-text {
+        font-size: 1.0847vw;
+    }
+
+    .triad-modal__cta-btn {
+        margin-top: 1.6271vw;
+        gap: 0.4068vw;
+        padding: 0.5763vw 0.8136vw;
+        border-radius: 0.2712vw;
+        font-size: 1.0847vw;
+    }
+
+    .triad-modal__cta-icon {
+        width: 1.6271vw;
+        height: 1.6271vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .triad-modal-overlay {
+        padding: 4.0712vw;
+    }
+
+    .triad-modal__container {
+        width: 87.7863vw;
+        max-width: 100%;
+        height: auto;
+        max-height: 90vh;
+        padding: 12.2137vw 6.1069vw 6.1069vw 6.1069vw;
+        border-radius: 1.0178vw;
+    }
+
+    .triad-modal__container.is-active {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .triad-modal__close {
+        top: 4.0712vw;
+        right: 4.0712vw;
+    }
+
+    .triad-modal__close svg {
+        width: 8.1425vw;
+        height: 8.1425vw;
+    }
+
+    .triad-modal__media {
+        width: 65.9033vw;
+        height: 76.3359vw;
+        margin: 0 auto 4.0712vw auto;
+    }
+
+    .triad-modal__media picture,
+    .triad-modal__media img {
+        width: 65.9033vw;
+        height: 76.3359vw;
+        object-fit: contain;
+    }
+
+    .triad-modal__title {
+        font-size: 4.5802vw;
+        margin-bottom: 3.0534vw;
+        padding-right: 0;
+    }
+
+    .triad-modal__description {
+        font-size: 3.0534vw;
+        margin-bottom: 3.0534vw;
+    }
+
+    .triad-modal__plate {
+        padding: 2.0356vw 0 2.0356vw 3.0534vw;
+        font-size: 3.0534vw;
+        border-left: 0.2545vw solid #D16F55;
+        margin-bottom: 6.1069vw;
+    }
+
+    .triad-modal__orange-title {
+        font-size: 4.0712vw;
+        margin-bottom: 4.5802vw;
+    }
+
+    .triad-modal__list {
+        margin-bottom: 4.5802vw;
+        gap: 2.0356vw;
+    }
+
+    .triad-modal__list-item {
+        font-size: 3.0534vw;
+        gap: 1.5267vw;
+        color: rgba(18, 28, 63, 0.8);
+    }
+
+    .triad-modal__list-icon {
+        width: 4.0712vw;
+        height: 4.0712vw;
+    }
+
+    .triad-modal__bottom-text {
+        font-size: 3.0534vw;
+        margin-bottom: 0;
+    }
+
+    .triad-modal__cta-btn {
+        margin-top: 4.0712vw;
+        font-size: 3.0534vw;
+        padding: 1.7812vw 3.0534vw;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .triad-modal__cta-icon {
+        width: 4.0712vw;
+        height: 4.0712vw;
+    }
+}
+</style>
+
+<div class="triad-modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+  {% comment %} Bee Bread Modal {% endcomment %}
+  <div class="triad-modal__container" id="triad-modal-bee-bread" data-triad-modal="bee-bread">
+    <button class="triad-modal__close" type="button" aria-label="Close modal">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="#121C3F" stroke-opacity="0.1"/>
+        <path d="M14.3995 26.6537L13.3457 25.5999L18.9457 19.9999L13.3457 14.3999L14.3995 13.3462L19.9995 18.9462L25.5995 13.3462L26.6532 14.3999L21.0532 19.9999L26.6532 25.5999L25.5995 26.6537L19.9995 21.0537L14.3995 26.6537Z" fill="#121C3F" fill-opacity="0.5"/>
+      </svg>
+    </button>
+    <div class="triad-modal__media">
+      <picture>
+        <source media="(max-width: 650px)" srcset="{{ 'triad-modal-1.avif' | file_url }}" type="image/avif">
+        <source media="(max-width: 650px)" srcset="{{ 'triad-modal-1.webp' | file_url }}" type="image/webp">
+        <source srcset="{{ 'triad-modal-1.avif' | file_url }}" type="image/avif">
+        <img src="{{ 'triad-modal-1.webp' | file_url }}" alt="Bee Bread" class="triad-modal__image" width="440" height="440" loading="lazy">
+      </picture>
+    </div>
+    <div class="triad-modal__content">
+      <h2 class="triad-modal__title">The Science Behind Bee Bread</h2>
+      <p class="triad-modal__description">
+        Raw bee pollen is one of nature's most nutrient-dense superfoods — packed with macro- and micronutrients, phenolic acids, and polyphenols. But there's a catch researchers have long pointed to: every pollen grain is sealed inside a tough double wall (an outer exine layer and inner intine layer). That wall protects the pollen in nature — but it also makes raw pollen harder for the human body to break down and absorb.
+      </p>
+      <p class="triad-modal__description">
+        <strong>This is exactly where bee bread changes the equation.</strong>
+      </p>
+      <div class="triad-modal__plate">
+        Published in <a href="#" target="_blank" rel="noopener" class="triad-modal__study-link">Trends in Food Science & Technology</a>, a peer-reviewed review by Aylanc et al. (2021) examines what happens when bees ferment pollen inside the hive to create bee bread. The fermentation process breaks down that protective wall — pre-processing the nutrients before they ever reach your gut.
+      </div>
+      <h3 class="triad-modal__orange-title">What the research points to:</h3>
+      <ul class="triad-modal__list">
+        <li class="triad-modal__list-item">
+          <svg class="triad-modal__list-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0472 17.6537L19.7012 11.9999L14.0472 6.34619L12.9934 7.43069L16.8127 11.2499H4.29717V12.7499H16.8127L12.9934 16.5692L14.0472 17.6537Z" fill="#D16F55"/>
+          </svg>
+          <span>Bee bread's fermentation process is associated with greater nutrient accessibility compared to raw, unfermented pollen</span>
+        </li>
+        <li class="triad-modal__list-item">
+          <svg class="triad-modal__list-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0472 17.6537L19.7012 11.9999L14.0472 6.34619L12.9934 7.43069L16.8127 11.2499H4.29717V12.7499H16.8127L12.9934 16.5692L14.0472 17.6537Z" fill="#D16F55"/>
+          </svg>
+          <span>Vitamins, minerals, amino acids, and enzymes are released more readily once the outer shell is broken down</span>
+        </li>
+        <li class="triad-modal__list-item">
+          <svg class="triad-modal__list-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0472 17.6537L19.7012 11.9999L14.0472 6.34619L12.9934 7.43069L16.8127 11.2499H4.29717V12.7499H16.8127L12.9934 16.5692L14.0472 17.6537Z" fill="#D16F55"/>
+          </svg>
+          <span>The fermented structure supports more efficient nutrient breakdown across digestion — from the mouth through the stomach and intestines</span>
+        </li>
+        <li class="triad-modal__list-item">
+          <svg class="triad-modal__list-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0472 17.6537L19.7012 11.9999L14.0472 6.34619L12.9934 7.43069L16.8127 11.2499H4.29717V12.7499H16.8127L12.9934 16.5692L14.0472 17.6537Z" fill="#D16F55"/>
+          </svg>
+          <span>Bee bread is recognized in the scientific literature as a functional food, valued for its nutrient density and bioactive compound profile</span>
+        </li>
+      </ul>
+      <p class="triad-modal__bottom-text">
+        This is the core science our formula is built around: fermented bee bread, not raw pollen — because the form nutrients come in matters as much as the nutrients themselves.
+      </p>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S092422442100042X" class="triad-modal__cta-btn" target="_blank" rel="noopener">
+        <svg class="triad-modal__cta-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.8077 16.5384H7.0385C5.78283 16.5384 4.7125 16.0959 3.8275 15.2109C2.9425 14.3261 2.5 13.2559 2.5 12.0004C2.5 10.7449 2.9425 9.67459 3.8275 8.78943C4.7125 7.90409 5.78283 7.46143 7.0385 7.46143H10.8077V8.96143H7.0385C6.19867 8.96143 5.48233 9.25792 4.8895 9.85092C4.2965 10.4439 4 11.1603 4 11.9999C4 12.8396 4.2965 13.5559 4.8895 14.1489C5.48233 14.7419 6.19867 15.0384 7.0385 15.0384H10.8077V16.5384ZM8.25 12.7499V11.2499H15.75V12.7499H8.25ZM13.1923 16.5384V15.0384H16.9615C17.8013 15.0384 18.5177 14.7419 19.1105 14.1489C19.7035 13.5559 20 12.8396 20 11.9999C20 11.1603 19.7035 10.4439 19.1105 9.85092C18.5177 9.25792 17.8013 8.96143 16.9615 8.96143H13.1923V7.46143H16.9615C18.2172 7.46143 19.2875 7.90393 20.1725 8.78893C21.0575 9.67376 21.5 10.7439 21.5 11.9994C21.5 13.2549 21.0575 14.3253 20.1725 15.2104C19.2875 16.0958 18.2172 16.5384 16.9615 16.5384H13.1923Z" fill="#139EDF" fill-opacity="0.5"/>
+        </svg>
+        <span>Read the full study</span>
+      </a>
+    </div>
+  </div>
+
+  {% comment %} Royal Jelly Modal {% endcomment %}
+  <div class="triad-modal__container" id="triad-modal-royal-jelly" data-triad-modal="royal-jelly">
+    <button class="triad-modal__close" type="button" aria-label="Close modal">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="#121C3F" stroke-opacity="0.1"/>
+        <path d="M14.3995 26.6537L13.3457 25.5999L18.9457 19.9999L13.3457 14.3999L14.3995 13.3462L19.9995 18.9462L25.5995 13.3462L26.6532 14.3999L21.0532 19.9999L26.6532 25.5999L25.5995 26.6537L19.9995 21.0537L14.3995 26.6537Z" fill="#121C3F" fill-opacity="0.5"/>
+      </svg>
+    </button>
+    <div class="triad-modal__media">
+      <picture>
+        <source media="(max-width: 650px)" srcset="{{ 'triad-modal-2.webp' | file_url }}" type="image/webp">
+        <source srcset="{{ 'triad-modal-2.avif' | file_url }}" type="image/avif">
+        <img src="{{ 'triad-modal-2.webp' | file_url }}" alt="Royal Jelly" class="triad-modal__image" width="440" height="440" loading="lazy">
+      </picture>
+    </div>
+    <div class="triad-modal__content">
+      <h2 class="triad-modal__title">The Science Behind Royal Jelly</h2>
+      <p class="triad-modal__description">
+        In the hive, royal jelly is the signal that turns an ordinary larva into a queen — triggering growth, repair, and renewal. Researchers have long been curious whether it sends a similar signal in the human body.
+      </p>
+      <div class="triad-modal__plate">
+        A 2023 double-blind, placebo-controlled, randomized clinical trial — published in <a href="#" target="_blank" rel="noopener" class="triad-modal__study-link">Evidence-Based Complementary and Alternative Medicine</a> — set out to examine how royal jelly relates to the body's natural renewal processes. Over four weeks, 90 healthy adults received either 1,200 mg/day of protease-treated royal jelly (processed to reduce allergens) or a placebo, and researchers tracked a range of everyday wellness measures over the study period.
+      </div>
+      <h3 class="triad-modal__orange-title">What the trial found:</h3>
+      <ul class="triad-modal__list">
+        <li class="triad-modal__list-item">
+          <svg class="triad-modal__list-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0472 17.6537L19.7012 11.9999L14.0472 6.34619L12.9934 7.43069L16.8127 11.2499H4.29717V12.7499H16.8127L12.9934 16.5692L14.0472 17.6537Z" fill="#D16F55"/>
+          </svg>
+          <span>In a focused subgroup analysis, participants taking royal jelly showed greater changes in markers associated with the body's natural cellular renewal compared to those taking a placebo — supporting the idea that royal jelly may help support this process</span>
+        </li>
+        <li class="triad-modal__list-item">
+          <svg class="triad-modal__list-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0472 17.6537L19.7012 11.9999L14.0472 6.34619L12.9934 7.43069L16.8127 11.2499H4.29717V12.7499H16.8127L12.9934 16.5692L14.0472 17.6537Z" fill="#D16F55"/>
+          </svg>
+          <span>Participants in both groups reported improvements in everyday wellness measures, including fatigue and sleep quality, over the four weeks</span>
+        </li>
+        <li class="triad-modal__list-item">
+          <svg class="triad-modal__list-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0472 17.6537L19.7012 11.9999L14.0472 6.34619L12.9934 7.43069L16.8127 11.2499H4.29717V12.7499H16.8127L12.9934 16.5692L14.0472 17.6537Z" fill="#D16F55"/>
+          </svg>
+          <span>No adverse effects were reported in either group across the full study period</span>
+        </li>
+      </ul>
+      <p class="triad-modal__bottom-text">
+        This is the first published human trial to examine royal jelly's relationship to the body's cellular renewal activity — the same "renewal signal" concept our formula is built to deliver, using freeze-dried royal jelly to preserve its most fragile active compounds.
+      </p>
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9859695/" class="triad-modal__cta-btn" target="_blank" rel="noopener">
+        <svg class="triad-modal__cta-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.8077 16.5384H7.0385C5.78283 16.5384 4.7125 16.0959 3.8275 15.2109C2.9425 14.3261 2.5 13.2559 2.5 12.0004C2.5 10.7449 2.9425 9.67459 3.8275 8.78943C4.7125 7.90409 5.78283 7.46143 7.0385 7.46143H10.8077V8.96143H7.0385C6.19867 8.96143 5.48233 9.25792 4.8895 9.85092C4.2965 10.4439 4 11.1603 4 11.9999C4 12.8396 4.2965 13.5559 4.8895 14.1489C5.48233 14.7419 6.19867 15.0384 7.0385 15.0384H10.8077V16.5384ZM8.25 12.7499V11.2499H15.75V12.7499H8.25ZM13.1923 16.5384V15.0384H16.9615C17.8013 15.0384 18.5177 14.7419 19.1105 14.1489C19.7035 13.5559 20 12.8396 20 11.9999C20 11.1603 19.7035 10.4439 19.1105 9.85092C18.5177 9.25792 17.8013 8.96143 16.9615 8.96143H13.1923V7.46143H16.9615C18.2172 7.46143 19.2875 7.90393 20.1725 8.78893C21.0575 9.67376 21.5 10.7439 21.5 11.9994C21.5 13.2549 21.0575 14.3253 20.1725 15.2104C19.2875 16.0958 18.2172 16.5384 16.9615 16.5384H13.1923Z" fill="#139EDF" fill-opacity="0.5"/>
+        </svg>
+        <span>Read the full study</span>
+      </a>
+    </div>
+  </div>
+
+  {% comment %} Propolis Modal {% endcomment %}
+  <div class="triad-modal__container" id="triad-modal-propolis" data-triad-modal="propolis">
+    <button class="triad-modal__close" type="button" aria-label="Close modal">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="#121C3F" stroke-opacity="0.1"/>
+        <path d="M14.3995 26.6537L13.3457 25.5999L18.9457 19.9999L13.3457 14.3999L14.3995 13.3462L19.9995 18.9462L25.5995 13.3462L26.6532 14.3999L21.0532 19.9999L26.6532 25.5999L25.5995 26.6537L19.9995 21.0537L14.3995 26.6537Z" fill="#121C3F" fill-opacity="0.5"/>
+      </svg>
+    </button>
+    <div class="triad-modal__media">
+      <picture>
+        <source media="(max-width: 650px)" srcset="{{ 'triad-modal-3.webp' | file_url }}" type="image/webp">
+        <source srcset="{{ 'triad-modal-3.avif' | file_url }}" type="image/avif">
+        <img src="{{ 'triad-modal-3.webp' | file_url }}" alt="Propolis" class="triad-modal__image" width="440" height="440" loading="lazy">
+      </picture>
+    </div>
+    <div class="triad-modal__content">
+      <h2 class="triad-modal__title">The Science Behind Propolis</h2>
+      <p class="triad-modal__description">
+        In the hive, propolis is the sealant bees use to patch the honeycomb, keep out invaders, and maintain a sterile, stable environment. It's the hive's defense system. Researchers have spent decades asking whether it plays a similar protective role in the human body — and in 2025, one of the largest analyses to date brought the evidence together in one place.
+      </p>
+      <div class="triad-modal__plate">
+        Published in <a href="#" target="_blank" rel="noopener" class="triad-modal__study-link">Frontiers in Nutrition</a>, this systematic review and meta-analysis pooled data from 27 randomized controlled trials and nearly 1,540 adult participants, examining propolis's relationship to the body's inflammatory response and antioxidant status — two of the body's core internal-balance systems.
+      </div>
+      <h3 class="triad-modal__orange-title">What the analysis found:</h3>
+      <ul class="triad-modal__list">
+        <li class="triad-modal__list-item">
+          <svg class="triad-modal__list-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0472 17.6537L19.7012 11.9999L14.0472 6.34619L12.9934 7.43069L16.8127 11.2499H4.29717V12.7499H16.8127L12.9934 16.5692L14.0472 17.6537Z" fill="#D16F55"/>
+          </svg>
+          <span>Propolis intake was associated with favorable changes across several markers linked to the body's inflammatory response</span>
+        </li>
+        <li class="triad-modal__list-item">
+          <svg class="triad-modal__list-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0472 17.6537L19.7012 11.9999L14.0472 6.34619L12.9934 7.43069L16.8127 11.2499H4.29717V12.7499H16.8127L12.9934 16.5692L14.0472 17.6537Z" fill="#D16F55"/>
+          </svg>
+          <span>Propolis intake was associated with favorable changes across several markers linked to the body's antioxidant defenses — how well the body neutralizes everyday oxidative stress</span>
+        </li>
+        <li class="triad-modal__list-item">
+          <svg class="triad-modal__list-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0472 17.6537L19.7012 11.9999L14.0472 6.34619L12.9934 7.43069L16.8127 11.2499H4.29717V12.7499H16.8127L12.9934 16.5692L14.0472 17.6537Z" fill="#D16F55"/>
+          </svg>
+          <span>These patterns held up across a combined pool of more than 1,500 participants, making this one of the largest bodies of evidence assembled on propolis to date</span>
+        </li>
+        <li class="triad-modal__list-item">
+          <svg class="triad-modal__list-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0472 17.6537L19.7012 11.9999L14.0472 6.34619L12.9934 7.43069L16.8127 11.2499H4.29717V12.7499H16.8127L12.9934 16.5692L14.0472 17.6537Z" fill="#D16F55"/>
+          </svg>
+          <span>No serious safety concerns were identified across the reviewed trials; reported side effects were generally described as infrequent and mild</span>
+        </li>
+      </ul>
+      <p class="triad-modal__bottom-text">
+        This is exactly the internal "shield" concept our formula is built around: supporting the body's own defense and internal-balance systems, not working around them.
+      </p>
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12104767/" class="triad-modal__cta-btn" target="_blank" rel="noopener">
+        <svg class="triad-modal__cta-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.8077 16.5384H7.0385C5.78283 16.5384 4.7125 16.0959 3.8275 15.2109C2.9425 14.3261 2.5 13.2559 2.5 12.0004C2.5 10.7449 2.9425 9.67459 3.8275 8.78943C4.7125 7.90409 5.78283 7.46143 7.0385 7.46143H10.8077V8.96143H7.0385C6.19867 8.96143 5.48233 9.25792 4.8895 9.85092C4.2965 10.4439 4 11.1603 4 11.9999C4 12.8396 4.2965 13.5559 4.8895 14.1489C5.48233 14.7419 6.19867 15.0384 7.0385 15.0384H10.8077V16.5384ZM8.25 12.7499V11.2499H15.75V12.7499H8.25ZM13.1923 16.5384V15.0384H16.9615C17.8013 15.0384 18.5177 14.7419 19.1105 14.1489C19.7035 13.5559 20 12.8396 20 11.9999C20 11.1603 19.7035 10.4439 19.1105 9.85092C18.5177 9.25792 17.8013 8.96143 16.9615 8.96143H13.1923V7.46143H16.9615C18.2172 7.46143 19.2875 7.90393 20.1725 8.78893C21.0575 9.67376 21.5 10.7439 21.5 11.9994C21.5 13.2549 21.0575 14.3253 20.1725 15.2104C19.2875 16.0958 18.2172 16.5384 16.9615 16.5384H13.1923Z" fill="#139EDF" fill-opacity="0.5"/>
+        </svg>
+        <span>Read the full study</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    function initTriadModals() {
+      const overlay = document.querySelector('.triad-modal-overlay');
+      if (!overlay) return;
+
+      const containers = overlay.querySelectorAll('.triad-modal__container');
+
+      function openTriadModal(targetId) {
+        let activeFound = false;
+        containers.forEach(function(c) {
+          if (c.id === `triad-modal-${targetId}` || c.getAttribute('data-triad-modal') === targetId) {
+            c.classList.add('is-active');
+            activeFound = true;
+          } else {
+            c.classList.remove('is-active');
+          }
+        });
+
+        if (!activeFound && containers.length > 0) {
+          containers[0].classList.add('is-active');
+        }
+
+        overlay.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('triad-modal-open');
+      }
+
+      function closeTriadModal() {
+        overlay.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        containers.forEach(function(c) {
+          c.classList.remove('is-active');
+        });
+        document.body.classList.remove('triad-modal-open');
+      }
+
+      document.addEventListener('click', function(e) {
+        const triadLink = e.target.closest('.hive-triad__link');
+        if (triadLink) {
+          e.preventDefault();
+          let target = triadLink.getAttribute('data-triad-target');
+          if (!target) {
+            const allLinks = Array.from(document.querySelectorAll('.hive-triad__link'));
+            const idx = allLinks.indexOf(triadLink);
+            const targets = ['bee-bread', 'royal-jelly', 'propolis'];
+            target = targets[idx % 3];
+          }
+          openTriadModal(target);
+          return;
+        }
+
+        if (e.target.closest('.triad-modal__close')) {
+          closeTriadModal();
+          return;
+        }
+
+        if (e.target === overlay) {
+          closeTriadModal();
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+          closeTriadModal();
+        }
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initTriadModals);
+    } else {
+      initTriadModals();
+    }
+  })();
+</script>

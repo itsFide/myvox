@@ -104,7 +104,13 @@
                 >
               </div>
               <button type="submit" class="footer__newsletter-button" name="commit" id="Subscribe--{{ section.id }}" aria-label="Subscribe">
-                SUBSCRIBE
+                <span class="footer__newsletter-button-text">SUBSCRIBE</span>
+                <span class="footer__newsletter-spinner" aria-hidden="true">
+                  <svg class="footer__newsletter-spinner-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="9" stroke="#121C3F" stroke-opacity="0.25" stroke-width="3"></circle>
+                    <path d="M12 3C7.02944 3 3 7.02944 3 12" stroke="#121C3F" stroke-width="3" stroke-linecap="round"></path>
+                  </svg>
+                </span>
               </button>
             </div>
             {%- if form.posted_successfully? -%}
@@ -165,7 +171,7 @@
               </span>
             </h3>
             <ul class="footer__menu-links">
-              <li><a href="/products/api-complex">API-COMPLEX</a></li>
+              <li><a href="/products/api-complex-by-myvox-9">API-COMPLEX</a></li>
             </ul>
           </div>
 
@@ -182,7 +188,7 @@
               <li><a href="/pages/about">WHO WE ARE</a></li>
               <li><a href="/pages/science">SCIENCE BEHIND</a></li>
             </ul>
-          </div>
+          </div> 
 
           <div class="footer__menu-col">
             <h3 class="footer__menu-title">
@@ -212,6 +218,7 @@
               <li><a href="/pages/refer-a-friend">REFER A FRIEND</a></li>
               <li><a href="/pages/track-order">TRACK MY ORDER</a></li>
               <li><a href="/pages/manage-subscription">MANAGE SUBSCRIPTION</a></li>
+              <li><a href="/pages/data-sharing-opt-out">Data Sharing</a></li>
             </ul>
           </div>
         {%- endif -%}
@@ -306,7 +313,13 @@
             >
           </div>
           <button type="submit" class="footer__newsletter-button" name="commit" id="SubscribeMobile--{{ section.id }}" aria-label="Subscribe">
-            SUBSCRIBE
+            <span class="footer__newsletter-button-text">SUBSCRIBE</span>
+            <span class="footer__newsletter-spinner" aria-hidden="true">
+              <svg class="footer__newsletter-spinner-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="#121C3F" stroke-opacity="0.25" stroke-width="3"></circle>
+                <path d="M12 3C7.02944 3 3 7.02944 3 12" stroke="#121C3F" stroke-width="3" stroke-linecap="round"></path>
+              </svg>
+            </span>
           </button>
         </div>
         {%- if form.posted_successfully? -%}
@@ -335,6 +348,16 @@
           if (parent) {
             parent.classList.toggle('is-open');
           }
+        }
+      });
+    });
+
+    const newsletterForms = document.querySelectorAll('.footer__newsletter-form');
+    newsletterForms.forEach(form => {
+      form.addEventListener('submit', function() {
+        const btn = this.querySelector('.footer__newsletter-button');
+        if (btn) {
+          btn.classList.add('is-loading');
         }
       });
     });

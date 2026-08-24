@@ -141,10 +141,51 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  position: relative;
 }
 
 .footer__newsletter-button:hover {
   background-color: #E28F79;
+}
+
+.footer__newsletter-button.is-loading {
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.footer__newsletter-button-text {
+  display: inline-block;
+}
+
+.footer__newsletter-button.is-loading .footer__newsletter-button-text {
+  display: none;
+}
+
+.footer__newsletter-spinner {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.footer__newsletter-button.is-loading .footer__newsletter-spinner {
+  display: flex;
+}
+
+.footer__newsletter-spinner-icon {
+  width: 100%;
+  height: 100%;
+  animation: footerNewsletterSpin 0.8s linear infinite;
+}
+
+@keyframes footerNewsletterSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .footer__newsletter-message {
@@ -388,6 +429,11 @@
         border-radius: 0 0.2712vw 0.2712vw 0;
     }
 
+    .footer__newsletter-spinner {
+        width: 1.356vw;
+        height: 1.356vw;
+    }
+
     .footer__newsletter-message {
         font-size: 0.9492vw;
         margin-top: 0.5424vw;
@@ -517,6 +563,11 @@
     padding: 0 4.071vw;
     font-size: 3.053vw;
     border-radius: 0 1.018vw 1.018vw 0;
+  }
+
+  .footer__newsletter-spinner {
+    width: 4.071vw;
+    height: 4.071vw;
   }
   #ContactFooter{
     width: 100%;

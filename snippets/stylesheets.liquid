@@ -22,7 +22,12 @@
     font-style: normal;
     font-display: swap;
 }
+:root{
+    --header-px-height:60px;
+    --header-vw-desktop-height:4.068vw;
+    --header-vw-mobile-height:13.74vw;
 
+}
 *{margin:0;padding:0;box-sizing:border-box}#MainContent{overflow:hidden}body{font-family:Geologica,sans-serif;font-weight:300}.container,.shopify-policy__container{max-width:1250px;padding:0 11px;margin:0 auto}:root{--red:#D16F55;--white-50:rgba(255, 255, 255, 0.5);--white:#fff;--blue:#121C3F}.btn{background:var(--red);text-decoration:none;border-radius:4px;color:var(--blue)}.title-main{font-size:36px;line-height:120%;font-weight:600}@media screen and (max-width:1919px){.container,.shopify-policy__container{max-width:84.746vw;padding:0 .746vw;margin:0 auto}.btn{border-radius:.271vw}.title-main{font-size:2.441vw}}@media screen and (max-width:650px){.container,.shopify-policy__container{max-width:100%;padding:0 2.799vw}.title-main{font-size:6.107vw}}
 .badge-main{
     padding: 7.5px 12px;
@@ -92,6 +97,23 @@
     background-repeat: no-repeat;
     background-size: cover;
 } */
+
+.jm-star-rating__font-icon{
+    font-size: 14px !important;
+}
+.jm-review-content__title{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+.jm-reviewer-info__name{
+    font-weight: 600 !important;
+}
+.jm-text .jm-shop-reply__text{
+    font-size: 16px !important;
+}
+.jdgm-review-content__body-content{
+    font-size: 16px !important;
+}
 @media screen and (max-width: 1919px){
    .jdgm-review-widget{
         max-width: 84.746vw !important;
@@ -104,6 +126,19 @@
         border-radius: 0.271vw;
         border: 0.068vw solid rgba(69, 75, 96, 0.2);
     } 
+    .jm-star-rating__font-icon{
+        font-size: 0.949vw !important;
+    }
+    .jm-review-content__title{
+        font-size: 1.085vw !important;
+
+    }
+    .jm-text .jm-shop-reply__text{
+        font-size: 1.085vw !important;
+    }
+    .jdgm-review-content__body-content{
+        font-size: 1.085vw !important;
+    }
 }
 @media screen and (max-width: 650px){
    .jdgm-review-widget{
@@ -118,6 +153,41 @@
         border-radius: 1.018vw;
         border: 0.254vw solid rgba(69, 75, 96, 0.2);
     } 
+    .jm-star-rating__font-icon{
+        font-size: 3.053vw !important;
+    }
+    .jm-review-content__title{
+        font-size: 3.053vw !important;
+
+    }
+    .jm-text .jm-shop-reply__text{
+        font-size: 3.053vw !important;
+    }
+    .jdgm-review-content__body-content{
+        font-size: 3.053vw !important;
+    }
+    .jm-action-buttons__button{
+        font-size: 3.053vw !important;
+    }
+    .jm-reviewer-info__name{
+        font-size: 3.053vw !important;
+    }
+    .jm-reviewer-info__details span.jm-text{
+        font-size: 3.053vw !important;
+    }
+    .jm-histogram-row__rating {
+        font-size: 3.053vw !important;
+    }
+    .jm-histogram-row__frequency {
+        font-size: 3.053vw !important;
+    }
+    .jm-sort-filter__select{
+        font-size: 3.053vw !important;
+    }
+    .jm-shop-reply__author,
+    .jm-shop-reply__text{
+        font-size: 3.053vw !important;
+    }
 } 
 </style>
 <link rel="preload" href="{{ 'Geologica-Light.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin="anonymous">
@@ -125,12 +195,20 @@
 <link rel="preload" href="{{ 'Geologica-Bold.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin="anonymous">
 {% comment %} {{ 'theme-styles.css' | asset_url |  stylesheet_tag }} {% endcomment %}
 
-{% if request.path == "/cart" or request.page_type == 'password' %}
+{% if request.path == "/cart" or request.page_type == 'password' or request.path == '/collections/all' %}
     {{ 'base.css' | asset_url |  stylesheet_tag }}
+    <style>
+        #MainContent {
+            overflow: unset;
+        }
+    </style>
 {% endif %}
 
 {% if request.path contains '/policies/' %}
     {{ 'polices.css' | asset_url |  stylesheet_tag }}
+{% endif %}
+{% if request.path == '/pages/data-sharing-opt-out' %}
+    {{ 'data-sharing-opt-out.css' | asset_url |  stylesheet_tag }}
 {% endif %}
 <link rel="preload" href="{{ 'swiper-bundle.min.css' | asset_url }}" as="style">
 <link rel="stylesheet" href="{{ 'swiper-bundle.min.css' | asset_url }}" media="print" onload="this.media='all'">

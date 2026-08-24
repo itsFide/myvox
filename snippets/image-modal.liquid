@@ -1,0 +1,10 @@
+{% comment %}
+  Universal Image Modal Snippet
+  Allows opening any image in a modal with zoom, pan, and backdrop tap to close.
+  Usage:
+    - HTML Attribute: <button data-image-modal="{{ 'myvox-suppl.png' | file_url }}">View Image</button>
+    - JavaScript API: window.openImageModal('https://example.com/image.png');
+{% endcomment %}
+
+{{ 'image-modal.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'image-modal.js' | asset_url }}" defer></script>

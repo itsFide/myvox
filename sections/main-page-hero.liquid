@@ -44,7 +44,7 @@
                             <p>4.9</p>
                             <span>(312 reviews)</span>
                         </div>
-                        <a href="/products/api-complex" class="btn hero__btn">
+                        <a href="/products/api-complex-by-myvox-9" class="btn hero__btn">
                             SHOP API-COMPLEX
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -55,9 +55,19 @@
                         </a>
                     </div>
                     <div class="hero__img">
-                        {%- assign hero1_avif = 'hero-main-1.avif' | file_url -%}
-                        {%- assign hero1_webp = 'hero-main-1.webp' | file_url -%}
+                        {%- assign hero1_avif = 'myvox-main-img-new.avif' | file_url -%}
+                        {%- assign hero1_webp = 'myvox-main-img-new.webp' | file_url -%}
+                        {%- assign hero1_avif_mob = 'myvox-main-img-new-mobile.avif' | file_url -%}
+                        {%- assign hero1_webp_mob = 'myvox-main-img-new-mobile.webp' | file_url -%}
                         <picture>
+                            <source media="(max-width: 650px)" srcset="{{ hero1_avif_mob }}&width=350 350w,
+                                  {{ hero1_avif_mob }}&width=530 530w,
+                                  {{ hero1_avif_mob }}&width=710 710w,
+                                  {{ hero1_avif_mob }}&width=1062 1062w" type="image/avif">
+                            <source media="(max-width: 650px)" srcset="{{ hero1_webp_mob }}&width=350 350w,
+                              {{ hero1_webp_mob }}&width=530 530w,
+                              {{ hero1_webp_mob }}&width=710 710w,
+                              {{ hero1_webp_mob }}&width=1062 1062w" type="image/webp">
                           <source
                             type="image/avif"
                             srcset="
@@ -84,176 +94,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="swiper-slide hero__slide">
-            {%- assign bg_img_url = 'hero-2-bg.avif' | file_url -%}
-            <img class="hero__slide-bg" src="{{ bg_img_url }}&width=1500" srcset="
-            {{ bg_img_url }}&width=480 480w,
-            {{ bg_img_url }}&width=750 750w,
-            {{ bg_img_url }}&width=1100 1100w,
-            {{ bg_img_url }}&width=1500 1500w,
-            {{ bg_img_url }}&width=1920 1920w
-        " sizes="100vw" alt="" width="1920" height="1080" loading="eager">
-            <div class="container">
-                <div class="hero__inner">
-                    <div class="hero__text">
-                        <div class="hero__badge">PROTOCOL 01 — THE HIVE</div>
-                        <h1 class="hero__title">Api-Complex</h1>
-                        <p class="hero__desc">3,500 mg of active hive compounds. <br>Immunity. Energy. Focus. Gut &
-                            Recovery. Vitality.</p>
-                        <div class="hero__rating">
-                            <svg width="96" height="16" viewBox="0 0 96 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                                    fill="#454B60" />
-                                <path
-                                    d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z"
-                                    fill="#454B60" />
-                                <path
-                                    d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z"
-                                    fill="#454B60" />
-                                <path
-                                    d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z"
-                                    fill="#454B60" />
-                                <path
-                                    d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z"
-                                    fill="#121C3F" fill-opacity="0.1" />
-                                <path
-                                    d="M86.2041 5.52832H80.3916L85.0938 8.94434L83.2979 14.4717L88 11.0557V0L86.2041 5.52832Z"
-                                    fill="#454B60" />
-                            </svg>
-                            <p>4.9</p>
-                            <span>(312 reviews)</span>
-                        </div>
-                        <a href="/products/api-complex" class="btn hero__btn">
-                            SHOP API-COMPLEX
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M14.048 17.6537L19.702 11.9999L14.048 6.34619L12.9942 7.43069L16.8135 11.2499H4.29796V12.7499H16.8135L12.9942 16.5692L14.048 17.6537Z"
-                                    fill="white" fill-opacity="0.5" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="hero__img slide-2-img">
-                        <div class="slide-2-badge">
-                            <span class="slide-2-badge-num">0</span>
-                            <span class="slide-2-badge-text">Fillers, sugar,<br>or artificial additives</span>
-                        </div>
-                        {%- assign hero2_avif = 'hero-2-img.avif' | file_url -%}
-                        {%- assign hero2_webp = 'slide-2-img.webp' | file_url -%}
-                        <picture>
-                          <source
-                            type="image/avif"
-                            srcset="
-                              {{ hero2_avif }}&width=215 215w,
-                              {{ hero2_avif }}&width=320 320w,
-                              {{ hero2_avif }}&width=415 415w,
-                              {{ hero2_avif }}&width=620 620w
-                            "
-                            sizes="(max-width: 650px) 51.48vw, (max-width: 1919px) 27.8vw, 410px"
-                          >
-                          <source
-                            type="image/webp"
-                            srcset="
-                              {{ hero2_webp }}&width=215 215w,
-                              {{ hero2_webp }}&width=320 320w,
-                              {{ hero2_webp }}&width=415 415w,
-                              {{ hero2_webp }}&width=620 620w
-                            "
-                            sizes="(max-width: 650px) 51.48vw, (max-width: 1919px) 27.8vw, 410px"
-                          >
-                          <img src="{{ hero2_webp }}&width=415" width="410" height="504" alt="" loading="lazy">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="swiper-slide hero__slide">
-            {%- assign bg_img_url = 'hero-3-bg.avif' | file_url -%}
-            <img class="hero__slide-bg" src="{{ bg_img_url }}&width=1500" srcset="
-            {{ bg_img_url }}&width=480 480w,
-            {{ bg_img_url }}&width=750 750w,
-            {{ bg_img_url }}&width=1100 1100w,
-            {{ bg_img_url }}&width=1500 1500w,
-            {{ bg_img_url }}&width=1920 1920w
-        " sizes="100vw" alt="" width="1920" height="1080" loading="eager">
-            <div class="container">
-                <div class="hero__inner">
-                    <div class="hero__text">
-                        <div class="hero__badge">PROTOCOL 01 — THE HIVE</div>
-                        <h1 class="hero__title">Api-Complex</h1>
-                        <p class="hero__desc">3,500 mg of active hive compounds. <br>Immunity. Energy. Focus. Gut &
-                            Recovery. Vitality.</p>
-                        <div class="hero__rating">
-                            <svg width="96" height="16" viewBox="0 0 96 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                                    fill="#454B60" />
-                                <path
-                                    d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z"
-                                    fill="#454B60" />
-                                <path
-                                    d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z"
-                                    fill="#454B60" />
-                                <path
-                                    d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z"
-                                    fill="#454B60" />
-                                <path
-                                    d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z"
-                                    fill="#121C3F" fill-opacity="0.1" />
-                                <path
-                                    d="M86.2041 5.52832H80.3916L85.0938 8.94434L83.2979 14.4717L88 11.0557V0L86.2041 5.52832Z"
-                                    fill="#454B60" />
-                            </svg>
-                            <p>4.9</p>
-                            <span>(312 reviews)</span>
-                        </div>
-                        <a href="/products/api-complex" class="btn hero__btn">
-                            SHOP API-COMPLEX
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M14.048 17.6537L19.702 11.9999L14.048 6.34619L12.9942 7.43069L16.8135 11.2499H4.29796V12.7499H16.8135L12.9942 16.5692L14.048 17.6537Z"
-                                    fill="white" fill-opacity="0.5" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="hero__img slide-3-img">
-                        {%- assign hero3_avif = 'hero-main-3.avif' | file_url -%}
-                        {%- assign hero3_webp = 'hero-main-3.webp' | file_url -%}
-                        <picture>
-                          <source
-                            type="image/avif"
-                            srcset="
-                              {{ hero3_avif }}&width=340 340w,
-                              {{ hero3_avif }}&width=530 530w,
-                              {{ hero3_avif }}&width=700 700w,
-                              {{ hero3_avif }}&width=1080 1080w
-                            "
-                            sizes="(max-width: 650px) 82.32vw, (max-width: 1919px) 47.3vw, 698px"
-                          >
-                          <source
-                            type="image/webp"
-                            srcset="
-                              {{ hero3_webp }}&width=340 340w,
-                              {{ hero3_webp }}&width=530 530w,
-                              {{ hero3_webp }}&width=700 700w,
-                              {{ hero3_webp }}&width=1080 1080w
-                            "
-                            sizes="(max-width: 650px) 82.32vw, (max-width: 1919px) 47.3vw, 698px"
-                          >
-                          <img src="{{ hero3_webp }}&width=700" width="698" height="495" alt="" loading="lazy">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-
+{% comment %} 
     <div class="container hero__controls-container">
         <div class="hero__pagination" id="hero-pagination-{{ section.id }}">
             <div class="hero__pagination-fraction">
@@ -267,7 +109,7 @@
                 <span class="hero__pagination-progress-bar" id="hero-progress-bar-{{ section.id }}"></span>
             </div>
         </div>
-    </div>
+    </div> {% endcomment %}
 </section>
 <script>
 (function () {
