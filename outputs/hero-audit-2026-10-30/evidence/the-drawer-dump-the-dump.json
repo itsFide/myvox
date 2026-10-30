@@ -1,0 +1,35 @@
+{
+  "index": 51,
+  "xlsx_row": 52,
+  "angle": "The Drawer Dump",
+  "group": "HERO 1 ↔ GROUP 1 – The dump",
+  "url": "https://myvox-9.com/pages/the-drawer-dump-the-dump",
+  "expected": {
+    "headline": "Your whole supplement drawer is chasing three things. One stick carries all of them.",
+    "description": "Api-Complex is bee bread, royal jelly and propolis, covering the raw materials, recovery signal and clean internal balance your whole body runs on.",
+    "cta": "Start my first cycle →"
+  },
+  "checked_at": "2026-10-30T16:39:42.557953+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/the-drawer-dump-the-dump",
+  "html_sha256": "d5957361e5187217927a59f8f5ae2051041f70599c6d42709e1cfe3b800f6365",
+  "hero_id": null,
+  "actual": {
+    "headline": "Your whole supplement drawer is chasing three things. One stick carries all of them.",
+    "description": "Api-Complex is bee bread, royal jelly and propolis, covering the raw materials, recovery signal and clean internal balance your whole body runs on.",
+    "cta": "Start my first cycle"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

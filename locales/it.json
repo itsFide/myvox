@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Traccia il tuo ordine",
+    "description": "Inserisci il numero di tracciamento qui sotto.",
+    "tracking_number": "Numero di tracciamento",
+    "submit": "Traccia ordine",
+    "empty_number": "Inserisci il numero di tracciamento.",
+    "unavailable": "Il tracciamento è temporaneamente non disponibile. Aggiorna la pagina e riprova."
+  },
   "blocks": {
     "load_video": "Carica il video: {{ description }}",
     "sold_out": "Esaurito",

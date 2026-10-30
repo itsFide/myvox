@@ -1,0 +1,35 @@
+{
+  "index": 26,
+  "xlsx_row": 27,
+  "angle": "Immunity",
+  "group": "HERO 6 ↔ GROUP 6 – Travel, crowds, the office",
+  "url": "https://myvox-9.com/pages/immunity-travel-crowds-the-office",
+  "expected": {
+    "headline": "Every flight costs you three days. The exposure isn't going anywhere.",
+    "description": "Api-Complex supports your immune defenses every day, so they aren't already running low before you board.",
+    "cta": "Travel supported →"
+  },
+  "checked_at": "2026-10-30T16:39:39.374659+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/immunity-travel-crowds-the-office",
+  "html_sha256": "7bbec09e2881eca6b2d48dac9a43caf6fff8cd1be8e649647dc6ea2eb82ec494",
+  "hero_id": null,
+  "actual": {
+    "headline": "Every flight costs you three days. The exposure isn't going anywhere.",
+    "description": "Api-Complex supports your immune defenses every day, so they aren't already running low before you board.",
+    "cta": "Travel supported"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

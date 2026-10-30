@@ -1,0 +1,35 @@
+{
+  "index": 71,
+  "xlsx_row": 72,
+  "angle": "If I Could Only Keep One",
+  "group": "HERO 1 ↔ GROUP 1 – The forced choice",
+  "url": "https://myvox-9.com/pages/one-the-forced-choice",
+  "expected": {
+    "headline": "If you could keep only one supplement, it had better do more than one job.",
+    "description": "Api-Complex covers the three things your whole body runs on, which is how one stick stands in for a shelf.",
+    "cta": "Make it my one →"
+  },
+  "checked_at": "2026-10-30T16:39:45.120229+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/one-the-forced-choice",
+  "html_sha256": "6f243b942b4b490f18347911658738a334e1a62d148f6c674994ac79be1f9cc1",
+  "hero_id": null,
+  "actual": {
+    "headline": "If you could keep only one supplement, it had better do more than one job.",
+    "description": "Api-Complex covers the three things your whole body runs on, which is how one stick stands in for a shelf.",
+    "cta": "Make it my one"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

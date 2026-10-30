@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Seuraa tilaustasi",
+    "description": "Syötä seurantanumerosi alle.",
+    "tracking_number": "Seurantanumero",
+    "submit": "Seuraa tilausta",
+    "empty_number": "Syötä seurantanumerosi.",
+    "unavailable": "Seuranta ei ole tilapäisesti käytettävissä. Päivitä sivu ja yritä uudelleen."
+  },
   "blocks": {
     "load_video": "Lataa video: {{ description }}",
     "sold_out": "Loppuunmyyty",

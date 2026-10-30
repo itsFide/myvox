@@ -1,5 +1,18 @@
 {% render 'svg-sprite' %}
 {% render 'landing-v1-styles' %}
+{% liquid
+    assign hero_heading = page.metafields.custom.hero_heading.value | strip
+    assign hero_description = page.metafields.custom.hero_description.value | strip
+    assign hero_button_text = page.metafields.custom.hero_button_text.value | strip
+    assign hero_heading_html = hero_heading | escape | newline_to_br
+
+    if hero_heading contains '[[' and hero_heading contains ']]'
+        assign hero_heading_prefix = hero_heading | split: '[[' | first
+        unless hero_heading_prefix contains ']]'
+            assign hero_heading_html = hero_heading_html | replace_first: '[[', '<span>' | replace_first: ']]', '</span>'
+        endunless
+    endif
+%}
 <style>
     .page-wrapper .header.header--static{
     position: static !important;
@@ -23,17 +36,29 @@
             <div class="hero__content">
 
                 <h1 class="hero__title">
-                    <span>If you wake up <br class="mobile-br"> already exhausted,</span> <br>
-                    your mornings <br> aren't the problem
+                    {% if hero_heading != blank %}
+                        {{ hero_heading_html }}
+                    {% else %}
+                        <span>If you wake up <br class="mobile-br"> already exhausted,</span> <br>
+                        your mornings <br> aren't the problem
+                    {% endif %}
                 </h1>
 
                 <p class="hero__description">
-                    Api-Complex supports steady, natural energy, <br>
-                    so mornings start easier instead of dragging.
+                    {% if hero_description != blank %}
+                        {{ hero_description | escape | newline_to_br }}
+                    {% else %}
+                        Api-Complex supports steady, natural energy, <br>
+                        so mornings start easier instead of dragging.
+                    {% endif %}
                 </p>
 
                 <a class="hero__button button button--primary" href="#pricing">
-                    TRY API-COMPLEX
+                    {% if hero_button_text != blank %}
+                        {{ hero_button_text | escape }}
+                    {% else %}
+                        TRY API-COMPLEX
+                    {% endif %}
                     <svg aria-hidden="true">
                         <use href="#arrow-icon"></use>
                     </svg>
@@ -123,7 +148,7 @@
                         <h3 class="hero__badge-title">
                             Third-party lab tested
                         </h3>
-                        <a class="hero__badge-link" href="#">
+                        <a class="hero__badge-link" href="#" data-image-modal="https://cdn.shopify.com/s/files/1/1024/5387/0960/files/TR-261001-S11-01_Branded_page-0001-2.jpg?v=1793203849">
                             Certificate of Analysis
                             <svg aria-hidden="true">
                                 <use href="#arrow-icon"></use>
@@ -1126,7 +1151,7 @@
                         brand's word for what's in the package, including ours.
                     </p>
 
-                    <a class="research__button button button--outline" href="#">
+                    <a class="research__button button button--outline" href="#" data-image-modal="https://cdn.shopify.com/s/files/1/1024/5387/0960/files/TR-261001-S11-01_Branded_page-0001-2.jpg?v=1793203849">
                         <svg aria-hidden="true">
                             <use href="#link-icon"></use>
                         </svg>
@@ -2157,11 +2182,24 @@
                 <div class="swiper-slide">
                     <article class="reviews__item ">
                         <div class="reviews__video">
-                            <video src="/draft/Demo Background Sample Video.webm"
-                                poster="{{ 'reviews-preview-1.webp' | file_url }}" playsinline></video>
-
-                            <button class="reviews__play active" type="button" aria-label="Play video">
-                                <svg>
+                            <video
+                                data-review-video
+                                src="https://cdn.shopify.com/videos/c/o/v/d28ad41d5ec4476faba3cc84b7668164.webm"
+                                poster="{{ 'OnlyKeepOne_Testimonial-poster.webp' | asset_url }}"
+                                width="540"
+                                height="960"
+                                preload="metadata"
+                                playsinline
+                                aria-label="{{ 'blocks.load_video' | t: description: 'Jake B.' | escape }}"
+                            ></video>
+                            <button
+                                class="reviews__play reviews__play--surface active"
+                                type="button"
+                                aria-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-play-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-pause-label="{{ 'accessibility.pause_video' | t | escape }}"
+                            >
+                                <svg aria-hidden="true">
                                     <use href="#play-icon"></use>
                                 </svg>
                             </button>
@@ -2231,11 +2269,24 @@
                 <div class="swiper-slide">
                     <article class="reviews__item ">
                         <div class="reviews__video">
-                            <video src="/draft/Demo Background Sample Video.webm"
-                                poster="{{ 'reviews-preview-2.webp' | file_url }}" playsinline></video>
-
-                            <button class="reviews__play active" type="button" aria-label="Play video">
-                                <svg>
+                            <video
+                                data-review-video
+                                src="https://cdn.shopify.com/videos/c/o/v/ba63dfe3926d4956aabd6cb0c5e219f7.webm"
+                                poster="{{ 'TheDrawerDump_Testimonial-poster.webp' | asset_url }}"
+                                width="540"
+                                height="960"
+                                preload="metadata"
+                                playsinline
+                                aria-label="{{ 'blocks.load_video' | t: description: 'Rebecca C.' | escape }}"
+                            ></video>
+                            <button
+                                class="reviews__play reviews__play--surface active"
+                                type="button"
+                                aria-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-play-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-pause-label="{{ 'accessibility.pause_video' | t | escape }}"
+                            >
+                                <svg aria-hidden="true">
                                     <use href="#play-icon"></use>
                                 </svg>
                             </button>
@@ -2298,11 +2349,24 @@
                 <div class="swiper-slide">
                     <article class="reviews__item ">
                         <div class="reviews__video">
-                            <video src="/draft/Demo Background Sample Video.webm"
-                                poster="{{ 'reviews-preview-3.webp' | file_url }}" playsinline></video>
-
-                            <button class="reviews__play active" type="button" aria-label="Play video">
-                                <svg>
+                            <video
+                                data-review-video
+                                src="https://cdn.shopify.com/videos/c/o/v/adee6ebc343b4c44aae016b728457d7f.webm"
+                                poster="{{ 'Energy_Testimonial-poster.webp' | asset_url }}"
+                                width="540"
+                                height="960"
+                                preload="metadata"
+                                playsinline
+                                aria-label="{{ 'blocks.load_video' | t: description: 'Courtney W.' | escape }}"
+                            ></video>
+                            <button
+                                class="reviews__play reviews__play--surface active"
+                                type="button"
+                                aria-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-play-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-pause-label="{{ 'accessibility.pause_video' | t | escape }}"
+                            >
+                                <svg aria-hidden="true">
                                     <use href="#play-icon"></use>
                                 </svg>
                             </button>
@@ -2365,11 +2429,24 @@
                 <div class="swiper-slide">
                     <article class="reviews__item ">
                         <div class="reviews__video">
-                            <video src="/draft/Demo Background Sample Video.webm"
-                                poster="{{ 'reviews-preview-4.webp' | file_url }}" playsinline></video>
-
-                            <button class="reviews__play active" type="button" aria-label="Play video">
-                                <svg>
+                            <video
+                                data-review-video
+                                src="https://cdn.shopify.com/videos/c/o/v/e9209d83a67e4407bd835ffe3bc0057a.webm"
+                                poster="{{ 'Gut_Testimonial-poster.webp' | asset_url }}"
+                                width="540"
+                                height="960"
+                                preload="metadata"
+                                playsinline
+                                aria-label="{{ 'blocks.load_video' | t: description: 'Michelle L.' | escape }}"
+                            ></video>
+                            <button
+                                class="reviews__play reviews__play--surface active"
+                                type="button"
+                                aria-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-play-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-pause-label="{{ 'accessibility.pause_video' | t | escape }}"
+                            >
+                                <svg aria-hidden="true">
                                     <use href="#play-icon"></use>
                                 </svg>
                             </button>
@@ -2432,11 +2509,24 @@
                 <div class="swiper-slide">
                     <article class="reviews__item ">
                         <div class="reviews__video">
-                            <video src="/draft/Demo Background Sample Video.webm"
-                                poster="{{ 'reviews-preview-5.webp' | file_url }}" playsinline></video>
-
-                            <button class="reviews__play active" type="button" aria-label="Play video">
-                                <svg>
+                            <video
+                                data-review-video
+                                src="https://cdn.shopify.com/videos/c/o/v/b6a67e18103b4fd2acc41726688e088a.webm"
+                                poster="{{ 'Focus_Testimonial-poster.webp' | asset_url }}"
+                                width="540"
+                                height="960"
+                                preload="metadata"
+                                playsinline
+                                aria-label="{{ 'blocks.load_video' | t: description: 'Dan K.' | escape }}"
+                            ></video>
+                            <button
+                                class="reviews__play reviews__play--surface active"
+                                type="button"
+                                aria-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-play-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-pause-label="{{ 'accessibility.pause_video' | t | escape }}"
+                            >
+                                <svg aria-hidden="true">
                                     <use href="#play-icon"></use>
                                 </svg>
                             </button>
@@ -2499,11 +2589,24 @@
                 <div class="swiper-slide">
                     <article class="reviews__item ">
                         <div class="reviews__video">
-                            <video src="/draft/Demo Background Sample Video.webm"
-                                poster="{{ 'reviews-preview-6.webp' | file_url }}" playsinline></video>
-
-                            <button class="reviews__play active" type="button" aria-label="Play video">
-                                <svg>
+                            <video
+                                data-review-video
+                                src="https://cdn.shopify.com/videos/c/o/v/bf46075a63fb4863bb30746f6d51569d.webm"
+                                poster="{{ 'Vitality_Testimonial-poster.webp' | asset_url }}"
+                                width="540"
+                                height="960"
+                                preload="metadata"
+                                playsinline
+                                aria-label="{{ 'blocks.load_video' | t: description: 'Mark R.' | escape }}"
+                            ></video>
+                            <button
+                                class="reviews__play reviews__play--surface active"
+                                type="button"
+                                aria-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-play-label="{{ 'accessibility.play_video' | t | escape }}"
+                                data-pause-label="{{ 'accessibility.pause_video' | t | escape }}"
+                            >
+                                <svg aria-hidden="true">
                                     <use href="#play-icon"></use>
                                 </svg>
                             </button>
@@ -3080,7 +3183,7 @@
                 </p>
 
                 <div class="cta__actions">
-                    <a class="button button--primary" href="/cart/54218299212144:1">
+                    <a class="button button--primary" href="{% render 'api-complex-subscription-url' %}">
                         Start My First Cycle - $79
                         <svg aria-hidden="true">
                             <use href="#arrow-icon"></use>
@@ -3165,7 +3268,7 @@
                 <h2 class="bonus-modal__title" id="bonus-modal-title">
                     4 Guides.
                     <br class="mobile-br">
-                    <span>Yours Free. Worth $136</span>
+                    <span>Yours Free. Worth $60</span>
                 </h2>
 
                 <p class="bonus-modal__description">
@@ -3198,7 +3301,7 @@
                         </p>
 
                         <div class="bonus-guide__price">
-                            <span class="bonus-guide__price-old">$39</span>
+                            <span class="bonus-guide__price-old">$15</span>
                             <span class="bonus-guide__price-free">FREE</span>
                         </div>
                     </div>
@@ -3225,7 +3328,7 @@
                         </p>
 
                         <div class="bonus-guide__price">
-                            <span class="bonus-guide__price-old">$34</span>
+                            <span class="bonus-guide__price-old">$15</span>
                             <span class="bonus-guide__price-free">FREE</span>
                         </div>
                     </div>
@@ -3252,7 +3355,7 @@
                         </p>
 
                         <div class="bonus-guide__price">
-                            <span class="bonus-guide__price-old">$34</span>
+                            <span class="bonus-guide__price-old">$15</span>
                             <span class="bonus-guide__price-free">FREE</span>
                         </div>
                     </div>
@@ -3279,7 +3382,7 @@
                         </p>
 
                         <div class="bonus-guide__price">
-                            <span class="bonus-guide__price-old">$29</span>
+                            <span class="bonus-guide__price-old">$15</span>
                             <span class="bonus-guide__price-free">FREE</span>
                         </div>
                     </div>
@@ -3293,7 +3396,7 @@
                 </span>
 
                 <span class="bonus-modal__total-value">
-                    $136
+                    $60
                 </span>
             </div>
 
@@ -3306,7 +3409,7 @@
             </div>
 
             <div class="bonus-modal__actions">
-                <a class="button button--primary">
+                <a class="button button--primary" href="{% render 'api-complex-subscription-url' %}">
                     START MY FIRST CYCLE – $79
                     <svg>
                         <use href="#arrow-icon"></use>

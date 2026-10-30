@@ -1,0 +1,132 @@
+[
+  {
+    "url": "https://myvox-9.com/pages/immunity-catching-everything",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Someone sneezes Monday, it's you by Thursday. That isn't bad luck.",
+    "actual_highlight": [
+      "Someone sneezes Monday, it's you by Thursday."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/immunity-kids-bring-it-home",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Your kids bounce back in a day. You lose a week. Same house, different reserves.",
+    "actual_highlight": [
+      "Your kids bounce back in a day. You lose a week."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/immunity-a-bug-costs-a-week",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Every cold costs you a full week. One vitamin was never covering that.",
+    "actual_highlight": [
+      "Every cold costs you a full week."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/immunity-the-count",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Four colds since January. You counted, and that's the part that bothers you.",
+    "actual_highlight": [
+      "Four colds since January."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/immunity-slow-to-recover",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Everyone else shook it off in three days. You're on day fourteen.",
+    "actual_highlight": [
+      "You're on day fourteen."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/immunity-travel-crowds-the-office",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Every flight costs you three days. The exposure isn't going anywhere.",
+    "actual_highlight": [
+      "Every flight costs you three days."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/immunity-cold-season",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "It's September and you're already bracing for the first cold. Same story every year.",
+    "actual_highlight": [
+      "It's September and you're already bracing for the first cold."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/immunity-run-down-even-when-youre-well",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "You're not sick. You're not well either. Defenses that start worn down have nothing spare.",
+    "actual_highlight": [
+      "You're not sick. You're not well either."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/immunity-self-id",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Four colds a winter, a week down every time, run-down in between. One vitamin was never going to cover that.",
+    "actual_highlight": [
+      "Four colds a winter, a week down every time, run-down in between."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/immunity-done-losing-time",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "You plan your year around getting sick. That's how much time this takes.",
+    "actual_highlight": [
+      "You plan your year around getting sick."
+    ],
+    "passed": true
+  }
+]

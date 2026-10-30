@@ -1,0 +1,35 @@
+{
+  "index": 42,
+  "xlsx_row": 43,
+  "angle": "Vitality",
+  "group": "HERO 2 ↔ GROUP 2 – The stack isn't working",
+  "url": "https://myvox-9.com/pages/vitality-the-stack-isnt-working",
+  "expected": {
+    "headline": "Seven supplements a day and you still feel off. Each one covers a fraction.",
+    "description": "Api-Complex covers all three things your body actually runs on, together, in a single daily stick. 3,500mg of actives, no sugar, no fillers.",
+    "cta": "Replace the stack →"
+  },
+  "checked_at": "2026-10-30T16:39:41.389707+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/vitality-the-stack-isnt-working",
+  "html_sha256": "3a6dd7c081b0e93ef21945ea8a937bb149df3b2d803f61a8688540d7416eb88e",
+  "hero_id": null,
+  "actual": {
+    "headline": "Seven supplements a day and you still feel off. Each one covers a fraction.",
+    "description": "Api-Complex covers all three things your body actually runs on, together, in a single daily stick. 3,500mg of actives, no sugar, no fillers.",
+    "cta": "Replace the stack"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

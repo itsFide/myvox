@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Śledź swoje zamówienie",
+    "description": "Wpisz poniżej numer przesyłki.",
+    "tracking_number": "Numer przesyłki",
+    "submit": "Śledź zamówienie",
+    "empty_number": "Wpisz numer przesyłki.",
+    "unavailable": "Śledzenie jest tymczasowo niedostępne. Odśwież stronę i spróbuj ponownie."
+  },
   "blocks": {
     "load_video": "Załaduj film: {{ description }}",
     "sold_out": "Wyprzedane",

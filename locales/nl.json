@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Volg je bestelling",
+    "description": "Voer hieronder je trackingnummer in.",
+    "tracking_number": "Trackingnummer",
+    "submit": "Bestelling volgen",
+    "empty_number": "Voer je trackingnummer in.",
+    "unavailable": "Tracking is tijdelijk niet beschikbaar. Vernieuw de pagina en probeer het opnieuw."
+  },
   "blocks": {
     "load_video": "Video laden: {{ description }}",
     "sold_out": "Uitverkocht",

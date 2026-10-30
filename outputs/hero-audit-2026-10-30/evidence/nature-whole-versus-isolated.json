@@ -1,0 +1,35 @@
+{
+  "index": 65,
+  "xlsx_row": 66,
+  "angle": "Nature Build It First",
+  "group": "HERO 5 ↔ GROUP 5 – Whole versus isolated",
+  "url": "https://myvox-9.com/pages/nature-whole-versus-isolated",
+  "expected": {
+    "headline": "Your pills are isolated fragments. Hive food arrives whole, in the order nature built it.",
+    "description": "Api-Complex gives your body all three things it runs on as whole food, freeze-dried and unchanged.",
+    "cta": "Replace the fragments →"
+  },
+  "checked_at": "2026-10-30T16:39:44.553056+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/nature-whole-versus-isolated",
+  "html_sha256": "c169f7525e017c11f6d7c75f17d7daadf729979be859435e33dfaeb88c4c9110",
+  "hero_id": null,
+  "actual": {
+    "headline": "Your pills are isolated fragments. Hive food arrives whole, in the order nature built it.",
+    "description": "Api-Complex gives your body all three things it runs on as whole food, freeze-dried and unchanged.",
+    "cta": "Replace the fragments"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

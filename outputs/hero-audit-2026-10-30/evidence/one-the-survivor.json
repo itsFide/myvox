@@ -1,0 +1,35 @@
+{
+  "index": 73,
+  "xlsx_row": 74,
+  "angle": "If I Could Only Keep One",
+  "group": "HERO 3 ↔ GROUP 3 – The survivor",
+  "url": "https://myvox-9.com/pages/one-the-survivor",
+  "expected": {
+    "headline": "Cut your supplement stack down to one and see what's still standing. Most of it won't be.",
+    "description": "Api-Complex replaces a shelf of single-job bottles with one stick that supports your whole body.",
+    "cta": "Keep the survivor →"
+  },
+  "checked_at": "2026-10-30T16:39:45.326628+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/one-the-survivor",
+  "html_sha256": "2747ea3c81b713400985268fcbc8361c3c6582d63ddef82d4604c0f5b2d603db",
+  "hero_id": null,
+  "actual": {
+    "headline": "Cut your supplement stack down to one and see what's still standing. Most of it won't be.",
+    "description": "Api-Complex replaces a shelf of single-job bottles with one stick that supports your whole body.",
+    "cta": "Keep the survivor"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

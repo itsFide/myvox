@@ -1,0 +1,35 @@
+{
+  "index": 69,
+  "xlsx_row": 70,
+  "angle": "Nature Build It First",
+  "group": "HERO 9 ↔ GROUP 9 – Social proof",
+  "url": "https://myvox-9.com/pages/nature-social-proof",
+  "expected": {
+    "headline": "Ten thousand people switched from synthetic pills to what the hive already makes.",
+    "description": "Api-Complex is the hive system they chose over a shelf of lab-made bottles.",
+    "cta": "Switch to the hive →"
+  },
+  "checked_at": "2026-10-30T16:39:44.814793+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/nature-social-proof",
+  "html_sha256": "e9d25384c76868830083c1b8a41f59267c16b601eca9f93e6b454b66b3b6a8c2",
+  "hero_id": null,
+  "actual": {
+    "headline": "Ten thousand people switched from synthetic pills to what the hive already makes.",
+    "description": "Api-Complex is the hive system they chose over a shelf of lab-made bottles.",
+    "cta": "Switch to the hive"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

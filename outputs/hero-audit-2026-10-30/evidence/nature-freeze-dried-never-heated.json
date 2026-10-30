@@ -1,0 +1,35 @@
+{
+  "index": 67,
+  "xlsx_row": 68,
+  "angle": "Nature Build It First",
+  "group": "HERO 7 ↔ GROUP 7 – Freeze-dried, never heated",
+  "url": "https://myvox-9.com/pages/nature-freeze-dried-never-heated",
+  "expected": {
+    "headline": "Heat ruins the best part of royal jelly. So this one is never heated, at any stage.",
+    "description": "Api-Complex is freeze-dried in a vacuum at low temperature and hermetically sealed, with no honey, no sugar and no preservatives added.",
+    "cta": "Get it unheated →"
+  },
+  "checked_at": "2026-10-30T16:39:44.701252+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/nature-freeze-dried-never-heated",
+  "html_sha256": "609f479393c0fb5382e0fc399e72a89d060c4f1a19172bc465649dace4e12c23",
+  "hero_id": null,
+  "actual": {
+    "headline": "Heat ruins the best part of royal jelly. So this one is never heated, at any stage.",
+    "description": "Api-Complex is freeze-dried in a vacuum at low temperature and hermetically sealed, with no honey, no sugar and no preservatives added.",
+    "cta": "Get it unheated"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

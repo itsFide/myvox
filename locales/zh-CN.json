@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "追踪您的订单",
+    "description": "请在下方输入物流单号。",
+    "tracking_number": "物流单号",
+    "submit": "追踪订单",
+    "empty_number": "请输入物流单号。",
+    "unavailable": "物流追踪暂时不可用。请刷新页面后重试。"
+  },
   "blocks": {
     "load_video": "加载视频：{{ description }}",
     "sold_out": "售罄",

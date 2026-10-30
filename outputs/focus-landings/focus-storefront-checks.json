@@ -1,0 +1,132 @@
+[
+  {
+    "url": "https://myvox-9.com/pages/focus-reading-nothing-goes-in",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Fourth read of the same email, and still nothing. You're not losing your edge.",
+    "actual_highlight": [
+      "Fourth read of the same email, and still nothing."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/focus-the-2pm-shutdown",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "2 p.m. and your brain quits. Willpower was never the missing piece.",
+    "actual_highlight": [
+      "2 p.m. and your brain quits."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/focus-memory-slips",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "You walk into a room and forget why. Trying harder was never going to fix that.",
+    "actual_highlight": [
+      "You walk into a room and forget why."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/focus-what-foggy-hours-cost",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Three billable hours a day, lost to fog. You've been paying for this quietly.",
+    "actual_highlight": [
+      "Three billable hours a day, lost to fog."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/focus-coffee-isnt-clearing-it",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Coffee works for an hour, then the fog rolls back in. Caffeine isn't what your focus is missing.",
+    "actual_highlight": [
+      "Coffee works for an hour, then the fog rolls back in."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/focus-calls-and-meetings",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "You nodded through the whole call and caught none of it. That isn't distraction.",
+    "actual_highlight": [
+      "You nodded through the whole call and caught none of it."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/focus-the-fog-itself",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Brain fog at 2 p.m., like clockwork. Coffee can't reach it because caffeine isn't what's missing.",
+    "actual_highlight": [
+      "Brain fog at 2 p.m., like clockwork."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/focus-self-id",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Rereading the same line, losing the word, foggy every afternoon. That isn't laziness and it isn't your age.",
+    "actual_highlight": [
+      "Rereading the same line, losing the word, foggy every afternoon."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/focus-cant-start-cant-finish",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "The same task, reopened all week. Starting isn't a motivation problem.",
+    "actual_highlight": [
+      "The same task, reopened all week."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/focus-words-and-thoughts-slip",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "You lose the word mid-sentence and everyone waits. That isn't how you normally talk.",
+    "actual_highlight": [
+      "You lose the word mid-sentence and everyone waits."
+    ],
+    "passed": true
+  }
+]

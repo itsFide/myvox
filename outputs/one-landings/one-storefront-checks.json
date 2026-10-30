@@ -1,0 +1,132 @@
+[
+  {
+    "url": "https://myvox-9.com/pages/one-the-forced-choice",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "If you could keep only one supplement, it had better do more than one job.",
+    "actual_highlight": [
+      "If you could keep only one supplement,"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/one-everything-else-does-one-job",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "A pill for energy, a pill for sleep, a pill for your gut. That's the problem, not the plan.",
+    "actual_highlight": [
+      "A pill for energy, a pill for sleep, a pill for your gut."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/one-the-survivor",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Cut your supplement stack down to one and see what's still standing. Most of it won't be.",
+    "actual_highlight": [
+      "Cut your supplement stack down to one"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/one-the-keeper",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "One stick. Four jobs. That's why it earns the only spot on the shelf.",
+    "actual_highlight": [
+      "One stick. Four jobs."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/one-not-a-compromise",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Keeping one supplement only works if it isn't a compromise. Check the dose.",
+    "actual_highlight": [
+      "it isn't a compromise."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/one-picky-and-hard-to-impress",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "You return things that don't work. This is the one supplement that stayed.",
+    "actual_highlight": [
+      "This is the one supplement that stayed."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/one-choice-overload",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "You don't need a shelf of supplements. You need the one that covers all of it.",
+    "actual_highlight": [
+      "You don't need a shelf of supplements."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/one-self-id",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "If you had to cut your shelf down to one, what would actually be worth keeping?",
+    "actual_highlight": [
+      "what would actually be worth keeping?"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/one-social-proof",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Ten thousand people cut their supplements down to one. They all kept the same one.",
+    "actual_highlight": [
+      "They all kept the same one."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/one-the-decisive-payoff",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "One supplement, and you don't miss the other eight.",
+    "actual_highlight": [
+      "you don't miss the other eight."
+    ],
+    "passed": true
+  }
+]

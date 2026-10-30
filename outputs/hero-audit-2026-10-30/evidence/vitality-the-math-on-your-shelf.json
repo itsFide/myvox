@@ -1,0 +1,35 @@
+{
+  "index": 47,
+  "xlsx_row": 48,
+  "angle": "Vitality",
+  "group": "HERO 7 ↔ GROUP 7 – The math on your shelf",
+  "url": "https://myvox-9.com/pages/vitality-the-math-on-your-shelf",
+  "expected": {
+    "headline": "Two hundred a month for a shelf of maybes. Ten minutes every morning to sort them.",
+    "description": "Api-Complex is one stick, once a day, ten seconds – covering what a shelf of single-purpose bottles was chasing.",
+    "cta": "Simplify my routine →"
+  },
+  "checked_at": "2026-10-30T16:39:42.029736+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/vitality-the-math-on-your-shelf",
+  "html_sha256": "79075df40ef1e6d6be0d405acf1596edbe1e14a95be9d9dfa9093ca309f8ae6c",
+  "hero_id": null,
+  "actual": {
+    "headline": "Two hundred a month for a shelf of maybes. Ten minutes every morning to sort them.",
+    "description": "Api-Complex is one stick, once a day, ten seconds – covering what a shelf of single-purpose bottles was chasing.",
+    "cta": "Simplify my routine"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

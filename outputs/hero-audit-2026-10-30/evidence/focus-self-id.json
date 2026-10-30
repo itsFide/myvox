@@ -1,0 +1,35 @@
+{
+  "index": 18,
+  "xlsx_row": 19,
+  "angle": "Focus",
+  "group": "HERO 8 ↔ GROUP 8 – Self-ID",
+  "url": "https://myvox-9.com/pages/focus-self-id",
+  "expected": {
+    "headline": "Rereading the same line, losing the word, foggy every afternoon. That isn't laziness and it isn't your age.",
+    "description": "Api-Complex helps maintain normal, steady focus by covering all three things your brain needs at the same time.",
+    "cta": "Fix what focus apps can't →"
+  },
+  "checked_at": "2026-10-30T16:39:38.398379+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/focus-self-id",
+  "html_sha256": "e9b0a4d58148f7dc28fece52cd3e0c0e721ee7dbedd8e9a54002e9afe09a3b56",
+  "hero_id": null,
+  "actual": {
+    "headline": "Rereading the same line, losing the word, foggy every afternoon. That isn't laziness and it isn't your age.",
+    "description": "Api-Complex helps maintain normal, steady focus by covering all three things your brain needs at the same time.",
+    "cta": "Fix what focus apps can't"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

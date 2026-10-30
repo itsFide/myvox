@@ -1,0 +1,35 @@
+{
+  "index": 14,
+  "xlsx_row": 15,
+  "angle": "Focus",
+  "group": "HERO 4 ↔ GROUP 4 – What foggy hours cost",
+  "url": "https://myvox-9.com/pages/focus-what-foggy-hours-cost",
+  "expected": {
+    "headline": "Three billable hours a day, lost to fog. You've been paying for this quietly.",
+    "description": "Api-Complex supports steady mental clarity deep into the workday, so the second half of your day is worth as much as the first.",
+    "cta": "Get those hours back →"
+  },
+  "checked_at": "2026-10-30T16:39:38.312944+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/focus-what-foggy-hours-cost",
+  "html_sha256": "e4e2bace89065b7e615dffa94c1cc70a2ca6dc98e70c1be2a26136d8b25836b0",
+  "hero_id": null,
+  "actual": {
+    "headline": "Three billable hours a day, lost to fog. You've been paying for this quietly.",
+    "description": "Api-Complex supports steady mental clarity deep into the workday, so the second half of your day is worth as much as the first.",
+    "cta": "Get those hours back"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

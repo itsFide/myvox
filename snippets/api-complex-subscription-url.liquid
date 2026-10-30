@@ -1,0 +1,20 @@
+{%- doc -%}
+  Outputs the Api-Complex subscription URL for use in an href attribute.
+  Clears the cart, adds one subscription and four one-time guides, then applies FREESHIP before checkout.
+  Sends guides in reverse order and the subscription last to account for checkout's item ordering.
+  @example
+  <a href="{% render 'api-complex-subscription-url' %}">Subscribe</a>
+{%- enddoc -%}
+{%- liquid
+  assign discount_url = '/discount/FREESHIP?redirect=/checkout' | url_encode
+  assign add_url = routes.cart_add_url | append: '?'
+  assign guide_variant_ids = '68093585555824,68093588341104,68093594567024,68093599580528' | split: ','
+
+  for guide_variant_id in guide_variant_ids reversed
+    assign add_url = add_url | append: 'items[][id]=' | append: guide_variant_id | append: '&items[][quantity]=1&'
+  endfor
+
+  assign add_url = add_url | append: 'items[][id]=54218299212144&items[][quantity]=1&items[][selling_plan]=693289451888'
+  assign add_url = add_url | append: '&return_to=' | append: discount_url | url_encode
+  echo routes.cart_clear_url | append: '?return_to=' | append: add_url | escape
+-%}

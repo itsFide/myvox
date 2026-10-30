@@ -1,0 +1,35 @@
+{
+  "index": 61,
+  "xlsx_row": 62,
+  "angle": "Nature Build It First",
+  "group": "HERO 1 ↔ GROUP 1 – Nature solved it first",
+  "url": "https://myvox-9.com/pages/nature-nature-solved-it-first",
+  "expected": {
+    "headline": "Nature already built the system your supplements are trying to copy.",
+    "description": "Api-Complex is the three hive substances your body runs on – bee bread, royal jelly and propolis – already assembled, already dosed, by the hive.",
+    "cta": "Start my first cycle →"
+  },
+  "checked_at": "2026-10-30T16:39:43.911072+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/nature-nature-solved-it-first",
+  "html_sha256": "6bd4e31a3b36cd04427cc5c13f409321485364d2224bb493d3000df42740659f",
+  "hero_id": null,
+  "actual": {
+    "headline": "Nature already built the system your supplements are trying to copy.",
+    "description": "Api-Complex is the three hive substances your body runs on – bee bread, royal jelly and propolis – already assembled, already dosed, by the hive.",
+    "cta": "Start my first cycle"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

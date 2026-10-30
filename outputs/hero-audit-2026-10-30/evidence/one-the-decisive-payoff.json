@@ -1,0 +1,35 @@
+{
+  "index": 80,
+  "xlsx_row": 81,
+  "angle": "If I Could Only Keep One",
+  "group": "HERO 10 ↔ GROUP 10 – The decisive payoff",
+  "url": "https://myvox-9.com/pages/one-the-decisive-payoff",
+  "expected": {
+    "headline": "One supplement, and you don't miss the other eight.",
+    "description": "Api-Complex supports your whole body with one stick, so keeping just one actually works.",
+    "cta": "Keep just this one →"
+  },
+  "checked_at": "2026-10-30T16:39:46.146375+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/one-the-decisive-payoff",
+  "html_sha256": "8643959e9e98e8aee5d9c7520b4c91fb870a4adfdd3453b4ed47fd309c2057cf",
+  "hero_id": null,
+  "actual": {
+    "headline": "One supplement, and you don't miss the other eight.",
+    "description": "Api-Complex supports your whole body with one stick, so keeping just one actually works.",
+    "cta": "Keep just this one"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

@@ -1,0 +1,53 @@
+fragment EnergyPageFields on Page {
+  id
+  title
+  handle
+  templateSuffix
+  isPublished
+  heading: metafield(namespace: "custom", key: "hero_heading") { type value }
+  description: metafield(namespace: "custom", key: "hero_description") { type value }
+  button: metafield(namespace: "custom", key: "hero_button_text") { type value }
+}
+
+query EnergyShop {
+  shop { name myshopifyDomain primaryDomain { url } }
+}
+
+query EnergyPages($after: String) {
+  pages(first: 50, after: $after) {
+    nodes { ...EnergyPageFields }
+    pageInfo { hasNextPage endCursor }
+  }
+}
+
+query EnergyDefinitions($after: String) {
+  metafieldDefinitions(first: 50, after: $after, ownerType: PAGE, namespace: "custom") {
+    nodes { namespace key type { name } }
+    pageInfo { hasNextPage endCursor }
+  }
+}
+
+query EnergyPage($id: ID!) {
+  page(id: $id) { ...EnergyPageFields }
+}
+
+mutation EnergyCreatePage($page: PageCreateInput!) {
+  pageCreate(page: $page) {
+    page { ...EnergyPageFields }
+    userErrors { field message code }
+  }
+}
+
+mutation EnergySetMetafields($metafields: [MetafieldsSetInput!]!) {
+  metafieldsSet(metafields: $metafields) {
+    metafields { namespace key value }
+    userErrors { field message code }
+  }
+}
+
+mutation EnergyUpdatePage($id: ID!, $page: PageUpdateInput!) {
+  pageUpdate(id: $id, page: $page) {
+    page { ...EnergyPageFields }
+    userErrors { field message code }
+  }
+}

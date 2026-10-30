@@ -1,0 +1,35 @@
+{
+  "index": 5,
+  "xlsx_row": 6,
+  "angle": "Energy",
+  "group": "HERO 5 ↔ GROUP 5 – It isn't your age",
+  "url": "https://myvox-9.com/pages/energy-it-isnt-your-age",
+  "expected": {
+    "headline": "That 2 p.m. crash isn't your age. It's three things your body isn't getting.",
+    "description": "Api-Complex supports steady, natural energy by covering all three at once, instead of pushing you with another stimulant.",
+    "cta": "Feel like yourself again →"
+  },
+  "checked_at": "2026-10-30T16:39:36.589086+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/energy-it-isnt-your-age",
+  "html_sha256": "38b8c581a8aca631334332df5680bd7947ebf75e4450e850b48864af3cc507c3",
+  "hero_id": null,
+  "actual": {
+    "headline": "That 2 p.m. crash isn't your age. It's three things your body isn't getting.",
+    "description": "Api-Complex supports steady, natural energy by covering all three at once, instead of pushing you with another stimulant.",
+    "cta": "Feel like yourself again"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

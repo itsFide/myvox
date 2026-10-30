@@ -1,0 +1,35 @@
+{
+  "index": 58,
+  "xlsx_row": 59,
+  "angle": "The Drawer Dump",
+  "group": "HERO 8 ↔ GROUP 8 – Self-ID",
+  "url": "https://myvox-9.com/pages/the-drawer-dump-self-id",
+  "expected": {
+    "headline": "How many bottles are in your drawer right now? And how do you actually feel?",
+    "description": "Api-Complex replaces the shelf with one stick covering the three things your whole body runs on.",
+    "cta": "Trade the drawer for one →"
+  },
+  "checked_at": "2026-10-30T16:39:43.807930+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/the-drawer-dump-self-id",
+  "html_sha256": "10315287c195b38d7c678eb2dc0ad55254d083ca387c7d8145be00ca19095be1",
+  "hero_id": null,
+  "actual": {
+    "headline": "How many bottles are in your drawer right now? And how do you actually feel?",
+    "description": "Api-Complex replaces the shelf with one stick covering the three things your whole body runs on.",
+    "cta": "Trade the drawer for one"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

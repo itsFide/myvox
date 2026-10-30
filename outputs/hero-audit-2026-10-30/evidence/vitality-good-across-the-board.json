@@ -1,0 +1,35 @@
+{
+  "index": 50,
+  "xlsx_row": 51,
+  "angle": "Vitality",
+  "group": "HERO 10 ↔ GROUP 10 – Good across the board",
+  "url": "https://myvox-9.com/pages/vitality-good-across-the-board",
+  "expected": {
+    "headline": "Steady afternoons, a clear head, a quiet stomach. All from the same three inputs.",
+    "description": "Api-Complex supports energy, focus, gut and immune defenses together, because they all run on the same system.",
+    "cta": "Feel good all over →"
+  },
+  "checked_at": "2026-10-30T16:39:42.531640+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/vitality-good-across-the-board",
+  "html_sha256": "340689869f71f540c19e42208fdac96b97b291fa35139662022eda723d1f8e0b",
+  "hero_id": null,
+  "actual": {
+    "headline": "Steady afternoons, a clear head, a quiet stomach. All from the same three inputs.",
+    "description": "Api-Complex supports energy, focus, gut and immune defenses together, because they all run on the same system.",
+    "cta": "Feel good all over"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

@@ -13,9 +13,9 @@
         </div>
 
         <div class="footer__socials">
-          {%- assign facebook_url = section.settings.facebook_link | default: '#' -%}
-          {%- assign instagram_url = section.settings.instagram_link | default: '#' -%}
-          {%- assign email_address = section.settings.email_link | default: 'info@myvox9.com' -%}
+          {%- assign facebook_url = section.settings.facebook_link | default: 'https://www.facebook.com/myvox9/' -%}
+          {%- assign instagram_url = section.settings.instagram_link | default: 'https://www.instagram.com/myvox_9/' -%}
+          {%- assign email_address = section.settings.email_link | default: 'connect@myvox-9.com' -%}
 
           <a href="{{ facebook_url }}" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -171,7 +171,7 @@
               </span>
             </h3>
             <ul class="footer__menu-links">
-              <li><a href="/products/api-complex-by-myvox-9">API-COMPLEX</a></li>
+              <li><a href="/products/api-complex">API-COMPLEX</a></li>
             </ul>
           </div>
 
@@ -214,10 +214,10 @@
               </span>
             </h3>
             <ul class="footer__menu-links">
-              <li><a href="/pages/contact">CONTACT</a></li>
-              <li><a href="/pages/refer-a-friend">REFER A FRIEND</a></li>
+              <li><a href="mailto:connect@myvox-9.com">CONTACT</a></li>
+              <li class="footer-inactive"><a href="/pages/refer-a-friend">REFER A FRIEND</a></li>
               <li><a href="/pages/track-order">TRACK MY ORDER</a></li>
-              <li><a href="/pages/manage-subscription">MANAGE SUBSCRIPTION</a></li>
+              <li><a href="/a/account/login">MANAGE SUBSCRIPTION</a></li>
               <li><a href="/pages/data-sharing-opt-out">Data Sharing</a></li>
             </ul>
           </div>
@@ -275,7 +275,7 @@
         </div>
 
         <div class="footer__copyright">
-          {{ section.settings.copyright_text | default: "@ 2026 MYVOX-9. All rights reserved" | escape }}
+          <p>{{ section.settings.copyright_text | default: "@ 2026 MYVOX-9. All rights reserved" | escape }}</p>
         </div>
       </div>
     </div>
@@ -436,7 +436,7 @@
       "type": "textarea",
       "id": "disclaimer_2",
       "label": "Disclaimer 2",
-      "default": "Results may vary from person to person. All product benefits and performance outcomes described are based on feedback from a voluntary focus group conducted by TerraVibe and user feedback. These statements have not been evaluated by the Food and Drug Administration. Our products is not intended to diagnose, treat, cure or prevent any disease."
+      "default": "Results may vary from person to person. All product benefits and performance outcomes described are based on feedback from a voluntary focus group conducted by MYVOX-9 and user feedback. These statements have not been evaluated by the Food and Drug Administration. Our products is not intended to diagnose, treat, cure or prevent any disease."
     },
     {
       "type": "header",

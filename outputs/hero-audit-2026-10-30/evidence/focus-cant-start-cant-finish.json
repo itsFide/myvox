@@ -1,0 +1,35 @@
+{
+  "index": 19,
+  "xlsx_row": 20,
+  "angle": "Focus",
+  "group": "HERO 9 ↔ GROUP 9 – Can't start, can't finish",
+  "url": "https://myvox-9.com/pages/focus-cant-start-cant-finish",
+  "expected": {
+    "headline": "The same task, reopened all week. Starting isn't a motivation problem.",
+    "description": "Api-Complex supports steady focus, so you can start something after lunch and actually finish it.",
+    "cta": "Finish the thing →"
+  },
+  "checked_at": "2026-10-30T16:39:38.514747+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/focus-cant-start-cant-finish",
+  "html_sha256": "6ad14fb72c5100b99f2a43586d3bd18d5df82e355350071b90a9afc34000cbd0",
+  "hero_id": null,
+  "actual": {
+    "headline": "The same task, reopened all week. Starting isn't a motivation problem.",
+    "description": "Api-Complex supports steady focus, so you can start something after lunch and actually finish it.",
+    "cta": "Finish the thing"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

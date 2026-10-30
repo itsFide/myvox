@@ -1,0 +1,35 @@
+{
+  "index": 30,
+  "xlsx_row": 31,
+  "angle": "Immunity",
+  "group": "HERO 10 ↔ GROUP 10 – Done losing time",
+  "url": "https://myvox-9.com/pages/immunity-done-losing-time",
+  "expected": {
+    "headline": "You plan your year around getting sick. That's how much time this takes.",
+    "description": "Api-Complex supports your immune defenses every day, so your calendar stops being built around recovery.",
+    "cta": "Get my time back →"
+  },
+  "checked_at": "2026-10-30T16:39:39.854521+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/immunity-done-losing-time",
+  "html_sha256": "8586d0549be0bc9c4d125ba5a41b19127b85a1096fda3842199ccccf73dc33e2",
+  "hero_id": null,
+  "actual": {
+    "headline": "You plan your year around getting sick. That's how much time this takes.",
+    "description": "Api-Complex supports your immune defenses every day, so your calendar stops being built around recovery.",
+    "cta": "Get my time back"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

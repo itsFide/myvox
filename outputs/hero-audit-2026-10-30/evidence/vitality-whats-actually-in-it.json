@@ -1,0 +1,35 @@
+{
+  "index": 44,
+  "xlsx_row": 45,
+  "angle": "Vitality",
+  "group": "HERO 4 ↔ GROUP 4 – What's actually in it",
+  "url": "https://myvox-9.com/pages/vitality-whats-actually-in-it",
+  "expected": {
+    "headline": "3,500mg of actives in one stick. More than seven capsules can physically hold.",
+    "description": "Api-Complex is three hive superfoods, freeze-dried and never heated, with no sugar, no fillers and a published Certificate of Analysis for every batch.",
+    "cta": "See the full label →"
+  },
+  "checked_at": "2026-10-30T16:39:41.576033+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/vitality-whats-actually-in-it",
+  "html_sha256": "e9f7a42e6a83a6f6f3de25f4f68e14d301b90715a982561b46d03e31a6892c38",
+  "hero_id": null,
+  "actual": {
+    "headline": "3,500mg of actives in one stick. More than seven capsules can physically hold.",
+    "description": "Api-Complex is three hive superfoods, freeze-dried and never heated, with no sugar, no fillers and a published Certificate of Analysis for every batch.",
+    "cta": "See the full label"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

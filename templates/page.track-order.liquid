@@ -1,0 +1,56 @@
+{% render 'track-order-styles' %}
+
+<section class="track-order" aria-labelledby="track-order-title">
+  <div class="container">
+    <div class="tracking-widget">
+      <h1 id="track-order-title" class="track-order__title">{{ 'track_order.title' | t }}</h1>
+      <p id="track-order-description" class="track-order__description">{{ 'track_order.description' | t }}</p>
+
+      <form class="track-order__form" onsubmit="doTrack(); return false;">
+        <label class="track-order__label" for="YQNum">{{ 'track_order.tracking_number' | t }}</label>
+        <div class="track-order__fields">
+          <input
+            class="track-order__input"
+            type="text"
+            id="YQNum"
+            name="tracking_number"
+            maxlength="50"
+            placeholder="{{ 'track_order.tracking_number' | t | escape }}"
+            aria-describedby="track-order-description"
+            autocapitalize="off"
+            spellcheck="false"
+            required
+          >
+          <button class="track-order__button" type="submit">{{ 'track_order.submit' | t }}</button>
+        </div>
+      </form>
+    </div>
+    <div id="YQContainer" class="track-order__results"></div>
+  </div>
+</section>
+<script src="https://www.17track.net/externalcall.js" defer></script>
+
+<script>
+  function doTrack() {
+    const num = document.getElementById("YQNum").value.trim();
+
+    if (!num) {
+      alert({{ 'track_order.empty_number' | t | json }});
+      document.getElementById("YQNum").focus();
+      return;
+    }
+
+    if (!window.YQV5) {
+      alert({{ 'track_order.unavailable' | t | json }});
+      return;
+    }
+
+    YQV5.trackSingle({
+      YQ_ContainerId: "YQContainer",
+      YQ_Height: 560,
+      YQ_Fc: "0",
+      YQ_Lang: "en",
+      YQ_Num: num
+    });
+  }
+</script>

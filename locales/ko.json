@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "주문 추적",
+    "description": "아래에 운송장 번호를 입력하세요.",
+    "tracking_number": "운송장 번호",
+    "submit": "주문 추적",
+    "empty_number": "운송장 번호를 입력하세요.",
+    "unavailable": "현재 배송 추적을 이용할 수 없습니다. 페이지를 새로고침한 후 다시 시도하세요."
+  },
   "blocks": {
     "load_video": "동영상 로드: {{ description }}",
     "sold_out": "품절",

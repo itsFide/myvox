@@ -121,7 +121,7 @@ body.template-landing-v1-1 .header.header--scrolled-away {
   position: absolute;
   top: 100%;
   left: -20px;
-  width: 320px;
+  width: max-content;
   display: none;
   background-color: #fff;
   z-index: 100;
@@ -158,7 +158,7 @@ body.template-landing-v1-1 .header.header--scrolled-away {
   line-height: 125%;
   font-weight: 700;
   color: #121C3F;
-  text-transform: capitalize;
+  text-transform: initial;
 }
 .header__right{
   display: flex;
@@ -286,7 +286,7 @@ body.template-landing-v1-1 .header.header--scrolled-away {
 
   .dropdown-menu {
     left: -1.041667vw;
-    width: 18.59375vw;
+    width: max-content;
   }
   .dropdown-menu-item {
     padding: 1.041667vw 0.78125vw;
@@ -572,7 +572,7 @@ body.template-landing-v1-1 .header.header--scrolled-away {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   margin-left: 3.759vw;
-  text-transform: capitalize;
+  text-transform: initial;
 }
 
 .header-mobile-menu__item.is-open .header-mobile-menu__dropdown {
@@ -728,7 +728,7 @@ body.template-landing-v1-1 .header.header--scrolled-away {
   {%- assign prod_title = prod.title -%}
 {%- else -%}
   {%- assign prod_img = 'the-hive-item-1.webp' | file_url -%}
-  {%- assign prod_title = 'Api Complex' -%}
+  {%- assign prod_title = 'Api-Complex by MYVOX-9' -%}
 {%- endif -%}
 
 <header class="header">
@@ -750,7 +750,7 @@ body.template-landing-v1-1 .header.header--scrolled-away {
               </svg>
             </a>
             <div class="dropdown-menu">
-              <a href="/products/api-complex-by-myvox-9" class="dropdown-menu-item">
+              <a href="/products/api-complex" class="dropdown-menu-item">
                 <div class="dropdown-menu-item__img">
                   <img src="{{ 'the-hive-item-1.webp' | file_url }}" alt="{{ prod_title }}" width="40" height="40" loading="lazy">
                 </div>
@@ -798,7 +798,7 @@ body.template-landing-v1-1 .header.header--scrolled-away {
             </div>
           </a>
         </div>
-        <a href="/products/api-complex-by-myvox-9" class="header__btn btn">Shop now</a>
+        <a href="/products/api-complex" class="header__btn btn">Shop now</a>
       </div>
     </div>
   </div>
@@ -836,7 +836,7 @@ body.template-landing-v1-1 .header.header--scrolled-away {
               </div>
               <ul class="header-mobile-menu__dropdown">
                 <li>
-                  <a href="/products/api-complex-by-myvox-9" class="dropdown-menu-item">
+                  <a href="/products/api-complex" class="dropdown-menu-item">
                     <div class="dropdown-menu-item__img">
                       <img src="{{ prod_img }}" alt="{{ prod_title }}" width="40" height="40" loading="lazy">
                     </div>
@@ -875,7 +875,7 @@ body.template-landing-v1-1 .header.header--scrolled-away {
         </nav>
         
         <div class="header-mobile-menu__btn-wrapper">
-          <a href="/products/api-complex-by-myvox-9" class="header-mobile-menu__btn">Shop now</a>
+          <a href="/products/api-complex" class="header-mobile-menu__btn">Shop now</a>
         </div>
         
         <div class="header-mobile-menu__socials">

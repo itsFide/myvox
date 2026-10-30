@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Suivez votre commande",
+    "description": "Saisissez votre numéro de suivi ci-dessous.",
+    "tracking_number": "Numéro de suivi",
+    "submit": "Suivre la commande",
+    "empty_number": "Veuillez saisir votre numéro de suivi.",
+    "unavailable": "Le suivi est temporairement indisponible. Actualisez la page et réessayez."
+  },
   "blocks": {
     "load_video": "Charger la vidéo : {{ description }}",
     "sold_out": "Épuisé",

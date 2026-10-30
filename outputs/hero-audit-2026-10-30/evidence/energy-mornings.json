@@ -1,0 +1,35 @@
+{
+  "index": 1,
+  "xlsx_row": 2,
+  "angle": "Energy",
+  "group": "HERO 1 ↔ GROUP 1 – Mornings",
+  "url": "https://myvox-9.com/pages/energy-mornings",
+  "expected": {
+    "headline": "Eight hours of sleep and still empty. Sleep was never what you were missing.",
+    "description": "Api-Complex gives your body all three things steady energy runs on – the raw materials, the recovery signal, and a clean internal balance. Miss one and the other two can't carry you.",
+    "cta": "Get my mornings back →"
+  },
+  "checked_at": "2026-10-30T16:39:36.588766+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/energy-mornings",
+  "html_sha256": "4132c833615d87f971f3e90f8f552c3f99e21f09f3064a37dae743ac1e0b899f",
+  "hero_id": null,
+  "actual": {
+    "headline": "Eight hours of sleep and still empty. Sleep was never what you were missing.",
+    "description": "Api-Complex gives your body all three things steady energy runs on – the raw materials, the recovery signal, and a clean internal balance. Miss one and the other two can't carry you.",
+    "cta": "Get my mornings back"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

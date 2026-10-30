@@ -1,0 +1,35 @@
+{
+  "index": 2,
+  "xlsx_row": 3,
+  "angle": "Energy",
+  "group": "HERO 2 ↔ GROUP 2 – The 2pm crash",
+  "url": "https://myvox-9.com/pages/energy-the-2pm-crash",
+  "expected": {
+    "headline": "2 p.m. hits and you're done. More coffee was never going to fix that.",
+    "description": "Api-Complex supports the three things your body actually makes energy from, so the afternoon stops flattening you. Not a stimulant. No jitters, no crash.",
+    "cta": "Get my afternoons back →"
+  },
+  "checked_at": "2026-10-30T16:39:36.589139+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/energy-the-2pm-crash",
+  "html_sha256": "f326da74eb96676368e58059eebcdb2a504e3cfd50847f91d2fc3fc06abf0f61",
+  "hero_id": null,
+  "actual": {
+    "headline": "2 p.m. hits and you're done. More coffee was never going to fix that.",
+    "description": "Api-Complex supports the three things your body actually makes energy from, so the afternoon stops flattening you. Not a stimulant. No jitters, no crash.",
+    "cta": "Get my afternoons back"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

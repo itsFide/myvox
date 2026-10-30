@@ -1,0 +1,340 @@
+{
+  "status": "completed",
+  "category": "Vitality",
+  "store_domain": "uhgmmm-ef.myshopify.com",
+  "storefront_origin": "https://myvox-9.com",
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – Off across the board",
+      "page_title": "Vitality — Off across the board",
+      "handle": "vitality-off-across-the-board",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/vitality-off-across-the-board",
+      "worksheet": "URLs",
+      "url_cell": "C42",
+      "highlight": "Tired, foggy, bloated, run-down.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Tired, foggy, bloated, run-down.]] Four problems, or one system running short?"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex covers the three things your whole body runs on – raw materials, a recovery signal, and a clean internal balance – so energy, focus, gut and immune defenses are all supported at once."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Support all four"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/vitality-off-across-the-board"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – The stack isn't working",
+      "page_title": "Vitality — The stack isn't working",
+      "handle": "vitality-the-stack-isnt-working",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/vitality-the-stack-isnt-working",
+      "worksheet": "URLs",
+      "url_cell": "C43",
+      "highlight": "Seven supplements a day and you still feel off.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Seven supplements a day and you still feel off.]] Each one covers a fraction."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex covers all three things your body actually runs on, together, in a single daily stick. 3,500mg of actives, no sugar, no fillers."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Replace the stack"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/vitality-the-stack-isnt-working"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – One stick, four jobs",
+      "page_title": "Vitality — One stick, four jobs",
+      "handle": "vitality-one-stick-four-jobs",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/vitality-one-stick-four-jobs",
+      "worksheet": "URLs",
+      "url_cell": "C44",
+      "highlight": "One stick. Energy, focus, gut, immune support.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[One stick. Energy, focus, gut, immune support.]] Because they all run on the same three things."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is bee bread, royal jelly and propolis – the hive triad – covering the raw materials, the recovery signal and the clean internal balance your whole body needs."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Start my first cycle"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/vitality-one-stick-four-jobs"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – What's actually in it",
+      "page_title": "Vitality — What's actually in it",
+      "handle": "vitality-whats-actually-in-it",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/vitality-whats-actually-in-it",
+      "worksheet": "URLs",
+      "url_cell": "C45",
+      "highlight": "3,500mg of actives in one stick.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[3,500mg of actives in one stick.]] More than seven capsules can physically hold."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is three hive superfoods, freeze-dried and never heated, with no sugar, no fillers and a published Certificate of Analysis for every batch."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "See the full label"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/vitality-whats-actually-in-it"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – One system, not twelve pills",
+      "page_title": "Vitality — One system, not twelve pills",
+      "handle": "vitality-one-system-not-twelve-pills",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/vitality-one-system-not-twelve-pills",
+      "worksheet": "URLs",
+      "url_cell": "C46",
+      "highlight": "Tired, foggy, bloated, run-down",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Tired, foggy, bloated, run-down]] – that was never twelve problems. It was one system short."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex delivers all three inputs at once, so the things you were chasing separately get supported together."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Cover all three"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/vitality-one-system-not-twelve-pills"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – I want to feel like myself",
+      "page_title": "Vitality — I want to feel like myself",
+      "handle": "vitality-i-want-to-feel-like-myself",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/vitality-i-want-to-feel-like-myself",
+      "worksheet": "URLs",
+      "url_cell": "C47",
+      "highlight": "You want one good day.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[You want one good day.]] Not amazing. Just not running at sixty percent."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your whole body every day with the three things it runs on, so steady stops being the exception."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Feel like myself again"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/vitality-i-want-to-feel-like-myself"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – The math on your shelf",
+      "page_title": "Vitality — The math on your shelf",
+      "handle": "vitality-the-math-on-your-shelf",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/vitality-the-math-on-your-shelf",
+      "worksheet": "URLs",
+      "url_cell": "C48",
+      "highlight": "Two hundred a month for a shelf of maybes.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Two hundred a month for a shelf of maybes.]] Ten minutes every morning to sort them."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is one stick, once a day, ten seconds – covering what a shelf of single-purpose bottles was chasing."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Simplify my routine"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/vitality-the-math-on-your-shelf"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Self-ID",
+      "page_title": "Vitality — Self-ID",
+      "handle": "vitality-self-id",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/vitality-self-id",
+      "worksheet": "URLs",
+      "url_cell": "C49",
+      "highlight": "Juggling five bottles and still feeling off?",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Juggling five bottles and still feeling off?]] You've been covering one need out of three."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex covers all three things your whole body runs on, in one daily stick."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Fix it in one stick"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/vitality-self-id"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Social proof",
+      "page_title": "Vitality — Social proof",
+      "handle": "vitality-social-proof",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/vitality-social-proof",
+      "worksheet": "URLs",
+      "url_cell": "C50",
+      "highlight": "Nine in ten people",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Nine in ten people]] are still taking Api-Complex after the first box."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "One daily stick, 1,800+ reviews, four areas supported – 3,500mg of actives and ten seconds a day."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "See why they stay"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/vitality-social-proof"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – Good across the board",
+      "page_title": "Vitality — Good across the board",
+      "handle": "vitality-good-across-the-board",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/vitality-good-across-the-board",
+      "worksheet": "URLs",
+      "url_cell": "C51",
+      "highlight": "Steady afternoons, a clear head, a quiet stomach.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Steady afternoons, a clear head, a quiet stomach.]] All from the same three inputs."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports energy, focus, gut and immune defenses together, because they all run on the same system."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Feel good all over"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/vitality-good-across-the-board"
+    }
+  ]
+}

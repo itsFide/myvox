@@ -1,0 +1,35 @@
+{
+  "index": 35,
+  "xlsx_row": 36,
+  "angle": "Gut",
+  "group": "HERO 5 ↔ GROUP 5 – Cutting foods didn't fix it",
+  "url": "https://myvox-9.com/pages/gut-cutting-foods-didnt-fix-it",
+  "expected": {
+    "headline": "You cut half your diet and you're still bloated. Cutting more isn't the next step.",
+    "description": "Api-Complex supports your gut with all three things healthy digestion needs, not one more thing to take away.",
+    "cta": "Try adding instead →"
+  },
+  "checked_at": "2026-10-30T16:39:40.449253+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/gut-cutting-foods-didnt-fix-it",
+  "html_sha256": "f284ec9023cf80b240a12a8ad2c8e1a53e5f1d3420db7d7b15a8c5ad60095f98",
+  "hero_id": null,
+  "actual": {
+    "headline": "You cut half your diet and you're still bloated. Cutting more isn't the next step.",
+    "description": "Api-Complex supports your gut with all three things healthy digestion needs, not one more thing to take away.",
+    "cta": "Try adding instead"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

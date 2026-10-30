@@ -1,0 +1,126 @@
+{
+  "status": "verified_on_storefront",
+  "category": "Gut",
+  "shop": {
+    "name": "MYVOX-9",
+    "myshopifyDomain": "uhgmmm-ef.myshopify.com",
+    "primaryDomain": {
+      "url": "https://myvox-9.com"
+    }
+  },
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – Bloated after every meal",
+      "page_id": "gid://shopify/Page/712679653744",
+      "handle": "gut-bloated-after-every-meal",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C32",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/gut-bloated-after-every-meal"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – The waistband by afternoon",
+      "page_id": "gid://shopify/Page/712679686512",
+      "handle": "gut-the-waistband-by-afternoon",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C33",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/gut-the-waistband-by-afternoon"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – Unpredictable stomach",
+      "page_id": "gid://shopify/Page/712679719280",
+      "handle": "gut-unpredictable-stomach",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C34",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/gut-unpredictable-stomach"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – Heavy and sluggish",
+      "page_id": "gid://shopify/Page/712679752048",
+      "handle": "gut-heavy-and-sluggish",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C35",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/gut-heavy-and-sluggish"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – Cutting foods didn't fix it",
+      "page_id": "gid://shopify/Page/712679784816",
+      "handle": "gut-cutting-foods-didnt-fix-it",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C36",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/gut-cutting-foods-didnt-fix-it"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Eating out and social life",
+      "page_id": "gid://shopify/Page/712679817584",
+      "handle": "gut-eating-out-and-social-life",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C37",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/gut-eating-out-and-social-life"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – Clothes and how it feels",
+      "page_id": "gid://shopify/Page/712679850352",
+      "handle": "gut-clothes-and-how-it-feels",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C38",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/gut-clothes-and-how-it-feels"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Never quite comfortable",
+      "page_id": "gid://shopify/Page/712679883120",
+      "handle": "gut-never-quite-comfortable",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C39",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/gut-never-quite-comfortable"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Self-ID",
+      "page_id": "gid://shopify/Page/712679915888",
+      "handle": "gut-self-id",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C40",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/gut-self-id"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – I just want to feel light",
+      "page_id": "gid://shopify/Page/712679948656",
+      "handle": "gut-i-just-want-to-feel-light",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C41",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/gut-i-just-want-to-feel-light"
+    }
+  ],
+  "completed_at": "2026-10-30T16:25:09.398Z"
+}

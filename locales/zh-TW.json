@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "追蹤您的訂單",
+    "description": "請在下方輸入物流單號。",
+    "tracking_number": "物流單號",
+    "submit": "追蹤訂單",
+    "empty_number": "請輸入物流單號。",
+    "unavailable": "物流追蹤暫時無法使用。請重新整理頁面後再試。"
+  },
   "blocks": {
     "load_video": "載入影片：{{ description }}",
     "sold_out": "售罄",

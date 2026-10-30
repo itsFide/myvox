@@ -1,0 +1,340 @@
+{
+  "status": "completed",
+  "category": "Immunity",
+  "store_domain": "uhgmmm-ef.myshopify.com",
+  "storefront_origin": "https://myvox-9.com",
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – Catching everything",
+      "page_title": "Immunity — Catching everything",
+      "handle": "immunity-catching-everything",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/immunity-catching-everything",
+      "worksheet": "URLs",
+      "url_cell": "C22",
+      "highlight": "Someone sneezes Monday, it's you by Thursday.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Someone sneezes Monday, it's you by Thursday.]] That isn't bad luck."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your immune defenses with all three things they run on, instead of one vitamin covering a sliver of the job."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Support all three"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/immunity-catching-everything"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – Kids bring it home",
+      "page_title": "Immunity — Kids bring it home",
+      "handle": "immunity-kids-bring-it-home",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/immunity-kids-bring-it-home",
+      "worksheet": "URLs",
+      "url_cell": "C23",
+      "highlight": "Your kids bounce back in a day. You lose a week.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Your kids bounce back in a day. You lose a week.]] Same house, different reserves."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your body's natural defenses every day, so they aren't starting from empty every time something goes around."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Stop being next in line"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/immunity-kids-bring-it-home"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – A bug costs a week",
+      "page_title": "Immunity — A bug costs a week",
+      "handle": "immunity-a-bug-costs-a-week",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/immunity-a-bug-costs-a-week",
+      "worksheet": "URLs",
+      "url_cell": "C24",
+      "highlight": "Every cold costs you a full week.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Every cold costs you a full week.]] One vitamin was never covering that."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your immune defenses daily with all three things they're built on – raw materials, a recovery signal, and a clean internal balance."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Stop losing whole weeks"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/immunity-a-bug-costs-a-week"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – The count",
+      "page_title": "Immunity — The count",
+      "handle": "immunity-the-count",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/immunity-the-count",
+      "worksheet": "URLs",
+      "url_cell": "C25",
+      "highlight": "Four colds since January.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Four colds since January.]] You counted, and that's the part that bothers you."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports a healthy immune system every day, with the three things your defenses actually run on."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Support my immune system"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/immunity-the-count"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – Slow to recover",
+      "page_title": "Immunity — Slow to recover",
+      "handle": "immunity-slow-to-recover",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/immunity-slow-to-recover",
+      "worksheet": "URLs",
+      "url_cell": "C26",
+      "highlight": "You're on day fourteen.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "Everyone else shook it off in three days. [[You're on day fourteen.]]"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex includes freeze-dried royal jelly, the hive's recovery signal, alongside the raw materials and clean internal balance your body uses to bounce back."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Support my recovery"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/immunity-slow-to-recover"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Travel, crowds, the office",
+      "page_title": "Immunity — Travel, crowds, the office",
+      "handle": "immunity-travel-crowds-the-office",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/immunity-travel-crowds-the-office",
+      "worksheet": "URLs",
+      "url_cell": "C27",
+      "highlight": "Every flight costs you three days.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Every flight costs you three days.]] The exposure isn't going anywhere."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your immune defenses every day, so they aren't already running low before you board."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Travel supported"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/immunity-travel-crowds-the-office"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – Cold season",
+      "page_title": "Immunity — Cold season",
+      "handle": "immunity-cold-season",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/immunity-cold-season",
+      "worksheet": "URLs",
+      "url_cell": "C28",
+      "highlight": "It's September and you're already bracing for the first cold.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[It's September and you're already bracing for the first cold.]] Same story every year."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your immune defenses daily, so you head into the season with all three things they run on."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Go in supported"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/immunity-cold-season"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Run-down even when you're well",
+      "page_title": "Immunity — Run-down even when you're well",
+      "handle": "immunity-run-down-even-when-youre-well",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/immunity-run-down-even-when-youre-well",
+      "worksheet": "URLs",
+      "url_cell": "C29",
+      "highlight": "You're not sick. You're not well either.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[You're not sick. You're not well either.]] Defenses that start worn down have nothing spare."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your natural defenses and steady energy at the same time, with the three things both of them run on."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Stop starting at 60%"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/immunity-run-down-even-when-youre-well"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Self-ID",
+      "page_title": "Immunity — Self-ID",
+      "handle": "immunity-self-id",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/immunity-self-id",
+      "worksheet": "URLs",
+      "url_cell": "C30",
+      "highlight": "Four colds a winter, a week down every time, run-down in between.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Four colds a winter, a week down every time, run-down in between.]] One vitamin was never going to cover that."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex helps maintain your immune defenses with all three things they actually need, together, in one daily stick."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Cover all three"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/immunity-self-id"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – Done losing time",
+      "page_title": "Immunity — Done losing time",
+      "handle": "immunity-done-losing-time",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/immunity-done-losing-time",
+      "worksheet": "URLs",
+      "url_cell": "C31",
+      "highlight": "You plan your year around getting sick.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[You plan your year around getting sick.]] That's how much time this takes."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your immune defenses every day, so your calendar stops being built around recovery."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get my time back"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/immunity-done-losing-time"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "index": 29,
+  "xlsx_row": 30,
+  "angle": "Immunity",
+  "group": "HERO 9 ↔ GROUP 9 – Self-ID",
+  "url": "https://myvox-9.com/pages/immunity-self-id",
+  "expected": {
+    "headline": "Four colds a winter, a week down every time, run-down in between. One vitamin was never going to cover that.",
+    "description": "Api-Complex helps maintain your immune defenses with all three things they actually need, together, in one daily stick.",
+    "cta": "Cover all three →"
+  },
+  "checked_at": "2026-10-30T16:39:39.761987+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/immunity-self-id",
+  "html_sha256": "7ea4c9a3d32ae8b4627afb67855ca91daf87d4bcc9b4a536973642f352ca4beb",
+  "hero_id": null,
+  "actual": {
+    "headline": "Four colds a winter, a week down every time, run-down in between. One vitamin was never going to cover that.",
+    "description": "Api-Complex helps maintain your immune defenses with all three things they actually need, together, in one daily stick.",
+    "cta": "Cover all three"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

@@ -1,0 +1,35 @@
+{
+  "index": 4,
+  "xlsx_row": 5,
+  "angle": "Energy",
+  "group": "HERO 4 ↔ GROUP 4 – Coffee stopped working",
+  "url": "https://myvox-9.com/pages/energy-coffee-stopped-working",
+  "expected": {
+    "headline": "Fourth coffee, same crash. Coffee gives you none of the three things energy runs on.",
+    "description": "Api-Complex delivers all three – raw materials, a recovery signal, and a clean internal balance – so energy stays steady instead of spiking and dropping.",
+    "cta": "Try what coffee can't do →"
+  },
+  "checked_at": "2026-10-30T16:39:36.589177+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/energy-coffee-stopped-working",
+  "html_sha256": "d13a7c2f7e2ebf913075350533099adb67824f05399cffd76e870e4b2c3b98cf",
+  "hero_id": null,
+  "actual": {
+    "headline": "Fourth coffee, same crash. Coffee gives you none of the three things energy runs on.",
+    "description": "Api-Complex delivers all three – raw materials, a recovery signal, and a clean internal balance – so energy stays steady instead of spiking and dropping.",
+    "cta": "Try what coffee can't do"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

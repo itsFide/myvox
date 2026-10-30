@@ -1,0 +1,35 @@
+{
+  "index": 59,
+  "xlsx_row": 60,
+  "angle": "The Drawer Dump",
+  "group": "HERO 9 ↔ GROUP 9 – Social proof",
+  "url": "https://myvox-9.com/pages/the-drawer-dump-social-proof",
+  "expected": {
+    "headline": "Ten thousand people emptied their supplement drawer for one stick.",
+    "description": "Api-Complex is what they switched to. 3,500mg of actives, four areas supported, ten seconds a day.",
+    "cta": "Switch like they did →"
+  },
+  "checked_at": "2026-10-30T16:39:43.817567+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/the-drawer-dump-social-proof",
+  "html_sha256": "cee06447f3892aaab2df366c4c3b62db0b71986684d980b3fa4defd4bc20fa76",
+  "hero_id": null,
+  "actual": {
+    "headline": "Ten thousand people emptied their supplement drawer for one stick.",
+    "description": "Api-Complex is what they switched to. 3,500mg of actives, four areas supported, ten seconds a day.",
+    "cta": "Switch like they did"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

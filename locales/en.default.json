@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Track Your Order",
+    "description": "Enter your tracking number below.",
+    "tracking_number": "Tracking number",
+    "submit": "Track Order",
+    "empty_number": "Please enter your tracking number.",
+    "unavailable": "Tracking is temporarily unavailable. Please refresh the page and try again."
+  },
   "accessibility": {
     "account": "Account",
     "active_filters": "Active filters:",

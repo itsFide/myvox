@@ -1,0 +1,35 @@
+{
+  "index": 10,
+  "xlsx_row": 11,
+  "angle": "Energy",
+  "group": "HERO 10 ↔ GROUP 10 – No energy for my own life",
+  "url": "https://myvox-9.com/pages/energy-no-energy-for-my-own-life",
+  "expected": {
+    "headline": "Weekends stopped being weekends. Recovery isn't the same thing as rest.",
+    "description": "Api-Complex supports steady energy every day, so there's something left for the life you're working for.",
+    "cta": "Get my weekends back →"
+  },
+  "checked_at": "2026-10-30T16:39:37.590150+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/energy-no-energy-for-my-own-life",
+  "html_sha256": "a869d16f8d3c516d08be94b66bd14d1c5f08e3448c21bd3a49c86e058140022f",
+  "hero_id": null,
+  "actual": {
+    "headline": "Weekends stopped being weekends. Recovery isn't the same thing as rest.",
+    "description": "Api-Complex supports steady energy every day, so there's something left for the life you're working for.",
+    "cta": "Get my weekends back"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

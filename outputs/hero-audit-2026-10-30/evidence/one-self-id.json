@@ -1,0 +1,35 @@
+{
+  "index": 78,
+  "xlsx_row": 79,
+  "angle": "If I Could Only Keep One",
+  "group": "HERO 8 ↔ GROUP 8 – Self-ID",
+  "url": "https://myvox-9.com/pages/one-self-id",
+  "expected": {
+    "headline": "If you had to cut your shelf down to one, what would actually be worth keeping?",
+    "description": "Api-Complex covers four areas in one stick, which is why it tends to be the one people keep.",
+    "cta": "Decide what stays →"
+  },
+  "checked_at": "2026-10-30T16:39:45.797252+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/one-self-id",
+  "html_sha256": "5076063b79d572b53104dbefd230fab6e95cda95755399edeb2e402e7017eff9",
+  "hero_id": null,
+  "actual": {
+    "headline": "If you had to cut your shelf down to one, what would actually be worth keeping?",
+    "description": "Api-Complex covers four areas in one stick, which is why it tends to be the one people keep.",
+    "cta": "Decide what stays"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

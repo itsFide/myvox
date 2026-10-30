@@ -1,0 +1,125 @@
+{
+  "status": "verified_on_storefront",
+  "shop": {
+    "name": "MYVOX-9",
+    "myshopifyDomain": "uhgmmm-ef.myshopify.com",
+    "primaryDomain": {
+      "url": "https://myvox-9.com"
+    }
+  },
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – Mornings",
+      "page_id": "gid://shopify/Page/712676245872",
+      "handle": "energy-mornings",
+      "created": false,
+      "worksheet": "URLs",
+      "url_cell": "C2",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/energy-mornings"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – The 2pm crash",
+      "page_id": "gid://shopify/Page/712677654896",
+      "handle": "energy-the-2pm-crash",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C3",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/energy-the-2pm-crash"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – Evenings with family",
+      "page_id": "gid://shopify/Page/712677687664",
+      "handle": "energy-evenings-with-family",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C4",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/energy-evenings-with-family"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – Coffee stopped working",
+      "page_id": "gid://shopify/Page/712677720432",
+      "handle": "energy-coffee-stopped-working",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C5",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/energy-coffee-stopped-working"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – It isn't your age",
+      "page_id": "gid://shopify/Page/712677753200",
+      "handle": "energy-it-isnt-your-age",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C6",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/energy-it-isnt-your-age"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Parents who can't keep up",
+      "page_id": "gid://shopify/Page/712677785968",
+      "handle": "energy-parents-who-cant-keep-up",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C7",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/energy-parents-who-cant-keep-up"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – What the crash costs",
+      "page_id": "gid://shopify/Page/712677818736",
+      "handle": "energy-what-the-crash-costs",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C8",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/energy-what-the-crash-costs"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Self-ID",
+      "page_id": "gid://shopify/Page/712677851504",
+      "handle": "energy-self-id",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C9",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/energy-self-id"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – The contradiction",
+      "page_id": "gid://shopify/Page/712677884272",
+      "handle": "energy-the-contradiction",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C10",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/energy-the-contradiction"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – No energy for my own life",
+      "page_id": "gid://shopify/Page/712677917040",
+      "handle": "energy-no-energy-for-my-own-life",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C11",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/energy-no-energy-for-my-own-life"
+    }
+  ],
+  "completed_at": "2026-10-30T15:55:33.557Z"
+}

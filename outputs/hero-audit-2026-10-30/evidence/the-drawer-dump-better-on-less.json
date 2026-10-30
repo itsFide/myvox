@@ -1,0 +1,35 @@
+{
+  "index": 60,
+  "xlsx_row": 61,
+  "angle": "The Drawer Dump",
+  "group": "HERO 10 ↔ GROUP 10 – Better on less",
+  "url": "https://myvox-9.com/pages/the-drawer-dump-better-on-less",
+  "expected": {
+    "headline": "Fewer bottles, and somehow better. That happens when one stick covers what eight were splitting.",
+    "description": "Api-Complex supports your whole body with one stick, because the three things it runs on were never eight separate problems.",
+    "cta": "Do less, feel more →"
+  },
+  "checked_at": "2026-10-30T16:39:43.903628+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/the-drawer-dump-better-on-less",
+  "html_sha256": "186f37bc24f5402d77be802fdc6c5525ab5001148fde96d94ec875aecce6bd41",
+  "hero_id": null,
+  "actual": {
+    "headline": "Fewer bottles, and somehow better. That happens when one stick covers what eight were splitting.",
+    "description": "Api-Complex supports your whole body with one stick, because the three things it runs on were never eight separate problems.",
+    "cta": "Do less, feel more"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Pratite svoju narudžbu",
+    "description": "U nastavku unesite broj za praćenje.",
+    "tracking_number": "Broj za praćenje",
+    "submit": "Prati narudžbu",
+    "empty_number": "Unesite broj za praćenje.",
+    "unavailable": "Praćenje trenutačno nije dostupno. Osvježite stranicu i pokušajte ponovno."
+  },
   "blocks": {
     "load_video": "Učitaj videozapis: {{ description }}",
     "sold_out": "Rasprodano",

@@ -1,0 +1,35 @@
+{
+  "index": 52,
+  "xlsx_row": 53,
+  "angle": "The Drawer Dump",
+  "group": "HERO 2 ↔ GROUP 2 – The absurd count",
+  "url": "https://myvox-9.com/pages/the-drawer-dump-the-absurd-count",
+  "expected": {
+    "headline": "Eight bottles a day and you still feel run-down. That's the part worth looking at.",
+    "description": "Api-Complex covers the three things your whole body actually runs on, so one stick stands in for a shelf of single-purpose bottles.",
+    "cta": "Replace the shelf →"
+  },
+  "checked_at": "2026-10-30T16:39:42.683889+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/the-drawer-dump-the-absurd-count",
+  "html_sha256": "d543950a4bc84c2727b86ab3fb8bc065540a863777cb9d09a9c144baa4d06c22",
+  "hero_id": null,
+  "actual": {
+    "headline": "Eight bottles a day and you still feel run-down. That's the part worth looking at.",
+    "description": "Api-Complex covers the three things your whole body actually runs on, so one stick stands in for a shelf of single-purpose bottles.",
+    "cta": "Replace the shelf"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

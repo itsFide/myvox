@@ -201,6 +201,25 @@
 .reviews__video button.active {
   display: block;
 }
+.reviews__video .reviews__play--surface {
+  inset: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: inherit;
+  transform: none;
+  cursor: pointer;
+}
+.reviews__play--surface:not(.active) svg {
+  visibility: hidden;
+}
+.reviews__play--surface:focus-visible {
+  outline: 2px solid var(--white-100);
+  outline-offset: -4px;
+  box-shadow: inset 0 0 0 2px var(--black-100);
+}
 .reviews__video video {
   border-radius: 8px;
   height: 100%;

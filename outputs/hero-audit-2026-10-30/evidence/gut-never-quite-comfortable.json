@@ -1,0 +1,35 @@
+{
+  "index": 38,
+  "xlsx_row": 39,
+  "angle": "Gut",
+  "group": "HERO 8 ↔ GROUP 8 – Never quite comfortable",
+  "url": "https://myvox-9.com/pages/gut-never-quite-comfortable",
+  "expected": {
+    "headline": "Uncomfortable after almost everything. Your gut is working overtime on food it can't use.",
+    "description": "Api-Complex supports healthy digestion and a clean internal balance with raw materials that are already broken down for you.",
+    "cta": "Calm my stomach →"
+  },
+  "checked_at": "2026-10-30T16:39:40.906868+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/gut-never-quite-comfortable",
+  "html_sha256": "e2fed984b1ad88c3982cf5759fb5a2d9252c83e99edf02d5196dbe3b50b80a4e",
+  "hero_id": null,
+  "actual": {
+    "headline": "Uncomfortable after almost everything. Your gut is working overtime on food it can't use.",
+    "description": "Api-Complex supports healthy digestion and a clean internal balance with raw materials that are already broken down for you.",
+    "cta": "Calm my stomach"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

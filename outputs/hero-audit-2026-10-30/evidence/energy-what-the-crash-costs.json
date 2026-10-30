@@ -1,0 +1,35 @@
+{
+  "index": 7,
+  "xlsx_row": 8,
+  "angle": "Energy",
+  "group": "HERO 7 ↔ GROUP 7 – What the crash costs",
+  "url": "https://myvox-9.com/pages/energy-what-the-crash-costs",
+  "expected": {
+    "headline": "Four hours a day lost to the afternoon crash. Two years of them, if you're counting.",
+    "description": "Api-Complex supports steady energy from morning through the evening, so your best hours stop disappearing at 2 p.m.",
+    "cta": "Stop losing 2 to 6 →"
+  },
+  "checked_at": "2026-10-30T16:39:37.250032+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/energy-what-the-crash-costs",
+  "html_sha256": "9611cc89d94a6e86a8b145063ea92274a70001018016ae4d053b6812f596239d",
+  "hero_id": null,
+  "actual": {
+    "headline": "Four hours a day lost to the afternoon crash. Two years of them, if you're counting.",
+    "description": "Api-Complex supports steady energy from morning through the evening, so your best hours stop disappearing at 2 p.m.",
+    "cta": "Stop losing 2 to 6"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

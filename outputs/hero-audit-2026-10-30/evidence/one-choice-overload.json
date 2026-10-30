@@ -1,0 +1,35 @@
+{
+  "index": 77,
+  "xlsx_row": 78,
+  "angle": "If I Could Only Keep One",
+  "group": "HERO 7 ↔ GROUP 7 – Choice overload",
+  "url": "https://myvox-9.com/pages/one-choice-overload",
+  "expected": {
+    "headline": "You don't need a shelf of supplements. You need the one that covers all of it.",
+    "description": "Api-Complex replaces the whole aisle with one stick that covers the three things your body actually runs on.",
+    "cta": "Simplify to one →"
+  },
+  "checked_at": "2026-10-30T16:39:45.759457+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/one-choice-overload",
+  "html_sha256": "6a6a8295e6a12c4f00decccf9cdcceb16b8a541ffd9bb6f8a3a9e32959131e5b",
+  "hero_id": null,
+  "actual": {
+    "headline": "You don't need a shelf of supplements. You need the one that covers all of it.",
+    "description": "Api-Complex replaces the whole aisle with one stick that covers the three things your body actually runs on.",
+    "cta": "Simplify to one"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

@@ -49,10 +49,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 90vw;
-  max-height: 85vh;
+  flex-shrink: 0;
   transform-origin: center center;
-  will-change: transform;
   cursor: zoom-in;
   user-select: none;
   -webkit-user-select: none;
@@ -69,8 +67,9 @@
 /* Image */
 .univ-image-modal__img {
   display: block;
-  max-width: 90vw;
-  max-height: 85vh;
+  max-width: none;
+  max-height: none;
+  flex-shrink: 0;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -176,8 +175,6 @@ body.univ-image-modal-open {
 
 @media (max-width: 768px) {
   .univ-image-modal__img {
-    max-width: 95vw;
-    max-height: 80vh;
     border-radius: 8px;
   }
 

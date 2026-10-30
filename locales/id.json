@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Lacak pesanan Anda",
+    "description": "Masukkan nomor pelacakan Anda di bawah ini.",
+    "tracking_number": "Nomor pelacakan",
+    "submit": "Lacak pesanan",
+    "empty_number": "Masukkan nomor pelacakan Anda.",
+    "unavailable": "Pelacakan sementara tidak tersedia. Muat ulang halaman dan coba lagi."
+  },
   "blocks": {
     "load_video": "Muat video: {{ description }}",
     "sold_out": "Habis",

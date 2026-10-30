@@ -1,0 +1,35 @@
+{
+  "index": 3,
+  "xlsx_row": 4,
+  "angle": "Energy",
+  "group": "HERO 3 ↔ GROUP 3 – Evenings with family",
+  "url": "https://myvox-9.com/pages/energy-evenings-with-family",
+  "expected": {
+    "headline": "Your kids get whatever's left of you. Most nights that's nothing.",
+    "description": "Api-Complex supports steady energy that holds into the evening, so the best part of your day isn't already spent by the time you walk in the door.",
+    "cta": "Get my evenings back →"
+  },
+  "checked_at": "2026-10-30T16:39:36.589030+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/energy-evenings-with-family",
+  "html_sha256": "1cd5b3cc227a41af74782227ce71a750a081363dd40938e547c1d76fdb9260b5",
+  "hero_id": null,
+  "actual": {
+    "headline": "Your kids get whatever's left of you. Most nights that's nothing.",
+    "description": "Api-Complex supports steady energy that holds into the evening, so the best part of your day isn't already spent by the time you walk in the door.",
+    "cta": "Get my evenings back"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

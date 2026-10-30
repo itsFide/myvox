@@ -29,6 +29,51 @@ window.addEventListener('DOMContentLoaded', () => {
         swiper.update();
     }
 
+    function preloadReviewVideos() {
+        const videos = document.querySelectorAll('.reviews__video video[data-review-video]');
+        if (!videos.length) return;
+
+        const controller = new AbortController();
+        const { signal } = controller;
+
+        function preload(video) {
+            video.preload = 'auto';
+            if (video.paused && video.currentTime === 0) video.load();
+        }
+
+        const observer = 'IntersectionObserver' in window
+            ? new IntersectionObserver((entries) => {
+                for (const entry of entries) {
+                    if (!entry.isIntersecting) continue;
+                    preload(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            }, { rootMargin: '800px 400px' })
+            : null;
+
+        for (const video of videos) {
+            if (observer) observer.observe(video);
+            else preload(video);
+
+            video.addEventListener('play', () => {
+                for (const other of videos) {
+                    if (other !== video) other.pause();
+                }
+            }, { signal });
+        }
+
+        window.addEventListener('pagehide', () => {
+            observer?.disconnect();
+            controller.abort();
+            for (const video of videos) video.pause();
+        }, { once: true });
+    }
+
+    preloadReviewVideos();
+    window.addEventListener('pageshow', (event) => {
+        if (event.persisted) preloadReviewVideos();
+    });
+
     function initReviewVideos() {
         const items = document.querySelectorAll('.reviews__item');
 
@@ -36,28 +81,35 @@ window.addEventListener('DOMContentLoaded', () => {
             const video = item.querySelector('video');
             const btn = item.querySelector('.reviews__play');
 
-            if (!video || !btn) return;
+            if (!(video instanceof HTMLVideoElement) || !(btn instanceof HTMLButtonElement)) return;
 
-            function playVideo() {
-                video.play();
-                btn.classList.remove('active');
+            function updatePlaybackState() {
+                const paused = video.paused || video.ended;
+                btn.classList.toggle('active', paused);
+                const label = paused ? btn.dataset.playLabel : btn.dataset.pauseLabel;
+                if (label) btn.setAttribute('aria-label', label);
             }
 
-            function stopVideo() {
-                video.pause();
-                btn.classList.add('active');
+            async function toggleVideo() {
+                if (!video.paused) {
+                    video.pause();
+                    return;
+                }
+
+                try {
+                    await video.play();
+                } catch {
+                    updatePlaybackState();
+                }
             }
 
-            btn.addEventListener('click', () => {
-                video.paused ? playVideo() : stopVideo();
-            });
+            btn.addEventListener('click', toggleVideo);
+            video.addEventListener('click', toggleVideo);
 
-            video.addEventListener('click', () => {
-                if (!video.paused) stopVideo();
-            });
-
-            // на случай если видео закончилось само
-            video.addEventListener('ended', stopVideo);
+            for (const eventName of ['play', 'pause', 'ended', 'error']) {
+                video.addEventListener(eventName, updatePlaybackState);
+            }
+            updatePlaybackState();
         });
     }
 

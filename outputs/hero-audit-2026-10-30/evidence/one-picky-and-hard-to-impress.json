@@ -1,0 +1,35 @@
+{
+  "index": 76,
+  "xlsx_row": 77,
+  "angle": "If I Could Only Keep One",
+  "group": "HERO 6 ↔ GROUP 6 – Picky and hard to impress",
+  "url": "https://myvox-9.com/pages/one-picky-and-hard-to-impress",
+  "expected": {
+    "headline": "You return things that don't work. This is the one supplement that stayed.",
+    "description": "Api-Complex earns its spot with full doses, no fillers, no proprietary blends, and support across energy, focus, gut and immune defenses.",
+    "cta": "Make my pick →"
+  },
+  "checked_at": "2026-10-30T16:39:45.681522+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/one-picky-and-hard-to-impress",
+  "html_sha256": "ce205860911440e8ae0f5c4d418b9ba5663b893beac7a4dfbd00a5a7a7a04d01",
+  "hero_id": null,
+  "actual": {
+    "headline": "You return things that don't work. This is the one supplement that stayed.",
+    "description": "Api-Complex earns its spot with full doses, no fillers, no proprietary blends, and support across energy, focus, gut and immune defenses.",
+    "cta": "Make my pick"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

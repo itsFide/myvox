@@ -1,0 +1,35 @@
+{
+  "index": 72,
+  "xlsx_row": 73,
+  "angle": "If I Could Only Keep One",
+  "group": "HERO 2 ↔ GROUP 2 – Everything else does one job",
+  "url": "https://myvox-9.com/pages/one-everything-else-does-one-job",
+  "expected": {
+    "headline": "A pill for energy, a pill for sleep, a pill for your gut. That's the problem, not the plan.",
+    "description": "Api-Complex covers four areas with the three inputs behind all of them – energy, focus, gut and immune defenses, in one daily stick.",
+    "cta": "Keep one that does more →"
+  },
+  "checked_at": "2026-10-30T16:39:45.206709+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/one-everything-else-does-one-job",
+  "html_sha256": "d89fac860a8eda2cd66423f71b4e59a730d74a50231c1f45c7ad4019a543c430",
+  "hero_id": null,
+  "actual": {
+    "headline": "A pill for energy, a pill for sleep, a pill for your gut. That's the problem, not the plan.",
+    "description": "Api-Complex covers four areas with the three inputs behind all of them – energy, focus, gut and immune defenses, in one daily stick.",
+    "cta": "Keep one that does more"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

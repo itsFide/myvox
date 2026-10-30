@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Urmărește comanda",
+    "description": "Introdu mai jos numărul de urmărire.",
+    "tracking_number": "Număr de urmărire",
+    "submit": "Urmărește comanda",
+    "empty_number": "Introdu numărul de urmărire.",
+    "unavailable": "Urmărirea este temporar indisponibilă. Reîncarcă pagina și încearcă din nou."
+  },
   "blocks": {
     "load_video": "Încarcă clipul video: {{ description }}",
     "sold_out": "Stoc epuizat",

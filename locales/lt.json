@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Sekite savo užsakymą",
+    "description": "Toliau įveskite siuntos sekimo numerį.",
+    "tracking_number": "Siuntos sekimo numeris",
+    "submit": "Sekti užsakymą",
+    "empty_number": "Įveskite siuntos sekimo numerį.",
+    "unavailable": "Siuntos sekimas laikinai nepasiekiamas. Atnaujinkite puslapį ir bandykite dar kartą."
+  },
   "blocks": {
     "load_video": "Įkelti vaizdo įrašą „{{ description }}“",
     "sold_out": "Išparduota",

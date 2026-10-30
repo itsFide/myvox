@@ -1,0 +1,126 @@
+{
+  "status": "verified_on_storefront",
+  "category": "If I Could Only Keep One",
+  "shop": {
+    "name": "MYVOX-9",
+    "myshopifyDomain": "uhgmmm-ef.myshopify.com",
+    "primaryDomain": {
+      "url": "https://myvox-9.com"
+    }
+  },
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – The forced choice",
+      "page_id": "gid://shopify/Page/712680735088",
+      "handle": "one-the-forced-choice",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C72",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/one-the-forced-choice"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – Everything else does one job",
+      "page_id": "gid://shopify/Page/712680767856",
+      "handle": "one-everything-else-does-one-job",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C73",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/one-everything-else-does-one-job"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – The survivor",
+      "page_id": "gid://shopify/Page/712680800624",
+      "handle": "one-the-survivor",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C74",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/one-the-survivor"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – The keeper",
+      "page_id": "gid://shopify/Page/712680833392",
+      "handle": "one-the-keeper",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C75",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/one-the-keeper"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – Not a compromise",
+      "page_id": "gid://shopify/Page/712680866160",
+      "handle": "one-not-a-compromise",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C76",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/one-not-a-compromise"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Picky and hard to impress",
+      "page_id": "gid://shopify/Page/712680898928",
+      "handle": "one-picky-and-hard-to-impress",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C77",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/one-picky-and-hard-to-impress"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – Choice overload",
+      "page_id": "gid://shopify/Page/712680931696",
+      "handle": "one-choice-overload",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C78",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/one-choice-overload"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Self-ID",
+      "page_id": "gid://shopify/Page/712680964464",
+      "handle": "one-self-id",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C79",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/one-self-id"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Social proof",
+      "page_id": "gid://shopify/Page/712680997232",
+      "handle": "one-social-proof",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C80",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/one-social-proof"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – The decisive payoff",
+      "page_id": "gid://shopify/Page/712681030000",
+      "handle": "one-the-decisive-payoff",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C81",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/one-the-decisive-payoff"
+    }
+  ],
+  "completed_at": "2026-10-30T16:30:42.140Z"
+}

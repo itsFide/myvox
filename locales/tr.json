@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Siparişinizi takip edin",
+    "description": "Takip numaranızı aşağıya girin.",
+    "tracking_number": "Takip numarası",
+    "submit": "Siparişi takip et",
+    "empty_number": "Lütfen takip numaranızı girin.",
+    "unavailable": "Takip hizmeti geçici olarak kullanılamıyor. Sayfayı yenileyip tekrar deneyin."
+  },
   "blocks": {
     "load_video": "Videoyu yükle: {{ description }}",
     "sold_out": "Tükendi",

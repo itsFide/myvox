@@ -1,0 +1,126 @@
+{
+  "status": "verified_on_storefront",
+  "category": "Focus",
+  "shop": {
+    "name": "MYVOX-9",
+    "myshopifyDomain": "uhgmmm-ef.myshopify.com",
+    "primaryDomain": {
+      "url": "https://myvox-9.com"
+    }
+  },
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – Reading, nothing goes in",
+      "page_id": "gid://shopify/Page/712678834544",
+      "handle": "focus-reading-nothing-goes-in",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C12",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/focus-reading-nothing-goes-in"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – The 2pm shutdown",
+      "page_id": "gid://shopify/Page/712678867312",
+      "handle": "focus-the-2pm-shutdown",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C13",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/focus-the-2pm-shutdown"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – Memory slips",
+      "page_id": "gid://shopify/Page/712678900080",
+      "handle": "focus-memory-slips",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C14",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/focus-memory-slips"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – What foggy hours cost",
+      "page_id": "gid://shopify/Page/712678932848",
+      "handle": "focus-what-foggy-hours-cost",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C15",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/focus-what-foggy-hours-cost"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – Coffee isn't clearing it",
+      "page_id": "gid://shopify/Page/712678965616",
+      "handle": "focus-coffee-isnt-clearing-it",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C16",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/focus-coffee-isnt-clearing-it"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Calls and meetings",
+      "page_id": "gid://shopify/Page/712678998384",
+      "handle": "focus-calls-and-meetings",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C17",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/focus-calls-and-meetings"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – The fog itself",
+      "page_id": "gid://shopify/Page/712679031152",
+      "handle": "focus-the-fog-itself",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C18",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/focus-the-fog-itself"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Self-ID",
+      "page_id": "gid://shopify/Page/712679063920",
+      "handle": "focus-self-id",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C19",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/focus-self-id"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Can't start, can't finish",
+      "page_id": "gid://shopify/Page/712679096688",
+      "handle": "focus-cant-start-cant-finish",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C20",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/focus-cant-start-cant-finish"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – Words and thoughts slip",
+      "page_id": "gid://shopify/Page/712679129456",
+      "handle": "focus-words-and-thoughts-slip",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C21",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/focus-words-and-thoughts-slip"
+    }
+  ],
+  "completed_at": "2026-10-30T16:15:59.468Z"
+}

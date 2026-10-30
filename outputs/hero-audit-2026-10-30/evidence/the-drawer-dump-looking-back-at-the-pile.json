@@ -1,0 +1,35 @@
+{
+  "index": 56,
+  "xlsx_row": 57,
+  "angle": "The Drawer Dump",
+  "group": "HERO 6 ↔ GROUP 6 – Looking back at the pile",
+  "url": "https://myvox-9.com/pages/the-drawer-dump-looking-back-at-the-pile",
+  "expected": {
+    "headline": "Three years of an eight-bottle drawer. Nobody needs that, including you.",
+    "description": "Api-Complex covers the three jobs your body actually runs on, so the drawer can stay empty.",
+    "cta": "Keep the drawer empty →"
+  },
+  "checked_at": "2026-10-30T16:39:43.071675+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/the-drawer-dump-looking-back-at-the-pile",
+  "html_sha256": "3843297eef162c9d1870af597d9a9a99f552f16405cf94428a24d9fb0ad6d44d",
+  "hero_id": null,
+  "actual": {
+    "headline": "Three years of an eight-bottle drawer. Nobody needs that, including you.",
+    "description": "Api-Complex covers the three jobs your body actually runs on, so the drawer can stay empty.",
+    "cta": "Keep the drawer empty"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

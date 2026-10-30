@@ -1,0 +1,35 @@
+{
+  "index": 36,
+  "xlsx_row": 37,
+  "angle": "Gut",
+  "group": "HERO 6 ↔ GROUP 6 – Eating out and social life",
+  "url": "https://myvox-9.com/pages/gut-eating-out-and-social-life",
+  "expected": {
+    "headline": "You skip lunch before dinner plans. Eating around it was never the fix.",
+    "description": "Api-Complex supports digestive comfort every day, so you can order what you actually want instead of planning around it.",
+    "cta": "Enjoy eating again →"
+  },
+  "checked_at": "2026-10-30T16:39:40.602127+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/gut-eating-out-and-social-life",
+  "html_sha256": "6151ce8484e0cd0fb81984335b562b9cbb6e04dcf42e9c27fe0f1f97f9cefecd",
+  "hero_id": null,
+  "actual": {
+    "headline": "You skip lunch before dinner plans. Eating around it was never the fix.",
+    "description": "Api-Complex supports digestive comfort every day, so you can order what you actually want instead of planning around it.",
+    "cta": "Enjoy eating again"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

@@ -1,0 +1,126 @@
+{
+  "status": "verified_on_storefront",
+  "category": "Vitality",
+  "shop": {
+    "name": "MYVOX-9",
+    "myshopifyDomain": "uhgmmm-ef.myshopify.com",
+    "primaryDomain": {
+      "url": "https://myvox-9.com"
+    }
+  },
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – Off across the board",
+      "page_id": "gid://shopify/Page/712679981424",
+      "handle": "vitality-off-across-the-board",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C42",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/vitality-off-across-the-board"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – The stack isn't working",
+      "page_id": "gid://shopify/Page/712680014192",
+      "handle": "vitality-the-stack-isnt-working",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C43",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/vitality-the-stack-isnt-working"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – One stick, four jobs",
+      "page_id": "gid://shopify/Page/712680046960",
+      "handle": "vitality-one-stick-four-jobs",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C44",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/vitality-one-stick-four-jobs"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – What's actually in it",
+      "page_id": "gid://shopify/Page/712680079728",
+      "handle": "vitality-whats-actually-in-it",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C45",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/vitality-whats-actually-in-it"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – One system, not twelve pills",
+      "page_id": "gid://shopify/Page/712680112496",
+      "handle": "vitality-one-system-not-twelve-pills",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C46",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/vitality-one-system-not-twelve-pills"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – I want to feel like myself",
+      "page_id": "gid://shopify/Page/712680145264",
+      "handle": "vitality-i-want-to-feel-like-myself",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C47",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/vitality-i-want-to-feel-like-myself"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – The math on your shelf",
+      "page_id": "gid://shopify/Page/712680178032",
+      "handle": "vitality-the-math-on-your-shelf",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C48",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/vitality-the-math-on-your-shelf"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Self-ID",
+      "page_id": "gid://shopify/Page/712680210800",
+      "handle": "vitality-self-id",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C49",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/vitality-self-id"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Social proof",
+      "page_id": "gid://shopify/Page/712680243568",
+      "handle": "vitality-social-proof",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C50",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/vitality-social-proof"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – Good across the board",
+      "page_id": "gid://shopify/Page/712680276336",
+      "handle": "vitality-good-across-the-board",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C51",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/vitality-good-across-the-board"
+    }
+  ],
+  "completed_at": "2026-10-30T16:25:25.136Z"
+}

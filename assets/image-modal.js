@@ -1,6 +1,8 @@
 (function () {
   'use strict';
 
+  if (window.UniversalImageModal) return;
+
   const MIN_SCALE = 0.5;
   const MAX_SCALE = 4.0;
   const DEFAULT_ZOOM = 1.5;
@@ -10,6 +12,8 @@
   let wrapperEl = null;
   let stageEl = null;
   let imgEl = null;
+  let fitWidth = 0;
+  let fitHeight = 0;
 
   let scale = 1.0;
   let baseScale = 1.0;
@@ -82,6 +86,20 @@
     attachEvents();
   }
 
+  function fitImage() {
+    if (!imgEl.naturalWidth || !imgEl.naturalHeight) return;
+
+    const isMobile = window.innerWidth <= 768;
+    const fitScale = Math.min(
+      (wrapperEl.clientWidth * (isMobile ? 0.95 : 0.9)) / imgEl.naturalWidth,
+      (wrapperEl.clientHeight * (isMobile ? 0.8 : 0.85)) / imgEl.naturalHeight,
+      1
+    );
+    fitWidth = imgEl.naturalWidth * fitScale;
+    fitHeight = imgEl.naturalHeight * fitScale;
+    applyTransform();
+  }
+
   function applyTransform() {
     if (!stageEl) return;
 
@@ -89,6 +107,10 @@
     scale = Math.min(Math.max(scale, MIN_SCALE), MAX_SCALE);
 
     const totalScale = scale * baseScale;
+    const imageWidth = Math.round(fitWidth * totalScale);
+    const imageHeight = Math.round(fitHeight * totalScale);
+    imgEl.style.width = `${imageWidth}px`;
+    imgEl.style.height = `${imageHeight}px`;
 
     // If totalScale <= 1.0 and scale === 1.0, reset translation
     if (totalScale <= 1.0) {
@@ -96,15 +118,14 @@
       translateY = 0;
     } else {
       // Clamp translation to keep image reasonably in frame
-      const stageRect = stageEl.getBoundingClientRect();
-      const maxTranslateX = (stageRect.width * Math.max(0, totalScale - 1)) / 2;
-      const maxTranslateY = (stageRect.height * Math.max(0, totalScale - 1)) / 2;
+      const maxTranslateX = Math.max(0, (imageWidth - wrapperEl.clientWidth) / 2);
+      const maxTranslateY = Math.max(0, (imageHeight - wrapperEl.clientHeight) / 2);
 
       translateX = Math.min(Math.max(translateX, -maxTranslateX), maxTranslateX);
       translateY = Math.min(Math.max(translateY, -maxTranslateY), maxTranslateY);
     }
 
-    stageEl.style.transform = `translate3d(${translateX}px, ${translateY}px, 0) scale(${totalScale})`;
+    stageEl.style.transform = `translate(${Math.round(translateX)}px, ${Math.round(translateY)}px)`;
 
     if (totalScale > 1.0) {
       stageEl.classList.add('is-zoomed');
@@ -163,9 +184,9 @@
 
     modalEl.classList.add('is-loading');
     imgEl.classList.add('is-loading');
-    imgEl.src = src;
 
     imgEl.onload = function () {
+      fitImage();
       modalEl.classList.remove('is-loading');
       imgEl.classList.remove('is-loading');
     };
@@ -174,6 +195,8 @@
       modalEl.classList.remove('is-loading');
       imgEl.classList.remove('is-loading');
     };
+
+    imgEl.src = src;
 
     resetZoom();
 
@@ -197,6 +220,10 @@
   }
 
   function attachEvents() {
+    window.addEventListener('resize', function () {
+      if (modalEl.classList.contains('is-open')) fitImage();
+    });
+
     // Esc key close
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && modalEl && modalEl.classList.contains('is-open')) {

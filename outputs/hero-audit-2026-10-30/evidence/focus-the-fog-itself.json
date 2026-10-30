@@ -1,0 +1,35 @@
+{
+  "index": 17,
+  "xlsx_row": 18,
+  "angle": "Focus",
+  "group": "HERO 7 ↔ GROUP 7 – The fog itself",
+  "url": "https://myvox-9.com/pages/focus-the-fog-itself",
+  "expected": {
+    "headline": "Brain fog at 2 p.m., like clockwork. Coffee can't reach it because caffeine isn't what's missing.",
+    "description": "Api-Complex supports steady mental clarity with all three things your brain runs on, so the afternoon has less to take from you.",
+    "cta": "Lift the 2pm fog →"
+  },
+  "checked_at": "2026-10-30T16:39:38.363290+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/focus-the-fog-itself",
+  "html_sha256": "f7ac8d270f1c61b3d3bf41c15ea1c673313c251c4f9fcf73514189adb5e3ff44",
+  "hero_id": null,
+  "actual": {
+    "headline": "Brain fog at 2 p.m., like clockwork. Coffee can't reach it because caffeine isn't what's missing.",
+    "description": "Api-Complex supports steady mental clarity with all three things your brain runs on, so the afternoon has less to take from you.",
+    "cta": "Lift the 2pm fog"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

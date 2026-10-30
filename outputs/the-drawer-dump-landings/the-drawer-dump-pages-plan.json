@@ -1,0 +1,344 @@
+{
+  "status": "completed",
+  "category": "The Drawer Dump",
+  "store_domain": "uhgmmm-ef.myshopify.com",
+  "storefront_origin": "https://myvox-9.com",
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "notes": [
+    "Source copy is preserved. The CTA arrow is supplied by the template SVG.",
+    "Only The Drawer Dump category is included."
+  ],
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – The dump",
+      "page_title": "The Drawer Dump — The dump",
+      "handle": "the-drawer-dump-the-dump",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/the-drawer-dump-the-dump",
+      "worksheet": "URLs",
+      "url_cell": "C52",
+      "highlight": "One stick carries all of them.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "Your whole supplement drawer is chasing three things. [[One stick carries all of them.]]"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is bee bread, royal jelly and propolis, covering the raw materials, recovery signal and clean internal balance your whole body runs on."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Start my first cycle"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/the-drawer-dump-the-dump"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – The absurd count",
+      "page_title": "The Drawer Dump — The absurd count",
+      "handle": "the-drawer-dump-the-absurd-count",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/the-drawer-dump-the-absurd-count",
+      "worksheet": "URLs",
+      "url_cell": "C53",
+      "highlight": "Eight bottles a day and you still feel run-down.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Eight bottles a day and you still feel run-down.]] That's the part worth looking at."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex covers the three things your whole body actually runs on, so one stick stands in for a shelf of single-purpose bottles."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Replace the shelf"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/the-drawer-dump-the-absurd-count"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – What it was costing",
+      "page_title": "The Drawer Dump — What it was costing",
+      "handle": "the-drawer-dump-what-it-was-costing",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/the-drawer-dump-what-it-was-costing",
+      "worksheet": "URLs",
+      "url_cell": "C54",
+      "highlight": "Two hundred a month. Twenty-four hundred a year.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Two hundred a month. Twenty-four hundred a year.]] For a drawer of bottles that didn't work."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex puts 3,500mg of actives into one daily stick, more than seven capsules can physically hold, for a fraction of a stack."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Stop overpaying"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/the-drawer-dump-what-it-was-costing"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – The clutter and the hassle",
+      "page_title": "The Drawer Dump — The clutter and the hassle",
+      "handle": "the-drawer-dump-the-clutter-and-the-hassle",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/the-drawer-dump-the-clutter-and-the-hassle",
+      "worksheet": "URLs",
+      "url_cell": "C55",
+      "highlight": "Ten minutes sorting pills, three phone alarms,",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Ten minutes sorting pills, three phone alarms,]] and you still forget half of them."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is one stick, once a day, ten seconds. No organizer, no alarms, nothing to keep track of."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Simplify my mornings"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/the-drawer-dump-the-clutter-and-the-hassle"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – The swap",
+      "page_title": "The Drawer Dump — The swap",
+      "handle": "the-drawer-dump-the-swap",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/the-drawer-dump-the-swap",
+      "worksheet": "URLs",
+      "url_cell": "C56",
+      "highlight": "Eight bottles, or one stick",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Eight bottles, or one stick]] that covers the three things all eight were chasing."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex brings energy, focus, gut and immune support together, because they all run on the same three inputs."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Make the swap"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/the-drawer-dump-the-swap"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Looking back at the pile",
+      "page_title": "The Drawer Dump — Looking back at the pile",
+      "handle": "the-drawer-dump-looking-back-at-the-pile",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/the-drawer-dump-looking-back-at-the-pile",
+      "worksheet": "URLs",
+      "url_cell": "C57",
+      "highlight": "Three years of an eight-bottle drawer.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Three years of an eight-bottle drawer.]] Nobody needs that, including you."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex covers the three jobs your body actually runs on, so the drawer can stay empty."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Keep the drawer empty"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/the-drawer-dump-looking-back-at-the-pile"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – The skeptic",
+      "page_title": "The Drawer Dump — The skeptic",
+      "handle": "the-drawer-dump-the-skeptic",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/the-drawer-dump-the-skeptic",
+      "worksheet": "URLs",
+      "url_cell": "C58",
+      "highlight": "one stick replaces eight bottles.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "You don't think [[one stick replaces eight bottles.]] Look at the dose before you decide."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is 3,500mg of actives, more than seven capsules can physically hold, freeze-dried, no fillers, with a published Certificate of Analysis."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "See what's in one stick"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/the-drawer-dump-the-skeptic"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Self-ID",
+      "page_title": "The Drawer Dump — Self-ID",
+      "handle": "the-drawer-dump-self-id",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/the-drawer-dump-self-id",
+      "worksheet": "URLs",
+      "url_cell": "C59",
+      "highlight": "How many bottles are in your drawer right now?",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[How many bottles are in your drawer right now?]] And how do you actually feel?"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex replaces the shelf with one stick covering the three things your whole body runs on."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Trade the drawer for one"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/the-drawer-dump-self-id"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Social proof",
+      "page_title": "The Drawer Dump — Social proof",
+      "handle": "the-drawer-dump-social-proof",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/the-drawer-dump-social-proof",
+      "worksheet": "URLs",
+      "url_cell": "C60",
+      "highlight": "Ten thousand people",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Ten thousand people]] emptied their supplement drawer for one stick."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is what they switched to. 3,500mg of actives, four areas supported, ten seconds a day."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Switch like they did"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/the-drawer-dump-social-proof"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – Better on less",
+      "page_title": "The Drawer Dump — Better on less",
+      "handle": "the-drawer-dump-better-on-less",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/the-drawer-dump-better-on-less",
+      "worksheet": "URLs",
+      "url_cell": "C61",
+      "highlight": "Fewer bottles, and somehow better.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Fewer bottles, and somehow better.]] That happens when one stick covers what eight were splitting."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your whole body with one stick, because the three things it runs on were never eight separate problems."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Do less, feel more"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/the-drawer-dump-better-on-less"
+    }
+  ]
+}

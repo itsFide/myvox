@@ -1,0 +1,35 @@
+{
+  "index": 28,
+  "xlsx_row": 29,
+  "angle": "Immunity",
+  "group": "HERO 8 ↔ GROUP 8 – Run-down even when you're well",
+  "url": "https://myvox-9.com/pages/immunity-run-down-even-when-youre-well",
+  "expected": {
+    "headline": "You're not sick. You're not well either. Defenses that start worn down have nothing spare.",
+    "description": "Api-Complex supports your natural defenses and steady energy at the same time, with the three things both of them run on.",
+    "cta": "Stop starting at 60% →"
+  },
+  "checked_at": "2026-10-30T16:39:39.562239+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/immunity-run-down-even-when-youre-well",
+  "html_sha256": "372cadfbc6d3f45b8bc4db10ea29c3a7a0bdc165af28b778ea69bb0bb2459752",
+  "hero_id": null,
+  "actual": {
+    "headline": "You're not sick. You're not well either. Defenses that start worn down have nothing spare.",
+    "description": "Api-Complex supports your natural defenses and steady energy at the same time, with the three things both of them run on.",
+    "cta": "Stop starting at 60%"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

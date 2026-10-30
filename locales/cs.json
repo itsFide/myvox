@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Sledujte svou objednávku",
+    "description": "Níže zadejte sledovací číslo.",
+    "tracking_number": "Sledovací číslo",
+    "submit": "Sledovat objednávku",
+    "empty_number": "Zadejte prosím sledovací číslo.",
+    "unavailable": "Sledování je dočasně nedostupné. Obnovte stránku a zkuste to znovu."
+  },
   "blocks": {
     "load_video": "Načíst video: {{ description }}",
     "sold_out": "Vyprodáno",

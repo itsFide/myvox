@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Kövesd a rendelésed",
+    "description": "Add meg alább a nyomkövetési számot.",
+    "tracking_number": "Nyomkövetési szám",
+    "submit": "Rendelés követése",
+    "empty_number": "Add meg a nyomkövetési számot.",
+    "unavailable": "A nyomkövetés átmenetileg nem érhető el. Frissítsd az oldalt, és próbáld újra."
+  },
   "blocks": {
     "load_video": "Videó betöltése: {{ description }}",
     "sold_out": "Elfogyott",

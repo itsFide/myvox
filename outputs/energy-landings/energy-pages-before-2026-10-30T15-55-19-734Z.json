@@ -1,0 +1,30 @@
+{
+  "shop": {
+    "name": "MYVOX-9",
+    "myshopifyDomain": "uhgmmm-ef.myshopify.com",
+    "primaryDomain": {
+      "url": "https://myvox-9.com"
+    }
+  },
+  "pages": [
+    {
+      "id": "gid://shopify/Page/712676245872",
+      "title": "Energy Mornings",
+      "handle": "energy-mornings",
+      "templateSuffix": "landing-v1",
+      "isPublished": true,
+      "heading": {
+        "type": "multi_line_text_field",
+        "value": "[[Eight hours of sleep and still empty.]] \nSleep was never what you were missing"
+      },
+      "description": {
+        "type": "multi_line_text_field",
+        "value": "Api-Complex gives your body all three things steady energy runs on – the raw materials, the recovery signal, and a clean internal balance. Miss one and the other two can't carry you."
+      },
+      "button": {
+        "type": "single_line_text_field",
+        "value": "Get my mornings back"
+      }
+    }
+  ]
+}

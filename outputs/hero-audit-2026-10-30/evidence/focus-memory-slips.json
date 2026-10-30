@@ -1,0 +1,35 @@
+{
+  "index": 13,
+  "xlsx_row": 14,
+  "angle": "Focus",
+  "group": "HERO 3 ↔ GROUP 3 – Memory slips",
+  "url": "https://myvox-9.com/pages/focus-memory-slips",
+  "expected": {
+    "headline": "You walk into a room and forget why. Trying harder was never going to fix that.",
+    "description": "Api-Complex supports steady focus and mental clarity, so the small slips stop stacking up by mid-afternoon.",
+    "cta": "Get my head back →"
+  },
+  "checked_at": "2026-10-30T16:39:37.780618+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/focus-memory-slips",
+  "html_sha256": "e77c585fd2b838b85a862689999d798025720a3872d1405cb426c2431bd7a782",
+  "hero_id": null,
+  "actual": {
+    "headline": "You walk into a room and forget why. Trying harder was never going to fix that.",
+    "description": "Api-Complex supports steady focus and mental clarity, so the small slips stop stacking up by mid-afternoon.",
+    "cta": "Get my head back"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

@@ -1,0 +1,35 @@
+{
+  "index": 12,
+  "xlsx_row": 13,
+  "angle": "Focus",
+  "group": "HERO 2 ↔ GROUP 2 – The 2pm shutdown",
+  "url": "https://myvox-9.com/pages/focus-the-2pm-shutdown",
+  "expected": {
+    "headline": "2 p.m. and your brain quits. Willpower was never the missing piece.",
+    "description": "Api-Complex supports steady focus from morning through the afternoon by covering all three things clarity runs on, not another hit of caffeine.",
+    "cta": "Get my afternoons back →"
+  },
+  "checked_at": "2026-10-30T16:39:37.595517+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/focus-the-2pm-shutdown",
+  "html_sha256": "b77a46c4c79064c1fec1b9662dc3039cbd6f3d58cd53ca2b7c7103cd78d4e4ea",
+  "hero_id": null,
+  "actual": {
+    "headline": "2 p.m. and your brain quits. Willpower was never the missing piece.",
+    "description": "Api-Complex supports steady focus from morning through the afternoon by covering all three things clarity runs on, not another hit of caffeine.",
+    "cta": "Get my afternoons back"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

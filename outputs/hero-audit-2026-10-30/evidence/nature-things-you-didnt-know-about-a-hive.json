@@ -1,0 +1,35 @@
+{
+  "index": 63,
+  "xlsx_row": 64,
+  "angle": "Nature Build It First",
+  "group": "HERO 3 ↔ GROUP 3 – Things you didn't know about a hive",
+  "url": "https://myvox-9.com/pages/nature-things-you-didnt-know-about-a-hive",
+  "expected": {
+    "headline": "Bees ferment pollen so you can absorb it. Your capsule never got that far.",
+    "description": "Api-Complex is bee bread, royal jelly and propolis – fermented, pre-digested and freeze-dried, exactly as the hive made them.",
+    "cta": "Try the real thing →"
+  },
+  "checked_at": "2026-10-30T16:39:43.956004+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/nature-things-you-didnt-know-about-a-hive",
+  "html_sha256": "c8af24baa28d806784dc08840b51ee6e62f19c726e2a21b597dd396bb005b3be",
+  "hero_id": null,
+  "actual": {
+    "headline": "Bees ferment pollen so you can absorb it. Your capsule never got that far.",
+    "description": "Api-Complex is bee bread, royal jelly and propolis – fermented, pre-digested and freeze-dried, exactly as the hive made them.",
+    "cta": "Try the real thing"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

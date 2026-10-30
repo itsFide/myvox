@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Rastreie seu pedido",
+    "description": "Insira seu código de rastreamento abaixo.",
+    "tracking_number": "Código de rastreamento",
+    "submit": "Rastrear pedido",
+    "empty_number": "Insira seu código de rastreamento.",
+    "unavailable": "O rastreamento está temporariamente indisponível. Atualize a página e tente novamente."
+  },
   "blocks": {
     "load_video": "Carregar vídeo: {{ description }}",
     "sold_out": "Esgotado",

@@ -1,0 +1,35 @@
+{
+  "index": 48,
+  "xlsx_row": 49,
+  "angle": "Vitality",
+  "group": "HERO 8 ↔ GROUP 8 – Self-ID",
+  "url": "https://myvox-9.com/pages/vitality-self-id",
+  "expected": {
+    "headline": "Juggling five bottles and still feeling off? You've been covering one need out of three.",
+    "description": "Api-Complex covers all three things your whole body runs on, in one daily stick.",
+    "cta": "Fix it in one stick →"
+  },
+  "checked_at": "2026-10-30T16:39:42.178494+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/vitality-self-id",
+  "html_sha256": "e848fcc38c9f9c85363d0ed23384db8e208738c7107e678671c23661f2c7b266",
+  "hero_id": null,
+  "actual": {
+    "headline": "Juggling five bottles and still feeling off? You've been covering one need out of three.",
+    "description": "Api-Complex covers all three things your whole body runs on, in one daily stick.",
+    "cta": "Fix it in one stick"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

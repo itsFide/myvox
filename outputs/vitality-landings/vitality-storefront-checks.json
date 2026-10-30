@@ -1,0 +1,132 @@
+[
+  {
+    "url": "https://myvox-9.com/pages/vitality-off-across-the-board",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Tired, foggy, bloated, run-down. Four problems, or one system running short?",
+    "actual_highlight": [
+      "Tired, foggy, bloated, run-down."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/vitality-the-stack-isnt-working",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Seven supplements a day and you still feel off. Each one covers a fraction.",
+    "actual_highlight": [
+      "Seven supplements a day and you still feel off."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/vitality-one-stick-four-jobs",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "One stick. Energy, focus, gut, immune support. Because they all run on the same three things.",
+    "actual_highlight": [
+      "One stick. Energy, focus, gut, immune support."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/vitality-whats-actually-in-it",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "3,500mg of actives in one stick. More than seven capsules can physically hold.",
+    "actual_highlight": [
+      "3,500mg of actives in one stick."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/vitality-one-system-not-twelve-pills",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Tired, foggy, bloated, run-down – that was never twelve problems. It was one system short.",
+    "actual_highlight": [
+      "Tired, foggy, bloated, run-down"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/vitality-i-want-to-feel-like-myself",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "You want one good day. Not amazing. Just not running at sixty percent.",
+    "actual_highlight": [
+      "You want one good day."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/vitality-the-math-on-your-shelf",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Two hundred a month for a shelf of maybes. Ten minutes every morning to sort them.",
+    "actual_highlight": [
+      "Two hundred a month for a shelf of maybes."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/vitality-self-id",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Juggling five bottles and still feeling off? You've been covering one need out of three.",
+    "actual_highlight": [
+      "Juggling five bottles and still feeling off?"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/vitality-social-proof",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Nine in ten people are still taking Api-Complex after the first box.",
+    "actual_highlight": [
+      "Nine in ten people"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/vitality-good-across-the-board",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Steady afternoons, a clear head, a quiet stomach. All from the same three inputs.",
+    "actual_highlight": [
+      "Steady afternoons, a clear head, a quiet stomach."
+    ],
+    "passed": true
+  }
+]

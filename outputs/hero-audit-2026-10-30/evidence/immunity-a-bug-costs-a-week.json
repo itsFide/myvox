@@ -1,0 +1,35 @@
+{
+  "index": 23,
+  "xlsx_row": 24,
+  "angle": "Immunity",
+  "group": "HERO 3 ↔ GROUP 3 – A bug costs a week",
+  "url": "https://myvox-9.com/pages/immunity-a-bug-costs-a-week",
+  "expected": {
+    "headline": "Every cold costs you a full week. One vitamin was never covering that.",
+    "description": "Api-Complex supports your immune defenses daily with all three things they're built on – raw materials, a recovery signal, and a clean internal balance.",
+    "cta": "Stop losing whole weeks →"
+  },
+  "checked_at": "2026-10-30T16:39:38.957721+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/immunity-a-bug-costs-a-week",
+  "html_sha256": "916a9694c8994d791390a17e7cd0e1eea9f654f0d0876b8c0a86db643f1f1c57",
+  "hero_id": null,
+  "actual": {
+    "headline": "Every cold costs you a full week. One vitamin was never covering that.",
+    "description": "Api-Complex supports your immune defenses daily with all three things they're built on – raw materials, a recovery signal, and a clean internal balance.",
+    "cta": "Stop losing whole weeks"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

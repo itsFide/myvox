@@ -1,0 +1,340 @@
+{
+  "status": "completed",
+  "category": "Gut",
+  "store_domain": "uhgmmm-ef.myshopify.com",
+  "storefront_origin": "https://myvox-9.com",
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – Bloated after every meal",
+      "page_title": "Gut — Bloated after every meal",
+      "handle": "gut-bloated-after-every-meal",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/gut-bloated-after-every-meal",
+      "worksheet": "URLs",
+      "url_cell": "C32",
+      "highlight": "Normal lunch, bloated within the hour.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Normal lunch, bloated within the hour.]] You've been subtracting when your gut needed something added."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports healthy digestion with raw materials that arrive already fermented and pre-digested, so there's nothing extra for your gut to break down."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Give it something easy"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/gut-bloated-after-every-meal"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – The waistband by afternoon",
+      "page_title": "Gut — The waistband by afternoon",
+      "handle": "gut-the-waistband-by-afternoon",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/gut-the-waistband-by-afternoon",
+      "worksheet": "URLs",
+      "url_cell": "C33",
+      "highlight": "Comfortable at eight, unbuttoning by three.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Comfortable at eight, unbuttoning by three.]] It isn't only what you're eating."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports a calmer, lighter gut through the whole day with all three things healthy digestion runs on."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Feel light again"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/gut-the-waistband-by-afternoon"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – Unpredictable stomach",
+      "page_title": "Gut — Unpredictable stomach",
+      "handle": "gut-unpredictable-stomach",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/gut-unpredictable-stomach",
+      "worksheet": "URLs",
+      "url_cell": "C34",
+      "highlight": "Same meal, different result, no pattern.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Same meal, different result, no pattern.]] You can't eliminate your way out of this."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady, healthy digestion by giving your gut something it can absorb instead of something it has to fight."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Settle my stomach"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/gut-unpredictable-stomach"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – Heavy and sluggish",
+      "page_title": "Gut — Heavy and sluggish",
+      "handle": "gut-heavy-and-sluggish",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/gut-heavy-and-sluggish",
+      "worksheet": "URLs",
+      "url_cell": "C35",
+      "highlight": "Lunch costs you the afternoon.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Lunch costs you the afternoon.]] A gut working overtime takes that from somewhere."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports healthy digestion with pre-digested raw materials, so meals sit lighter and your afternoon stays yours."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Feel good after meals"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/gut-heavy-and-sluggish"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – Cutting foods didn't fix it",
+      "page_title": "Gut — Cutting foods didn't fix it",
+      "handle": "gut-cutting-foods-didnt-fix-it",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/gut-cutting-foods-didnt-fix-it",
+      "worksheet": "URLs",
+      "url_cell": "C36",
+      "highlight": "You cut half your diet and you're still bloated.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[You cut half your diet and you're still bloated.]] Cutting more isn't the next step."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your gut with all three things healthy digestion needs, not one more thing to take away."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Try adding instead"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/gut-cutting-foods-didnt-fix-it"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Eating out and social life",
+      "page_title": "Gut — Eating out and social life",
+      "handle": "gut-eating-out-and-social-life",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/gut-eating-out-and-social-life",
+      "worksheet": "URLs",
+      "url_cell": "C37",
+      "highlight": "You skip lunch before dinner plans.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[You skip lunch before dinner plans.]] Eating around it was never the fix."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports digestive comfort every day, so you can order what you actually want instead of planning around it."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Enjoy eating again"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/gut-eating-out-and-social-life"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – Clothes and how it feels",
+      "page_title": "Gut — Clothes and how it feels",
+      "handle": "gut-clothes-and-how-it-feels",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/gut-clothes-and-how-it-feels",
+      "worksheet": "URLs",
+      "url_cell": "C38",
+      "highlight": "Two sizes in one week.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Two sizes in one week.]] Your clothes fit fine at eight in the morning."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports a calmer, lighter gut through the day, so your clothes feel the same at 8 p.m. as they did at 8 a.m."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Feel comfortable all day"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/gut-clothes-and-how-it-feels"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Never quite comfortable",
+      "page_title": "Gut — Never quite comfortable",
+      "handle": "gut-never-quite-comfortable",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/gut-never-quite-comfortable",
+      "worksheet": "URLs",
+      "url_cell": "C39",
+      "highlight": "Uncomfortable after almost everything.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Uncomfortable after almost everything.]] Your gut is working overtime on food it can't use."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports healthy digestion and a clean internal balance with raw materials that are already broken down for you."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Calm my stomach"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/gut-never-quite-comfortable"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Self-ID",
+      "page_title": "Gut — Self-ID",
+      "handle": "gut-self-id",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/gut-self-id",
+      "worksheet": "URLs",
+      "url_cell": "C40",
+      "highlight": "Bloated after every meal, unbuttoning by three, still puffy after cutting foods.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Bloated after every meal, unbuttoning by three, still puffy after cutting foods.]] It isn't the food."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your gut with all three things healthy digestion runs on, in one daily stick."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Cover all three"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/gut-self-id"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – I just want to feel light",
+      "page_title": "Gut — I just want to feel light",
+      "handle": "gut-i-just-want-to-feel-light",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/gut-i-just-want-to-feel-light",
+      "worksheet": "URLs",
+      "url_cell": "C41",
+      "highlight": "You want to eat and then forget about it.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[You want to eat and then forget about it.]] That used to be normal."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports a calmer gut every day, so meals stop being a decision you have to plan your life around."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get my comfort back"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/gut-i-just-want-to-feel-light"
+    }
+  ]
+}

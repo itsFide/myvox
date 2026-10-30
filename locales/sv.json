@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Spåra din beställning",
+    "description": "Ange ditt spårningsnummer nedan.",
+    "tracking_number": "Spårningsnummer",
+    "submit": "Spåra beställning",
+    "empty_number": "Ange ditt spårningsnummer.",
+    "unavailable": "Spårning är tillfälligt otillgänglig. Uppdatera sidan och försök igen."
+  },
   "blocks": {
     "load_video": "Ladda video: {{ description }}",
     "sold_out": "Slutsåld",

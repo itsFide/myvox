@@ -1,0 +1,3 @@
+# Local credentials for the page import utility.
+.env.shopify-pages.local
+.shopify-pages-token.local.json*

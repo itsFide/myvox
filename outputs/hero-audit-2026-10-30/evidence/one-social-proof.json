@@ -1,0 +1,35 @@
+{
+  "index": 79,
+  "xlsx_row": 80,
+  "angle": "If I Could Only Keep One",
+  "group": "HERO 9 ↔ GROUP 9 – Social proof",
+  "url": "https://myvox-9.com/pages/one-social-proof",
+  "expected": {
+    "headline": "Ten thousand people cut their supplements down to one. They all kept the same one.",
+    "description": "Api-Complex is the single daily stick they kept after clearing the rest. 3,500mg of actives, four areas, ten seconds a day.",
+    "cta": "Keep what they keep →"
+  },
+  "checked_at": "2026-10-30T16:39:45.982778+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/one-social-proof",
+  "html_sha256": "bb5d2619857c28e71bbde4d4aecdfd54c9f9ea881c15a5ca894b459761db155b",
+  "hero_id": null,
+  "actual": {
+    "headline": "Ten thousand people cut their supplements down to one. They all kept the same one.",
+    "description": "Api-Complex is the single daily stick they kept after clearing the rest. 3,500mg of actives, four areas, ten seconds a day.",
+    "cta": "Keep what they keep"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

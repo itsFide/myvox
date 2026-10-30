@@ -1,0 +1,35 @@
+{
+  "index": 68,
+  "xlsx_row": 69,
+  "angle": "Nature Build It First",
+  "group": "HERO 8 ↔ GROUP 8 – Reframe questions",
+  "url": "https://myvox-9.com/pages/nature-reframe-questions",
+  "expected": {
+    "headline": "Do you know whether your supplements came from a hive or a factory?",
+    "description": "Api-Complex is three whole hive superfoods, freeze-dried and unchanged, with a published Certificate of Analysis for every batch.",
+    "cta": "Read the label →"
+  },
+  "checked_at": "2026-10-30T16:39:44.776633+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/nature-reframe-questions",
+  "html_sha256": "854bf660377885e2451f3e412aa3c5eb0e39121e6e8c980e8f08b40c3f050476",
+  "hero_id": null,
+  "actual": {
+    "headline": "Do you know whether your supplements came from a hive or a factory?",
+    "description": "Api-Complex is three whole hive superfoods, freeze-dried and unchanged, with a published Certificate of Analysis for every batch.",
+    "cta": "Read the label"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

@@ -1,0 +1,2802 @@
+[
+  {
+    "index": 1,
+    "xlsx_row": 2,
+    "angle": "Energy",
+    "group": "HERO 1 ↔ GROUP 1 – Mornings",
+    "url": "https://myvox-9.com/pages/energy-mornings",
+    "expected": {
+      "headline": "Eight hours of sleep and still empty. Sleep was never what you were missing.",
+      "description": "Api-Complex gives your body all three things steady energy runs on – the raw materials, the recovery signal, and a clean internal balance. Miss one and the other two can't carry you.",
+      "cta": "Get my mornings back →"
+    },
+    "checked_at": "2026-10-30T16:39:36.588766+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/energy-mornings",
+    "html_sha256": "4132c833615d87f971f3e90f8f552c3f99e21f09f3064a37dae743ac1e0b899f",
+    "hero_id": null,
+    "actual": {
+      "headline": "Eight hours of sleep and still empty. Sleep was never what you were missing.",
+      "description": "Api-Complex gives your body all three things steady energy runs on – the raw materials, the recovery signal, and a clean internal balance. Miss one and the other two can't carry you.",
+      "cta": "Get my mornings back"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 2,
+    "xlsx_row": 3,
+    "angle": "Energy",
+    "group": "HERO 2 ↔ GROUP 2 – The 2pm crash",
+    "url": "https://myvox-9.com/pages/energy-the-2pm-crash",
+    "expected": {
+      "headline": "2 p.m. hits and you're done. More coffee was never going to fix that.",
+      "description": "Api-Complex supports the three things your body actually makes energy from, so the afternoon stops flattening you. Not a stimulant. No jitters, no crash.",
+      "cta": "Get my afternoons back →"
+    },
+    "checked_at": "2026-10-30T16:39:36.589139+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/energy-the-2pm-crash",
+    "html_sha256": "f326da74eb96676368e58059eebcdb2a504e3cfd50847f91d2fc3fc06abf0f61",
+    "hero_id": null,
+    "actual": {
+      "headline": "2 p.m. hits and you're done. More coffee was never going to fix that.",
+      "description": "Api-Complex supports the three things your body actually makes energy from, so the afternoon stops flattening you. Not a stimulant. No jitters, no crash.",
+      "cta": "Get my afternoons back"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 3,
+    "xlsx_row": 4,
+    "angle": "Energy",
+    "group": "HERO 3 ↔ GROUP 3 – Evenings with family",
+    "url": "https://myvox-9.com/pages/energy-evenings-with-family",
+    "expected": {
+      "headline": "Your kids get whatever's left of you. Most nights that's nothing.",
+      "description": "Api-Complex supports steady energy that holds into the evening, so the best part of your day isn't already spent by the time you walk in the door.",
+      "cta": "Get my evenings back →"
+    },
+    "checked_at": "2026-10-30T16:39:36.589030+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/energy-evenings-with-family",
+    "html_sha256": "1cd5b3cc227a41af74782227ce71a750a081363dd40938e547c1d76fdb9260b5",
+    "hero_id": null,
+    "actual": {
+      "headline": "Your kids get whatever's left of you. Most nights that's nothing.",
+      "description": "Api-Complex supports steady energy that holds into the evening, so the best part of your day isn't already spent by the time you walk in the door.",
+      "cta": "Get my evenings back"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 4,
+    "xlsx_row": 5,
+    "angle": "Energy",
+    "group": "HERO 4 ↔ GROUP 4 – Coffee stopped working",
+    "url": "https://myvox-9.com/pages/energy-coffee-stopped-working",
+    "expected": {
+      "headline": "Fourth coffee, same crash. Coffee gives you none of the three things energy runs on.",
+      "description": "Api-Complex delivers all three – raw materials, a recovery signal, and a clean internal balance – so energy stays steady instead of spiking and dropping.",
+      "cta": "Try what coffee can't do →"
+    },
+    "checked_at": "2026-10-30T16:39:36.589177+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/energy-coffee-stopped-working",
+    "html_sha256": "d13a7c2f7e2ebf913075350533099adb67824f05399cffd76e870e4b2c3b98cf",
+    "hero_id": null,
+    "actual": {
+      "headline": "Fourth coffee, same crash. Coffee gives you none of the three things energy runs on.",
+      "description": "Api-Complex delivers all three – raw materials, a recovery signal, and a clean internal balance – so energy stays steady instead of spiking and dropping.",
+      "cta": "Try what coffee can't do"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 5,
+    "xlsx_row": 6,
+    "angle": "Energy",
+    "group": "HERO 5 ↔ GROUP 5 – It isn't your age",
+    "url": "https://myvox-9.com/pages/energy-it-isnt-your-age",
+    "expected": {
+      "headline": "That 2 p.m. crash isn't your age. It's three things your body isn't getting.",
+      "description": "Api-Complex supports steady, natural energy by covering all three at once, instead of pushing you with another stimulant.",
+      "cta": "Feel like yourself again →"
+    },
+    "checked_at": "2026-10-30T16:39:36.589086+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/energy-it-isnt-your-age",
+    "html_sha256": "38b8c581a8aca631334332df5680bd7947ebf75e4450e850b48864af3cc507c3",
+    "hero_id": null,
+    "actual": {
+      "headline": "That 2 p.m. crash isn't your age. It's three things your body isn't getting.",
+      "description": "Api-Complex supports steady, natural energy by covering all three at once, instead of pushing you with another stimulant.",
+      "cta": "Feel like yourself again"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 6,
+    "xlsx_row": 7,
+    "angle": "Energy",
+    "group": "HERO 6 ↔ GROUP 6 – Parents who can't keep up",
+    "url": "https://myvox-9.com/pages/energy-parents-who-cant-keep-up",
+    "expected": {
+      "headline": "Faking energy until bedtime isn't something you can push through.",
+      "description": "Api-Complex supports steady energy through the whole day with the three things your body runs on, so evenings stop being something to survive.",
+      "cta": "Keep up with them →"
+    },
+    "checked_at": "2026-10-30T16:39:36.589215+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/energy-parents-who-cant-keep-up",
+    "html_sha256": "1d6238cc782b3efb7f910085e2dc2c8e014c7bbe0f21b29a842106b88c069fdf",
+    "hero_id": null,
+    "actual": {
+      "headline": "Faking energy until bedtime isn't something you can push through.",
+      "description": "Api-Complex supports steady energy through the whole day with the three things your body runs on, so evenings stop being something to survive.",
+      "cta": "Keep up with them"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 7,
+    "xlsx_row": 8,
+    "angle": "Energy",
+    "group": "HERO 7 ↔ GROUP 7 – What the crash costs",
+    "url": "https://myvox-9.com/pages/energy-what-the-crash-costs",
+    "expected": {
+      "headline": "Four hours a day lost to the afternoon crash. Two years of them, if you're counting.",
+      "description": "Api-Complex supports steady energy from morning through the evening, so your best hours stop disappearing at 2 p.m.",
+      "cta": "Stop losing 2 to 6 →"
+    },
+    "checked_at": "2026-10-30T16:39:37.250032+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/energy-what-the-crash-costs",
+    "html_sha256": "9611cc89d94a6e86a8b145063ea92274a70001018016ae4d053b6812f596239d",
+    "hero_id": null,
+    "actual": {
+      "headline": "Four hours a day lost to the afternoon crash. Two years of them, if you're counting.",
+      "description": "Api-Complex supports steady energy from morning through the evening, so your best hours stop disappearing at 2 p.m.",
+      "cta": "Stop losing 2 to 6"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 8,
+    "xlsx_row": 9,
+    "angle": "Energy",
+    "group": "HERO 8 ↔ GROUP 8 – Self-ID",
+    "url": "https://myvox-9.com/pages/energy-self-id",
+    "expected": {
+      "headline": "Exhausted by two, empty by seven, and coffee stopped working. That isn't just tiredness.",
+      "description": "Api-Complex covers all three things steady energy needs, so your day stops being held together by caffeine.",
+      "cta": "Stop propping up my day →"
+    },
+    "checked_at": "2026-10-30T16:39:37.351908+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/energy-self-id",
+    "html_sha256": "d5c2bd2bfbdeca00ccdb88aef374912d089d94f03f7e5cd5aec62f6c4471ed40",
+    "hero_id": null,
+    "actual": {
+      "headline": "Exhausted by two, empty by seven, and coffee stopped working. That isn't just tiredness.",
+      "description": "Api-Complex covers all three things steady energy needs, so your day stops being held together by caffeine.",
+      "cta": "Stop propping up my day"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 9,
+    "xlsx_row": 10,
+    "angle": "Energy",
+    "group": "HERO 9 ↔ GROUP 9 – The contradiction",
+    "url": "https://myvox-9.com/pages/energy-the-contradiction",
+    "expected": {
+      "headline": "You fixed your sleep, cleaned up your diet, and the 2 p.m. crash stayed.",
+      "description": "Api-Complex gives your body all three things steady energy runs on, at the same time, in one daily stick.",
+      "cta": "Try the missing piece →"
+    },
+    "checked_at": "2026-10-30T16:39:37.479818+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/energy-the-contradiction",
+    "html_sha256": "35af83b49fa4070efb0750098afd5f19873c5c4488e8e7c568a06ce5c6f1c1d0",
+    "hero_id": null,
+    "actual": {
+      "headline": "You fixed your sleep, cleaned up your diet, and the 2 p.m. crash stayed.",
+      "description": "Api-Complex gives your body all three things steady energy runs on, at the same time, in one daily stick.",
+      "cta": "Try the missing piece"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 10,
+    "xlsx_row": 11,
+    "angle": "Energy",
+    "group": "HERO 10 ↔ GROUP 10 – No energy for my own life",
+    "url": "https://myvox-9.com/pages/energy-no-energy-for-my-own-life",
+    "expected": {
+      "headline": "Weekends stopped being weekends. Recovery isn't the same thing as rest.",
+      "description": "Api-Complex supports steady energy every day, so there's something left for the life you're working for.",
+      "cta": "Get my weekends back →"
+    },
+    "checked_at": "2026-10-30T16:39:37.590150+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/energy-no-energy-for-my-own-life",
+    "html_sha256": "a869d16f8d3c516d08be94b66bd14d1c5f08e3448c21bd3a49c86e058140022f",
+    "hero_id": null,
+    "actual": {
+      "headline": "Weekends stopped being weekends. Recovery isn't the same thing as rest.",
+      "description": "Api-Complex supports steady energy every day, so there's something left for the life you're working for.",
+      "cta": "Get my weekends back"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 11,
+    "xlsx_row": 12,
+    "angle": "Focus",
+    "group": "HERO 1 ↔ GROUP 1 – Reading, nothing goes in",
+    "url": "https://myvox-9.com/pages/focus-reading-nothing-goes-in",
+    "expected": {
+      "headline": "Fourth read of the same email, and still nothing. You're not losing your edge.",
+      "description": "Api-Complex supports steady focus and mental clarity with the three things your brain needs at once, so the afternoon stops taking your clarity with it.",
+      "cta": "Read it once →"
+    },
+    "checked_at": "2026-10-30T16:39:37.592874+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/focus-reading-nothing-goes-in",
+    "html_sha256": "14f32f36320473af6705d4f4f502b0d5ec80974811eff0730004d508c3f5dd36",
+    "hero_id": null,
+    "actual": {
+      "headline": "Fourth read of the same email, and still nothing. You're not losing your edge.",
+      "description": "Api-Complex supports steady focus and mental clarity with the three things your brain needs at once, so the afternoon stops taking your clarity with it.",
+      "cta": "Read it once"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 12,
+    "xlsx_row": 13,
+    "angle": "Focus",
+    "group": "HERO 2 ↔ GROUP 2 – The 2pm shutdown",
+    "url": "https://myvox-9.com/pages/focus-the-2pm-shutdown",
+    "expected": {
+      "headline": "2 p.m. and your brain quits. Willpower was never the missing piece.",
+      "description": "Api-Complex supports steady focus from morning through the afternoon by covering all three things clarity runs on, not another hit of caffeine.",
+      "cta": "Get my afternoons back →"
+    },
+    "checked_at": "2026-10-30T16:39:37.595517+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/focus-the-2pm-shutdown",
+    "html_sha256": "b77a46c4c79064c1fec1b9662dc3039cbd6f3d58cd53ca2b7c7103cd78d4e4ea",
+    "hero_id": null,
+    "actual": {
+      "headline": "2 p.m. and your brain quits. Willpower was never the missing piece.",
+      "description": "Api-Complex supports steady focus from morning through the afternoon by covering all three things clarity runs on, not another hit of caffeine.",
+      "cta": "Get my afternoons back"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 13,
+    "xlsx_row": 14,
+    "angle": "Focus",
+    "group": "HERO 3 ↔ GROUP 3 – Memory slips",
+    "url": "https://myvox-9.com/pages/focus-memory-slips",
+    "expected": {
+      "headline": "You walk into a room and forget why. Trying harder was never going to fix that.",
+      "description": "Api-Complex supports steady focus and mental clarity, so the small slips stop stacking up by mid-afternoon.",
+      "cta": "Get my head back →"
+    },
+    "checked_at": "2026-10-30T16:39:37.780618+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/focus-memory-slips",
+    "html_sha256": "e77c585fd2b838b85a862689999d798025720a3872d1405cb426c2431bd7a782",
+    "hero_id": null,
+    "actual": {
+      "headline": "You walk into a room and forget why. Trying harder was never going to fix that.",
+      "description": "Api-Complex supports steady focus and mental clarity, so the small slips stop stacking up by mid-afternoon.",
+      "cta": "Get my head back"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 14,
+    "xlsx_row": 15,
+    "angle": "Focus",
+    "group": "HERO 4 ↔ GROUP 4 – What foggy hours cost",
+    "url": "https://myvox-9.com/pages/focus-what-foggy-hours-cost",
+    "expected": {
+      "headline": "Three billable hours a day, lost to fog. You've been paying for this quietly.",
+      "description": "Api-Complex supports steady mental clarity deep into the workday, so the second half of your day is worth as much as the first.",
+      "cta": "Get those hours back →"
+    },
+    "checked_at": "2026-10-30T16:39:38.312944+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/focus-what-foggy-hours-cost",
+    "html_sha256": "e4e2bace89065b7e615dffa94c1cc70a2ca6dc98e70c1be2a26136d8b25836b0",
+    "hero_id": null,
+    "actual": {
+      "headline": "Three billable hours a day, lost to fog. You've been paying for this quietly.",
+      "description": "Api-Complex supports steady mental clarity deep into the workday, so the second half of your day is worth as much as the first.",
+      "cta": "Get those hours back"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 15,
+    "xlsx_row": 16,
+    "angle": "Focus",
+    "group": "HERO 5 ↔ GROUP 5 – Coffee isn't clearing it",
+    "url": "https://myvox-9.com/pages/focus-coffee-isnt-clearing-it",
+    "expected": {
+      "headline": "Coffee works for an hour, then the fog rolls back in. Caffeine isn't what your focus is missing.",
+      "description": "Api-Complex covers all three things focus runs on – raw materials, a recovery signal, and a clean internal balance – so clarity holds without the spike and the drop.",
+      "cta": "Try what coffee can't do →"
+    },
+    "checked_at": "2026-10-30T16:39:38.320660+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/focus-coffee-isnt-clearing-it",
+    "html_sha256": "b0728a6a144fc3c65c0bf616a0e355baada88f5fb1949663207cad605ca43f45",
+    "hero_id": null,
+    "actual": {
+      "headline": "Coffee works for an hour, then the fog rolls back in. Caffeine isn't what your focus is missing.",
+      "description": "Api-Complex covers all three things focus runs on – raw materials, a recovery signal, and a clean internal balance – so clarity holds without the spike and the drop.",
+      "cta": "Try what coffee can't do"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 16,
+    "xlsx_row": 17,
+    "angle": "Focus",
+    "group": "HERO 6 ↔ GROUP 6 – Calls and meetings",
+    "url": "https://myvox-9.com/pages/focus-calls-and-meetings",
+    "expected": {
+      "headline": "You nodded through the whole call and caught none of it. That isn't distraction.",
+      "description": "Api-Complex supports steady focus and clarity through the afternoon, so you can actually follow the room again.",
+      "cta": "Stay in the room →"
+    },
+    "checked_at": "2026-10-30T16:39:38.326291+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/focus-calls-and-meetings",
+    "html_sha256": "4511ad9265a241125e1f07dde09f403a09534b8e6a64a7c3f28dcfe1c07472a6",
+    "hero_id": null,
+    "actual": {
+      "headline": "You nodded through the whole call and caught none of it. That isn't distraction.",
+      "description": "Api-Complex supports steady focus and clarity through the afternoon, so you can actually follow the room again.",
+      "cta": "Stay in the room"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 17,
+    "xlsx_row": 18,
+    "angle": "Focus",
+    "group": "HERO 7 ↔ GROUP 7 – The fog itself",
+    "url": "https://myvox-9.com/pages/focus-the-fog-itself",
+    "expected": {
+      "headline": "Brain fog at 2 p.m., like clockwork. Coffee can't reach it because caffeine isn't what's missing.",
+      "description": "Api-Complex supports steady mental clarity with all three things your brain runs on, so the afternoon has less to take from you.",
+      "cta": "Lift the 2pm fog →"
+    },
+    "checked_at": "2026-10-30T16:39:38.363290+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/focus-the-fog-itself",
+    "html_sha256": "f7ac8d270f1c61b3d3bf41c15ea1c673313c251c4f9fcf73514189adb5e3ff44",
+    "hero_id": null,
+    "actual": {
+      "headline": "Brain fog at 2 p.m., like clockwork. Coffee can't reach it because caffeine isn't what's missing.",
+      "description": "Api-Complex supports steady mental clarity with all three things your brain runs on, so the afternoon has less to take from you.",
+      "cta": "Lift the 2pm fog"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 18,
+    "xlsx_row": 19,
+    "angle": "Focus",
+    "group": "HERO 8 ↔ GROUP 8 – Self-ID",
+    "url": "https://myvox-9.com/pages/focus-self-id",
+    "expected": {
+      "headline": "Rereading the same line, losing the word, foggy every afternoon. That isn't laziness and it isn't your age.",
+      "description": "Api-Complex helps maintain normal, steady focus by covering all three things your brain needs at the same time.",
+      "cta": "Fix what focus apps can't →"
+    },
+    "checked_at": "2026-10-30T16:39:38.398379+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/focus-self-id",
+    "html_sha256": "e9b0a4d58148f7dc28fece52cd3e0c0e721ee7dbedd8e9a54002e9afe09a3b56",
+    "hero_id": null,
+    "actual": {
+      "headline": "Rereading the same line, losing the word, foggy every afternoon. That isn't laziness and it isn't your age.",
+      "description": "Api-Complex helps maintain normal, steady focus by covering all three things your brain needs at the same time.",
+      "cta": "Fix what focus apps can't"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 19,
+    "xlsx_row": 20,
+    "angle": "Focus",
+    "group": "HERO 9 ↔ GROUP 9 – Can't start, can't finish",
+    "url": "https://myvox-9.com/pages/focus-cant-start-cant-finish",
+    "expected": {
+      "headline": "The same task, reopened all week. Starting isn't a motivation problem.",
+      "description": "Api-Complex supports steady focus, so you can start something after lunch and actually finish it.",
+      "cta": "Finish the thing →"
+    },
+    "checked_at": "2026-10-30T16:39:38.514747+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/focus-cant-start-cant-finish",
+    "html_sha256": "6ad14fb72c5100b99f2a43586d3bd18d5df82e355350071b90a9afc34000cbd0",
+    "hero_id": null,
+    "actual": {
+      "headline": "The same task, reopened all week. Starting isn't a motivation problem.",
+      "description": "Api-Complex supports steady focus, so you can start something after lunch and actually finish it.",
+      "cta": "Finish the thing"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 20,
+    "xlsx_row": 21,
+    "angle": "Focus",
+    "group": "HERO 10 ↔ GROUP 10 – Words and thoughts slip",
+    "url": "https://myvox-9.com/pages/focus-words-and-thoughts-slip",
+    "expected": {
+      "headline": "You lose the word mid-sentence and everyone waits. That isn't how you normally talk.",
+      "description": "Api-Complex supports steady focus and mental clarity, so you can hold a thought all the way to the end of it.",
+      "cta": "Sound like myself again →"
+    },
+    "checked_at": "2026-10-30T16:39:38.806449+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/focus-words-and-thoughts-slip",
+    "html_sha256": "ace0ef346e482638359b5a56f16beb142f73446637037f3efcf7d79664b90a8f",
+    "hero_id": null,
+    "actual": {
+      "headline": "You lose the word mid-sentence and everyone waits. That isn't how you normally talk.",
+      "description": "Api-Complex supports steady focus and mental clarity, so you can hold a thought all the way to the end of it.",
+      "cta": "Sound like myself again"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 21,
+    "xlsx_row": 22,
+    "angle": "Immunity",
+    "group": "HERO 1 ↔ GROUP 1 – Catching everything",
+    "url": "https://myvox-9.com/pages/immunity-catching-everything",
+    "expected": {
+      "headline": "Someone sneezes Monday, it's you by Thursday. That isn't bad luck.",
+      "description": "Api-Complex supports your immune defenses with all three things they run on, instead of one vitamin covering a sliver of the job.",
+      "cta": "Support all three →"
+    },
+    "checked_at": "2026-10-30T16:39:38.815816+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/immunity-catching-everything",
+    "html_sha256": "b348f499e89c09f098be4c3dfc7f83089290ced8bb67023cf8a705d0b2ca21f5",
+    "hero_id": null,
+    "actual": {
+      "headline": "Someone sneezes Monday, it's you by Thursday. That isn't bad luck.",
+      "description": "Api-Complex supports your immune defenses with all three things they run on, instead of one vitamin covering a sliver of the job.",
+      "cta": "Support all three"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 22,
+    "xlsx_row": 23,
+    "angle": "Immunity",
+    "group": "HERO 2 ↔ GROUP 2 – Kids bring it home",
+    "url": "https://myvox-9.com/pages/immunity-kids-bring-it-home",
+    "expected": {
+      "headline": "Your kids bounce back in a day. You lose a week. Same house, different reserves.",
+      "description": "Api-Complex supports your body's natural defenses every day, so they aren't starting from empty every time something goes around.",
+      "cta": "Stop being next in line →"
+    },
+    "checked_at": "2026-10-30T16:39:38.937563+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/immunity-kids-bring-it-home",
+    "html_sha256": "05e5a9246f32f99ce80a87b151401612bf05e1fb4d2640122fcfdf9887dce9fa",
+    "hero_id": null,
+    "actual": {
+      "headline": "Your kids bounce back in a day. You lose a week. Same house, different reserves.",
+      "description": "Api-Complex supports your body's natural defenses every day, so they aren't starting from empty every time something goes around.",
+      "cta": "Stop being next in line"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 23,
+    "xlsx_row": 24,
+    "angle": "Immunity",
+    "group": "HERO 3 ↔ GROUP 3 – A bug costs a week",
+    "url": "https://myvox-9.com/pages/immunity-a-bug-costs-a-week",
+    "expected": {
+      "headline": "Every cold costs you a full week. One vitamin was never covering that.",
+      "description": "Api-Complex supports your immune defenses daily with all three things they're built on – raw materials, a recovery signal, and a clean internal balance.",
+      "cta": "Stop losing whole weeks →"
+    },
+    "checked_at": "2026-10-30T16:39:38.957721+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/immunity-a-bug-costs-a-week",
+    "html_sha256": "916a9694c8994d791390a17e7cd0e1eea9f654f0d0876b8c0a86db643f1f1c57",
+    "hero_id": null,
+    "actual": {
+      "headline": "Every cold costs you a full week. One vitamin was never covering that.",
+      "description": "Api-Complex supports your immune defenses daily with all three things they're built on – raw materials, a recovery signal, and a clean internal balance.",
+      "cta": "Stop losing whole weeks"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 24,
+    "xlsx_row": 25,
+    "angle": "Immunity",
+    "group": "HERO 4 ↔ GROUP 4 – The count",
+    "url": "https://myvox-9.com/pages/immunity-the-count",
+    "expected": {
+      "headline": "Four colds since January. You counted, and that's the part that bothers you.",
+      "description": "Api-Complex supports a healthy immune system every day, with the three things your defenses actually run on.",
+      "cta": "Support my immune system →"
+    },
+    "checked_at": "2026-10-30T16:39:38.979168+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/immunity-the-count",
+    "html_sha256": "8589fe514ad8ef1fb08b906e23d2f55b575f984111d90d1eabd77404a8b65caf",
+    "hero_id": null,
+    "actual": {
+      "headline": "Four colds since January. You counted, and that's the part that bothers you.",
+      "description": "Api-Complex supports a healthy immune system every day, with the three things your defenses actually run on.",
+      "cta": "Support my immune system"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 25,
+    "xlsx_row": 26,
+    "angle": "Immunity",
+    "group": "HERO 5 ↔ GROUP 5 – Slow to recover",
+    "url": "https://myvox-9.com/pages/immunity-slow-to-recover",
+    "expected": {
+      "headline": "Everyone else shook it off in three days. You're on day fourteen.",
+      "description": "Api-Complex includes freeze-dried royal jelly, the hive's recovery signal, alongside the raw materials and clean internal balance your body uses to bounce back.",
+      "cta": "Support my recovery →"
+    },
+    "checked_at": "2026-10-30T16:39:39.301291+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/immunity-slow-to-recover",
+    "html_sha256": "99a0e643ebc5b139bbd5c3c16f02ea652b47fd9153f82a47c647f219f0f084ce",
+    "hero_id": null,
+    "actual": {
+      "headline": "Everyone else shook it off in three days. You're on day fourteen.",
+      "description": "Api-Complex includes freeze-dried royal jelly, the hive's recovery signal, alongside the raw materials and clean internal balance your body uses to bounce back.",
+      "cta": "Support my recovery"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 26,
+    "xlsx_row": 27,
+    "angle": "Immunity",
+    "group": "HERO 6 ↔ GROUP 6 – Travel, crowds, the office",
+    "url": "https://myvox-9.com/pages/immunity-travel-crowds-the-office",
+    "expected": {
+      "headline": "Every flight costs you three days. The exposure isn't going anywhere.",
+      "description": "Api-Complex supports your immune defenses every day, so they aren't already running low before you board.",
+      "cta": "Travel supported →"
+    },
+    "checked_at": "2026-10-30T16:39:39.374659+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/immunity-travel-crowds-the-office",
+    "html_sha256": "7bbec09e2881eca6b2d48dac9a43caf6fff8cd1be8e649647dc6ea2eb82ec494",
+    "hero_id": null,
+    "actual": {
+      "headline": "Every flight costs you three days. The exposure isn't going anywhere.",
+      "description": "Api-Complex supports your immune defenses every day, so they aren't already running low before you board.",
+      "cta": "Travel supported"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 27,
+    "xlsx_row": 28,
+    "angle": "Immunity",
+    "group": "HERO 7 ↔ GROUP 7 – Cold season",
+    "url": "https://myvox-9.com/pages/immunity-cold-season",
+    "expected": {
+      "headline": "It's September and you're already bracing for the first cold. Same story every year.",
+      "description": "Api-Complex supports your immune defenses daily, so you head into the season with all three things they run on.",
+      "cta": "Go in supported →"
+    },
+    "checked_at": "2026-10-30T16:39:39.447413+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/immunity-cold-season",
+    "html_sha256": "0873e08ba9f70f37502143aabfa6b81d2d3567adf981a79a666db988706102e0",
+    "hero_id": null,
+    "actual": {
+      "headline": "It's September and you're already bracing for the first cold. Same story every year.",
+      "description": "Api-Complex supports your immune defenses daily, so you head into the season with all three things they run on.",
+      "cta": "Go in supported"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 28,
+    "xlsx_row": 29,
+    "angle": "Immunity",
+    "group": "HERO 8 ↔ GROUP 8 – Run-down even when you're well",
+    "url": "https://myvox-9.com/pages/immunity-run-down-even-when-youre-well",
+    "expected": {
+      "headline": "You're not sick. You're not well either. Defenses that start worn down have nothing spare.",
+      "description": "Api-Complex supports your natural defenses and steady energy at the same time, with the three things both of them run on.",
+      "cta": "Stop starting at 60% →"
+    },
+    "checked_at": "2026-10-30T16:39:39.562239+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/immunity-run-down-even-when-youre-well",
+    "html_sha256": "372cadfbc6d3f45b8bc4db10ea29c3a7a0bdc165af28b778ea69bb0bb2459752",
+    "hero_id": null,
+    "actual": {
+      "headline": "You're not sick. You're not well either. Defenses that start worn down have nothing spare.",
+      "description": "Api-Complex supports your natural defenses and steady energy at the same time, with the three things both of them run on.",
+      "cta": "Stop starting at 60%"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 29,
+    "xlsx_row": 30,
+    "angle": "Immunity",
+    "group": "HERO 9 ↔ GROUP 9 – Self-ID",
+    "url": "https://myvox-9.com/pages/immunity-self-id",
+    "expected": {
+      "headline": "Four colds a winter, a week down every time, run-down in between. One vitamin was never going to cover that.",
+      "description": "Api-Complex helps maintain your immune defenses with all three things they actually need, together, in one daily stick.",
+      "cta": "Cover all three →"
+    },
+    "checked_at": "2026-10-30T16:39:39.761987+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/immunity-self-id",
+    "html_sha256": "7ea4c9a3d32ae8b4627afb67855ca91daf87d4bcc9b4a536973642f352ca4beb",
+    "hero_id": null,
+    "actual": {
+      "headline": "Four colds a winter, a week down every time, run-down in between. One vitamin was never going to cover that.",
+      "description": "Api-Complex helps maintain your immune defenses with all three things they actually need, together, in one daily stick.",
+      "cta": "Cover all three"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 30,
+    "xlsx_row": 31,
+    "angle": "Immunity",
+    "group": "HERO 10 ↔ GROUP 10 – Done losing time",
+    "url": "https://myvox-9.com/pages/immunity-done-losing-time",
+    "expected": {
+      "headline": "You plan your year around getting sick. That's how much time this takes.",
+      "description": "Api-Complex supports your immune defenses every day, so your calendar stops being built around recovery.",
+      "cta": "Get my time back →"
+    },
+    "checked_at": "2026-10-30T16:39:39.854521+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/immunity-done-losing-time",
+    "html_sha256": "8586d0549be0bc9c4d125ba5a41b19127b85a1096fda3842199ccccf73dc33e2",
+    "hero_id": null,
+    "actual": {
+      "headline": "You plan your year around getting sick. That's how much time this takes.",
+      "description": "Api-Complex supports your immune defenses every day, so your calendar stops being built around recovery.",
+      "cta": "Get my time back"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 31,
+    "xlsx_row": 32,
+    "angle": "Gut",
+    "group": "HERO 1 ↔ GROUP 1 – Bloated after every meal",
+    "url": "https://myvox-9.com/pages/gut-bloated-after-every-meal",
+    "expected": {
+      "headline": "Normal lunch, bloated within the hour. You've been subtracting when your gut needed something added.",
+      "description": "Api-Complex supports healthy digestion with raw materials that arrive already fermented and pre-digested, so there's nothing extra for your gut to break down.",
+      "cta": "Give it something easy →"
+    },
+    "checked_at": "2026-10-30T16:39:39.988444+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/gut-bloated-after-every-meal",
+    "html_sha256": "326106d12a40b0b9b6554ebb22f2c28c373bbe0600d5daf81cdb028fc4219e66",
+    "hero_id": null,
+    "actual": {
+      "headline": "Normal lunch, bloated within the hour. You've been subtracting when your gut needed something added.",
+      "description": "Api-Complex supports healthy digestion with raw materials that arrive already fermented and pre-digested, so there's nothing extra for your gut to break down.",
+      "cta": "Give it something easy"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 32,
+    "xlsx_row": 33,
+    "angle": "Gut",
+    "group": "HERO 2 ↔ GROUP 2 – The waistband by afternoon",
+    "url": "https://myvox-9.com/pages/gut-the-waistband-by-afternoon",
+    "expected": {
+      "headline": "Comfortable at eight, unbuttoning by three. It isn't only what you're eating.",
+      "description": "Api-Complex supports a calmer, lighter gut through the whole day with all three things healthy digestion runs on.",
+      "cta": "Feel light again →"
+    },
+    "checked_at": "2026-10-30T16:39:40.039501+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/gut-the-waistband-by-afternoon",
+    "html_sha256": "042fb8a61eb086d212977671aa48f40aeaf525b8a609ff70ca1ed369b92acb77",
+    "hero_id": null,
+    "actual": {
+      "headline": "Comfortable at eight, unbuttoning by three. It isn't only what you're eating.",
+      "description": "Api-Complex supports a calmer, lighter gut through the whole day with all three things healthy digestion runs on.",
+      "cta": "Feel light again"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 33,
+    "xlsx_row": 34,
+    "angle": "Gut",
+    "group": "HERO 3 ↔ GROUP 3 – Unpredictable stomach",
+    "url": "https://myvox-9.com/pages/gut-unpredictable-stomach",
+    "expected": {
+      "headline": "Same meal, different result, no pattern. You can't eliminate your way out of this.",
+      "description": "Api-Complex supports steady, healthy digestion by giving your gut something it can absorb instead of something it has to fight.",
+      "cta": "Settle my stomach →"
+    },
+    "checked_at": "2026-10-30T16:39:40.046948+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/gut-unpredictable-stomach",
+    "html_sha256": "910ee7b853f50df85442e42e4fed49a279c70705aceca74e016bc3a3bb4c73f5",
+    "hero_id": null,
+    "actual": {
+      "headline": "Same meal, different result, no pattern. You can't eliminate your way out of this.",
+      "description": "Api-Complex supports steady, healthy digestion by giving your gut something it can absorb instead of something it has to fight.",
+      "cta": "Settle my stomach"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 34,
+    "xlsx_row": 35,
+    "angle": "Gut",
+    "group": "HERO 4 ↔ GROUP 4 – Heavy and sluggish",
+    "url": "https://myvox-9.com/pages/gut-heavy-and-sluggish",
+    "expected": {
+      "headline": "Lunch costs you the afternoon. A gut working overtime takes that from somewhere.",
+      "description": "Api-Complex supports healthy digestion with pre-digested raw materials, so meals sit lighter and your afternoon stays yours.",
+      "cta": "Feel good after meals →"
+    },
+    "checked_at": "2026-10-30T16:39:40.388685+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/gut-heavy-and-sluggish",
+    "html_sha256": "117649075b14231c776e9dcc23aeb65613f0dcb8dbd163ace024ff1968a7b4cf",
+    "hero_id": null,
+    "actual": {
+      "headline": "Lunch costs you the afternoon. A gut working overtime takes that from somewhere.",
+      "description": "Api-Complex supports healthy digestion with pre-digested raw materials, so meals sit lighter and your afternoon stays yours.",
+      "cta": "Feel good after meals"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 35,
+    "xlsx_row": 36,
+    "angle": "Gut",
+    "group": "HERO 5 ↔ GROUP 5 – Cutting foods didn't fix it",
+    "url": "https://myvox-9.com/pages/gut-cutting-foods-didnt-fix-it",
+    "expected": {
+      "headline": "You cut half your diet and you're still bloated. Cutting more isn't the next step.",
+      "description": "Api-Complex supports your gut with all three things healthy digestion needs, not one more thing to take away.",
+      "cta": "Try adding instead →"
+    },
+    "checked_at": "2026-10-30T16:39:40.449253+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/gut-cutting-foods-didnt-fix-it",
+    "html_sha256": "f284ec9023cf80b240a12a8ad2c8e1a53e5f1d3420db7d7b15a8c5ad60095f98",
+    "hero_id": null,
+    "actual": {
+      "headline": "You cut half your diet and you're still bloated. Cutting more isn't the next step.",
+      "description": "Api-Complex supports your gut with all three things healthy digestion needs, not one more thing to take away.",
+      "cta": "Try adding instead"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 36,
+    "xlsx_row": 37,
+    "angle": "Gut",
+    "group": "HERO 6 ↔ GROUP 6 – Eating out and social life",
+    "url": "https://myvox-9.com/pages/gut-eating-out-and-social-life",
+    "expected": {
+      "headline": "You skip lunch before dinner plans. Eating around it was never the fix.",
+      "description": "Api-Complex supports digestive comfort every day, so you can order what you actually want instead of planning around it.",
+      "cta": "Enjoy eating again →"
+    },
+    "checked_at": "2026-10-30T16:39:40.602127+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/gut-eating-out-and-social-life",
+    "html_sha256": "6151ce8484e0cd0fb81984335b562b9cbb6e04dcf42e9c27fe0f1f97f9cefecd",
+    "hero_id": null,
+    "actual": {
+      "headline": "You skip lunch before dinner plans. Eating around it was never the fix.",
+      "description": "Api-Complex supports digestive comfort every day, so you can order what you actually want instead of planning around it.",
+      "cta": "Enjoy eating again"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 37,
+    "xlsx_row": 38,
+    "angle": "Gut",
+    "group": "HERO 7 ↔ GROUP 7 – Clothes and how it feels",
+    "url": "https://myvox-9.com/pages/gut-clothes-and-how-it-feels",
+    "expected": {
+      "headline": "Two sizes in one week. Your clothes fit fine at eight in the morning.",
+      "description": "Api-Complex supports a calmer, lighter gut through the day, so your clothes feel the same at 8 p.m. as they did at 8 a.m.",
+      "cta": "Feel comfortable all day →"
+    },
+    "checked_at": "2026-10-30T16:39:40.826181+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/gut-clothes-and-how-it-feels",
+    "html_sha256": "e0672fd7f5c97c4f4574441a16f78dc4e7769b825ec16147232912d5e9887447",
+    "hero_id": null,
+    "actual": {
+      "headline": "Two sizes in one week. Your clothes fit fine at eight in the morning.",
+      "description": "Api-Complex supports a calmer, lighter gut through the day, so your clothes feel the same at 8 p.m. as they did at 8 a.m.",
+      "cta": "Feel comfortable all day"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 38,
+    "xlsx_row": 39,
+    "angle": "Gut",
+    "group": "HERO 8 ↔ GROUP 8 – Never quite comfortable",
+    "url": "https://myvox-9.com/pages/gut-never-quite-comfortable",
+    "expected": {
+      "headline": "Uncomfortable after almost everything. Your gut is working overtime on food it can't use.",
+      "description": "Api-Complex supports healthy digestion and a clean internal balance with raw materials that are already broken down for you.",
+      "cta": "Calm my stomach →"
+    },
+    "checked_at": "2026-10-30T16:39:40.906868+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/gut-never-quite-comfortable",
+    "html_sha256": "e2fed984b1ad88c3982cf5759fb5a2d9252c83e99edf02d5196dbe3b50b80a4e",
+    "hero_id": null,
+    "actual": {
+      "headline": "Uncomfortable after almost everything. Your gut is working overtime on food it can't use.",
+      "description": "Api-Complex supports healthy digestion and a clean internal balance with raw materials that are already broken down for you.",
+      "cta": "Calm my stomach"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 39,
+    "xlsx_row": 40,
+    "angle": "Gut",
+    "group": "HERO 9 ↔ GROUP 9 – Self-ID",
+    "url": "https://myvox-9.com/pages/gut-self-id",
+    "expected": {
+      "headline": "Bloated after every meal, unbuttoning by three, still puffy after cutting foods. It isn't the food.",
+      "description": "Api-Complex supports your gut with all three things healthy digestion runs on, in one daily stick.",
+      "cta": "Cover all three →"
+    },
+    "checked_at": "2026-10-30T16:39:40.913768+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/gut-self-id",
+    "html_sha256": "f82bcde0664479d2c50549bfeac33c5ab61b74548761090a67a8a9addd1d2f94",
+    "hero_id": null,
+    "actual": {
+      "headline": "Bloated after every meal, unbuttoning by three, still puffy after cutting foods. It isn't the food.",
+      "description": "Api-Complex supports your gut with all three things healthy digestion runs on, in one daily stick.",
+      "cta": "Cover all three"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 40,
+    "xlsx_row": 41,
+    "angle": "Gut",
+    "group": "HERO 10 ↔ GROUP 10 – I just want to feel light",
+    "url": "https://myvox-9.com/pages/gut-i-just-want-to-feel-light",
+    "expected": {
+      "headline": "You want to eat and then forget about it. That used to be normal.",
+      "description": "Api-Complex supports a calmer gut every day, so meals stop being a decision you have to plan your life around.",
+      "cta": "Get my comfort back →"
+    },
+    "checked_at": "2026-10-30T16:39:40.965095+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/gut-i-just-want-to-feel-light",
+    "html_sha256": "823478a43a431482901f3b9419d41bb8bb2a167f21ffa2397b91c9ad40225691",
+    "hero_id": null,
+    "actual": {
+      "headline": "You want to eat and then forget about it. That used to be normal.",
+      "description": "Api-Complex supports a calmer gut every day, so meals stop being a decision you have to plan your life around.",
+      "cta": "Get my comfort back"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 41,
+    "xlsx_row": 42,
+    "angle": "Vitality",
+    "group": "HERO 1 ↔ GROUP 1 – Off across the board",
+    "url": "https://myvox-9.com/pages/vitality-off-across-the-board",
+    "expected": {
+      "headline": "Tired, foggy, bloated, run-down. Four problems, or one system running short?",
+      "description": "Api-Complex covers the three things your whole body runs on – raw materials, a recovery signal, and a clean internal balance – so energy, focus, gut and immune defenses are all supported at once.",
+      "cta": "Support all four →"
+    },
+    "checked_at": "2026-10-30T16:39:41.386866+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/vitality-off-across-the-board",
+    "html_sha256": "f5103c7fb79651440e2d5288c6da7e9078cadbb1fdce0089379aadcc8b0a042e",
+    "hero_id": null,
+    "actual": {
+      "headline": "Tired, foggy, bloated, run-down. Four problems, or one system running short?",
+      "description": "Api-Complex covers the three things your whole body runs on – raw materials, a recovery signal, and a clean internal balance – so energy, focus, gut and immune defenses are all supported at once.",
+      "cta": "Support all four"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 42,
+    "xlsx_row": 43,
+    "angle": "Vitality",
+    "group": "HERO 2 ↔ GROUP 2 – The stack isn't working",
+    "url": "https://myvox-9.com/pages/vitality-the-stack-isnt-working",
+    "expected": {
+      "headline": "Seven supplements a day and you still feel off. Each one covers a fraction.",
+      "description": "Api-Complex covers all three things your body actually runs on, together, in a single daily stick. 3,500mg of actives, no sugar, no fillers.",
+      "cta": "Replace the stack →"
+    },
+    "checked_at": "2026-10-30T16:39:41.389707+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/vitality-the-stack-isnt-working",
+    "html_sha256": "3a6dd7c081b0e93ef21945ea8a937bb149df3b2d803f61a8688540d7416eb88e",
+    "hero_id": null,
+    "actual": {
+      "headline": "Seven supplements a day and you still feel off. Each one covers a fraction.",
+      "description": "Api-Complex covers all three things your body actually runs on, together, in a single daily stick. 3,500mg of actives, no sugar, no fillers.",
+      "cta": "Replace the stack"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 43,
+    "xlsx_row": 44,
+    "angle": "Vitality",
+    "group": "HERO 3 ↔ GROUP 3 – One stick, four jobs",
+    "url": "https://myvox-9.com/pages/vitality-one-stick-four-jobs",
+    "expected": {
+      "headline": "One stick. Energy, focus, gut, immune support. Because they all run on the same three things.",
+      "description": "Api-Complex is bee bread, royal jelly and propolis – the hive triad – covering the raw materials, the recovery signal and the clean internal balance your whole body needs.",
+      "cta": "Start my first cycle →"
+    },
+    "checked_at": "2026-10-30T16:39:41.439294+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/vitality-one-stick-four-jobs",
+    "html_sha256": "df41934b9e150f2c6680621db21ad656a9140583159b4fd50a42c7533ca0e06b",
+    "hero_id": null,
+    "actual": {
+      "headline": "One stick. Energy, focus, gut, immune support. Because they all run on the same three things.",
+      "description": "Api-Complex is bee bread, royal jelly and propolis – the hive triad – covering the raw materials, the recovery signal and the clean internal balance your whole body needs.",
+      "cta": "Start my first cycle"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 44,
+    "xlsx_row": 45,
+    "angle": "Vitality",
+    "group": "HERO 4 ↔ GROUP 4 – What's actually in it",
+    "url": "https://myvox-9.com/pages/vitality-whats-actually-in-it",
+    "expected": {
+      "headline": "3,500mg of actives in one stick. More than seven capsules can physically hold.",
+      "description": "Api-Complex is three hive superfoods, freeze-dried and never heated, with no sugar, no fillers and a published Certificate of Analysis for every batch.",
+      "cta": "See the full label →"
+    },
+    "checked_at": "2026-10-30T16:39:41.576033+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/vitality-whats-actually-in-it",
+    "html_sha256": "e9f7a42e6a83a6f6f3de25f4f68e14d301b90715a982561b46d03e31a6892c38",
+    "hero_id": null,
+    "actual": {
+      "headline": "3,500mg of actives in one stick. More than seven capsules can physically hold.",
+      "description": "Api-Complex is three hive superfoods, freeze-dried and never heated, with no sugar, no fillers and a published Certificate of Analysis for every batch.",
+      "cta": "See the full label"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 45,
+    "xlsx_row": 46,
+    "angle": "Vitality",
+    "group": "HERO 5 ↔ GROUP 5 – One system, not twelve pills",
+    "url": "https://myvox-9.com/pages/vitality-one-system-not-twelve-pills",
+    "expected": {
+      "headline": "Tired, foggy, bloated, run-down – that was never twelve problems. It was one system short.",
+      "description": "Api-Complex delivers all three inputs at once, so the things you were chasing separately get supported together.",
+      "cta": "Cover all three →"
+    },
+    "checked_at": "2026-10-30T16:39:41.652957+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/vitality-one-system-not-twelve-pills",
+    "html_sha256": "a54fbf4d6e7fbada2beca24f7be238c0ecab3dfac6497f70164c397797391d8b",
+    "hero_id": null,
+    "actual": {
+      "headline": "Tired, foggy, bloated, run-down – that was never twelve problems. It was one system short.",
+      "description": "Api-Complex delivers all three inputs at once, so the things you were chasing separately get supported together.",
+      "cta": "Cover all three"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 46,
+    "xlsx_row": 47,
+    "angle": "Vitality",
+    "group": "HERO 6 ↔ GROUP 6 – I want to feel like myself",
+    "url": "https://myvox-9.com/pages/vitality-i-want-to-feel-like-myself",
+    "expected": {
+      "headline": "You want one good day. Not amazing. Just not running at sixty percent.",
+      "description": "Api-Complex supports your whole body every day with the three things it runs on, so steady stops being the exception.",
+      "cta": "Feel like myself again →"
+    },
+    "checked_at": "2026-10-30T16:39:42.024259+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/vitality-i-want-to-feel-like-myself",
+    "html_sha256": "291bd036b99bc6f178267fa9943ec445fe8db043e06fcc07dceaaf60ea4279db",
+    "hero_id": null,
+    "actual": {
+      "headline": "You want one good day. Not amazing. Just not running at sixty percent.",
+      "description": "Api-Complex supports your whole body every day with the three things it runs on, so steady stops being the exception.",
+      "cta": "Feel like myself again"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 47,
+    "xlsx_row": 48,
+    "angle": "Vitality",
+    "group": "HERO 7 ↔ GROUP 7 – The math on your shelf",
+    "url": "https://myvox-9.com/pages/vitality-the-math-on-your-shelf",
+    "expected": {
+      "headline": "Two hundred a month for a shelf of maybes. Ten minutes every morning to sort them.",
+      "description": "Api-Complex is one stick, once a day, ten seconds – covering what a shelf of single-purpose bottles was chasing.",
+      "cta": "Simplify my routine →"
+    },
+    "checked_at": "2026-10-30T16:39:42.029736+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/vitality-the-math-on-your-shelf",
+    "html_sha256": "79075df40ef1e6d6be0d405acf1596edbe1e14a95be9d9dfa9093ca309f8ae6c",
+    "hero_id": null,
+    "actual": {
+      "headline": "Two hundred a month for a shelf of maybes. Ten minutes every morning to sort them.",
+      "description": "Api-Complex is one stick, once a day, ten seconds – covering what a shelf of single-purpose bottles was chasing.",
+      "cta": "Simplify my routine"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 48,
+    "xlsx_row": 49,
+    "angle": "Vitality",
+    "group": "HERO 8 ↔ GROUP 8 – Self-ID",
+    "url": "https://myvox-9.com/pages/vitality-self-id",
+    "expected": {
+      "headline": "Juggling five bottles and still feeling off? You've been covering one need out of three.",
+      "description": "Api-Complex covers all three things your whole body runs on, in one daily stick.",
+      "cta": "Fix it in one stick →"
+    },
+    "checked_at": "2026-10-30T16:39:42.178494+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/vitality-self-id",
+    "html_sha256": "e848fcc38c9f9c85363d0ed23384db8e208738c7107e678671c23661f2c7b266",
+    "hero_id": null,
+    "actual": {
+      "headline": "Juggling five bottles and still feeling off? You've been covering one need out of three.",
+      "description": "Api-Complex covers all three things your whole body runs on, in one daily stick.",
+      "cta": "Fix it in one stick"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 49,
+    "xlsx_row": 50,
+    "angle": "Vitality",
+    "group": "HERO 9 ↔ GROUP 9 – Social proof",
+    "url": "https://myvox-9.com/pages/vitality-social-proof",
+    "expected": {
+      "headline": "Nine in ten people are still taking Api-Complex after the first box.",
+      "description": "One daily stick, 1,800+ reviews, four areas supported – 3,500mg of actives and ten seconds a day.",
+      "cta": "See why they stay →"
+    },
+    "checked_at": "2026-10-30T16:39:42.504050+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/vitality-social-proof",
+    "html_sha256": "4b2f35da6e5bd107203ba9ec365e1710a72b096313ce7af7dfd9d47a0543d164",
+    "hero_id": null,
+    "actual": {
+      "headline": "Nine in ten people are still taking Api-Complex after the first box.",
+      "description": "One daily stick, 1,800+ reviews, four areas supported – 3,500mg of actives and ten seconds a day.",
+      "cta": "See why they stay"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 50,
+    "xlsx_row": 51,
+    "angle": "Vitality",
+    "group": "HERO 10 ↔ GROUP 10 – Good across the board",
+    "url": "https://myvox-9.com/pages/vitality-good-across-the-board",
+    "expected": {
+      "headline": "Steady afternoons, a clear head, a quiet stomach. All from the same three inputs.",
+      "description": "Api-Complex supports energy, focus, gut and immune defenses together, because they all run on the same system.",
+      "cta": "Feel good all over →"
+    },
+    "checked_at": "2026-10-30T16:39:42.531640+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/vitality-good-across-the-board",
+    "html_sha256": "340689869f71f540c19e42208fdac96b97b291fa35139662022eda723d1f8e0b",
+    "hero_id": null,
+    "actual": {
+      "headline": "Steady afternoons, a clear head, a quiet stomach. All from the same three inputs.",
+      "description": "Api-Complex supports energy, focus, gut and immune defenses together, because they all run on the same system.",
+      "cta": "Feel good all over"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 51,
+    "xlsx_row": 52,
+    "angle": "The Drawer Dump",
+    "group": "HERO 1 ↔ GROUP 1 – The dump",
+    "url": "https://myvox-9.com/pages/the-drawer-dump-the-dump",
+    "expected": {
+      "headline": "Your whole supplement drawer is chasing three things. One stick carries all of them.",
+      "description": "Api-Complex is bee bread, royal jelly and propolis, covering the raw materials, recovery signal and clean internal balance your whole body runs on.",
+      "cta": "Start my first cycle →"
+    },
+    "checked_at": "2026-10-30T16:39:42.557953+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/the-drawer-dump-the-dump",
+    "html_sha256": "d5957361e5187217927a59f8f5ae2051041f70599c6d42709e1cfe3b800f6365",
+    "hero_id": null,
+    "actual": {
+      "headline": "Your whole supplement drawer is chasing three things. One stick carries all of them.",
+      "description": "Api-Complex is bee bread, royal jelly and propolis, covering the raw materials, recovery signal and clean internal balance your whole body runs on.",
+      "cta": "Start my first cycle"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 52,
+    "xlsx_row": 53,
+    "angle": "The Drawer Dump",
+    "group": "HERO 2 ↔ GROUP 2 – The absurd count",
+    "url": "https://myvox-9.com/pages/the-drawer-dump-the-absurd-count",
+    "expected": {
+      "headline": "Eight bottles a day and you still feel run-down. That's the part worth looking at.",
+      "description": "Api-Complex covers the three things your whole body actually runs on, so one stick stands in for a shelf of single-purpose bottles.",
+      "cta": "Replace the shelf →"
+    },
+    "checked_at": "2026-10-30T16:39:42.683889+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/the-drawer-dump-the-absurd-count",
+    "html_sha256": "d543950a4bc84c2727b86ab3fb8bc065540a863777cb9d09a9c144baa4d06c22",
+    "hero_id": null,
+    "actual": {
+      "headline": "Eight bottles a day and you still feel run-down. That's the part worth looking at.",
+      "description": "Api-Complex covers the three things your whole body actually runs on, so one stick stands in for a shelf of single-purpose bottles.",
+      "cta": "Replace the shelf"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 53,
+    "xlsx_row": 54,
+    "angle": "The Drawer Dump",
+    "group": "HERO 3 ↔ GROUP 3 – What it was costing",
+    "url": "https://myvox-9.com/pages/the-drawer-dump-what-it-was-costing",
+    "expected": {
+      "headline": "Two hundred a month. Twenty-four hundred a year. For a drawer of bottles that didn't work.",
+      "description": "Api-Complex puts 3,500mg of actives into one daily stick, more than seven capsules can physically hold, for a fraction of a stack.",
+      "cta": "Stop overpaying →"
+    },
+    "checked_at": "2026-10-30T16:39:43.021424+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/the-drawer-dump-what-it-was-costing",
+    "html_sha256": "077374f190847cbc2de3610a313586c1f7d1ab27d5349222f59586fc97bd68e6",
+    "hero_id": null,
+    "actual": {
+      "headline": "Two hundred a month. Twenty-four hundred a year. For a drawer of bottles that didn't work.",
+      "description": "Api-Complex puts 3,500mg of actives into one daily stick, more than seven capsules can physically hold, for a fraction of a stack.",
+      "cta": "Stop overpaying"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 54,
+    "xlsx_row": 55,
+    "angle": "The Drawer Dump",
+    "group": "HERO 4 ↔ GROUP 4 – The clutter and the hassle",
+    "url": "https://myvox-9.com/pages/the-drawer-dump-the-clutter-and-the-hassle",
+    "expected": {
+      "headline": "Ten minutes sorting pills, three phone alarms, and you still forget half of them.",
+      "description": "Api-Complex is one stick, once a day, ten seconds. No organizer, no alarms, nothing to keep track of.",
+      "cta": "Simplify my mornings →"
+    },
+    "checked_at": "2026-10-30T16:39:43.032123+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/the-drawer-dump-the-clutter-and-the-hassle",
+    "html_sha256": "85fcf5b93440b11fec54d5fceab621b5ef18facc597d789fc73dc6a0ad873765",
+    "hero_id": null,
+    "actual": {
+      "headline": "Ten minutes sorting pills, three phone alarms, and you still forget half of them.",
+      "description": "Api-Complex is one stick, once a day, ten seconds. No organizer, no alarms, nothing to keep track of.",
+      "cta": "Simplify my mornings"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 55,
+    "xlsx_row": 56,
+    "angle": "The Drawer Dump",
+    "group": "HERO 5 ↔ GROUP 5 – The swap",
+    "url": "https://myvox-9.com/pages/the-drawer-dump-the-swap",
+    "expected": {
+      "headline": "Eight bottles, or one stick that covers the three things all eight were chasing.",
+      "description": "Api-Complex brings energy, focus, gut and immune support together, because they all run on the same three inputs.",
+      "cta": "Make the swap →"
+    },
+    "checked_at": "2026-10-30T16:39:43.037229+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/the-drawer-dump-the-swap",
+    "html_sha256": "f1573fac06ea680361341d0f49bf48c84b871cb382c488532ddb6fbefd61c13a",
+    "hero_id": null,
+    "actual": {
+      "headline": "Eight bottles, or one stick that covers the three things all eight were chasing.",
+      "description": "Api-Complex brings energy, focus, gut and immune support together, because they all run on the same three inputs.",
+      "cta": "Make the swap"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 56,
+    "xlsx_row": 57,
+    "angle": "The Drawer Dump",
+    "group": "HERO 6 ↔ GROUP 6 – Looking back at the pile",
+    "url": "https://myvox-9.com/pages/the-drawer-dump-looking-back-at-the-pile",
+    "expected": {
+      "headline": "Three years of an eight-bottle drawer. Nobody needs that, including you.",
+      "description": "Api-Complex covers the three jobs your body actually runs on, so the drawer can stay empty.",
+      "cta": "Keep the drawer empty →"
+    },
+    "checked_at": "2026-10-30T16:39:43.071675+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/the-drawer-dump-looking-back-at-the-pile",
+    "html_sha256": "3843297eef162c9d1870af597d9a9a99f552f16405cf94428a24d9fb0ad6d44d",
+    "hero_id": null,
+    "actual": {
+      "headline": "Three years of an eight-bottle drawer. Nobody needs that, including you.",
+      "description": "Api-Complex covers the three jobs your body actually runs on, so the drawer can stay empty.",
+      "cta": "Keep the drawer empty"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 57,
+    "xlsx_row": 58,
+    "angle": "The Drawer Dump",
+    "group": "HERO 7 ↔ GROUP 7 – The skeptic",
+    "url": "https://myvox-9.com/pages/the-drawer-dump-the-skeptic",
+    "expected": {
+      "headline": "You don't think one stick replaces eight bottles. Look at the dose before you decide.",
+      "description": "Api-Complex is 3,500mg of actives, more than seven capsules can physically hold, freeze-dried, no fillers, with a published Certificate of Analysis.",
+      "cta": "See what's in one stick →"
+    },
+    "checked_at": "2026-10-30T16:39:43.167382+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/the-drawer-dump-the-skeptic",
+    "html_sha256": "8b25eef9a686a1b7bd446d4b0facce2f1704bcb3da31cd11c64b7003e9d2f3aa",
+    "hero_id": null,
+    "actual": {
+      "headline": "You don't think one stick replaces eight bottles. Look at the dose before you decide.",
+      "description": "Api-Complex is 3,500mg of actives, more than seven capsules can physically hold, freeze-dried, no fillers, with a published Certificate of Analysis.",
+      "cta": "See what's in one stick"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 58,
+    "xlsx_row": 59,
+    "angle": "The Drawer Dump",
+    "group": "HERO 8 ↔ GROUP 8 – Self-ID",
+    "url": "https://myvox-9.com/pages/the-drawer-dump-self-id",
+    "expected": {
+      "headline": "How many bottles are in your drawer right now? And how do you actually feel?",
+      "description": "Api-Complex replaces the shelf with one stick covering the three things your whole body runs on.",
+      "cta": "Trade the drawer for one →"
+    },
+    "checked_at": "2026-10-30T16:39:43.807930+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/the-drawer-dump-self-id",
+    "html_sha256": "10315287c195b38d7c678eb2dc0ad55254d083ca387c7d8145be00ca19095be1",
+    "hero_id": null,
+    "actual": {
+      "headline": "How many bottles are in your drawer right now? And how do you actually feel?",
+      "description": "Api-Complex replaces the shelf with one stick covering the three things your whole body runs on.",
+      "cta": "Trade the drawer for one"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 59,
+    "xlsx_row": 60,
+    "angle": "The Drawer Dump",
+    "group": "HERO 9 ↔ GROUP 9 – Social proof",
+    "url": "https://myvox-9.com/pages/the-drawer-dump-social-proof",
+    "expected": {
+      "headline": "Ten thousand people emptied their supplement drawer for one stick.",
+      "description": "Api-Complex is what they switched to. 3,500mg of actives, four areas supported, ten seconds a day.",
+      "cta": "Switch like they did →"
+    },
+    "checked_at": "2026-10-30T16:39:43.817567+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/the-drawer-dump-social-proof",
+    "html_sha256": "cee06447f3892aaab2df366c4c3b62db0b71986684d980b3fa4defd4bc20fa76",
+    "hero_id": null,
+    "actual": {
+      "headline": "Ten thousand people emptied their supplement drawer for one stick.",
+      "description": "Api-Complex is what they switched to. 3,500mg of actives, four areas supported, ten seconds a day.",
+      "cta": "Switch like they did"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 60,
+    "xlsx_row": 61,
+    "angle": "The Drawer Dump",
+    "group": "HERO 10 ↔ GROUP 10 – Better on less",
+    "url": "https://myvox-9.com/pages/the-drawer-dump-better-on-less",
+    "expected": {
+      "headline": "Fewer bottles, and somehow better. That happens when one stick covers what eight were splitting.",
+      "description": "Api-Complex supports your whole body with one stick, because the three things it runs on were never eight separate problems.",
+      "cta": "Do less, feel more →"
+    },
+    "checked_at": "2026-10-30T16:39:43.903628+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/the-drawer-dump-better-on-less",
+    "html_sha256": "186f37bc24f5402d77be802fdc6c5525ab5001148fde96d94ec875aecce6bd41",
+    "hero_id": null,
+    "actual": {
+      "headline": "Fewer bottles, and somehow better. That happens when one stick covers what eight were splitting.",
+      "description": "Api-Complex supports your whole body with one stick, because the three things it runs on were never eight separate problems.",
+      "cta": "Do less, feel more"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 61,
+    "xlsx_row": 62,
+    "angle": "Nature Build It First",
+    "group": "HERO 1 ↔ GROUP 1 – Nature solved it first",
+    "url": "https://myvox-9.com/pages/nature-nature-solved-it-first",
+    "expected": {
+      "headline": "Nature already built the system your supplements are trying to copy.",
+      "description": "Api-Complex is the three hive substances your body runs on – bee bread, royal jelly and propolis – already assembled, already dosed, by the hive.",
+      "cta": "Start my first cycle →"
+    },
+    "checked_at": "2026-10-30T16:39:43.911072+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/nature-nature-solved-it-first",
+    "html_sha256": "6bd4e31a3b36cd04427cc5c13f409321485364d2224bb493d3000df42740659f",
+    "hero_id": null,
+    "actual": {
+      "headline": "Nature already built the system your supplements are trying to copy.",
+      "description": "Api-Complex is the three hive substances your body runs on – bee bread, royal jelly and propolis – already assembled, already dosed, by the hive.",
+      "cta": "Start my first cycle"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 62,
+    "xlsx_row": 63,
+    "angle": "Nature Build It First",
+    "group": "HERO 2 ↔ GROUP 2 – The hive makes all three",
+    "url": "https://myvox-9.com/pages/nature-the-hive-makes-all-three",
+    "expected": {
+      "headline": "Your body needs three things. A beehive makes all three. Together, on purpose.",
+      "description": "Api-Complex brings those exact three into one stick, supporting energy, focus, gut and immune defenses at the same time.",
+      "cta": "Get the whole system →"
+    },
+    "checked_at": "2026-10-30T16:39:43.927130+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/nature-the-hive-makes-all-three",
+    "html_sha256": "8b4676b883d0182152855f7cb9d3bbf174bd3e4d9e01311c4e5fe08e1d8758f7",
+    "hero_id": null,
+    "actual": {
+      "headline": "Your body needs three things. A beehive makes all three. Together, on purpose.",
+      "description": "Api-Complex brings those exact three into one stick, supporting energy, focus, gut and immune defenses at the same time.",
+      "cta": "Get the whole system"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 63,
+    "xlsx_row": 64,
+    "angle": "Nature Build It First",
+    "group": "HERO 3 ↔ GROUP 3 – Things you didn't know about a hive",
+    "url": "https://myvox-9.com/pages/nature-things-you-didnt-know-about-a-hive",
+    "expected": {
+      "headline": "Bees ferment pollen so you can absorb it. Your capsule never got that far.",
+      "description": "Api-Complex is bee bread, royal jelly and propolis – fermented, pre-digested and freeze-dried, exactly as the hive made them.",
+      "cta": "Try the real thing →"
+    },
+    "checked_at": "2026-10-30T16:39:43.956004+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/nature-things-you-didnt-know-about-a-hive",
+    "html_sha256": "c8af24baa28d806784dc08840b51ee6e62f19c726e2a21b597dd396bb005b3be",
+    "hero_id": null,
+    "actual": {
+      "headline": "Bees ferment pollen so you can absorb it. Your capsule never got that far.",
+      "description": "Api-Complex is bee bread, royal jelly and propolis – fermented, pre-digested and freeze-dried, exactly as the hive made them.",
+      "cta": "Try the real thing"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 64,
+    "xlsx_row": 65,
+    "angle": "Nature Build It First",
+    "group": "HERO 4 ↔ GROUP 4 – Lab versus hive",
+    "url": "https://myvox-9.com/pages/nature-lab-versus-hive",
+    "expected": {
+      "headline": "A lab has to source three ingredients, dose them, and hope. The hive already did it.",
+      "description": "Api-Complex is whole, fermented hive food your body recognizes, not three isolated synthetics hoping to work together.",
+      "cta": "Switch to real food →"
+    },
+    "checked_at": "2026-10-30T16:39:44.504391+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/nature-lab-versus-hive",
+    "html_sha256": "8097008361fb03aceef5981b0ad9fa2bed996ff611bd51d88b3a96e6d7b0f858",
+    "hero_id": null,
+    "actual": {
+      "headline": "A lab has to source three ingredients, dose them, and hope. The hive already did it.",
+      "description": "Api-Complex is whole, fermented hive food your body recognizes, not three isolated synthetics hoping to work together.",
+      "cta": "Switch to real food"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 65,
+    "xlsx_row": 66,
+    "angle": "Nature Build It First",
+    "group": "HERO 5 ↔ GROUP 5 – Whole versus isolated",
+    "url": "https://myvox-9.com/pages/nature-whole-versus-isolated",
+    "expected": {
+      "headline": "Your pills are isolated fragments. Hive food arrives whole, in the order nature built it.",
+      "description": "Api-Complex gives your body all three things it runs on as whole food, freeze-dried and unchanged.",
+      "cta": "Replace the fragments →"
+    },
+    "checked_at": "2026-10-30T16:39:44.553056+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/nature-whole-versus-isolated",
+    "html_sha256": "c169f7525e017c11f6d7c75f17d7daadf729979be859435e33dfaeb88c4c9110",
+    "hero_id": null,
+    "actual": {
+      "headline": "Your pills are isolated fragments. Hive food arrives whole, in the order nature built it.",
+      "description": "Api-Complex gives your body all three things it runs on as whole food, freeze-dried and unchanged.",
+      "cta": "Replace the fragments"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 66,
+    "xlsx_row": 67,
+    "angle": "Nature Build It First",
+    "group": "HERO 6 ↔ GROUP 6 – Royal jelly and the queen",
+    "url": "https://myvox-9.com/pages/nature-royal-jelly-and-the-queen",
+    "expected": {
+      "headline": "One food turns an ordinary larva into a queen. It's in every stick, at a full 500mg.",
+      "description": "Api-Complex contains 500mg of freeze-dried royal jelly, the hive's recovery signal, where most products use fifty.",
+      "cta": "Get the full dose →"
+    },
+    "checked_at": "2026-10-30T16:39:44.575391+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/nature-royal-jelly-and-the-queen",
+    "html_sha256": "5c25bb8a875d95c68249acc211f1970505bb3fa20fdbbd447a72d5916a64ae87",
+    "hero_id": null,
+    "actual": {
+      "headline": "One food turns an ordinary larva into a queen. It's in every stick, at a full 500mg.",
+      "description": "Api-Complex contains 500mg of freeze-dried royal jelly, the hive's recovery signal, where most products use fifty.",
+      "cta": "Get the full dose"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 67,
+    "xlsx_row": 68,
+    "angle": "Nature Build It First",
+    "group": "HERO 7 ↔ GROUP 7 – Freeze-dried, never heated",
+    "url": "https://myvox-9.com/pages/nature-freeze-dried-never-heated",
+    "expected": {
+      "headline": "Heat ruins the best part of royal jelly. So this one is never heated, at any stage.",
+      "description": "Api-Complex is freeze-dried in a vacuum at low temperature and hermetically sealed, with no honey, no sugar and no preservatives added.",
+      "cta": "Get it unheated →"
+    },
+    "checked_at": "2026-10-30T16:39:44.701252+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/nature-freeze-dried-never-heated",
+    "html_sha256": "609f479393c0fb5382e0fc399e72a89d060c4f1a19172bc465649dace4e12c23",
+    "hero_id": null,
+    "actual": {
+      "headline": "Heat ruins the best part of royal jelly. So this one is never heated, at any stage.",
+      "description": "Api-Complex is freeze-dried in a vacuum at low temperature and hermetically sealed, with no honey, no sugar and no preservatives added.",
+      "cta": "Get it unheated"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 68,
+    "xlsx_row": 69,
+    "angle": "Nature Build It First",
+    "group": "HERO 8 ↔ GROUP 8 – Reframe questions",
+    "url": "https://myvox-9.com/pages/nature-reframe-questions",
+    "expected": {
+      "headline": "Do you know whether your supplements came from a hive or a factory?",
+      "description": "Api-Complex is three whole hive superfoods, freeze-dried and unchanged, with a published Certificate of Analysis for every batch.",
+      "cta": "Read the label →"
+    },
+    "checked_at": "2026-10-30T16:39:44.776633+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/nature-reframe-questions",
+    "html_sha256": "854bf660377885e2451f3e412aa3c5eb0e39121e6e8c980e8f08b40c3f050476",
+    "hero_id": null,
+    "actual": {
+      "headline": "Do you know whether your supplements came from a hive or a factory?",
+      "description": "Api-Complex is three whole hive superfoods, freeze-dried and unchanged, with a published Certificate of Analysis for every batch.",
+      "cta": "Read the label"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 69,
+    "xlsx_row": 70,
+    "angle": "Nature Build It First",
+    "group": "HERO 9 ↔ GROUP 9 – Social proof",
+    "url": "https://myvox-9.com/pages/nature-social-proof",
+    "expected": {
+      "headline": "Ten thousand people switched from synthetic pills to what the hive already makes.",
+      "description": "Api-Complex is the hive system they chose over a shelf of lab-made bottles.",
+      "cta": "Switch to the hive →"
+    },
+    "checked_at": "2026-10-30T16:39:44.814793+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/nature-social-proof",
+    "html_sha256": "e9d25384c76868830083c1b8a41f59267c16b601eca9f93e6b454b66b3b6a8c2",
+    "hero_id": null,
+    "actual": {
+      "headline": "Ten thousand people switched from synthetic pills to what the hive already makes.",
+      "description": "Api-Complex is the hive system they chose over a shelf of lab-made bottles.",
+      "cta": "Switch to the hive"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 70,
+    "xlsx_row": 71,
+    "angle": "Nature Build It First",
+    "group": "HERO 10 ↔ GROUP 10 – Feeling good on the real thing",
+    "url": "https://myvox-9.com/pages/nature-feeling-good-on-the-real-thing",
+    "expected": {
+      "headline": "It turns out your body responds differently to food it actually recognizes.",
+      "description": "Api-Complex supports your whole body with the three things nature already assembled – steady, clear and settled, on real food.",
+      "cta": "Feel good on real food →"
+    },
+    "checked_at": "2026-10-30T16:39:45.053000+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/nature-feeling-good-on-the-real-thing",
+    "html_sha256": "4c124a2db11f3d5b5543206696a13d09a9c7214b36d23b892837cb29818028b7",
+    "hero_id": null,
+    "actual": {
+      "headline": "It turns out your body responds differently to food it actually recognizes.",
+      "description": "Api-Complex supports your whole body with the three things nature already assembled – steady, clear and settled, on real food.",
+      "cta": "Feel good on real food"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 71,
+    "xlsx_row": 72,
+    "angle": "If I Could Only Keep One",
+    "group": "HERO 1 ↔ GROUP 1 – The forced choice",
+    "url": "https://myvox-9.com/pages/one-the-forced-choice",
+    "expected": {
+      "headline": "If you could keep only one supplement, it had better do more than one job.",
+      "description": "Api-Complex covers the three things your whole body runs on, which is how one stick stands in for a shelf.",
+      "cta": "Make it my one →"
+    },
+    "checked_at": "2026-10-30T16:39:45.120229+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/one-the-forced-choice",
+    "html_sha256": "6f243b942b4b490f18347911658738a334e1a62d148f6c674994ac79be1f9cc1",
+    "hero_id": null,
+    "actual": {
+      "headline": "If you could keep only one supplement, it had better do more than one job.",
+      "description": "Api-Complex covers the three things your whole body runs on, which is how one stick stands in for a shelf.",
+      "cta": "Make it my one"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 72,
+    "xlsx_row": 73,
+    "angle": "If I Could Only Keep One",
+    "group": "HERO 2 ↔ GROUP 2 – Everything else does one job",
+    "url": "https://myvox-9.com/pages/one-everything-else-does-one-job",
+    "expected": {
+      "headline": "A pill for energy, a pill for sleep, a pill for your gut. That's the problem, not the plan.",
+      "description": "Api-Complex covers four areas with the three inputs behind all of them – energy, focus, gut and immune defenses, in one daily stick.",
+      "cta": "Keep one that does more →"
+    },
+    "checked_at": "2026-10-30T16:39:45.206709+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/one-everything-else-does-one-job",
+    "html_sha256": "d89fac860a8eda2cd66423f71b4e59a730d74a50231c1f45c7ad4019a543c430",
+    "hero_id": null,
+    "actual": {
+      "headline": "A pill for energy, a pill for sleep, a pill for your gut. That's the problem, not the plan.",
+      "description": "Api-Complex covers four areas with the three inputs behind all of them – energy, focus, gut and immune defenses, in one daily stick.",
+      "cta": "Keep one that does more"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 73,
+    "xlsx_row": 74,
+    "angle": "If I Could Only Keep One",
+    "group": "HERO 3 ↔ GROUP 3 – The survivor",
+    "url": "https://myvox-9.com/pages/one-the-survivor",
+    "expected": {
+      "headline": "Cut your supplement stack down to one and see what's still standing. Most of it won't be.",
+      "description": "Api-Complex replaces a shelf of single-job bottles with one stick that supports your whole body.",
+      "cta": "Keep the survivor →"
+    },
+    "checked_at": "2026-10-30T16:39:45.326628+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/one-the-survivor",
+    "html_sha256": "2747ea3c81b713400985268fcbc8361c3c6582d63ddef82d4604c0f5b2d603db",
+    "hero_id": null,
+    "actual": {
+      "headline": "Cut your supplement stack down to one and see what's still standing. Most of it won't be.",
+      "description": "Api-Complex replaces a shelf of single-job bottles with one stick that supports your whole body.",
+      "cta": "Keep the survivor"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 74,
+    "xlsx_row": 75,
+    "angle": "If I Could Only Keep One",
+    "group": "HERO 4 ↔ GROUP 4 – The keeper",
+    "url": "https://myvox-9.com/pages/one-the-keeper",
+    "expected": {
+      "headline": "One stick. Four jobs. That's why it earns the only spot on the shelf.",
+      "description": "Api-Complex is bee bread, royal jelly and propolis – the three things energy, focus, gut and immune defenses all run on.",
+      "cta": "Get the keeper →"
+    },
+    "checked_at": "2026-10-30T16:39:45.618105+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/one-the-keeper",
+    "html_sha256": "e0eed0befd8569d7082cb273afdb2951f863a26b1fe6dc7aef92e98d1c0560e9",
+    "hero_id": null,
+    "actual": {
+      "headline": "One stick. Four jobs. That's why it earns the only spot on the shelf.",
+      "description": "Api-Complex is bee bread, royal jelly and propolis – the three things energy, focus, gut and immune defenses all run on.",
+      "cta": "Get the keeper"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 75,
+    "xlsx_row": 76,
+    "angle": "If I Could Only Keep One",
+    "group": "HERO 5 ↔ GROUP 5 – Not a compromise",
+    "url": "https://myvox-9.com/pages/one-not-a-compromise",
+    "expected": {
+      "headline": "Keeping one supplement only works if it isn't a compromise. Check the dose.",
+      "description": "Api-Complex is 3,500mg of actives, more than seven capsules can hold, with 500mg of royal jelly where most products use fifty, and a published Certificate of Analysis.",
+      "cta": "See the numbers →"
+    },
+    "checked_at": "2026-10-30T16:39:45.633489+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/one-not-a-compromise",
+    "html_sha256": "e27e308c7436b9cd2cac146a3cf243e3411f9913cd0e3e219ad61e06cef4b2ee",
+    "hero_id": null,
+    "actual": {
+      "headline": "Keeping one supplement only works if it isn't a compromise. Check the dose.",
+      "description": "Api-Complex is 3,500mg of actives, more than seven capsules can hold, with 500mg of royal jelly where most products use fifty, and a published Certificate of Analysis.",
+      "cta": "See the numbers"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 76,
+    "xlsx_row": 77,
+    "angle": "If I Could Only Keep One",
+    "group": "HERO 6 ↔ GROUP 6 – Picky and hard to impress",
+    "url": "https://myvox-9.com/pages/one-picky-and-hard-to-impress",
+    "expected": {
+      "headline": "You return things that don't work. This is the one supplement that stayed.",
+      "description": "Api-Complex earns its spot with full doses, no fillers, no proprietary blends, and support across energy, focus, gut and immune defenses.",
+      "cta": "Make my pick →"
+    },
+    "checked_at": "2026-10-30T16:39:45.681522+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/one-picky-and-hard-to-impress",
+    "html_sha256": "ce205860911440e8ae0f5c4d418b9ba5663b893beac7a4dfbd00a5a7a7a04d01",
+    "hero_id": null,
+    "actual": {
+      "headline": "You return things that don't work. This is the one supplement that stayed.",
+      "description": "Api-Complex earns its spot with full doses, no fillers, no proprietary blends, and support across energy, focus, gut and immune defenses.",
+      "cta": "Make my pick"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 77,
+    "xlsx_row": 78,
+    "angle": "If I Could Only Keep One",
+    "group": "HERO 7 ↔ GROUP 7 – Choice overload",
+    "url": "https://myvox-9.com/pages/one-choice-overload",
+    "expected": {
+      "headline": "You don't need a shelf of supplements. You need the one that covers all of it.",
+      "description": "Api-Complex replaces the whole aisle with one stick that covers the three things your body actually runs on.",
+      "cta": "Simplify to one →"
+    },
+    "checked_at": "2026-10-30T16:39:45.759457+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/one-choice-overload",
+    "html_sha256": "6a6a8295e6a12c4f00decccf9cdcceb16b8a541ffd9bb6f8a3a9e32959131e5b",
+    "hero_id": null,
+    "actual": {
+      "headline": "You don't need a shelf of supplements. You need the one that covers all of it.",
+      "description": "Api-Complex replaces the whole aisle with one stick that covers the three things your body actually runs on.",
+      "cta": "Simplify to one"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 78,
+    "xlsx_row": 79,
+    "angle": "If I Could Only Keep One",
+    "group": "HERO 8 ↔ GROUP 8 – Self-ID",
+    "url": "https://myvox-9.com/pages/one-self-id",
+    "expected": {
+      "headline": "If you had to cut your shelf down to one, what would actually be worth keeping?",
+      "description": "Api-Complex covers four areas in one stick, which is why it tends to be the one people keep.",
+      "cta": "Decide what stays →"
+    },
+    "checked_at": "2026-10-30T16:39:45.797252+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/one-self-id",
+    "html_sha256": "5076063b79d572b53104dbefd230fab6e95cda95755399edeb2e402e7017eff9",
+    "hero_id": null,
+    "actual": {
+      "headline": "If you had to cut your shelf down to one, what would actually be worth keeping?",
+      "description": "Api-Complex covers four areas in one stick, which is why it tends to be the one people keep.",
+      "cta": "Decide what stays"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 79,
+    "xlsx_row": 80,
+    "angle": "If I Could Only Keep One",
+    "group": "HERO 9 ↔ GROUP 9 – Social proof",
+    "url": "https://myvox-9.com/pages/one-social-proof",
+    "expected": {
+      "headline": "Ten thousand people cut their supplements down to one. They all kept the same one.",
+      "description": "Api-Complex is the single daily stick they kept after clearing the rest. 3,500mg of actives, four areas, ten seconds a day.",
+      "cta": "Keep what they keep →"
+    },
+    "checked_at": "2026-10-30T16:39:45.982778+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/one-social-proof",
+    "html_sha256": "bb5d2619857c28e71bbde4d4aecdfd54c9f9ea881c15a5ca894b459761db155b",
+    "hero_id": null,
+    "actual": {
+      "headline": "Ten thousand people cut their supplements down to one. They all kept the same one.",
+      "description": "Api-Complex is the single daily stick they kept after clearing the rest. 3,500mg of actives, four areas, ten seconds a day.",
+      "cta": "Keep what they keep"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  },
+  {
+    "index": 80,
+    "xlsx_row": 81,
+    "angle": "If I Could Only Keep One",
+    "group": "HERO 10 ↔ GROUP 10 – The decisive payoff",
+    "url": "https://myvox-9.com/pages/one-the-decisive-payoff",
+    "expected": {
+      "headline": "One supplement, and you don't miss the other eight.",
+      "description": "Api-Complex supports your whole body with one stick, so keeping just one actually works.",
+      "cta": "Keep just this one →"
+    },
+    "checked_at": "2026-10-30T16:39:46.146375+00:00",
+    "http_status": 200,
+    "final_url": "https://myvox-9.com/pages/one-the-decisive-payoff",
+    "html_sha256": "8643959e9e98e8aee5d9c7520b4c91fb870a4adfdd3453b4ed47fd309c2057cf",
+    "hero_id": null,
+    "actual": {
+      "headline": "One supplement, and you don't miss the other eight.",
+      "description": "Api-Complex supports your whole body with one stick, so keeping just one actually works.",
+      "cta": "Keep just this one"
+    },
+    "selectors": {
+      "headline": ".hero__title",
+      "description": ".hero__description",
+      "cta": ".hero__button"
+    },
+    "cta_svg_count": 1,
+    "cta_href": "#pricing",
+    "comparison": {
+      "headline": "exact",
+      "description": "exact",
+      "cta": "svg_arrow"
+    },
+    "status": "match"
+  }
+]

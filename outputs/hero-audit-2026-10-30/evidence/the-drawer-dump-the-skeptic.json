@@ -1,0 +1,35 @@
+{
+  "index": 57,
+  "xlsx_row": 58,
+  "angle": "The Drawer Dump",
+  "group": "HERO 7 ↔ GROUP 7 – The skeptic",
+  "url": "https://myvox-9.com/pages/the-drawer-dump-the-skeptic",
+  "expected": {
+    "headline": "You don't think one stick replaces eight bottles. Look at the dose before you decide.",
+    "description": "Api-Complex is 3,500mg of actives, more than seven capsules can physically hold, freeze-dried, no fillers, with a published Certificate of Analysis.",
+    "cta": "See what's in one stick →"
+  },
+  "checked_at": "2026-10-30T16:39:43.167382+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/the-drawer-dump-the-skeptic",
+  "html_sha256": "8b25eef9a686a1b7bd446d4b0facce2f1704bcb3da31cd11c64b7003e9d2f3aa",
+  "hero_id": null,
+  "actual": {
+    "headline": "You don't think one stick replaces eight bottles. Look at the dose before you decide.",
+    "description": "Api-Complex is 3,500mg of actives, more than seven capsules can physically hold, freeze-dried, no fillers, with a published Certificate of Analysis.",
+    "cta": "See what's in one stick"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

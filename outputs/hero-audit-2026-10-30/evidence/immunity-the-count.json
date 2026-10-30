@@ -1,0 +1,35 @@
+{
+  "index": 24,
+  "xlsx_row": 25,
+  "angle": "Immunity",
+  "group": "HERO 4 ↔ GROUP 4 – The count",
+  "url": "https://myvox-9.com/pages/immunity-the-count",
+  "expected": {
+    "headline": "Four colds since January. You counted, and that's the part that bothers you.",
+    "description": "Api-Complex supports a healthy immune system every day, with the three things your defenses actually run on.",
+    "cta": "Support my immune system →"
+  },
+  "checked_at": "2026-10-30T16:39:38.979168+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/immunity-the-count",
+  "html_sha256": "8589fe514ad8ef1fb08b906e23d2f55b575f984111d90d1eabd77404a8b65caf",
+  "hero_id": null,
+  "actual": {
+    "headline": "Four colds since January. You counted, and that's the part that bothers you.",
+    "description": "Api-Complex supports a healthy immune system every day, with the three things your defenses actually run on.",
+    "cta": "Support my immune system"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

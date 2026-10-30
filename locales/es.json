@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Rastrea tu pedido",
+    "description": "Introduce tu número de seguimiento a continuación.",
+    "tracking_number": "Número de seguimiento",
+    "submit": "Rastrear pedido",
+    "empty_number": "Introduce tu número de seguimiento.",
+    "unavailable": "El seguimiento no está disponible temporalmente. Actualiza la página e inténtalo de nuevo."
+  },
   "blocks": {
     "load_video": "Cargar video: {{ description }}",
     "sold_out": "Agotado",

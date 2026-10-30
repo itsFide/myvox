@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Verfolge deine Bestellung",
+    "description": "Gib unten deine Sendungsnummer ein.",
+    "tracking_number": "Sendungsnummer",
+    "submit": "Bestellung verfolgen",
+    "empty_number": "Bitte gib deine Sendungsnummer ein.",
+    "unavailable": "Die Sendungsverfolgung ist vorübergehend nicht verfügbar. Lade die Seite neu und versuche es erneut."
+  },
   "blocks": {
     "load_video": "Video laden: {{ description }}",
     "sold_out": "Ausverkauft",

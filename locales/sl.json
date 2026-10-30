@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Spremljajte svoje naročilo",
+    "description": "Spodaj vnesite številko za sledenje.",
+    "tracking_number": "Številka za sledenje",
+    "submit": "Spremljaj naročilo",
+    "empty_number": "Vnesite številko za sledenje.",
+    "unavailable": "Sledenje začasno ni na voljo. Osvežite stran in poskusite znova."
+  },
   "blocks": {
     "load_video": "Naloži videoposnetek: {{ description }}",
     "sold_out": "Razprodano",

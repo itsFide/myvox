@@ -1,0 +1,35 @@
+{
+  "index": 66,
+  "xlsx_row": 67,
+  "angle": "Nature Build It First",
+  "group": "HERO 6 ↔ GROUP 6 – Royal jelly and the queen",
+  "url": "https://myvox-9.com/pages/nature-royal-jelly-and-the-queen",
+  "expected": {
+    "headline": "One food turns an ordinary larva into a queen. It's in every stick, at a full 500mg.",
+    "description": "Api-Complex contains 500mg of freeze-dried royal jelly, the hive's recovery signal, where most products use fifty.",
+    "cta": "Get the full dose →"
+  },
+  "checked_at": "2026-10-30T16:39:44.575391+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/nature-royal-jelly-and-the-queen",
+  "html_sha256": "5c25bb8a875d95c68249acc211f1970505bb3fa20fdbbd447a72d5916a64ae87",
+  "hero_id": null,
+  "actual": {
+    "headline": "One food turns an ordinary larva into a queen. It's in every stick, at a full 500mg.",
+    "description": "Api-Complex contains 500mg of freeze-dried royal jelly, the hive's recovery signal, where most products use fifty.",
+    "cta": "Get the full dose"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

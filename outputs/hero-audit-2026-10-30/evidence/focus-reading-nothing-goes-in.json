@@ -1,0 +1,35 @@
+{
+  "index": 11,
+  "xlsx_row": 12,
+  "angle": "Focus",
+  "group": "HERO 1 ↔ GROUP 1 – Reading, nothing goes in",
+  "url": "https://myvox-9.com/pages/focus-reading-nothing-goes-in",
+  "expected": {
+    "headline": "Fourth read of the same email, and still nothing. You're not losing your edge.",
+    "description": "Api-Complex supports steady focus and mental clarity with the three things your brain needs at once, so the afternoon stops taking your clarity with it.",
+    "cta": "Read it once →"
+  },
+  "checked_at": "2026-10-30T16:39:37.592874+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/focus-reading-nothing-goes-in",
+  "html_sha256": "14f32f36320473af6705d4f4f502b0d5ec80974811eff0730004d508c3f5dd36",
+  "hero_id": null,
+  "actual": {
+    "headline": "Fourth read of the same email, and still nothing. You're not losing your edge.",
+    "description": "Api-Complex supports steady focus and mental clarity with the three things your brain needs at once, so the afternoon stops taking your clarity with it.",
+    "cta": "Read it once"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

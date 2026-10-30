@@ -1,0 +1,35 @@
+{
+  "index": 54,
+  "xlsx_row": 55,
+  "angle": "The Drawer Dump",
+  "group": "HERO 4 ↔ GROUP 4 – The clutter and the hassle",
+  "url": "https://myvox-9.com/pages/the-drawer-dump-the-clutter-and-the-hassle",
+  "expected": {
+    "headline": "Ten minutes sorting pills, three phone alarms, and you still forget half of them.",
+    "description": "Api-Complex is one stick, once a day, ten seconds. No organizer, no alarms, nothing to keep track of.",
+    "cta": "Simplify my mornings →"
+  },
+  "checked_at": "2026-10-30T16:39:43.032123+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/the-drawer-dump-the-clutter-and-the-hassle",
+  "html_sha256": "85fcf5b93440b11fec54d5fceab621b5ef18facc597d789fc73dc6a0ad873765",
+  "hero_id": null,
+  "actual": {
+    "headline": "Ten minutes sorting pills, three phone alarms, and you still forget half of them.",
+    "description": "Api-Complex is one stick, once a day, ten seconds. No organizer, no alarms, nothing to keep track of.",
+    "cta": "Simplify my mornings"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

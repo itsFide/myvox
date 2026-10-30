@@ -1,0 +1,35 @@
+{
+  "index": 62,
+  "xlsx_row": 63,
+  "angle": "Nature Build It First",
+  "group": "HERO 2 ↔ GROUP 2 – The hive makes all three",
+  "url": "https://myvox-9.com/pages/nature-the-hive-makes-all-three",
+  "expected": {
+    "headline": "Your body needs three things. A beehive makes all three. Together, on purpose.",
+    "description": "Api-Complex brings those exact three into one stick, supporting energy, focus, gut and immune defenses at the same time.",
+    "cta": "Get the whole system →"
+  },
+  "checked_at": "2026-10-30T16:39:43.927130+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/nature-the-hive-makes-all-three",
+  "html_sha256": "8b4676b883d0182152855f7cb9d3bbf174bd3e4d9e01311c4e5fe08e1d8758f7",
+  "hero_id": null,
+  "actual": {
+    "headline": "Your body needs three things. A beehive makes all three. Together, on purpose.",
+    "description": "Api-Complex brings those exact three into one stick, supporting energy, focus, gut and immune defenses at the same time.",
+    "cta": "Get the whole system"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

@@ -1,0 +1,126 @@
+{
+  "status": "verified_on_storefront",
+  "category": "Immunity",
+  "shop": {
+    "name": "MYVOX-9",
+    "myshopifyDomain": "uhgmmm-ef.myshopify.com",
+    "primaryDomain": {
+      "url": "https://myvox-9.com"
+    }
+  },
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – Catching everything",
+      "page_id": "gid://shopify/Page/712679162224",
+      "handle": "immunity-catching-everything",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C22",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/immunity-catching-everything"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – Kids bring it home",
+      "page_id": "gid://shopify/Page/712679194992",
+      "handle": "immunity-kids-bring-it-home",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C23",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/immunity-kids-bring-it-home"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – A bug costs a week",
+      "page_id": "gid://shopify/Page/712679227760",
+      "handle": "immunity-a-bug-costs-a-week",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C24",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/immunity-a-bug-costs-a-week"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – The count",
+      "page_id": "gid://shopify/Page/712679260528",
+      "handle": "immunity-the-count",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C25",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/immunity-the-count"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – Slow to recover",
+      "page_id": "gid://shopify/Page/712679293296",
+      "handle": "immunity-slow-to-recover",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C26",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/immunity-slow-to-recover"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Travel, crowds, the office",
+      "page_id": "gid://shopify/Page/712679326064",
+      "handle": "immunity-travel-crowds-the-office",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C27",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/immunity-travel-crowds-the-office"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – Cold season",
+      "page_id": "gid://shopify/Page/712679358832",
+      "handle": "immunity-cold-season",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C28",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/immunity-cold-season"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Run-down even when you're well",
+      "page_id": "gid://shopify/Page/712679391600",
+      "handle": "immunity-run-down-even-when-youre-well",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C29",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/immunity-run-down-even-when-youre-well"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Self-ID",
+      "page_id": "gid://shopify/Page/712679424368",
+      "handle": "immunity-self-id",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C30",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/immunity-self-id"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – Done losing time",
+      "page_id": "gid://shopify/Page/712679457136",
+      "handle": "immunity-done-losing-time",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C31",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/immunity-done-losing-time"
+    }
+  ],
+  "completed_at": "2026-10-30T16:16:15.173Z"
+}

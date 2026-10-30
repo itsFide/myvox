@@ -1,0 +1,132 @@
+[
+  {
+    "url": "https://myvox-9.com/pages/the-drawer-dump-the-dump",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Your whole supplement drawer is chasing three things. One stick carries all of them.",
+    "actual_highlight": [
+      "One stick carries all of them."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/the-drawer-dump-the-absurd-count",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Eight bottles a day and you still feel run-down. That's the part worth looking at.",
+    "actual_highlight": [
+      "Eight bottles a day and you still feel run-down."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/the-drawer-dump-what-it-was-costing",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Two hundred a month. Twenty-four hundred a year. For a drawer of bottles that didn't work.",
+    "actual_highlight": [
+      "Two hundred a month. Twenty-four hundred a year."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/the-drawer-dump-the-clutter-and-the-hassle",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Ten minutes sorting pills, three phone alarms, and you still forget half of them.",
+    "actual_highlight": [
+      "Ten minutes sorting pills, three phone alarms,"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/the-drawer-dump-the-swap",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Eight bottles, or one stick that covers the three things all eight were chasing.",
+    "actual_highlight": [
+      "Eight bottles, or one stick"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/the-drawer-dump-looking-back-at-the-pile",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Three years of an eight-bottle drawer. Nobody needs that, including you.",
+    "actual_highlight": [
+      "Three years of an eight-bottle drawer."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/the-drawer-dump-the-skeptic",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "You don't think one stick replaces eight bottles. Look at the dose before you decide.",
+    "actual_highlight": [
+      "one stick replaces eight bottles."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/the-drawer-dump-self-id",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "How many bottles are in your drawer right now? And how do you actually feel?",
+    "actual_highlight": [
+      "How many bottles are in your drawer right now?"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/the-drawer-dump-social-proof",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Ten thousand people emptied their supplement drawer for one stick.",
+    "actual_highlight": [
+      "Ten thousand people"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/the-drawer-dump-better-on-less",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Fewer bottles, and somehow better. That happens when one stick covers what eight were splitting.",
+    "actual_highlight": [
+      "Fewer bottles, and somehow better."
+    ],
+    "passed": true
+  }
+]

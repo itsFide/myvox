@@ -1,0 +1,35 @@
+{
+  "index": 27,
+  "xlsx_row": 28,
+  "angle": "Immunity",
+  "group": "HERO 7 ↔ GROUP 7 – Cold season",
+  "url": "https://myvox-9.com/pages/immunity-cold-season",
+  "expected": {
+    "headline": "It's September and you're already bracing for the first cold. Same story every year.",
+    "description": "Api-Complex supports your immune defenses daily, so you head into the season with all three things they run on.",
+    "cta": "Go in supported →"
+  },
+  "checked_at": "2026-10-30T16:39:39.447413+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/immunity-cold-season",
+  "html_sha256": "0873e08ba9f70f37502143aabfa6b81d2d3567adf981a79a666db988706102e0",
+  "hero_id": null,
+  "actual": {
+    "headline": "It's September and you're already bracing for the first cold. Same story every year.",
+    "description": "Api-Complex supports your immune defenses daily, so you head into the season with all three things they run on.",
+    "cta": "Go in supported"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

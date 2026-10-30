@@ -1,0 +1,35 @@
+{
+  "index": 20,
+  "xlsx_row": 21,
+  "angle": "Focus",
+  "group": "HERO 10 ↔ GROUP 10 – Words and thoughts slip",
+  "url": "https://myvox-9.com/pages/focus-words-and-thoughts-slip",
+  "expected": {
+    "headline": "You lose the word mid-sentence and everyone waits. That isn't how you normally talk.",
+    "description": "Api-Complex supports steady focus and mental clarity, so you can hold a thought all the way to the end of it.",
+    "cta": "Sound like myself again →"
+  },
+  "checked_at": "2026-10-30T16:39:38.806449+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/focus-words-and-thoughts-slip",
+  "html_sha256": "ace0ef346e482638359b5a56f16beb142f73446637037f3efcf7d79664b90a8f",
+  "hero_id": null,
+  "actual": {
+    "headline": "You lose the word mid-sentence and everyone waits. That isn't how you normally talk.",
+    "description": "Api-Complex supports steady focus and mental clarity, so you can hold a thought all the way to the end of it.",
+    "cta": "Sound like myself again"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

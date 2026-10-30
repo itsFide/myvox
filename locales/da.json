@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Spor din ordre",
+    "description": "Indtast dit sporingsnummer nedenfor.",
+    "tracking_number": "Sporingsnummer",
+    "submit": "Spor ordre",
+    "empty_number": "Indtast dit sporingsnummer.",
+    "unavailable": "Sporing er midlertidigt utilgængelig. Opdater siden, og prøv igen."
+  },
   "blocks": {
     "load_video": "Indlæs video: {{ description }}",
     "sold_out": "Udsolgt",

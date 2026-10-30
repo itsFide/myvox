@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "track_order": {
+    "title": "Theo dõi đơn hàng",
+    "description": "Nhập mã theo dõi của bạn bên dưới.",
+    "tracking_number": "Mã theo dõi",
+    "submit": "Theo dõi đơn hàng",
+    "empty_number": "Vui lòng nhập mã theo dõi.",
+    "unavailable": "Tạm thời không thể theo dõi đơn hàng. Vui lòng tải lại trang và thử lại."
+  },
   "blocks": {
     "load_video": "Tải video: {{ description }}",
     "sold_out": "Hết hàng",

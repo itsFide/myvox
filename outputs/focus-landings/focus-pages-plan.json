@@ -1,0 +1,340 @@
+{
+  "status": "completed",
+  "category": "Focus",
+  "store_domain": "uhgmmm-ef.myshopify.com",
+  "storefront_origin": "https://myvox-9.com",
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – Reading, nothing goes in",
+      "page_title": "Focus — Reading, nothing goes in",
+      "handle": "focus-reading-nothing-goes-in",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/focus-reading-nothing-goes-in",
+      "worksheet": "URLs",
+      "url_cell": "C12",
+      "highlight": "Fourth read of the same email, and still nothing.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Fourth read of the same email, and still nothing.]] You're not losing your edge."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady focus and mental clarity with the three things your brain needs at once, so the afternoon stops taking your clarity with it."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Read it once"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/focus-reading-nothing-goes-in"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – The 2pm shutdown",
+      "page_title": "Focus — The 2pm shutdown",
+      "handle": "focus-the-2pm-shutdown",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/focus-the-2pm-shutdown",
+      "worksheet": "URLs",
+      "url_cell": "C13",
+      "highlight": "2 p.m. and your brain quits.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[2 p.m. and your brain quits.]] Willpower was never the missing piece."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady focus from morning through the afternoon by covering all three things clarity runs on, not another hit of caffeine."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get my afternoons back"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/focus-the-2pm-shutdown"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – Memory slips",
+      "page_title": "Focus — Memory slips",
+      "handle": "focus-memory-slips",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/focus-memory-slips",
+      "worksheet": "URLs",
+      "url_cell": "C14",
+      "highlight": "You walk into a room and forget why.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[You walk into a room and forget why.]] Trying harder was never going to fix that."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady focus and mental clarity, so the small slips stop stacking up by mid-afternoon."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get my head back"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/focus-memory-slips"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – What foggy hours cost",
+      "page_title": "Focus — What foggy hours cost",
+      "handle": "focus-what-foggy-hours-cost",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/focus-what-foggy-hours-cost",
+      "worksheet": "URLs",
+      "url_cell": "C15",
+      "highlight": "Three billable hours a day, lost to fog.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Three billable hours a day, lost to fog.]] You've been paying for this quietly."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady mental clarity deep into the workday, so the second half of your day is worth as much as the first."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get those hours back"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/focus-what-foggy-hours-cost"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – Coffee isn't clearing it",
+      "page_title": "Focus — Coffee isn't clearing it",
+      "handle": "focus-coffee-isnt-clearing-it",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/focus-coffee-isnt-clearing-it",
+      "worksheet": "URLs",
+      "url_cell": "C16",
+      "highlight": "Coffee works for an hour, then the fog rolls back in.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Coffee works for an hour, then the fog rolls back in.]] Caffeine isn't what your focus is missing."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex covers all three things focus runs on – raw materials, a recovery signal, and a clean internal balance – so clarity holds without the spike and the drop."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Try what coffee can't do"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/focus-coffee-isnt-clearing-it"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Calls and meetings",
+      "page_title": "Focus — Calls and meetings",
+      "handle": "focus-calls-and-meetings",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/focus-calls-and-meetings",
+      "worksheet": "URLs",
+      "url_cell": "C17",
+      "highlight": "You nodded through the whole call and caught none of it.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[You nodded through the whole call and caught none of it.]] That isn't distraction."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady focus and clarity through the afternoon, so you can actually follow the room again."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Stay in the room"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/focus-calls-and-meetings"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – The fog itself",
+      "page_title": "Focus — The fog itself",
+      "handle": "focus-the-fog-itself",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/focus-the-fog-itself",
+      "worksheet": "URLs",
+      "url_cell": "C18",
+      "highlight": "Brain fog at 2 p.m., like clockwork.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Brain fog at 2 p.m., like clockwork.]] Coffee can't reach it because caffeine isn't what's missing."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady mental clarity with all three things your brain runs on, so the afternoon has less to take from you."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Lift the 2pm fog"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/focus-the-fog-itself"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Self-ID",
+      "page_title": "Focus — Self-ID",
+      "handle": "focus-self-id",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/focus-self-id",
+      "worksheet": "URLs",
+      "url_cell": "C19",
+      "highlight": "Rereading the same line, losing the word, foggy every afternoon.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Rereading the same line, losing the word, foggy every afternoon.]] That isn't laziness and it isn't your age."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex helps maintain normal, steady focus by covering all three things your brain needs at the same time."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Fix what focus apps can't"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/focus-self-id"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Can't start, can't finish",
+      "page_title": "Focus — Can't start, can't finish",
+      "handle": "focus-cant-start-cant-finish",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/focus-cant-start-cant-finish",
+      "worksheet": "URLs",
+      "url_cell": "C20",
+      "highlight": "The same task, reopened all week.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[The same task, reopened all week.]] Starting isn't a motivation problem."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady focus, so you can start something after lunch and actually finish it."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Finish the thing"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/focus-cant-start-cant-finish"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – Words and thoughts slip",
+      "page_title": "Focus — Words and thoughts slip",
+      "handle": "focus-words-and-thoughts-slip",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/focus-words-and-thoughts-slip",
+      "worksheet": "URLs",
+      "url_cell": "C21",
+      "highlight": "You lose the word mid-sentence and everyone waits.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[You lose the word mid-sentence and everyone waits.]] That isn't how you normally talk."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady focus and mental clarity, so you can hold a thought all the way to the end of it."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Sound like myself again"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/focus-words-and-thoughts-slip"
+    }
+  ]
+}

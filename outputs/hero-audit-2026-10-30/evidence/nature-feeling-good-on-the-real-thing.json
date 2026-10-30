@@ -1,0 +1,35 @@
+{
+  "index": 70,
+  "xlsx_row": 71,
+  "angle": "Nature Build It First",
+  "group": "HERO 10 ↔ GROUP 10 – Feeling good on the real thing",
+  "url": "https://myvox-9.com/pages/nature-feeling-good-on-the-real-thing",
+  "expected": {
+    "headline": "It turns out your body responds differently to food it actually recognizes.",
+    "description": "Api-Complex supports your whole body with the three things nature already assembled – steady, clear and settled, on real food.",
+    "cta": "Feel good on real food →"
+  },
+  "checked_at": "2026-10-30T16:39:45.053000+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/nature-feeling-good-on-the-real-thing",
+  "html_sha256": "4c124a2db11f3d5b5543206696a13d09a9c7214b36d23b892837cb29818028b7",
+  "hero_id": null,
+  "actual": {
+    "headline": "It turns out your body responds differently to food it actually recognizes.",
+    "description": "Api-Complex supports your whole body with the three things nature already assembled – steady, clear and settled, on real food.",
+    "cta": "Feel good on real food"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "url": "https://myvox-9.com/pages/nature-nature-solved-it-first",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Nature already built the system your supplements are trying to copy.",
+    "actual_highlight": [
+      "Nature already built the system"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/nature-the-hive-makes-all-three",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Your body needs three things. A beehive makes all three. Together, on purpose.",
+    "actual_highlight": [
+      "A beehive makes all three."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/nature-things-you-didnt-know-about-a-hive",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Bees ferment pollen so you can absorb it. Your capsule never got that far.",
+    "actual_highlight": [
+      "Bees ferment pollen so you can absorb it."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/nature-lab-versus-hive",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "A lab has to source three ingredients, dose them, and hope. The hive already did it.",
+    "actual_highlight": [
+      "The hive already did it."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/nature-whole-versus-isolated",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Your pills are isolated fragments. Hive food arrives whole, in the order nature built it.",
+    "actual_highlight": [
+      "Your pills are isolated fragments."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/nature-royal-jelly-and-the-queen",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "One food turns an ordinary larva into a queen. It's in every stick, at a full 500mg.",
+    "actual_highlight": [
+      "One food turns an ordinary larva into a queen."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/nature-freeze-dried-never-heated",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Heat ruins the best part of royal jelly. So this one is never heated, at any stage.",
+    "actual_highlight": [
+      "Heat ruins the best part of royal jelly."
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/nature-reframe-questions",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Do you know whether your supplements came from a hive or a factory?",
+    "actual_highlight": [
+      "a hive or a factory?"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/nature-social-proof",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "Ten thousand people switched from synthetic pills to what the hive already makes.",
+    "actual_highlight": [
+      "Ten thousand people switched"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://myvox-9.com/pages/nature-feeling-good-on-the-real-thing",
+    "status": 200,
+    "heading_matches": true,
+    "description_matches": true,
+    "button_matches": true,
+    "highlight_matches": true,
+    "actual_heading": "It turns out your body responds differently to food it actually recognizes.",
+    "actual_highlight": [
+      "food it actually recognizes."
+    ],
+    "passed": true
+  }
+]

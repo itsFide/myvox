@@ -1,0 +1,35 @@
+{
+  "index": 21,
+  "xlsx_row": 22,
+  "angle": "Immunity",
+  "group": "HERO 1 ↔ GROUP 1 – Catching everything",
+  "url": "https://myvox-9.com/pages/immunity-catching-everything",
+  "expected": {
+    "headline": "Someone sneezes Monday, it's you by Thursday. That isn't bad luck.",
+    "description": "Api-Complex supports your immune defenses with all three things they run on, instead of one vitamin covering a sliver of the job.",
+    "cta": "Support all three →"
+  },
+  "checked_at": "2026-10-30T16:39:38.815816+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/immunity-catching-everything",
+  "html_sha256": "b348f499e89c09f098be4c3dfc7f83089290ced8bb67023cf8a705d0b2ca21f5",
+  "hero_id": null,
+  "actual": {
+    "headline": "Someone sneezes Monday, it's you by Thursday. That isn't bad luck.",
+    "description": "Api-Complex supports your immune defenses with all three things they run on, instead of one vitamin covering a sliver of the job.",
+    "cta": "Support all three"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

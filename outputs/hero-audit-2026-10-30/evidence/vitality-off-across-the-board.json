@@ -1,0 +1,35 @@
+{
+  "index": 41,
+  "xlsx_row": 42,
+  "angle": "Vitality",
+  "group": "HERO 1 ↔ GROUP 1 – Off across the board",
+  "url": "https://myvox-9.com/pages/vitality-off-across-the-board",
+  "expected": {
+    "headline": "Tired, foggy, bloated, run-down. Four problems, or one system running short?",
+    "description": "Api-Complex covers the three things your whole body runs on – raw materials, a recovery signal, and a clean internal balance – so energy, focus, gut and immune defenses are all supported at once.",
+    "cta": "Support all four →"
+  },
+  "checked_at": "2026-10-30T16:39:41.386866+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/vitality-off-across-the-board",
+  "html_sha256": "f5103c7fb79651440e2d5288c6da7e9078cadbb1fdce0089379aadcc8b0a042e",
+  "hero_id": null,
+  "actual": {
+    "headline": "Tired, foggy, bloated, run-down. Four problems, or one system running short?",
+    "description": "Api-Complex covers the three things your whole body runs on – raw materials, a recovery signal, and a clean internal balance – so energy, focus, gut and immune defenses are all supported at once.",
+    "cta": "Support all four"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

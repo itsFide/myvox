@@ -1,0 +1,126 @@
+{
+  "status": "verified_on_storefront",
+  "category": "The Drawer Dump",
+  "shop": {
+    "name": "MYVOX-9",
+    "myshopifyDomain": "uhgmmm-ef.myshopify.com",
+    "primaryDomain": {
+      "url": "https://myvox-9.com"
+    }
+  },
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – The dump",
+      "page_id": "gid://shopify/Page/712678211952",
+      "handle": "the-drawer-dump-the-dump",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C52",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/the-drawer-dump-the-dump"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – The absurd count",
+      "page_id": "gid://shopify/Page/712678244720",
+      "handle": "the-drawer-dump-the-absurd-count",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C53",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/the-drawer-dump-the-absurd-count"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – What it was costing",
+      "page_id": "gid://shopify/Page/712678277488",
+      "handle": "the-drawer-dump-what-it-was-costing",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C54",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/the-drawer-dump-what-it-was-costing"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – The clutter and the hassle",
+      "page_id": "gid://shopify/Page/712678310256",
+      "handle": "the-drawer-dump-the-clutter-and-the-hassle",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C55",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/the-drawer-dump-the-clutter-and-the-hassle"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – The swap",
+      "page_id": "gid://shopify/Page/712678343024",
+      "handle": "the-drawer-dump-the-swap",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C56",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/the-drawer-dump-the-swap"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Looking back at the pile",
+      "page_id": "gid://shopify/Page/712678375792",
+      "handle": "the-drawer-dump-looking-back-at-the-pile",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C57",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/the-drawer-dump-looking-back-at-the-pile"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – The skeptic",
+      "page_id": "gid://shopify/Page/712678408560",
+      "handle": "the-drawer-dump-the-skeptic",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C58",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/the-drawer-dump-the-skeptic"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Self-ID",
+      "page_id": "gid://shopify/Page/712678441328",
+      "handle": "the-drawer-dump-self-id",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C59",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/the-drawer-dump-self-id"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Social proof",
+      "page_id": "gid://shopify/Page/712678474096",
+      "handle": "the-drawer-dump-social-proof",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C60",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/the-drawer-dump-social-proof"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – Better on less",
+      "page_id": "gid://shopify/Page/712678506864",
+      "handle": "the-drawer-dump-better-on-less",
+      "created": true,
+      "worksheet": "URLs",
+      "url_cell": "C61",
+      "status": "verified_on_storefront",
+      "url": "https://myvox-9.com/pages/the-drawer-dump-better-on-less"
+    }
+  ],
+  "completed_at": "2026-10-30T16:07:47.337Z"
+}

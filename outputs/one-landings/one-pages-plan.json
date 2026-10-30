@@ -1,0 +1,340 @@
+{
+  "status": "completed",
+  "category": "If I Could Only Keep One",
+  "store_domain": "uhgmmm-ef.myshopify.com",
+  "storefront_origin": "https://myvox-9.com",
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – The forced choice",
+      "page_title": "If I Could Only Keep One — The forced choice",
+      "handle": "one-the-forced-choice",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/one-the-forced-choice",
+      "worksheet": "URLs",
+      "url_cell": "C72",
+      "highlight": "If you could keep only one supplement,",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[If you could keep only one supplement,]] it had better do more than one job."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex covers the three things your whole body runs on, which is how one stick stands in for a shelf."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Make it my one"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/one-the-forced-choice"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – Everything else does one job",
+      "page_title": "If I Could Only Keep One — Everything else does one job",
+      "handle": "one-everything-else-does-one-job",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/one-everything-else-does-one-job",
+      "worksheet": "URLs",
+      "url_cell": "C73",
+      "highlight": "A pill for energy, a pill for sleep, a pill for your gut.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[A pill for energy, a pill for sleep, a pill for your gut.]] That's the problem, not the plan."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex covers four areas with the three inputs behind all of them – energy, focus, gut and immune defenses, in one daily stick."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Keep one that does more"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/one-everything-else-does-one-job"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – The survivor",
+      "page_title": "If I Could Only Keep One — The survivor",
+      "handle": "one-the-survivor",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/one-the-survivor",
+      "worksheet": "URLs",
+      "url_cell": "C74",
+      "highlight": "Cut your supplement stack down to one",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Cut your supplement stack down to one]] and see what's still standing. Most of it won't be."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex replaces a shelf of single-job bottles with one stick that supports your whole body."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Keep the survivor"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/one-the-survivor"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – The keeper",
+      "page_title": "If I Could Only Keep One — The keeper",
+      "handle": "one-the-keeper",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/one-the-keeper",
+      "worksheet": "URLs",
+      "url_cell": "C75",
+      "highlight": "One stick. Four jobs.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[One stick. Four jobs.]] That's why it earns the only spot on the shelf."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is bee bread, royal jelly and propolis – the three things energy, focus, gut and immune defenses all run on."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get the keeper"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/one-the-keeper"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – Not a compromise",
+      "page_title": "If I Could Only Keep One — Not a compromise",
+      "handle": "one-not-a-compromise",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/one-not-a-compromise",
+      "worksheet": "URLs",
+      "url_cell": "C76",
+      "highlight": "it isn't a compromise.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "Keeping one supplement only works if [[it isn't a compromise.]] Check the dose."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is 3,500mg of actives, more than seven capsules can hold, with 500mg of royal jelly where most products use fifty, and a published Certificate of Analysis."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "See the numbers"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/one-not-a-compromise"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Picky and hard to impress",
+      "page_title": "If I Could Only Keep One — Picky and hard to impress",
+      "handle": "one-picky-and-hard-to-impress",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/one-picky-and-hard-to-impress",
+      "worksheet": "URLs",
+      "url_cell": "C77",
+      "highlight": "This is the one supplement that stayed.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "You return things that don't work. [[This is the one supplement that stayed.]]"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex earns its spot with full doses, no fillers, no proprietary blends, and support across energy, focus, gut and immune defenses."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Make my pick"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/one-picky-and-hard-to-impress"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – Choice overload",
+      "page_title": "If I Could Only Keep One — Choice overload",
+      "handle": "one-choice-overload",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/one-choice-overload",
+      "worksheet": "URLs",
+      "url_cell": "C78",
+      "highlight": "You don't need a shelf of supplements.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[You don't need a shelf of supplements.]] You need the one that covers all of it."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex replaces the whole aisle with one stick that covers the three things your body actually runs on."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Simplify to one"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/one-choice-overload"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Self-ID",
+      "page_title": "If I Could Only Keep One — Self-ID",
+      "handle": "one-self-id",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/one-self-id",
+      "worksheet": "URLs",
+      "url_cell": "C79",
+      "highlight": "what would actually be worth keeping?",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "If you had to cut your shelf down to one, [[what would actually be worth keeping?]]"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex covers four areas in one stick, which is why it tends to be the one people keep."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Decide what stays"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/one-self-id"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Social proof",
+      "page_title": "If I Could Only Keep One — Social proof",
+      "handle": "one-social-proof",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/one-social-proof",
+      "worksheet": "URLs",
+      "url_cell": "C80",
+      "highlight": "They all kept the same one.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "Ten thousand people cut their supplements down to one. [[They all kept the same one.]]"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is the single daily stick they kept after clearing the rest. 3,500mg of actives, four areas, ten seconds a day."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Keep what they keep"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/one-social-proof"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – The decisive payoff",
+      "page_title": "If I Could Only Keep One — The decisive payoff",
+      "handle": "one-the-decisive-payoff",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/one-the-decisive-payoff",
+      "worksheet": "URLs",
+      "url_cell": "C81",
+      "highlight": "you don't miss the other eight.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "One supplement, and [[you don't miss the other eight.]]"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your whole body with one stick, so keeping just one actually works."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Keep just this one"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/one-the-decisive-payoff"
+    }
+  ]
+}

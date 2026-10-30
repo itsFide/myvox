@@ -1,0 +1,35 @@
+{
+  "index": 9,
+  "xlsx_row": 10,
+  "angle": "Energy",
+  "group": "HERO 9 ↔ GROUP 9 – The contradiction",
+  "url": "https://myvox-9.com/pages/energy-the-contradiction",
+  "expected": {
+    "headline": "You fixed your sleep, cleaned up your diet, and the 2 p.m. crash stayed.",
+    "description": "Api-Complex gives your body all three things steady energy runs on, at the same time, in one daily stick.",
+    "cta": "Try the missing piece →"
+  },
+  "checked_at": "2026-10-30T16:39:37.479818+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/energy-the-contradiction",
+  "html_sha256": "35af83b49fa4070efb0750098afd5f19873c5c4488e8e7c568a06ce5c6f1c1d0",
+  "hero_id": null,
+  "actual": {
+    "headline": "You fixed your sleep, cleaned up your diet, and the 2 p.m. crash stayed.",
+    "description": "Api-Complex gives your body all three things steady energy runs on, at the same time, in one daily stick.",
+    "cta": "Try the missing piece"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

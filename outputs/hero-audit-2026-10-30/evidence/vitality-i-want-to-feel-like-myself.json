@@ -1,0 +1,35 @@
+{
+  "index": 46,
+  "xlsx_row": 47,
+  "angle": "Vitality",
+  "group": "HERO 6 ↔ GROUP 6 – I want to feel like myself",
+  "url": "https://myvox-9.com/pages/vitality-i-want-to-feel-like-myself",
+  "expected": {
+    "headline": "You want one good day. Not amazing. Just not running at sixty percent.",
+    "description": "Api-Complex supports your whole body every day with the three things it runs on, so steady stops being the exception.",
+    "cta": "Feel like myself again →"
+  },
+  "checked_at": "2026-10-30T16:39:42.024259+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/vitality-i-want-to-feel-like-myself",
+  "html_sha256": "291bd036b99bc6f178267fa9943ec445fe8db043e06fcc07dceaaf60ea4279db",
+  "hero_id": null,
+  "actual": {
+    "headline": "You want one good day. Not amazing. Just not running at sixty percent.",
+    "description": "Api-Complex supports your whole body every day with the three things it runs on, so steady stops being the exception.",
+    "cta": "Feel like myself again"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

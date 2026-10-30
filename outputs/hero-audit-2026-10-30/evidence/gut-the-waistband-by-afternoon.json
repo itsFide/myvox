@@ -1,0 +1,35 @@
+{
+  "index": 32,
+  "xlsx_row": 33,
+  "angle": "Gut",
+  "group": "HERO 2 ↔ GROUP 2 – The waistband by afternoon",
+  "url": "https://myvox-9.com/pages/gut-the-waistband-by-afternoon",
+  "expected": {
+    "headline": "Comfortable at eight, unbuttoning by three. It isn't only what you're eating.",
+    "description": "Api-Complex supports a calmer, lighter gut through the whole day with all three things healthy digestion runs on.",
+    "cta": "Feel light again →"
+  },
+  "checked_at": "2026-10-30T16:39:40.039501+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/gut-the-waistband-by-afternoon",
+  "html_sha256": "042fb8a61eb086d212977671aa48f40aeaf525b8a609ff70ca1ed369b92acb77",
+  "hero_id": null,
+  "actual": {
+    "headline": "Comfortable at eight, unbuttoning by three. It isn't only what you're eating.",
+    "description": "Api-Complex supports a calmer, lighter gut through the whole day with all three things healthy digestion runs on.",
+    "cta": "Feel light again"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

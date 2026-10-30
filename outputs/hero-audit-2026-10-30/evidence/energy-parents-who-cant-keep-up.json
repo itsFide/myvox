@@ -1,0 +1,35 @@
+{
+  "index": 6,
+  "xlsx_row": 7,
+  "angle": "Energy",
+  "group": "HERO 6 ↔ GROUP 6 – Parents who can't keep up",
+  "url": "https://myvox-9.com/pages/energy-parents-who-cant-keep-up",
+  "expected": {
+    "headline": "Faking energy until bedtime isn't something you can push through.",
+    "description": "Api-Complex supports steady energy through the whole day with the three things your body runs on, so evenings stop being something to survive.",
+    "cta": "Keep up with them →"
+  },
+  "checked_at": "2026-10-30T16:39:36.589215+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/energy-parents-who-cant-keep-up",
+  "html_sha256": "1d6238cc782b3efb7f910085e2dc2c8e014c7bbe0f21b29a842106b88c069fdf",
+  "hero_id": null,
+  "actual": {
+    "headline": "Faking energy until bedtime isn't something you can push through.",
+    "description": "Api-Complex supports steady energy through the whole day with the three things your body runs on, so evenings stop being something to survive.",
+    "cta": "Keep up with them"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

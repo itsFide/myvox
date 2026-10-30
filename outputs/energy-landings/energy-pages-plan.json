@@ -1,0 +1,361 @@
+{
+  "status": "completed",
+  "category": "Energy",
+  "store_domain": "myvox-9.myshopify.com",
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "notes": [
+    "Exact source copy is preserved, except the trailing CTA arrow is rendered by the existing template SVG.",
+    "Only the first Energy category is included.",
+    "The existing mornings page must be looked up before creating anything."
+  ],
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – Mornings",
+      "page_title": "Energy — Mornings",
+      "handle": "energy-mornings",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/energy-mornings",
+      "worksheet": "URLs",
+      "url_cell": "C2",
+      "highlight": "Eight hours of sleep and still empty.",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Eight hours of sleep and still empty.]] Sleep was never what you were missing."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex gives your body all three things steady energy runs on – the raw materials, the recovery signal, and a clean internal balance. Miss one and the other two can't carry you."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get my mornings back"
+        }
+      ],
+      "existing_page_lookup_handles": [
+        "energy-mornings",
+        "enery-mornings"
+      ],
+      "action": "reuse_existing_page_after_lookup",
+      "url": "https://myvox-9.myshopify.com/pages/energy-mornings",
+      "verified_url": "https://myvox-9.com/pages/energy-mornings"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – The 2pm crash",
+      "page_title": "Energy — The 2pm crash",
+      "handle": "energy-the-2pm-crash",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/energy-the-2pm-crash",
+      "worksheet": "URLs",
+      "url_cell": "C3",
+      "highlight": "2 p.m. hits and you're done.",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[2 p.m. hits and you're done.]] More coffee was never going to fix that."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports the three things your body actually makes energy from, so the afternoon stops flattening you. Not a stimulant. No jitters, no crash."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get my afternoons back"
+        }
+      ],
+      "action": "create_if_missing",
+      "url": "https://myvox-9.myshopify.com/pages/energy-the-2pm-crash",
+      "verified_url": "https://myvox-9.com/pages/energy-the-2pm-crash"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – Evenings with family",
+      "page_title": "Energy — Evenings with family",
+      "handle": "energy-evenings-with-family",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/energy-evenings-with-family",
+      "worksheet": "URLs",
+      "url_cell": "C4",
+      "highlight": "Your kids get whatever's left of you.",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Your kids get whatever's left of you.]] Most nights that's nothing."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady energy that holds into the evening, so the best part of your day isn't already spent by the time you walk in the door."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get my evenings back"
+        }
+      ],
+      "action": "create_if_missing",
+      "url": "https://myvox-9.myshopify.com/pages/energy-evenings-with-family",
+      "verified_url": "https://myvox-9.com/pages/energy-evenings-with-family"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – Coffee stopped working",
+      "page_title": "Energy — Coffee stopped working",
+      "handle": "energy-coffee-stopped-working",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/energy-coffee-stopped-working",
+      "worksheet": "URLs",
+      "url_cell": "C5",
+      "highlight": "Fourth coffee, same crash.",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Fourth coffee, same crash.]] Coffee gives you none of the three things energy runs on."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex delivers all three – raw materials, a recovery signal, and a clean internal balance – so energy stays steady instead of spiking and dropping."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Try what coffee can't do"
+        }
+      ],
+      "action": "create_if_missing",
+      "url": "https://myvox-9.myshopify.com/pages/energy-coffee-stopped-working",
+      "verified_url": "https://myvox-9.com/pages/energy-coffee-stopped-working"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – It isn't your age",
+      "page_title": "Energy — It isn't your age",
+      "handle": "energy-it-isnt-your-age",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/energy-it-isnt-your-age",
+      "worksheet": "URLs",
+      "url_cell": "C6",
+      "highlight": "That 2 p.m. crash isn't your age.",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[That 2 p.m. crash isn't your age.]] It's three things your body isn't getting."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady, natural energy by covering all three at once, instead of pushing you with another stimulant."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Feel like yourself again"
+        }
+      ],
+      "action": "create_if_missing",
+      "url": "https://myvox-9.myshopify.com/pages/energy-it-isnt-your-age",
+      "verified_url": "https://myvox-9.com/pages/energy-it-isnt-your-age"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Parents who can't keep up",
+      "page_title": "Energy — Parents who can't keep up",
+      "handle": "energy-parents-who-cant-keep-up",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/energy-parents-who-cant-keep-up",
+      "worksheet": "URLs",
+      "url_cell": "C7",
+      "highlight": "Faking energy until bedtime",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Faking energy until bedtime]] isn't something you can push through."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady energy through the whole day with the three things your body runs on, so evenings stop being something to survive."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Keep up with them"
+        }
+      ],
+      "action": "create_if_missing",
+      "url": "https://myvox-9.myshopify.com/pages/energy-parents-who-cant-keep-up",
+      "verified_url": "https://myvox-9.com/pages/energy-parents-who-cant-keep-up"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – What the crash costs",
+      "page_title": "Energy — What the crash costs",
+      "handle": "energy-what-the-crash-costs",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/energy-what-the-crash-costs",
+      "worksheet": "URLs",
+      "url_cell": "C8",
+      "highlight": "Four hours a day lost to the afternoon crash.",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Four hours a day lost to the afternoon crash.]] Two years of them, if you're counting."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady energy from morning through the evening, so your best hours stop disappearing at 2 p.m."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Stop losing 2 to 6"
+        }
+      ],
+      "action": "create_if_missing",
+      "url": "https://myvox-9.myshopify.com/pages/energy-what-the-crash-costs",
+      "verified_url": "https://myvox-9.com/pages/energy-what-the-crash-costs"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Self-ID",
+      "page_title": "Energy — Self-ID",
+      "handle": "energy-self-id",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/energy-self-id",
+      "worksheet": "URLs",
+      "url_cell": "C9",
+      "highlight": "Exhausted by two, empty by seven, and coffee stopped working.",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Exhausted by two, empty by seven, and coffee stopped working.]] That isn't just tiredness."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex covers all three things steady energy needs, so your day stops being held together by caffeine."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Stop propping up my day"
+        }
+      ],
+      "action": "create_if_missing",
+      "url": "https://myvox-9.myshopify.com/pages/energy-self-id",
+      "verified_url": "https://myvox-9.com/pages/energy-self-id"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – The contradiction",
+      "page_title": "Energy — The contradiction",
+      "handle": "energy-the-contradiction",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/energy-the-contradiction",
+      "worksheet": "URLs",
+      "url_cell": "C10",
+      "highlight": "and the 2 p.m. crash stayed.",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "You fixed your sleep, cleaned up your diet, [[and the 2 p.m. crash stayed.]]"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex gives your body all three things steady energy runs on, at the same time, in one daily stick."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Try the missing piece"
+        }
+      ],
+      "action": "create_if_missing",
+      "url": "https://myvox-9.myshopify.com/pages/energy-the-contradiction",
+      "verified_url": "https://myvox-9.com/pages/energy-the-contradiction"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – No energy for my own life",
+      "page_title": "Energy — No energy for my own life",
+      "handle": "energy-no-energy-for-my-own-life",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/energy-no-energy-for-my-own-life",
+      "worksheet": "URLs",
+      "url_cell": "C11",
+      "highlight": "Weekends stopped being weekends.",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Weekends stopped being weekends.]] Recovery isn't the same thing as rest."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports steady energy every day, so there's something left for the life you're working for."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get my weekends back"
+        }
+      ],
+      "action": "create_if_missing",
+      "url": "https://myvox-9.myshopify.com/pages/energy-no-energy-for-my-own-life",
+      "verified_url": "https://myvox-9.com/pages/energy-no-energy-for-my-own-life"
+    }
+  ],
+  "url_format": "canonical_pages_path",
+  "canonical_api_domain": "uhgmmm-ef.myshopify.com",
+  "storefront_origin": "https://myvox-9.com"
+}

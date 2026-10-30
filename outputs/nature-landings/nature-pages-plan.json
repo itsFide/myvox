@@ -1,0 +1,340 @@
+{
+  "status": "completed",
+  "category": "Nature Build It First",
+  "store_domain": "uhgmmm-ef.myshopify.com",
+  "storefront_origin": "https://myvox-9.com",
+  "source_document": "/Users/sergey/Downloads/MYVOX-9 Hero Blocks.docx",
+  "source_workbook": "/Users/sergey/Downloads/MYVOX-9 LP URLs.xlsx",
+  "pages": [
+    {
+      "hero_number": 1,
+      "group_label": "HERO 1 ↔ GROUP 1 – Nature solved it first",
+      "page_title": "Nature Build It First — Nature solved it first",
+      "handle": "nature-nature-solved-it-first",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/nature-nature-solved-it-first",
+      "worksheet": "URLs",
+      "url_cell": "C62",
+      "highlight": "Nature already built the system",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Nature already built the system]] your supplements are trying to copy."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is the three hive substances your body runs on – bee bread, royal jelly and propolis – already assembled, already dosed, by the hive."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Start my first cycle"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/nature-nature-solved-it-first"
+    },
+    {
+      "hero_number": 2,
+      "group_label": "HERO 2 ↔ GROUP 2 – The hive makes all three",
+      "page_title": "Nature Build It First — The hive makes all three",
+      "handle": "nature-the-hive-makes-all-three",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/nature-the-hive-makes-all-three",
+      "worksheet": "URLs",
+      "url_cell": "C63",
+      "highlight": "A beehive makes all three.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "Your body needs three things. [[A beehive makes all three.]] Together, on purpose."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex brings those exact three into one stick, supporting energy, focus, gut and immune defenses at the same time."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get the whole system"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/nature-the-hive-makes-all-three"
+    },
+    {
+      "hero_number": 3,
+      "group_label": "HERO 3 ↔ GROUP 3 – Things you didn't know about a hive",
+      "page_title": "Nature Build It First — Things you didn't know about a hive",
+      "handle": "nature-things-you-didnt-know-about-a-hive",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/nature-things-you-didnt-know-about-a-hive",
+      "worksheet": "URLs",
+      "url_cell": "C64",
+      "highlight": "Bees ferment pollen so you can absorb it.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Bees ferment pollen so you can absorb it.]] Your capsule never got that far."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is bee bread, royal jelly and propolis – fermented, pre-digested and freeze-dried, exactly as the hive made them."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Try the real thing"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/nature-things-you-didnt-know-about-a-hive"
+    },
+    {
+      "hero_number": 4,
+      "group_label": "HERO 4 ↔ GROUP 4 – Lab versus hive",
+      "page_title": "Nature Build It First — Lab versus hive",
+      "handle": "nature-lab-versus-hive",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/nature-lab-versus-hive",
+      "worksheet": "URLs",
+      "url_cell": "C65",
+      "highlight": "The hive already did it.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "A lab has to source three ingredients, dose them, and hope. [[The hive already did it.]]"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is whole, fermented hive food your body recognizes, not three isolated synthetics hoping to work together."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Switch to real food"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/nature-lab-versus-hive"
+    },
+    {
+      "hero_number": 5,
+      "group_label": "HERO 5 ↔ GROUP 5 – Whole versus isolated",
+      "page_title": "Nature Build It First — Whole versus isolated",
+      "handle": "nature-whole-versus-isolated",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/nature-whole-versus-isolated",
+      "worksheet": "URLs",
+      "url_cell": "C66",
+      "highlight": "Your pills are isolated fragments.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Your pills are isolated fragments.]] Hive food arrives whole, in the order nature built it."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex gives your body all three things it runs on as whole food, freeze-dried and unchanged."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Replace the fragments"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/nature-whole-versus-isolated"
+    },
+    {
+      "hero_number": 6,
+      "group_label": "HERO 6 ↔ GROUP 6 – Royal jelly and the queen",
+      "page_title": "Nature Build It First — Royal jelly and the queen",
+      "handle": "nature-royal-jelly-and-the-queen",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/nature-royal-jelly-and-the-queen",
+      "worksheet": "URLs",
+      "url_cell": "C67",
+      "highlight": "One food turns an ordinary larva into a queen.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[One food turns an ordinary larva into a queen.]] It's in every stick, at a full 500mg."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex contains 500mg of freeze-dried royal jelly, the hive's recovery signal, where most products use fifty."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get the full dose"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/nature-royal-jelly-and-the-queen"
+    },
+    {
+      "hero_number": 7,
+      "group_label": "HERO 7 ↔ GROUP 7 – Freeze-dried, never heated",
+      "page_title": "Nature Build It First — Freeze-dried, never heated",
+      "handle": "nature-freeze-dried-never-heated",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/nature-freeze-dried-never-heated",
+      "worksheet": "URLs",
+      "url_cell": "C68",
+      "highlight": "Heat ruins the best part of royal jelly.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Heat ruins the best part of royal jelly.]] So this one is never heated, at any stage."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is freeze-dried in a vacuum at low temperature and hermetically sealed, with no honey, no sugar and no preservatives added."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Get it unheated"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/nature-freeze-dried-never-heated"
+    },
+    {
+      "hero_number": 8,
+      "group_label": "HERO 8 ↔ GROUP 8 – Reframe questions",
+      "page_title": "Nature Build It First — Reframe questions",
+      "handle": "nature-reframe-questions",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/nature-reframe-questions",
+      "worksheet": "URLs",
+      "url_cell": "C69",
+      "highlight": "a hive or a factory?",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "Do you know whether your supplements came from [[a hive or a factory?]]"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is three whole hive superfoods, freeze-dried and unchanged, with a published Certificate of Analysis for every batch."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Read the label"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/nature-reframe-questions"
+    },
+    {
+      "hero_number": 9,
+      "group_label": "HERO 9 ↔ GROUP 9 – Social proof",
+      "page_title": "Nature Build It First — Social proof",
+      "handle": "nature-social-proof",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/nature-social-proof",
+      "worksheet": "URLs",
+      "url_cell": "C70",
+      "highlight": "Ten thousand people switched",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "[[Ten thousand people switched]] from synthetic pills to what the hive already makes."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex is the hive system they chose over a shelf of lab-made bottles."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Switch to the hive"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/nature-social-proof"
+    },
+    {
+      "hero_number": 10,
+      "group_label": "HERO 10 ↔ GROUP 10 – Feeling good on the real thing",
+      "page_title": "Nature Build It First — Feeling good on the real thing",
+      "handle": "nature-feeling-good-on-the-real-thing",
+      "template_suffix": "landing-v1",
+      "canonical_path": "/pages/nature-feeling-good-on-the-real-thing",
+      "worksheet": "URLs",
+      "url_cell": "C71",
+      "highlight": "food it actually recognizes.",
+      "action": "create_if_missing",
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "hero_heading",
+          "type": "multi_line_text_field",
+          "value": "It turns out your body responds differently to [[food it actually recognizes.]]"
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_description",
+          "type": "multi_line_text_field",
+          "value": "Api-Complex supports your whole body with the three things nature already assembled – steady, clear and settled, on real food."
+        },
+        {
+          "namespace": "custom",
+          "key": "hero_button_text",
+          "type": "single_line_text_field",
+          "value": "Feel good on real food"
+        }
+      ],
+      "verified_url": "https://myvox-9.com/pages/nature-feeling-good-on-the-real-thing"
+    }
+  ]
+}

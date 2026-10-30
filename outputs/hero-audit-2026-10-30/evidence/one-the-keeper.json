@@ -1,0 +1,35 @@
+{
+  "index": 74,
+  "xlsx_row": 75,
+  "angle": "If I Could Only Keep One",
+  "group": "HERO 4 ↔ GROUP 4 – The keeper",
+  "url": "https://myvox-9.com/pages/one-the-keeper",
+  "expected": {
+    "headline": "One stick. Four jobs. That's why it earns the only spot on the shelf.",
+    "description": "Api-Complex is bee bread, royal jelly and propolis – the three things energy, focus, gut and immune defenses all run on.",
+    "cta": "Get the keeper →"
+  },
+  "checked_at": "2026-10-30T16:39:45.618105+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/one-the-keeper",
+  "html_sha256": "e0eed0befd8569d7082cb273afdb2951f863a26b1fe6dc7aef92e98d1c0560e9",
+  "hero_id": null,
+  "actual": {
+    "headline": "One stick. Four jobs. That's why it earns the only spot on the shelf.",
+    "description": "Api-Complex is bee bread, royal jelly and propolis – the three things energy, focus, gut and immune defenses all run on.",
+    "cta": "Get the keeper"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}

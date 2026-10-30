@@ -1,0 +1,35 @@
+{
+  "index": 34,
+  "xlsx_row": 35,
+  "angle": "Gut",
+  "group": "HERO 4 ↔ GROUP 4 – Heavy and sluggish",
+  "url": "https://myvox-9.com/pages/gut-heavy-and-sluggish",
+  "expected": {
+    "headline": "Lunch costs you the afternoon. A gut working overtime takes that from somewhere.",
+    "description": "Api-Complex supports healthy digestion with pre-digested raw materials, so meals sit lighter and your afternoon stays yours.",
+    "cta": "Feel good after meals →"
+  },
+  "checked_at": "2026-10-30T16:39:40.388685+00:00",
+  "http_status": 200,
+  "final_url": "https://myvox-9.com/pages/gut-heavy-and-sluggish",
+  "html_sha256": "117649075b14231c776e9dcc23aeb65613f0dcb8dbd163ace024ff1968a7b4cf",
+  "hero_id": null,
+  "actual": {
+    "headline": "Lunch costs you the afternoon. A gut working overtime takes that from somewhere.",
+    "description": "Api-Complex supports healthy digestion with pre-digested raw materials, so meals sit lighter and your afternoon stays yours.",
+    "cta": "Feel good after meals"
+  },
+  "selectors": {
+    "headline": ".hero__title",
+    "description": ".hero__description",
+    "cta": ".hero__button"
+  },
+  "cta_svg_count": 1,
+  "cta_href": "#pricing",
+  "comparison": {
+    "headline": "exact",
+    "description": "exact",
+    "cta": "svg_arrow"
+  },
+  "status": "match"
+}
